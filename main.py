@@ -115,10 +115,16 @@ def parse_country(entry):
         city = ""
         state = ""
         country = parts[0].strip()
-    return {'city': city, 'state': state, 'country': country}
+    return {"city": city, "state": state, "country": country}
 
 # Apply the function to the "country" column
 df_filtered['country'] = df_filtered['country'].apply(parse_country)
 
 # print the columns country as a list
-print(df_filtered['country'].tolist())
+#print(df_filtered['country'].tolist())
+
+# delete the column check
+df_filtered = df_filtered.drop(columns=['check'])
+
+# save the dataframe to a new csv file
+df_filtered.to_csv('data_cleaned.csv', index=False)
