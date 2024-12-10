@@ -80,8 +80,8 @@ df['category'] = df['category'].replace('CLASSIC PHYSIQUE', 'MEN\'S CLASSIC PHYS
 
 
 # Filter out rows with "MASTERS" or "WHEELCHAIR" in the category column
-df_filtered = df[~df['category'].str.contains("WHEELCHAIR")]
-df_filtered = df_filtered[~df_filtered['category'].str.contains("MASTERS")]
+#df_filtered = df[~df['category'].str.contains("WHEELCHAIR")]
+df_filtered = df[~df['category'].str.contains("MASTERS")]
 
 category_translation = {
     "MEN'S 212 BODYBUILDING": "Men's 212 Bodybuilding",
@@ -93,16 +93,17 @@ category_translation = {
     "WOMEN'S FIGURE": "Women's Figure",
     "WOMEN'S FITNESS": "Women's Fitness",
     "WOMEN'S PHYSIQUE": "Women's Physique",
-    "WOMEN'S WELLNESS": "Women's Wellness"
+    "WOMEN'S WELLNESS": "Women's Wellness",
+    "MEN'S WHEELCHAIR": "Men's Wheelchair"
 }
 # Translate the categories using the dictionary
 df_filtered['category'] = df_filtered['category'].map(category_translation)
 
 
 # show me how many unique values are in the category column
-#unique_categories = sorted(df_filtered['category'].unique())
-#for category in unique_categories:
-#    print(category)
+unique_categories = sorted(df_filtered['category'].unique())
+for category in unique_categories:
+    print(category)
 
 
 def parse_country(entry):
@@ -127,4 +128,4 @@ df_filtered['country'] = df_filtered['country'].apply(parse_country)
 df_filtered = df_filtered.drop(columns=['check'])
 
 # save the dataframe to a new csv file
-df_filtered.to_csv('data_cleaned.csv', index=False)
+df_filtered.to_csv('data_cleaned2.csv', index=False)
