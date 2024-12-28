@@ -13,21 +13,7 @@ url: str = os.environ.get("SUPABASE_URL")
 key: str = os.environ.get("SUPABASE_KEY")
 supabase: Client = create_client(url, key)
 
-df = pd.read_csv('data_cleaned2.csv')
-
-# return the data types of each column
-#print(df.dtypes)
-
-# change the type of the column country to be an object
-df['country'] = df['country'].apply(ast.literal_eval)
-
-# pritn me the column country
-#print(df['country'])
-
-# print the number of rows in the df
-#print(df.shape)
-
-def createAthletes():
+def createAthletes(df):
   for index, row in df.iterrows():
       print(index)
       person_name = row["competitors_name"].replace(",", "")
@@ -44,4 +30,30 @@ def createAthletes():
           updatedPerson = supabase.table("person").update({"athlete_id": createdAthlete.data[0]["id"]}).eq("id", createdPerson.data[0]["id"]).execute()
           print(person_name)
 
-createAthletes()
+def createCompetition(df):
+  for index, row in df.iterrows():
+      print(index)
+      person_name = row["competitors_name"].replace(",", "")
+      country = row["country"]
+      persons = supabase.table("person").select("*").or_(f"name.eq.{person_name},name_long.eq.{person_name}").execute().data
+      persons = [person for person in persons if person["birthplace"] == country]
+      category = supabase.table("category").select("*").eq("name", row["category"]).execute().data
+      if len(category) == 0:
+         print("Category not found")
+         exit()
+      if len(persons) == 0:
+          createdPerson = supabase.table("person").insert({"name": person_name, "name_long": person_name, "birthplace": row["country"], "nationality": [row["country"]["country"]]}).execute()
+          createdAthlete = supabase.table("athlete").insert({"name": person_name, "active": True, "category_id": category[0]["id"]}).execute()
+          updatedPerson = supabase.table("person").update({"athlete_id": createdAthlete.data[0]["id"]}).eq("id", createdPerson.data[0]["id"]).execute()
+          print(person_name)
+
+df = pd.read_csv('data_clean/2024/tables_2.csv')
+
+# change the type of the column country to be an object
+df['country'] = df['country'].apply(ast.literal_eval)
+
+# print the number of rows in the df
+print(df.shape)
+
+
+#createAthletes(df)
