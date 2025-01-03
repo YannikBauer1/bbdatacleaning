@@ -3,6 +3,7 @@ import numpy as np
 import json
 import ast
 import re
+import time
 
 import os
 from supabase import create_client, Client
@@ -66,12 +67,17 @@ def createCompetition(df):
             print(eventName)
 
 def createResults(df):
-    for index, row in df.iterrows():
+    #for index, row in df.iterrows():
+    for index, row in df.iloc[1900:].iterrows():
         print(index)
+        #time.sleep(1)
+
         competition = row["competition"].replace('-', ' ').title()
         
         category = supabase.table("category").select("*").eq("name", row["category"]).execute().data
         competitionEvent = supabase.table("competitionEvent").select("*").or_(f"name.eq.{competition},name_key.eq.{competition}").execute().data
+        #print(row)
+        #print(competitionEvent)
         eventCategories = supabase.table("eventCategory").select("*").eq("competitionEvent_id", competitionEvent[0]["id"]).eq("category_id", category[0]["id"]).execute().data
 
         if len(eventCategories) == 0:
@@ -106,7 +112,7 @@ def createResults(df):
 #df = pd.read_csv('data_clean/sidebar/2024.csv')
 #df['location'] = df['location'].apply(ast.literal_eval)
 
-df = pd.read_csv('data_clean/2024/tables_2.csv')
+df = pd.read_csv('data_clean/2024/tables_1.csv')
 df['country'] = df['country'].apply(ast.literal_eval)
 
 print(df.shape)
