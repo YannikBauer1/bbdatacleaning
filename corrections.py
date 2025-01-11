@@ -34,6 +34,28 @@ def changePersonsId():
         offset += limit
 
 # Call the function to update the athlete table
-changePersonsId()
+#changePersonsId()
+
+def addSex():
+    limit = 1000  # Number of entries to fetch per batch
+    offset = 0
+    while True:
+        persons = supabase.table("person") \
+            .select("*, athlete(*, result(*, eventCategory(*, category(name))))") \
+            .range(offset, offset + limit - 1) \
+            .execute().data
+        if not persons:
+            break
+        for person in persons:
+            category = person.get('athlete', [{}])[0].get('result', [{}])[0].get('eventCategory', [{}]).get('category', {}).get('name')
+            if "women" in category.lower():
+                supabase.table("person").update({"sex": "woman"}).eq("id", person["id"]).execute()
+                print(f"Updated person {person['id']} in category {category} with sex woman")
+            else:
+                supabase.table("person").update({"sex": "man"}).eq("id", person["id"]).execute()
+                print(f"Updated person {person['id']} in category {category} with sex man")
+        offset += limit
+
+addSex()
 
 response = supabase.auth.sign_out()
