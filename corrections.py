@@ -56,6 +56,45 @@ def addSex():
                 print(f"Updated person {person['id']} in category {category} with sex man")
         offset += limit
 
-addSex()
+#addSex()
+
+def changeCompetiitionsNameKey():
+    limit = 1000  # Number of entries to fetch per batch
+    offset = 0
+    while True:
+        competitions = supabase.table("competition") \
+            .select("*") \
+            .range(offset, offset + limit - 1) \
+            .execute().data
+        if not competitions:
+            break
+        for index, competition in enumerate(competitions):
+            print(index)
+            name = competition.get("name_key")
+            supabase.table("competition").update({"name_key": name.lower().replace(" ", "_")}).eq("id", competition["id"]).execute()
+        offset += limit
+
+#changeCompetiitionsNameKey()
+
+def addPersonsNameKey():
+    limit = 1000  # Number of entries to fetch per batch
+    offset = 0
+    while True:
+        persons = supabase.table("person") \
+            .select("*") \
+            .range(offset, offset + limit - 1) \
+            .execute().data
+        if not persons:
+            break
+        for index, person in enumerate(persons):
+            name = person.get("name_short")
+            name_key = re.sub(r'[^a-z_]', '', name.lower().replace(" ", "_"))
+            print(index, name_key)
+            supabase.table("person").update({"name_key": name_key}).eq("id", person["id"]).execute()
+        offset += limit
+
+addPersonsNameKey()
 
 response = supabase.auth.sign_out()
+
+
