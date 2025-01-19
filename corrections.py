@@ -93,7 +93,38 @@ def addPersonsNameKey():
             supabase.table("person").update({"name_key": name_key}).eq("id", person["id"]).execute()
         offset += limit
 
-addPersonsNameKey()
+#addPersonsNameKey()
+
+def correctFileNames():
+    folder_path = "personsToAdd"
+    for filename in os.listdir(folder_path):
+        new_filename = filename.replace("_removebg_preview", "")
+        new_filename = re.sub(r'[^a-z_]', '', new_filename.lower().replace(" ", "_").replace("-", "_"))
+        if not new_filename.endswith(".png"):
+            new_filename += ".png"
+        elif new_filename.endswith("png"):
+            new_filename = new_filename[:-3] + ".png"
+        new_filename = new_filename.replace("png", "")
+        new_filename = new_filename + "png"
+        os.rename(os.path.join(folder_path, filename), os.path.join(folder_path, new_filename))
+        print(f"Renamed {filename} to {new_filename}")
+
+#correctFileNames()
+
+def addPersonsImageUrl():
+    base_url = "https://qesnrciwmhxfhdaojwwo.supabase.co/storage/v1/object/public/logos/persons/"
+    folder_path = "images/persons"
+    for filename in os.listdir(folder_path):
+        name_key = filename.split(".")[0]
+        person = supabase.table("person").select("*").eq("name_key", name_key).execute().data
+        if len(person) == 0:
+            print(f"Person {filename} not found!!!!")
+        elif not person[0].get("image_url"):
+            image_url = base_url + filename
+            supabase.table("person").update({"image_url": image_url}).eq("name_key", name_key).execute()
+            print(f"Updated person {name_key} with image_url {image_url}")
+
+addPersonsImageUrl()
 
 response = supabase.auth.sign_out()
 
