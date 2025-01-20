@@ -56,7 +56,7 @@ def addSex():
                 print(f"Updated person {person['id']} in category {category} with sex man")
         offset += limit
 
-#addSex()
+addSex()
 
 def changeCompetiitionsNameKey():
     limit = 1000  # Number of entries to fetch per batch
@@ -259,8 +259,42 @@ def findMixedPersons():
         json.dump(mixed_persons, f, indent=4)
     print(f"Found {len(mixed_persons)} persons with both Men's and Women's categories. Saved to mixed_persons.json.")
         
-findMixedPersons()
+#findMixedPersons()
 
+
+def showProblems():
+    competition = supabase.table("competition").select("competitionEvent!inner(eventCategory!inner(id, category(name)))").eq("name_key", "dubai_pro").execute().data[0]
+    for eventCategory in competition["competitionEvent"][0]["eventCategory"]:
+        print(eventCategory)
+    
+    #classicId = next((event["id"] for event in competition["competitionEvent"][0]["eventCategory"] if event["category"]["name"] == "Men's Classic Physique"), None)
+    #bikiniId = next((event["id"] for event in competition["competitionEvent"][0]["eventCategory"] if event["category"]["name"] == "Women's Bikini"), None)
+
+    #print(classicId, bikiniId)
+
+    #with open("mixed_persons.json", "r") as f:
+    #    mixed_persons = json.load(f)
+    #for person in mixed_persons:
+    #    athlete = supabase.table("athlete").select("result!inner(id, eventCategory(id))").eq("person_id", person["id"]).execute().data[0]
+    #    for result in athlete["result"]:
+    #        if(result["eventCategory"]["id"] == classicId):
+    #            #supabase.table("result").update({"eventCategory_id": bikiniId}).eq("id", result["id"]).execute()
+    #            print(f"Updated result {result['id']}")
+
+#showProblems()
+
+
+def anotherProblemSolver():
+    classicId = "7ded0c26-8cd4-427c-9402-bd20d26725e5"
+    bikiniId = "0fcd0098-e518-4e84-a07d-e96c64f2685b"
+    results = supabase.table("result").select("*").eq("eventCategory_id", classicId).execute().data
+    for result in results:
+        supabase.table("result").update({"eventCategory_id": bikiniId}).eq("id", result["id"]).execute()
+        print(f"Updated result {result['id']}")
+    supabase.table("eventCategory").delete().eq("id", classicId).execute()
+
+#anotherProblemSolver()
 
 response = supabase.auth.sign_out()
 
+# wasatch warrior
