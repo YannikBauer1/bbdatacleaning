@@ -56,7 +56,7 @@ def addSex():
                 print(f"Updated person {person['id']} in category {category} with sex man")
         offset += limit
 
-addSex()
+#addSex()
 
 def changeCompetiitionsNameKey():
     limit = 1000  # Number of entries to fetch per batch
@@ -88,9 +88,10 @@ def addPersonsNameKey():
             break
         for index, person in enumerate(persons):
             name = person.get("name_short")
-            name_key = re.sub(r'[^a-z_]', '', name.lower().replace(" ", "_"))
-            print(index, name_key)
-            supabase.table("person").update({"name_key": name_key}).eq("id", person["id"]).execute()
+            if (person.get("name_key") == None):
+                name_key = re.sub(r'[^a-z_]', '', name.lower().replace(" ", "_"))
+                print(index, name_key)
+                supabase.table("person").update({"name_key": name_key}).eq("id", person["id"]).execute()
         offset += limit
 
 #addPersonsNameKey()
