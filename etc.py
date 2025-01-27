@@ -1,7 +1,7 @@
 import os
 
 def changeCountryImagesToPng():
-    folder_path = "images/countries"
+    folder_path = "images/countries2"
     for filename in os.listdir(folder_path):
         base, ext = os.path.splitext(filename)
         new_filename = base + ".png"
