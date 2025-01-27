@@ -132,7 +132,6 @@ def corrections_2024_imgs_1(df):
     #print("\n")
     return df
 
-
 df = pd.read_csv('data_raw/2024/tables_2.csv')
 showStat(df)
 df = generalCleaning(df)

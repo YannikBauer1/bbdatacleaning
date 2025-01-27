@@ -64,11 +64,24 @@ def parse_country(entry):
         country = parts[0].strip()
     return {"city": city, "state": state, "country": country}
 
+def groupByUrl(df):
+    grouped = df.groupby('url').agg({
+        'start_date': 'first',
+        'end_date': 'first',
+        'location': 'first',
+        'comp_type': 'first',
+        'divisions': lambda x: list(x),
+        'division_type': 'first',
+        'promoter': 'first',
+        'promoter_website': 'first'
+    }).reset_index()
+    return grouped
+
 def generalCleaning(df):
     print('-------------General Cleaning--------------')
 
     # remove fist column
-    df = df.drop(columns=['Unnamed: 0'])
+    #df = df.drop(columns=['Unnamed: 0'])
 
     # make start_date and end_date to date
     df["start_date"] = df["start_date"].astype(str).apply(parse_dates)
@@ -79,20 +92,30 @@ def generalCleaning(df):
 
     # create a new column 'name' from the URL
     df["eventName"] = df["url"].apply(lambda x: x.split('/')[-2])
-    df["eventName"] = df["eventName"].str.replace('-', ' ').str.title()
+    df["eventName"] = df["eventName"].str.replace('-', '_').str.title()
 
-    # create a new column 'generalName' by removing "2024" and any trailing " 2" or similar
-    df["name"] = df["eventName"].str.replace(r'2024', '', regex=True).str.strip()
+    # create a new column year with entry 2025 for all
+    df["year"] = 2025
+
+    # create a new column 'generalName' by removing "2025" and any trailing " 2" or similar
+    df["name"] = df["eventName"].str.replace(r'2025_', '', regex=True).str.lower().str.strip()
 
     # Apply parse_country to the 'location' column
     df['location'] = df['location'].astype(str).apply(parse_country)
 
     # Handle NaN values in the 'divisions' column
-    df["divisions"] = df["divisions"].apply(lambda x: ast.literal_eval(x) if pd.notna(x) else [])
+    def safe_literal_eval(val):
+        try:
+            return ast.literal_eval(val)
+        except (ValueError, SyntaxError):
+            return val
+
+    df["divisions"] = df["divisions"].apply(lambda x: safe_literal_eval(x) if pd.notna(x).all() else [])
 
     # remove rows where devision_type is Masters
     df = df[~(df['division_type'] == "Masters")]
-
+    df = df[~(df['division_type'] == "Natural")]
+    df = df[~(df['division_type'] == "Natural and Masters")]
 
     print(df)
     return df
@@ -177,56 +200,12 @@ def generalCleaning2(df):
     return df
 
 
-def verification(df):
-    print('-------------Verification--------------')
-    df['finals'] = np.where(df['finals'].isnull() & df['judging'].notnull(), 0, df['finals']) # Replace finals with 0 if it is nothing and juding is not nothing
-    df['check'] = df['judging'] + df['finals'] == df['total'] # Check if judging + finals is equal to total
-    print(df['check'].value_counts()) # how many falses are in check column
 
-    # show me the rows that have false in the check column, show the columns judging, finals, total and competitors_name which have not nathing at the place column
-    print("Rows with Check false and place not null:")
-    print(df[(df['check'] == False) & (df['place'].notnull())][['judging', 'finals', 'total', 'place', 'competitors_name']])
-    print("Rows with Check false:")
-    print(df[df['check'] == False][['judging', 'finals', 'total', 'place', 'competitors_name']])
-
-    indexes = df[(df['check'] == False) & (df['place'].notnull())].index
-    print("Indexes of false rows:")
-    print(indexes)
-    print("")
-
-    print("False rows with 4 rows before and 4 rows after:")
-    for index in indexes:
-        start = max(index - 4, 0)
-        end = min(index + 5, len(df))
-        print(index, start, end)
-        print(df.loc[start:end][['judging', 'finals', 'total', 'place']])
-        print("")
-
-    print("\n")
-    print("\n")
-
-
-def corrections_2024_imgs_1(df):
-    # replace of the row 645 the columsn finals with 0
-    df.loc[645, 'finals'] = 0.0
-    df.loc[3122, 'total'] = 39.0
-    df.loc[3404, 'judging'] = 9.0
-    df.loc[3689, 'total'] = 17.0
-
-    #df['check'] = df['judging'] + df['finals'] == df['total']
-    #print(df[(df['check'] == False) & (df['place'].notnull())][['judging', 'finals', 'total', 'place', 'competitors_name']])
-    #print("")
-
-    #df = df.drop(columns=['check'])   
-    #print("\n")
-    #print("\n")
-    return df
-
-
-df = pd.read_csv('data_raw/sidebar/2024.csv')
+df = pd.read_csv('data_raw/sidebar/2025.csv')
 showStat(df)
-df = generalCleaning(df)
-#verification(df)
-#df = corrections_2024_imgs_1(df)
 
-df.to_csv('data_clean/sidebar/2024.csv', index=False)
+df = groupByUrl(df)
+
+df = generalCleaning(df)
+
+df.to_csv('data_clean/sidebar/2025.csv', index=False)
