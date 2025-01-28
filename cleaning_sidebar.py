@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import re
 import ast
+import json
 
 def showStat(df):
     print('-------------Dataframe Stats--------------')
@@ -11,7 +12,7 @@ def showStat(df):
     print("\n")
 
 def parse_dates(date_str):
-    date_obj = pd.to_datetime(date_str + " 2024", format="%B %d %Y", errors="coerce")
+    date_obj = pd.to_datetime(date_str + " 2025", format="%B %d %Y", errors="coerce")
     if pd.isnull(date_obj):
         return None
     return date_obj.strftime("%d.%m.%Y")
@@ -83,7 +84,7 @@ def generalCleaning(df):
     # remove fist column
     #df = df.drop(columns=['Unnamed: 0'])
 
-    # make start_date and end_date to date
+    # make start_date and end_date
     df["start_date"] = df["start_date"].astype(str).apply(parse_dates)
     df["end_date"] = df["end_date"].astype(str).apply(parse_dates)
 
@@ -199,13 +200,30 @@ def generalCleaning2(df):
     print("\n")
     return df
 
+def checkCompetitionNames(df, competitionNameKeys):
+    for index, row in df.iterrows():
+        name = row["name"]
+        found = False
+        for key, values in competitionNameKeys.items():
+            if name in values:
+                found = True
+                break
+        if not found:
+            print(name)
 
+# Load competitionNameKeys
+with open('competitionNameKeys.json', 'r') as f:
+    competitionNameKeys = json.load(f)
 
-df = pd.read_csv('data_raw/sidebar/2025.csv')
+#df = pd.read_csv('data_raw/sidebar/2025.csv')
+df = pd.read_csv('data_clean/sidebar/2025.csv')
 showStat(df)
 
-df = groupByUrl(df)
+#df = groupByUrl(df)
 
-df = generalCleaning(df)
+# Check competition names
+checkCompetitionNames(df, competitionNameKeys)
 
-df.to_csv('data_clean/sidebar/2025.csv', index=False)
+#df = generalCleaning(df)
+
+#df.to_csv('data_clean/sidebar/2025.csv', index=False)

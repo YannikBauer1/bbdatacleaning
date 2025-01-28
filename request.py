@@ -46,24 +46,35 @@ def createCompetition(df):
         print(index)
         name = row["name"]
         eventName = row["eventName"]
-        competitions = supabase.table("competition").select("*").or_(f"name_short.eq.{name},name_long.eq.{name},name_key.eq.{name}").execute().data
-        competitionEvents = supabase.table("competitionEvent").select("*").or_(f"name.eq.{eventName},name_key.eq.{eventName}").execute().data
+        competitions = supabase.table("competition").select("*").ilike("name_key", name).execute().data
+        competition = {}
+        competitionEvents = []
+        years = []
+        if (len(competitions) > 0):
+            competition = competitions[0]
+            competitionEvents = supabase.table("event").select("*").eq("competition_id", competition["id"]).execute().data
+            years = [event["year"] for event in competitionEvents]
         start_date = format_date(row["start_date"])
         end_date = format_date(row["end_date"])
         if pd.notna(row["promoter_website"]):
-          socials = {"website": row["promoter_website"]}
+            socials = {"website": row["promoter_website"]}
         else:
-          socials = {}
+            socials = {}
         if pd.notna(row["promoter"]):
-          promoter = row["promoter"]
+            promoter = row["promoter"]
         else:
-          promoter = ""
-        if len(competitions) == 0 and len(competitionEvents) == 0:
-            createdCompetition = supabase.table("competition").insert({"name_key": name, "name_short": name, "name_long": name, "organization": row["comp_type"], "socials": socials}).execute()
-            createdCompetitionEvent = supabase.table("competitionEvent").insert({"name_key": name, "location": row["location"], "start_date": start_date ,"end_date":end_date, "name": eventName, "promoter": promoter, "competition_id": createdCompetition.data[0]["id"]}).execute()
-            print(name, eventName)
-        elif len(competitionEvents) == 0:
-            createdCompetitionEvent = supabase.table("competitionEvent").insert({"name_key": name, "location": row["location"], "start_date": start_date ,"end_date":end_date, "name": eventName, "promoter": promoter, "competition_id": competitions[0]["id"]}).execute()
+            promoter = ""
+        if pd.notna(row["location"]):
+            location = row["location"]
+        else:
+            location = ""
+        #print(competitions, competitionEvents)
+        if len(competitions) == 0:
+            #createdCompetition = supabase.table("competition").insert({"name_key": name, "name_short": name, "name_long": name, "organization": row["comp_type"], "socials": socials}).execute()
+            #createdCompetitionEvent = supabase.table("competitionEvent").insert({"name_key": name, "location": location, "start_date": start_date ,"end_date":end_date, "name": eventName, "promoter": promoter, "competition_id": createdCompetition.data[0]["id"]}).execute()
+            print(4444444, name, eventName)
+        elif row["year"] not in years:
+            #createdCompetitionEvent = supabase.table("competitionEvent").insert({"name_key": name, "location": location, "start_date": start_date ,"end_date":end_date, "name": eventName, "promoter": promoter, "competition_id": competitions[0]["id"]}).execute()
             print(eventName)
 
 def createResults(df):
@@ -109,15 +120,15 @@ def createResults(df):
 #df = pd.read_csv('data_clean/2024/tables_2.csv')
 #df['country'] = df['country'].apply(ast.literal_eval)
 
-#df = pd.read_csv('data_clean/sidebar/2024.csv')
-#df['location'] = df['location'].apply(ast.literal_eval)
+df = pd.read_csv('data_clean/sidebar/2025.csv')
+df['location'] = df['location'].apply(ast.literal_eval)
 
-df = pd.read_csv('data_clean/2024/tables_1.csv')
-df['country'] = df['country'].apply(ast.literal_eval)
+#df = pd.read_csv('data_clean/2024/tables_1.csv')
+#df['country'] = df['country'].apply(ast.literal_eval)
 
 print(df.shape)
 #createAthletes(df)
-#createCompetition(df)
-createResults(df)
+createCompetition(df)
+#createResults(df)
 
 response = supabase.auth.sign_out()
