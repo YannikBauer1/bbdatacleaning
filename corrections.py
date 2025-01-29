@@ -262,7 +262,6 @@ def findMixedPersons():
         
 #findMixedPersons()
 
-
 def showProblems():
     competition = supabase.table("competition").select("competitionEvent!inner(eventCategory!inner(id, category(name)))").eq("name_key", "dubai_pro").execute().data[0]
     for eventCategory in competition["competitionEvent"][0]["eventCategory"]:
@@ -284,7 +283,6 @@ def showProblems():
 
 #showProblems()
 
-
 def anotherProblemSolver():
     classicId = "7ded0c26-8cd4-427c-9402-bd20d26725e5"
     bikiniId = "0fcd0098-e518-4e84-a07d-e96c64f2685b"
@@ -296,6 +294,77 @@ def anotherProblemSolver():
 
 #anotherProblemSolver()
 
-response = supabase.auth.sign_out()
+def checkCompetitionsInNameKeys():
+    with open('/Users/yannik/GitHub/bbdatacleaning/competitionNameKeys.json', 'r') as f:
+        competitionNameKeys = json.load(f)
 
-# wasatch warrior
+    limit = 1000 
+    offset = 0
+    while True:
+        competitions = supabase.table("competition").select("name_key").range(offset, offset + limit - 1).execute().data
+        if not competitions:
+            break
+        for competition in competitions:
+            name_key = competition["name_key"]
+            found = False
+            for key, values in competitionNameKeys.items():
+                if name_key in values:
+                    found = True
+                    break
+            if not found:
+                print(f"Competition name_key not found in competitionNameKeys: {name_key}")
+        offset += limit
+    print("Done")
+
+#checkCompetitionsInNameKeys()
+
+def updateCompetitionNameKeys():
+    with open('/Users/yannik/GitHub/bbdatacleaning/competitionNameKeys.json', 'r') as f:
+        competitionNameKeys = json.load(f)
+
+    limit = 1000
+    offset = 0
+    while True:
+        competitions = supabase.table("competition").select("id, name_key").range(offset, offset + limit - 1).execute().data
+        if not competitions:
+            break
+        for competition in competitions:
+            name_key = competition["name_key"]
+            if name_key not in competitionNameKeys:
+                found = False
+                for key, values in competitionNameKeys.items():
+                    if name_key in values:
+                        competitionsWithKey = supabase.table("competition").select("*").eq("name_key", key).execute().data
+                        if len(competitionsWithKey) == 1:
+                            events = supabase.table("event").select("*").eq("competition_id", competitionsWithKey[0]["id"]).execute().data
+                            if len(events) == 1:
+                                supabase.table("event").update({"edition": 1}).eq("id", events[0]["id"]).execute()
+                                eventsFromCompetition = supabase.table("event").select("*").eq("competition_id", competition["id"]).execute().data
+                                edition = 2
+                                for event in eventsFromCompetition:
+                                    supabase.table("event").update({"competition_id": competitionsWithKey[0]["id"], "edition": edition}).eq("id", event["id"]).execute()
+                                    edition =+ 1
+                                supabase.table("competition").delete().eq("id", competition["id"]).execute()
+                                print(f"Merged competition {name_key} into {key}")
+                            else:
+                                eventsFromCompetition = supabase.table("event").select("*").eq("competition_id", competition["id"]).execute().data
+                                edition = max([event["edition"] for event in events]) + 1
+                                for event in eventsFromCompetition:
+                                    supabase.table("event").update({"competition_id": competitionsWithKey[0]["id"], "edition": edition}).eq("id", event["id"]).execute()
+                                    edition =+ 1
+                                supabase.table("competition").delete().eq("id", competition["id"]).execute()
+                                print(f"Merged competition {name_key} into {key}")
+                        else:
+                            supabase.table("competition").update({"name_key": key}).eq("id", competition["id"]).execute()
+                            print(f"Updated competition {competition['id']} name_key from {name_key} to {key}")
+                        found = True
+                        break
+                if not found:
+                    print(f"Competition name_key not found in competitionNameKeys: {name_key}")
+        offset += limit
+    print("Done")
+
+#updateCompetitionNameKeys()
+
+
+response = supabase.auth.sign_out()

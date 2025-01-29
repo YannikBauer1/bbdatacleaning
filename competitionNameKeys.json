@@ -243,10 +243,11 @@
         "heart_of_texas_pro",
         "heart_of_texas_pro_show"
     ],
-    "hong_kong_pro_show": [
+    "hong_kong_pro": [
         "global_classic_hong_kong_pro",
         "global_classic_hong_kong_pro_show",
-        "hong_kong_pro_show"
+        "hong_kong_pro_show",
+        "hong_kong_pro"
     ],
     "houston_pro": [
         "houston_pro",
@@ -433,6 +434,7 @@
         "musclecontest_japan_pro"
     ],
     "musclecontest_juiz_de_fora": [
+        "musclecontest_juiz_de_fora",
         "luciano_cruz_juiz_de_fora_pro",
         "luciano_cruz_juiz_de_fora_pro_show"
     ],
