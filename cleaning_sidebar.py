@@ -211,9 +211,24 @@ def checkCompetitionNames(df, competitionNameKeys):
         if not found:
             print(name)
 
-# Load competitionNameKeys
+def orderCompetitionNameKeys(filepath):
+    with open(filepath, 'r') as f:
+        competitionNameKeys = json.load(f)
+    
+    orderedKeys = {key: sorted(values) for key, values in sorted(competitionNameKeys.items())}
+    
+    with open(filepath, 'w') as f:
+        json.dump(orderedKeys, f, indent=4)
+    
+    print(f"Ordered competitionNameKeys and saved to {filepath}")
+
+# Example usage
+orderCompetitionNameKeys('/Users/yannik/GitHub/bbdatacleaning/competitionNameKeys.json')
+
 with open('competitionNameKeys.json', 'r') as f:
     competitionNameKeys = json.load(f)
+
+
 
 #df = pd.read_csv('data_raw/sidebar/2025.csv')
 df = pd.read_csv('data_clean/sidebar/2025.csv')
@@ -221,8 +236,7 @@ showStat(df)
 
 #df = groupByUrl(df)
 
-# Check competition names
-checkCompetitionNames(df, competitionNameKeys)
+#checkCompetitionNames(df, competitionNameKeys)
 
 #df = generalCleaning(df)
 

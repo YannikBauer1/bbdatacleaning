@@ -14,8 +14,7 @@ os.environ["SUPABASE_KEY"] = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzd
 url: str = os.environ.get("SUPABASE_URL")
 key: str = os.environ.get("SUPABASE_KEY")
 supabase: Client = create_client(url, key)
-
-response = supabase.auth.sign_in_with_password(
+supabase.auth.sign_in_with_password(
     {"email": "yannikbauer.1@gmail.com", "password": "Weisnet1"}
 )
 
@@ -131,4 +130,5 @@ print(df.shape)
 createCompetition(df)
 #createResults(df)
 
-response = supabase.auth.sign_out()
+
+supabase.auth.sign_out()
