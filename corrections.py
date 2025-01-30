@@ -384,4 +384,22 @@ def cleanEventPromoters():
 
 #cleanEventPromoters()
 
+def updateNationality():
+    limit = 1000
+    offset = 0
+    while True:
+        persons = supabase.table("person").select("id, nationality").range(offset, offset + limit - 1).execute().data
+        if not persons:
+            break
+        for person in persons:
+            nationality = person["nationality"]
+            if "USA" in nationality:
+                updated_nationality = ["United States" if country == "USA" else country for country in nationality]
+                supabase.table("person").update({"nationality": updated_nationality}).eq("id", person["id"]).execute()
+                print(f"Updated person {person['id']} nationality from {nationality} to {updated_nationality}")
+        offset += limit
+    print("Done")
+
+updateNationality()
+
 supabase.auth.sign_out()
