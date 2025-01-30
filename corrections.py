@@ -15,7 +15,7 @@ url: str = os.environ.get("SUPABASE_URL")
 key: str = os.environ.get("SUPABASE_KEY")
 supabase: Client = create_client(url, key)
 
-response = supabase.auth.sign_in_with_password(
+supabase.auth.sign_in_with_password(
     {"email": "yannikbauer.1@gmail.com", "password": "Weisnet1"}
 )
 
@@ -366,5 +366,22 @@ def updateCompetitionNameKeys():
 
 #updateCompetitionNameKeys()
 
+def cleanEventPromoters():
+    limit = 1000
+    offset = 0
+    while True:
+        events = supabase.table("event").select("id, promoter").range(offset, offset + limit - 1).execute().data
+        if not events:
+            break
+        for event in events:
+            promoter = event["promoter"]
+            cleaned_promoter = re.sub(r'\s*\(.*?\)\s*', '', promoter).strip()
+            if promoter != cleaned_promoter:
+                supabase.table("event").update({"promoter": cleaned_promoter}).eq("id", event["id"]).execute()
+                print(f"Updated event {event['id']} promoter from '{promoter}' to '{cleaned_promoter}'")
+        offset += limit
+    print("Done")
 
-response = supabase.auth.sign_out()
+#cleanEventPromoters()
+
+supabase.auth.sign_out()

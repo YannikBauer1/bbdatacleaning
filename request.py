@@ -127,7 +127,7 @@ df['location'] = df['location'].apply(ast.literal_eval)
 
 print(df.shape)
 #createAthletes(df)
-createCompetition(df)
+#createCompetition(df)
 #createResults(df)
 
 
