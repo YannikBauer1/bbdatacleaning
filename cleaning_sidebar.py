@@ -17,6 +17,19 @@ def parse_dates(date_str):
         return None
     return date_obj.strftime("%d.%m.%Y")
 
+def parse_name(name):
+    if pd.isna(name):
+        return pd.isna
+    with open('competitionNameKeys.json', 'r') as f:
+        competitionNameKeys = json.load(f)
+    found = False
+    for key, values in competitionNameKeys.items():
+        if name in values:
+            found = True
+            return key
+    if not found:
+        print(name)
+
 def parse_country(entry):
     if pd.isna(entry):
         return {"city": "", "state": "", "country": ""}
@@ -65,6 +78,9 @@ def parse_country(entry):
         country = parts[0].strip()
     return {"city": city, "state": state, "country": country}
 
+def parsePromoter(promoter):
+    return re.sub(r'\s*\(.*?\)\s*', '', promoter).strip()
+
 def groupByUrl(df):
     grouped = df.groupby('url').agg({
         'start_date': 'first',
@@ -83,124 +99,36 @@ def generalCleaning(df):
 
     # remove fist column
     #df = df.drop(columns=['Unnamed: 0'])
-
-    # make start_date and end_date
-    df["start_date"] = df["start_date"].astype(str).apply(parse_dates)
-    df["end_date"] = df["end_date"].astype(str).apply(parse_dates)
-
-    # set end_date to start_date when end_date is None
-    df["end_date"] = df["end_date"].fillna(df["start_date"])
-
-    # create a new column 'name' from the URL
-    df["eventName"] = df["url"].apply(lambda x: x.split('/')[-2])
-    df["eventName"] = df["eventName"].str.replace('-', '_').str.title()
-
-    # create a new column year with entry 2025 for all
-    df["year"] = 2025
-
-    # create a new column 'generalName' by removing "2025" and any trailing " 2" or similar
-    df["name"] = df["eventName"].str.replace(r'2025_', '', regex=True).str.lower().str.strip()
-
-    # Apply parse_country to the 'location' column
-    df['location'] = df['location'].astype(str).apply(parse_country)
-
-    # Handle NaN values in the 'divisions' column
-    def safe_literal_eval(val):
-        try:
-            return ast.literal_eval(val)
-        except (ValueError, SyntaxError):
-            return val
-
-    df["divisions"] = df["divisions"].apply(lambda x: safe_literal_eval(x) if pd.notna(x).all() else [])
-
-    # remove rows where devision_type is Masters
     df = df[~(df['division_type'] == "Masters")]
     df = df[~(df['division_type'] == "Natural")]
     df = df[~(df['division_type'] == "Natural and Masters")]
 
-    print(df)
+    df["start_date"] = df["start_date"].astype(str).apply(parse_dates)
+    df["end_date"] = df["end_date"].astype(str).apply(parse_dates)
+    df["end_date"] = df["end_date"].fillna(df["start_date"])
+
+    df["year"] = 2025
+
+    df["eventName"] = df["url"].apply(lambda x: x.split('/')[-2]).str.replace('-', '_').str.lower()
+    df["name"] = df["eventName"].str.replace(r'2025_', '', regex=True).str.lower().str.strip()
+    df["name_key"] = df["name"].apply(parse_name)
+
+    df['location'] = df['location'].astype(str).apply(parse_country)
+    df['promoter'] = df['promoter'].apply(parsePromoter)
+
+    #def safe_literal_eval(val):
+    #    try:
+    #        return ast.literal_eval(val)
+    #    except (ValueError, SyntaxError):
+    #        return val
+    #df["divisions"] = df["divisions"].apply(lambda x: safe_literal_eval(x) if pd.notna(x).all() else [])
+
+    #print(df)
     return df
 
-def generalCleaning2(df):
-    print('-------------General Cleaning--------------')
-    # remove rows that have no name in it ( false rows )
-    #print(df['competitors_name'].isnull().sum())
-    df = df.dropna(subset=['competitors_name'])
-
-    df['judging'] = df['judging'].replace(['-'], np.nan)
-    df['finals'] = df['finals'].replace(['-'], np.nan)
-    df['total'] = df['total'].replace(['-'], np.nan)
-    df['place'] = df['place'].replace(['-', 'NS', 'DQ'], np.nan)
-
-    df['judging'] = pd.to_numeric(df['judging'], errors='coerce')
-    df['finals'] = pd.to_numeric(df['finals'], errors='coerce')
-    df['total'] = pd.to_numeric(df['total'], errors='coerce')
-
-    df = df.rename(columns={'competition_type': 'category'})
-    df['category'] = df['category'].apply(str)
-    df['category'] = df['category'].str.upper()
-    df['category'] = df['category'].str.replace(' - OPEN', '')
-    df['category'] = df['category'].str.replace(r' . OPEN', '', regex=True)
-    df['category'] = df['category'].replace('BIKINI', 'WOMEN\'S BIKINI') 
-    df['category'] = df['category'].replace('CLASSIC PHYSIQUE', 'MEN\'S CLASSIC PHYSIQUE') 
-
-    df = df[~df['category'].str.contains("MASTERS")] # Filter rows with "MASTERS"
-
-    category_translation = {
-        "MEN'S 212 BODYBUILDING": "Men's 212 Bodybuilding",
-        "MEN'S BODYBUILDING": "Men's Bodybuilding",
-        "MEN'S CLASSIC PHYSIQUE": "Men's Classic Physique",
-        "MEN'S PHYSIQUE": "Men's Physique",
-        "WOMEN'S BIKINI": "Women's Bikini",
-        "WOMEN'S BODYBUILDING": "Women's Bodybuilding",
-        "WOMEN'S FIGURE": "Women's Figure",
-        "WOMEN'S FITNESS": "Women's Fitness",
-        "WOMEN'S PHYSIQUE": "Women's Physique",
-        "WOMEN'S WELLNESS": "Women's Wellness",
-        "MEN'S WHEELCHAIR": "Men's Wheelchair",
-        "MEN’S 212 BODYBUILDING": "Men's 212 Bodybuilding",
-        "MEN’S BODYBUILDING": "Men's Bodybuilding",
-        "MEN’S CLASSIC PHYSIQUE": "Men's Classic Physique",
-        "MEN’S PHYSIQUE": "Men's Physique",
-        "WOMEN’S BIKINI": "Women's Bikini",
-        "WOMEN’S BODYBUILDING": "Women's Bodybuilding",
-        "WOMEN’S FIGURE": "Women's Figure",
-        "WOMEN’S FITNESS": "Women's Fitness",
-        "WOMEN’S PHYSIQUE": "Women's Physique",
-        "WOMEN’S WELLNESS": "Women's Wellness",
-        "MEN’S WHEELCHAIR": "Men's Wheelchair"
-    }
-    df['category'] = df['category'].map(category_translation)
-    #print(df['category'])
-
-    # show me how many unique values are in the category column
-    print("Unique categories Verify:")
-    unique_categories = sorted(df['category'].unique())
-    for category in unique_categories:
-        print(category)
-    print("\n")
-
-    def parse_country(entry):
-        # Use regular expressions to split the entry into city, state, and country
-        match = re.match(r'^(.*?)(?:,([A-Z]{2}))?(?:,([^,]+))?$', entry)
-        if match:
-            city = match.group(1).strip() if match.group(1) else ""
-            state = match.group(2).strip() if match.group(2) else ""
-            country = match.group(3).strip() if match.group(3) else ""
-        else:
-            city = ""
-            state = ""
-            country = entry.strip()
-        return {"city": city, "state": state, "country": country}
-    df['country'] = df['country'].apply(parse_country)
-
-    # print the columns country as a list
-    #print(df_filtered['country'].tolist())
-    print("\n")
-    print("\n")
-    return df
-
-def checkCompetitionNames(df, competitionNameKeys):
+def checkCompetitionNames(df):
+    with open('competitionNameKeys.json', 'r') as f:
+        competitionNameKeys = json.load(f)
     for index, row in df.iterrows():
         name = row["name"]
         found = False
@@ -210,33 +138,22 @@ def checkCompetitionNames(df, competitionNameKeys):
                 break
         if not found:
             print(name)
+    print("Done checking competition names")
 
-def orderCompetitionNameKeys(filepath):
-    with open(filepath, 'r') as f:
+def orderCompetitionNameKeys():
+    with open('competitionNameKeys.json', 'r') as f:
         competitionNameKeys = json.load(f)
-    
     orderedKeys = {key: sorted(values) for key, values in sorted(competitionNameKeys.items())}
-    
-    with open(filepath, 'w') as f:
+    with open("competitionNameKeys.json", 'w') as f:
         json.dump(orderedKeys, f, indent=4)
-    
-    print(f"Ordered competitionNameKeys and saved to {filepath}")
-
-# Example usage
-orderCompetitionNameKeys('/Users/yannik/GitHub/bbdatacleaning/competitionNameKeys.json')
-
-with open('competitionNameKeys.json', 'r') as f:
-    competitionNameKeys = json.load(f)
-
+    print(f"Ordered competitionNameKeys")
 
 
 #df = pd.read_csv('data_raw/sidebar/2025.csv')
-df = pd.read_csv('data_clean/sidebar/2025.csv')
-showStat(df)
+
+#showStat(df)
 
 #df = groupByUrl(df)
-
-#checkCompetitionNames(df, competitionNameKeys)
 
 #df = generalCleaning(df)
 

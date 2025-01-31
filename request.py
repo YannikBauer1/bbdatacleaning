@@ -4,6 +4,7 @@ import json
 import ast
 import re
 import time
+from datetime import datetime
 
 import os
 from supabase import create_client, Client
@@ -38,21 +39,20 @@ def createAthletes(df):
 def format_date(date_str):
     if pd.isna(date_str):
         return None
-    return pd.to_datetime(date_str, format="%d.%m.%Y").isoformat()
+    try:
+        return pd.to_datetime(date_str, format="%d.%m.%Y").isoformat()
+    except ValueError:
+        return pd.to_datetime(date_str).isoformat()
 
 def createCompetition(df):
+    def format_date2(date_str):
+        return datetime.strptime(date_str, "%d.%m.%Y").date()
+
     for index, row in df.iterrows():
-        print(index)
-        name = row["name"]
-        eventName = row["eventName"]
-        competitions = supabase.table("competition").select("*").ilike("name_key", name).execute().data
-        competition = {}
-        competitionEvents = []
-        years = []
-        if (len(competitions) > 0):
-            competition = competitions[0]
-            competitionEvents = supabase.table("event").select("*").eq("competition_id", competition["id"]).execute().data
-            years = [event["year"] for event in competitionEvents]
+        name_key = row["name_key"]
+        competitions = supabase.table("competition").select("*").eq("name_key", name_key).execute().data
+
+        name = name_key.replace('_', ' ').title()
         start_date = format_date(row["start_date"])
         end_date = format_date(row["end_date"])
         if pd.notna(row["promoter_website"]):
@@ -67,14 +67,34 @@ def createCompetition(df):
             location = row["location"]
         else:
             location = ""
-        #print(competitions, competitionEvents)
-        if len(competitions) == 0:
-            #createdCompetition = supabase.table("competition").insert({"name_key": name, "name_short": name, "name_long": name, "organization": row["comp_type"], "socials": socials}).execute()
-            #createdCompetitionEvent = supabase.table("competitionEvent").insert({"name_key": name, "location": location, "start_date": start_date ,"end_date":end_date, "name": eventName, "promoter": promoter, "competition_id": createdCompetition.data[0]["id"]}).execute()
-            print(4444444, name, eventName)
-        elif row["year"] not in years:
-            #createdCompetitionEvent = supabase.table("competitionEvent").insert({"name_key": name, "location": location, "start_date": start_date ,"end_date":end_date, "name": eventName, "promoter": promoter, "competition_id": competitions[0]["id"]}).execute()
-            print(eventName)
+
+        if (len(competitions) == 0):
+            supabase.table("competition").insert({"name_key": name_key, "name_short": name, "name": name, "organization": row["comp_type"], "socials": socials}).execute()
+            print(name_key, " inserted Competition")
+        
+        competition = supabase.table("competition").select("*").eq("name_key", name_key).execute().data[0]
+        events = supabase.table("event").select("*").eq("competition_id", competition["id"]).eq("year", row["year"]).execute().data
+
+        fetchedIdentifieres = [
+            [event["year"], format_date(event["start_date"]), format_date(event["end_date"])]
+            for event in events ]
+        identifier = [row["year"], start_date, end_date]
+
+        if not identifier in fetchedIdentifieres:
+            if len(events) == 0:
+                newEvent = supabase.table("event").insert({"location": location, "start_date": start_date ,"end_date":end_date, "promoter": promoter, "competition_id": competition["id"], "year": row["year"]}).execute()
+                print(name_key, " inserted first Event")
+            elif len(events) == 1:
+                supabase.table("event").update({"edition": 1}).eq("id", events[0]["id"]).execute()
+                newEvent = supabase.table("event").insert({"edition": 2, "location": location, "start_date": start_date ,"end_date":end_date, "promoter": promoter, "competition_id": competition["id"], "year": row["year"]}).execute()
+                print(name_key, " inserted second Event & updated editition")
+            else:
+                newEvent = supabase.table("event").insert({"edition": len(events) + 1, "location": location, "start_date": start_date ,"end_date":end_date, "promoter": promoter, "competition_id": competition["id"], "year": row["year"]}).execute()
+                print(name_key, " inserted next Event")
+            for division in row["divisions"]:
+                category = supabase.table("category").select("*").eq("name", division).execute().data[0]
+                supabase.table("division").insert({"event_id": newEvent["id"], "category_id": category["id"]}).execute()
+                print(name_key, " inserted Division ", division)
 
 def createResults(df):
     #for index, row in df.iterrows():
@@ -116,18 +136,35 @@ def createResults(df):
             }).execute()
             print(person_name)
 
+def deleteEventsForYear(year):
+    limit = 1000
+    offset = 0
+    while True:
+        events = supabase.table("event").select("id").eq("year", year).range(offset, offset + limit - 1).execute().data
+        if not events:
+            break
+        for event in events:
+            supabase.table("event").delete().eq("id", event["id"]).execute()
+            print(f"Deleted event {event['id']} for year {year}")
+        offset += limit
+    print(f"Done deleting events for year {year}")
+#deleteEventsForYear(2025)
+
 #df = pd.read_csv('data_clean/2024/tables_2.csv')
 #df['country'] = df['country'].apply(ast.literal_eval)
 
 df = pd.read_csv('data_clean/sidebar/2025.csv')
 df['location'] = df['location'].apply(ast.literal_eval)
+df['divisions'] = df['divisions'].apply(ast.literal_eval)
 
 #df = pd.read_csv('data_clean/2024/tables_1.csv')
 #df['country'] = df['country'].apply(ast.literal_eval)
 
-print(df.shape)
+#print(df.shape)
+#print(df.dtypes)    
+
 #createAthletes(df)
-#createCompetition(df)
+createCompetition(df)
 #createResults(df)
 
 
