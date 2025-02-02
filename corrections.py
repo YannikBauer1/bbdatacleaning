@@ -400,6 +400,41 @@ def updateNationality():
         offset += limit
     print("Done")
 
-updateNationality()
+#updateNationality()
+
+def checkCompetitionImages():
+    # Get all images from the Supabase bucket
+    images = supabase.storage.from_("logos").list("competitions")
+    image_names = [image["name"].split(".")[0] for image in images]
+
+    # Get all competitions from the competition table
+    limit = 1000
+    offset = 0
+    competitions = []
+    while True:
+        batch = supabase.table("competition").select("name_key").range(offset, offset + limit - 1).execute().data
+        if not batch:
+            break
+        competitions.extend(batch)
+        offset += limit
+
+    competition_name_keys = [competition["name_key"] for competition in competitions]
+
+    # Find name_keys that don't have images
+    missing_images = [name_key for name_key in competition_name_keys if name_key not in image_names]
+
+    # Find images that don't have corresponding name_keys
+    missing_name_keys = [image_name for image_name in image_names if image_name not in competition_name_keys]
+
+    print("Competitions without images:")
+    for name_key in missing_images:
+        print(name_key)
+
+    print("\nImages without corresponding competitions:")
+    for image_name in missing_name_keys:
+        print(image_name)
+
+# Example usage
+checkCompetitionImages()
 
 supabase.auth.sign_out()
