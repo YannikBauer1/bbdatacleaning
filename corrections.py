@@ -404,8 +404,9 @@ def updateNationality():
 
 def checkCompetitionImages():
     # Get all images from the Supabase bucket
-    images = supabase.storage.from_("logos").list("competitions")
+    images = supabase.storage.from_("logos").list("competitions", {"limit": 1000, "offset": 0})
     image_names = [image["name"].split(".")[0] for image in images]
+    print(images)
 
     # Get all competitions from the competition table
     limit = 1000
@@ -434,7 +435,21 @@ def checkCompetitionImages():
     for image_name in missing_name_keys:
         print(image_name)
 
-# Example usage
-checkCompetitionImages()
+#checkCompetitionImages()
+
+def addCompetitionsImageUrl():
+    base_url = "https://qesnrciwmhxfhdaojwwo.supabase.co/storage/v1/object/public/logos/competitions/"
+    folder_path = "images/competitions"
+    for filename in os.listdir(folder_path):
+        name_key = filename.split(".")[0]
+        person = supabase.table("competition").select("*").eq("name_key", name_key).execute().data
+        if len(person) == 0:
+            print(f"Competition {filename} not found!!!!")
+        elif not person[0].get("image_url"):
+            image_url = base_url + filename
+            supabase.table("competition").update({"image_url": image_url}).eq("name_key", name_key).execute()
+            print(f"Updated competition {name_key} with image_url {image_url}")
+
+addCompetitionsImageUrl()
 
 supabase.auth.sign_out()

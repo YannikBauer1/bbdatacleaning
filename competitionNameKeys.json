@@ -3,6 +3,10 @@
         "1_bro_bikini_pro_show",
         "1_bro_pro_show"
     ],
+    "ace_of_stage_pro": [
+        "ace_of_stage_pro",
+        "ace_of_stage_pro_show"
+    ],
     "adela_garcia_classic": [
         "adela_garcia",
         "adela_garcia_classic",
@@ -38,15 +42,23 @@
         "all_south_pro_championships",
         "all_south_pro_championships_pro_show"
     ],
+    "argentina_pro": [
+        "argentina_pro",
+        "argentina_pro_show"
+    ],
     "argentina_sur_cup": [
         "argentina_sur_cup",
         "argentina_sur_pro_cup",
-        "argentina_sur_pro_show"
+        "argentina_sur_pro_show",
+        "sur_pro_cup",
+        "sur_pro_cup_argentina"
     ],
     "arizona_pro": [
         "arizona_pro",
+        "rising_phoenix",
         "rising_phoenix_arizona_pro",
-        "rising_phoenix_arizona_pro_show"
+        "rising_phoenix_arizona_pro_show",
+        "rising_phoenixarizona_pro"
     ],
     "arnold_classic": [
         "arnold_classic"
@@ -61,6 +73,7 @@
     ],
     "atlanta_pro": [
         "atlanta_pro",
+        "lenda_murray_atl_pro_supershow",
         "lenda_murray_atlanta_pro",
         "lenda_murray_atlanta_pro_supershow",
         "lenda_murray_atlanta_pro_supershow_pro"
@@ -82,7 +95,8 @@
     "battle_of_the_bay": [
         "battle_of_the_bay",
         "battle_of_the_bay_pro",
-        "battle_of_the_bay_pro_show"
+        "battle_of_the_bay_pro_show",
+        "battle_on_the_bay_pro"
     ],
     "ben_weider_naturals": [
         "ben_weider_naturals",
@@ -92,7 +106,8 @@
     "bigman_weekend_spain": [
         "bigman_weekend_spain",
         "bigman_weekend_spain_pro",
-        "bigman_weekend_spain_pro_show"
+        "bigman_weekend_spain_pro_show",
+        "spain_pro"
     ],
     "body_be_1_classic": [
         "body_be_1_classic",
@@ -101,9 +116,11 @@
     ],
     "bogota_classic": [
         "bogota_classic",
-        "colombia_pro"
+        "colombia_pro",
+        "gomeisa_ultimate_battle_pro_medellin_supershow"
     ],
     "border_states_xlv_pro": [
+        "border_states_pro",
         "border_states_xlv",
         "border_states_xlv_pro",
         "border_states_xlv_pro_show"
@@ -111,7 +128,14 @@
     "british_championships": [
         "british_championships",
         "british_championships_pro",
-        "british_championships_pro_show"
+        "british_championships_pro_show",
+        "british_grand_prix",
+        "british_grand_prix_pro",
+        "british_grand_prix_pro_show"
+    ],
+    "bulgaria_pro": [
+        "bulgaria_pro",
+        "bulgaria_pro_show"
     ],
     "california_state_pro": [
         "california_state",
@@ -173,21 +197,34 @@
         "detroit_pro",
         "detroit_pro_am"
     ],
+    "dominican_republic_pro": [
+        "dominican_republic_pro",
+        "dominican_republic_pro_show"
+    ],
     "dubai_pro": [
         "dubai_pro",
         "dubai_pro_show"
+    ],
+    "east_coast_pro": [
+        "east_coast_pro",
+        "east_coast_pro_show"
     ],
     "eurasia_championships": [
         "eurasia_championships",
         "eurasia_championships_pro_show"
     ],
     "euro_muscle_show": [
+        "euro_muscle_pro_show",
         "euro_muscle_show",
         "euro_muscle_show_pro_am"
     ],
     "europa_pro": [
         "europa_pro",
         "europa_pro_show"
+    ],
+    "european_pro_championships": [
+        "european_pro_championships",
+        "european_pro_championships_pro_show"
     ],
     "everest_muscle_classic": [
         "everest_muscle_classic",
@@ -224,12 +261,17 @@
         "fibo_pro_show"
     ],
     "fitparade_pro": [
+        "fashion_street_fitparade_hungary_pro",
         "fitparade_pro",
         "fitparade_pro_show"
     ],
     "florida_pro": [
         "florida_pro",
         "florida_pro_show"
+    ],
+    "florida_state_pro": [
+        "florida_state_pro",
+        "florida_state_pro_show"
     ],
     "german_classic": [
         "german_classic_pro",
@@ -246,8 +288,8 @@
     "hong_kong_pro": [
         "global_classic_hong_kong_pro",
         "global_classic_hong_kong_pro_show",
-        "hong_kong_pro_show",
-        "hong_kong_pro"
+        "hong_kong_pro",
+        "hong_kong_pro_show"
     ],
     "houston_pro": [
         "houston_pro",
@@ -331,13 +373,22 @@
         "koloseum_italy_pro",
         "koloseum_pro"
     ],
+    "korea_pro": [
+        "korea_pro",
+        "korea_pro_show"
+    ],
     "legion_sports_fest": [
         "legion_sports_fest",
         "legion_sports_fest_pro"
     ],
     "los_angeles_grand_prix": [
         "los_angeles_grand_prix",
+        "los_angeles_pro_championships",
         "los_angles_grand_prix"
+    ],
+    "mexico_pro": [
+        "mexico_pro",
+        "mexico_pro_show"
     ],
     "miami_pro": [
         "miami_muscle_beach_pro",
@@ -359,10 +410,12 @@
         "world_of_monsterzym_pro"
     ],
     "moscow_showdown": [
+        "moscow_pro_am_showdown",
         "moscow_showdown",
         "moscow_showdown_pro",
         "moscow_showdown_pro_am",
-        "moscow_showdown_pro_am_show"
+        "moscow_showdown_pro_am_show",
+        "russia_pro"
     ],
     "mr_big_evolution_pro": [
         "mr_big_evolution_portugal_pro",
@@ -375,7 +428,8 @@
         "mr_ms_lions_classic_mexico_pro_show"
     ],
     "mr_olympia": [
-        "mr_olympia"
+        "mr_olympia",
+        "olympia"
     ],
     "musclecontest_austria": [
         "musclecontest_austria",
@@ -392,6 +446,7 @@
         "musclecontest_brasilia_pro_show"
     ],
     "musclecontest_brazil": [
+        "mci_brazil_pro",
         "musclecontest_brazil",
         "musclecontest_brazil_pro",
         "musclecontest_brazil_pro_show"
@@ -408,7 +463,8 @@
     "musclecontest_fit_pira": [
         "musclecontest_fit_pira",
         "musclecontest_fit_pira_pro",
-        "musclecontest_fit_pira_pro_show"
+        "musclecontest_fit_pira_pro_show",
+        "musclecontest_fitpira_pro"
     ],
     "musclecontest_fitworld": [
         "fitworld",
@@ -417,6 +473,7 @@
         "musclecontest_fitworld_pro_show"
     ],
     "musclecontest_fortaleza": [
+        "musclecontest_experience_pro",
         "musclecontest_fortaleza",
         "musclecontest_fortaleza_pro_show"
     ],
@@ -434,9 +491,10 @@
         "musclecontest_japan_pro"
     ],
     "musclecontest_juiz_de_fora": [
-        "musclecontest_juiz_de_fora",
         "luciano_cruz_juiz_de_fora_pro",
-        "luciano_cruz_juiz_de_fora_pro_show"
+        "luciano_cruz_juiz_de_fora_pro_show",
+        "musclecontest_juiz_de_fora",
+        "musclecontest_luciano_cruz_juiz_de_fora_pro"
     ],
     "musclecontest_muscleworld": [
         "musclecontest_muscleworld",
@@ -454,10 +512,12 @@
     ],
     "musclecontest_philippines": [
         "musclecontest_philippines",
+        "musclecontest_philippines_pro",
         "musclecontest_philippines_pro_show"
     ],
     "musclecontest_rio": [
         "musclecontest_rio",
+        "musclecontest_rio_pro",
         "musclecontest_rio_pro_show"
     ],
     "musclecontest_sao_paulo": [
@@ -466,6 +526,7 @@
     ],
     "musclecontest_vietnam": [
         "musclecontest_vietnam",
+        "musclecontest_vietnam_pro",
         "musclecontest_vietnam_pro_show"
     ],
     "nashville_fit_show": [
@@ -521,7 +582,8 @@
     ],
     "pacific_usa_xxx_pro": [
         "pacific_usa_xxx_pro",
-        "pacific_usa_xxx_pro_show"
+        "pacific_usa_xxx_pro_show",
+        "pacific_usa_xxxi"
     ],
     "patriots_challenge_pro": [
         "patriots_challenge_pro",
@@ -533,9 +595,11 @@
         "pennsylvania_muscle_pro_show"
     ],
     "pharlabs_mexico_grand_battle": [
+        "mexico_grand_battle_pro_am",
         "pharlabs_mexico_grand_battle",
         "pharlabs_mexico_grand_battle_pro_am",
-        "pharlabs_mexico_grand_battle_pro_am_show"
+        "pharlabs_mexico_grand_battle_pro_am_show",
+        "pharlabs_mexico_pro_am"
     ],
     "phoenix_pro": [
         "phoenix_pro",
@@ -555,11 +619,13 @@
     ],
     "rgv_classic": [
         "rgv_classic",
-        "rgv_classic_pro_show"
+        "rgv_classic_pro_show",
+        "rgv_pro"
     ],
     "romania_muscle_fest": [
         "romania_muscle_fest",
         "romania_muscle_fest_pro",
+        "romania_muscle_fest_pro_am",
         "romania_muscle_fest_pro_show",
         "romania_pro"
     ],
@@ -580,16 +646,22 @@
         "san_diego_championships_pro",
         "san_diego_championships_pro_show"
     ],
+    "santo_cruz_pro": [
+        "santo_cruz_pro",
+        "santo_cruz_pro_show"
+    ],
     "sasquatch_pro": [
         "sasquatch_pro",
         "sasquatch_pro_am"
     ],
     "shawn_rays_hawaiian_classic": [
         "shawn_rays_hawaiian_classic",
+        "shawn_rays_hawaiian_classic_pro",
         "shawn_rays_hawaiian_classic_pro_am",
         "shawn_rays_hawaiian_classic_pro_am_show"
     ],
     "sheru_classic_india": [
+        "sheru_classic_bharat_pro_show",
         "sheru_classic_india",
         "sheru_classic_india_pro",
         "sheru_classic_india_pro_show"
@@ -601,6 +673,7 @@
     ],
     "sin_city_showdown": [
         "sin_city_showdown",
+        "sin_city_showdown_pro",
         "sin_city_showdown_pro_show"
     ],
     "south_florida_pro": [
@@ -621,6 +694,7 @@
         "spain_california_supplements_pro_show"
     ],
     "spain_empro_classic": [
+        "empro_classic",
         "empro_classic_spain_pro",
         "spain_empro_classic",
         "spain_empro_classic_pro_show"
@@ -637,6 +711,11 @@
     "st_pete_pro": [
         "st_pete_pro",
         "st_pete_pro_show"
+    ],
+    "steve_karr_las_vegas_classic": [
+        "steve_karr_las_vegas_classic",
+        "steve_karr_las_vegas_classic_pro",
+        "steve_karr_las_vegas_classic_pro_show"
     ],
     "tahoe_show": [
         "tahoe_show",
@@ -665,7 +744,8 @@
     ],
     "texas_state_pro": [
         "texas_state_pro",
-        "texas_state_pro_show"
+        "texas_state_pro_show",
+        "texas_state_proopen"
     ],
     "thailand_pro": [
         "thailand_pro",
@@ -686,6 +766,10 @@
         "toronto_pro_supershow",
         "toronto_pro_supershow_pro"
     ],
+    "tournament_of_champions_pro": [
+        "tournament_of_champions_pro",
+        "tournament_of_champions_pro_show"
+    ],
     "tri_city_classic": [
         "tri_city_classic",
         "tri_city_classic_pro_am"
@@ -700,11 +784,16 @@
     ],
     "tupelo_pro": [
         "tupelo_pro",
-        "tupelo_pro_show"
+        "tupelo_pro_show",
+        "tupelo_proopen"
     ],
     "turkiye_pro": [
         "turkiye_pro",
         "turkiye_pro_show"
+    ],
+    "uk_pro": [
+        "uk_pro",
+        "uk_pro_show"
     ],
     "utah_cup": [
         "utah_cup",
@@ -716,6 +805,7 @@
         "vancouver_island_showdown_pro"
     ],
     "vancouver_pro": [
+        "van_pro_am",
         "vancouver_pro",
         "vancouver_pro_show"
     ],
@@ -743,6 +833,7 @@
         "xtreme_bodybuilding_pro_show"
     ],
     "zhanna_rotar_pro": [
+        "zhanna_rotar_classic_pro",
         "zhanna_rotar_pro",
         "zhanna_rotar_pro_show"
     ]
