@@ -145,6 +145,22 @@ cleaned_df.loc[mask, 'Competition'] = 'Battle Of Bogota Pro'
 mask = (cleaned_df['Competition'].str.contains('Battle Of Champions', case=False, na=False)) & (cleaned_df['Date'].str.contains('August 29, 2021', case=False, na=False))
 cleaned_df.loc[mask, 'Competition'] = 'Battle Of Champions Pro'
 
+# Fix incorrect competition "Flex Pro (Santa Monica)"
+mask = (cleaned_df['Competition'].str.contains('Flex Pro', case=False, na=False)) & (cleaned_df['Date'].str.contains('February 18, 2012', case=False, na=False))
+cleaned_df.loc[mask, 'Competition'] = 'Flex Pro (Santa Monica)'
+
+# Fix incorrect competition "Flex Pro (Santa Monica)"
+mask = (cleaned_df['Competition'].str.contains('Flex Pro', case=False, na=False)) & (cleaned_df['Date'].str.contains('February 19, 2011', case=False, na=False))
+cleaned_df.loc[mask, 'Competition'] = 'Flex Pro (Santa Monica)'
+
+# Fix incorrect competition "Florida Pro"
+mask = (cleaned_df['Competition'].str.contains('Florida Pro', case=False, na=False)) & (cleaned_df['Date'].str.contains('December 10, 2011', case=False, na=False))
+cleaned_df.loc[mask, 'Competition'] = 'Florida Pro World'
+
+# Fix incorrect competition "Grand Prix Hungary"
+mask = (cleaned_df['Competition'].str.contains('Grand Prix Hungary', case=False, na=False)) & (cleaned_df['Date'].str.contains('2019-01-01', case=False, na=False))
+cleaned_df.loc[mask, 'Competition'] = 'Fitparade Ifbb Pro Grand Prix Hungary'
+
 
 
 

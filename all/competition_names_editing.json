@@ -256,6 +256,13 @@
   "Huanji China Pro 2": [
     "Huanji China Pro 2"
   ],
+  "Global Classic Hong Kong Pro Show": [
+    "Global Classic Hong Kong Pro Show",
+    "Hong Kong Sar Pro"
+  ],
+  "Goldentimes Ifbb Asian Pro": [
+    "Goldentimes Ifbb Asian Pro"
+  ],
   "City Limits Pro": [
     "City Limits Pro"
   ],
@@ -402,9 +409,6 @@
   "Fitmuscle Pro": [
     "Fitmuscle Pro"
   ],
-  "Fitness Authority Pro": [
-    "Fitness Authority Pro"
-  ],
   "Fitparade Ifbb Pro Grand Prix Hungary": [
     "Fitparade Ifbb Pro Grand Prix Hungary",
     "Fitparade Classic International Open Championship",
@@ -413,13 +417,11 @@
     "Fitparade Pro",
     "Hungary Pro"
   ],
-  "Flex Pro": [
-    "Flex Pro",
+  "Flex Pro (Santa Monica)": [
     "Flex Pro (Santa Monica)"
   ],
   "Florida Pro": [
-    "Florida Pro",
-    "Florida Pro World"
+    "Florida Pro"
   ],
   "Florida Pro Invitational": [
     "Florida Pro Invitational"
@@ -432,29 +434,13 @@
     "Fort Lauderdale Cup Pro",
     "Fort Lauderdale Cup"
   ],
-  "French Championships": [
-    "French Championships"
-  ],
-  "Galaxy Pro": [
-    "Galaxy Pro"
-  ],
-  "German Championships": [
-    "German Championships"
-  ],
   "German Classic Pro": [
     "German Classic Pro",
     "German Classic Pro Show"
   ],
-  "Global Classic Hong Kong Pro Show": [
-    "Global Classic Hong Kong Pro Show",
-    "Hong Kong Sar Pro"
-  ],
   "Golden State Pro": [
     "Golden State Pro",
     "Golden State Pro Championships"
-  ],
-  "Goldentimes Ifbb Asian Pro": [
-    "Goldentimes Ifbb Asian Pro"
   ],
   "Governors Cup": [
     "Governors Cup",
@@ -463,9 +449,6 @@
     "Governor'S Cup Pro Figure Championships",
     "California Governor'S Cup Pro",
     "Fbb Governor'S Cup Pro"
-  ],
-  "Grand Prix": [
-    "Grand Prix"
   ],
   "Grand Prix Austria": [
     "Grand Prix Austria"
@@ -512,9 +495,6 @@
   "Grand Prix Hungary": [
     "Grand Prix Hungary"
   ],
-  "Grand Prix Italy": [
-    "Grand Prix Italy"
-  ],
   "Grand Prix Las Vegas": [
     "Grand Prix Las Vegas"
   ],
@@ -526,9 +506,6 @@
   ],
   "Grand Prix Melbourne": [
     "Grand Prix Melbourne"
-  ],
-  "Grand Prix Miami": [
-    "Grand Prix Miami"
   ],
   "Grand Prix Montreal": [
     "Grand Prix Montreal"
@@ -606,9 +583,6 @@
     "Hungary Kokeny Pro",
     "Kokeny Classic Hungary Pro"
   ],
-  "I Dont Know": [
-    "I Dont Know"
-  ],
   "Indy Pro": [
     "Indy Pro",
     "Indy Pro Supershow"
@@ -644,12 +618,26 @@
     "Iron Rebel Showdown Pro"
   ],
   "Italy Flex Weekend Pro": [
-    "Italy Flex Weekend Pro"
+    "Italy Flex Weekend Pro",
+    "Flex Pro"
   ],
   "Italy Koloseum Pro": [
     "Italy Koloseum Pro",
     "Koloseum Pro",
     "Italian Olympus Pro"
+  ],
+  "Grand Prix Italy": [
+    "Grand Prix Italy"
+  ],
+  "Promuscle Italy Pro": [
+    "Promuscle Italy Pro",
+    "Muscle Pro"
+  ],
+  "Galaxy Pro": [
+    "Galaxy Pro"
+  ],
+  "San Marino Pro": [
+    "San Marino Pro"
   ],
   "Jacksonville Pro": [
     "Jacksonville Pro"
@@ -660,6 +648,17 @@
   "Japan Pro": [
     "Japan Pro"
   ],
+  "Musclecontest Japan Pro": [
+    "Musclecontest Japan Pro"
+  ],
+  "Mr Japan": [
+    "Mr Japan"
+  ],
+  "Tokyo Pro": [
+    "Tokyo Pro",
+    "Tokyo Pro Supershow",
+    "Tokyo Supershow Pro"
+  ],
   "Jicheng Classic Sanya Pro": [
     "Jicheng Classic Sanya Pro"
   ],
@@ -667,10 +666,6 @@
     "John Simmons Detroit",
     "John Simmons Detroit Pro",
     "Detroit Pro Championships"
-  ],
-  "Jon Lindsay'S La Grand Prix Pro": [
-    "Jon Lindsay'S Titans Grand Prix",
-    "Jon Lindsay'S Titans Grand Prix Pro"
   ],
   "Kai Greene Classic": [
     "Kai Greene Classic",
@@ -718,7 +713,8 @@
   "Legends Classic Pro": [
     "Legends Classic Pro",
     "Legends Classic",
-    "Legends Pro"
+    "Legends Pro",
+    "Musclecontest International"
   ],
   "Legions Sports Fest": [
     "Legions Sports Fest",
@@ -753,7 +749,8 @@
     "Pro Grand Prix (Los Angeles)",
     "Gran Prix Los Angeles",
     "Jon Lindsay'S La Grand Prix Pro",
-    "Los Angeles Grand Prix Pro"
+    "Los Angeles Grand Prix Pro",
+    "Grand Prix"
   ],
   "Los Angeles Pro": [
     "Los Angeles Pro",
@@ -773,9 +770,6 @@
   ],
   "Men'S Europe Pro Show": [
     "Men'S Europe Pro Show"
-  ],
-  "Mexican Championships": [
-    "Mexican Championships"
   ],
   "Mexico Grand Battle Pro": [
     "Mexico Grand Battle Pro",
@@ -799,6 +793,12 @@
   ],
   "Miami Pro": [
     "Miami Pro"
+  ],
+  "Grand Prix Miami": [
+    "Grand Prix Miami"
+  ],
+  "Florida Pro World": [
+    "Florida Pro World"
   ],
   "Mid Usa Pro": [
     "Mid Usa Pro",
@@ -864,9 +864,6 @@
   ],
   "Mr International": [
     "Mr International"
-  ],
-  "Mr Japan": [
-    "Mr Japan"
   ],
   "Mr New Jersey": [
     "Mr New Jersey"
@@ -968,9 +965,6 @@
   ],
   "Musclecontest Ironberg Abc Pro": [
     "Musclecontest Ironberg Abc Pro"
-  ],
-  "Musclecontest Japan Pro": [
-    "Musclecontest Japan Pro"
   ],
   "Musclecontest Mercosul Pro": [
     "Musclecontest Mercosul Pro"
@@ -1168,6 +1162,9 @@
     "Everest Muscle Fest Poland Pro",
     "Everest Muscle Fest"
   ],
+  "Fitness Authority Pro": [
+    "Fitness Authority Pro"
+  ],
   "Port Charlotte Florida Pro": [
     "Port Charlotte Florida Pro"
   ],
@@ -1189,10 +1186,6 @@
   ],
   "Professional World Cup": [
     "Professional World Cup"
-  ],
-  "Promuscle Italy Pro": [
-    "Promuscle Italy Pro",
-    "Muscle Pro"
   ],
   "Puerto Rico Pro": [
     "Puerto Rico Pro",
@@ -1253,9 +1246,6 @@
     "San Jose Pro Invitational",
     "San Jose Pro",
     "San Jose Championships"
-  ],
-  "San Marino Pro": [
-    "San Marino Pro"
   ],
   "Santa Susanna Pro": [
     "Santa Susanna Pro"
@@ -1427,12 +1417,9 @@
   "Titans Grand Prix": [
     "Titans Grand Prix",
     "Titan'S Grand Prix",
-    "Titans Grand Prix Pro"
-  ],
-  "Tokyo Pro": [
-    "Tokyo Pro",
-    "Tokyo Pro Supershow",
-    "Tokyo Supershow Pro"
+    "Titans Grand Prix Pro",
+    "Jon Lindsay'S Titans Grand Prix",
+    "Jon Lindsay'S Titans Grand Prix Pro"
   ],
   "Toronto Pro Supershow": [
     "Toronto Pro Supershow",
