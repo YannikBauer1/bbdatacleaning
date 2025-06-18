@@ -22,6 +22,13 @@ cleaned_df['Competition'] = cleaned_df['Competition'].str.title()
 # Fix incorrect year 2103 to 2013
 cleaned_df['Date'] = cleaned_df['Date'].str.replace('November 16, 2103', 'November 16, 2013')
 
+# Fix incorrect date for Mr Olympia 2021
+mask = (cleaned_df['Competition'].str.contains('Mr Olympia', case=False, na=False)) & (cleaned_df['Date'].str.contains('December 30, 2021', case=False, na=False))
+cleaned_df.loc[mask, 'Date'] = 'October 9, 2021'
+
+# Set date for Wings Of Strength Chicago Pro without dates to July 1, 2016
+mask = (cleaned_df['Competition'].str.contains('Wings of Strength Chicago Pro', case=False, na=False)) & (cleaned_df['Date'].isna() | (cleaned_df['Date'] == ''))
+cleaned_df.loc[mask, 'Date'] = 'July 1, 2016'
 
 def parse_date_range(date_str):
     """
@@ -97,9 +104,6 @@ cleaned_df.loc[(cleaned_df['Year'].isna()) | (cleaned_df['Year'] == ''), 'Year']
 
 
 # Fix specific date issues
-# Set date for Wings Of Strength Chicago Pro without dates to July 1, 2016
-mask = (cleaned_df['Competition'].str.contains('Wings of Strength Chicago Pro', case=False, na=False)) & (cleaned_df['Date'].isna() | (cleaned_df['Date'] == ''))
-cleaned_df.loc[mask, 'Date'] = 'July 1, 2016'
 
 mask = (cleaned_df['Competition'].str.contains('Rising Phoenix Pro', case=False, na=False)) & (cleaned_df['Date'].str.contains('August 24, 2024', case=False, na=False))
 #mask = (cleaned_df['Competition'] == 'Rising Phoenix Pro') & (cleaned_df['Date'] == 'August 24, 2024')
@@ -161,6 +165,45 @@ cleaned_df.loc[mask, 'Competition'] = 'Florida Pro World'
 mask = (cleaned_df['Competition'].str.contains('Grand Prix Hungary', case=False, na=False)) & (cleaned_df['Date'].str.contains('2019-01-01', case=False, na=False))
 cleaned_df.loc[mask, 'Competition'] = 'Fitparade Ifbb Pro Grand Prix Hungary'
 
+# Fix incorrect competition "Musclecontest Brazil"
+mask = (cleaned_df['Competition'].str.contains('Musclecontest Brazil', case=False, na=False)) & (cleaned_df['Date'].str.contains('Nov 25, 2023', case=False, na=False))
+cleaned_df.loc[mask, 'Competition'] = 'Musclecontest Brazil Masters'
+
+# Fix incorrect competition "Musclecontest Brazil"
+mask = (cleaned_df['Competition'].str.contains('New York Pro', case=False, na=False)) & (cleaned_df['Division'].str.contains('FITNESS', case=False, na=False))
+cleaned_df.loc[mask, 'Competition'] = 'New York Pro Fitness'
+
+# Fix incorrect competition "Pittsburgh"
+mask = (cleaned_df['Competition'].str.contains('Pittsburgh', case=False, na=False)) & (cleaned_df['Division'].str.contains('\\+', case=False, na=False))
+cleaned_df.loc[mask, 'Competition'] = 'Pittsburgh Masters Pro'
+
+# Fix incorrect competition "Sheru Classic"
+mask = (cleaned_df['Competition'].str.contains('Sheru Classic India Pro', case=False, na=False)) & (cleaned_df['Date'].str.contains('November 17-19, 2023', case=False, na=False))
+cleaned_df.loc[mask, 'Competition'] = 'Sheru Classic Mumbai Pro'
+
+# Fix incorrect competition "St. Louis Pro"
+mask = (cleaned_df['Competition'].str.contains('St. Louis Pro', case=False, na=False)) & (cleaned_df['Date'].str.contains('September 15, 2012', case=False, na=False))
+cleaned_df.loc[mask, 'Competition'] = 'St. Louis Pro Bikini'
+
+# Fix incorrect competition "St. Louis Pro"
+mask = (cleaned_df['Competition'].str.contains('St. Louis Pro', case=False, na=False)) & (cleaned_df['Date'].str.contains('August 24, 2013', case=False, na=False))
+cleaned_df.loc[mask, 'Competition'] = 'St. Louis Pro Bikini'
+
+# Fix incorrect competition "St. Louis Pro"
+mask = (cleaned_df['Competition'].str.contains('St. Louis Pro', case=False, na=False)) & (cleaned_df['Date'].str.contains('August 23, 2014', case=False, na=False))
+cleaned_df.loc[mask, 'Competition'] = 'St. Louis Pro Bikini'
+
+# Fix incorrect division "Tahoe Show"
+mask = (cleaned_df['Competition'].str.contains('Tahoe Show', case=False, na=False)) & (cleaned_df['Date'].str.contains('August 24, 2013', case=False, na=False))
+cleaned_df.loc[mask, 'Division'] = 'Figure'
+
+# Fix incorrect competition "Taiwan Pro"
+mask = (cleaned_df['Competition'].str.contains('Taiwan Pro', case=False, na=False)) & (cleaned_df['Date'].str.contains('April 4, 2024', case=False, na=False))
+cleaned_df.loc[mask, 'Competition'] = 'Taiwan Pro Bikini'
+
+# Fix incorrect competition "Taiwan Pro"
+mask = (cleaned_df['Competition'].str.contains('Tw Pro', case=False, na=False)) & (cleaned_df['Date'].str.contains('2024-04-04', case=False, na=False))
+cleaned_df.loc[mask, 'Competition'] = 'Taiwan Pro Bikini'
 
 
 

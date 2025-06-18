@@ -82,7 +82,8 @@
   "Arnold Classic": [
     "Arnold Classic",
     "Arnold Classic Pro",
-    "Arnold Sports Festival"
+    "Arnold Sports Festival",
+    "Ms International"
   ],
   "Arnold Classic Asia": [
     "Arnold Classic Asia"
@@ -366,7 +367,10 @@
   "Europa Pro": [
     "Europa Pro",
     "European Pro",
-    "Europa Pro Championships"
+    "Europa Pro Championships",
+    "Men'S Europe Pro Show",
+    "Mr. Europe Pro",
+    "Mr. Europe Grand Prix"
   ],
   "Europa Super Show": [
     "Europa Super Show",
@@ -428,6 +432,15 @@
   ],
   "Florida Pro Xtreme Challenge": [
     "Florida Pro Xtreme Challenge"
+  ],
+  "Port Charlotte Florida Pro": [
+    "Port Charlotte Florida Pro"
+  ],
+  "Florida Pro World": [
+    "Florida Pro World"
+  ],
+  "South Florida Pro": [
+    "South Florida Pro"
   ],
   "Fort Lauderdale Pro": [
     "Fort Lauderdale Pro",
@@ -512,9 +525,6 @@
   ],
   "Grand Prix New England": [
     "Grand Prix New England"
-  ],
-  "Grand Prix New Zealand": [
-    "Grand Prix New Zealand"
   ],
   "Grand Prix Pennsylvania": [
     "Grand Prix Pennsylvania"
@@ -768,9 +778,6 @@
   "Memphis Pro": [
     "Memphis Pro"
   ],
-  "Men'S Europe Pro Show": [
-    "Men'S Europe Pro Show"
-  ],
   "Mexico Grand Battle Pro": [
     "Mexico Grand Battle Pro",
     "Pharlabs Mexico Grand Battle Pro Am"
@@ -796,9 +803,6 @@
   ],
   "Grand Prix Miami": [
     "Grand Prix Miami"
-  ],
-  "Florida Pro World": [
-    "Florida Pro World"
   ],
   "Mid Usa Pro": [
     "Mid Usa Pro",
@@ -869,9 +873,7 @@
     "Mr New Jersey"
   ],
   "Mr New York City": [
-    "Mr New York City"
-  ],
-  "Mr New York State": [
+    "Mr New York City",
     "Mr New York State"
   ],
   "Mr Northeastern States": [
@@ -896,18 +898,11 @@
     "Mr Big Evolution Pro",
     "Mr Big Evolution Portugal Pro"
   ],
-  "Mr. Europe Pro": [
-    "Mr. Europe Pro",
-    "Mr. Europe Grand Prix"
-  ],
   "Ms Eastern America": [
     "Ms Eastern America"
   ],
   "Ms Eastern Usa": [
     "Ms Eastern Usa"
-  ],
-  "Ms International": [
-    "Ms International"
   ],
   "Muscle Heat Pro": [
     "Muscle Heat Pro",
@@ -927,9 +922,11 @@
   ],
   "Musclecontest Brazil": [
     "Musclecontest Brazil",
-    "Musclecontest Brasilia Pro",
     "Muscle Contest Brazil Pro",
     "Musclecontest Brazil Pro"
+  ],
+  "Musclecontest Brasilia Pro": [
+    "Musclecontest Brasilia Pro"
   ],
   "Musclecontest Brazil 2": [
     "Musclecontest Brazil 2"
@@ -1034,15 +1031,17 @@
     "Nevada State Pro"
   ],
   "New York Pro": [
-    "New York Pro"
-  ],
-  "New York Pro Championships": [
+    "New York Pro",
     "New York Pro Championships"
+  ],
+  "New York Pro Fitness": [
+    "New York Pro Fitness"
   ],
   "New Zealand": [
     "New Zealand",
     "New Zealand Elite Pro",
-    "New Zealand Pro"
+    "New Zealand Pro",
+    "Grand Prix New Zealand"
   ],
   "Niagara Falls Pro": [
     "Niagara Falls Pro",
@@ -1054,9 +1053,6 @@
   "Nordic Pro": [
     "Nordic Pro",
     "Nordic Pro (Finland)"
-  ],
-  "North American Championships": [
-    "North American Championships"
   ],
   "North American Pro": [
     "North American Pro"
@@ -1165,9 +1161,6 @@
   "Fitness Authority Pro": [
     "Fitness Authority Pro"
   ],
-  "Port Charlotte Florida Pro": [
-    "Port Charlotte Florida Pro"
-  ],
   "Portland Classic": [
     "Portland Classic"
   ],
@@ -1180,9 +1173,6 @@
   "Prestige Crystal Cup": [
     "Prestige Crystal Cup",
     "Prestige Crystal Cup Pro"
-  ],
-  "Pro Extravaganza": [
-    "Pro Extravaganza"
   ],
   "Professional World Cup": [
     "Professional World Cup"
@@ -1215,6 +1205,11 @@
   "Salt Lake City Pro": [
     "Salt Lake City Pro",
     "Salt City Showdown"
+  ],
+  "Wasatch Warrior Pro": [
+    "Wasatch Warrior Pro",
+    "Wasatch Warrior",
+    "Wasatch Warrior Pro Figure"
   ],
   "Sampson Showdown Pro": [
     "Sampson Showdown Pro"
@@ -1267,30 +1262,30 @@
   "Sheru Classic Asian Grand Prix": [
     "Sheru Classic Asian Grand Prix",
     "Sheru Classic Asian Grand Prix Pro",
+    "Sheru Classic India"
+  ],
+  "Sheru Classic India": [
+    "Sheru Classic India Pro",
+    "Sheru Classic Bharat Pro"
+  ],
+  "Sheru Classic Mumbai Pro": [
+    "Sheru Classic Mumbai Pro",
+    "Sheru Classic Mumbai Pro Show",
+    "Sheru Classic Pro Show Mumbai Pro",
+    "Fessional League Sheru Classic Pro Show Mumbai Pro",
+    "Bharat Pro Show",
+    "Sheru Classic Pro",
     "Sheru Classic",
     "Sheru Asian Classic Pro"
   ],
   "Sheru Classic France Pro": [
     "Sheru Classic France Pro"
   ],
-  "Sheru Classic India": [
-    "Sheru Classic India",
-    "Sheru Classic India Pro",
-    "Sheru Classic Pro Show Mumbai Pro",
-    "Fessional League Sheru Classic Pro Show Mumbai Pro",
-    "Sheru Classic Pro",
-    "Sheru Classic Bharat Pro"
-  ],
   "Sheru Classic Italian Pro": [
     "Sheru Classic Italian Pro"
   ],
   "Sheru Classic Latin America Colombia Pro": [
     "Sheru Classic Latin America Colombia Pro"
-  ],
-  "Sheru Classic Mumbai Pro": [
-    "Sheru Classic Mumbai Pro",
-    "Sheru Classic Mumbai Pro Show",
-    "Bharat Pro Show"
   ],
   "Sheru Classic Uk Pro": [
     "Sheru Classic Uk Pro",
@@ -1311,12 +1306,6 @@
   "South Carolina Grand Prix Pro": [
     "South Carolina Grand Prix Pro",
     "South Carolina Pro"
-  ],
-  "South East Asian Games": [
-    "South East Asian Games"
-  ],
-  "South Florida Pro": [
-    "South Florida Pro"
   ],
   "Southern California Pro": [
     "Southern California Pro",
@@ -1344,6 +1333,9 @@
     "St. Louis Pro",
     "St Louis Pro"
   ],
+  "St. Louis Pro Bikini": [
+    "St. Louis Pro Bikini"
+  ],
   "Stockholm Pro": [
     "Stockholm Pro"
   ],
@@ -1363,11 +1355,12 @@
   ],
   "Taiwan Pro": [
     "Taiwan Pro",
-    "Tw Pro"
-  ],
-  "Taiwan Pro 2": [
+    "Tw Pro",
     "Taiwan Pro 2",
     "Taiwan Pro Finale"
+  ],
+  "Taiwan Pro Bikini": [
+    "Taiwan Pro Bikini"
   ],
   "Tampa Hurricane Pro": [
     "Tampa Hurricane Pro",
@@ -1375,6 +1368,22 @@
     "Wos Hot Spot Tanning Hurricane Pro",
     "Wos Hot Spot Tanning Hurricane",
     "Hot Spot Tanning Hurricane Pro"
+  ],
+  "Wings Of Strength Pbw Tampa Pro": [
+    "Wings Of Strength Pbw Tampa Pro",
+    "Wings Of Strength Pbw Tampa",
+    "Wos 2018 Ifbb Muscle Vodka Tampa Pro",
+    "Wos Ifbb Pro League Yamamoto Nutrition Cup Tampa Pro",
+    "Wos Ifbb League Yamamoto Nutrition Cup Tampa Pro",
+    "Wos Yamamoto Nutrition Cup Tampa Pro",
+    "Pbw Tampa Pro",
+    "Tampa Pro",
+    "Tampa Pro Championships",
+    "Titan Medical Tampa Pro",
+    "Titan Medical Tampa",
+    "Tampa Pro Bodybuilding Weekly",
+    "Pro Bodybuilding Weekly",
+    "Bodybuilding Weekly"
   ],
   "Tanji Johnson Classic": [
     "Tanji Johnson Classic",
@@ -1503,11 +1512,6 @@
   "Warrior Classic Pro": [
     "Warrior Classic Pro"
   ],
-  "Wasatch Warrior Pro": [
-    "Wasatch Warrior Pro",
-    "Wasatch Warrior",
-    "Wasatch Warrior Pro Figure"
-  ],
   "Warsaw Pro": [
     "Warsaw Pro"
   ],
@@ -1535,22 +1539,6 @@
     "Chicago Wings Of Strength Pro",
     "Chicago Pro",
     "Chicago Pro Championships"
-  ],
-  "Wings Of Strength Pbw Tampa Pro": [
-    "Wings Of Strength Pbw Tampa Pro",
-    "Wings Of Strength Pbw Tampa",
-    "Wos 2018 Ifbb Muscle Vodka Tampa Pro",
-    "Wos Ifbb Pro League Yamamoto Nutrition Cup Tampa Pro",
-    "Wos Ifbb League Yamamoto Nutrition Cup Tampa Pro",
-    "Wos Yamamoto Nutrition Cup Tampa Pro",
-    "Pbw Tampa Pro",
-    "Tampa Pro",
-    "Tampa Pro Championships",
-    "Titan Medical Tampa Pro",
-    "Titan Medical Tampa",
-    "Tampa Pro Bodybuilding Weekly",
-    "Pro Bodybuilding Weekly",
-    "Bodybuilding Weekly"
   ],
   "Wings Of Strength Rising Phoenix World Championships": [
     "Wings Of Strength Rising Phoenix World Championships",
@@ -1603,7 +1591,9 @@
     "Mexico Classic Physique Pro"
   ],
   "Yamamoto Cup Pro": [
-    "Yamamoto Cup Pro",
+    "Yamamoto Cup Pro"
+  ],
+  "Yamamoto France": [
     "Yamamoto France",
     "Yamamoto France Pro"
   ],

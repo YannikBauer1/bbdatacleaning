@@ -852,9 +852,28 @@
     "variations": [
       "Arnold Classic",
       "Arnold Classic Pro",
-      "Arnold Sports Festival"
+      "Arnold Sports Festival",
+      "Ms International"
     ],
     "appearances": [
+      {
+        "year": "1986",
+        "date": "1986-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female"
+        ]
+      },
+      {
+        "year": "1988",
+        "date": "1988-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female"
+        ]
+      },
       {
         "year": "1989",
         "date": "1989-01-01",
@@ -862,6 +881,15 @@
         "source": "musclememory",
         "divisions": [
           "Male"
+        ]
+      },
+      {
+        "year": "1989",
+        "date": "1989-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female"
         ]
       },
       {
@@ -874,12 +902,30 @@
         ]
       },
       {
+        "year": "1990",
+        "date": "1990-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female"
+        ]
+      },
+      {
         "year": "1991",
         "date": "1991-01-01",
         "location": "",
         "source": "musclememory",
         "divisions": [
           "Male"
+        ]
+      },
+      {
+        "year": "1991",
+        "date": "1991-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female"
         ]
       },
       {
@@ -892,12 +938,30 @@
         ]
       },
       {
+        "year": "1992",
+        "date": "1992-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female"
+        ]
+      },
+      {
         "year": "1993",
         "date": "1993-01-01",
         "location": "",
         "source": "musclememory",
         "divisions": [
           "Male"
+        ]
+      },
+      {
+        "year": "1993",
+        "date": "1993-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female"
         ]
       },
       {
@@ -910,12 +974,30 @@
         ]
       },
       {
+        "year": "1994",
+        "date": "1994-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female"
+        ]
+      },
+      {
         "year": "1995",
         "date": "1995-01-01",
         "location": "",
         "source": "musclememory",
         "divisions": [
           "Male"
+        ]
+      },
+      {
+        "year": "1995",
+        "date": "1995-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female"
         ]
       },
       {
@@ -928,12 +1010,30 @@
         ]
       },
       {
+        "year": "1996",
+        "date": "1996-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female"
+        ]
+      },
+      {
         "year": "1997",
         "date": "1997-01-01",
         "location": "",
         "source": "musclememory",
         "divisions": [
           "Male"
+        ]
+      },
+      {
+        "year": "1997",
+        "date": "1997-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female"
         ]
       },
       {
@@ -947,12 +1047,30 @@
         ]
       },
       {
+        "year": "1998",
+        "date": "1998-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female"
+        ]
+      },
+      {
         "year": "1999",
         "date": "1999-01-01",
         "location": "",
         "source": "musclememory",
         "divisions": [
           "Male"
+        ]
+      },
+      {
+        "year": "1999",
+        "date": "1999-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female"
         ]
       },
       {
@@ -965,12 +1083,32 @@
         ]
       },
       {
+        "year": "2000",
+        "date": "2000-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - HeavyWeight",
+          "Female - LightWeight"
+        ]
+      },
+      {
         "year": "2001",
         "date": "2001-01-01",
         "location": "",
         "source": "musclememory",
         "divisions": [
           "Male"
+        ]
+      },
+      {
+        "year": "2001",
+        "date": "2001-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - HeavyWeight",
+          "Female - LightWeight"
         ]
       },
       {
@@ -983,12 +1121,33 @@
         ]
       },
       {
+        "year": "2002",
+        "date": "2002-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - HeavyWeight",
+          "Female - LightWeight"
+        ]
+      },
+      {
         "year": "2003",
         "date": "2003-01-01",
         "location": "",
         "source": "musclememory",
         "divisions": [
           "Male"
+        ]
+      },
+      {
+        "year": "2003",
+        "date": "2003-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - Figure",
+          "Female - HeavyWeight",
+          "Female - LightWeight"
         ]
       },
       {
@@ -1001,12 +1160,34 @@
         ]
       },
       {
+        "year": "2004",
+        "date": "2004-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - Figure",
+          "Female - HeavyWeight",
+          "Female - LightWeight"
+        ]
+      },
+      {
         "year": "2005",
         "date": "2005-01-01",
         "location": "",
         "source": "musclememory",
         "divisions": [
           "Male"
+        ]
+      },
+      {
+        "year": "2005",
+        "date": "2005-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - Figure",
+          "Female - HeavyWeight",
+          "Female - LightWeight"
         ]
       },
       {
@@ -1019,12 +1200,32 @@
         ]
       },
       {
+        "year": "2006",
+        "date": "2006-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female",
+          "Female - Figure"
+        ]
+      },
+      {
         "year": "2007",
         "date": "2007-01-01",
         "location": "",
         "source": "musclememory",
         "divisions": [
           "Male"
+        ]
+      },
+      {
+        "year": "2007",
+        "date": "2007-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female",
+          "Female - Figure"
         ]
       },
       {
@@ -1057,6 +1258,16 @@
         ]
       },
       {
+        "year": "2008",
+        "date": "2008-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - Bodybuilding",
+          "Female - Figure"
+        ]
+      },
+      {
         "year": "2009",
         "date": "2009-01-01",
         "location": "",
@@ -1086,6 +1297,16 @@
         ]
       },
       {
+        "year": "2009",
+        "date": "2009-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - Bodybuilding",
+          "Female - Figure"
+        ]
+      },
+      {
         "year": "2010",
         "date": "2010-01-01",
         "location": "",
@@ -1112,6 +1333,16 @@
         "source": "scorecards",
         "divisions": [
           "Men's Bodybuilding"
+        ]
+      },
+      {
+        "year": "2010",
+        "date": "2010-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - Bodybuilding",
+          "Female - Figure"
         ]
       },
       {
@@ -1153,6 +1384,16 @@
         ]
       },
       {
+        "year": "2011",
+        "date": "2011-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - Bodybuilding",
+          "Female - Figure"
+        ]
+      },
+      {
         "year": "2012",
         "date": "2012-01-01",
         "location": "",
@@ -1183,6 +1424,16 @@
         ]
       },
       {
+        "year": "2012",
+        "date": "2012-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - Bodybuilding",
+          "Female - Figure"
+        ]
+      },
+      {
         "year": "2013",
         "date": "2013-01-01",
         "location": "",
@@ -1202,6 +1453,16 @@
           "Fitness",
           "Men's Bodybuilding",
           "Women's Bodybuilding"
+        ]
+      },
+      {
+        "year": "2013",
+        "date": "2013-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - Bodybuilding",
+          "Female - Figure"
         ]
       },
       {
@@ -1225,6 +1486,15 @@
           "Figure",
           "Fitness",
           "Men's Bodybuilding"
+        ]
+      },
+      {
+        "year": "2014",
+        "date": "2014-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - Figure"
         ]
       },
       {
@@ -1261,6 +1531,16 @@
         ]
       },
       {
+        "year": "2015",
+        "date": "2015-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - Figure",
+          "Female - Physique"
+        ]
+      },
+      {
         "year": "2016",
         "date": "2016-01-01",
         "location": "",
@@ -1294,6 +1574,16 @@
           "Men's Bodybuilding",
           "Men's Physique",
           "Wheelchair"
+        ]
+      },
+      {
+        "year": "2016",
+        "date": "2016-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - Figure",
+          "Female - Physique"
         ]
       },
       {
@@ -5550,7 +5840,10 @@
     "variations": [
       "Europa Pro",
       "European Pro",
-      "Europa Pro Championships"
+      "Europa Pro Championships",
+      "Men'S Europe Pro Show",
+      "Mr. Europe Pro",
+      "Mr. Europe Grand Prix"
     ],
     "appearances": [
       {
@@ -5563,12 +5856,30 @@
         ]
       },
       {
+        "year": "2010",
+        "date": "September 11, 2010",
+        "location": "Madrid, Spain",
+        "source": "scorecards",
+        "divisions": [
+          "Men's Bodybuilding"
+        ]
+      },
+      {
         "year": "2011",
         "date": "2011-01-01",
         "location": "",
         "source": "musclememory",
         "divisions": [
           "Male"
+        ]
+      },
+      {
+        "year": "2011",
+        "date": "March 26, 2011",
+        "location": "Madrid, Spain",
+        "source": "scorecards",
+        "divisions": [
+          "Men's Pro Bodybuilding"
         ]
       },
       {
@@ -5583,12 +5894,31 @@
         ]
       },
       {
+        "year": "2012",
+        "date": "April 28, 2012",
+        "location": "Madrid, Spain",
+        "source": "scorecards",
+        "divisions": [
+          "Men's Bodybuilding",
+          "Men's Open Bodybuilding"
+        ]
+      },
+      {
         "year": "2013",
         "date": "2013-01-01",
         "location": "",
         "source": "musclememory",
         "divisions": [
           "Male - Open"
+        ]
+      },
+      {
+        "year": "2013",
+        "date": "May 4, 2013",
+        "location": "Santa Susanna, Spain",
+        "source": "scorecards",
+        "divisions": [
+          "Men's Bodybuilding"
         ]
       },
       {
@@ -6889,6 +7219,66 @@
       }
     ]
   },
+  "Port Charlotte Florida Pro": {
+    "variations": [
+      "Port Charlotte Florida Pro"
+    ],
+    "appearances": [
+      {
+        "year": "2016",
+        "date": "2016-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Male - Classic"
+        ]
+      }
+    ]
+  },
+  "Florida Pro World": {
+    "variations": [
+      "Florida Pro World"
+    ],
+    "appearances": [
+      {
+        "year": "2011",
+        "date": "December 10, 2011",
+        "location": "Miami, Florida",
+        "source": "scorecards",
+        "divisions": [
+          "BIKINI",
+          "Men's Bodybuilding Masters"
+        ]
+      }
+    ]
+  },
+  "South Florida Pro": {
+    "variations": [
+      "South Florida Pro"
+    ],
+    "appearances": [
+      {
+        "year": "2024",
+        "date": "2024-06-22",
+        "location": "Boca Raton,FLUnited States",
+        "source": "2024",
+        "divisions": [
+          "Men's 212 Bodybuilding - Masters 35+",
+          "Men's 212 Bodybuilding - Masters 45+",
+          "Men's 212 Bodybuilding - Open"
+        ]
+      },
+      {
+        "year": "2024",
+        "date": "June 22, 2024",
+        "location": "",
+        "source": "npcnews",
+        "divisions": [
+          "212 - open"
+        ]
+      }
+    ]
+  },
   "Fort Lauderdale Pro": {
     "variations": [
       "Fort Lauderdale Pro",
@@ -8126,31 +8516,6 @@
       {
         "year": "1981",
         "date": "1981-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Male"
-        ]
-      }
-    ]
-  },
-  "Grand Prix New Zealand": {
-    "variations": [
-      "Grand Prix New Zealand"
-    ],
-    "appearances": [
-      {
-        "year": "2001",
-        "date": "2001-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Male"
-        ]
-      },
-      {
-        "year": "2008",
-        "date": "2008-01-01",
         "location": "",
         "source": "musclememory",
         "divisions": [
@@ -11917,22 +12282,6 @@
       }
     ]
   },
-  "Men'S Europe Pro Show": {
-    "variations": [
-      "Men'S Europe Pro Show"
-    ],
-    "appearances": [
-      {
-        "year": "2013",
-        "date": "May 4, 2013",
-        "location": "Santa Susanna, Spain",
-        "source": "scorecards",
-        "divisions": [
-          "Men's Bodybuilding"
-        ]
-      }
-    ]
-  },
   "Mexico Grand Battle Pro": {
     "variations": [
       "Mexico Grand Battle Pro",
@@ -12226,23 +12575,6 @@
         "source": "musclememory",
         "divisions": [
           "Male"
-        ]
-      }
-    ]
-  },
-  "Florida Pro World": {
-    "variations": [
-      "Florida Pro World"
-    ],
-    "appearances": [
-      {
-        "year": "2011",
-        "date": "December 10, 2011",
-        "location": "Miami, Florida",
-        "source": "scorecards",
-        "divisions": [
-          "BIKINI",
-          "Men's Bodybuilding Masters"
         ]
       }
     ]
@@ -13785,25 +14117,7 @@
   },
   "Mr New York City": {
     "variations": [
-      "Mr New York City"
-    ],
-    "appearances": [
-      {
-        "year": "1949",
-        "date": "1949-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Male - Junior Most Muscular",
-          "Male - Junior Most Symmetrical",
-          "Male - Most Muscular",
-          "Male - Most Symmetrical"
-        ]
-      }
-    ]
-  },
-  "Mr New York State": {
-    "variations": [
+      "Mr New York City",
       "Mr New York State"
     ],
     "appearances": [
@@ -13814,6 +14128,18 @@
         "source": "musclememory",
         "divisions": [
           "Male"
+        ]
+      },
+      {
+        "year": "1949",
+        "date": "1949-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Male - Junior Most Muscular",
+          "Male - Junior Most Symmetrical",
+          "Male - Most Muscular",
+          "Male - Most Symmetrical"
         ]
       },
       {
@@ -14306,42 +14632,6 @@
       }
     ]
   },
-  "Mr. Europe Pro": {
-    "variations": [
-      "Mr. Europe Pro",
-      "Mr. Europe Grand Prix"
-    ],
-    "appearances": [
-      {
-        "year": "2010",
-        "date": "September 11, 2010",
-        "location": "Madrid, Spain",
-        "source": "scorecards",
-        "divisions": [
-          "Men's Bodybuilding"
-        ]
-      },
-      {
-        "year": "2011",
-        "date": "March 26, 2011",
-        "location": "Madrid, Spain",
-        "source": "scorecards",
-        "divisions": [
-          "Men's Pro Bodybuilding"
-        ]
-      },
-      {
-        "year": "2012",
-        "date": "April 28, 2012",
-        "location": "Madrid, Spain",
-        "source": "scorecards",
-        "divisions": [
-          "Men's Bodybuilding",
-          "Men's Open Bodybuilding"
-        ]
-      }
-    ]
-  },
   "Ms Eastern America": {
     "variations": [
       "Ms Eastern America"
@@ -14370,302 +14660,6 @@
         "source": "musclememory",
         "divisions": [
           "Female"
-        ]
-      }
-    ]
-  },
-  "Ms International": {
-    "variations": [
-      "Ms International"
-    ],
-    "appearances": [
-      {
-        "year": "1986",
-        "date": "1986-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female"
-        ]
-      },
-      {
-        "year": "1988",
-        "date": "1988-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female"
-        ]
-      },
-      {
-        "year": "1989",
-        "date": "1989-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female"
-        ]
-      },
-      {
-        "year": "1990",
-        "date": "1990-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female"
-        ]
-      },
-      {
-        "year": "1991",
-        "date": "1991-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female"
-        ]
-      },
-      {
-        "year": "1992",
-        "date": "1992-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female"
-        ]
-      },
-      {
-        "year": "1993",
-        "date": "1993-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female"
-        ]
-      },
-      {
-        "year": "1994",
-        "date": "1994-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female"
-        ]
-      },
-      {
-        "year": "1995",
-        "date": "1995-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female"
-        ]
-      },
-      {
-        "year": "1996",
-        "date": "1996-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female"
-        ]
-      },
-      {
-        "year": "1997",
-        "date": "1997-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female"
-        ]
-      },
-      {
-        "year": "1998",
-        "date": "1998-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female"
-        ]
-      },
-      {
-        "year": "1999",
-        "date": "1999-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female"
-        ]
-      },
-      {
-        "year": "2000",
-        "date": "2000-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - HeavyWeight",
-          "Female - LightWeight"
-        ]
-      },
-      {
-        "year": "2001",
-        "date": "2001-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - HeavyWeight",
-          "Female - LightWeight"
-        ]
-      },
-      {
-        "year": "2002",
-        "date": "2002-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - HeavyWeight",
-          "Female - LightWeight"
-        ]
-      },
-      {
-        "year": "2003",
-        "date": "2003-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Figure",
-          "Female - HeavyWeight",
-          "Female - LightWeight"
-        ]
-      },
-      {
-        "year": "2004",
-        "date": "2004-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Figure",
-          "Female - HeavyWeight",
-          "Female - LightWeight"
-        ]
-      },
-      {
-        "year": "2005",
-        "date": "2005-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Figure",
-          "Female - HeavyWeight",
-          "Female - LightWeight"
-        ]
-      },
-      {
-        "year": "2006",
-        "date": "2006-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female",
-          "Female - Figure"
-        ]
-      },
-      {
-        "year": "2007",
-        "date": "2007-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female",
-          "Female - Figure"
-        ]
-      },
-      {
-        "year": "2008",
-        "date": "2008-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Bodybuilding",
-          "Female - Figure"
-        ]
-      },
-      {
-        "year": "2009",
-        "date": "2009-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Bodybuilding",
-          "Female - Figure"
-        ]
-      },
-      {
-        "year": "2010",
-        "date": "2010-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Bodybuilding",
-          "Female - Figure"
-        ]
-      },
-      {
-        "year": "2011",
-        "date": "2011-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Bodybuilding",
-          "Female - Figure"
-        ]
-      },
-      {
-        "year": "2012",
-        "date": "2012-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Bodybuilding",
-          "Female - Figure"
-        ]
-      },
-      {
-        "year": "2013",
-        "date": "2013-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Bodybuilding",
-          "Female - Figure"
-        ]
-      },
-      {
-        "year": "2014",
-        "date": "2014-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Figure"
-        ]
-      },
-      {
-        "year": "2015",
-        "date": "2015-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Figure",
-          "Female - Physique"
-        ]
-      },
-      {
-        "year": "2016",
-        "date": "2016-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Figure",
-          "Female - Physique"
         ]
       }
     ]
@@ -14786,7 +14780,6 @@
   "Musclecontest Brazil": {
     "variations": [
       "Musclecontest Brazil",
-      "Musclecontest Brasilia Pro",
       "Muscle Contest Brazil Pro",
       "Musclecontest Brazil Pro"
     ],
@@ -14893,15 +14886,6 @@
       },
       {
         "year": "2023",
-        "date": "Nov 25, 2023",
-        "location": "Campinas, Brazil",
-        "source": "scorecards",
-        "divisions": [
-          "Bikini Masters"
-        ]
-      },
-      {
-        "year": "2023",
         "date": "October 29, 2023",
         "location": "",
         "source": "npcnews",
@@ -14922,7 +14906,14 @@
           "Women's Figure - Open",
           "Women's Wellness - Open"
         ]
-      },
+      }
+    ]
+  },
+  "Musclecontest Brasilia Pro": {
+    "variations": [
+      "Musclecontest Brasilia Pro"
+    ],
+    "appearances": [
       {
         "year": "2024",
         "date": "2024-05-04",
@@ -15922,16 +15913,58 @@
   },
   "New York Pro": {
     "variations": [
-      "New York Pro"
+      "New York Pro",
+      "New York Pro Championships"
     ],
     "appearances": [
       {
-        "year": "2008",
-        "date": "April 12, 2008",
-        "location": "New York, USA",
-        "source": "scorecards",
+        "year": "2003",
+        "date": "2003-01-01",
+        "location": "",
+        "source": "musclememory",
         "divisions": [
-          "Fitness"
+          "Female - Figure"
+        ]
+      },
+      {
+        "year": "2004",
+        "date": "2004-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - Figure"
+        ]
+      },
+      {
+        "year": "2005",
+        "date": "2005-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - Figure",
+          "Female - HeavyWeight",
+          "Female - LightWeight",
+          "Male"
+        ]
+      },
+      {
+        "year": "2006",
+        "date": "2006-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - Figure",
+          "Male"
+        ]
+      },
+      {
+        "year": "2007",
+        "date": "2007-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - Figure",
+          "Male"
         ]
       },
       {
@@ -15954,12 +15987,15 @@
         ]
       },
       {
-        "year": "2009",
-        "date": "April 11, 2009",
-        "location": "New York, New York, USA",
-        "source": "scorecards",
+        "year": "2008",
+        "date": "2008-01-01",
+        "location": "",
+        "source": "musclememory",
         "divisions": [
-          "FITNESS"
+          "Female",
+          "Female - Figure",
+          "Male - LightWeight",
+          "Male - Open"
         ]
       },
       {
@@ -15973,12 +16009,24 @@
         ]
       },
       {
-        "year": "2010",
-        "date": "April 3, 2010",
+        "year": "2009",
+        "date": "2009-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female",
+          "Female - Figure",
+          "Male - LightWeight",
+          "Male - Open"
+        ]
+      },
+      {
+        "year": "2009",
+        "date": "May 16, 2009",
         "location": "New York, New York",
         "source": "scorecards",
         "divisions": [
-          "FITNESS"
+          "Men's 202"
         ]
       },
       {
@@ -15994,21 +16042,24 @@
         ]
       },
       {
+        "year": "2010",
+        "date": "2010-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - Bodybuilding",
+          "Female - Figure",
+          "Male - LightWeight",
+          "Male - Open"
+        ]
+      },
+      {
         "year": "2011",
         "date": "March 28, 2011",
         "location": "New York, New York",
         "source": "scorecards",
         "divisions": [
           "Men's Bodybuilding"
-        ]
-      },
-      {
-        "year": "2011",
-        "date": "April 9, 2011",
-        "location": "New York, New York",
-        "source": "scorecards",
-        "divisions": [
-          "FITNESS"
         ]
       },
       {
@@ -16023,6 +16074,16 @@
         ]
       },
       {
+        "year": "2011",
+        "date": "2011-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Male - LightWeight",
+          "Male - Open"
+        ]
+      },
+      {
         "year": "2012",
         "date": "May 19, 2012",
         "location": "New York",
@@ -16034,6 +16095,18 @@
           "Men's Bodybuilding",
           "Men's Physique",
           "Women's Physique"
+        ]
+      },
+      {
+        "year": "2012",
+        "date": "2012-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - Figure",
+          "Female - Physique",
+          "Male - LightWeight",
+          "Male - Open"
         ]
       },
       {
@@ -16052,6 +16125,28 @@
         ]
       },
       {
+        "year": "2013",
+        "date": "2013-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - Figure",
+          "Female - Physique",
+          "Male - LightWeight",
+          "Male - Open"
+        ]
+      },
+      {
+        "year": "2014",
+        "date": "2014-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - Physique",
+          "Male"
+        ]
+      },
+      {
         "year": "2015",
         "date": "May 10, 2015",
         "location": "Teaneck, New Jersey",
@@ -16066,6 +16161,18 @@
         ]
       },
       {
+        "year": "2015",
+        "date": "2015-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - Figure",
+          "Female - Physique",
+          "Male",
+          "Male - LightWeight"
+        ]
+      },
+      {
         "year": "2016",
         "date": "May 21, 2016",
         "location": "Teaneck, New Jersey",
@@ -16074,6 +16181,19 @@
           "Figure",
           "Men's Bodybuilding",
           "Men's Physique"
+        ]
+      },
+      {
+        "year": "2016",
+        "date": "2016-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - Figure",
+          "Female - Physique",
+          "Male",
+          "Male - Classic",
+          "Male - LightWeight"
         ]
       },
       {
@@ -16087,6 +16207,19 @@
           "Men's Physique",
           "WOMEN'S FIGURE",
           "Women's Figure"
+        ]
+      },
+      {
+        "year": "2017",
+        "date": "2017-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - Figure",
+          "Female - Physique",
+          "Male - Classic",
+          "Male - LightWeight",
+          "Male - Open"
         ]
       },
       {
@@ -16104,6 +16237,18 @@
         ]
       },
       {
+        "year": "2018",
+        "date": "2018-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - Figure",
+          "Male - Classic",
+          "Male - LightWeight",
+          "Male - Open"
+        ]
+      },
+      {
         "year": "2019",
         "date": "May 18, 2019",
         "location": "",
@@ -16115,6 +16260,18 @@
           "MEN'S BODYBUILDING - open",
           "MEN'S CLASSIC PHYSIQUE - open",
           "MEN'S PHYSIQUE - open"
+        ]
+      },
+      {
+        "year": "2019",
+        "date": "2019-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - Figure",
+          "Male - Classic",
+          "Male - LightWeight",
+          "Male - Open"
         ]
       },
       {
@@ -16134,6 +16291,20 @@
         ]
       },
       {
+        "year": "2020",
+        "date": "2020-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - Bodybuilding",
+          "Female - Figure",
+          "Female - Physique",
+          "Male - Classic",
+          "Male - LightWeight",
+          "Male - Open"
+        ]
+      },
+      {
         "year": "2021",
         "date": "May 15, 2021",
         "location": "",
@@ -16148,6 +16319,20 @@
           "WELLNESS - open",
           "WOMEN'S BODYBUILDING - open",
           "WOMEN'S PHYSIQUE - open"
+        ]
+      },
+      {
+        "year": "2021",
+        "date": "2021-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - Bodybuilding",
+          "Female - Figure",
+          "Female - Physique",
+          "Male - Bodybuilding",
+          "Male - Classic",
+          "Male - LightWeight"
         ]
       },
       {
@@ -16228,238 +16413,45 @@
       }
     ]
   },
-  "New York Pro Championships": {
+  "New York Pro Fitness": {
     "variations": [
-      "New York Pro Championships"
+      "New York Pro Fitness"
     ],
     "appearances": [
       {
-        "year": "2003",
-        "date": "2003-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Figure"
-        ]
-      },
-      {
-        "year": "2004",
-        "date": "2004-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Figure"
-        ]
-      },
-      {
-        "year": "2005",
-        "date": "2005-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Figure",
-          "Female - HeavyWeight",
-          "Female - LightWeight",
-          "Male"
-        ]
-      },
-      {
-        "year": "2006",
-        "date": "2006-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Figure",
-          "Male"
-        ]
-      },
-      {
-        "year": "2007",
-        "date": "2007-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Figure",
-          "Male"
-        ]
-      },
-      {
         "year": "2008",
-        "date": "2008-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female",
-          "Female - Figure",
-          "Male - LightWeight",
-          "Male - Open"
-        ]
-      },
-      {
-        "year": "2009",
-        "date": "2009-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female",
-          "Female - Figure",
-          "Male - LightWeight",
-          "Male - Open"
-        ]
-      },
-      {
-        "year": "2009",
-        "date": "May 16, 2009",
-        "location": "New York, New York",
+        "date": "April 12, 2008",
+        "location": "New York, USA",
         "source": "scorecards",
         "divisions": [
-          "Men's 202"
+          "Fitness"
+        ]
+      },
+      {
+        "year": "2009",
+        "date": "April 11, 2009",
+        "location": "New York, New York, USA",
+        "source": "scorecards",
+        "divisions": [
+          "FITNESS"
         ]
       },
       {
         "year": "2010",
-        "date": "2010-01-01",
-        "location": "",
-        "source": "musclememory",
+        "date": "April 3, 2010",
+        "location": "New York, New York",
+        "source": "scorecards",
         "divisions": [
-          "Female - Bodybuilding",
-          "Female - Figure",
-          "Male - LightWeight",
-          "Male - Open"
+          "FITNESS"
         ]
       },
       {
         "year": "2011",
-        "date": "2011-01-01",
-        "location": "",
-        "source": "musclememory",
+        "date": "April 9, 2011",
+        "location": "New York, New York",
+        "source": "scorecards",
         "divisions": [
-          "Male - LightWeight",
-          "Male - Open"
-        ]
-      },
-      {
-        "year": "2012",
-        "date": "2012-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Figure",
-          "Female - Physique",
-          "Male - LightWeight",
-          "Male - Open"
-        ]
-      },
-      {
-        "year": "2013",
-        "date": "2013-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Figure",
-          "Female - Physique",
-          "Male - LightWeight",
-          "Male - Open"
-        ]
-      },
-      {
-        "year": "2014",
-        "date": "2014-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Physique",
-          "Male"
-        ]
-      },
-      {
-        "year": "2015",
-        "date": "2015-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Figure",
-          "Female - Physique",
-          "Male",
-          "Male - LightWeight"
-        ]
-      },
-      {
-        "year": "2016",
-        "date": "2016-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Figure",
-          "Female - Physique",
-          "Male",
-          "Male - Classic",
-          "Male - LightWeight"
-        ]
-      },
-      {
-        "year": "2017",
-        "date": "2017-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Figure",
-          "Female - Physique",
-          "Male - Classic",
-          "Male - LightWeight",
-          "Male - Open"
-        ]
-      },
-      {
-        "year": "2018",
-        "date": "2018-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Figure",
-          "Male - Classic",
-          "Male - LightWeight",
-          "Male - Open"
-        ]
-      },
-      {
-        "year": "2019",
-        "date": "2019-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Figure",
-          "Male - Classic",
-          "Male - LightWeight",
-          "Male - Open"
-        ]
-      },
-      {
-        "year": "2020",
-        "date": "2020-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Bodybuilding",
-          "Female - Figure",
-          "Female - Physique",
-          "Male - Classic",
-          "Male - LightWeight",
-          "Male - Open"
-        ]
-      },
-      {
-        "year": "2021",
-        "date": "2021-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Bodybuilding",
-          "Female - Figure",
-          "Female - Physique",
-          "Male - Bodybuilding",
-          "Male - Classic",
-          "Male - LightWeight"
+          "FITNESS"
         ]
       }
     ]
@@ -16468,9 +16460,19 @@
     "variations": [
       "New Zealand",
       "New Zealand Elite Pro",
-      "New Zealand Pro"
+      "New Zealand Pro",
+      "Grand Prix New Zealand"
     ],
     "appearances": [
+      {
+        "year": "2001",
+        "date": "2001-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Male"
+        ]
+      },
       {
         "year": "2008",
         "date": "March 15, 2008",
@@ -16478,6 +16480,15 @@
         "source": "scorecards",
         "divisions": [
           "Men's Bodybuilding - Open"
+        ]
+      },
+      {
+        "year": "2008",
+        "date": "2008-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Male"
         ]
       },
       {
@@ -17072,1041 +17083,6 @@
         "source": "musclememory",
         "divisions": [
           "Male"
-        ]
-      }
-    ]
-  },
-  "North American Championships": {
-    "variations": [
-      "North American Championships"
-    ],
-    "appearances": [
-      {
-        "year": "1949",
-        "date": "1949-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Male",
-          "Male - Junior"
-        ]
-      },
-      {
-        "year": "1962",
-        "date": "1962-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Male",
-          "Male - Junior"
-        ]
-      },
-      {
-        "year": "1964",
-        "date": "1964-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Male - Medium",
-          "Male - Short",
-          "Male - Tall"
-        ]
-      },
-      {
-        "year": "1966",
-        "date": "1966-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Male - Medium",
-          "Male - Most Muscular",
-          "Male - Short",
-          "Male - Tall",
-          "Male - Teen"
-        ]
-      },
-      {
-        "year": "1968",
-        "date": "1968-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Male - Medium",
-          "Male - Short",
-          "Male - Tall",
-          "Male - Teen"
-        ]
-      },
-      {
-        "year": "1975",
-        "date": "1975-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Male - Medium",
-          "Male - Tall"
-        ]
-      },
-      {
-        "year": "1976",
-        "date": "1976-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Male - Medium",
-          "Male - Short",
-          "Male - Tall"
-        ]
-      },
-      {
-        "year": "1977",
-        "date": "1977-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Male - HeavyWeight",
-          "Male - LightWeight",
-          "Male - MiddleWeight"
-        ]
-      },
-      {
-        "year": "1978",
-        "date": "1978-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Male - Medium",
-          "Male - Short",
-          "Male - Tall"
-        ]
-      },
-      {
-        "year": "1979",
-        "date": "1979-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Male - HeavyWeight",
-          "Male - LightWeight",
-          "Male - MiddleWeight"
-        ]
-      },
-      {
-        "year": "1981",
-        "date": "1981-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Male - HeavyWeight",
-          "Male - Light-HeavyWeight",
-          "Male - LightWeight",
-          "Male - MiddleWeight"
-        ]
-      },
-      {
-        "year": "1984",
-        "date": "1984-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - HeavyWeight",
-          "Female - LightWeight"
-        ]
-      },
-      {
-        "year": "1987",
-        "date": "1987-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - HeavyWeight",
-          "Female - LightWeight",
-          "Female - MiddleWeight",
-          "Male - BantamWeight",
-          "Male - HeavyWeight",
-          "Male - Light-HeavyWeight",
-          "Male - LightWeight",
-          "Male - MiddleWeight"
-        ]
-      },
-      {
-        "year": "1988",
-        "date": "1988-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - HeavyWeight",
-          "Female - LightWeight",
-          "Female - MiddleWeight",
-          "Male - BantamWeight",
-          "Male - HeavyWeight",
-          "Male - Light-HeavyWeight",
-          "Male - LightWeight",
-          "Male - MiddleWeight"
-        ]
-      },
-      {
-        "year": "1989",
-        "date": "1989-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - HeavyWeight",
-          "Female - LightWeight",
-          "Female - MiddleWeight",
-          "Male - BantamWeight",
-          "Male - HeavyWeight",
-          "Male - Light-HeavyWeight",
-          "Male - LightWeight",
-          "Male - MiddleWeight"
-        ]
-      },
-      {
-        "year": "1990",
-        "date": "1990-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - HeavyWeight",
-          "Female - LightWeight",
-          "Female - MiddleWeight",
-          "Male - BantamWeight",
-          "Male - HeavyWeight",
-          "Male - Light-HeavyWeight",
-          "Male - LightWeight",
-          "Male - MiddleWeight"
-        ]
-      },
-      {
-        "year": "1991",
-        "date": "1991-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - HeavyWeight",
-          "Female - LightWeight",
-          "Female - MiddleWeight",
-          "Male - BantamWeight",
-          "Male - HeavyWeight",
-          "Male - Light-HeavyWeight",
-          "Male - LightWeight",
-          "Male - MiddleWeight"
-        ]
-      },
-      {
-        "year": "1992",
-        "date": "1992-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - HeavyWeight",
-          "Female - LightWeight",
-          "Female - MiddleWeight",
-          "Male - BantamWeight",
-          "Male - HeavyWeight",
-          "Male - Light-HeavyWeight",
-          "Male - LightWeight",
-          "Male - MiddleWeight"
-        ]
-      },
-      {
-        "year": "1993",
-        "date": "1993-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - HeavyWeight",
-          "Female - LightWeight",
-          "Female - MiddleWeight",
-          "Male - BantamWeight",
-          "Male - HeavyWeight",
-          "Male - Light-HeavyWeight",
-          "Male - LightWeight",
-          "Male - MiddleWeight"
-        ]
-      },
-      {
-        "year": "1994",
-        "date": "1994-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - HeavyWeight",
-          "Female - LightWeight",
-          "Female - MiddleWeight",
-          "Male - BantamWeight",
-          "Male - HeavyWeight",
-          "Male - Light-HeavyWeight",
-          "Male - LightWeight",
-          "Male - MiddleWeight",
-          "Male - WelterWeight"
-        ]
-      },
-      {
-        "year": "1995",
-        "date": "1995-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - HeavyWeight",
-          "Female - LightWeight",
-          "Female - MiddleWeight",
-          "Male - BantamWeight",
-          "Male - HeavyWeight",
-          "Male - Light-HeavyWeight",
-          "Male - LightWeight",
-          "Male - MiddleWeight",
-          "Male - WelterWeight"
-        ]
-      },
-      {
-        "year": "1996",
-        "date": "1996-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - HeavyWeight",
-          "Female - LightWeight",
-          "Female - MiddleWeight",
-          "Male - BantamWeight",
-          "Male - HeavyWeight",
-          "Male - Light-HeavyWeight",
-          "Male - LightWeight",
-          "Male - MiddleWeight",
-          "Male - WelterWeight"
-        ]
-      },
-      {
-        "year": "1998",
-        "date": "1998-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - HeavyWeight",
-          "Female - LightWeight",
-          "Female - MiddleWeight",
-          "Male - BantamWeight",
-          "Male - HeavyWeight",
-          "Male - Light-HeavyWeight",
-          "Male - LightWeight",
-          "Male - MiddleWeight",
-          "Male - WelterWeight"
-        ]
-      },
-      {
-        "year": "1999",
-        "date": "1999-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - HeavyWeight",
-          "Female - LightWeight",
-          "Female - MiddleWeight",
-          "Male - BantamWeight",
-          "Male - HeavyWeight",
-          "Male - Light-HeavyWeight",
-          "Male - LightWeight",
-          "Male - Masters HeavyWeight",
-          "Male - Masters LightWeight",
-          "Male - MiddleWeight",
-          "Male - WelterWeight"
-        ]
-      },
-      {
-        "year": "2001",
-        "date": "2001-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - HeavyWeight",
-          "Female - LightWeight",
-          "Female - Masters",
-          "Female - MiddleWeight",
-          "Male - BantamWeight",
-          "Male - HeavyWeight",
-          "Male - Light-HeavyWeight",
-          "Male - LightWeight",
-          "Male - MiddleWeight",
-          "Male - Super-HeavyWeight"
-        ]
-      },
-      {
-        "year": "2004",
-        "date": "2004-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Figure Masters Medium",
-          "Female - Figure Masters Short",
-          "Female - Figure Masters Tall",
-          "Female - Figure Medium",
-          "Female - Figure Medium-Tall",
-          "Female - Figure Short",
-          "Female - Figure Tall",
-          "Female - HeavyWeight",
-          "Female - Light-HeavyWeight",
-          "Female - LightWeight",
-          "Female - MiddleWeight",
-          "Male - BantamWeight",
-          "Male - HeavyWeight",
-          "Male - Light-HeavyWeight",
-          "Male - LightWeight",
-          "Male - Masters HeavyWeight",
-          "Male - Masters Light-HeavyWeight",
-          "Male - Masters LightWeight",
-          "Male - Masters MiddleWeight",
-          "Male - MiddleWeight",
-          "Male - Super-HeavyWeight",
-          "Male - WelterWeight"
-        ]
-      },
-      {
-        "year": "2005",
-        "date": "2005-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Figure A",
-          "Female - Figure B",
-          "Female - Figure C",
-          "Female - Figure D",
-          "Female - Figure Masters Medium",
-          "Female - Figure Masters Short",
-          "Female - Figure Masters Tall",
-          "Female - HeavyWeight",
-          "Female - Light-HeavyWeight",
-          "Female - LightWeight",
-          "Female - MiddleWeight",
-          "Male - BantamWeight",
-          "Male - HeavyWeight",
-          "Male - Light-HeavyWeight",
-          "Male - LightWeight",
-          "Male - Masters HeavyWeight",
-          "Male - Masters Light-HeavyWeight",
-          "Male - Masters LightWeight",
-          "Male - Masters MiddleWeight",
-          "Male - MiddleWeight",
-          "Male - Super-HeavyWeight",
-          "Male - WelterWeight"
-        ]
-      },
-      {
-        "year": "2006",
-        "date": "2006-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Figure A",
-          "Female - Figure B",
-          "Female - Figure C",
-          "Female - Figure D",
-          "Female - Figure Masters A",
-          "Female - Figure Masters B",
-          "Female - Figure Masters C",
-          "Female - Figure Masters D",
-          "Female - HeavyWeight",
-          "Female - Light-HeavyWeight",
-          "Female - LightWeight",
-          "Female - MiddleWeight",
-          "Male - BantamWeight",
-          "Male - HeavyWeight",
-          "Male - Light-HeavyWeight",
-          "Male - LightWeight",
-          "Male - Masters HeavyWeight",
-          "Male - Masters Light-HeavyWeight",
-          "Male - Masters LightWeight",
-          "Male - Masters MiddleWeight",
-          "Male - Masters Super-HeavyWeight",
-          "Male - MiddleWeight",
-          "Male - Super-HeavyWeight",
-          "Male - WelterWeight"
-        ]
-      },
-      {
-        "year": "2007",
-        "date": "2007-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Figure A",
-          "Female - Figure B",
-          "Female - Figure C",
-          "Female - Figure D",
-          "Female - Figure Masters A",
-          "Female - Figure Masters B",
-          "Female - Figure Masters C",
-          "Female - Figure Masters D",
-          "Female - HeavyWeight",
-          "Female - Light-HeavyWeight",
-          "Female - LightWeight",
-          "Female - MiddleWeight",
-          "Male - BantamWeight",
-          "Male - HeavyWeight",
-          "Male - Light-HeavyWeight",
-          "Male - LightWeight",
-          "Male - Masters 40+ HeavyWeight",
-          "Male - Masters 40+ Light-HeavyWeight",
-          "Male - Masters 40+ LightWeight",
-          "Male - Masters 40+ MiddleWeight",
-          "Male - Masters 40+ Super-HeavyWeight",
-          "Male - MiddleWeight",
-          "Male - Super-HeavyWeight",
-          "Male - WelterWeight"
-        ]
-      },
-      {
-        "year": "2008",
-        "date": "2008-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Figure A",
-          "Female - Figure B",
-          "Female - Figure C",
-          "Female - Figure D",
-          "Female - Figure E",
-          "Female - Figure F",
-          "Female - Figure Masters A",
-          "Female - Figure Masters B",
-          "Female - Figure Masters C",
-          "Female - Figure Masters D",
-          "Female - HeavyWeight",
-          "Female - Light-HeavyWeight",
-          "Female - LightWeight",
-          "Female - MiddleWeight",
-          "Male - BantamWeight",
-          "Male - HeavyWeight",
-          "Male - Light-HeavyWeight",
-          "Male - LightWeight",
-          "Male - Masters 40+ HeavyWeight",
-          "Male - Masters 40+ Light-HeavyWeight",
-          "Male - Masters 40+ LightWeight",
-          "Male - Masters 40+ MiddleWeight",
-          "Male - Masters 40+ Super-HeavyWeight",
-          "Male - Masters 40+ WelterWeight",
-          "Male - MiddleWeight",
-          "Male - Super-HeavyWeight",
-          "Male - WelterWeight"
-        ]
-      },
-      {
-        "year": "2009",
-        "date": "2009-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Figure A",
-          "Female - Figure B",
-          "Female - Figure C",
-          "Female - Figure D",
-          "Female - Figure E",
-          "Female - Figure F",
-          "Female - Figure Masters A",
-          "Female - Figure Masters B",
-          "Female - Figure Masters C",
-          "Female - Figure Masters D",
-          "Female - HeavyWeight",
-          "Female - Light-HeavyWeight",
-          "Female - LightWeight",
-          "Female - Masters HeavyWeight",
-          "Female - Masters LightWeight",
-          "Female - MiddleWeight",
-          "Male - BantamWeight",
-          "Male - HeavyWeight",
-          "Male - Light-HeavyWeight",
-          "Male - LightWeight",
-          "Male - Masters 40+ HeavyWeight",
-          "Male - Masters 40+ Light-HeavyWeight",
-          "Male - Masters 40+ LightWeight",
-          "Male - Masters 40+ MiddleWeight",
-          "Male - Masters 40+ Super-HeavyWeight",
-          "Male - Masters 40+ WelterWeight",
-          "Male - Masters 50+ HeavyWeight",
-          "Male - Masters 50+ Light-HeavyWeight",
-          "Male - Masters 50+ LightWeight",
-          "Male - Masters 50+ MiddleWeight",
-          "Male - Masters 50+ Super-HeavyWeight",
-          "Male - MiddleWeight",
-          "Male - Super-HeavyWeight",
-          "Male - WelterWeight"
-        ]
-      },
-      {
-        "year": "2010",
-        "date": "2010-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Figure A",
-          "Female - Figure B",
-          "Female - Figure C",
-          "Female - Figure D",
-          "Female - Figure E",
-          "Female - Figure F",
-          "Female - Figure Masters A",
-          "Female - Figure Masters B",
-          "Female - Figure Masters C",
-          "Female - Figure Masters D",
-          "Female - Figure Masters E",
-          "Female - Figure Masters F",
-          "Female - HeavyWeight",
-          "Female - Light-HeavyWeight",
-          "Female - LightWeight",
-          "Female - Masters 35+ HeavyWeight",
-          "Female - Masters 35+ Light-HeavyWeight",
-          "Female - Masters 35+ LightWeight",
-          "Female - Masters 35+ MiddleWeight",
-          "Female - MiddleWeight",
-          "Male - BantamWeight",
-          "Male - HeavyWeight",
-          "Male - Light-HeavyWeight",
-          "Male - LightWeight",
-          "Male - Masters 40+ HeavyWeight",
-          "Male - Masters 40+ Light-HeavyWeight",
-          "Male - Masters 40+ LightWeight",
-          "Male - Masters 40+ MiddleWeight",
-          "Male - Masters 40+ Super-HeavyWeight",
-          "Male - Masters 40+ WelterWeight",
-          "Male - Masters 50+ HeavyWeight",
-          "Male - Masters 50+ Light-HeavyWeight",
-          "Male - Masters 50+ LightWeight",
-          "Male - Masters 50+ MiddleWeight",
-          "Male - Masters 50+ Super-HeavyWeight",
-          "Male - Masters 50+ WelterWeight",
-          "Male - MiddleWeight",
-          "Male - Super-HeavyWeight",
-          "Male - Teen",
-          "Male - WelterWeight"
-        ]
-      },
-      {
-        "year": "2011",
-        "date": "2011-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Figure A",
-          "Female - Figure B",
-          "Female - Figure C",
-          "Female - Figure D",
-          "Female - Figure E",
-          "Female - Figure F",
-          "Female - Figure Masters A",
-          "Female - Figure Masters B",
-          "Female - Figure Masters C",
-          "Female - Figure Masters D",
-          "Female - Figure Masters E",
-          "Female - Figure Masters F",
-          "Female - HeavyWeight",
-          "Female - Light-HeavyWeight",
-          "Female - LightWeight",
-          "Female - Masters HeavyWeight",
-          "Female - MiddleWeight",
-          "Female - Physique A",
-          "Female - Physique B",
-          "Female - Physique C",
-          "Male - BantamWeight",
-          "Male - HeavyWeight",
-          "Male - Light-HeavyWeight",
-          "Male - LightWeight",
-          "Male - Masters 40+ HeavyWeight",
-          "Male - Masters 40+ Light-HeavyWeight",
-          "Male - Masters 40+ LightWeight",
-          "Male - Masters 40+ MiddleWeight",
-          "Male - Masters 40+ Super-HeavyWeight",
-          "Male - Masters 40+ WelterWeight",
-          "Male - Masters 50+ HeavyWeight",
-          "Male - Masters 50+ Light-HeavyWeight",
-          "Male - Masters 50+ LightWeight",
-          "Male - Masters 50+ MiddleWeight",
-          "Male - Masters 50+ Super-HeavyWeight",
-          "Male - Masters 50+ WelterWeight",
-          "Male - MiddleWeight",
-          "Male - Super-HeavyWeight",
-          "Male - WelterWeight"
-        ]
-      },
-      {
-        "year": "2012",
-        "date": "2012-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Figure A",
-          "Female - Figure B",
-          "Female - Figure C",
-          "Female - Figure D",
-          "Female - Figure E",
-          "Female - Figure F",
-          "Female - Figure Masters A",
-          "Female - Figure Masters B",
-          "Female - Figure Masters C",
-          "Female - Figure Masters D",
-          "Female - Figure Masters E",
-          "Female - Figure Masters F",
-          "Female - HeavyWeight",
-          "Female - Light-HeavyWeight",
-          "Female - LightWeight",
-          "Female - Masters 35+ HeavyWeight",
-          "Female - Masters 35+ Light-HeavyWeight",
-          "Female - Masters 35+ LightWeight",
-          "Female - Masters 35+ MiddleWeight",
-          "Female - MiddleWeight",
-          "Male - BantamWeight",
-          "Male - HeavyWeight",
-          "Male - Light-HeavyWeight",
-          "Male - LightWeight",
-          "Male - Masters 35+ BantamWeight",
-          "Male - Masters 35+ HeavyWeight",
-          "Male - Masters 35+ Light-HeavyWeight",
-          "Male - Masters 35+ LightWeight",
-          "Male - Masters 35+ MiddleWeight",
-          "Male - Masters 35+ Super-HeavyWeight",
-          "Male - Masters 35+ WelterWeight",
-          "Male - Masters 40+ HeavyWeight",
-          "Male - Masters 40+ Light-HeavyWeight",
-          "Male - Masters 40+ LightWeight",
-          "Male - Masters 40+ MiddleWeight",
-          "Male - Masters 40+ Super-HeavyWeight",
-          "Male - Masters 40+ WelterWeight",
-          "Male - Masters 50+ HeavyWeight",
-          "Male - Masters 50+ Light-HeavyWeight",
-          "Male - Masters 50+ LightWeight",
-          "Male - Masters 50+ MiddleWeight",
-          "Male - Masters 50+ Super-HeavyWeight",
-          "Male - Masters 50+ WelterWeight",
-          "Male - MiddleWeight",
-          "Male - Super-HeavyWeight",
-          "Male - WelterWeight"
-        ]
-      },
-      {
-        "year": "2013",
-        "date": "2013-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Figure 45+ A",
-          "Female - Figure 45+ B",
-          "Female - Figure 45+ C",
-          "Female - Figure 45+ D",
-          "Female - Figure 45+ E",
-          "Female - Figure 45+ F",
-          "Female - Figure 55+ A",
-          "Female - Figure 55+ B",
-          "Female - Figure A",
-          "Female - Figure B",
-          "Female - Figure C",
-          "Female - Figure D",
-          "Female - Figure E",
-          "Female - Figure F",
-          "Female - Figure Masters A",
-          "Female - Figure Masters B",
-          "Female - Figure Masters C",
-          "Female - Figure Masters D",
-          "Female - Figure Masters E",
-          "Female - Figure Masters F",
-          "Female - HeavyWeight",
-          "Female - Light-HeavyWeight",
-          "Female - LightWeight",
-          "Female - Masters 35+ HeavyWeight",
-          "Female - Masters 35+ Light-HeavyWeight",
-          "Female - Masters 35+ LightWeight",
-          "Female - Masters 35+ MiddleWeight",
-          "Female - Masters Physique 35+ A",
-          "Female - Masters Physique 35+ B",
-          "Female - Masters Physique 35+ C",
-          "Female - Masters Physique 35+ D",
-          "Female - Masters Physique 45+ A",
-          "Female - Masters Physique 45+ B",
-          "Female - Masters Physique 45+ C",
-          "Female - Masters Physique 45+ D",
-          "Female - MiddleWeight",
-          "Female - Physique A",
-          "Female - Physique B",
-          "Female - Physique C",
-          "Female - Physique D",
-          "Male - BantamWeight",
-          "Male - HeavyWeight",
-          "Male - Light-HeavyWeight",
-          "Male - LightWeight",
-          "Male - Masters 35+ BantamWeight",
-          "Male - Masters 35+ HeavyWeight",
-          "Male - Masters 35+ Light-HeavyWeight",
-          "Male - Masters 35+ LightWeight",
-          "Male - Masters 35+ MiddleWeight",
-          "Male - Masters 35+ Super-HeavyWeight",
-          "Male - Masters 35+ WelterWeight",
-          "Male - Masters 40+ BantamWeight",
-          "Male - Masters 40+ HeavyWeight",
-          "Male - Masters 40+ Light-HeavyWeight",
-          "Male - Masters 40+ LightWeight",
-          "Male - Masters 40+ MiddleWeight",
-          "Male - Masters 40+ Super-HeavyWeight",
-          "Male - Masters 40+ WelterWeight",
-          "Male - Masters 50+ BantamWeight",
-          "Male - Masters 50+ HeavyWeight",
-          "Male - Masters 50+ Light-HeavyWeight",
-          "Male - Masters 50+ LightWeight",
-          "Male - Masters 50+ MiddleWeight",
-          "Male - Masters 50+ Super-HeavyWeight",
-          "Male - Masters 60+",
-          "Male - MiddleWeight",
-          "Male - Super-HeavyWeight",
-          "Male - WelterWeight"
-        ]
-      },
-      {
-        "year": "2014",
-        "date": "2014-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Figure 45+ A",
-          "Female - Figure 45+ B",
-          "Female - Figure 45+ C",
-          "Female - Figure 45+ D",
-          "Female - Figure 45+ E",
-          "Female - Figure 45+ F",
-          "Female - Figure 55+ A",
-          "Female - Figure 55+ B",
-          "Female - Figure A",
-          "Female - Figure B",
-          "Female - Figure C",
-          "Female - Figure D",
-          "Female - Figure E",
-          "Female - Figure F",
-          "Female - Figure Masters A",
-          "Female - Figure Masters B",
-          "Female - Figure Masters C",
-          "Female - Figure Masters D",
-          "Female - Figure Masters E",
-          "Female - Figure Masters F",
-          "Female - HeavyWeight",
-          "Female - Light-HeavyWeight",
-          "Female - LightWeight",
-          "Female - Masters 35+ HeavyWeight",
-          "Female - Masters 35+ Light-HeavyWeight",
-          "Female - Masters 35+ LightWeight",
-          "Female - Masters 35+ MiddleWeight",
-          "Female - Masters Physique 35+ A",
-          "Female - Masters Physique 35+ B",
-          "Female - Masters Physique 35+ C",
-          "Female - Masters Physique 35+ D",
-          "Female - Masters Physique 35+ E",
-          "Female - Masters Physique 45+ A",
-          "Female - Masters Physique 45+ B",
-          "Female - Masters Physique 45+ C",
-          "Female - Masters Physique 45+ D",
-          "Female - MiddleWeight",
-          "Female - Physique A",
-          "Female - Physique B",
-          "Female - Physique C",
-          "Female - Physique D",
-          "Male - BantamWeight",
-          "Male - HeavyWeight",
-          "Male - Light-HeavyWeight",
-          "Male - LightWeight",
-          "Male - Masters 35+ BantamWeight",
-          "Male - Masters 35+ HeavyWeight",
-          "Male - Masters 35+ Light-HeavyWeight",
-          "Male - Masters 35+ LightWeight",
-          "Male - Masters 35+ MiddleWeight",
-          "Male - Masters 35+ Super-HeavyWeight",
-          "Male - Masters 35+ WelterWeight",
-          "Male - Masters 40+ HeavyWeight",
-          "Male - Masters 40+ Light-HeavyWeight",
-          "Male - Masters 40+ LightWeight",
-          "Male - Masters 40+ MiddleWeight",
-          "Male - Masters 40+ Super-HeavyWeight",
-          "Male - Masters 40+ WelterWeight",
-          "Male - Masters 50+ BantamWeight",
-          "Male - Masters 50+ HeavyWeight",
-          "Male - Masters 50+ Light-HeavyWeight",
-          "Male - Masters 50+ LightWeight",
-          "Male - Masters 50+ MiddleWeight",
-          "Male - Masters 50+ Super-HeavyWeight",
-          "Male - Masters 50+ WelterWeight",
-          "Male - Masters 60+ HeavyWeight",
-          "Male - Masters 60+ LightWeight",
-          "Male - Masters 60+ MiddleWeight",
-          "Male - MiddleWeight",
-          "Male - Super-HeavyWeight",
-          "Male - WelterWeight"
-        ]
-      },
-      {
-        "year": "2015",
-        "date": "2015-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Figure 35+ A",
-          "Female - Figure 35+ B",
-          "Female - Figure 35+ C",
-          "Female - Figure 35+ D",
-          "Female - Figure 35+ E",
-          "Female - Figure 35+ F",
-          "Female - Figure 40+ A",
-          "Female - Figure 40+ B",
-          "Female - Figure 40+ C",
-          "Female - Figure 40+ D",
-          "Female - Figure 40+ E",
-          "Female - Figure 40+ F",
-          "Female - Figure 50+ A",
-          "Female - Figure 50+ B",
-          "Female - Figure A",
-          "Female - Figure B",
-          "Female - Figure C",
-          "Female - Figure D",
-          "Female - Figure E",
-          "Female - Figure F",
-          "Female - HeavyWeight",
-          "Female - Light-HeavyWeight",
-          "Female - LightWeight",
-          "Female - Masters 35+ HeavyWeight",
-          "Female - Masters 35+ Light-HeavyWeight",
-          "Female - Masters 35+ MiddleWeight",
-          "Female - Masters 40+ HeavyWeight",
-          "Female - Masters 40+ Light-HeavyWeight",
-          "Female - Masters 40+ LightWeight",
-          "Female - Masters 40+ MiddleWeight",
-          "Female - Masters Physique 30+ A",
-          "Female - Masters Physique 35+ B",
-          "Female - Masters Physique 35+ C",
-          "Female - Masters Physique 35+ D",
-          "Female - Masters Physique 40+ A",
-          "Female - Masters Physique 40+ B",
-          "Female - Masters Physique 40+ C",
-          "Female - Masters Physique 40+ D",
-          "Female - MiddleWeight",
-          "Female - Physique A",
-          "Female - Physique B",
-          "Female - Physique C",
-          "Female - Physique D",
-          "Male - BantamWeight",
-          "Male - HeavyWeight",
-          "Male - Light-HeavyWeight",
-          "Male - LightWeight",
-          "Male - Masters 35+ BantamWeight",
-          "Male - Masters 35+ HeavyWeight",
-          "Male - Masters 35+ Light-HeavyWeight",
-          "Male - Masters 35+ LightWeight",
-          "Male - Masters 35+ MiddleWeight",
-          "Male - Masters 35+ Super-HeavyWeight",
-          "Male - Masters 35+ WelterWeight",
-          "Male - Masters 40+ BantamWeight",
-          "Male - Masters 40+ HeavyWeight",
-          "Male - Masters 40+ Light-HeavyWeight",
-          "Male - Masters 40+ MiddleWeight",
-          "Male - Masters 40+ Super-HeavyWeight",
-          "Male - Masters 40+ WelterWeight",
-          "Male - Masters 50+ BantamWeight",
-          "Male - Masters 50+ HeavyWeight",
-          "Male - Masters 50+ Light-HeavyWeight",
-          "Male - Masters 50+ MiddleWeight",
-          "Male - Masters 50+ Super-HeavyWeight",
-          "Male - Masters 50+ WelterWeight",
-          "Male - Masters 60+ HeavyWeight",
-          "Male - Masters 60+ Light-HeavyWeight",
-          "Male - Masters 60+ MiddleWeight",
-          "Male - MiddleWeight",
-          "Male - Super-HeavyWeight",
-          "Male - WelterWeight"
-        ]
-      },
-      {
-        "year": "2016",
-        "date": "2016-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Figure 35+ A",
-          "Female - Figure 35+ B",
-          "Female - Figure 35+ C",
-          "Female - Figure 35+ D",
-          "Female - Figure 35+ E",
-          "Female - Figure 35+ F",
-          "Female - Figure 40+ A",
-          "Female - Figure 40+ B",
-          "Female - Figure 40+ C",
-          "Female - Figure 40+ D",
-          "Female - Figure 40+ E",
-          "Female - Figure 40+ F",
-          "Female - Figure 50+ A",
-          "Female - Figure 50+ B",
-          "Female - Figure 50+ C",
-          "Female - Figure 50+ D",
-          "Female - Figure A",
-          "Female - Figure B",
-          "Female - Figure C",
-          "Female - Figure D",
-          "Female - Figure E",
-          "Female - Figure F",
-          "Female - HeavyWeight",
-          "Female - Light-HeavyWeight",
-          "Female - LightWeight",
-          "Female - Masters 35+ HeavyWeight",
-          "Female - Masters 35+ Light-HeavyWeight",
-          "Female - Masters 35+ LightWeight",
-          "Female - Masters 35+ MiddleWeight",
-          "Female - Masters 40+ HeavyWeight",
-          "Female - Masters 40+ Light-HeavyWeight",
-          "Female - Masters 40+ LightWeight",
-          "Female - Masters 40+ MiddleWeight",
-          "Female - Masters Physique 35+ A",
-          "Female - Masters Physique 35+ B",
-          "Female - Masters Physique 35+ C",
-          "Female - Masters Physique 35+ D",
-          "Female - Masters Physique 40+ A",
-          "Female - Masters Physique 40+ B",
-          "Female - Masters Physique 40+ C",
-          "Female - Masters Physique 40+ D",
-          "Female - MiddleWeight",
-          "Female - Physique A",
-          "Female - Physique B",
-          "Female - Physique C",
-          "Female - Physique D",
-          "Male - BantamWeight",
-          "Male - Classic A",
-          "Male - Classic B",
-          "Male - Classic C",
-          "Male - Classic Masters 35+ A",
-          "Male - Classic Masters 35+ B",
-          "Male - Classic Masters 35+ C",
-          "Male - Classic Masters 40+ A",
-          "Male - Classic Masters 40+ B",
-          "Male - Classic Masters 40+ C",
-          "Male - HeavyWeight",
-          "Male - Light-HeavyWeight",
-          "Male - LightWeight",
-          "Male - Masters 35+ BantamWeight",
-          "Male - Masters 35+ HeavyWeight",
-          "Male - Masters 35+ Light-HeavyWeight",
-          "Male - Masters 35+ LightWeight",
-          "Male - Masters 35+ MiddleWeight",
-          "Male - Masters 35+ Super-HeavyWeight",
-          "Male - Masters 35+ WelterWeight",
-          "Male - Masters 40+ BantamWeight",
-          "Male - Masters 40+ HeavyWeight",
-          "Male - Masters 40+ Light-HeavyWeight",
-          "Male - Masters 40+ LightWeight",
-          "Male - Masters 40+ MiddleWeight",
-          "Male - Masters 40+ Super-HeavyWeight",
-          "Male - Masters 40+ WelterWeight",
-          "Male - Masters 50+ BantamWeight",
-          "Male - Masters 50+ HeavyWeight",
-          "Male - Masters 50+ Light-HeavyWeight",
-          "Male - Masters 50+ LightWeight",
-          "Male - Masters 50+ MiddleWeight",
-          "Male - Masters 50+ Super-HeavyWeight",
-          "Male - Masters 50+ WelterWeight",
-          "Male - Masters 60+ HeavyWeight",
-          "Male - Masters 60+ Light-HeavyWeight",
-          "Male - Masters 60+ MiddleWeight",
-          "Male - MiddleWeight",
-          "Male - Super-HeavyWeight",
-          "Male - WelterWeight"
         ]
       }
     ]
@@ -19341,7 +18317,7 @@
       },
       {
         "year": "2021",
-        "date": "December 30, 2021",
+        "date": "October 9, 2021",
         "location": "",
         "source": "npcnews",
         "divisions": [
@@ -20898,19 +19874,7 @@
         "location": "",
         "source": "musclememory",
         "divisions": [
-          "Female - Figure",
-          "Female - Figure 35+",
-          "Female - Figure 45+",
-          "Female - Figure 55+",
-          "Female - Masters 35+",
-          "Female - Masters 45+",
-          "Female - Masters 55+",
-          "Female - Masters Physique 35+",
-          "Female - Masters Physique 45+",
-          "Male - Masters 40+",
-          "Male - Masters 50+",
-          "Male - Masters 60+",
-          "Male - Masters 70+"
+          "Female - Figure"
         ]
       },
       {
@@ -20924,30 +19888,6 @@
           "Figure",
           "Men's Physique",
           "Women's Bikini"
-        ]
-      },
-      {
-        "year": "2014",
-        "date": "August 28, 2014",
-        "location": "Pittsburgh, Pennsylvania",
-        "source": "scorecards",
-        "divisions": [
-          "Bikini Masters +35",
-          "Bikini Masters +45",
-          "Figure Masters +35",
-          "Figure Masters +45",
-          "Figure Masters +55",
-          "Men's Bodybuilding Masters +40",
-          "Men's Bodybuilding Masters +50",
-          "Men's Bodybuilding Masters +60",
-          "Men's Bodybuilding Masters +70",
-          "Men's Physique Masters +35",
-          "Men's Physique Masters +40",
-          "Women's Bodybuilding Masters +35",
-          "Women's Bodybuilding Masters +45",
-          "Women's Bodybuilding Masters +55",
-          "Women's Physique Masters +35",
-          "Women's Physique Masters +45"
         ]
       },
       {
@@ -20976,19 +19916,7 @@
         "location": "",
         "source": "musclememory",
         "divisions": [
-          "Female - Figure 35+",
-          "Female - Figure 45+",
-          "Female - Figure 55+",
-          "Female - Masters",
-          "Female - Masters Physique 35+",
-          "Female - Masters Physique 45+",
-          "Female - Masters Physique 55+",
-          "Male - Classic Masters 35+",
-          "Male - Classic Masters 40+",
-          "Male - Masters 40+",
-          "Male - Masters 50+",
-          "Male - Masters 60+",
-          "Male - Masters 70+"
+          "Female - Masters"
         ]
       },
       {
@@ -20998,21 +19926,8 @@
         "source": "musclememory",
         "divisions": [
           "Female - Figure",
-          "Female - Figure 35+",
-          "Female - Figure 45+",
-          "Female - Figure 55+",
           "Female - Masters",
-          "Female - Masters Physique 35+",
-          "Female - Masters Physique 45+",
-          "Female - Masters Physique 55+",
-          "Male - Classic",
-          "Male - Classic Masters 35+",
-          "Male - Classic Masters 40+",
-          "Male - Masters 40+",
-          "Male - Masters 50+",
-          "Male - Masters 60+",
-          "Male - Masters 70+",
-          "Male - Masters 80+"
+          "Male - Classic"
         ]
       },
       {
@@ -21022,21 +19937,7 @@
         "source": "musclememory",
         "divisions": [
           "Female - Figure",
-          "Female - Figure 35+",
-          "Female - Figure 45+",
-          "Female - Figure 55+",
-          "Female - Masters 35+",
-          "Female - Masters Physique 35+",
-          "Female - Masters Physique 45+",
-          "Female - Masters Physique 55+",
-          "Male - Classic",
-          "Male - Classic Masters 35+",
-          "Male - Classic Masters 40+",
-          "Male - Classic Masters 50+",
-          "Male - Masters 40+",
-          "Male - Masters 50+",
-          "Male - Masters 60+",
-          "Male - Masters 70+"
+          "Male - Classic"
         ]
       },
       {
@@ -21085,31 +19986,6 @@
           "FIGURE - open",
           "MEN'S CLASSIC PHYSIQUE - open",
           "MEN'S PHYSIQUE - open"
-        ]
-      },
-      {
-        "year": "2020",
-        "date": "2020-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Figure 35+",
-          "Female - Figure 45+",
-          "Female - Figure 55+",
-          "Female - Masters 35+",
-          "Female - Masters Physique 35+",
-          "Female - Masters Physique 45+",
-          "Female - Masters Physique 55+",
-          "Male - Classic Masters 35+",
-          "Male - Classic Masters 40+",
-          "Male - Classic Masters 50+",
-          "Male - Classic Masters 55+",
-          "Male - Classic Masters 60+",
-          "Male - Masters 40+",
-          "Male - Masters 50+",
-          "Male - Masters 60+",
-          "Male - Masters 70+",
-          "Male - Masters 80+"
         ]
       },
       {
@@ -21348,22 +20224,6 @@
       }
     ]
   },
-  "Port Charlotte Florida Pro": {
-    "variations": [
-      "Port Charlotte Florida Pro"
-    ],
-    "appearances": [
-      {
-        "year": "2016",
-        "date": "2016-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Male - Classic"
-        ]
-      }
-    ]
-  },
   "Portland Classic": {
     "variations": [
       "Portland Classic"
@@ -21490,33 +20350,6 @@
         "source": "npcnews",
         "divisions": [
           "WOMEN'S PHYSIQUE - open"
-        ]
-      }
-    ]
-  },
-  "Pro Extravaganza": {
-    "variations": [
-      "Pro Extravaganza"
-    ],
-    "appearances": [
-      {
-        "year": "1999",
-        "date": "1999-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female"
-        ]
-      },
-      {
-        "year": "2001",
-        "date": "2001-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - HeavyWeight",
-          "Female - LightWeight",
-          "Female - MiddleWeight"
         ]
       }
     ]
@@ -22094,6 +20927,123 @@
         "divisions": [
           "BIKINI - open",
           "MEN'S PHYSIQUE - open"
+        ]
+      }
+    ]
+  },
+  "Wasatch Warrior Pro": {
+    "variations": [
+      "Wasatch Warrior Pro",
+      "Wasatch Warrior",
+      "Wasatch Warrior Pro Figure"
+    ],
+    "appearances": [
+      {
+        "year": "2020",
+        "date": "July 12, 2020",
+        "location": "",
+        "source": "npcnews",
+        "divisions": [
+          "BIKINI - open",
+          "MEN'S PHYSIQUE - open"
+        ]
+      },
+      {
+        "year": "2021",
+        "date": "2021-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - Figure"
+        ]
+      },
+      {
+        "year": "2021",
+        "date": "April 17, 2021",
+        "location": "",
+        "source": "npcnews",
+        "divisions": [
+          "BIKINI - open",
+          "FIGURE - open",
+          "MEN'S PHYSIQUE - open"
+        ]
+      },
+      {
+        "year": "2022",
+        "date": "April 16, 2022",
+        "location": "",
+        "source": "npcnews",
+        "divisions": [
+          "BIKINI - open",
+          "FIGURE - open",
+          "MEN'S PHYSIQUE - open"
+        ]
+      },
+      {
+        "year": "2023",
+        "date": "April 15, 2023",
+        "location": "Salt Lake City, Utah",
+        "source": "scorecards",
+        "divisions": [
+          "BIKINI",
+          "Figure Masters +40",
+          "MEN'S PHYSIQUE",
+          "Men's Physique Masters +40"
+        ]
+      },
+      {
+        "year": "2023",
+        "date": "April 15, 2023",
+        "location": "",
+        "source": "npcnews",
+        "divisions": [
+          "BIKINI - open",
+          "FIGURE - open",
+          "MEN'S PHYSIQUE - open"
+        ]
+      },
+      {
+        "year": "2023",
+        "date": "April 15, 2023",
+        "location": "Salt Lake City, Utah",
+        "source": "scorecards",
+        "divisions": [
+          "Bikini Masters +40"
+        ]
+      },
+      {
+        "year": "2023",
+        "date": "April 15, 2023",
+        "location": "Salt Lake City, Utah",
+        "source": "scorecards",
+        "divisions": [
+          "FIGURE"
+        ]
+      },
+      {
+        "year": "2024",
+        "date": "April 20, 2024",
+        "location": "",
+        "source": "npcnews",
+        "divisions": [
+          "BIKINI - open",
+          "FIGURE - open",
+          "MEN'S PHYSIQUE - open"
+        ]
+      },
+      {
+        "year": "2024",
+        "date": "2024-04-20",
+        "location": "Salt Lake City,UTUnited States",
+        "source": "2024",
+        "divisions": [
+          "Men's Classic Physique - Open",
+          "Men's Physique - Masters 40+",
+          "Men's Physique - Open",
+          "Women's Bikini - Masters 40+",
+          "Women's Bikini - Open",
+          "Women's Figure - Masters 40+",
+          "Women's Figure - Open"
         ]
       }
     ]
@@ -22991,8 +21941,7 @@
     "variations": [
       "Sheru Classic Asian Grand Prix",
       "Sheru Classic Asian Grand Prix Pro",
-      "Sheru Classic",
-      "Sheru Asian Classic Pro"
+      "Sheru Classic India"
     ],
     "appearances": [
       {
@@ -23019,7 +21968,105 @@
         "location": "",
         "source": "musclememory",
         "divisions": [
+          "Female - Figure"
+        ]
+      },
+      {
+        "year": "2012",
+        "date": "2012-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - Figure"
+        ]
+      }
+    ]
+  },
+  "Sheru Classic India": {
+    "variations": [
+      "Sheru Classic India Pro",
+      "Sheru Classic Bharat Pro"
+    ],
+    "appearances": [
+      {
+        "year": "2023",
+        "date": "June 18, 2023",
+        "location": "New Delhi, India",
+        "source": "scorecards",
+        "divisions": [
+          "BIKINI",
+          "MEN\u2019S 212",
+          "Men's Physique"
+        ]
+      },
+      {
+        "year": "2023",
+        "date": "June 18, 2023",
+        "location": "",
+        "source": "npcnews",
+        "divisions": [
+          "212 - open",
+          "BIKINI - open",
+          "MEN'S CLASSIC PHYSIQUE - open",
+          "MEN'S PHYSIQUE - open"
+        ]
+      },
+      {
+        "year": "2024",
+        "date": "2024-06-07",
+        "location": "Delhi,India",
+        "source": "2024",
+        "divisions": [
+          "Men's 212 Bodybuilding - Open",
+          "Men's Classic Physique - Open",
+          "Men's Physique - Open",
+          "Women's Bikini - Open"
+        ]
+      },
+      {
+        "year": "2024",
+        "date": "June 7, 2024",
+        "location": "",
+        "source": "npcnews",
+        "divisions": [
+          "212 - open",
+          "BIKINI - open",
+          "MEN'S CLASSIC PHYSIQUE - open",
+          "MEN'S PHYSIQUE - open"
+        ]
+      }
+    ]
+  },
+  "Sheru Classic Mumbai Pro": {
+    "variations": [
+      "Sheru Classic Mumbai Pro",
+      "Sheru Classic Mumbai Pro Show",
+      "Sheru Classic Pro Show Mumbai Pro",
+      "Fessional League Sheru Classic Pro Show Mumbai Pro",
+      "Bharat Pro Show",
+      "Sheru Classic Pro",
+      "Sheru Classic",
+      "Sheru Asian Classic Pro"
+    ],
+    "appearances": [
+      {
+        "year": "2011",
+        "date": "2011-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
           "Male"
+        ]
+      },
+      {
+        "year": "2012",
+        "date": "October 6, 2012",
+        "location": "Mumbai, India",
+        "source": "scorecards",
+        "divisions": [
+          "Bikini",
+          "Men's Bodybuilding",
+          "Women's Pro Figure"
         ]
       },
       {
@@ -23076,77 +22123,17 @@
         "divisions": [
           "Male"
         ]
-      }
-    ]
-  },
-  "Sheru Classic France Pro": {
-    "variations": [
-      "Sheru Classic France Pro"
-    ],
-    "appearances": [
-      {
-        "year": "2023",
-        "date": "September 28-29, 2023",
-        "location": "France",
-        "source": "scorecards",
-        "divisions": [
-          "Bikini",
-          "Classic Men's Physique",
-          "MEN\u2019S PHYSIQUE",
-          "Men's Bodybuilding"
-        ]
       },
       {
-        "year": "2023",
-        "date": "September 30, 2023",
+        "year": "2022",
+        "date": "November 5, 2022",
         "location": "",
         "source": "npcnews",
         "divisions": [
+          "212 - open",
           "BIKINI - open",
-          "MEN'S BODYBUILDING - open",
           "MEN'S CLASSIC PHYSIQUE - open",
           "MEN'S PHYSIQUE - open"
-        ]
-      }
-    ]
-  },
-  "Sheru Classic India": {
-    "variations": [
-      "Sheru Classic India",
-      "Sheru Classic India Pro",
-      "Sheru Classic Pro Show Mumbai Pro",
-      "Fessional League Sheru Classic Pro Show Mumbai Pro",
-      "Sheru Classic Pro",
-      "Sheru Classic Bharat Pro"
-    ],
-    "appearances": [
-      {
-        "year": "2011",
-        "date": "2011-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Figure"
-        ]
-      },
-      {
-        "year": "2012",
-        "date": "2012-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Figure"
-        ]
-      },
-      {
-        "year": "2012",
-        "date": "October 6, 2012",
-        "location": "Mumbai, India",
-        "source": "scorecards",
-        "divisions": [
-          "Bikini",
-          "Men's Bodybuilding",
-          "Women's Pro Figure"
         ]
       },
       {
@@ -23167,29 +22154,6 @@
           "Men's 212",
           "Men's Physique",
           "Women's Bikini"
-        ]
-      },
-      {
-        "year": "2023",
-        "date": "June 18, 2023",
-        "location": "New Delhi, India",
-        "source": "scorecards",
-        "divisions": [
-          "BIKINI",
-          "MEN\u2019S 212",
-          "Men's Physique"
-        ]
-      },
-      {
-        "year": "2023",
-        "date": "June 18, 2023",
-        "location": "",
-        "source": "npcnews",
-        "divisions": [
-          "212 - open",
-          "BIKINI - open",
-          "MEN'S CLASSIC PHYSIQUE - open",
-          "MEN'S PHYSIQUE - open"
         ]
       },
       {
@@ -23220,24 +22184,55 @@
       },
       {
         "year": "2024",
-        "date": "2024-06-07",
-        "location": "Delhi,India",
+        "date": "2024-12-20",
+        "location": "Mumbai,India",
         "source": "2024",
         "divisions": [
-          "Men's 212 Bodybuilding - Open",
-          "Men's Classic Physique - Open",
-          "Men's Physique - Open",
-          "Women's Bikini - Open"
+          "men\u2019s classic physique \u2013 open",
+          "men\u2019s physique \u2013 open",
+          "men\u2019s wheelchair \u2013 open",
+          "women\u2019s bikini \u2013 open"
         ]
       },
       {
         "year": "2024",
-        "date": "June 7, 2024",
+        "date": "December 20, 2024",
         "location": "",
         "source": "npcnews",
         "divisions": [
-          "212 - open",
           "BIKINI - open",
+          "MEN'S BODYBUILDING - open",
+          "MEN'S CLASSIC PHYSIQUE - open",
+          "MEN'S PHYSIQUE - open"
+        ]
+      }
+    ]
+  },
+  "Sheru Classic France Pro": {
+    "variations": [
+      "Sheru Classic France Pro"
+    ],
+    "appearances": [
+      {
+        "year": "2023",
+        "date": "September 28-29, 2023",
+        "location": "France",
+        "source": "scorecards",
+        "divisions": [
+          "Bikini",
+          "Classic Men's Physique",
+          "MEN\u2019S PHYSIQUE",
+          "Men's Bodybuilding"
+        ]
+      },
+      {
+        "year": "2023",
+        "date": "September 30, 2023",
+        "location": "",
+        "source": "npcnews",
+        "divisions": [
+          "BIKINI - open",
+          "MEN'S BODYBUILDING - open",
           "MEN'S CLASSIC PHYSIQUE - open",
           "MEN'S PHYSIQUE - open"
         ]
@@ -23295,51 +22290,6 @@
         "source": "npcnews",
         "divisions": [
           "BIKINI - open",
-          "MEN'S PHYSIQUE - open"
-        ]
-      }
-    ]
-  },
-  "Sheru Classic Mumbai Pro": {
-    "variations": [
-      "Sheru Classic Mumbai Pro",
-      "Sheru Classic Mumbai Pro Show",
-      "Bharat Pro Show"
-    ],
-    "appearances": [
-      {
-        "year": "2022",
-        "date": "November 5, 2022",
-        "location": "",
-        "source": "npcnews",
-        "divisions": [
-          "212 - open",
-          "BIKINI - open",
-          "MEN'S CLASSIC PHYSIQUE - open",
-          "MEN'S PHYSIQUE - open"
-        ]
-      },
-      {
-        "year": "2024",
-        "date": "2024-12-20",
-        "location": "Mumbai,India",
-        "source": "2024",
-        "divisions": [
-          "men\u2019s classic physique \u2013 open",
-          "men\u2019s physique \u2013 open",
-          "men\u2019s wheelchair \u2013 open",
-          "women\u2019s bikini \u2013 open"
-        ]
-      },
-      {
-        "year": "2024",
-        "date": "December 20, 2024",
-        "location": "",
-        "source": "npcnews",
-        "divisions": [
-          "BIKINI - open",
-          "MEN'S BODYBUILDING - open",
-          "MEN'S CLASSIC PHYSIQUE - open",
           "MEN'S PHYSIQUE - open"
         ]
       }
@@ -23538,178 +22488,6 @@
         "source": "musclememory",
         "divisions": [
           "Male - Classic"
-        ]
-      }
-    ]
-  },
-  "South East Asian Games": {
-    "variations": [
-      "South East Asian Games"
-    ],
-    "appearances": [
-      {
-        "year": "1979",
-        "date": "1979-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Male - BantamWeight",
-          "Male - Light-HeavyWeight",
-          "Male - LightWeight",
-          "Male - MiddleWeight"
-        ]
-      },
-      {
-        "year": "1987",
-        "date": "1987-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Male - BantamWeight",
-          "Male - Light-HeavyWeight",
-          "Male - LightWeight",
-          "Male - MiddleWeight",
-          "Male - WelterWeight"
-        ]
-      },
-      {
-        "year": "1989",
-        "date": "1989-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Male - BantamWeight",
-          "Male - HeavyWeight",
-          "Male - Light-HeavyWeight",
-          "Male - LightWeight",
-          "Male - MiddleWeight",
-          "Male - WelterWeight"
-        ]
-      },
-      {
-        "year": "1991",
-        "date": "1991-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Male - BantamWeight",
-          "Male - FlyWeight",
-          "Male - Light-HeavyWeight",
-          "Male - LightWeight",
-          "Male - MiddleWeight",
-          "Male - WelterWeight"
-        ]
-      },
-      {
-        "year": "1993",
-        "date": "1993-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Male - BantamWeight",
-          "Male - FlyWeight",
-          "Male - Light-HeavyWeight",
-          "Male - LightWeight",
-          "Male - MiddleWeight",
-          "Male - WelterWeight"
-        ]
-      },
-      {
-        "year": "1997",
-        "date": "1997-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Male - BantamWeight",
-          "Male - FlyWeight",
-          "Male - Light-FlyWeight",
-          "Male - Light-HeavyWeight",
-          "Male - Light-MiddleWeight",
-          "Male - LightWeight",
-          "Male - MiddleWeight",
-          "Male - WelterWeight"
-        ]
-      },
-      {
-        "year": "2003",
-        "date": "2003-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Male - BantamWeight",
-          "Male - FlyWeight",
-          "Male - Light-FlyWeight",
-          "Male - Light-HeavyWeight",
-          "Male - Light-MiddleWeight",
-          "Male - LightWeight",
-          "Male - MiddleWeight",
-          "Male - WelterWeight"
-        ]
-      },
-      {
-        "year": "2005",
-        "date": "2005-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Male - BantamWeight",
-          "Male - FlyWeight",
-          "Male - Light-FlyWeight",
-          "Male - Light-MiddleWeight",
-          "Male - LightWeight",
-          "Male - WelterWeight"
-        ]
-      },
-      {
-        "year": "2006",
-        "date": "2006-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - HeavyWeight",
-          "Female - LightWeight",
-          "Male - HeavyWeight",
-          "Male - LightWeight",
-          "Male - MiddleWeight"
-        ]
-      },
-      {
-        "year": "2007",
-        "date": "2007-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Male - FlyWeight",
-          "Male - Light-FlyWeight",
-          "Male - Light-MiddleWeight",
-          "Male - LightWeight"
-        ]
-      }
-    ]
-  },
-  "South Florida Pro": {
-    "variations": [
-      "South Florida Pro"
-    ],
-    "appearances": [
-      {
-        "year": "2024",
-        "date": "2024-06-22",
-        "location": "Boca Raton,FLUnited States",
-        "source": "2024",
-        "divisions": [
-          "Men's 212 Bodybuilding - Masters 35+",
-          "Men's 212 Bodybuilding - Masters 45+",
-          "Men's 212 Bodybuilding - Open"
-        ]
-      },
-      {
-        "year": "2024",
-        "date": "June 22, 2024",
-        "location": "",
-        "source": "npcnews",
-        "divisions": [
-          "212 - open"
         ]
       }
     ]
@@ -23978,15 +22756,6 @@
       },
       {
         "year": "2012",
-        "date": "September 15, 2012",
-        "location": "St. Louis, Missouri",
-        "source": "scorecards",
-        "divisions": [
-          "BIKINI"
-        ]
-      },
-      {
-        "year": "2012",
         "date": "2012-01-01",
         "location": "",
         "source": "musclememory",
@@ -24002,15 +22771,6 @@
         "divisions": [
           "Bikini",
           "Figure"
-        ]
-      },
-      {
-        "year": "2013",
-        "date": "August 24, 2013",
-        "location": "St. Louis, Missouri",
-        "source": "scorecards",
-        "divisions": [
-          "Bikini - Open"
         ]
       },
       {
@@ -24031,15 +22791,6 @@
           "Figure",
           "Pro Bikini",
           "Women's Physique"
-        ]
-      },
-      {
-        "year": "2014",
-        "date": "August 23, 2014",
-        "location": "St. Louis, Missouri",
-        "source": "scorecards",
-        "divisions": [
-          "BIKINI"
         ]
       },
       {
@@ -24199,6 +22950,40 @@
       }
     ]
   },
+  "St. Louis Pro Bikini": {
+    "variations": [
+      "St. Louis Pro Bikini"
+    ],
+    "appearances": [
+      {
+        "year": "2012",
+        "date": "September 15, 2012",
+        "location": "St. Louis, Missouri",
+        "source": "scorecards",
+        "divisions": [
+          "BIKINI"
+        ]
+      },
+      {
+        "year": "2013",
+        "date": "August 24, 2013",
+        "location": "St. Louis, Missouri",
+        "source": "scorecards",
+        "divisions": [
+          "Bikini - Open"
+        ]
+      },
+      {
+        "year": "2014",
+        "date": "August 23, 2014",
+        "location": "St. Louis, Missouri",
+        "source": "scorecards",
+        "divisions": [
+          "BIKINI"
+        ]
+      }
+    ]
+  },
   "Stockholm Pro": {
     "variations": [
       "Stockholm Pro"
@@ -24255,7 +23040,7 @@
         "location": "Lake Tahoe, Nevada",
         "source": "scorecards",
         "divisions": [
-          "Women's Physique"
+          "Figure"
         ]
       },
       {
@@ -24412,7 +23197,9 @@
   "Taiwan Pro": {
     "variations": [
       "Taiwan Pro",
-      "Tw Pro"
+      "Tw Pro",
+      "Taiwan Pro 2",
+      "Taiwan Pro Finale"
     ],
     "appearances": [
       {
@@ -24438,32 +23225,6 @@
       },
       {
         "year": "2024",
-        "date": "April 4, 2024",
-        "location": "",
-        "source": "npcnews",
-        "divisions": [
-          "BIKINI - open"
-        ]
-      },
-      {
-        "year": "2024",
-        "date": "2024-04-04",
-        "location": "Kaohsiung,Taiwan",
-        "source": "2024",
-        "divisions": [
-          "Women's Bikini - Open"
-        ]
-      }
-    ]
-  },
-  "Taiwan Pro 2": {
-    "variations": [
-      "Taiwan Pro 2",
-      "Taiwan Pro Finale"
-    ],
-    "appearances": [
-      {
-        "year": "2024",
         "date": "December 20, 2024",
         "location": "",
         "source": "npcnews",
@@ -24484,6 +23245,31 @@
           "men\u2019s classic physique \u2013 open",
           "men\u2019s physique \u2013 open",
           "women\u2019s bikini \u2013 open"
+        ]
+      }
+    ]
+  },
+  "Taiwan Pro Bikini": {
+    "variations": [
+      "Taiwan Pro Bikini"
+    ],
+    "appearances": [
+      {
+        "year": "2024",
+        "date": "2024-04-04",
+        "location": "Kaohsiung,Taiwan",
+        "source": "2024",
+        "divisions": [
+          "Women's Bikini - Open"
+        ]
+      },
+      {
+        "year": "2024",
+        "date": "April 4, 2024",
+        "location": "",
+        "source": "npcnews",
+        "divisions": [
+          "BIKINI - open"
         ]
       }
     ]
@@ -24715,6 +23501,664 @@
           "FIGURE - open",
           "MEN'S CLASSIC PHYSIQUE - open",
           "MEN'S PHYSIQUE - open"
+        ]
+      }
+    ]
+  },
+  "Wings Of Strength Pbw Tampa Pro": {
+    "variations": [
+      "Wings Of Strength Pbw Tampa Pro",
+      "Wings Of Strength Pbw Tampa",
+      "Wos 2018 Ifbb Muscle Vodka Tampa Pro",
+      "Wos Ifbb Pro League Yamamoto Nutrition Cup Tampa Pro",
+      "Wos Ifbb League Yamamoto Nutrition Cup Tampa Pro",
+      "Wos Yamamoto Nutrition Cup Tampa Pro",
+      "Pbw Tampa Pro",
+      "Tampa Pro",
+      "Tampa Pro Championships",
+      "Titan Medical Tampa Pro",
+      "Titan Medical Tampa",
+      "Tampa Pro Bodybuilding Weekly",
+      "Pro Bodybuilding Weekly",
+      "Bodybuilding Weekly"
+    ],
+    "appearances": [
+      {
+        "year": "2008",
+        "date": "AUGUST 9, 2008",
+        "location": "TAMPA, FLORIDA, USA",
+        "source": "scorecards",
+        "divisions": [
+          "Men's Bodybuilding"
+        ]
+      },
+      {
+        "year": "2008",
+        "date": "2008-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female",
+          "Male - LightWeight",
+          "Male - Open"
+        ]
+      },
+      {
+        "year": "2009",
+        "date": "2009-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female",
+          "Male - LightWeight",
+          "Male - Open"
+        ]
+      },
+      {
+        "year": "2009",
+        "date": "August 8, 2009",
+        "location": "Tampa, Florida",
+        "source": "scorecards",
+        "divisions": [
+          "Women's Bodybuilding"
+        ]
+      },
+      {
+        "year": "2010",
+        "date": "2010-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Male - LightWeight",
+          "Male - Open"
+        ]
+      },
+      {
+        "year": "2010",
+        "date": "July 17, 2010",
+        "location": "Tampa, Florida",
+        "source": "scorecards",
+        "divisions": [
+          "Men's 202",
+          "Men's Open Bodybuilding",
+          "WOMEN'S BODYBUILDING",
+          "Women's Bikini"
+        ]
+      },
+      {
+        "year": "2011",
+        "date": "2011-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female",
+          "Male - LightWeight",
+          "Male - Open"
+        ]
+      },
+      {
+        "year": "2011",
+        "date": "June 25, 2011",
+        "location": "Tampa, Florida",
+        "source": "scorecards",
+        "divisions": [
+          "MEN'S BODYBUILDING",
+          "Men's 202",
+          "WOMEN'S BIKINI",
+          "WOMEN'S BODYBUILDING"
+        ]
+      },
+      {
+        "year": "2012",
+        "date": "2012-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - Bodybuilding",
+          "Female - Figure",
+          "Female - Physique",
+          "Male"
+        ]
+      },
+      {
+        "year": "2012",
+        "date": "August 11, 2012",
+        "location": "Tampa, Florida",
+        "source": "scorecards",
+        "divisions": [
+          "Bikini",
+          "Men's Bodybuilding",
+          "WOMEN'S FIGURE",
+          "Women's Bodybuilding",
+          "Women's Physique"
+        ]
+      },
+      {
+        "year": "2013",
+        "date": "August 10, 2013",
+        "location": "Tampa, Florida",
+        "source": "scorecards",
+        "divisions": [
+          "Bikini",
+          "Men's Bodybuilding",
+          "Men's Physique",
+          "Women's Bodybuilding",
+          "Women's Figure",
+          "Women's Fitness",
+          "Women's Physique"
+        ]
+      },
+      {
+        "year": "2013",
+        "date": "2013-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - Bodybuilding",
+          "Female - Figure",
+          "Male"
+        ]
+      },
+      {
+        "year": "2014",
+        "date": "August 8, 2014",
+        "location": "Tampa, Florida",
+        "source": "scorecards",
+        "divisions": [
+          "FITNESS",
+          "MEN'S 212",
+          "Men's Physique",
+          "Women's Bodybuilding"
+        ]
+      },
+      {
+        "year": "2014",
+        "date": "August 9, 2014",
+        "location": "Tampa, Florida",
+        "source": "scorecards",
+        "divisions": [
+          "Bikini",
+          "FIGURE",
+          "Figure",
+          "Men's Bodybuilding",
+          "Women's Physique"
+        ]
+      },
+      {
+        "year": "2014",
+        "date": "AUGUST 9, 2014",
+        "location": "TAMPA, FLORIDA",
+        "source": "scorecards",
+        "divisions": [
+          "WOMEN'S PHYSIQUE"
+        ]
+      },
+      {
+        "year": "2014",
+        "date": "2014-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - Bodybuilding",
+          "Female - Figure",
+          "Female - Physique",
+          "Male",
+          "Male - LightWeight"
+        ]
+      },
+      {
+        "year": "2015",
+        "date": "August 7, 2015",
+        "location": "Tampa, Florida",
+        "source": "scorecards",
+        "divisions": [
+          "FIGURE",
+          "MEN'S PHYSIQUE",
+          "Masters Men's Physique",
+          "Masters Women's Physique",
+          "Men's 212",
+          "Men's Physique",
+          "Women's Physique"
+        ]
+      },
+      {
+        "year": "2015",
+        "date": "August 8, 2015",
+        "location": "Tampa, Florida",
+        "source": "scorecards",
+        "divisions": [
+          "Bikini",
+          "Bikini Masters",
+          "FITNESS",
+          "Men's Bodybuilding",
+          "Women's Bodybuilding"
+        ]
+      },
+      {
+        "year": "2015",
+        "date": "August 7, 2015",
+        "location": "Tampa, Florida",
+        "source": "scorecards",
+        "divisions": [
+          "Masters Pro Figure"
+        ]
+      },
+      {
+        "year": "2015",
+        "date": "2015-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - Bodybuilding",
+          "Female - Figure",
+          "Female - Figure Masters",
+          "Female - Masters Physique",
+          "Female - Physique",
+          "Male - LightWeight",
+          "Male - Open"
+        ]
+      },
+      {
+        "year": "2016",
+        "date": "2016-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - Bodybuilding",
+          "Female - Figure",
+          "Female - Physique",
+          "Male - Classic",
+          "Male - LightWeight",
+          "Male - Open"
+        ]
+      },
+      {
+        "year": "2017",
+        "date": "2017-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - Bodybuilding",
+          "Female - Figure",
+          "Female - Figure Masters",
+          "Female - Physique",
+          "Male - Classic",
+          "Male - Classic Masters",
+          "Male - LightWeight",
+          "Male - Masters",
+          "Male - Open"
+        ]
+      },
+      {
+        "year": "2017",
+        "date": "August 5, 2017",
+        "location": "Tampa, Florida",
+        "source": "scorecards",
+        "divisions": [
+          "BIKINI",
+          "Bikini Masters",
+          "Men's 212"
+        ]
+      },
+      {
+        "year": "2017",
+        "date": "August 5, 2017",
+        "location": "Tampa, Florida",
+        "source": "scorecards",
+        "divisions": [
+          "CLASSIC MEN'S PHYSIQUE",
+          "Figure",
+          "Figure Masters",
+          "Fitness",
+          "Men's Bodybuilding",
+          "Men's Bodybuilding Masters",
+          "Men's Classic Physique Masters 40+",
+          "Men's Physique - Open",
+          "Men's Physique Masters 40+",
+          "Women's Bodybuilding",
+          "Women's Physique"
+        ]
+      },
+      {
+        "year": "2018",
+        "date": "August 4, 2018",
+        "location": "Tampa, Florida",
+        "source": "scorecards",
+        "divisions": [
+          "Bikin Masters 40+",
+          "Bikini",
+          "Classic Men's Physique",
+          "Classic Men's Physique Masters 40+",
+          "Figure",
+          "Figure Masters 40+",
+          "Men's 212",
+          "Men's Bodybuilding",
+          "Men's Physique",
+          "Men's Physique Masters 40+",
+          "WOMEN\u2019S BODYBUILDING",
+          "Women's Bikini - Open",
+          "Women's Fitness - Open",
+          "Women's Physique"
+        ]
+      },
+      {
+        "year": "2018",
+        "date": "August 3, 2018",
+        "location": "",
+        "source": "npcnews",
+        "divisions": [
+          "212 - open",
+          "BIKINI - open",
+          "FIGURE - open",
+          "FITNESS - open",
+          "MEN'S BODYBUILDING - open",
+          "MEN'S CLASSIC PHYSIQUE - open",
+          "MEN'S PHYSIQUE - open",
+          "WOMEN'S BODYBUILDING - open",
+          "WOMEN'S PHYSIQUE - open"
+        ]
+      },
+      {
+        "year": "2018",
+        "date": "2018-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - Bodybuilding",
+          "Female - Figure",
+          "Female - Physique",
+          "Male - Bodybuilding",
+          "Male - Classic",
+          "Male - Classic Masters",
+          "Male - LightWeight"
+        ]
+      },
+      {
+        "year": "2019",
+        "date": "August 2, 2019",
+        "location": "Tampa, Florida",
+        "source": "scorecards",
+        "divisions": [
+          "Classic Men's Physique",
+          "FIGURE",
+          "Figure Masters 40+",
+          "MEN'S 212",
+          "MEN\u2019S PHYSIQUE",
+          "Men's Classic Physique Masters 40+",
+          "Men's Physique",
+          "Men's Physique Masters 40+"
+        ]
+      },
+      {
+        "year": "2019",
+        "date": "August 3, 2019",
+        "location": "Tampa, Florida",
+        "source": "scorecards",
+        "divisions": [
+          "Bikini",
+          "Bikini Masters 40+",
+          "Fitness",
+          "Men\u2019s Bodybuilding",
+          "Women's Bodybuilding",
+          "Women's Physique",
+          "Women's Physique - Open"
+        ]
+      },
+      {
+        "year": "2019",
+        "date": "August 2, 2019",
+        "location": "",
+        "source": "npcnews",
+        "divisions": [
+          "212 - open",
+          "BIKINI - open",
+          "FIGURE - open",
+          "FITNESS - open",
+          "MEN'S BODYBUILDING - open",
+          "MEN'S CLASSIC PHYSIQUE - open",
+          "MEN'S PHYSIQUE - open",
+          "WOMEN'S BODYBUILDING - open",
+          "WOMEN'S PHYSIQUE - open"
+        ]
+      },
+      {
+        "year": "2019",
+        "date": "2019-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - Bodybuilding",
+          "Female - Figure",
+          "Female - Figure Masters",
+          "Female - Physique",
+          "Male - Classic",
+          "Male - Classic Masters",
+          "Male - LightWeight",
+          "Male - Open"
+        ]
+      },
+      {
+        "year": "2020",
+        "date": "July 31 - August 1, 2020",
+        "location": "Tampa, Florida",
+        "source": "scorecards",
+        "divisions": [
+          "Men's 212",
+          "Men's Physique"
+        ]
+      },
+      {
+        "year": "2020",
+        "date": "July 31-August 1, 2020",
+        "location": "Tampa, Florida",
+        "source": "scorecards",
+        "divisions": [
+          "Bikini Masters +40",
+          "Classic Men's Physique",
+          "Classic Men's Physique Masters +40"
+        ]
+      },
+      {
+        "year": "2020",
+        "date": "JULY 31-AUGUST 1, 2020",
+        "location": "TAMPA, FLORIDA",
+        "source": "scorecards",
+        "divisions": [
+          "Figure Masters 40+"
+        ]
+      },
+      {
+        "year": "2020",
+        "date": "July 31-August 1, 2020",
+        "location": "Tampa, Florida",
+        "source": "scorecards",
+        "divisions": [
+          "Bikini"
+        ]
+      },
+      {
+        "year": "2020",
+        "date": "July 31, 2020",
+        "location": "",
+        "source": "npcnews",
+        "divisions": [
+          "212 - open",
+          "BIKINI - open",
+          "FIGURE - open",
+          "FITNESS - open",
+          "MEN'S BODYBUILDING - open",
+          "MEN'S CLASSIC PHYSIQUE - open",
+          "MEN'S PHYSIQUE - open",
+          "WELLNESS - open",
+          "WOMEN'S BODYBUILDING - open",
+          "WOMEN'S PHYSIQUE - open"
+        ]
+      },
+      {
+        "year": "2020",
+        "date": "2020-01-01",
+        "location": "",
+        "source": "musclememory",
+        "divisions": [
+          "Female - Bodybuilding",
+          "Female - Figure",
+          "Female - Figure Masters",
+          "Female - Masters Physique",
+          "Female - Physique",
+          "Male - Classic",
+          "Male - Classic Masters",
+          "Male - LightWeight",
+          "Male - Open"
+        ]
+      },
+      {
+        "year": "2021",
+        "date": "August 6, 2021",
+        "location": "",
+        "source": "npcnews",
+        "divisions": [
+          "212 - open",
+          "BIKINI - open",
+          "FIGURE - open",
+          "FITNESS - open",
+          "MEN'S BODYBUILDING - open",
+          "MEN'S CLASSIC PHYSIQUE - open",
+          "MEN'S PHYSIQUE - open",
+          "WELLNESS - open",
+          "WOMEN'S BODYBUILDING - open",
+          "WOMEN'S PHYSIQUE - open"
+        ]
+      },
+      {
+        "year": "2022",
+        "date": "August 4, 2022",
+        "location": "",
+        "source": "npcnews",
+        "divisions": [
+          "212 - open",
+          "BIKINI - open",
+          "FIGURE - open",
+          "FITNESS - open",
+          "MEN'S BODYBUILDING - open",
+          "MEN'S CLASSIC PHYSIQUE - open",
+          "MEN'S PHYSIQUE - open",
+          "WELLNESS - open",
+          "WOMEN'S BODYBUILDING - open",
+          "WOMEN'S PHYSIQUE - open"
+        ]
+      },
+      {
+        "year": "2023",
+        "date": "August 3, 2023",
+        "location": "Tampa, Florida",
+        "source": "scorecards",
+        "divisions": [
+          "Bikini MASTERS +55",
+          "Bikini Masters +40",
+          "Bikini Masters +50",
+          "Bikini Masters +60",
+          "Figure Masters +40",
+          "Figure Masters +50",
+          "Figure Masters +55",
+          "Men's Bodybuilding Masters +40",
+          "Men's Bodybuilding Masters +50",
+          "Men's Bodybuilding Masters +55",
+          "Men's Classic Physique Masters +40",
+          "Men's Classic Physique Masters +50",
+          "Men's Classic Physique Masters +55",
+          "Men's Physique Masters +40",
+          "Men's Physique Masters +50",
+          "Men's Physique Masters +55",
+          "Wellness Masters +40",
+          "Women's Bodybuilding Masters +40",
+          "Women's Bodybuilding Masters +50",
+          "Women's Bodybuilding Masters +55",
+          "Women's Physique Masters +40",
+          "Women's Physique Masters +50",
+          "Women's Physique Masters +55"
+        ]
+      },
+      {
+        "year": "2023",
+        "date": "August 3, 2023",
+        "location": "",
+        "source": "npcnews",
+        "divisions": [
+          "212 - open",
+          "BIKINI - open",
+          "FIGURE - open",
+          "FITNESS - open",
+          "MEN'S BODYBUILDING - open",
+          "MEN'S CLASSIC PHYSIQUE - open",
+          "MEN'S PHYSIQUE - open",
+          "WELLNESS - open",
+          "WOMEN'S BODYBUILDING - open",
+          "WOMEN'S PHYSIQUE - open"
+        ]
+      },
+      {
+        "year": "2024",
+        "date": "2024-08-01",
+        "location": "Tampa,Florida",
+        "source": "2024",
+        "divisions": [
+          "MEN'S BODYBUILDING - MASTERS 40+",
+          "MEN'S BODYBUILDING - MASTERS 50+",
+          "Men's 212 Bodybuilding - Open",
+          "Men's Bodybuilding - Masters 55+",
+          "Men's Bodybuilding - Masters 60+",
+          "Men's Bodybuilding - Masters 70+",
+          "Men's Bodybuilding - Open",
+          "Men's Classic Physique - Masters 40+",
+          "Men's Classic Physique - Masters 50+",
+          "Men's Classic Physique - Masters 55+",
+          "Men's Classic Physique - Masters 60+",
+          "Men's Classic Physique - Open",
+          "Men's Physique - Masters 40+",
+          "Men's Physique - Masters 50+",
+          "Men's Physique - Masters 55+",
+          "Men's Physique - Masters 60+",
+          "Men's Physique - Open",
+          "WOMEN'S BIKINI - MASTERS 50+",
+          "WOMEN'S BIKINI - MASTERS 55+",
+          "WOMEN'S WELLNESS - MASTERS 40+",
+          "Women's Bikini - Masters 40+",
+          "Women's Bikini - Masters 60+",
+          "Women's Bikini - Open",
+          "Women's Bodybuilding - Masters 40+",
+          "Women's Bodybuilding - Masters 50+",
+          "Women's Bodybuilding - Masters 55+",
+          "Women's Bodybuilding - Masters 60+",
+          "Women's Bodybuilding - Open",
+          "Women's Figure - Masters 40+",
+          "Women's Figure - Masters 50+",
+          "Women's Figure - Masters 55+",
+          "Women's Figure - Masters 60+",
+          "Women's Figure - Open",
+          "Women's Fitness - Masters 40+",
+          "Women's Fitness - Open",
+          "Women's Physique - Masters 40+",
+          "Women's Physique - Masters 50+",
+          "Women's Physique - Masters 55+",
+          "Women's Physique - Open"
+        ]
+      },
+      {
+        "year": "2024",
+        "date": "August 3, 2024",
+        "location": "",
+        "source": "npcnews",
+        "divisions": [
+          "212 - open",
+          "BIKINI - open",
+          "FIGURE - open",
+          "FITNESS - open",
+          "MEN'S BODYBUILDING - open",
+          "MEN'S CLASSIC PHYSIQUE - open",
+          "MEN'S PHYSIQUE - open",
+          "WOMEN'S BODYBUILDING - open",
+          "WOMEN'S PHYSIQUE - open",
+          "WOMEN'S WELLNESS - open"
         ]
       }
     ]
@@ -27244,123 +26688,6 @@
       }
     ]
   },
-  "Wasatch Warrior Pro": {
-    "variations": [
-      "Wasatch Warrior Pro",
-      "Wasatch Warrior",
-      "Wasatch Warrior Pro Figure"
-    ],
-    "appearances": [
-      {
-        "year": "2020",
-        "date": "July 12, 2020",
-        "location": "",
-        "source": "npcnews",
-        "divisions": [
-          "BIKINI - open",
-          "MEN'S PHYSIQUE - open"
-        ]
-      },
-      {
-        "year": "2021",
-        "date": "2021-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Figure"
-        ]
-      },
-      {
-        "year": "2021",
-        "date": "April 17, 2021",
-        "location": "",
-        "source": "npcnews",
-        "divisions": [
-          "BIKINI - open",
-          "FIGURE - open",
-          "MEN'S PHYSIQUE - open"
-        ]
-      },
-      {
-        "year": "2022",
-        "date": "April 16, 2022",
-        "location": "",
-        "source": "npcnews",
-        "divisions": [
-          "BIKINI - open",
-          "FIGURE - open",
-          "MEN'S PHYSIQUE - open"
-        ]
-      },
-      {
-        "year": "2023",
-        "date": "April 15, 2023",
-        "location": "Salt Lake City, Utah",
-        "source": "scorecards",
-        "divisions": [
-          "BIKINI",
-          "Figure Masters +40",
-          "MEN'S PHYSIQUE",
-          "Men's Physique Masters +40"
-        ]
-      },
-      {
-        "year": "2023",
-        "date": "April 15, 2023",
-        "location": "",
-        "source": "npcnews",
-        "divisions": [
-          "BIKINI - open",
-          "FIGURE - open",
-          "MEN'S PHYSIQUE - open"
-        ]
-      },
-      {
-        "year": "2023",
-        "date": "April 15, 2023",
-        "location": "Salt Lake City, Utah",
-        "source": "scorecards",
-        "divisions": [
-          "Bikini Masters +40"
-        ]
-      },
-      {
-        "year": "2023",
-        "date": "April 15, 2023",
-        "location": "Salt Lake City, Utah",
-        "source": "scorecards",
-        "divisions": [
-          "FIGURE"
-        ]
-      },
-      {
-        "year": "2024",
-        "date": "April 20, 2024",
-        "location": "",
-        "source": "npcnews",
-        "divisions": [
-          "BIKINI - open",
-          "FIGURE - open",
-          "MEN'S PHYSIQUE - open"
-        ]
-      },
-      {
-        "year": "2024",
-        "date": "2024-04-20",
-        "location": "Salt Lake City,UTUnited States",
-        "source": "2024",
-        "divisions": [
-          "Men's Classic Physique - Open",
-          "Men's Physique - Masters 40+",
-          "Men's Physique - Open",
-          "Women's Bikini - Masters 40+",
-          "Women's Bikini - Open",
-          "Women's Figure - Masters 40+",
-          "Women's Figure - Open"
-        ]
-      }
-    ]
-  },
   "Warsaw Pro": {
     "variations": [
       "Warsaw Pro"
@@ -27675,15 +27002,6 @@
     ],
     "appearances": [
       {
-        "year": 0,
-        "date": "July 1, 2016",
-        "location": "Chicago, Illinois",
-        "source": "scorecards",
-        "divisions": [
-          "Bikini"
-        ]
-      },
-      {
         "year": "1988",
         "date": "1988-01-01",
         "location": "",
@@ -27859,6 +27177,7 @@
         "location": "Chicago, Illinois",
         "source": "scorecards",
         "divisions": [
+          "Bikini",
           "FITNESS",
           "Figure",
           "Men's 212",
@@ -28143,664 +27462,6 @@
           "212 - open",
           "BIKINI - open",
           "FIGURE - open",
-          "MEN'S BODYBUILDING - open",
-          "MEN'S CLASSIC PHYSIQUE - open",
-          "MEN'S PHYSIQUE - open",
-          "WOMEN'S BODYBUILDING - open",
-          "WOMEN'S PHYSIQUE - open",
-          "WOMEN'S WELLNESS - open"
-        ]
-      }
-    ]
-  },
-  "Wings Of Strength Pbw Tampa Pro": {
-    "variations": [
-      "Wings Of Strength Pbw Tampa Pro",
-      "Wings Of Strength Pbw Tampa",
-      "Wos 2018 Ifbb Muscle Vodka Tampa Pro",
-      "Wos Ifbb Pro League Yamamoto Nutrition Cup Tampa Pro",
-      "Wos Ifbb League Yamamoto Nutrition Cup Tampa Pro",
-      "Wos Yamamoto Nutrition Cup Tampa Pro",
-      "Pbw Tampa Pro",
-      "Tampa Pro",
-      "Tampa Pro Championships",
-      "Titan Medical Tampa Pro",
-      "Titan Medical Tampa",
-      "Tampa Pro Bodybuilding Weekly",
-      "Pro Bodybuilding Weekly",
-      "Bodybuilding Weekly"
-    ],
-    "appearances": [
-      {
-        "year": "2008",
-        "date": "AUGUST 9, 2008",
-        "location": "TAMPA, FLORIDA, USA",
-        "source": "scorecards",
-        "divisions": [
-          "Men's Bodybuilding"
-        ]
-      },
-      {
-        "year": "2008",
-        "date": "2008-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female",
-          "Male - LightWeight",
-          "Male - Open"
-        ]
-      },
-      {
-        "year": "2009",
-        "date": "2009-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female",
-          "Male - LightWeight",
-          "Male - Open"
-        ]
-      },
-      {
-        "year": "2009",
-        "date": "August 8, 2009",
-        "location": "Tampa, Florida",
-        "source": "scorecards",
-        "divisions": [
-          "Women's Bodybuilding"
-        ]
-      },
-      {
-        "year": "2010",
-        "date": "2010-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Male - LightWeight",
-          "Male - Open"
-        ]
-      },
-      {
-        "year": "2010",
-        "date": "July 17, 2010",
-        "location": "Tampa, Florida",
-        "source": "scorecards",
-        "divisions": [
-          "Men's 202",
-          "Men's Open Bodybuilding",
-          "WOMEN'S BODYBUILDING",
-          "Women's Bikini"
-        ]
-      },
-      {
-        "year": "2011",
-        "date": "2011-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female",
-          "Male - LightWeight",
-          "Male - Open"
-        ]
-      },
-      {
-        "year": "2011",
-        "date": "June 25, 2011",
-        "location": "Tampa, Florida",
-        "source": "scorecards",
-        "divisions": [
-          "MEN'S BODYBUILDING",
-          "Men's 202",
-          "WOMEN'S BIKINI",
-          "WOMEN'S BODYBUILDING"
-        ]
-      },
-      {
-        "year": "2012",
-        "date": "2012-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Bodybuilding",
-          "Female - Figure",
-          "Female - Physique",
-          "Male"
-        ]
-      },
-      {
-        "year": "2012",
-        "date": "August 11, 2012",
-        "location": "Tampa, Florida",
-        "source": "scorecards",
-        "divisions": [
-          "Bikini",
-          "Men's Bodybuilding",
-          "WOMEN'S FIGURE",
-          "Women's Bodybuilding",
-          "Women's Physique"
-        ]
-      },
-      {
-        "year": "2013",
-        "date": "August 10, 2013",
-        "location": "Tampa, Florida",
-        "source": "scorecards",
-        "divisions": [
-          "Bikini",
-          "Men's Bodybuilding",
-          "Men's Physique",
-          "Women's Bodybuilding",
-          "Women's Figure",
-          "Women's Fitness",
-          "Women's Physique"
-        ]
-      },
-      {
-        "year": "2013",
-        "date": "2013-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Bodybuilding",
-          "Female - Figure",
-          "Male"
-        ]
-      },
-      {
-        "year": "2014",
-        "date": "August 8, 2014",
-        "location": "Tampa, Florida",
-        "source": "scorecards",
-        "divisions": [
-          "FITNESS",
-          "MEN'S 212",
-          "Men's Physique",
-          "Women's Bodybuilding"
-        ]
-      },
-      {
-        "year": "2014",
-        "date": "August 9, 2014",
-        "location": "Tampa, Florida",
-        "source": "scorecards",
-        "divisions": [
-          "Bikini",
-          "FIGURE",
-          "Figure",
-          "Men's Bodybuilding",
-          "Women's Physique"
-        ]
-      },
-      {
-        "year": "2014",
-        "date": "AUGUST 9, 2014",
-        "location": "TAMPA, FLORIDA",
-        "source": "scorecards",
-        "divisions": [
-          "WOMEN'S PHYSIQUE"
-        ]
-      },
-      {
-        "year": "2014",
-        "date": "2014-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Bodybuilding",
-          "Female - Figure",
-          "Female - Physique",
-          "Male",
-          "Male - LightWeight"
-        ]
-      },
-      {
-        "year": "2015",
-        "date": "August 7, 2015",
-        "location": "Tampa, Florida",
-        "source": "scorecards",
-        "divisions": [
-          "FIGURE",
-          "MEN'S PHYSIQUE",
-          "Masters Men's Physique",
-          "Masters Women's Physique",
-          "Men's 212",
-          "Men's Physique",
-          "Women's Physique"
-        ]
-      },
-      {
-        "year": "2015",
-        "date": "August 8, 2015",
-        "location": "Tampa, Florida",
-        "source": "scorecards",
-        "divisions": [
-          "Bikini",
-          "Bikini Masters",
-          "FITNESS",
-          "Men's Bodybuilding",
-          "Women's Bodybuilding"
-        ]
-      },
-      {
-        "year": "2015",
-        "date": "August 7, 2015",
-        "location": "Tampa, Florida",
-        "source": "scorecards",
-        "divisions": [
-          "Masters Pro Figure"
-        ]
-      },
-      {
-        "year": "2015",
-        "date": "2015-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Bodybuilding",
-          "Female - Figure",
-          "Female - Figure Masters",
-          "Female - Masters Physique",
-          "Female - Physique",
-          "Male - LightWeight",
-          "Male - Open"
-        ]
-      },
-      {
-        "year": "2016",
-        "date": "2016-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Bodybuilding",
-          "Female - Figure",
-          "Female - Physique",
-          "Male - Classic",
-          "Male - LightWeight",
-          "Male - Open"
-        ]
-      },
-      {
-        "year": "2017",
-        "date": "2017-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Bodybuilding",
-          "Female - Figure",
-          "Female - Figure Masters",
-          "Female - Physique",
-          "Male - Classic",
-          "Male - Classic Masters",
-          "Male - LightWeight",
-          "Male - Masters",
-          "Male - Open"
-        ]
-      },
-      {
-        "year": "2017",
-        "date": "August 5, 2017",
-        "location": "Tampa, Florida",
-        "source": "scorecards",
-        "divisions": [
-          "BIKINI",
-          "Bikini Masters",
-          "Men's 212"
-        ]
-      },
-      {
-        "year": "2017",
-        "date": "August 5, 2017",
-        "location": "Tampa, Florida",
-        "source": "scorecards",
-        "divisions": [
-          "CLASSIC MEN'S PHYSIQUE",
-          "Figure",
-          "Figure Masters",
-          "Fitness",
-          "Men's Bodybuilding",
-          "Men's Bodybuilding Masters",
-          "Men's Classic Physique Masters 40+",
-          "Men's Physique - Open",
-          "Men's Physique Masters 40+",
-          "Women's Bodybuilding",
-          "Women's Physique"
-        ]
-      },
-      {
-        "year": "2018",
-        "date": "August 4, 2018",
-        "location": "Tampa, Florida",
-        "source": "scorecards",
-        "divisions": [
-          "Bikin Masters 40+",
-          "Bikini",
-          "Classic Men's Physique",
-          "Classic Men's Physique Masters 40+",
-          "Figure",
-          "Figure Masters 40+",
-          "Men's 212",
-          "Men's Bodybuilding",
-          "Men's Physique",
-          "Men's Physique Masters 40+",
-          "WOMEN\u2019S BODYBUILDING",
-          "Women's Bikini - Open",
-          "Women's Fitness - Open",
-          "Women's Physique"
-        ]
-      },
-      {
-        "year": "2018",
-        "date": "August 3, 2018",
-        "location": "",
-        "source": "npcnews",
-        "divisions": [
-          "212 - open",
-          "BIKINI - open",
-          "FIGURE - open",
-          "FITNESS - open",
-          "MEN'S BODYBUILDING - open",
-          "MEN'S CLASSIC PHYSIQUE - open",
-          "MEN'S PHYSIQUE - open",
-          "WOMEN'S BODYBUILDING - open",
-          "WOMEN'S PHYSIQUE - open"
-        ]
-      },
-      {
-        "year": "2018",
-        "date": "2018-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Bodybuilding",
-          "Female - Figure",
-          "Female - Physique",
-          "Male - Bodybuilding",
-          "Male - Classic",
-          "Male - Classic Masters",
-          "Male - LightWeight"
-        ]
-      },
-      {
-        "year": "2019",
-        "date": "August 2, 2019",
-        "location": "Tampa, Florida",
-        "source": "scorecards",
-        "divisions": [
-          "Classic Men's Physique",
-          "FIGURE",
-          "Figure Masters 40+",
-          "MEN'S 212",
-          "MEN\u2019S PHYSIQUE",
-          "Men's Classic Physique Masters 40+",
-          "Men's Physique",
-          "Men's Physique Masters 40+"
-        ]
-      },
-      {
-        "year": "2019",
-        "date": "August 3, 2019",
-        "location": "Tampa, Florida",
-        "source": "scorecards",
-        "divisions": [
-          "Bikini",
-          "Bikini Masters 40+",
-          "Fitness",
-          "Men\u2019s Bodybuilding",
-          "Women's Bodybuilding",
-          "Women's Physique",
-          "Women's Physique - Open"
-        ]
-      },
-      {
-        "year": "2019",
-        "date": "August 2, 2019",
-        "location": "",
-        "source": "npcnews",
-        "divisions": [
-          "212 - open",
-          "BIKINI - open",
-          "FIGURE - open",
-          "FITNESS - open",
-          "MEN'S BODYBUILDING - open",
-          "MEN'S CLASSIC PHYSIQUE - open",
-          "MEN'S PHYSIQUE - open",
-          "WOMEN'S BODYBUILDING - open",
-          "WOMEN'S PHYSIQUE - open"
-        ]
-      },
-      {
-        "year": "2019",
-        "date": "2019-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Bodybuilding",
-          "Female - Figure",
-          "Female - Figure Masters",
-          "Female - Physique",
-          "Male - Classic",
-          "Male - Classic Masters",
-          "Male - LightWeight",
-          "Male - Open"
-        ]
-      },
-      {
-        "year": "2020",
-        "date": "July 31 - August 1, 2020",
-        "location": "Tampa, Florida",
-        "source": "scorecards",
-        "divisions": [
-          "Men's 212",
-          "Men's Physique"
-        ]
-      },
-      {
-        "year": "2020",
-        "date": "July 31-August 1, 2020",
-        "location": "Tampa, Florida",
-        "source": "scorecards",
-        "divisions": [
-          "Bikini Masters +40",
-          "Classic Men's Physique",
-          "Classic Men's Physique Masters +40"
-        ]
-      },
-      {
-        "year": "2020",
-        "date": "JULY 31-AUGUST 1, 2020",
-        "location": "TAMPA, FLORIDA",
-        "source": "scorecards",
-        "divisions": [
-          "Figure Masters 40+"
-        ]
-      },
-      {
-        "year": "2020",
-        "date": "July 31-August 1, 2020",
-        "location": "Tampa, Florida",
-        "source": "scorecards",
-        "divisions": [
-          "Bikini"
-        ]
-      },
-      {
-        "year": "2020",
-        "date": "July 31, 2020",
-        "location": "",
-        "source": "npcnews",
-        "divisions": [
-          "212 - open",
-          "BIKINI - open",
-          "FIGURE - open",
-          "FITNESS - open",
-          "MEN'S BODYBUILDING - open",
-          "MEN'S CLASSIC PHYSIQUE - open",
-          "MEN'S PHYSIQUE - open",
-          "WELLNESS - open",
-          "WOMEN'S BODYBUILDING - open",
-          "WOMEN'S PHYSIQUE - open"
-        ]
-      },
-      {
-        "year": "2020",
-        "date": "2020-01-01",
-        "location": "",
-        "source": "musclememory",
-        "divisions": [
-          "Female - Bodybuilding",
-          "Female - Figure",
-          "Female - Figure Masters",
-          "Female - Masters Physique",
-          "Female - Physique",
-          "Male - Classic",
-          "Male - Classic Masters",
-          "Male - LightWeight",
-          "Male - Open"
-        ]
-      },
-      {
-        "year": "2021",
-        "date": "August 6, 2021",
-        "location": "",
-        "source": "npcnews",
-        "divisions": [
-          "212 - open",
-          "BIKINI - open",
-          "FIGURE - open",
-          "FITNESS - open",
-          "MEN'S BODYBUILDING - open",
-          "MEN'S CLASSIC PHYSIQUE - open",
-          "MEN'S PHYSIQUE - open",
-          "WELLNESS - open",
-          "WOMEN'S BODYBUILDING - open",
-          "WOMEN'S PHYSIQUE - open"
-        ]
-      },
-      {
-        "year": "2022",
-        "date": "August 4, 2022",
-        "location": "",
-        "source": "npcnews",
-        "divisions": [
-          "212 - open",
-          "BIKINI - open",
-          "FIGURE - open",
-          "FITNESS - open",
-          "MEN'S BODYBUILDING - open",
-          "MEN'S CLASSIC PHYSIQUE - open",
-          "MEN'S PHYSIQUE - open",
-          "WELLNESS - open",
-          "WOMEN'S BODYBUILDING - open",
-          "WOMEN'S PHYSIQUE - open"
-        ]
-      },
-      {
-        "year": "2023",
-        "date": "August 3, 2023",
-        "location": "Tampa, Florida",
-        "source": "scorecards",
-        "divisions": [
-          "Bikini MASTERS +55",
-          "Bikini Masters +40",
-          "Bikini Masters +50",
-          "Bikini Masters +60",
-          "Figure Masters +40",
-          "Figure Masters +50",
-          "Figure Masters +55",
-          "Men's Bodybuilding Masters +40",
-          "Men's Bodybuilding Masters +50",
-          "Men's Bodybuilding Masters +55",
-          "Men's Classic Physique Masters +40",
-          "Men's Classic Physique Masters +50",
-          "Men's Classic Physique Masters +55",
-          "Men's Physique Masters +40",
-          "Men's Physique Masters +50",
-          "Men's Physique Masters +55",
-          "Wellness Masters +40",
-          "Women's Bodybuilding Masters +40",
-          "Women's Bodybuilding Masters +50",
-          "Women's Bodybuilding Masters +55",
-          "Women's Physique Masters +40",
-          "Women's Physique Masters +50",
-          "Women's Physique Masters +55"
-        ]
-      },
-      {
-        "year": "2023",
-        "date": "August 3, 2023",
-        "location": "",
-        "source": "npcnews",
-        "divisions": [
-          "212 - open",
-          "BIKINI - open",
-          "FIGURE - open",
-          "FITNESS - open",
-          "MEN'S BODYBUILDING - open",
-          "MEN'S CLASSIC PHYSIQUE - open",
-          "MEN'S PHYSIQUE - open",
-          "WELLNESS - open",
-          "WOMEN'S BODYBUILDING - open",
-          "WOMEN'S PHYSIQUE - open"
-        ]
-      },
-      {
-        "year": "2024",
-        "date": "2024-08-01",
-        "location": "Tampa,Florida",
-        "source": "2024",
-        "divisions": [
-          "MEN'S BODYBUILDING - MASTERS 40+",
-          "MEN'S BODYBUILDING - MASTERS 50+",
-          "Men's 212 Bodybuilding - Open",
-          "Men's Bodybuilding - Masters 55+",
-          "Men's Bodybuilding - Masters 60+",
-          "Men's Bodybuilding - Masters 70+",
-          "Men's Bodybuilding - Open",
-          "Men's Classic Physique - Masters 40+",
-          "Men's Classic Physique - Masters 50+",
-          "Men's Classic Physique - Masters 55+",
-          "Men's Classic Physique - Masters 60+",
-          "Men's Classic Physique - Open",
-          "Men's Physique - Masters 40+",
-          "Men's Physique - Masters 50+",
-          "Men's Physique - Masters 55+",
-          "Men's Physique - Masters 60+",
-          "Men's Physique - Open",
-          "WOMEN'S BIKINI - MASTERS 50+",
-          "WOMEN'S BIKINI - MASTERS 55+",
-          "WOMEN'S WELLNESS - MASTERS 40+",
-          "Women's Bikini - Masters 40+",
-          "Women's Bikini - Masters 60+",
-          "Women's Bikini - Open",
-          "Women's Bodybuilding - Masters 40+",
-          "Women's Bodybuilding - Masters 50+",
-          "Women's Bodybuilding - Masters 55+",
-          "Women's Bodybuilding - Masters 60+",
-          "Women's Bodybuilding - Open",
-          "Women's Figure - Masters 40+",
-          "Women's Figure - Masters 50+",
-          "Women's Figure - Masters 55+",
-          "Women's Figure - Masters 60+",
-          "Women's Figure - Open",
-          "Women's Fitness - Masters 40+",
-          "Women's Fitness - Open",
-          "Women's Physique - Masters 40+",
-          "Women's Physique - Masters 50+",
-          "Women's Physique - Masters 55+",
-          "Women's Physique - Open"
-        ]
-      },
-      {
-        "year": "2024",
-        "date": "August 3, 2024",
-        "location": "",
-        "source": "npcnews",
-        "divisions": [
-          "212 - open",
-          "BIKINI - open",
-          "FIGURE - open",
-          "FITNESS - open",
           "MEN'S BODYBUILDING - open",
           "MEN'S CLASSIC PHYSIQUE - open",
           "MEN'S PHYSIQUE - open",
@@ -29828,9 +28489,7 @@
   },
   "Yamamoto Cup Pro": {
     "variations": [
-      "Yamamoto Cup Pro",
-      "Yamamoto France",
-      "Yamamoto France Pro"
+      "Yamamoto Cup Pro"
     ],
     "appearances": [
       {
@@ -29876,7 +28535,15 @@
           "MEN'S CLASSIC PHYSIQUE - open",
           "MEN'S PHYSIQUE - open"
         ]
-      },
+      }
+    ]
+  },
+  "Yamamoto France": {
+    "variations": [
+      "Yamamoto France",
+      "Yamamoto France Pro"
+    ],
+    "appearances": [
       {
         "year": "2022",
         "date": "September 30-October 1, 2022",
