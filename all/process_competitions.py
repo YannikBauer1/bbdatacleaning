@@ -4,7 +4,7 @@ from collections import defaultdict
 from datetime import datetime
 
 # Read the competition names from the JSON file
-with open('all/competition_names_editing.json', 'r') as f:
+with open('all/comp_name_dir.json', 'r') as f:
     competition_names = json.load(f)
 
 # Create a set of all competition names (including variations)

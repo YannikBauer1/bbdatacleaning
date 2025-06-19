@@ -72,8 +72,14 @@
   "British Championships": [
     "British Championships"
   ],
+  "Baltimore Classic Masters Pro": [
+    "Baltimore Classic Masters Pro"
+  ],
   "Canada Cup":[
     "Canada Cup"
+  ],
+  "Caribbean Grand Prix Masters Pro": [
+    "Caribbean Grand Prix Masters Pro"
   ],
   "Central American And Caribbean Championships": [
     "Central American And Caribbean Championships"
@@ -103,7 +109,8 @@
     "Emerald Cup Masters Pro"
   ],
   "Florida State Masters Pro": [
-    "Florida State Masters Pro"
+    "Florida State Masters Pro",
+    "Florida State Pro"
   ],
   "French Championships": [
     "French Championships"
@@ -120,6 +127,9 @@
   "Junior Mr America": [
     "Junior Mr America"
   ],
+  "Jay Cutler Desert Classic": [
+    "Jay Cutler Desert Classic"
+  ],
   "Latin American Amateur Championships": [
     "Latin American Amateur Championships"
   ],
@@ -127,10 +137,13 @@
     "Mediterranean Amateur Championships"
   ],
   "Masters Pro World": [
-    "Masters Pro World"
+    "Masters Pro World",
+    "Masters World Championships Pro",
+    "Masters World Pro"
   ],
   "Maxfit Classic Masters Pro": [
-    "Maxfit Classic Masters Pro"
+    "Maxfit Classic Masters Pro",
+    "Maxfit Pro"
   ],
   "Mexican Championships": [
     "Mexican Championships"
@@ -144,13 +157,15 @@
   "Olympia Masters": [
     "Olympia Masters",
     "Olympia - Masters",
-    "Masters Olympia"
+    "Masters Olympia",
+    "Masters Olympia Pro"
   ],
   "Olympia Wildcard Showdown": [
     "Olympia Wildcard Showdown"
   ],
   "Pittsburgh Masters Pro": [
-    "Pittsburgh Masters Pro"
+    "Pittsburgh Masters Pro",
+    "Pittsburgh Pro Masters Championships"
   ],
   "Pro Masters World Championships": [
     "Pro Masters World Championships"
@@ -163,6 +178,11 @@
   ],
   "South East Asian Games": [
     "South East Asian Games"
+  ],
+  "Ultimate Grand Prix": [
+    "Ultimate Grand Prix",
+    "Ultimate Grand Prix Pro Am",
+    "Ultimate Grand Prix Pro"
   ],
   "Uk Nationals": [
     "Uk Nationals"

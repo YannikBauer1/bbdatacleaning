@@ -30,6 +30,11 @@ cleaned_df.loc[mask, 'Date'] = 'October 9, 2021'
 mask = (cleaned_df['Competition'].str.contains('Wings of Strength Chicago Pro', case=False, na=False)) & (cleaned_df['Date'].isna() | (cleaned_df['Date'] == ''))
 cleaned_df.loc[mask, 'Date'] = 'July 1, 2016'
 
+# Fix incorrect date for Torunament Of Champions Pro
+mask = (cleaned_df['Competition'].str.contains('Torunament Of Champions Pro', case=False, na=False)) & (cleaned_df['Date'].str.contains('September 25, 2019', case=False, na=False))
+cleaned_df.loc[mask, 'Date'] = 'September 25, 2021'
+
+
 def parse_date_range(date_str):
     """
     Parse a date string that may contain a range (e.g., 'September 24th & 25th, 2010')
@@ -204,6 +209,22 @@ cleaned_df.loc[mask, 'Competition'] = 'Taiwan Pro Bikini'
 # Fix incorrect competition "Taiwan Pro"
 mask = (cleaned_df['Competition'].str.contains('Tw Pro', case=False, na=False)) & (cleaned_df['Date'].str.contains('2024-04-04', case=False, na=False))
 cleaned_df.loc[mask, 'Competition'] = 'Taiwan Pro Bikini'
+
+# Fix incorrect division "Tournament Of Champions"
+mask = (cleaned_df['Competition'].str.contains('Tournament Of Champions', case=False, na=False)) & (cleaned_df['Date'].str.contains('December 4, 2018', case=False, na=False))
+cleaned_df.loc[mask, 'Division'] = 'Mens Physique'
+
+# Fix incorrect competition "Rising Phoenix World Championship"
+mask = (cleaned_df['Competition'].str.contains('Rising Phoenix World Championship', case=False, na=False)) & (cleaned_df['Date'].str.contains('August 22, 2015', case=False, na=False))
+cleaned_df.loc[mask, 'Competition'] = 'Wings Of Strength Texas Pro'
+
+# Fix incorrect competition "Baltimore Pro"
+mask = (cleaned_df['Competition'].str.contains('Baltimore Pro', case=False, na=False)) & (cleaned_df['Division'].str.contains('Masters', case=False, na=False))
+cleaned_df.loc[mask, 'Competition'] = 'Baltimore Classic Masters Pro'
+
+# Fix incorrect competition "Baltimore Pro"
+mask = (cleaned_df['Competition'].str.contains('Baltimore Pro', case=False, na=False)) & (cleaned_df['Division'].str.contains('\\+', case=False, na=False))
+cleaned_df.loc[mask, 'Competition'] = 'Baltimore Classic Masters Pro'
 
 
 

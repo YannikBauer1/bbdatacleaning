@@ -4,7 +4,7 @@ import { createObjectCsvWriter } from 'csv-writer';
 import fs from 'fs';
 
 const baseUrl = 'https://contests.npcnewsonline.com/contests';
-const years = Array.from({ length: 7 }, (_, i) => 2018 + i); // 2018 to 2024
+const years = Array.from({ length: 14 }, (_, i) => 2011 + i); // 2011 to 2024
 
 const csvWriter = createObjectCsvWriter({
     path: 'npcnews/all_clean.csv',
@@ -80,7 +80,7 @@ async function getContestUrlsForYear(year) {
     $('.contest-listing a').each((i, el) => {
         const href = $(el).attr('href');
         console.log(`Found contest link: ${href}`);
-        if (href && href.includes(`/contests/${year}/ifbb_`)) {
+        if (href && href.includes(`/contests/${year}/`)) {
             contestUrls.push(href);
         }
     });
@@ -108,7 +108,7 @@ async function extractResultsFromContest(url, year) {
         // Find all competitor classes in this division
         const classes = [];
         $(divisionCell).find('.competitor-class').each((j, classEl) => {
-            const classText = $(classEl).text().trim().split(' ')[0];
+            const classText = $(classEl).text().trim();
             classes.push({
                 name: classText,
                 element: classEl
@@ -124,7 +124,7 @@ async function extractResultsFromContest(url, year) {
             // Get all competitors between this class and the next class
             let currentElement = $(startElement).next();
             while (currentElement.length && (!endElement || currentElement[0] !== endElement)) {
-                if (currentElement.is('a[data-parent="open"], a[data-parent="wheelchair"]')) {
+                if (currentElement.is('a[data-parent="open"], a[data-parent="wheelchair"], a[data-parent*="masters"]')) {
                     const place = currentElement.find('span').first().text().trim();
                     const fullText = currentElement.text().trim();
                     const competitorName = fullText.replace(/^\d+\s+/, '').trim();
@@ -173,6 +173,7 @@ async function main() {
         let contestUrls = [];
         try {
             contestUrls = await getContestUrlsForYear(year);
+            console.log(`Found ${contestUrls.length} contest URLs for year ${year}`);
         } catch (e) {
             console.error(`Failed to get contest URLs for year ${year}:`, e.message);
             continue;
