@@ -18,6 +18,10 @@ data_raw/
 # CSV files
 *.csv
 
+# Wayback Machine and image data
+waybackMachine/dataDone/
+waybackMachine/unique_images/
+
 # Python
 __pycache__/
 *.py[cod]
