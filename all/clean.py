@@ -1,13 +1,13 @@
 import pandas as pd
 import re
+import json
 
 # Read the input CSV file
-df = pd.read_csv('all/all_years_combined.csv')
+df = pd.read_csv('data/all/all_years_combined.csv')
 
 # TODO: Make changes to the DataFrame here
 # Example: cleaned_df = df.copy()
 cleaned_df = df.copy()
-
 
 # Remove prefixes like the year, IFBB, IFBB Pro, IFBB PRO LEAGUE, and also leading "-"
 cleaned_df['Competition'] = cleaned_df['Competition'].str.replace(
@@ -248,15 +248,100 @@ def write_competition_names_json(df, output_path):
         json.dump(competitions_dict, f, ensure_ascii=False, indent=2)
 
 # Example usage:
-write_competition_names_json(cleaned_df, 'all/competition_names.json')
+#write_competition_names_json(cleaned_df, 'all/competition_names.json')
 
 # new column order: Competition,Location,Date,Competitor Name,Country,Judging,Finals,Round 2,Round 3,Routine,Total,Place,Competition Type
 cleaned_df = cleaned_df[['Start Date', 'End Date', 'Competition', 'Location', 'Competitor Name', 'Country', 'Judging', 'Finals', 'Round 2', 'Round 3', 'Routine', 'Total', 'Place', 'Division', 'Date', 'Year', 'Contest URL', 'Source']]
 
-# Save the cleaned DataFrame to a new CSV file
-cleaned_df.to_csv('all/all_clean.csv', index=False)
 
-print('Cleaned data written to all/all_clean.csv')
+
+def apply_competition_mapping(cleaned_df):
+    """
+    Apply competition name mapping from JSON file and return the cleaned DataFrame.
+    """
+    # Load competition names mapping from JSON
+    with open('keys/competition_names.json', 'r', encoding='utf-8') as f:
+        competition_mapping = json.load(f)
+
+    def create_competition_lookup(mapping_dict):
+        """
+        Create a flat lookup dictionary for faster competition name mapping.
+        """
+        lookup = {}
+        for region, sub_regions in mapping_dict.items():
+            if isinstance(sub_regions, dict):
+                for sub_region, competitions in sub_regions.items():
+                    if isinstance(competitions, dict):
+                        for standard_name, variations in competitions.items():
+                            if isinstance(variations, list):
+                                for variation in variations:
+                                    lookup[variation.lower()] = standard_name
+        return lookup
+
+    # Create lookup dictionary for faster mapping
+    competition_lookup = create_competition_lookup(competition_mapping)
+
+    def find_competition_mapping(competition_name, lookup_dict):
+        """
+        Fast lookup for competition name mapping using pre-built dictionary.
+        """
+        return lookup_dict.get(competition_name.lower(), competition_name)
+
+    # Apply the competition name mapping
+    original_competitions = cleaned_df['Competition'].copy()
+    cleaned_df['Competition'] = cleaned_df['Competition'].apply(
+        lambda x: find_competition_mapping(x, competition_lookup)
+    )
+
+    # Filter out competitions that don't have a mapping (keep only mapped competitions)
+    original_count = len(cleaned_df)
+    # Keep only rows where the competition name was actually mapped (changed)
+    cleaned_df = cleaned_df[cleaned_df['Competition'] != original_competitions]
+    print(f"Filtered out {original_count - len(cleaned_df)} competitions that don't have mappings in competition_names.json")
+    print(f"Kept {len(cleaned_df)} competitions with valid mappings")
+
+    # Count how many competitions were mapped
+    mapped_count = len(cleaned_df)  # All remaining competitions were mapped
+    print(f"Competition name mapping: {mapped_count} competitions were standardized and kept")
+
+    # Show some examples of mappings
+    if mapped_count > 0:
+        mapping_examples = pd.DataFrame({
+            'Original': original_competitions,
+            'Standardized': cleaned_df['Competition']
+        })
+        mapping_examples = mapping_examples[mapping_examples['Original'] != mapping_examples['Standardized']].drop_duplicates().head(15)
+        print("\nExamples of competition name mappings:")
+        for _, row in mapping_examples.iterrows():
+            print(f"  '{row['Original']}' -> '{row['Standardized']}'")
+        
+        # Show unique competitions that were mapped
+        unique_mappings = mapping_examples.drop_duplicates(subset=['Original', 'Standardized'])
+        print(f"\nUnique competition name mappings: {len(unique_mappings)}")
+        if len(unique_mappings) > 0:
+            print("First 10 unique mappings:")
+            for _, row in unique_mappings.head(10).iterrows():
+                print(f"  '{row['Original']}' -> '{row['Standardized']}'")
+    
+    return cleaned_df
+
+# Apply the competition mapping function
+cleaned_df = apply_competition_mapping(cleaned_df)
+
+# make all division names lowercase
+cleaned_df['Division'] = cleaned_df['Division'].str.lower()
+
+# get rid of all rows where masters is in the division
+cleaned_df = cleaned_df[~cleaned_df['Division'].str.contains('masters', case=False, na=False)]
+cleaned_df = cleaned_df[~cleaned_df['Division'].str.contains('\\+', case=False, na=False)]
+
+
+
+
+# Save the cleaned DataFrame to a new CSV file
+cleaned_df.to_csv('data/all/all_clean.csv', index=False, quoting=1)
+
+print('Cleaned data written to data/all/all_clean.csv')
 
 # Print unique date strings from the 'Date' column
 #print(cleaned_df['Date'].unique())
