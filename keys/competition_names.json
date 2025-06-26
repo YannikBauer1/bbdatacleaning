@@ -3,10 +3,19 @@
     "1 Bro Pro",
     "1 Bro Pro Show"
   ],
+  "1 Bro Bikini Pro Show": [
+    "1 Bro Bikini Pro Show"
+  ],
+  "Ace Of Stage Pro": [
+    "Ace Of Stage Pro"
+  ],
   "Adela Garcia Classic Pro": [
     "Adela Garcia Classic Pro",
     "Adela Garcia Pro",
     "Adela Garcia Pro Am"
+  ],
+  "Agp Korea Pro Show": [
+    "Agp Korea Pro Show"
   ],
   "Agp Bikini Pro": [
     "Agp Bikini Pro",
@@ -23,7 +32,8 @@
     "Asia Grand Prix Classic Physique Pro"
   ],
   "Agp Pro All Stars": [
-    "Agp Pro All Stars"
+    "Agp Pro All Stars",
+    "Agp Pro Show"
   ],
   "Agp South Korea Mens Physique Pro": [
     "Agp South Korea Mens Physique Pro",
@@ -62,6 +72,13 @@
     "World Of Monsterzym 8 Korea Pro",
     "World Of Monsterzym Pro 2"
   ],
+  "World Of Monsterzym Pro": [
+    "World Of Monsterzym Pro",
+    "World Of Monsterzm Pro"
+  ],
+  "World Of Monsterzym Korea Pro": [
+    "World Of Monsterzym Korea Pro"
+  ],
   "South Korea Pro": [
     "South Korea Pro"
   ],
@@ -74,7 +91,12 @@
   ],
   "Argentina Sur Cup Pro": [
     "Argentina Sur Cup Pro",
-    "Argentina Sur Pro Cup"
+    "Argentina Sur Pro Cup",
+    "Argentina Pro",
+    "Sur Pro Cup Argentina"
+  ],
+  "Sur Pro Cup": [
+    "Sur Pro Cup"
   ],
   "Arkansas Pro": [
     "Arkansas Pro",
@@ -101,6 +123,9 @@
   "Arnold Classic South Africa": [
     "Arnold Classic South Africa"
   ],
+  "African Pro": [
+    "African Pro"
+  ],
   "Arnold Classic South America": [
     "Arnold Classic South America",
     "Arnold Classic South American",
@@ -108,7 +133,8 @@
     "Arnold Classic Brasil Pro",
     "Arnold Brasil",
     "Fessional League Arnold Brazil Pro",
-    "Arnold South America"
+    "Arnold South America",
+    "Arnold Sports Festival South America"
   ],
   "Arnold Classic Uk": [
     "Arnold Classic Uk",
@@ -160,6 +186,11 @@
     "Battle In The Desert Pro",
     "Las Vegas Battle In The Desert Pro"
   ],
+  "Steve Karr Las Vegas Classic": [
+    "Steve Karr Las Vegas Classic",
+    "Steve Karr Las Vegas Classic Pro",
+    "Steve Karr  Las Vegas Classic"
+  ],
   "Battle Of Bogota Pro": [
     "Battle Of Bogota Pro",
     "Pharlabs Battle Of Bogota Pro"
@@ -171,7 +202,11 @@
   "Battle Of The Bodies": [
     "Battle Of The Bodies",
     "Janet Layugs Battle Of The Bodies",
-    "Janet Layugs Battle Of The Bodies Pro"
+    "Janet Layugs Battle Of The Bodies Pro",
+    "Janet Layug'S Battle Of The Bodies"
+  ],
+  "Battle Of The Bodies Pro Oklahoma": [
+    "Battle Of The Bodies Pro"
   ],
   "Battle On The Beach Pro": [
     "Battle On The Beach Pro",
@@ -201,7 +236,8 @@
     "British Championships Pro"
   ],
   "British Grand Prix": [
-    "British Grand Prix"
+    "British Grand Prix",
+    "British Grand Prix Pro"
   ],
   "California Night Of Champions": [
     "California Night Of Champions",
@@ -256,6 +292,7 @@
   ],
   "China Pro": [
     "China Pro",
+    "China Dms Pro",
     "Fessional League China Dms Pro Shanghai"
   ],
   "Dragon Physique Dms Pro": [
@@ -270,7 +307,8 @@
   ],
   "Global Classic Hong Kong Pro Show": [
     "Global Classic Hong Kong Pro Show",
-    "Hong Kong Sar Pro"
+    "Hong Kong Sar Pro",
+    "Hong Kong Pro"
   ],
   "Goldentimes Ifbb Asian Pro": [
     "Goldentimes Ifbb Asian Pro"
@@ -294,7 +332,8 @@
   ],
   "Colombia Pro": [
     "Colombia Pro",
-    "Colombia Pro Am"
+    "Colombia Pro Am",
+    "Gomeisa Ultimate Battle Colombia Pro"
   ],
   "Colorado Pro Championships": [
     "Colorado Pro Championships"
@@ -313,7 +352,8 @@
   ],
   "Daytona Pro": [
     "Daytona Pro",
-    "Daytona Pro Am Championships"
+    "Daytona Pro Am Championships",
+    "Daytona Pro/Am Championships"
   ],
   "Dc Pro": [
     "Dc Pro"
@@ -355,7 +395,8 @@
   "Spain Empro Classic": [
     "Empro Pro Show",
     "Empro Pro",
-    "Spain Empro Classic"
+    "Spain Empro Classic",
+    "Empro Classic"
   ],
   "Bigman Weekend Pro": [
     "Bigman Weekend Pro",
@@ -363,7 +404,11 @@
     "Big Man Weekend Benidorm Pro",
     "Big Man Pro",
     "Bigman Weekend Spain Pro",
-    "Bigman Spain Pro"
+    "Bigman Spain Pro",
+    "Spain Pro"
+  ],
+  "Etelon Spain Pro": [
+    "Etelon Spain Pro"
   ],
   "Spanish Grand Prix Pro": [
     "Spanish Grand Prix Pro"
@@ -377,7 +422,8 @@
   ],
   "Euro Muscle Show": [
     "Euro Muscle Show",
-    "Euro Muscle Show Pro"
+    "Euro Muscle Show Pro",
+    "Euro Muscle Pro Show"
   ],
   "Europa Battle Of Champions": [
     "Europa Battle Of Champions",
@@ -424,7 +470,8 @@
   "Fibo Power Pro": [
     "Fibo Power Pro",
     "Fibo Power Germany",
-    "Fibo Germany"
+    "Fibo Germany",
+    "Fibo Championships"
   ],
   "Fiji Pro": [
     "Fiji Pro"
@@ -630,6 +677,9 @@
     "Indy Pro",
     "Indy Pro Supershow"
   ],
+  "Iraq Pro": [
+    "Iraq Pro"
+  ],
   "International Denmark": [
     "International Denmark"
   ],
@@ -663,12 +713,14 @@
   ],
   "Italy Flex Weekend Pro": [
     "Italy Flex Weekend Pro",
-    "Flex Pro"
+    "Flex Pro",
+    "Flex Weekend Italy Pro"
   ],
   "Italy Koloseum Pro": [
     "Italy Koloseum Pro",
     "Koloseum Pro",
-    "Italian Olympus Pro"
+    "Italian Olympus Pro",
+    "Koloseum Italy Pro"
   ],
   "Grand Prix Italy": [
     "Grand Prix Italy"
@@ -691,6 +743,9 @@
   ],
   "Japan Pro": [
     "Japan Pro"
+  ],
+  "Marrakesh Pro": [
+    "Marrakesh Pro"
   ],
   "Musclecontest Japan Pro": [
     "Musclecontest Japan Pro"
@@ -732,7 +787,8 @@
   ],
   "Klash Series All South Pro": [
     "Klash Series All South Pro",
-    "Klash Series All South Championships"
+    "Klash Series All South Championships",
+    "All South Pro Championships"
   ],
   "Klash Series Championships": [
     "Klash Series Championships",
@@ -771,7 +827,8 @@
     "Lenda Murray Atlanta Pro",
     "Lenda Murray Atlanta Pro Supershow",
     "Atlanta Pro",
-    "Fessional League Atlanta Pro"
+    "Fessional League Atlanta Pro",
+    "Lenda Murray Atl Pro Supershow"
   ],
   "Lenda Murray Norfolk Pro": [
     "Lenda Murray Norfolk Pro",
@@ -805,7 +862,8 @@
     "Los Angeles Championships"
   ],
   "Luciano Cruz Juiz De Fora Pro": [
-    "Luciano Cruz Juiz De Fora Pro"
+    "Luciano Cruz Juiz De Fora Pro",
+    "Musclecontest Luciano Cruz Juiz De Fora Pro"
   ],
   "Maximum Pro Invitational": [
     "Maximum Pro Invitational"
@@ -819,7 +877,11 @@
   ],
   "Mexico Grand Battle Pro": [
     "Mexico Grand Battle Pro",
-    "Pharlabs Mexico Grand Battle Pro Am"
+    "Pharlabs Mexico Grand Battle Pro Am",
+    "Mexico Grand Battle Pro/Am"
+  ],
+  "Pharlabs Mexico Pro/Am": [
+    "Pharlabs Mexico Pro/Am"
   ],
   "Mexico Supershow Pro": [
     "Mexico Supershow Pro"
@@ -867,7 +929,8 @@
     "Moscow Showdown Pro",
     "Moscow Pro",
     "Moscow Showdown Pro Am",
-    "Russia Pro"
+    "Russia Pro",
+    "Moscow Pro/Am Showdown"
   ],
   "Motor City Pro": [
     "Motor City Pro"
@@ -892,6 +955,12 @@
   ],
   "Mr East Coast": [
     "Mr East Coast"
+  ],
+  "Mr East Coast Pro": [
+    "Mr East Coast Pro"
+  ],
+  "East Coast Pro": [
+    "East Coast Pro"
   ],
   "Mr Eastern America": [
     "Mr Eastern America"
@@ -954,7 +1023,11 @@
     "Muscle Mayhem"
   ],
   "Musclecontest Austria": [
-    "Musclecontest Austria"
+    "Musclecontest Austria",
+    "Musclecontest Austria Pro"
+  ],
+  "Austrian Oak Pro": [
+    "Austrian Oak Pro"
   ],
   "Musclecontest Belo Horizonte": [
     "Musclecontest Belo Horizonte"
@@ -968,7 +1041,8 @@
     "Musclecontest Brasilia Pro"
   ],
   "Musclecontest Brazil 2": [
-    "Musclecontest Brazil 2"
+    "Musclecontest Brazil 2",
+    "Mci Brazil Pro"
   ],
   "Musclecontest Campinas Pro": [
     "Musclecontest Campinas Pro",
@@ -988,7 +1062,8 @@
     "Fit World Pro"
   ],
   "Musclecontest Fortaleza": [
-    "Musclecontest Fortaleza"
+    "Musclecontest Fortaleza",
+    "Musclecontest Experience Pro"
   ],
   "Musclecontest Goiania": [
     "Musclecontest Goiania",
@@ -997,7 +1072,8 @@
   ],
   "Musclecontest Ireland Pro": [
     "Musclecontest Ireland Pro",
-    "Ireland Pro"
+    "Ireland Pro",
+    "Musclecontest Bullman Pro"
   ],
   "Musclecontest Ironberg Abc Pro": [
     "Musclecontest Ironberg Abc Pro"
@@ -1106,6 +1182,15 @@
   "Oklahoma Pro": [
     "Oklahoma Pro"
   ],
+  "Oklahoma Showdown Of Champions Pro": [
+    "Oklahoma Showdown Of Champions Pro"
+  ],
+  "Oklahoma Grand Prix Pro": [
+    "Oklahoma Grand Prix Pro"
+  ],
+  "Utah Cup Pro": [
+    "Utah Cup Pro"
+  ],
   "Olympia": [
     "Olympia",
     "Mr Olympia",
@@ -1153,7 +1238,8 @@
     "Pacific Usa Xxv Pro",
     "Pacific Usa Xxviii Pro",
     "Pacific Usa Xxx Pro",
-    "Pacific Usa Pro Bikini"
+    "Pacific Usa Pro Bikini",
+    "Pacific Usa Xxxi Pro"
   ],
   "Palm Beach Pro": [
     "Palm Beach Pro"
@@ -1180,7 +1266,8 @@
     "Pittsburgh",
     "Pittsburgh Pro Figure",
     "Pittsburgh Pro Invitational",
-    "Pittsburgh Pro Figure Bikini Championships"
+    "Pittsburgh Pro Figure Bikini Championships",
+    "Pittsburgh Power & Fitness Festival"
   ],
   "Poland Everest Muscle Show Pro": [
     "Poland Everest Muscle Show Pro"
@@ -1199,6 +1286,12 @@
   ],
   "Everest Muscle Classic": [
     "Everest Muscle Classic"
+  ],
+  "Everest Muscle Stars Poland Pro": [
+    "Everest Muscle Stars Poland Pro"
+  ],
+  "Everest Muscle Games Poland Pro": [
+    "Everest Muscle Games Poland Pro"
   ],
   "Everest Muscle Fest Poland Pro": [
     "Everest Muscle Fest Poland Pro",
@@ -1300,7 +1393,8 @@
     "Shawn Ray Hawaiian Classic Pro",
     "Shawn Ray Hawaiian",
     "Shawn Ray Hawaiin Classic Pro",
-    "Shawn Rays Hawaiian Classic Pro Am"
+    "Shawn Rays Hawaiian Classic Pro Am",
+    "Shawn Ray'S Hawaiian Classic Pro/Am"
   ],
   "Shawn Rhoden Classic Philippines": [
     "Shawn Rhoden Classic Philippines",
@@ -1313,7 +1407,8 @@
   ],
   "Sheru Classic India": [
     "Sheru Classic India Pro",
-    "Sheru Classic Bharat Pro"
+    "Sheru Classic Bharat Pro",
+    "Sheru Classic Bharat Pro Show"
   ],
   "Sheru Classic Mumbai Pro": [
     "Sheru Classic Mumbai Pro",
@@ -1373,10 +1468,12 @@
   ],
   "Spain California Supplements Pro": [
     "Spain California Supplements Pro",
-    "California Supplements Pro"
+    "California Supplements Pro",
+    "California Supplement Spain Pro"
   ],
   "St Pete Pro": [
-    "St Pete Pro"
+    "St Pete Pro",
+    "St. Pete Pro"
   ],
   "St. Louis Pro": [
     "St. Louis Pro",
@@ -1386,6 +1483,9 @@
     "St. Louis Pro Bikini",
     "St Louis Bikini Pro",
     "St Louis Pro Bikini"
+  ],
+  "Santa Cruz Pro Championships": [
+    "Santa Cruz Pro Championships"
   ],
   "Stockholm Pro": [
     "Stockholm Pro"
@@ -1397,12 +1497,14 @@
     "Tahoe Pro",
     "Tahoe",
     "Tahoe Show",
-    "Tahoe Show Pro"
+    "Tahoe Show Pro",
+    "Tahoe Pro Show"
   ],
   "Taiwan Kaohsiung Pro": [
     "Taiwan Kaohsiung Pro",
     "Tw Pro 2",
-    "District Of Fengshan Kaohsiung Pro"
+    "District Of Fengshan Kaohsiung Pro",
+    "Taiwan Pro Show"
   ],
   "Taiwan Pro": [
     "Taiwan Pro",
@@ -1497,7 +1599,8 @@
   "Tri City Classic": [
     "Tri City Classic",
     "Tricity Classic Pro",
-    "Tricity Pro"
+    "Tricity Pro",
+    "Tri-City Classic Pro"
   ],
   "Triple O Dynasty": [
     "Triple O Dynasty",
@@ -1510,11 +1613,13 @@
     "Tsunami Nutrition Showdown",
     "Tsunami Nutrition Cup",
     "Tsunami Cup Pro",
-    "Tsunami Nutrition Showdown Pro"
+    "Tsunami Nutrition Showdown Pro",
+    "Tsunami Nutrition Showdown France Pro"
   ],
   "Tupelo Pro": [
     "Tupelo Pro",
-    "Tupelo Pro Championships"
+    "Tupelo Pro Championships",
+    "Tupelo Masters Pro"
   ],
   "Uk Bodypower Pro": [
     "Uk Bodypower Pro",
@@ -1552,7 +1657,8 @@
     "Vancouver Pro",
     "Vancouver Pro Championships",
     "Vancouver Ifbb Pro Show",
-    "Vancouver Pro Show"
+    "Vancouver Pro Show",
+    "Van Pro/Am"
   ],
   "Veronica Gallego Classic": [
     "Veronica Gallego Classic",
@@ -1586,7 +1692,8 @@
     "Wos Rising Phoenix Pro",
     "Rising Phoenix World Championship",
     "Rising Phoenix World Championships",
-    "Rising Phoenix Pro"
+    "Rising Phoenix Pro",
+    "Rising Phoenix"
   ],
   "Wings Of Strength Chicago": [
     "Wings Of Strength Chicago",
@@ -1618,7 +1725,9 @@
   ],
   "World Classic Pro": [
     "World Classic Pro",
-    "World Classic Pro Bikini"
+    "World Classic Pro Bikini",
+    "World Classic Men'S Physique Pro",
+    "World Classic Bikini Pro"
   ],
   "World Grand Prix": [
     "World Grand Prix"
@@ -1640,7 +1749,8 @@
     "Xtreme Bodybuilding Fitness Pro",
     "Xtreme Fitness And Bodybuilding Pro",
     "Xtreme Pro",
-    "Mexico Classic Physique Pro"
+    "Mexico Classic Physique Pro",
+    "Xtreme Bodybuilding Mexico Pro"
   ],
   "Yamamoto Cup Pro": [
     "Yamamoto Cup Pro"

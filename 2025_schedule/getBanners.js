@@ -609,7 +609,7 @@ async function scrapeAllCompetitionsWithDetails() {
         // Create CSV writer
         const createCsvWriter = csvWriter.createObjectCsvWriter;
         const csvWriterInstance = createCsvWriter({
-            path: 'ifbb_pro_competitions_2025_combined.csv',
+            path: 'banners.csv',
             header: [
                 { id: 'competition_name', title: 'Competition Name' },
                 { id: 'start_date', title: 'Start Date' },

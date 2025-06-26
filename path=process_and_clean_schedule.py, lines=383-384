@@ -1,2 +1,0 @@
-# Clean up multiple whitespaces in competition column using strip()
-df['competition'] = df['competition'].str.strip() 
