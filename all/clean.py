@@ -9,6 +9,11 @@ df = pd.read_csv('data/all/all_years_combined.csv')
 # Example: cleaned_df = df.copy()
 cleaned_df = df.copy()
 
+# remove all rows without a Competitior Name or if it is an empty string
+cleaned_df = cleaned_df[~cleaned_df['Competitor Name'].isna()]
+cleaned_df = cleaned_df[cleaned_df['Competitor Name'] != '']
+cleaned_df = cleaned_df[cleaned_df['Competitor Name'] != ' ']
+
 # Remove prefixes like the year, IFBB, IFBB Pro, IFBB PRO LEAGUE, and also leading "-"
 cleaned_df['Competition'] = cleaned_df['Competition'].str.replace(
     r'^(?:\d{4}\s*|-+\s*|IFBB PRO LEAGUE\s*|IFBB PRO\s*|IFBB\s*)+', '', 
@@ -247,10 +252,6 @@ def write_competition_names_json(df, output_path):
 # Example usage:
 #write_competition_names_json(cleaned_df, 'all/competition_names.json')
 
-# new column order: Competition,Location,Date,Competitor Name,Country,Judging,Finals,Round 2,Round 3,Routine,Total,Place,Competition Type
-cleaned_df = cleaned_df[['Start Date', 'End Date', 'Competition', 'Location', 'Competitor Name', 'Country', 'Judging', 'Finals', 'Round 2', 'Round 3', 'Routine', 'Total', 'Place', 'Division', 'Date', 'Year', 'Contest URL', 'Source']]
-
-
 
 def apply_competition_mapping(cleaned_df):
     """
@@ -425,13 +426,161 @@ cleaned_df.loc[mask_after_simple, 'Division'] = '212'
 mask_after_simple = (cleaned_df['Division'] == 'olympia')
 cleaned_df.loc[mask_after_simple, 'Division'] = 'fitness'
 
+
+
+def apply_division_mapping(cleaned_df):
+    """
+    Apply division name mapping from JSON file and return the cleaned DataFrame.
+    """
+    # Load division names mapping from JSON
+    with open('keys/division_names.json', 'r', encoding='utf-8') as f:
+        division_mapping = json.load(f)
+
+    def create_division_lookup(mapping_dict):
+        """
+        Create a flat lookup dictionary for faster division name mapping.
+        """
+        lookup = {}
+        for standard_name, variations in mapping_dict.items():
+            if isinstance(variations, list):
+                for variation in variations:
+                    lookup[variation.lower()] = standard_name
+        return lookup
+
+    # Create lookup dictionary for faster mapping
+    division_lookup = create_division_lookup(division_mapping)
+
+    def find_division_mapping(division_name, lookup_dict):
+        """
+        Fast lookup for division name mapping using pre-built dictionary.
+        """
+        if pd.isna(division_name) or division_name == '':
+            return division_name
+        return lookup_dict.get(division_name.lower(), division_name)
+
+    # Apply the division name mapping
+    original_divisions = cleaned_df['Division'].copy()
+    cleaned_df['Division'] = cleaned_df['Division'].apply(
+        lambda x: find_division_mapping(x, division_lookup)
+    )
+
+    # Count how many divisions were mapped
+    mapped_count = 0
+    unmapped_divisions = []
+    
+    for orig, mapped in zip(original_divisions, cleaned_df['Division']):
+        if pd.notna(orig) and orig != '' and orig.lower() != mapped.lower():
+            mapped_count += 1
+        elif pd.notna(orig) and orig != '' and orig.lower() not in division_lookup:
+            unmapped_divisions.append(orig)
+    
+    # Remove duplicates and sort alphabetically
+    unmapped_divisions = sorted(list(set(unmapped_divisions)))
+    
+    # Save unmapped divisions to JSON file
+    with open('all/unmapped_divisions.json', 'w', encoding='utf-8') as f:
+        json.dump(unmapped_divisions, f, ensure_ascii=False, indent=2)
+    
+    print(f"Division name mapping: {mapped_count} divisions were standardized")
+    print(f"Unmapped divisions saved to: all/unmapped_divisions.json")
+
+    # Show some examples of mappings
+    if mapped_count > 0:
+        mapping_examples = pd.DataFrame({
+            'Original': original_divisions,
+            'Standardized': cleaned_df['Division']
+        })
+        mapping_examples = mapping_examples[
+            (mapping_examples['Original'] != mapping_examples['Standardized']) & 
+            (mapping_examples['Original'].notna()) & 
+            (mapping_examples['Original'] != '')
+        ].drop_duplicates().head(15)
+        
+        print("\nExamples of division name mappings:")
+        for _, row in mapping_examples.iterrows():
+            print(f"  '{row['Original']}' -> '{row['Standardized']}'")
+        
+        # Show unique divisions that were mapped
+        unique_mappings = mapping_examples.drop_duplicates(subset=['Original', 'Standardized'])
+        print(f"\nUnique division name mappings: {len(unique_mappings)}")
+        if len(unique_mappings) > 0:
+            print("First 10 unique mappings:")
+            for _, row in unique_mappings.head(10).iterrows():
+                print(f"  '{row['Original']}' -> '{row['Standardized']}'")
+    
+    return cleaned_df
+
+# Apply the division mapping function
+cleaned_df = apply_division_mapping(cleaned_df)
+
+# Create Division Subtype column
+def extract_division_subtype(division_name):
+    """
+    Extract the subtype from division names that contain a dash.
+    Example: 'mensbb - heavyweight' -> 'heavyweight'
+    """
+    if pd.isna(division_name) or division_name == '':
+        return None
+    
+    # Split by dash and strip whitespace
+    parts = division_name.split('-')
+    if len(parts) > 1:
+        # Return the part after the dash, stripped of whitespace
+        return parts[1].strip()
+    else:
+        # No dash found, return None
+        return None
+
+# Create the Division Subtype column
+cleaned_df['Division Subtype'] = cleaned_df['Division'].apply(extract_division_subtype)
+
+# Update Division column to remove the subtype part
+def clean_division_name(division_name):
+    """
+    Remove the subtype part from division names that contain a dash.
+    Example: 'mensbb - heavyweight' -> 'mensbb'
+    """
+    if pd.isna(division_name) or division_name == '':
+        return division_name
+    
+    # Split by dash and return the first part, stripped of whitespace
+    parts = division_name.split('-')
+    return parts[0].strip()
+
+# Update the Division column to remove subtypes
+cleaned_df['Division'] = cleaned_df['Division'].apply(clean_division_name)
+
+# Print statistics about Division Subtype creation
+subtype_count = cleaned_df['Division Subtype'].notna().sum()
+total_divisions = len(cleaned_df)
+print(f"\nDivision Subtype creation:")
+print(f"  Total divisions: {total_divisions}")
+print(f"  Divisions with subtypes: {subtype_count}")
+print(f"  Divisions without subtypes: {total_divisions - subtype_count}")
+
+# Show examples of divisions with subtypes
+if subtype_count > 0:
+    subtype_examples = cleaned_df[cleaned_df['Division Subtype'].notna()][['Division', 'Division Subtype']].drop_duplicates().head(10)
+    print(f"\nExamples of divisions with subtypes:")
+    for _, row in subtype_examples.iterrows():
+        print(f"  Division: '{row['Division']}', Subtype: '{row['Division Subtype']}'")
+
+# Show unique division subtypes
+unique_subtypes = cleaned_df['Division Subtype'].dropna().unique()
+if len(unique_subtypes) > 0:
+    print(f"\nUnique division subtypes: {sorted(unique_subtypes)}")
+
+# Create Division Level column (always "pro")
+cleaned_df['Division Level'] = 'pro'
+print(f"\nDivision Level column created: all rows set to 'pro'")
+
 # Order by start date and Competition
 cleaned_df = cleaned_df.sort_values(by=['Start Date', 'Competition'])
 
-# remove all rows without a Competitior Name or if it is an empty string
-cleaned_df = cleaned_df[~cleaned_df['Competitor Name'].isna()]
-cleaned_df = cleaned_df[cleaned_df['Competitor Name'] != '']
-cleaned_df = cleaned_df[cleaned_df['Competitor Name'] != ' ']
+
+# new column order: Competition,Location,Date,Competitor Name,Country,Judging,Finals,Round 2,Round 3,Routine,Total,Place,Competition Type
+cleaned_df = cleaned_df[['Start Date', 'End Date', 'Competition', 'Location', 'Competitor Name', 'Country', 'Judging', 'Finals', 'Round 2', 'Round 3', 'Routine', 'Total', 'Place', 'Division', 'Division Subtype', 'Division Level', 'Date', 'Year', 'Contest URL', 'Source']]
+
 
 # Save the cleaned DataFrame to a new CSV file
 cleaned_df.to_csv('data/all/all_clean.csv', index=False, quoting=1)
