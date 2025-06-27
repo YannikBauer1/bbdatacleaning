@@ -1,63 +1,4 @@
 {
-  "202": [
-    "202",
-    "men's 202 bodybuilding",
-    "men's 202",
-    "men's 202 under",
-    "men's pro 202"
-  ],
-  "212": [
-    "212",
-    "212 - open",
-    "men's 212 bodybuilding",
-    "men's 212",
-    "men's 212 bodybuilding - open",
-    "mens 212",
-    "men’s 212",
-    "men’s 212 bodybuilding – open"
-  ],
-  "bikini": [
-    "bikini",
-    "bikini - open",
-    "bikini open",
-    "women's bikini",
-    "pro bikini",
-    "women's bikini - open",
-    "women's pro bikini",
-    "womens bikini",
-    "women’s bikini – open"
-  ],
-  "classic": [
-    "classic physique",
-    "classic mens physique",
-    "classic men's physique",
-    "male - classic",
-    "men's classic physique - open",
-    "men's classic physique",
-    "men’s classic physique – open"
-  ],
-  "figure": [
-    "figure",
-    "female - figure",
-    "figure - open",
-    "women's figure",
-    "pro women's figure",
-    "pro figure",
-    "women's figure - open",
-    "women's open figure",
-    "women's pro figure",
-    "women’s figure – open"
-  ],
-  "fitness": [
-    "fitness",
-    "fitness - open",
-    "fitness open",
-    "women's fitness",
-    "women's fitness - open",
-    "women's pro fitness",
-    "women’s fitness – open",
-    "womens fitness"
-  ],
   "mensbb": [
     "men's bodybuilding",
     "men's bodybuilding - open",
@@ -69,15 +10,55 @@
     "men's pro bodybuilding",
     "men’s bodybuilding – open",
     "open men's bodybuilding",
-    "male"
+    "male",
+    "pro men's bodybuilding",
+    "men's bb",
+    "male - professional"
   ],
-  "wheelchair": [
-    "male - wheelchair",
-    "men's bodybuilding - wheelchair",
-    "wheelchair",
-    "men's wheelchair",
-    "men's wheelchair - open",
-    "men’s wheelchair – open"
+  "mensbb - heavyweight": [
+    "male - tall",
+    "male - heavyweight"
+  ],
+  "mensbb - light-heavyweight": [
+    "male - light-heavyweight"
+  ],
+  "mensbb - middleweight": [
+    "male - medium",
+    "male - middleweight"
+  ],
+  "mensbb - lightweight": [
+    "male - short",
+    "male - lightweight"
+  ],
+  "212": [
+    "212",
+    "212 - open",
+    "men's 212 bodybuilding",
+    "men's 212",
+    "men's 212 bodybuilding - open",
+    "mens 212",
+    "men’s 212",
+    "men’s 212 bodybuilding – open",
+    "pro men's 212"
+  ],
+  "202": [
+    "202",
+    "men's 202 bodybuilding",
+    "men's 202",
+    "men's 202 under",
+    "men's pro 202"
+  ],
+  "classic": [
+    "classic physique",
+    "classic",
+    "classic mens physique",
+    "classic men's physique",
+    "male - classic",
+    "men's classic physique - open",
+    "men's classic physique",
+    "men’s classic physique – open",
+    "men's classic physique open",
+    "classic men's physique - open"
   ],
   "mensphysique": [
     "men's physique",
@@ -87,17 +68,19 @@
     "men’s physique",
     "men’s physique – open",
     "pro men's physique",
-    "pro men’s physique"
+    "pro men’s physique",
+    "mens physique",
+    "male - physique"
   ],
-  "wellness": [
-    "wellness",
-    "pro wellness",
-    "wellness - open",
-    "wellness pro",
-    "women's wellness",
-    "women's wellness - open",
-    "womens wellness",
-    "women’s wellness – open"
+  "wheelchair": [
+    "male - wheelchair",
+    "men's bodybuilding - wheelchair",
+    "wheelchair",
+    "men's wheelchair",
+    "men's wheelchair - open",
+    "men’s wheelchair – open",
+    "men's wheelchair bodybuilding",
+    "men's pro wheelchair"
   ],
   "womensbb": [
     "women's bodybuilding",
@@ -110,6 +93,15 @@
     "female - bodybuilding",
     "female"
   ],
+  "womensbb - heavyweight": [
+    "female - heavyweight"
+  ],
+  "womensbb - middleweight": [
+    "female - middleweight"
+  ],
+  "womensbb - lightweight": [
+    "female - lightweight"
+  ],
   "womensphysique": [
     "women's physique",
     "women's physique - open",
@@ -118,27 +110,54 @@
     "women’s physique",
     "women’s physique – open",
     "womens physique",
-    "female - physique"
+    "female - physique",
+    "2016 women’s physique physique olympia"
   ],
-  "2024 ifbb pro league klash series grl pwr pro": [
-    "2024 ifbb pro league klash series grl pwr pro"
+  "figure": [
+    "figure",
+    "female - figure",
+    "figure - open",
+    "women's figure",
+    "pro women's figure",
+    "pro figure",
+    "women's figure - open",
+    "women's open figure",
+    "women's pro figure",
+    "women’s figure – open",
+    "women's figure open"
   ],
-  "female - heavyweight": [
-    "female - heavyweight"
+  "fitness": [
+    "fitness",
+    "fitness - open",
+    "fitness open",
+    "women's fitness",
+    "women's fitness - open",
+    "women's pro fitness",
+    "women’s fitness – open",
+    "womens fitness",
+    "pro fitness"
   ],
-  "female - lightweight": [
-    "female - lightweight"
+  "wellness": [
+    "wellness",
+    "pro wellness",
+    "wellness - open",
+    "wellness pro",
+    "women's wellness",
+    "women's wellness - open",
+    "womens wellness",
+    "women’s wellness – open"
   ],
-  "female - middleweight": [
-    "female - middleweight"
-  ],
-  "ifbb professional league": [
-    "ifbb professional league"
-  ],
-  "male - lightweight": [
-    "male - lightweight"
-  ],
-  "male - most muscular": [
-    "male - most muscular"
+  "bikini": [
+    "bikini",
+    "bikini - open",
+    "bikini open",
+    "women's bikini",
+    "pro bikini",
+    "women's bikini - open",
+    "women's pro bikini",
+    "womens bikini",
+    "women’s bikini – open",
+    "bikini ",
+    "bikini"
   ]
 }

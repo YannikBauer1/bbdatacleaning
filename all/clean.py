@@ -228,9 +228,6 @@ cleaned_df.loc[mask, 'Competition'] = 'Baltimore Classic Masters Pro'
 
 
 
-# Order by start date and Competition
-cleaned_df = cleaned_df.sort_values(by=['Start Date', 'Competition'])
-
 def write_competition_names_json(df, output_path):
     """
     Takes a DataFrame with a 'Competition' column, sorts unique competition names,
@@ -295,10 +292,26 @@ def apply_competition_mapping(cleaned_df):
 
     # Filter out competitions that don't have a mapping (keep only mapped competitions)
     original_count = len(cleaned_df)
-    # Keep only rows where the competition name was actually mapped (changed)
-    cleaned_df = cleaned_df[cleaned_df['Competition'] != original_competitions]
+    
+    # Get competitions that were filtered out (not found in mapping file)
+    # A competition is filtered out if it's not in the lookup dictionary
+    filtered_out_competitions = []
+    for comp in original_competitions.unique():
+        if comp.lower() not in competition_lookup:
+            filtered_out_competitions.append(comp)
+    
+    # Remove duplicates and sort alphabetically
+    filtered_out_competitions = sorted(list(set(filtered_out_competitions)))
+    
+    # Save filtered out competitions to JSON file
+    with open('all/filtered_out_competitions.json', 'w', encoding='utf-8') as f:
+        json.dump(filtered_out_competitions, f, ensure_ascii=False, indent=2)
+    
+    # Keep only rows where the competition name was found in the mapping (even if it maps to itself)
+    cleaned_df = cleaned_df[cleaned_df['Competition'].apply(lambda x: x.lower() in competition_lookup)]
     print(f"Filtered out {original_count - len(cleaned_df)} competitions that don't have mappings in competition_names.json")
     print(f"Kept {len(cleaned_df)} competitions with valid mappings")
+    print(f"Filtered out competitions saved to: all/filtered_out_competitions.json")
 
     # Count how many competitions were mapped
     mapped_count = len(cleaned_df)  # All remaining competitions were mapped
@@ -332,11 +345,93 @@ cleaned_df = apply_competition_mapping(cleaned_df)
 cleaned_df['Division'] = cleaned_df['Division'].str.lower()
 
 # get rid of all rows where masters is in the division
-cleaned_df = cleaned_df[~cleaned_df['Division'].str.contains('masters', case=False, na=False)]
+cleaned_df = cleaned_df[~cleaned_df['Division'].str.contains('master', case=False, na=False)]
 cleaned_df = cleaned_df[~cleaned_df['Division'].str.contains('\\+', case=False, na=False)]
+cleaned_df = cleaned_df[~cleaned_df['Division'].str.contains('junior', case=False, na=False)]
+cleaned_df = cleaned_df[~cleaned_df['Division'].str.contains('teen', case=False, na=False)]
+cleaned_df = cleaned_df[~cleaned_df['Division'].str.contains('amateur', case=False, na=False)]
+cleaned_df = cleaned_df[~cleaned_df['Division'].str.contains('male - most symmetrical', case=False, na=False)]
+cleaned_df = cleaned_df[~cleaned_df['Division'].str.contains('male - most muscular', case=False, na=False)]
+
+# get rid of the rows with compeititon "Mr Japan" in the years 1976 and 1977 which are not division "male - professional"
+mask = (cleaned_df['Competition'] == 'Mr Japan') & (cleaned_df['Year'].astype(float) == 1976.0) & (cleaned_df['Division'] != 'male - professional')
+cleaned_df = cleaned_df[~mask]
+mask = (cleaned_df['Competition'] == 'Mr Japan') & (cleaned_df['Year'].astype(float) == 1977.0) & (cleaned_df['Division'] != 'male - professional')
+cleaned_df = cleaned_df[~mask]
 
 
 
+
+# Fix dates for competitions incorrectly set to January 1st
+def fix_january_first_dates(df):
+    """
+    Find competitions with the same name in each year and fix dates for entries 
+    incorrectly set to January 1st by copying dates from other entries with the same name.
+    """
+    print("\nFixing dates for competitions incorrectly set to January 1st...")
+    
+    # Group by year and competition name
+    fixed_count = 0
+    
+    for year in df['Year'].dropna().unique():
+        year_data = df[df['Year'] == year]
+        
+        # Group by competition name within the year
+        for competition_name in year_data['Competition'].unique():
+            competition_entries = year_data[year_data['Competition'] == competition_name]
+            
+            if len(competition_entries) > 1:
+                # Check if any entry has January 1st date
+                jan_first_mask = (
+                    (competition_entries['Start Date'].dt.month == 1) & 
+                    (competition_entries['Start Date'].dt.day == 1)
+                )
+                
+                if jan_first_mask.any():
+                    # Get the correct dates from other entries (not January 1st)
+                    correct_entries = competition_entries[~jan_first_mask]
+                    
+                    if len(correct_entries) > 0:
+                        # Use the first correct entry's dates
+                        correct_start_date = correct_entries.iloc[0]['Start Date']
+                        correct_end_date = correct_entries.iloc[0]['End Date']
+                        
+                        # Update the January 1st entries
+                        jan_first_indices = competition_entries[jan_first_mask].index
+                        
+                        for idx in jan_first_indices:
+                            df.loc[idx, 'Start Date'] = correct_start_date
+                            df.loc[idx, 'End Date'] = correct_end_date
+                            fixed_count += 1
+                            
+                            #print(f"Fixed date for '{competition_name}' in {year}: "
+                            #      f"January 1st -> {correct_start_date.strftime('%Y-%m-%d')}")
+    
+    print(f"Fixed dates for {fixed_count} entries")
+    return df
+
+# Apply the date fixing function
+cleaned_df = fix_january_first_dates(cleaned_df)
+
+
+# Try a simpler pattern without word boundaries
+mask_before_simple = (cleaned_df['Division'] == 'male - lightweight') & (pd.to_datetime(cleaned_df['Start Date'], errors='coerce') < pd.to_datetime('September 1, 2011')) & (pd.to_datetime(cleaned_df['Start Date'], errors='coerce') > pd.to_datetime('September 1, 2006'))
+mask_after_simple = (cleaned_df['Division'] == 'male - lightweight') & (pd.to_datetime(cleaned_df['Start Date'], errors='coerce') >= pd.to_datetime('September 1, 2011'))
+
+cleaned_df.loc[mask_before_simple, 'Division'] = '202'
+cleaned_df.loc[mask_after_simple, 'Division'] = '212'
+
+# Fix incorrect division "Olympia"
+mask_after_simple = (cleaned_df['Division'] == 'olympia')
+cleaned_df.loc[mask_after_simple, 'Division'] = 'fitness'
+
+# Order by start date and Competition
+cleaned_df = cleaned_df.sort_values(by=['Start Date', 'Competition'])
+
+# remove all rows without a Competitior Name or if it is an empty string
+cleaned_df = cleaned_df[~cleaned_df['Competitor Name'].isna()]
+cleaned_df = cleaned_df[cleaned_df['Competitor Name'] != '']
+cleaned_df = cleaned_df[cleaned_df['Competitor Name'] != ' ']
 
 # Save the cleaned DataFrame to a new CSV file
 cleaned_df.to_csv('data/all/all_clean.csv', index=False, quoting=1)

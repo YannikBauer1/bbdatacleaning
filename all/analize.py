@@ -2,6 +2,34 @@ import pandas as pd
 import os
 import json
 
+def load_existing_divisions():
+    """
+    Load existing division names from division_names.json file.
+    
+    Returns:
+        set: A set of all division names that are already in the file
+    """
+    existing_divisions_path = "keys/division_names.json"
+    
+    if not os.path.exists(existing_divisions_path):
+        print(f"Warning: {existing_divisions_path} not found. Will treat all divisions as new.")
+        return set()
+    
+    try:
+        with open(existing_divisions_path, 'r', encoding='utf-8') as f:
+            existing_data = json.load(f)
+        
+        # Extract all division names from all arrays
+        existing_divisions = set()
+        for division_array in existing_data.values():
+            existing_divisions.update(division_array)
+        
+        return existing_divisions
+        
+    except Exception as e:
+        print(f"Error reading existing divisions file: {e}")
+        return set()
+
 def get_unique_divisions():
     """
     Read the all_clean.csv file and return all unique division names.
@@ -32,22 +60,121 @@ def get_unique_divisions():
         print(f"Error reading CSV file: {e}")
         return []
 
+def get_new_divisions():
+    """
+    Get divisions that are not already in the division_names.json file.
+    
+    Returns:
+        list: A list of new division names sorted alphabetically
+    """
+    all_divisions = get_unique_divisions()
+    existing_divisions = load_existing_divisions()
+    
+    # Find divisions that are not in the existing set
+    new_divisions = [div for div in all_divisions if div not in existing_divisions]
+    
+    return sorted(new_divisions)
+
+def find_empty_divisions():
+    """
+    Find all rows where the division column is empty or contains only whitespace.
+    """
+    csv_path = "data/all/all_clean.csv"
+    
+    if not os.path.exists(csv_path):
+        print(f"CSV file not found at: {csv_path}")
+        return
+    
+    try:
+        # Read the CSV file
+        df = pd.read_csv(csv_path)
+        
+        # Search for rows with empty or whitespace-only division
+        empty_divisions = df[df['Division'].str.strip().eq('') | df['Division'].isna()]
+        
+        if empty_divisions.empty:
+            print("No rows found with empty division column.")
+            return
+        
+        print(f"Found {len(empty_divisions)} rows with empty division column:")
+        print("=" * 80)
+        
+        # Display all rows
+        for idx, row in empty_divisions.iterrows():
+            print(f"Row {idx + 1}:")
+            for column in df.columns:
+                value = row[column]
+                if pd.notna(value):  # Only print non-null values
+                    print(f"  {column}: {value}")
+            print("-" * 40)
+        
+        # Also show a summary table
+        print("\nSummary table of rows with empty divisions:")
+        print(empty_divisions[['Division', 'Competition', 'Year']].to_string(index=False))
+        
+    except Exception as e:
+        print(f"Error reading CSV file: {e}")
+
+def find_olympia_divisions():
+    """
+    Find all rows that have "olympia" in the division column and display their information.
+    """
+    csv_path = "data/all/all_clean.csv"
+    
+    if not os.path.exists(csv_path):
+        print(f"CSV file not found at: {csv_path}")
+        return
+    
+    try:
+        # Read the CSV file
+        df = pd.read_csv(csv_path)
+        
+        # Search for rows with "olympia" in the Division column (case insensitive)
+        olympia_rows = df[df['Division'].str.contains('olympia', case=False, na=False)]
+        
+        if olympia_rows.empty:
+            print("No rows found with 'olympia' in the Division column.")
+            return
+        
+        print(f"Found {len(olympia_rows)} rows with 'olympia' in the Division column:")
+        print("=" * 80)
+        
+        # Display unique division names first
+        unique_olympia_divisions = olympia_rows['Division'].unique()
+        print(f"Unique Division names containing 'olympia': {list(unique_olympia_divisions)}")
+        print("-" * 80)
+        
+        # Display all rows
+        for idx, row in olympia_rows.iterrows():
+            print(f"Row {idx + 1}:")
+            for column in df.columns:
+                value = row[column]
+                if pd.notna(value):  # Only print non-null values
+                    print(f"  {column}: {value}")
+            print("-" * 40)
+        
+        # Also show a summary table
+        print("\nSummary table of Olympia divisions:")
+        print(olympia_rows[['Division', 'Competition', 'Year']].to_string(index=False))
+        
+    except Exception as e:
+        print(f"Error reading CSV file: {e}")
+
 def create_divisions_json():
     """
-    Create a JSON file where each division name is a key with an array containing that division name.
+    Create a JSON file with only new divisions that are not already in division_names.json.
     
     Returns:
         str: Path to the created JSON file
     """
-    divisions = get_unique_divisions()
+    new_divisions = get_new_divisions()
     
-    if not divisions:
-        print("No divisions found. Cannot create JSON file.")
+    if not new_divisions:
+        print("No new divisions found. All divisions are already in division_names.json")
         return None
     
-    # Create dictionary where each division is a key with an array containing the division name
-    # Sort alphabetically by division name
-    divisions_dict = {division: [division] for division in sorted(divisions)}
+    # Create dictionary where each new division is a key with an array containing the division name
+    divisions_dict = {division: [division] for division in new_divisions}
     
     # Define output file path
     output_path = "all/divisions.json"
@@ -58,30 +185,42 @@ def create_divisions_json():
             json.dump(divisions_dict, f, indent=2, ensure_ascii=False)
         
         print(f"Successfully created JSON file: {output_path}")
-        print(f"Contains {len(divisions_dict)} divisions")
+        print(f"Contains {len(divisions_dict)} new divisions")
         return output_path
         
     except Exception as e:
         print(f"Error writing JSON file: {e}")
         return None
 
-def print_unique_divisions():
+def print_new_divisions():
     """
-    Print all unique division names to the console.
+    Print only new division names that are not already in division_names.json.
     """
-    divisions = get_unique_divisions()
+    new_divisions = get_new_divisions()
     
-    if divisions:
-        print(f"Found {len(divisions)} unique divisions:")
+    if new_divisions:
+        print(f"Found {len(new_divisions)} new divisions not in division_names.json:")
         print("-" * 50)
-        for i, division in enumerate(divisions, 1):
+        for i, division in enumerate(new_divisions, 1):
             print(f"{i:3d}. {division}")
     else:
-        print("No divisions found or error occurred.")
+        print("No new divisions found. All divisions are already in division_names.json")
 
 if __name__ == "__main__":
-    # Example usage
-    print_unique_divisions()
+    # Search for empty divisions
+    print("Searching for rows with empty division column...")
+    find_empty_divisions()
+    
+    print("\n" + "="*80)
+    
+    # Search for Olympia divisions
+    print("Searching for rows with 'olympia' in Division column...")
+    find_olympia_divisions()
+    
+    print("\n" + "="*80)
+    
+    # Example usage of other functions
+    print_new_divisions()
     
     # Create JSON file
     print("\n" + "="*50)
