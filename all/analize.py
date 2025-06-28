@@ -160,6 +160,63 @@ def find_olympia_divisions():
     except Exception as e:
         print(f"Error reading CSV file: {e}")
 
+def find_round_2_3_entries():
+    """
+    Find all rows that have entries in Round 2 or Round 3 columns.
+    """
+    csv_path = "data/all/all_clean.csv"
+    
+    if not os.path.exists(csv_path):
+        print(f"CSV file not found at: {csv_path}")
+        return
+    
+    try:
+        # Read the CSV file
+        df = pd.read_csv(csv_path)
+        
+        # Search for rows with non-empty values in Round 2 or Round 3
+        round_2_3_rows = df[
+            (df['Round 2'].notna() & (df['Round 2'].astype(str).str.strip() != '')) |
+            (df['Round 3'].notna() & (df['Round 3'].astype(str).str.strip() != ''))
+        ]
+        
+        if round_2_3_rows.empty:
+            print("No rows found with entries in Round 2 or Round 3.")
+            return
+        
+        print(f"Found {len(round_2_3_rows)} rows with entries in Round 2 or Round 3:")
+        print("=" * 80)
+        
+        # Display unique competitions and divisions first
+        unique_competitions = round_2_3_rows['Competition'].unique()
+        unique_divisions = round_2_3_rows['Division'].unique()
+        
+        print(f"Unique Competitions: {list(unique_competitions)}")
+        print(f"Unique Divisions: {list(unique_divisions)}")
+        print("-" * 80)
+        
+        # Display all rows
+        for idx, row in round_2_3_rows.iterrows():
+            print(f"Row {idx + 1}:")
+            for column in df.columns:
+                value = row[column]
+                if pd.notna(value) and str(value).strip() != '':  # Only print non-null, non-empty values
+                    print(f"  {column}: {value}")
+            print("-" * 40)
+        
+        # Also show a summary table
+        print("\nSummary table of Round 2/3 entries:")
+        summary_columns = ['Competition', 'Division', 'Competitor Name', 'Round 2', 'Round 3', 'Year']
+        print(round_2_3_rows[summary_columns].to_string(index=False))
+        
+        # Show statistics
+        print(f"\nStatistics:")
+        print(f"  Rows with Round 2 entries: {len(round_2_3_rows[round_2_3_rows['Round 2'].notna() & (round_2_3_rows['Round 2'].astype(str).str.strip() != '')])}")
+        print(f"  Rows with Round 3 entries: {len(round_2_3_rows[round_2_3_rows['Round 3'].notna() & (round_2_3_rows['Round 3'].astype(str).str.strip() != '')])}")
+        
+    except Exception as e:
+        print(f"Error reading CSV file: {e}")
+
 def create_divisions_json():
     """
     Create a JSON file with only new divisions that are not already in division_names.json.
@@ -206,22 +263,145 @@ def print_new_divisions():
     else:
         print("No new divisions found. All divisions are already in division_names.json")
 
+def get_unique_locations_countries():
+    """
+    Extract unique Location and Country entries from the CSV file,
+    order them alphabetically, and write them to a JSON file.
+    
+    Returns:
+        str: Path to the created JSON file, or None if error
+    """
+    csv_path = "data/all/all_clean.csv"
+    
+    if not os.path.exists(csv_path):
+        print(f"CSV file not found at: {csv_path}")
+        return None
+    
+    try:
+        # Read the CSV file
+        df = pd.read_csv(csv_path)
+        
+        # Get unique values from Location and Country columns
+        unique_entries = set()
+        
+        # Extract unique locations (non-null, non-empty)
+        if 'Location' in df.columns:
+            locations = df['Location'].dropna()
+            locations = locations[locations.astype(str).str.strip() != '']
+            unique_entries.update(locations.unique())
+        
+        # Extract unique countries (non-null, non-empty)
+        if 'Country' in df.columns:
+            countries = df['Country'].dropna()
+            countries = countries[countries.astype(str).str.strip() != '']
+            unique_entries.update(countries.unique())
+        
+        # Convert to list and sort alphabetically
+        all_entries = sorted(list(unique_entries))
+        
+        # Define output file path
+        output_path = "all/locations_countries.json"
+        
+        # Write to JSON file with nice formatting
+        with open(output_path, 'w', encoding='utf-8') as f:
+            json.dump(all_entries, f, indent=2, ensure_ascii=False)
+        
+        print(f"Successfully created JSON file: {output_path}")
+        print(f"Contains {len(all_entries)} unique locations and countries")
+        print(f"First few entries: {all_entries[:5]}{'...' if len(all_entries) > 5 else ''}")
+        
+        return output_path
+        
+    except Exception as e:
+        print(f"Error processing CSV file: {e}")
+        return None
+
+def get_unique_competitor_names():
+    """
+    Extract unique competitor names from the CSV file, count their occurrences,
+    order them alphabetically, and write them to a JSON file.
+    
+    Returns:
+        str: Path to the created JSON file, or None if error
+    """
+    csv_path = "data/all/all_clean.csv"
+    
+    if not os.path.exists(csv_path):
+        print(f"CSV file not found at: {csv_path}")
+        return None
+    
+    try:
+        # Read the CSV file
+        df = pd.read_csv(csv_path)
+        
+        # Check if 'Competitor Name' column exists
+        if 'Competitor Name' not in df.columns:
+            print("Error: 'Competitor Name' column not found in CSV file")
+            return None
+        
+        # Get competitor names (non-null, non-empty)
+        competitor_names = df['Competitor Name'].dropna()
+        competitor_names = competitor_names[competitor_names.astype(str).str.strip() != '']
+        
+        # Count occurrences of each competitor name
+        competitor_counts = competitor_names.value_counts().to_dict()
+        
+        # Sort alphabetically by competitor name
+        sorted_competitors = dict(sorted(competitor_counts.items()))
+        
+        # Define output file path
+        output_path = "all/competitor_names.json"
+        
+        # Write to JSON file with nice formatting
+        with open(output_path, 'w', encoding='utf-8') as f:
+            json.dump(sorted_competitors, f, indent=2, ensure_ascii=False)
+        
+        print(f"Successfully created JSON file: {output_path}")
+        print(f"Contains {len(sorted_competitors)} unique competitor names")
+        print(f"Total competitor entries: {sum(sorted_competitors.values())}")
+        
+        # Show some statistics
+        if sorted_competitors:
+            max_competitor = max(sorted_competitors.items(), key=lambda x: x[1])
+            min_competitor = min(sorted_competitors.items(), key=lambda x: x[1])
+            print(f"Most frequent competitor: {max_competitor[0]} ({max_competitor[1]} appearances)")
+            print(f"Least frequent competitor: {min_competitor[0]} ({min_competitor[1]} appearance{'s' if min_competitor[1] > 1 else ''})")
+            print(f"First few entries: {list(sorted_competitors.items())[:5]}")
+        
+        return output_path
+        
+    except Exception as e:
+        print(f"Error processing CSV file: {e}")
+        return None
+
 if __name__ == "__main__":
     # Search for empty divisions
-    print("Searching for rows with empty division column...")
-    find_empty_divisions()
+    #print("Searching for rows with empty division column...")
+    #find_empty_divisions()
     
-    print("\n" + "="*80)
+    #print("\n" + "="*80)
     
     # Search for Olympia divisions
-    print("Searching for rows with 'olympia' in Division column...")
-    find_olympia_divisions()
+    #print("Searching for rows with 'olympia' in Division column...")
+    #find_olympia_divisions()
     
-    print("\n" + "="*80)
+    #print("\n" + "="*80)
     
     # Example usage of other functions
-    print_new_divisions()
+    #print_new_divisions()
     
     # Create JSON file
-    print("\n" + "="*50)
-    create_divisions_json()
+    #print("\n" + "="*50)
+    #create_divisions_json()
+    
+    # Search for Round 2/3 entries
+    #print("Searching for rows with entries in Round 2 or Round 3...")
+    #find_round_2_3_entries()
+    
+    # Get unique locations and countries
+    #print("Extracting unique locations and countries...")
+    #get_unique_locations_countries()
+
+    # Get unique competitor names
+    print("Extracting unique competitor names...")
+    get_unique_competitor_names()
