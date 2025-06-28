@@ -316,10 +316,10 @@ def get_unique_locations_countries():
         print(f"Error processing CSV file: {e}")
         return None
 
-def get_unique_competitor_names():
+def get_unique_competitor_names_detailed():
     """
     Extract unique competitor names from the CSV file, count their occurrences,
-    order them alphabetically, and write them to a JSON file.
+    and include additional information: first/last year, unique divisions, and unique locations.
     
     Returns:
         str: Path to the created JSON file, or None if error
@@ -332,7 +332,7 @@ def get_unique_competitor_names():
     
     try:
         # Read the CSV file
-        df = pd.read_csv(csv_path)
+        df = pd.read_csv(csv_path, low_memory=False)
         
         # Check if 'Competitor Name' column exists
         if 'Competitor Name' not in df.columns:
@@ -343,14 +343,89 @@ def get_unique_competitor_names():
         competitor_names = df['Competitor Name'].dropna()
         competitor_names = competitor_names[competitor_names.astype(str).str.strip() != '']
         
-        # Count occurrences of each competitor name
-        competitor_counts = competitor_names.value_counts().to_dict()
+        # Create a dictionary to store detailed information for each competitor
+        competitor_details = {}
+        
+        # Group by competitor name to get detailed information
+        for competitor_name in competitor_names.unique():
+            # Get all rows for this competitor
+            competitor_rows = df[df['Competitor Name'] == competitor_name]
+            
+            # Get years from Start Date column (non-null)
+            years = []
+            if 'Start Date' in df.columns:
+                start_dates = competitor_rows['Start Date'].dropna()
+                for date_str in start_dates:
+                    try:
+                        # Try to extract year from date string
+                        if pd.notna(date_str) and str(date_str).strip() != '':
+                            # Handle different date formats
+                            date_str = str(date_str).strip()
+                            if '/' in date_str:
+                                # Format like MM/DD/YYYY or YYYY/MM/DD
+                                parts = date_str.split('/')
+                                if len(parts) == 3:
+                                    # Try to identify which part is the year
+                                    for part in parts:
+                                        if len(part) == 4 and part.isdigit():
+                                            years.append(int(part))
+                                            break
+                            elif '-' in date_str:
+                                # Format like YYYY-MM-DD
+                                parts = date_str.split('-')
+                                if len(parts) >= 1 and parts[0].isdigit() and len(parts[0]) == 4:
+                                    years.append(int(parts[0]))
+                    except:
+                        continue
+            
+            first_year = min(years) if years else None
+            last_year = max(years) if years else None
+            
+            # Get unique divisions (non-null, non-empty)
+            divisions = competitor_rows['Division'].dropna()
+            divisions = divisions[divisions.astype(str).str.strip() != '']
+            unique_divisions = sorted(list(divisions.unique()))
+            
+            # Get unique location combinations
+            location_combinations = set()
+            
+            # Check which location columns exist
+            location_columns = []
+            if 'Competitor City' in df.columns:
+                location_columns.append('Competitor City')
+            if 'Competitor State' in df.columns:
+                location_columns.append('Competitor State')
+            if 'Competitor Country' in df.columns:
+                location_columns.append('Competitor Country')
+            
+            # Create location combinations
+            for _, row in competitor_rows.iterrows():
+                location_parts = []
+                for col in location_columns:
+                    value = row[col]
+                    if pd.notna(value) and str(value).strip() != '':
+                        location_parts.append(str(value).strip())
+                
+                if location_parts:  # Only add if we have at least one location part
+                    location_combinations.add(', '.join(location_parts))
+            
+            # Sort location combinations
+            unique_locations = sorted(list(location_combinations))
+            
+            # Store all information
+            competitor_details[competitor_name] = {
+                'appearances': len(competitor_rows),
+                'first_year': first_year,
+                'last_year': last_year,
+                'unique_divisions': unique_divisions,
+                'unique_locations': unique_locations
+            }
         
         # Sort alphabetically by competitor name
-        sorted_competitors = dict(sorted(competitor_counts.items()))
+        sorted_competitors = dict(sorted(competitor_details.items()))
         
         # Define output file path
-        output_path = "all/competitor_names.json"
+        output_path = "all/competitor_names_detailed.json"
         
         # Write to JSON file with nice formatting
         with open(output_path, 'w', encoding='utf-8') as f:
@@ -358,15 +433,86 @@ def get_unique_competitor_names():
         
         print(f"Successfully created JSON file: {output_path}")
         print(f"Contains {len(sorted_competitors)} unique competitor names")
-        print(f"Total competitor entries: {sum(sorted_competitors.values())}")
+        print(f"Total competitor entries: {sum(comp['appearances'] for comp in sorted_competitors.values())}")
         
-        # Show some statistics
+        # Show some statistics and examples
         if sorted_competitors:
-            max_competitor = max(sorted_competitors.items(), key=lambda x: x[1])
-            min_competitor = min(sorted_competitors.items(), key=lambda x: x[1])
-            print(f"Most frequent competitor: {max_competitor[0]} ({max_competitor[1]} appearances)")
-            print(f"Least frequent competitor: {min_competitor[0]} ({min_competitor[1]} appearance{'s' if min_competitor[1] > 1 else ''})")
-            print(f"First few entries: {list(sorted_competitors.items())[:5]}")
+            # Find competitor with most appearances
+            max_competitor = max(sorted_competitors.items(), key=lambda x: x[1]['appearances'])
+            min_competitor = min(sorted_competitors.items(), key=lambda x: x[1]['appearances'])
+            
+            print(f"\nMost frequent competitor: {max_competitor[0]}")
+            print(f"  Appearances: {max_competitor[1]['appearances']}")
+            print(f"  Years: {max_competitor[1]['first_year']} - {max_competitor[1]['last_year']}")
+            print(f"  Divisions: {max_competitor[1]['unique_divisions']}")
+            print(f"  Locations: {max_competitor[1]['unique_locations'][:3]}{'...' if len(max_competitor[1]['unique_locations']) > 3 else ''}")
+            
+            print(f"\nLeast frequent competitor: {min_competitor[0]}")
+            print(f"  Appearances: {min_competitor[1]['appearances']}")
+            print(f"  Years: {min_competitor[1]['first_year']} - {min_competitor[1]['last_year']}")
+            print(f"  Divisions: {min_competitor[1]['unique_divisions']}")
+            print(f"  Locations: {min_competitor[1]['unique_locations']}")
+            
+            # Show first few entries as examples
+            print(f"\nFirst few entries:")
+            for i, (name, details) in enumerate(list(sorted_competitors.items())[:3]):
+                print(f"{i+1}. {name}")
+                print(f"   Appearances: {details['appearances']}")
+                print(f"   Years: {details['first_year']} - {details['last_year']}")
+                print(f"   Divisions: {details['unique_divisions']}")
+                print(f"   Locations: {details['unique_locations'][:2]}{'...' if len(details['unique_locations']) > 2 else ''}")
+        
+        return output_path
+        
+    except Exception as e:
+        print(f"Error processing CSV file: {e}")
+        return None
+
+def get_unique_competitor_names():
+    """
+    Extract unique competitor names from the CSV file and create a simple JSON
+    where each competitor name is a key with an array containing the name.
+    
+    Returns:
+        str: Path to the created JSON file, or None if error
+    """
+    csv_path = "data/all/all_clean.csv"
+    
+    if not os.path.exists(csv_path):
+        print(f"CSV file not found at: {csv_path}")
+        return None
+    
+    try:
+        # Read the CSV file
+        df = pd.read_csv(csv_path, low_memory=False)
+        
+        # Check if 'Competitor Name' column exists
+        if 'Competitor Name' not in df.columns:
+            print("Error: 'Competitor Name' column not found in CSV file")
+            return None
+        
+        # Get unique competitor names (non-null, non-empty)
+        competitor_names = df['Competitor Name'].dropna()
+        competitor_names = competitor_names[competitor_names.astype(str).str.strip() != '']
+        unique_competitors = sorted(competitor_names.unique())
+        
+        # Create dictionary where each competitor name is a key with an array containing the name
+        competitors_dict = {name: [name] for name in unique_competitors}
+        
+        # Define output file path
+        output_path = "all/competitor_names.json"
+        
+        # Write to JSON file with nice formatting
+        with open(output_path, 'w', encoding='utf-8') as f:
+            json.dump(competitors_dict, f, indent=2, ensure_ascii=False)
+        
+        print(f"Successfully created JSON file: {output_path}")
+        print(f"Contains {len(competitors_dict)} unique competitor names")
+        
+        # Show first few entries as examples
+        print(f"\nFirst few entries:")
+        for i, (name, name_array) in enumerate(list(competitors_dict.items())[:5]):
+            print(f"{i+1}. {name}: {name_array}")
         
         return output_path
         
@@ -402,6 +548,6 @@ if __name__ == "__main__":
     #print("Extracting unique locations and countries...")
     #get_unique_locations_countries()
 
-    # Get unique competitor names
-    print("Extracting unique competitor names...")
-    get_unique_competitor_names()
+    # Get unique competitor names (detailed version)
+    print("Extracting unique competitor names with details...")
+    get_unique_competitor_names_detailed()

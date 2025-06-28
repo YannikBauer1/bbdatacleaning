@@ -405,6 +405,37 @@ def parse_location(location_str):
     return {'city': None, 'state': None, 'country': None}
 
 
+def parse_competitor_name(name_str):
+    """
+    Parse competitor name string and handle comma-separated names by swapping the order.
+    Example: "Smith, John" -> "John Smith"
+    """
+    if pd.isna(name_str) or name_str == '' or name_str == ' ':
+        return name_str
+    
+    name_str = str(name_str).strip()
+    
+    # Check if there's a comma in the name
+    if ',' in name_str:
+        # Split by comma and clean up each part
+        parts = [part.strip() for part in name_str.split(',') if part.strip()]
+        
+        if len(parts) >= 2:
+            # Swap the order: "Last, First" -> "First Last"
+            # Join all parts after the first one as the first name (in case of multiple first names)
+            first_name = ' '.join(parts[1:])
+            last_name = parts[0]
+            
+            # Combine them in the correct order
+            return f"{first_name} {last_name}".strip()
+    
+    # If no comma or only one part, return as is
+    return name_str
+
+# Apply competitor name parsing to handle comma-separated names
+cleaned_df['Competitor Name'] = cleaned_df['Competitor Name'].apply(parse_competitor_name)
+
+
 # Fix specific date issues
 
 mask = (cleaned_df['Competition'].str.contains('Rising Phoenix Pro', case=False, na=False)) & (cleaned_df['Date'].str.contains('August 24, 2024', case=False, na=False))
