@@ -1,6 +1,8 @@
 import pandas as pd
 import os
 import json
+from difflib import SequenceMatcher
+from collections import defaultdict
 
 def load_existing_divisions():
     """
@@ -520,6 +522,275 @@ def get_unique_competitor_names():
         print(f"Error processing CSV file: {e}")
         return None
 
+def analyze_and_merge_competitor_names():
+    """
+    Analyze competitor names across different sources, find similar names that are likely the same person,
+    and update the competitor_names.json file to group them together.
+    
+    This version groups names based on similar competitors who achieved the same place 
+    in different sources for the same competition.
+    """
+    csv_path = "data/all/all_clean.csv"
+    competitor_names_path = "all/competitor_names.json"
+    
+    if not os.path.exists(csv_path):
+        print(f"CSV file not found at: {csv_path}")
+        return None
+    
+    if not os.path.exists(competitor_names_path):
+        print(f"Competitor names file not found at: {competitor_names_path}")
+        return None
+    
+    try:
+        # Read the CSV file
+        print("Reading CSV file...")
+        df = pd.read_csv(csv_path, low_memory=False)
+        
+        # Read existing competitor names
+        print("Reading existing competitor names...")
+        with open(competitor_names_path, 'r', encoding='utf-8') as f:
+            competitor_names = json.load(f)
+        
+        # Get unique competitor names from CSV
+        unique_names = df['Competitor Name'].dropna().unique()
+        unique_names = [name.strip() for name in unique_names if name.strip()]
+        
+        print(f"Found {len(unique_names)} unique competitor names in CSV")
+        print(f"Found {len(competitor_names)} entries in competitor_names.json")
+        
+        # Function to calculate similarity between two names
+        def name_similarity(name1, name2):
+            """Calculate similarity between two names, handling common variations."""
+            # Normalize names for comparison
+            def normalize_name(name):
+                # Remove extra spaces, convert to lowercase
+                return ' '.join(name.lower().split())
+            
+            norm1 = normalize_name(name1)
+            norm2 = normalize_name(name2)
+            
+            # If exactly the same after normalization, return 1.0
+            if norm1 == norm2:
+                return 1.0
+            
+            # Check if one is a subset of the other (missing middle name, etc.)
+            words1 = set(norm1.split())
+            words2 = set(norm2.split())
+            
+            # If one name is completely contained in the other
+            if words1.issubset(words2) or words2.issubset(words1):
+                return 0.9
+            
+            # Calculate sequence similarity
+            similarity = SequenceMatcher(None, norm1, norm2).ratio()
+            
+            # Boost similarity for names that share common words
+            common_words = words1.intersection(words2)
+            if common_words:
+                # If they share at least 2 words, boost similarity
+                if len(common_words) >= 2:
+                    similarity += 0.2
+                elif len(common_words) >= 1:
+                    similarity += 0.1
+            
+            return min(similarity, 1.0)
+        
+        # Group by competition, division, year, and place to find similar names
+        print("Analyzing competitions by place and source...")
+        
+        # Create a mapping of competition-place combinations
+        competition_place_groups = defaultdict(list)
+        
+        for _, row in df.iterrows():
+            if (pd.notna(row['Competitor Name']) and row['Competitor Name'].strip() and
+                pd.notna(row['Competition']) and row['Competition'].strip() and
+                pd.notna(row['Place']) and str(row['Place']).strip() and
+                pd.notna(row['Division']) and row['Division'].strip()):
+                
+                # Create a key for the competition-place combination
+                competition = row['Competition'].strip()
+                place = str(row['Place']).strip()
+                division = row['Division'].strip()
+                year = None
+                
+                # Try to extract year from Start Date
+                if pd.notna(row['Start Date']) and str(row['Start Date']).strip():
+                    try:
+                        date_str = str(row['Start Date']).strip()
+                        if '/' in date_str:
+                            parts = date_str.split('/')
+                            if len(parts) == 3:
+                                for part in parts:
+                                    if len(part) == 4 and part.isdigit():
+                                        year = part
+                                        break
+                        elif '-' in date_str:
+                            parts = date_str.split('-')
+                            if len(parts) >= 1 and parts[0].isdigit() and len(parts[0]) == 4:
+                                year = parts[0]
+                    except:
+                        pass
+                
+                # Create a unique key for this competition-place combination
+                if year:
+                    key = f"{competition}_{year}_{division}_{place}"
+                else:
+                    key = f"{competition}_{division}_{place}"
+                
+                competitor_name = row['Competitor Name'].strip()
+                source = row.get('Source', 'Unknown')
+                
+                competition_place_groups[key].append({
+                    'name': competitor_name,
+                    'source': source,
+                    'competition': competition,
+                    'division': division,
+                    'place': place,
+                    'year': year
+                })
+        
+        print(f"Found {len(competition_place_groups)} competition-place combinations")
+        
+        # Find groups where the same place has different names from different sources
+        similar_name_groups = []
+        
+        for key, entries in competition_place_groups.items():
+            if len(entries) > 1:
+                # Check if there are different names for the same place
+                unique_names_in_group = set(entry['name'] for entry in entries)
+                unique_sources = set(entry['source'] for entry in entries)
+                
+                # Only consider if we have different names from different sources
+                if len(unique_names_in_group) > 1 and len(unique_sources) > 1:
+                    # Find similar names within this group
+                    names_in_group = list(unique_names_in_group)
+                    
+                    for i, name1 in enumerate(names_in_group):
+                        for j, name2 in enumerate(names_in_group[i+1:], i+1):
+                            similarity = name_similarity(name1, name2)
+                            
+                            # If names are similar enough, group them
+                            if similarity >= 0.7:  # Adjust threshold as needed
+                                # Check if these names are already in a group
+                                found_group = None
+                                for group in similar_name_groups:
+                                    if name1 in group or name2 in group:
+                                        found_group = group
+                                        break
+                                
+                                if found_group:
+                                    # Add names to existing group
+                                    if name1 not in found_group:
+                                        found_group.append(name1)
+                                    if name2 not in found_group:
+                                        found_group.append(name2)
+                                else:
+                                    # Create new group
+                                    similar_name_groups.append([name1, name2])
+        
+        print(f"Found {len(similar_name_groups)} groups of similar names based on competition-place matching")
+        
+        # Merge overlapping groups
+        print("Merging overlapping groups...")
+        merged_groups = []
+        processed_names = set()
+        
+        for group in similar_name_groups:
+            # Check if any name in this group is already processed
+            if any(name in processed_names for name in group):
+                # Find all groups that contain any of these names
+                related_groups = [group]
+                for existing_group in merged_groups:
+                    if any(name in existing_group for name in group):
+                        related_groups.append(existing_group)
+                
+                # Merge all related groups
+                merged_group = list(set([name for g in related_groups for name in g]))
+                
+                # Remove old groups and add merged group
+                merged_groups = [g for g in merged_groups if not any(name in g for name in merged_group)]
+                merged_groups.append(merged_group)
+                
+                # Mark all names as processed
+                processed_names.update(merged_group)
+            else:
+                # This is a new group
+                merged_groups.append(group)
+                processed_names.update(group)
+        
+        print(f"After merging: {len(merged_groups)} groups")
+        
+        # Show some examples
+        print("\nExample groups of similar names based on competition-place matching:")
+        for i, group in enumerate(merged_groups[:10]):
+            print(f"{i+1}. {group}")
+        
+        # Update competitor_names.json
+        print("\nUpdating competitor_names.json...")
+        
+        # Create new competitor names dictionary
+        updated_competitor_names = {}
+        
+        # Add all names that are not in similar groups
+        for name in unique_names:
+            if not any(name in group for group in merged_groups):
+                updated_competitor_names[name] = [name]
+        
+        # Add grouped names
+        for group in merged_groups:
+            # Use the longest name as the primary name
+            primary_name = max(group, key=len)
+            updated_competitor_names[primary_name] = sorted(group)
+        
+        # Sort alphabetically
+        updated_competitor_names = dict(sorted(updated_competitor_names.items()))
+        
+        # Write updated file
+        with open(competitor_names_path, 'w', encoding='utf-8') as f:
+            json.dump(updated_competitor_names, f, indent=2, ensure_ascii=False)
+        
+        print(f"Updated competitor_names.json")
+        print(f"Original entries: {len(competitor_names)}")
+        print(f"Updated entries: {len(updated_competitor_names)}")
+        print(f"Reduced by: {len(competitor_names) - len(updated_competitor_names)} entries")
+        
+        # Show some statistics
+        total_names = sum(len(names) for names in updated_competitor_names.values())
+        print(f"Total unique names: {total_names}")
+        
+        # Show groups with most variations
+        print("\nGroups with most name variations:")
+        sorted_groups = sorted(updated_competitor_names.items(), key=lambda x: len(x[1]), reverse=True)
+        for i, (primary, variations) in enumerate(sorted_groups[:5]):
+            if len(variations) > 1:
+                print(f"{i+1}. {primary}: {variations}")
+        
+        # Show some examples of competition-place matches that led to groupings
+        print("\nExample competition-place matches that led to groupings:")
+        example_count = 0
+        for key, entries in competition_place_groups.items():
+            if example_count >= 5:
+                break
+            unique_names_in_group = set(entry['name'] for entry in entries)
+            unique_sources = set(entry['source'] for entry in entries)
+            
+            if len(unique_names_in_group) > 1 and len(unique_sources) > 1:
+                print(f"Competition: {entries[0]['competition']}")
+                print(f"Division: {entries[0]['division']}")
+                print(f"Place: {entries[0]['place']}")
+                print(f"Names: {list(unique_names_in_group)}")
+                print(f"Sources: {list(unique_sources)}")
+                print("-" * 40)
+                example_count += 1
+        
+        return competitor_names_path
+        
+    except Exception as e:
+        print(f"Error processing competitor names: {e}")
+        import traceback
+        traceback.print_exc()
+        return None
+
 if __name__ == "__main__":
     # Search for empty divisions
     #print("Searching for rows with empty division column...")
@@ -551,3 +822,11 @@ if __name__ == "__main__":
     # Get unique competitor names (detailed version)
     print("Extracting unique competitor names with details...")
     get_unique_competitor_names_detailed()
+
+    # Get unique competitor names (simple version)
+    print("Extracting unique competitor names (simple version)")
+    get_unique_competitor_names()
+
+    # Analyze and merge competitor names
+    print("Analyzing and merging competitor names")
+    analyze_and_merge_competitor_names()
