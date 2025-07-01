@@ -3,6 +3,9 @@ import os
 import json
 from difflib import SequenceMatcher
 from collections import defaultdict
+import sys
+import tty
+import termios  # For Unix-like systems
 
 def load_existing_divisions():
     """
@@ -791,6 +794,513 @@ def analyze_and_merge_competitor_names():
         traceback.print_exc()
         return None
 
+def find_similar_names_to_file():
+    """
+    Find similar competitor names and write them to a file for later processing.
+    This is much faster than the interactive approach.
+    """
+    competitor_names_path = "keys/competitor_names.json"
+    csv_path = "data/all/all_clean.csv"
+    output_path = "all/similar_names_to_merge.json"
+    
+    if not os.path.exists(competitor_names_path):
+        print(f"Competitor names file not found at: {competitor_names_path}")
+        return
+    
+    if not os.path.exists(csv_path):
+        print(f"CSV file not found at: {csv_path}")
+        return
+    
+    try:
+        # Load competitor names
+        print("Loading competitor names...")
+        with open(competitor_names_path, 'r', encoding='utf-8') as f:
+            competitor_names = json.load(f)
+        
+        # Load CSV data
+        print("Loading CSV data...")
+        df = pd.read_csv(csv_path, low_memory=False)
+        
+        print(f"Loaded {len(competitor_names)} competitor entries")
+        print(f"Loaded {len(df)} CSV rows")
+        
+        # Pre-compute all competitor info (MUCH FASTER)
+        print("Pre-computing competitor information...")
+        all_competitor_info = {}
+        
+        for competitor_name in competitor_names.keys():
+            all_competitor_info[competitor_name] = get_competitor_info(df, competitor_name)
+        
+        print("Finished pre-computing competitor info")
+        
+        # Get all unique competitor names
+        all_names = list(competitor_names.keys())
+        
+        # Initialize or load existing similar groups
+        similar_groups = []
+        if os.path.exists(output_path):
+            print(f"Loading existing similar groups from {output_path}...")
+            with open(output_path, 'r', encoding='utf-8') as f:
+                similar_groups = json.load(f)
+            print(f"Loaded {len(similar_groups)} existing groups")
+        
+        # Keep track of processed names to avoid re-checking
+        processed_names = set()
+        for group in similar_groups:
+            processed_names.update(group['names'])
+        
+        print(f"Already processed {len(processed_names)} names in existing groups")
+        
+        # Find similar name groups
+        print("Finding similar names...")
+        total_found = len(similar_groups)
+        new_groups_found = 0
+        
+        for i, name1 in enumerate(all_names):
+            if i % 100 == 0:  # Progress indicator (more frequent now)
+                print(f"Processing name {i+1}/{len(all_names)}")
+                
+                # Write current results to file every 100 names (append new groups)
+                if new_groups_found > 0:
+                    print(f"Writing {len(similar_groups)} total groups to file (including {new_groups_found} new ones)...")
+                    with open(output_path, 'w', encoding='utf-8') as f:
+                        json.dump(similar_groups, f, indent=2, ensure_ascii=False)
+                    print(f"✅ Saved {len(similar_groups)} groups to {output_path}")
+            
+            # Skip if already processed in this session
+            if name1 in processed_names:
+                continue
+            
+            # Find all names similar to name1
+            similar_to_name1 = [name1]
+            
+            for j, name2 in enumerate(all_names[i+1:], i+1):
+                # Skip if already processed in this session
+                if name2 in processed_names:
+                    continue
+                
+                similarity = calculate_name_similarity(name1, name2)
+                
+                # Only consider pairs with high similarity
+                if similarity >= 0.7:
+                    similar_to_name1.append(name2)
+                    print(f"Found similar: {name1} <-> {name2} (similarity: {similarity:.2f})")
+            
+            # If we found similar names, create a group
+            if len(similar_to_name1) > 1:
+                # Calculate average similarity for the group
+                similarities = []
+                for name2 in similar_to_name1[1:]:  # Skip the first name (name1)
+                    sim = calculate_name_similarity(name1, name2)
+                    similarities.append(sim)
+                avg_similarity = sum(similarities) / len(similarities) if similarities else 0
+                
+                # Create group info
+                group_info = {
+                    'names': similar_to_name1,
+                    'primary_name': max(similar_to_name1, key=lambda x: all_competitor_info[x]['appearances']),
+                    'average_similarity': avg_similarity,
+                    'info': {name: all_competitor_info[name] for name in similar_to_name1}
+                }
+                
+                similar_groups.append(group_info)
+                total_found += 1
+                new_groups_found += 1
+                
+                # Mark all names in this group as processed
+                processed_names.update(similar_to_name1)
+                
+                print(f"Created new group: {similar_to_name1} (avg similarity: {avg_similarity:.2f})")
+        
+        # Sort by average similarity (highest first)
+        similar_groups.sort(key=lambda x: x['average_similarity'], reverse=True)
+        
+        print(f"Found {new_groups_found} new similar name groups")
+        print(f"Total groups in file: {len(similar_groups)}")
+        
+        # Write final results to file
+        print(f"Writing final results to {output_path}...")
+        with open(output_path, 'w', encoding='utf-8') as f:
+            json.dump(similar_groups, f, indent=2, ensure_ascii=False)
+        
+        print(f"✅ Completed! Found {new_groups_found} new similar groups")
+        print(f"Total groups in file: {len(similar_groups)}")
+        print(f"Results saved to: {output_path}")
+        
+        # Show some examples of new groups
+        if new_groups_found > 0:
+            print("\nFirst few new groups found:")
+            for i, group in enumerate(similar_groups[-new_groups_found:][:5]):
+                print(f"{i+1}. {group['names']} (avg similarity: {group['average_similarity']:.2f})")
+        
+        return output_path
+        
+    except Exception as e:
+        print(f"Error: {e}")
+        import traceback
+        traceback.print_exc()
+        return None
+
+def get_key_press():
+    """
+    Get a single key press from the user.
+    Returns 'enter', 'esc', or 'other'.
+    """
+    try:
+        # Try Windows first
+        if os.name == 'nt':
+            import msvcrt
+            key = msvcrt.getch()
+            if key == b'\r' or key == b'\n':
+                return 'enter'
+            elif key == b'\x1b':  # ESC
+                return 'esc'
+            else:
+                return 'other'
+        else:
+            # Unix-like systems
+            fd = sys.stdin.fileno()
+            old_settings = termios.tcgetattr(fd)
+            try:
+                tty.setraw(sys.stdin.fileno())
+                ch = sys.stdin.read(1)
+                if ch == '\r' or ch == '\n':
+                    return 'enter'
+                elif ch == '\x1b':  # ESC
+                    return 'esc'
+                else:
+                    return 'other'
+            finally:
+                termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
+    except:
+        # Fallback: just read input
+        try:
+            input_val = input("Press Enter to merge, ESC to skip, or any other key to skip: ")
+            if input_val == '':
+                return 'enter'
+            else:
+                return 'other'
+        except:
+            return 'other'
+
+def normalize_name_for_comparison(name):
+    """
+    Normalize a name for comparison by removing extra spaces, converting to lowercase,
+    and handling common variations.
+    """
+    if not name:
+        return ""
+    
+    # Convert to lowercase and remove extra spaces
+    normalized = ' '.join(name.lower().split())
+    
+    # Remove common punctuation
+    normalized = normalized.replace('.', '').replace(',', '').replace('-', ' ')
+    
+    # Remove extra spaces again
+    normalized = ' '.join(normalized.split())
+    
+    return normalized
+
+def calculate_name_similarity(name1, name2):
+    """
+    Calculate similarity between two names, handling various name variations.
+    Returns a score between 0 and 1.
+    """
+    if not name1 or not name2:
+        return 0.0
+    
+    norm1 = normalize_name_for_comparison(name1)
+    norm2 = normalize_name_for_comparison(name2)
+    
+    # If exactly the same after normalization
+    if norm1 == norm2:
+        return 1.0
+    
+    # Split into words
+    words1 = set(norm1.split())
+    words2 = set(norm2.split())
+    
+    # If one name is completely contained in the other (missing middle name)
+    if words1.issubset(words2) or words2.issubset(words1):
+        return 0.9
+    
+    # Calculate sequence similarity
+    sequence_similarity = SequenceMatcher(None, norm1, norm2).ratio()
+    
+    # Calculate word overlap
+    common_words = words1.intersection(words2)
+    total_words = words1.union(words2)
+    
+    if total_words:
+        word_overlap = len(common_words) / len(total_words)
+    else:
+        word_overlap = 0
+    
+    # Combine scores (give more weight to word overlap for names)
+    combined_score = (sequence_similarity * 0.4) + (word_overlap * 0.6)
+    
+    # Boost score if they share common words
+    if len(common_words) >= 2:
+        combined_score += 0.1
+    elif len(common_words) >= 1:
+        combined_score += 0.05
+    
+    return min(combined_score, 1.0)
+
+def get_competitor_info(df, competitor_name):
+    """
+    Get detailed information about a competitor from the CSV data.
+    """
+    competitor_rows = df[df['Competitor Name'] == competitor_name]
+    
+    if competitor_rows.empty:
+        return {
+            'appearances': 0,
+            'years': [],
+            'divisions': [],
+            'locations': [],
+            'competitions': []
+        }
+    
+    # Get years
+    years = []
+    if 'Start Date' in df.columns:
+        for date_str in competitor_rows['Start Date'].dropna():
+            try:
+                if pd.notna(date_str) and str(date_str).strip():
+                    date_str = str(date_str).strip()
+                    if '/' in date_str:
+                        parts = date_str.split('/')
+                        for part in parts:
+                            if len(part) == 4 and part.isdigit():
+                                years.append(int(part))
+                                break
+                    elif '-' in date_str:
+                        parts = date_str.split('-')
+                        if len(parts) >= 1 and parts[0].isdigit() and len(parts[0]) == 4:
+                            years.append(int(parts[0]))
+            except:
+                continue
+    
+    # Get unique divisions
+    divisions = competitor_rows['Division'].dropna().unique()
+    divisions = [d.strip() for d in divisions if d.strip()]
+    
+    # Get unique locations
+    locations = set()
+    for _, row in competitor_rows.iterrows():
+        location_parts = []
+        if pd.notna(row.get('Competitor City')) and str(row['Competitor City']).strip():
+            location_parts.append(str(row['Competitor City']).strip())
+        if pd.notna(row.get('Competitor State')) and str(row['Competitor State']).strip():
+            location_parts.append(str(row['Competitor State']).strip())
+        if pd.notna(row.get('Competitor Country')) and str(row['Competitor Country']).strip():
+            location_parts.append(str(row['Competitor Country']).strip())
+        
+        if location_parts:
+            locations.add(', '.join(location_parts))
+    
+    # Get unique competitions
+    competitions = competitor_rows['Competition'].dropna().unique()
+    competitions = [c.strip() for c in competitions if c.strip()]
+    
+    return {
+        'appearances': len(competitor_rows),
+        'years': sorted(list(set(years))),
+        'divisions': sorted(divisions),
+        'locations': sorted(list(locations)),
+        'competitions': sorted(competitions)
+    }
+
+def merge_from_file():
+    """
+    Read similar names from file and allow interactive merging.
+    """
+    similar_names_path = "all/similar_names_to_merge.json"
+    competitor_names_path = "keys/competitor_names.json"
+    
+    if not os.path.exists(similar_names_path):
+        print(f"Similar names file not found at: {similar_names_path}")
+        print("Run find_similar_names_to_file() first to generate this file.")
+        return
+    
+    if not os.path.exists(competitor_names_path):
+        print(f"Competitor names file not found at: {competitor_names_path}")
+        return
+    
+    try:
+        # Load similar groups
+        print("Loading similar groups from file...")
+        with open(similar_names_path, 'r', encoding='utf-8') as f:
+            similar_groups = json.load(f)
+        
+        # Load competitor names
+        print("Loading competitor names...")
+        with open(competitor_names_path, 'r', encoding='utf-8') as f:
+            competitor_names = json.load(f)
+        
+        print(f"Loaded {len(similar_groups)} similar groups")
+        print(f"Loaded {len(competitor_names)} competitor entries")
+        
+        if not similar_groups:
+            print("No similar groups found in file.")
+            return
+        
+        # Filter to only show unreviewed groups
+        unreviewed_groups = [group for group in similar_groups if 'reviewed' not in group]
+        reviewed_groups = [group for group in similar_groups if 'reviewed' in group]
+        
+        print(f"Found {len(unreviewed_groups)} unreviewed groups")
+        print(f"Found {len(reviewed_groups)} already reviewed groups")
+        
+        if not unreviewed_groups:
+            print("No unreviewed groups found. All groups have been reviewed.")
+            return
+        
+        # Determine how many groups to process (max 50)
+        groups_to_process = min(50, len(unreviewed_groups))
+        print(f"Will process {groups_to_process} unreviewed groups (max 50 per session)")
+        
+        # Interactive merging
+        print("\nStarting interactive merging process...")
+        print("For each group, press:")
+        print("  ENTER - to merge the names")
+        print("  ESC   - to skip this group (mark as reviewed)")
+        print("  Other - to skip this group (mark as reviewed)")
+        print("=" * 80)
+        
+        merged_count = 0
+        skipped_count = 0
+        
+        for group_idx, group in enumerate(unreviewed_groups[:groups_to_process]):
+            names = group['names']
+            primary_name = group['primary_name']
+            avg_similarity = group['average_similarity']
+            info_dict = group['info']
+            
+            print(f"\nGroup {group_idx + 1}/{groups_to_process} (Avg Similarity: {avg_similarity:.2f})")
+            print("=" * 60)
+            print(f"Names in group: {names}")
+            print(f"Primary name (most appearances): {primary_name}")
+            
+            # Show info for each name in the group
+            for i, name in enumerate(names):
+                info = info_dict[name]
+                print(f"\nName {i+1}: {name}")
+                print(f"  Appearances: {info['appearances']}")
+                print(f"  Years: {info['years']}")
+                print(f"  Divisions: {info['divisions']}")
+                print(f"  Locations: {info['locations']}")
+                print(f"  Competitions: {info['competitions'][:3]}{'...' if len(info['competitions']) > 3 else ''}")
+            
+            # Check for overlapping information between all names
+            all_years = set()
+            all_divisions = set()
+            all_locations = set()
+            
+            for info in info_dict.values():
+                all_years.update(info['years'])
+                all_divisions.update(info['divisions'])
+                all_locations.update(info['locations'])
+            
+            # Find overlapping years, divisions, locations
+            overlapping_years = []
+            overlapping_divisions = []
+            overlapping_locations = []
+            
+            for year in all_years:
+                if sum(1 for info in info_dict.values() if year in info['years']) > 1:
+                    overlapping_years.append(year)
+            
+            for division in all_divisions:
+                if sum(1 for info in info_dict.values() if division in info['divisions']) > 1:
+                    overlapping_divisions.append(division)
+            
+            for location in all_locations:
+                if sum(1 for info in info_dict.values() if location in info['locations']) > 1:
+                    overlapping_locations.append(location)
+            
+            if overlapping_years or overlapping_divisions or overlapping_locations:
+                print(f"\n⚠️  OVERLAPPING INFO:")
+                if overlapping_years:
+                    print(f"  Years: {sorted(overlapping_years)}")
+                if overlapping_divisions:
+                    print(f"  Divisions: {sorted(overlapping_divisions)}")
+                if overlapping_locations:
+                    print(f"  Locations: {sorted(overlapping_locations)}")
+            
+            print(f"\nPress ENTER to merge all names into '{primary_name}', ESC to skip, or any other key to skip...")
+            
+            # Get user input
+            key = get_key_press()
+            
+            if key == 'enter':
+                # Merge all names into the primary name
+                print("Merging names...")
+                
+                # Get the arrays for all names
+                all_arrays = []
+                for name in names:
+                    all_arrays.extend(competitor_names[name])
+                
+                # Merge all arrays and remove duplicates
+                merged_array = list(set(all_arrays))
+                merged_array.sort()
+                
+                # Update the dictionary
+                competitor_names[primary_name] = merged_array
+                
+                # Remove all other names from the dictionary
+                for name in names:
+                    if name != primary_name:
+                        del competitor_names[name]
+                
+                print(f"✅ Merged {len(names)} names into '{primary_name}'")
+                merged_count += 1
+                
+                # Remove this group from the file (it's been merged)
+                similar_groups.remove(group)
+                
+            else:
+                print("Skipped.")
+                skipped_count += 1
+                
+                # Mark this group as reviewed but not merged
+                group['reviewed'] = False
+                # Note: group is already in similar_groups, so no need to add it back
+            
+            print(f"Progress: {group_idx + 1}/{groups_to_process} (Merged: {merged_count}, Skipped: {skipped_count})")
+        
+        # Save the updated competitor names
+        print(f"\nSaving updated competitor names...")
+        with open(competitor_names_path, 'w', encoding='utf-8') as f:
+            json.dump(competitor_names, f, indent=2, ensure_ascii=False)
+        
+        # Save the updated similar groups file (with reviewed groups and without merged ones)
+        print(f"Saving updated similar groups file...")
+        with open(similar_names_path, 'w', encoding='utf-8') as f:
+            json.dump(similar_groups, f, indent=2, ensure_ascii=False)
+        
+        # Count remaining unreviewed groups
+        remaining_unreviewed = [group for group in similar_groups if 'reviewed' not in group]
+        
+        print(f"✅ Session completed!")
+        print(f"Groups processed in this session: {groups_to_process}")
+        print(f"Groups merged: {merged_count}")
+        print(f"Groups skipped (marked as reviewed): {skipped_count}")
+        print(f"Groups remaining in file: {len(similar_groups)}")
+        print(f"Unreviewed groups remaining: {len(remaining_unreviewed)}")
+        print(f"Final competitor count: {len(competitor_names)}")
+        
+        if len(remaining_unreviewed) > 0:
+            print(f"\n💡 Run merge_from_file() again to process the next {min(50, len(remaining_unreviewed))} unreviewed groups")
+        
+    except Exception as e:
+        print(f"Error: {e}")
+        import traceback
+        traceback.print_exc()
+
 if __name__ == "__main__":
     # Search for empty divisions
     #print("Searching for rows with empty division column...")
@@ -820,13 +1330,19 @@ if __name__ == "__main__":
     #get_unique_locations_countries()
 
     # Get unique competitor names (detailed version)
-    print("Extracting unique competitor names with details...")
-    get_unique_competitor_names_detailed()
+    #print("Extracting unique competitor names with details...")
+    #get_unique_competitor_names_detailed()
 
     # Get unique competitor names (simple version)
-    print("Extracting unique competitor names (simple version)")
-    get_unique_competitor_names()
+    #print("Extracting unique competitor names (simple version)")
+    #get_unique_competitor_names()
 
     # Analyze and merge competitor names
-    print("Analyzing and merging competitor names")
-    analyze_and_merge_competitor_names()
+    #print("Analyzing and merging competitor names")
+    #analyze_and_merge_competitor_names()
+
+    # Find and merge similar names
+    print("Finding and merging similar names")
+    find_similar_names_to_file()
+    
+    pass  # Add this to fix the indentation error
