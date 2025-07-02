@@ -2425,9 +2425,7 @@
     "Gdansk, Poland"
   ],
   "Geismar, Louisiana, United States": [
-    "Geismar, Louisiana"
-  ],
-  "Geismer, Louisiana, United States": [
+    "Geismar, Louisiana",
     "Geismer, Louisiana"
   ],
   "Georgetown, Kentucky, United States": [
@@ -2454,7 +2452,8 @@
     "Germantown, Tn"
   ],
   "Germany": [
-    "Germany"
+    "Germany",
+    "West Germany"
   ],
   "Ghana": [
     "Ghana"
@@ -2492,9 +2491,7 @@
     "Glendale, Az"
   ],
   "Glendale, California, United States": [
-    "Glendale, California"
-  ],
-  "Glensdale, California, United States": [
+    "Glendale, California",
     "Glensdale, Ca"
   ],
   "Glenwood, Maryland, United States": [
@@ -2514,10 +2511,8 @@
     "Godley, Texas",
     "Godley, Tx"
   ],
-  "Goiania, Brazil": [
-    "Goiania,Brazil"
-  ],
   "Goiânia, Brazil": [
+    "Goiania,Brazil",
     "Goiânia, Brazil"
   ],
   "Golden Valley, Minnesota, United States": [
@@ -2545,10 +2540,8 @@
   "Granbury, Texas, United States": [
     "Granbury, Texas"
   ],
-  "Grand Praire, Texas, United States": [
-    "Grand Praire, Texas"
-  ],
   "Grand Prairie, Texas, United States": [
+    "Grand Praire, Texas",
     "Grand Prairie, Texas",
     "Grand Prairie, Tx"
   ],
@@ -2579,15 +2572,11 @@
     "Greece"
   ],
   "Greeley, Colorado, United States": [
-    "Greeley, Colorado"
-  ],
-  "Greely, Colorado, United States": [
+    "Greeley, Colorado",
     "Greely, Colorado"
   ],
-  "Green Acres, Florida, United States": [
-    "Green Acres, Florida"
-  ],
   "Greenacres, Florida, United States": [
+    "Green Acres, Florida",
     "Greenacres, Florida"
   ],
   "Greenbriar, Arkansas, United States": [
@@ -2645,16 +2634,14 @@
     "Guadalajara, Mexico",
     "Guadalajara,Mexico"
   ],
-  "Guadalupe": [
-    "Guadalupe"
-  ],
   "Guadalupe, Mexico": [
+    "Guadalupe",
     "Guadalupe, Mexico"
   ],
-  "Guadeloupe": [
+  "Guadeloupe, France": [
     "Guadeloupe"
   ],
-  "Guam": [
+  "Guam, United States": [
     "Guam"
   ],
   "Guanajuato, Mexico": [
@@ -2684,10 +2671,10 @@
   "Guyton, Georgia, United States": [
     "Guyton, Georgia"
   ],
-  "Gwangmyeong, Korea, Republic Of": [
+  "Gwangmyeong, South Korea": [
     "Gwangmyeong,Korea, Republic Of"
   ],
-  "Gyeonggi State, Korea, Republic Of": [
+  "Gyeonggi State, South Korea": [
     "Gyeonggi State,Korea, Republic Of"
   ],
   "Hacienda Heights, California, United States": [
@@ -2713,9 +2700,7 @@
     "Hallandale Beach, Florida"
   ],
   "Hallandale, Florida, United States": [
-    "Hallandale, Florida"
-  ],
-  "Hallendale, Florida, United States": [
+    "Hallandale, Florida",
     "Hallendale, Florida"
   ],
   "Haltom City, Texas, United States": [
@@ -2736,10 +2721,8 @@
   "Hampshire, United Kingdom": [
     "Hampshire, United Kingdom"
   ],
-  "Hampton Georgia": [
-    "Hampton Georgia"
-  ],
   "Hampton, Georgia, United States": [
+    "Hampton Georgia",
     "Hampton, Georgia"
   ],
   "Hanford, California, United States": [
@@ -2794,9 +2777,7 @@
     "Haslet, Texas"
   ],
   "Hattiesburg, Mississippi, United States": [
-    "Hattiesburg, Mississippi"
-  ],
-  "Hattlesburg, Mississippi, United States": [
+    "Hattiesburg, Mississippi",
     "Hattlesburg, Ms"
   ],
   "Hauppauge, New York, United States": [
@@ -2823,11 +2804,9 @@
   "Hazel Park, Michigan, United States": [
     "Hazel Park, Michigan"
   ],
-  "Heath Springs, South Carolina Usa": [
-    "Heath Springs, South Carolina Usa"
-  ],
   "Heath Springs, South Carolina, United States": [
-    "Heath Springs, South Carolina"
+    "Heath Springs, South Carolina",
+    "Heath Springs, South Carolina Usa"
   ],
   "Hebron, Ohio, United States": [
     "Hebron, Ohio"
@@ -2877,11 +2856,9 @@
     "Hialeah, Fl",
     "Hialeah, Florida"
   ],
-  "Hicksville, New York Usa": [
-    "Hicksville, New York Usa"
-  ],
   "Hicksville, New York, United States": [
-    "Hicksville, New York"
+    "Hicksville, New York",
+    "Hicksville, New York Usa"
   ],
   "High Point, North Carolina, United States": [
     "High Point, North Carolina"
@@ -2932,14 +2909,9 @@
   "Hillside, Illinois, United States": [
     "Hillside, Illinois"
   ],
-  "Hksar": [
-    "Hksar"
-  ],
-  "Ho Chi Minh City, Viet Nam": [
-    "Ho Chi Minh City,Viet Nam"
-  ],
   "Ho Chi Minh City, Vietnam": [
-    "Ho Chi Minh City, Vietnam"
+    "Ho Chi Minh City, Vietnam",
+    "Ho Chi Minh City,Viet Nam"
   ],
   "Hobart, Indiana, United States": [
     "Hobart, Indiana"
@@ -2991,13 +2963,10 @@
   "Honduras": [
     "Honduras"
   ],
-  "Hong Kong": [
-    "Hong Kong"
-  ],
-  "Hong Kong Sar": [
-    "Hong Kong Sar"
-  ],
-  "Hong Kong, Hong Kong": [
+  "Hong Kong, China": [
+    "Hksar",
+    "Hong Kong",
+    "Hong Kong Sar",
     "Hong Kong,Hong Kong"
   ],
   "Honolulu, Hawaii, United States": [
@@ -3025,9 +2994,7 @@
     "Houisburg, Ohio"
   ],
   "Houma, Louisiana, United States": [
-    "Houma, Louisiana"
-  ],
-  "Houma, Lousiana": [
+    "Houma, Louisiana",
     "Houma, Lousiana"
   ],
   "Houston, Texas, United States": [
@@ -3037,17 +3004,15 @@
   "Hulbert, Oklahoma, United States": [
     "Hulbert, Oklahoma"
   ],
-  "Humbay": [
-    "Humbay"
-  ],
   "Humble, Texas, United States": [
     "Humble, Texas",
     "Humble, Tx"
   ],
-  "Hungary": [
-    "Hungary"
+  "Humboldt Bay, California, United States": [
+    "Humbay"
   ],
-  "Hungry": [
+  "Hungary": [
+    "Hungary",
     "Hungry"
   ],
   "Huntersville, North Carolina, United States": [
@@ -3068,18 +3033,14 @@
     "Huntsville, Al",
     "Huntsville, Alabama"
   ],
-  "Hurst, Texas Usa": [
-    "Hurst, Texas Usa"
-  ],
   "Hurst, Texas, United States": [
     "Hurst, Texas",
     "Hurst, Texas - Usa",
+    "Hurst, Texas Usa",
     "Hurst, Tx",
     "Hurst, Tx , Usa",
+    "Hurst, Tx Usa",
     "Hurst, Tx, Usa"
-  ],
-  "Hurst, Tx Usa": [
-    "Hurst, Tx Usa"
   ],
   "Hutto, Texas, United States": [
     "Hutto, Texas"
@@ -3100,10 +3061,8 @@
   "Iceland": [
     "Iceland"
   ],
-  "Illerckirchberg, Germany": [
-    "Illerckirchberg, Germany"
-  ],
   "Illerkirchberg, Germany": [
+    "Illerckirchberg, Germany",
     "Illerkirchberg, Germany"
   ],
   "Independence, Kentucky, United States": [
@@ -3125,17 +3084,13 @@
   "Indonesia": [
     "Indonesia"
   ],
-  "Ingelwood, California, United States": [
-    "Ingelwood, California"
-  ],
   "Inglewood, California, United States": [
+    "Ingelwood, California",
     "Inglewood, Ca",
     "Inglewood, California"
   ],
-  "Inner Grove Heights, Minnesota, United States": [
-    "Inner Grove Heights, Minnesota"
-  ],
   "Inver Grove Heights, Minnesota, United States": [
+    "Inner Grove Heights, Minnesota",
     "Inver Grove Heights, Mn"
   ],
   "Inwood, New York, United States": [
@@ -3153,11 +3108,9 @@
   "Irmo, South Carolina, United States": [
     "Irmo, Sc"
   ],
-  "Irvine, Ca Representing Russia": [
-    "Irvine, Ca Representing Russia"
-  ],
   "Irvine, California, United States": [
     "Irvine, Ca",
+    "Irvine, Ca Representing Russia",
     "Irvine, California"
   ],
   "Irving, Texas, United States": [
@@ -3198,20 +3151,16 @@
   "Jackson, Tennessee, United States": [
     "Jackson, Tennessee"
   ],
-  "Jacksonville": [
-    "Jacksonville",
-    "Jacksonville,"
-  ],
   "Jacksonville Beach, Florida, United States": [
     "Jacksonville Beach, Fl",
     "Jacksonville Beach, Florida"
   ],
-  "Jacksonville, Florida Usa": [
-    "Jacksonville, Florida Usa"
-  ],
   "Jacksonville, Florida, United States": [
+    "Jacksonville",
+    "Jacksonville,",
     "Jacksonville, Fl",
     "Jacksonville, Florida",
+    "Jacksonville, Florida Usa",
     "Jacksonville, Florida, Usa"
   ],
   "Jacksonville, North Carolina, United States": [
@@ -3225,9 +3174,7 @@
     "Jamaica, New York"
   ],
   "Japan": [
-    "Japan"
-  ],
-  "Japon": [
+    "Japan",
     "Japon"
   ],
   "Jbmdl, New Jersey, United States": [
@@ -3357,9 +3304,7 @@
     "Kemah, Tx"
   ],
   "Kempele, Finland": [
-    "Kempele, Finland"
-  ],
-  "Kempelee, Finland": [
+    "Kempele, Finland",
     "Kempelee, Finland"
   ],
   "Kenner, Louisiana, United States": [
@@ -3411,9 +3356,7 @@
   ],
   "Killeen, Texas, United States": [
     "Killeen, Texas",
-    "Killeen, Tx"
-  ],
-  "Killen, Texas, United States": [
+    "Killeen, Tx",
     "Killen, Texas"
   ],
   "Kingsville, Maryland, United States": [
@@ -3449,9 +3392,6 @@
   "Kokomo, Indiana, United States": [
     "Kokomo, Indiana"
   ],
-  "Korea": [
-    "Korea"
-  ],
   "Kos Island, Greece": [
     "Kos Island, Greece"
   ],
@@ -3466,9 +3406,7 @@
     "Kuna, Idaho"
   ],
   "Kuopio, Finland": [
-    "Kuopio, Finland"
-  ],
-  "Kuopo, Finland": [
+    "Kuopio, Finland",
     "Kuopo, Finland"
   ],
   "Kuwait": [
@@ -3501,9 +3439,6 @@
   ],
   "La Verne, California, United States": [
     "La Verne, California"
-  ],
-  "La, California, United States": [
-    "La, Ca"
   ],
   "Lacey, Washington, United States": [
     "Lacey, Wa"
@@ -3620,17 +3555,13 @@
   "Lancaster, California, United States": [
     "Lancaster, California"
   ],
-  "Land O Lakes, Florida, United States": [
+  "Land O' Lakes, Florida, United States": [
     "Land 'O Lakes, Florida",
     "Land O Lakes, Fl",
     "Land O Lakes, Florida",
     "Land O' Lakes, Fl",
-    "Land O' Lakes, Florida"
-  ],
-  "Land Olakes, Florida, United States": [
-    "Land O'Lakes, Florida"
-  ],
-  "Land O’Lakes, Florida, United States": [
+    "Land O' Lakes, Florida",
+    "Land O'Lakes, Florida",
     "Land O’Lakes, Florida"
   ],
   "Langley, British Columbia, Canada": [
@@ -3657,15 +3588,14 @@
   "Las Vegas, California, United States": [
     "Las Vegas, Ca"
   ],
-  "Las Vegas, Nevada Usa": [
-    "Las Vegas, Nevada Usa"
-  ],
   "Las Vegas, Nevada, United States": [
     "Las Vegas , Nevada",
     "Las Vegas, Nevada",
+    "Las Vegas, Nevada Usa",
     "Las Vegas, Nevada, Usa",
     "Las Vegas, Nv",
-    "Las Vegas,Nvunited States"
+    "Las Vegas,Nvunited States",
+    "N Las Vegas, Nv"
   ],
   "Latvia": [
     "Latvia"
@@ -3750,10 +3680,8 @@
   "Leominster, Massachusetts, United States": [
     "Leominster, Massachusetts"
   ],
-  "Levitton, New York, United States": [
-    "Levitton, Ny"
-  ],
   "Levittown, New York, United States": [
+    "Levitton, Ny",
     "Levittown, New York"
   ],
   "Lewisburg, Ohio, United States": [
@@ -3850,7 +3778,7 @@
   "Livonia, Michigan, United States": [
     "Livonia, Mi"
   ],
-  "Lo Pagan": [
+  "Lo Pagan, Spain": [
     "Lo Pagan"
   ],
   "Lockport, Illinois, United States": [
@@ -3905,14 +3833,11 @@
   "Los Alamitos, California, United States": [
     "Los Alamitos, California"
   ],
-  "Los Angeles And Phoenix, Arizona, United States": [
-    "Los Angeles And Phoenix, Az"
-  ],
-  "Los Angeles, Ca Representing Japan": [
-    "Los Angeles, Ca Representing Japan"
-  ],
   "Los Angeles, California, United States": [
+    "La, Ca",
+    "Los Angeles And Phoenix, Az",
     "Los Angeles, Ca",
+    "Los Angeles, Ca Representing Japan",
     "Los Angeles, California",
     "Los Angeles, California Usa",
     "Los Angeles, California, Usa"
@@ -4014,10 +3939,8 @@
   "Madisonville, Alabama, United States": [
     "Madisonville, Alabama"
   ],
-  "Madrid Spain": [
-    "Madrid Spain"
-  ],
   "Madrid, Spain": [
+    "Madrid Spain",
     "Madrid, Spain",
     "Madrid,Spain"
   ],
@@ -4047,9 +3970,7 @@
     "Malta"
   ],
   "Manalapan, New Jersey, United States": [
-    "Manalapan, New Jersey"
-  ],
-  "Manalapan, Nj (Russia)": [
+    "Manalapan, New Jersey",
     "Manalapan, Nj (Russia)"
   ],
   "Manasquan, New Jersey, United States": [
@@ -4118,7 +4039,7 @@
   "Maplewood, New Jersey, United States": [
     "Maplewood, New Jersey"
   ],
-  "Maracena": [
+  "Maracena, Spain": [
     "Maracena"
   ],
   "Marana, Arizona, United States": [
@@ -4333,9 +4254,7 @@
   ],
   "Mesa, Arizona, United States": [
     "Mesa, Arizona",
-    "Mesa, Az"
-  ],
-  "Mesa, Arizonaunited States": [
+    "Mesa, Az",
     "Meza,Arizonaunited States"
   ],
   "Mesquite, Texas, United States": [
@@ -4533,11 +4452,11 @@
   "Monticello, New York, United States": [
     "Monticello, New York"
   ],
-  "Montreal Quebec, Canada": [
-    "Montreal Quebec, Canada"
-  ],
   "Montreal, Canada": [
     "Montreal, Canada"
+  ],
+  "Montreal, Quebec, Canada": [
+    "Montreal Quebec, Canada"
   ],
   "Montvale, New Jersey, United States": [
     "Montvale, Nj"
@@ -4633,9 +4552,6 @@
   "Mozambique": [
     "Mozambique"
   ],
-  "Mt Juliet, Tennessee, United States": [
-    "Mt Juliet, Tn"
-  ],
   "Mt Laurel, New Jersey, United States": [
     "Mt Laurel, New Jersey"
   ],
@@ -4643,13 +4559,12 @@
     "Mt. Dora, Florida"
   ],
   "Mt. Juliet, Tennessee, United States": [
+    "Mt Juliet, Tn",
     "Mt. Juliet, Tennessee"
   ],
-  "Mt. Laurel, New Jersey Usa": [
-    "Mt. Laurel, New Jersey Usa"
-  ],
   "Mt. Laurel, New Jersey, United States": [
-    "Mt. Laurel, New Jersey"
+    "Mt. Laurel, New Jersey",
+    "Mt. Laurel, New Jersey Usa"
   ],
   "Mt. Sterling, Kentucky, United States": [
     "Mt. Sterling, Kentucky"
@@ -4671,26 +4586,17 @@
   "Munich, Germany": [
     "Munich, Germany"
   ],
-  "Murcia, Lo Pagan": [
+  "Murcia, Lo Pagan, Spain": [
     "Murcia, Lo Pagan"
   ],
   "Murcia, Spain": [
     "Murcia, Spain"
   ],
-  "Murfreesboro, Tennessee Usa": [
-    "Murfreesboro, Tennessee Usa"
-  ],
   "Murfreesboro, Tennessee, United States": [
     "Murfreesboro, Tennessee",
+    "Murfreesboro, Tennessee Usa",
     "Murfreesboro, Tn",
     "Murfreesboro, Tn, Usa"
-  ],
-  "Murieta, California, United States": [
-    "Murieta, Ca",
-    "Murieta, California"
-  ],
-  "Murietta, California, United States": [
-    "Murietta, California"
   ],
   "Murray, Utah, United States": [
     "Murray, Utah"
@@ -4699,10 +4605,11 @@
     "Murrells Inlet, South Carolina"
   ],
   "Murrieta, California, United States": [
+    "Murieta, Ca",
+    "Murieta, California",
+    "Murietta, California",
     "Murrieta, Ca",
-    "Murrieta, California"
-  ],
-  "Murrietta, California, United States": [
+    "Murrieta, California",
     "Murrietta, Ca",
     "Murrietta, California"
   ],
@@ -4715,9 +4622,6 @@
   "Myrtle Beach, South Carolina, United States": [
     "Myrtle Beach, Sc",
     "Myrtle Beach, South Carolina"
-  ],
-  "N Las Vegas, Nevada, United States": [
-    "N Las Vegas, Nv"
   ],
   "Nadi, Fiji": [
     "Nadi, Fiji"
@@ -4831,12 +4735,10 @@
     "New Westminster, Bc Canada"
   ],
   "New York, New York, United States": [
+    "New York",
     "New York, New York",
     "New York, New York, Usa",
-    "New York, Ny"
-  ],
-  "New York, United States": [
-    "New York",
+    "New York, Ny",
     "New York, Usa"
   ],
   "New Zealand": [
@@ -4856,10 +4758,8 @@
   "Newcastle, California, United States": [
     "Newcastle, California"
   ],
-  "Newcastle, Oaklahoma": [
-    "Newcastle, Oaklahoma"
-  ],
   "Newcastle, Oklahoma, United States": [
+    "Newcastle, Oaklahoma",
     "Newcastle, Oklahoma"
   ],
   "Newfoundland, Canada": [
@@ -4967,10 +4867,8 @@
   "North Fort Myers, Florida, United States": [
     "North Fort Myers, Fl"
   ],
-  "North Highland, California, United States": [
-    "North Highland, California"
-  ],
-  "North Highlands, California, United States": [
+  "North Highlandss, California, United States": [
+    "North Highland, California",
     "North Highlands, California"
   ],
   "North Hollywood, California, United States": [
@@ -5174,14 +5072,12 @@
   "Ona, West Virginia, United States": [
     "Ona, West Virginia"
   ],
-  "Ontario Canada": [
-    "Ontario Canada"
-  ],
   "Ontario, California, United States": [
     "Ontario, Ca",
     "Ontario, California"
   ],
   "Ontario, Canada": [
+    "Ontario Canada",
     "Ontario, Canada"
   ],
   "Ontario, Oman": [
@@ -5265,9 +5161,7 @@
   ],
   "Oviedo, Florida, United States": [
     "Oviedo, Fl",
-    "Oviedo, Florida"
-  ],
-  "Ovledo, Florida, United States": [
+    "Oviedo, Florida",
     "Ovledo, Florida"
   ],
   "Owasso, Oklahoma, United States": [
@@ -5280,11 +5174,9 @@
     "Owings Mills, Maryland",
     "Owings Mills, Md"
   ],
-  "Oxford, Georgia Usa": [
-    "Oxford, Georgia Usa"
-  ],
   "Oxford, Georgia, United States": [
-    "Oxford, Georgia"
+    "Oxford, Georgia",
+    "Oxford, Georgia Usa"
   ],
   "Oxfordshire, United Kingdom": [
     "Oxfordshire, United Kingdom"
@@ -5434,12 +5326,10 @@
   "Pella, Iowa, United States": [
     "Pella, Iowa"
   ],
-  "Pembroke Pines, Florida Usa": [
-    "Pembroke Pines, Florida Usa"
-  ],
   "Pembroke Pines, Florida, United States": [
     "Pembroke Pines, Fl",
     "Pembroke Pines, Florida",
+    "Pembroke Pines, Florida Usa",
     "Pembroke Pines, Florida, Usa"
   ],
   "Pen Argyl, Pennsylvania, United States": [
@@ -5450,9 +5340,7 @@
   ],
   "Peoria, Arizona, United States": [
     "Peoria, Arizona",
-    "Peoria, Az"
-  ],
-  "Peroia, Arizona, United States": [
+    "Peoria, Az",
     "Peroia, Arizona"
   ],
   "Perpignan, France": [
@@ -5506,10 +5394,8 @@
     "Philippines",
     "Phillipines"
   ],
-  "Phoenix Arizona, Arizona, United States": [
-    "Phoenix Arizona, Az"
-  ],
   "Phoenix, Arizona, United States": [
+    "Phoenix Arizona, Az",
     "Phoenix, Arizona",
     "Phoenix, Az",
     "Phoenix,Arizona"
@@ -5551,13 +5437,11 @@
   "Pismo Beach, California, United States": [
     "Pismo Beach, California"
   ],
-  "Pitsburg, California, United States": [
-    "Pitsburg, California"
-  ],
   "Pittsboro, Indiana, United States": [
     "Pittsboro, In"
   ],
   "Pittsburg, California, United States": [
+    "Pitsburg, California",
     "Pittsburg, California"
   ],
   "Pittsburgh, Pennsylvania, United States": [
@@ -5658,10 +5542,8 @@
   "Port Saint Lucie, Florida, United States": [
     "Port Saint Lucie, Fl"
   ],
-  "Port St Lucie, Florida, United States": [
-    "Port St Lucie, Fl"
-  ],
   "Port St. Lucie, Florida, United States": [
+    "Port St Lucie, Fl",
     "Port St. Lucie, Florida"
   ],
   "Porter Ranch, California, United States": [
@@ -5771,12 +5653,6 @@
   "Qatar": [
     "Qatar"
   ],
-  "Quebec, Canada": [
-    "Quebec, Canada"
-  ],
-  "Quebec, Quebec, Canada": [
-    "Quebec, Quebec, Canada"
-  ],
   "Queen Creek, Arizona, United States": [
     "Queen Creek, Arizona"
   ],
@@ -5794,13 +5670,11 @@
     "Quincy, Massachusetts"
   ],
   "Québec, Canada": [
+    "Quebec, Canada",
     "Québec, Canada"
   ],
-  "R.O.C": [
-    "R.O.C"
-  ],
-  "R.O.C.": [
-    "R.O.C."
+  "Québec, Quebec, Canada": [
+    "Quebec, Quebec, Canada"
   ],
   "Racine, Wisconsin, United States": [
     "Racine, Wisconsin"
@@ -5871,9 +5745,6 @@
   "Renton, Washington, United States": [
     "Renton, Wa",
     "Renton, Washington"
-  ],
-  "Republic Of Korea": [
-    "Republic Of Korea"
   ],
   "Republic, Missouri, United States": [
     "Republic, Missouri"
@@ -6041,7 +5912,7 @@
   "Rosenberg, Texas, United States": [
     "Rosenberg, Texas"
   ],
-  "Roseville, California, United States": [
+  "Rosevilla, California, United States": [
     "Roseville, Ca",
     "Roseville, California"
   ],
@@ -6072,9 +5943,6 @@
   "Russia": [
     "Russia",
     "Russian"
-  ],
-  "S.C.": [
-    "S.C."
   ],
   "Sachsen, Germany": [
     "Sachsen, Germany"
@@ -6164,10 +6032,8 @@
     "San Clemente, Ca",
     "San Clemente, California"
   ],
-  "San Diego Ca": [
-    "San Diego Ca"
-  ],
   "San Diego, California, United States": [
+    "San Diego Ca",
     "San Diego, Ca",
     "San Diego, California",
     "San Diego,California"
@@ -6208,10 +6074,8 @@
     "San Marcos, Tx",
     "San Marcos,Txunited States"
   ],
-  "San Marino": [
-    "San Marino"
-  ],
   "San Marino, Italy": [
+    "San Marino",
     "San Marino, Italy"
   ],
   "San Mateo, California, United States": [
@@ -6300,10 +6164,8 @@
     "Sao Paulo, Brazil",
     "Sao Paulo,Brazil"
   ],
-  "Sarasota": [
-    "Sarasota"
-  ],
   "Sarasota, Florida, United States": [
+    "Sarasota",
     "Sarasota, Fl",
     "Sarasota, Florida",
     "Sarasota,Flunited States"
@@ -6313,15 +6175,9 @@
     "Saratoga Springs, Utah"
   ],
   "Saskatchewan, Canada": [
-    "Saskatchewan, Canada"
-  ],
-  "Saskatchewen, Canada": [
-    "Saskatchewen, Canada"
-  ],
-  "Saskatewan, Canada": [
-    "Saskatewan, Canada"
-  ],
-  "Sasktewan, Canada": [
+    "Saskatchewan, Canada",
+    "Saskatchewen, Canada",
+    "Saskatewan, Canada",
     "Sasktewan, Canada"
   ],
   "Sasktikam, California, United States": [
@@ -6342,10 +6198,8 @@
   "Saylorsburg, Pennsylvania, United States": [
     "Saylorsburg, Pa"
   ],
-  "Scarborough Ontario, Canada": [
-    "Scarborough Ontario, Canada"
-  ],
   "Scarborough, Ontario, Canada": [
+    "Scarborough Ontario, Canada",
     "Scarborough, Ontario, Canada"
   ],
   "Scarsdale, New York, United States": [
@@ -6391,10 +6245,8 @@
   "Sedalia, Colorado, United States": [
     "Sedalia, Colorado"
   ],
-  "Sedro-Wooley, Washington, United States": [
-    "Sedro-Wooley, Washington"
-  ],
   "Sedro-Woolley, Washington, United States": [
+    "Sedro-Wooley, Washington",
     "Sedro-Woolley, Washington"
   ],
   "Selden, New York, United States": [
@@ -6409,14 +6261,10 @@
   "Semmes, Alabama, United States": [
     "Semmes, Alabama"
   ],
-  "Seoul, Korea": [
-    "Seoul, Korea"
-  ],
-  "Seoul, Korea, Republic Of": [
-    "Seoul,Korea, Republic Of"
-  ],
   "Seoul, South Korea": [
-    "Seoul, South Korea"
+    "Seoul, Korea",
+    "Seoul, South Korea",
+    "Seoul,Korea, Republic Of"
   ],
   "Serbia": [
     "Serbia",
@@ -6429,9 +6277,7 @@
     "Sevierville, Tennessee"
   ],
   "Sevilla, Spain": [
-    "Sevilla, Spain"
-  ],
-  "Seville, Spain": [
+    "Sevilla, Spain",
     "Seville, Spain"
   ],
   "Seychelles": [
@@ -6566,11 +6412,9 @@
   "Sodell, Louisiana, United States": [
     "Sodell, La"
   ],
-  "Solon, Iowa Usa": [
-    "Solon, Iowa Usa"
-  ],
   "Solon, Iowa, United States": [
-    "Solon, Iowa"
+    "Solon, Iowa",
+    "Solon, Iowa Usa"
   ],
   "Solon, Louisiana, United States": [
     "Solon, Louisiana"
@@ -6597,6 +6441,7 @@
     "South Bend, Indiana"
   ],
   "South Carolina, United States": [
+    "S.C.",
     "South Carolina"
   ],
   "South Daytona, Florida, United States": [
@@ -6620,6 +6465,8 @@
     "South Jordan, Utah"
   ],
   "South Korea": [
+    "Korea",
+    "Republic Of Korea",
     "South Korea"
   ],
   "South Lake, Texas, United States": [
@@ -6673,10 +6520,8 @@
     "Sparks, Nevada",
     "Sparks, Nv"
   ],
-  "Spartansburg, South Carolina, United States": [
-    "Spartansburg, South Carolina"
-  ],
-  "Spartinsburg, South Carolina, United States": [
+  "Spartanburg, South Carolina, United States": [
+    "Spartansburg, South Carolina",
     "Spartinsburg, Sc"
   ],
   "Spingboro, Ohio, United States": [
@@ -6794,11 +6639,9 @@
   "Sterling, Virginia, United States": [
     "Sterling, Virginia"
   ],
-  "Stock Bridge, Georgia, United States": [
-    "Stock Bridge, Ga",
-    "Stock Bridge, Georgia"
-  ],
   "Stockbridge, Georgia, United States": [
+    "Stock Bridge, Ga",
+    "Stock Bridge, Georgia",
     "Stockbridge, Georgia"
   ],
   "Stockholm, Sweden": [
@@ -6939,6 +6782,8 @@
   ],
   "Taiwan": [
     "District Of Tawan",
+    "R.O.C",
+    "R.O.C.",
     "Taiwan",
     "Taiwan R.O.C"
   ],
@@ -7079,10 +6924,8 @@
   "Topeka, Kansas, United States": [
     "Topeka, Kansas"
   ],
-  "Toronto Canada": [
-    "Toronto Canada"
-  ],
   "Toronto, Canada": [
+    "Toronto Canada",
     "Toronto, Canada"
   ],
   "Toronto, Ontario, Canada": [
@@ -7091,18 +6934,14 @@
     "Toronto,Ontariocanada"
   ],
   "Torrance, California, United States": [
-    "Torrance, California"
-  ],
-  "Torrence, California, United States": [
+    "Torrance, California",
     "Torrence, California"
   ],
   "Torrington, Connecticut, United States": [
     "Torrington, Connecticut"
   ],
   "Townsend, Delaware, United States": [
-    "Townsend, Delaware"
-  ],
-  "Townsend, Dl": [
+    "Townsend, Delaware",
     "Townsend, Dl"
   ],
   "Towson, Maryland, United States": [
@@ -7138,11 +6977,9 @@
     "Trinidad",
     "Trinidad & Tobago",
     "Trinidad And Tobago",
+    "Trinidad, West Indies",
     "Trinidad-Tobago",
     "Trinidad/Tobago"
-  ],
-  "Trinidad, West Indies": [
-    "Trinidad, West Indies"
   ],
   "Trinity, Florida, United States": [
     "Trinity, Florida"
@@ -7200,13 +7037,9 @@
   "Tustin, California, United States": [
     "Tustin, Ca"
   ],
-  "Twenty Nine Palms, California, United States": [
-    "Twenty Nine Palms, California"
-  ],
   "Twentynine Palms, California, United States": [
-    "Twentynine Palms, California"
-  ],
-  "Twentynine, Palms, California": [
+    "Twenty Nine Palms, California",
+    "Twentynine Palms, California",
     "Twentynine, Palms, California"
   ],
   "Tye, Texas, United States": [
@@ -7247,9 +7080,7 @@
   ],
   "United Arab Emirates": [
     "Uae",
-    "United Arab Emirates"
-  ],
-  "United Arav Emirates": [
+    "United Arab Emirates",
     "United Arav Emirates"
   ],
   "United Kingdom": [
@@ -7264,7 +7095,8 @@
   "United States": [
     "U.S.A.",
     "United States",
-    "Usa"
+    "Usa",
+    "Usa/Canada"
   ],
   "Universal City, Texas, United States": [
     "Universal City, Texas"
@@ -7275,10 +7107,8 @@
   "Upland, California, United States": [
     "Upland, California"
   ],
-  "Upper Chichester, Penn": [
-    "Upper Chichester, Penn"
-  ],
   "Upper Chichester, Pennsylvania, United States": [
+    "Upper Chichester, Penn",
     "Upper Chichester, Pennsylvania"
   ],
   "Upper Marlboro, Maryland, United States": [
@@ -7292,9 +7122,6 @@
   ],
   "Uruguay": [
     "Uruguay"
-  ],
-  "Usa/Canada": [
-    "Usa/Canada"
   ],
   "Uzbekistan": [
     "Uzbekistan"
@@ -7384,12 +7211,10 @@
   "Victoria, Australia": [
     "Victoria, Australia"
   ],
-  "Victoria, British Colombiacanada": [
-    "Victoria,British Colombiacanada"
-  ],
   "Victoria, British Columbia, Canada": [
     "Victoria, Bc Canada",
-    "Victoria, British Columbia, Canada"
+    "Victoria, British Columbia, Canada",
+    "Victoria,British Colombiacanada"
   ],
   "Victorville, California, United States": [
     "Victorville, Ca",
@@ -7495,11 +7320,9 @@
     "Warick, Rhode Island",
     "Warwick, Rhode Island"
   ],
-  "Washington, D.C.": [
-    "Washington, D.C."
-  ],
-  "Washington, District of Columbia, United States": [
+  "Washington Dc, United States": [
     "Washington Dc, Usa",
+    "Washington, D.C.",
     "Washington, Dc"
   ],
   "Washington, Michigan, United States": [
@@ -7601,9 +7424,6 @@
   ],
   "West Delray Beach, Florida, United States": [
     "West Delray Beach, Florida"
-  ],
-  "West Germany": [
-    "West Germany"
   ],
   "West Hills, California, United States": [
     "West Hills, California"
@@ -7762,10 +7582,8 @@
     "Wilsonville, Or",
     "Wilsonville, Oregon"
   ],
-  "Wilton Manor, Florida, United States": [
-    "Wilton Manor, Florida"
-  ],
-  "Wilton Manors, Florida, United States": [
+  "Wilton Manorss, Florida, United States": [
+    "Wilton Manor, Florida",
     "Wilton Manors, Florida"
   ],
   "Winchester, California, United States": [
@@ -7802,9 +7620,7 @@
   ],
   "Winter Garden, Florida, United States": [
     "Winter Garden, Fl",
-    "Winter Garden, Florida"
-  ],
-  "Winter Gardens, Florida, United States": [
+    "Winter Garden, Florida",
     "Winter Gardens, Florida"
   ],
   "Winter Haven, Florida, United States": [
