@@ -115,34 +115,82 @@ cleaned_df.loc[(cleaned_df['Year'].isna()) | (cleaned_df['Year'] == ''), 'Year']
 def parse_location(location_str):
     """
     Parse location string into city, state, and country.
-    Handles various formats including:
-    - "Atlanta, Georgia" -> city: "Atlanta", state: "Georgia", country: "United States"
-    - "Toronto, Canada" -> city: "Toronto", state: None, country: "Canada"
-    - "Las Vegas, NV" -> city: "Las Vegas", state: "NV", country: "United States"
-    - "Brazil" -> city: None, state: None, country: "Brazil"
-    - "New York, NY, USA" -> city: "New York", state: "NY", country: "United States"
-    - "London, United Kingdom" -> city: "London", state: None, country: "United Kingdom"
-    
-    Returns a dictionary with keys: city, state, country
+    Always output city, state, and country in title case.
+    Convert state abbreviations to full names.
+    Generalize malformed US location fix.
     """
     if pd.isna(location_str) or location_str == '' or location_str == ' ':
         return {'city': None, 'state': None, 'country': None}
     
     location_str = str(location_str).strip()
-    
-    # Remove quotes if present
     location_str = location_str.replace('"', '').replace("'", "")
-    
-    # Handle special cases with leading/trailing commas
     location_str = re.sub(r'^,+|,+$', '', location_str).strip()
+
+    # Special case handling for common typos and formatting issues
+    special_cases = {
+        # ... existing special cases ...
+    }
+    if location_str in special_cases:
+        location_str = special_cases[location_str]
+
+    # Capitalization fix for city part
+    def fix_city_capitalization(text):
+        if not text:
+            return text
+        parts = text.split(',')
+        if len(parts) > 0:
+            city_part = parts[0].strip()
+            import re
+            word_parts = re.split(r'([\s\-\'])', city_part)
+            fixed_parts = []
+            for part in word_parts:
+                if part.strip() and part not in [' ', '-', "'"]:
+                    word = part.strip()
+                    if word.upper() in ['LA', 'NY', 'DC', 'BC', 'ON', 'QC', 'AB', 'SK', 'MB', 'NB', 'NS', 'PE', 'NL', 'YT', 'NT', 'NU', 'ST', 'MT', 'FT']:
+                        fixed_parts.append(word.upper())
+                    else:
+                        if len(word) > 2:
+                            if (word[0].isupper() and word[1].isupper() and any(c.islower() for c in word[2:])):
+                                fixed_word = word[0].upper() + word[1:].lower()
+                            else:
+                                fixed_word = word.capitalize()
+                        else:
+                            fixed_word = word.capitalize()
+                        fixed_parts.append(fixed_word)
+                else:
+                    fixed_parts.append(part)
+            fixed_city = ''.join(fixed_parts)
+            parts[0] = fixed_city
+            return ','.join(parts)
+        return text
+    location_str = fix_city_capitalization(location_str)
+
+    # Handle "City, State - USA" pattern before comma splitting
+    # This handles cases like "Canton, Georgia - Usa" -> "Canton, Georgia, United States"
+    location_str = re.sub(
+        r'([A-Za-z .\'-]+),\s*([A-Za-z .\'-]+)\s*-\s*Usa',
+        r'\1, \2, United States',
+        location_str,
+        flags=re.IGNORECASE
+    )
     
-    # Split by comma and clean up each part
-    parts = [part.strip() for part in location_str.split(',') if part.strip()]
+    # Handle "City, StateAbbrUnited States" pattern (e.g., "Albuquerque, Nmunited States", "Alexandria, Vaunited States")
+    location_str = re.sub(
+        r'^([^,]+),\s*([A-Za-z]{2})united\s*states$',
+        r'\1, \2, United States',
+        location_str,
+        flags=re.IGNORECASE
+    )
     
-    if not parts:
-        return {'city': None, 'state': None, 'country': None}
-    
-    # US State abbreviations and full names mapping
+    # Handle "City, Province Canada" pattern (e.g., "Cumberland, Bc Canada", "Guelph, Ontario Canada")
+    location_str = re.sub(
+        r'^([^,]+),\s*([A-Za-z\s]+)\s+canada$',
+        r'\1, \2, Canada',
+        location_str,
+        flags=re.IGNORECASE
+    )
+
+    # US state/province mappings
     us_states = {
         'AL': 'Alabama', 'AK': 'Alaska', 'AZ': 'Arizona', 'AR': 'Arkansas', 'CA': 'California',
         'CO': 'Colorado', 'CT': 'Connecticut', 'DE': 'Delaware', 'FL': 'Florida', 'GA': 'Georgia',
@@ -154,255 +202,174 @@ def parse_location(location_str):
         'ND': 'North Dakota', 'OH': 'Ohio', 'OK': 'Oklahoma', 'OR': 'Oregon', 'PA': 'Pennsylvania',
         'RI': 'Rhode Island', 'SC': 'South Carolina', 'SD': 'South Dakota', 'TN': 'Tennessee',
         'TX': 'Texas', 'UT': 'Utah', 'VT': 'Vermont', 'VA': 'Virginia', 'WA': 'Washington',
-        'WV': 'West Virginia', 'WI': 'Wisconsin', 'WY': 'Wyoming',
-        'DC': 'District of Columbia'
+        'WV': 'West Virginia', 'WI': 'Wisconsin', 'WY': 'Wyoming', 'DC': 'District of Columbia'
     }
-    
-    # Common country variations
-    country_mappings = {
-        'usa': 'United States', 'united states': 'United States', 'united states of america': 'United States',
-        'uk': 'United Kingdom', 'united kingdom': 'United Kingdom', 'england': 'United Kingdom',
-        'scotland': 'United Kingdom', 'wales': 'United Kingdom', 'northern ireland': 'United Kingdom',
-        'canada': 'Canada', 'canadian': 'Canada',
-        'australia': 'Australia', 'australian': 'Australia',
-        'brazil': 'Brazil', 'brasil': 'Brazil',
-        'germany': 'Germany', 'deutschland': 'Germany',
-        'france': 'France', 'francia': 'France',
-        'italy': 'Italy', 'italia': 'Italy',
-        'spain': 'Spain', 'espana': 'Spain',
-        'netherlands': 'Netherlands', 'holland': 'Netherlands',
-        'sweden': 'Sweden', 'svecia': 'Sweden',
-        'norway': 'Norway', 'norge': 'Norway',
-        'finland': 'Finland', 'suomi': 'Finland',
-        'denmark': 'Denmark', 'danmark': 'Denmark',
-        'poland': 'Poland', 'polska': 'Poland',
-        'czech republic': 'Czech Republic', 'czech rep.': 'Czech Republic',
-        'slovakia': 'Slovakia', 'slovak republic': 'Slovakia',
-        'hungary': 'Hungary', 'magyarorszag': 'Hungary',
-        'romania': 'Romania', 'romania': 'Romania',
-        'bulgaria': 'Bulgaria',
-        'russia': 'Russia', 'russian federation': 'Russia',
-        'ukraine': 'Ukraine',
-        'belarus': 'Belarus',
-        'lithuania': 'Lithuania',
-        'latvia': 'Latvia',
-        'estonia': 'Estonia',
-        'moldova': 'Moldova',
-        'serbia': 'Serbia',
-        'croatia': 'Croatia',
-        'slovenia': 'Slovenia',
-        'bosnia': 'Bosnia and Herzegovina', 'bosnia & herzegovina': 'Bosnia and Herzegovina',
-        'montenegro': 'Montenegro',
-        'albania': 'Albania',
-        'macedonia': 'Macedonia',
-        'greece': 'Greece',
-        'turkey': 'Turkey', 'turkiye': 'Turkey',
-        'israel': 'Israel',
-        'lebanon': 'Lebanon',
-        'jordan': 'Jordan',
-        'iran': 'Iran',
-        'iraq': 'Iraq',
-        'kuwait': 'Kuwait',
-        'qatar': 'Qatar',
-        'uae': 'United Arab Emirates', 'united arab emirates': 'United Arab Emirates',
-        'saudi arabia': 'Saudi Arabia',
-        'oman': 'Oman',
-        'yemen': 'Yemen',
-        'egypt': 'Egypt',
-        'libya': 'Libya',
-        'tunisia': 'Tunisia', 'tunesia': 'Tunisia',
-        'algeria': 'Algeria',
-        'morocco': 'Morocco', 'morrocco': 'Morocco',
-        'sudan': 'Sudan',
-        'south africa': 'South Africa',
-        'nigeria': 'Nigeria',
-        'ghana': 'Ghana',
-        'kenya': 'Kenya',
-        'ethiopia': 'Ethiopia',
-        'uganda': 'Uganda',
-        'tanzania': 'Tanzania',
-        'zimbabwe': 'Zimbabwe',
-        'zambia': 'Zambia',
-        'botswana': 'Botswana',
-        'namibia': 'Namibia',
-        'angola': 'Angola',
-        'mozambique': 'Mozambique',
-        'madagascar': 'Madagascar',
-        'mauritius': 'Mauritius',
-        'seychelles': 'Seychelles',
-        'china': 'China',
-        'japan': 'Japan', 'japon': 'Japan',
-        'south korea': 'South Korea', 'korea': 'South Korea', 'republic of korea': 'South Korea',
-        'north korea': 'North Korea',
-        'taiwan': 'Taiwan', 'r.o.c': 'Taiwan', 'r.o.c.': 'Taiwan',
-        'hong kong': 'Hong Kong', 'hong kong sar': 'Hong Kong', 'hksar': 'Hong Kong',
-        'singapore': 'Singapore',
-        'malaysia': 'Malaysia',
-        'thailand': 'Thailand',
-        'vietnam': 'Vietnam', 'viet nam': 'Vietnam',
-        'cambodia': 'Cambodia',
-        'laos': 'Laos',
-        'myanmar': 'Myanmar', 'burma': 'Myanmar',
-        'philippines': 'Philippines', 'phillipines': 'Philippines',
-        'indonesia': 'Indonesia',
-        'india': 'India',
-        'pakistan': 'Pakistan',
-        'bangladesh': 'Bangladesh',
-        'sri lanka': 'Sri Lanka',
-        'nepal': 'Nepal',
-        'bhutan': 'Bhutan',
-        'mongolia': 'Mongolia',
-        'kazakhstan': 'Kazakhstan',
-        'uzbekistan': 'Uzbekistan',
-        'kyrgyzstan': 'Kyrgyzstan',
-        'tajikistan': 'Tajikistan',
-        'turkmenistan': 'Turkmenistan',
-        'afghanistan': 'Afghanistan',
-        'iran': 'Iran',
-        'iraq': 'Iraq',
-        'syria': 'Syria',
-        'lebanon': 'Lebanon',
-        'jordan': 'Jordan',
-        'israel': 'Israel',
-        'palestine': 'Palestine',
-        'mexico': 'Mexico',
-        'guatemala': 'Guatemala',
-        'belize': 'Belize',
-        'el salvador': 'El Salvador',
-        'honduras': 'Honduras',
-        'nicaragua': 'Nicaragua',
-        'costa rica': 'Costa Rica', 'costa rico': 'Costa Rica',
-        'panama': 'Panama',
-        'colombia': 'Colombia',
-        'venezuela': 'Venezuela', 'vanezuela': 'Venezuela',
-        'ecuador': 'Ecuador',
-        'peru': 'Peru',
-        'bolivia': 'Bolivia',
-        'chile': 'Chile',
-        'argentina': 'Argentina',
-        'paraguay': 'Paraguay', 'paraquay': 'Paraguay',
-        'uruguay': 'Uruguay',
-        'guyana': 'Guyana',
-        'suriname': 'Suriname',
-        'french guiana': 'French Guiana',
-        'trinidad': 'Trinidad and Tobago', 'trinidad & tobago': 'Trinidad and Tobago',
-        'barbados': 'Barbados',
-        'jamaica': 'Jamaica',
-        'haiti': 'Haiti',
-        'dominican republic': 'Dominican Republic',
-        'cuba': 'Cuba', 'cuban': 'Cuba',
-        'puerto rico': 'Puerto Rico',
-        'bahamas': 'Bahamas',
-        'bermuda': 'Bermuda',
-        'aruba': 'Aruba',
-        'curacao': 'Curacao', 'curaco': 'Curacao',
-        'bonaire': 'Bonaire',
-        'sint maarten': 'Sint Maarten',
-        'new zealand': 'New Zealand', 'new zeland': 'New Zealand',
-        'fiji': 'Fiji',
-        'papua new guinea': 'Papua New Guinea',
-        'solomon islands': 'Solomon Islands',
-        'vanuatu': 'Vanuatu',
-        'new caledonia': 'New Caledonia',
-        'french polynesia': 'French Polynesia',
-        'tahiti': 'Tahiti',
-        'samoa': 'Samoa',
-        'tonga': 'Tonga',
-        'cook islands': 'Cook Islands',
-        'niue': 'Niue',
-        'tokelau': 'Tokelau',
-        'tuvalu': 'Tuvalu',
-        'kiribati': 'Kiribati',
-        'marshall islands': 'Marshall Islands',
-        'micronesia': 'Micronesia',
-        'palau': 'Palau',
-        'nauru': 'Nauru',
-        'guam': 'Guam',
-        'northern mariana islands': 'Northern Mariana Islands',
-        'american samoa': 'American Samoa',
-        'hawaii': 'Hawaii',
-        'alaska': 'Alaska'
+    us_states_lower = {v.lower(): v for v in us_states.values()}
+    us_states_abbr = {k.lower(): v for k, v in us_states.items()}
+
+    ca_provinces = {
+        'AB': 'Alberta', 'BC': 'British Columbia', 'MB': 'Manitoba', 'NB': 'New Brunswick',
+        'NL': 'Newfoundland and Labrador', 'NS': 'Nova Scotia', 'NT': 'Northwest Territories',
+        'NU': 'Nunavut', 'ON': 'Ontario', 'PE': 'Prince Edward Island', 'QC': 'Quebec',
+        'SK': 'Saskatchewan', 'YT': 'Yukon'
     }
-    
-    # Normalize country names
+    ca_provinces_lower = {v.lower(): v for v in ca_provinces.values()}
+    ca_provinces_abbr = {k.lower(): v for k, v in ca_provinces.items()}
+
+    def normalize_state(state):
+        if not state:
+            return None
+        s = state.strip().lower()
+        if s in us_states_abbr:
+            return us_states_abbr[s]
+        if s in us_states_lower:
+            return us_states_lower[s]
+        if s in ca_provinces_abbr:
+            return ca_provinces_abbr[s]
+        if s in ca_provinces_lower:
+            return ca_provinces_lower[s]
+        return state.title()
+
     def normalize_country(country_str):
         if not country_str:
             return None
-        country_lower = country_str.lower().strip()
-        return country_mappings.get(country_lower, country_str)
-    
-    # Handle different patterns
+        c = country_str.strip().lower().replace('.', '')
+        if c in ['usa', 'united states', 'united states of america', 'us', 'u s a', 'u s']:
+            return 'United States'
+        if c in ['uk', 'united kingdom', 'england', 'scotland', 'wales', 'northern ireland', 'u k']:
+            return 'United Kingdom'
+        if c in ['uae', 'united arab emirates']:
+            return 'United Arab Emirates'
+        if c in ['tunesia', 'tunisia']:
+            return 'Tunisia'
+        if c in ['ukrain', 'ukraine']:
+            return 'Ukraine'
+        if c in ['trinidad', 'trinidad & tobago', 'trinidad and tobago', 'trinidad-tobago', 'trinidad/tobago']:
+            return 'Trinidad and Tobago'
+        if c in ['netherland', 'netherlands', 'the netherland', 'the netherlands', 'holland']:
+            return 'Netherlands'
+        if c in ['taiwan', 'taiwan r o c', 'taiwan roc', 'r o c', 'r o c']:
+            return 'Taiwan'
+        if c in ['svecia', 'sweden']:
+            return 'Sweden'
+        if c in ['slovak republic', 'slovakia']:
+            return 'Slovakia'
+        if c in ['serbia', 'serbia & montenegro']:
+            return 'Serbia'
+        if c in ['romain', 'romania']:
+            return 'Romania'
+        if c in ['russia', 'russian', 'russian federation']:
+            return 'Russia'
+        if c in ['phillipines', 'philippines']:
+            return 'Philippines'
+        if c in ['brasil', 'brazil']:
+            return 'Brazil'
+        if c in ['czech rep', 'czech republic', 'czechia']:
+            return 'Czech Republic'
+        if c in ['paraquay', 'paraguay']:
+            return 'Paraguay'
+        if c in ['vanezuela', 'venezuela']:
+            return 'Venezuela'
+        if c in ['columbia', 'colombia']:
+            return 'Colombia'
+        if c in ['new zeland', 'new zealand']:
+            return 'New Zealand'
+        if c in ['morrocco', 'morocco']:
+            return 'Morocco'
+        return country_str.title()
+
+    # Split by comma and clean up each part
+    parts = [part.strip() for part in location_str.split(',') if part.strip()]
+    if not parts:
+        return {'city': None, 'state': None, 'country': None}
+
+    # Generalized malformed US location fix
+    if len(parts) == 3:
+        first, second, third = parts
+        # City, State, USA/United States
+        if (
+            (second.upper() in us_states or second.lower() in us_states_lower)
+            and normalize_country(third) == 'United States'
+        ):
+            return {
+                'city': fix_city_capitalization(first).title(),
+                'state': normalize_state(second),
+                'country': 'United States'
+            }
+        # City, Province, Canada
+        if (
+            (second.upper() in ca_provinces or second.lower() in ca_provinces_lower)
+            and normalize_country(third) == 'Canada'
+        ):
+            return {
+                'city': fix_city_capitalization(first).title(),
+                'state': normalize_state(second),
+                'country': 'Canada'
+            }
+        # If first part is a US state abbr, second is US, third is a state (abbr, full, or typo)
+        if first.upper() in us_states and second.lower() in ['united states', 'usa']:
+            norm_state = normalize_state(third)
+            return {'city': None, 'state': norm_state, 'country': 'United States'}
+        # If first part is a city, second is a state abbr/full, third is a country
+        if second.upper() in us_states:
+            return {'city': fix_city_capitalization(first).title(), 'state': normalize_state(second), 'country': normalize_country(third)}
+        if second.lower() in us_states_lower:
+            return {'city': fix_city_capitalization(first).title(), 'state': normalize_state(second), 'country': normalize_country(third)}
+        # If second is a Canadian province
+        if second.upper() in ca_provinces:
+            return {'city': fix_city_capitalization(first).title(), 'state': normalize_state(second), 'country': normalize_country(third)}
+        if second.lower() in ca_provinces_lower:
+            return {'city': fix_city_capitalization(first).title(), 'state': normalize_state(second), 'country': normalize_country(third)}
+
+    if len(parts) == 2:
+        first, second = parts
+        # City, State or City, Country or State, Country
+        if second.upper() in us_states:
+            return {'city': fix_city_capitalization(first).title(), 'state': normalize_state(second), 'country': 'United States'}
+        if second.lower() in us_states_lower:
+            return {'city': fix_city_capitalization(first).title(), 'state': normalize_state(second), 'country': 'United States'}
+        if second.upper() in ca_provinces:
+            return {'city': fix_city_capitalization(first).title(), 'state': normalize_state(second), 'country': 'Canada'}
+        if second.lower() in ca_provinces_lower:
+            return {'city': fix_city_capitalization(first).title(), 'state': normalize_state(second), 'country': 'Canada'}
+        # State, Country
+        if first.upper() in us_states and normalize_country(second) == 'United States':
+            return {'city': None, 'state': normalize_state(first), 'country': 'United States'}
+        if first.upper() in ca_provinces and normalize_country(second) == 'Canada':
+            return {'city': None, 'state': normalize_state(first), 'country': 'Canada'}
+        # City, Country
+        return {'city': fix_city_capitalization(first).title(), 'state': None, 'country': normalize_country(second)}
+
     if len(parts) == 1:
-        # Single part - could be city, state, or country
         part = parts[0]
-        
-        # Check if it's a US state abbreviation
+        # State abbr/full
         if part.upper() in us_states:
-            return {'city': None, 'state': part.upper(), 'country': 'United States'}
-        
-        # Check if it's a US state full name
+            return {'city': None, 'state': normalize_state(part), 'country': 'United States'}
+        if part.lower() in us_states_lower:
+            return {'city': None, 'state': normalize_state(part), 'country': 'United States'}
+        if part.upper() in ca_provinces:
+            return {'city': None, 'state': normalize_state(part), 'country': 'Canada'}
+        if part.lower() in ca_provinces_lower:
+            return {'city': None, 'state': normalize_state(part), 'country': 'Canada'}
+        # Check if it's a full state name (case insensitive)
         for abbr, full_name in us_states.items():
             if part.lower() == full_name.lower():
-                return {'city': None, 'state': abbr, 'country': 'United States'}
-        
-        # Check if it's a country
-        normalized_country = normalize_country(part)
-        if normalized_country:
-            return {'city': None, 'state': None, 'country': normalized_country}
-        
-        # Assume it's a city
-        return {'city': part, 'state': None, 'country': None}
-    
-    elif len(parts) == 2:
-        # Two parts - could be "City, State" or "City, Country" or "State, Country"
-        part1, part2 = parts
-        
-        # Check if part2 is a US state abbreviation
-        if part2.upper() in us_states:
-            return {'city': part1, 'state': part2.upper(), 'country': 'United States'}
-        
-        # Check if part2 is a US state full name
-        for abbr, full_name in us_states.items():
-            if part2.lower() == full_name.lower():
-                return {'city': part1, 'state': abbr, 'country': 'United States'}
-        
-        # Check if part2 is a country
-        normalized_country = normalize_country(part2)
-        if normalized_country:
-            return {'city': part1, 'state': None, 'country': normalized_country}
-        
-        # Check if part1 is a US state and part2 is a country
-        if part1.upper() in us_states:
-            normalized_country = normalize_country(part2)
-            if normalized_country:
-                return {'city': None, 'state': part1.upper(), 'country': normalized_country}
-        
-        # Default: assume city, country
-        return {'city': part1, 'state': None, 'country': part2}
-    
-    elif len(parts) >= 3:
-        # Three or more parts - typically "City, State, Country"
-        city = parts[0]
-        state = parts[1]
-        country_parts = parts[2:]
-        country = ', '.join(country_parts)
-        
-        # Check if state is a US state abbreviation
-        if state.upper() in us_states:
-            normalized_country = normalize_country(country)
-            return {'city': city, 'state': state.upper(), 'country': normalized_country or country}
-        
-        # Check if state is a US state full name
-        for abbr, full_name in us_states.items():
-            if state.lower() == full_name.lower():
-                normalized_country = normalize_country(country)
-                return {'city': city, 'state': abbr, 'country': normalized_country or country}
-        
-        # If state doesn't match US states, it might be a region/province
-        normalized_country = normalize_country(country)
-        return {'city': city, 'state': state, 'country': normalized_country or country}
-    
-    return {'city': None, 'state': None, 'country': None}
+                return {'city': None, 'state': full_name, 'country': 'United States'}
+        for abbr, full_name in ca_provinces.items():
+            if part.lower() == full_name.lower():
+                return {'city': None, 'state': full_name, 'country': 'Canada'}
+        # Country
+        country = normalize_country(part)
+        if country:
+            return {'city': None, 'state': None, 'country': country}
+        # City
+        return {'city': fix_city_capitalization(part).title(), 'state': None, 'country': None}
+
+    # Fallback for 3+ parts
+    city = fix_city_capitalization(parts[0]).title() if parts[0] else None
+    state = normalize_state(parts[1]) if len(parts) > 1 else None
+    country = normalize_country(parts[2]) if len(parts) > 2 else None
+    return {'city': city, 'state': state, 'country': country}
 
 
 def parse_competitor_name(name_str):
@@ -939,6 +906,10 @@ def process_judging_columns(df):
 # Apply the judging column processing
 cleaned_df = process_judging_columns(cleaned_df)
 
+cleaned_df['Location'] = cleaned_df['Location'].str.title()
+cleaned_df['Country'] = cleaned_df['Country'].str.title()
+
+
 parsed = cleaned_df['Location'].apply(parse_location)
 cleaned_df['Location City'] = parsed.apply(lambda x: x['city'])
 cleaned_df['Location State'] = parsed.apply(lambda x: x['state'])
@@ -954,7 +925,7 @@ cleaned_df['Competitor Country'] = parsed2.apply(lambda x: x['country'])
 cleaned_df = cleaned_df.sort_values(by=['Start Date', 'Competition'])
 
 # new column order: Competition,Location,Date,Competitor Name,Country,Judging,Finals,Round 2,Round 3,Routine,Total,Place,Competition Type
-cleaned_df = cleaned_df[['Start Date', 'End Date', 'Competition', 'Location City', 'Location State', 'Location Country', 'Competitor Name', 'Competitor City', 'Competitor State', 'Competitor Country', 'Judging 1', 'Judging 2', 'Judging 3', 'Judging 4', 'Routine', 'Total', 'Place', 'Division', 'Division Subtype', 'Division Level', 'Source']]
+cleaned_df = cleaned_df[['Start Date', 'End Date', 'Competition', 'Location City', 'Location State', 'Location Country', 'Competitor Name', 'Competitor City', 'Competitor State', 'Competitor Country', 'Judging 1', 'Judging 2', 'Judging 3', 'Judging 4', 'Routine', 'Total', 'Place', 'Division', 'Division Subtype', 'Division Level', 'Source', 'Location', 'Country']]
 
 # Save the cleaned DataFrame to a new CSV file
 cleaned_df.to_csv('data/all/all_clean.csv', index=False)

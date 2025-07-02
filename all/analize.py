@@ -270,8 +270,12 @@ def print_new_divisions():
 
 def get_unique_locations_countries():
     """
-    Extract unique Location and Country entries from the CSV file,
-    order them alphabetically, and write them to a JSON file.
+    Extract unique location data from the CSV file by parsing Location and Competitor location columns
+    to extract city, state, country combinations.
+    
+    Creates a JSON where keys are unique city-state-country combinations extracted from
+    Location/Competitor location data, and values are arrays of the original Location/Country column values
+    that map to those extracted city-state-country combinations.
     
     Returns:
         str: Path to the created JSON file, or None if error
@@ -284,41 +288,131 @@ def get_unique_locations_countries():
     
     try:
         # Read the CSV file
-        df = pd.read_csv(csv_path)
+        df = pd.read_csv(csv_path, low_memory=False)
         
-        # Get unique values from Location and Country columns
-        unique_entries = set()
+        # Dictionary to store the mapping: extracted city-state-country -> [original Location/Country values]
+        location_mapping = {}
         
-        # Extract unique locations (non-null, non-empty)
-        if 'Location' in df.columns:
-            locations = df['Location'].dropna()
-            locations = locations[locations.astype(str).str.strip() != '']
-            unique_entries.update(locations.unique())
+        # Process each row to extract location information
+        for _, row in df.iterrows():
+            # Process Location columns (competition location)
+            location_city = ""
+            location_state = ""
+            location_country = ""
+            
+            if 'Location City' in df.columns and pd.notna(row['Location City']):
+                location_city = str(row['Location City']).strip()
+            
+            if 'Location State' in df.columns and pd.notna(row['Location State']):
+                location_state = str(row['Location State']).strip()
+            
+            if 'Location Country' in df.columns and pd.notna(row['Location Country']):
+                location_country = str(row['Location Country']).strip()
+            
+            # Create location key for competition location
+            loc_parts = []
+            if location_city:
+                loc_parts.append(location_city)
+            if location_state:
+                loc_parts.append(location_state)
+            if location_country:
+                loc_parts.append(location_country)
+            
+            location_key = ", ".join(loc_parts) if loc_parts else None
+            
+            if location_key:
+                # Initialize the key if it doesn't exist
+                if location_key not in location_mapping:
+                    location_mapping[location_key] = []
+                
+                # Add the original Location column value if it exists and is not already there
+                if 'Location' in df.columns and pd.notna(row['Location']):
+                    original_location = str(row['Location']).strip()
+                    if original_location and original_location not in location_mapping[location_key]:
+                        location_mapping[location_key].append(original_location)
+            
+            # Process Competitor location columns
+            competitor_city = ""
+            competitor_state = ""
+            competitor_country = ""
+            
+            if 'Competitor City' in df.columns and pd.notna(row['Competitor City']):
+                competitor_city = str(row['Competitor City']).strip()
+            
+            if 'Competitor State' in df.columns and pd.notna(row['Competitor State']):
+                competitor_state = str(row['Competitor State']).strip()
+            
+            if 'Competitor Country' in df.columns and pd.notna(row['Competitor Country']):
+                competitor_country = str(row['Competitor Country']).strip()
+            
+            # Create location key for competitor location
+            comp_parts = []
+            if competitor_city:
+                comp_parts.append(competitor_city)
+            if competitor_state:
+                comp_parts.append(competitor_state)
+            if competitor_country:
+                comp_parts.append(competitor_country)
+            
+            competitor_key = ", ".join(comp_parts) if comp_parts else None
+            
+            if competitor_key:
+                # Initialize the key if it doesn't exist
+                if competitor_key not in location_mapping:
+                    location_mapping[competitor_key] = []
+                
+                # Add the original Country column value if it exists and is not already there
+                if 'Country' in df.columns and pd.notna(row['Country']):
+                    original_country = str(row['Country']).strip()
+                    if original_country and original_country not in location_mapping[competitor_key]:
+                        location_mapping[competitor_key].append(original_country)
         
-        # Extract unique countries (non-null, non-empty)
-        if 'Country' in df.columns:
-            countries = df['Country'].dropna()
-            countries = countries[countries.astype(str).str.strip() != '']
-            unique_entries.update(countries.unique())
+        # Sort the arrays for each key
+        for key in location_mapping:
+            location_mapping[key].sort()
         
-        # Convert to list and sort alphabetically
-        all_entries = sorted(list(unique_entries))
+        # Sort the dictionary by keys
+        sorted_location_mapping = dict(sorted(location_mapping.items()))
         
         # Define output file path
         output_path = "all/locations_countries.json"
         
         # Write to JSON file with nice formatting
         with open(output_path, 'w', encoding='utf-8') as f:
-            json.dump(all_entries, f, indent=2, ensure_ascii=False)
+            json.dump(sorted_location_mapping, f, indent=2, ensure_ascii=False)
         
         print(f"Successfully created JSON file: {output_path}")
-        print(f"Contains {len(all_entries)} unique locations and countries")
-        print(f"First few entries: {all_entries[:5]}{'...' if len(all_entries) > 5 else ''}")
+        print(f"Contains {len(sorted_location_mapping)} unique extracted city-state-country combinations")
+        
+        # Calculate total original combinations
+        total_combinations = sum(len(combinations) for combinations in sorted_location_mapping.values())
+        print(f"Total original Location/Country values: {total_combinations}")
+        
+        # Show some statistics
+        if sorted_location_mapping:
+            # Find the key with most combinations
+            max_key = max(sorted_location_mapping.items(), key=lambda x: len(x[1]))
+            min_key = min(sorted_location_mapping.items(), key=lambda x: len(x[1]))
+            
+            print(f"\nExtracted city-state-country with most original combinations: {max_key[0]}")
+            print(f"  Number of original combinations: {len(max_key[1])}")
+            print(f"  Original combinations: {max_key[1][:3]}{'...' if len(max_key[1]) > 3 else ''}")
+            
+            print(f"\nExtracted city-state-country with least original combinations: {min_key[0]}")
+            print(f"  Number of original combinations: {len(min_key[1])}")
+            print(f"  Original combinations: {min_key[1]}")
+            
+            # Show first few entries as examples
+            print(f"\nFirst few entries:")
+            for i, (key, combinations) in enumerate(list(sorted_location_mapping.items())[:3]):
+                print(f"{i+1}. {key}: {combinations}")
         
         return output_path
         
     except Exception as e:
         print(f"Error processing CSV file: {e}")
+        import traceback
+        traceback.print_exc()
         return None
 
 def get_unique_competitor_names_detailed():
@@ -1326,8 +1420,8 @@ if __name__ == "__main__":
     #find_round_2_3_entries()
     
     # Get unique locations and countries
-    #print("Extracting unique locations and countries...")
-    #get_unique_locations_countries()
+    print("Extracting unique locations and countries...")
+    get_unique_locations_countries()
 
     # Get unique competitor names (detailed version)
     #print("Extracting unique competitor names with details...")
@@ -1342,7 +1436,7 @@ if __name__ == "__main__":
     #analyze_and_merge_competitor_names()
 
     # Find and merge similar names
-    print("Finding and merging similar names")
-    find_similar_names_to_file()
+    #print("Finding and merging similar names")
+    #find_similar_names_to_file()
     
     pass  # Add this to fix the indentation error
