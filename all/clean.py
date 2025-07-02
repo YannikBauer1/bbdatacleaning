@@ -119,6 +119,8 @@ def parse_location(location_str):
     Convert state abbreviations to full names.
     Generalize malformed US location fix.
     """
+    import re
+    
     if pd.isna(location_str) or location_str == '' or location_str == ' ':
         return {'city': None, 'state': None, 'country': None}
     
@@ -128,10 +130,261 @@ def parse_location(location_str):
 
     # Special case handling for common typos and formatting issues
     special_cases = {
-        # ... existing special cases ...
+        # City spelling corrections
+        "Abbotsford, Bccanada": "Abbotsford, BC, Canada",
+        "Abbotsford,Bccanada": "Abbotsford, BC, Canada",
+        "Anoka, Minesota": "Anoka, Minnesota",
+        "Alexandria, Virgina": "Alexandria, Virginia",
+        "Antioc, California": "Antioch, California",
+        "Antioc, California, United States": "Antioch, California, United States",
+        "Altapena, California": "Alta Pena, California",
+        "Altapena, California, United States": "Alta Pena, California, United States",
+        "Altamont Springs, Florida": "Altamonte Springs, Florida",
+        "Altamont Springs, Florida, United States": "Altamonte Springs, Florida, United States",
+        "Altamontee Springs, Florida, United States": "Altamonte Springs, Florida, United States",
+        "Amesburg, Massachusetts": "Amesbury, Massachusetts",
+        "Amesburg, Massachusetts, United States": "Amesbury, Massachusetts, United States",
+        "Antiochh, California, United States": "Antioch, California, United States",
+        "Antiochh, Tennessee, United States": "Antioch, Tennessee, United States",
+        "Burnaby Bc, Canada": "Burnaby, BC, Canada",
+        "Carlsdatt, New Jersey": "Carlstadt, New Jersey",
+        "Carlsdatt, New Jersey, United States": "Carlstadt, New Jersey, United States",
+        "Caraccas, Venezuela": "Caracas, Venezuela",
+        "Caracus, Venezuela": "Caracas, Venezuela",
+        "Capetown, South Africa": "Cape Town, South Africa",
+        "Ceder Park, Texas": "Cedar Park, Texas",
+        "Ceder Park, Texas, United States": "Cedar Park, Texas, United States",
+        "Ceder Park, Tx": "Cedar Park, TX",
+        "Ellicot City, Maryland": "Ellicott City, Maryland",
+        "Ellicot City, Maryland, United States": "Ellicott City, Maryland, United States",
+        "Ellicottt City, Maryland, United States": "Ellicott City, Maryland, United States",
+        "Eslovaquia": "Slovakia",
+        "Evans, Gerogia": "Evans, Georgia",
+        "Lynn Have, Florida": "Lynn Haven, Florida",
+        "Lynn Have, Florida, United States": "Lynn Haven, Florida, United States",
+        "Lynn Havenn, Florida, United States": "Lynn Haven, Florida, United States",
+        "Maimi, Florida": "Miami, Florida",
+        "Maimi, Florida, United States": "Miami, Florida, United States",
+        "Maimi, Fl": "Miami, FL",
+        "Michigangan City, Indiana, United States": "Michigan City, Indiana, United States",
+        "Mision Viejo, California": "Mission Viejo, California",
+        "Mision Viejo, California, United States": "Mission Viejo, California, United States",
+        "Mision Viejo, Ca": "Mission Viejo, CA",
+        "Missouli, Montana": "Missoula, Montana",
+        "Missouli, Montana, United States": "Missoula, Montana, United States",
+        "Missouri Ciy, Texas": "Missouri City, Texas",
+        "Missouri Ciy, Texas, United States": "Missouri City, Texas, United States",
+        "Missouri Ciy, Tx": "Missouri City, TX",
+        "Moldovia": "Moldova",
+        "Monks Corner, South Carolina": "Moncks Corner, South Carolina",
+        "Monks Corner, South Carolina, United States": "Moncks Corner, South Carolina, United States",
+        "Ranho Mirage, California": "Rancho Mirage, California",
+        "Ranho Mirage, California, United States": "Rancho Mirage, California, United States",
+        "Rancho Murietta, California": "Rancho Murieta, California",
+        "Rancho Murietta, California, United States": "Rancho Murieta, California, United States",
+        "Resida, California": "Reseda, California",
+        "Resida, California, United States": "Reseda, California, United States",
+        "Resida, Ca": "Reseda, CA",
+        "Rio De Janiero, Brazil": "Rio De Janeiro, Brazil",
+        "Rio De Janiero, Brasil": "Rio De Janeiro, Brasil",
+        "Royal Oak, Michi": "Royal Oak, Michigan",
+        "Sal Lake City, Utah": "Salt Lake City, Utah",
+        "Sal Lake City, Utah, United States": "Salt Lake City, Utah, United States",
+        "Slidell, Lousiana": "Slidell, Louisiana",
+        "Southhampton, New York": "Southampton, New York",
+        "Southhampton, New York, United States": "Southampton, New York, United States",
+        "Anderson, Indiana Usa": "Anderson, Indiana, United States",
+        "Canton, Georgia Usa": "Canton, Georgia, United States",
+        "Los Angeles, California Usa": "Los Angeles, California, United States",
+        "Louisville, Kentucky, Usa": "Louisville, Kentucky, United States",
+        "Maitland, Florida Usa": "Maitland, Florida, United States",
+        "Bucarest, Romania": "Bucharest, Romania",
+        "Meza, Arizonaunited States": "Mesa, Arizona, United States",
+        "Terra Haute, Indiana": "Terre Haute, Indiana",
+        "Terra Haute, Indiana, United States": "Terre Haute, Indiana, United States",
+        "Tacoma,Waunited States": "Tacoma, WA, United States",
+        "Teaneck,Njunited States": "Teaneck, NJ, United States",
+        "The Woodlands,Txunited States": "The Woodlands, TX, United States",
+        "Toronto,Ontariocanada": "Toronto, Ontario, Canada",
+        "Walnut Crek, California": "Walnut Creek, California",
+        "Walnut Crek, California, United States": "Walnut Creek, California, United States",
+        "Warick, Rhode Island": "Warwick, Rhode Island",
+        "Warick, Rhode Island, United States": "Warwick, Rhode Island, United States",
+        "Washington Dc, Usa": "Washington, DC, United States",
+        "Westlaco, Texas": "Weslaco, Texas",
+        "Westlaco, Texas, United States": "Weslaco, Texas, United States",
+        "Winnepeg, Canada": "Winnipeg, Canada",
+        "Winston Salem, North Carolina": "Winston-Salem, North Carolina",
+        "Winston Salem, North Carolina, United States": "Winston-Salem, North Carolina, United States",
+        "Windsor Ontario, Canada": "Windsor, Ontario, Canada",
+        "Tampa, Florida Usa": "Tampa, Florida, United States",
+        "Texas, Usa": "Texas, United States",
+        "Wheeling, West Virginia - Usa": "Wheeling, West Virginia, United States",
+        "Wyle, Texas": "Wylie, Texas",
+        "Wyle, Texas, United States": "Wylie, Texas, United States",
+        "Yamika, Washington": "Yakima, Washington",
+        "Yamika, Washington, United States": "Yakima, Washington, United States",
+        "Wilton Manor, Florida, United States": "Wilton Manors, Florida, United States",
+        "Winter Gardens, Florida, United States": "Winter Garden, Florida, United States",
+        "Windsor, Ontario Canada": "Windsor, Ontario, Canada",
+        "Yarosalvl, Russia": "Yaroslavl, Russia",
+        "Wilton Manor": "Wilton Manors",
+        "Winter Gardens": "Winter Garden",
+        "Yarosalvl": "Yaroslavl",
+        "Antigua": "Antigua & Barbuda",
+        "Atlanta, Georgiaunited States": "Atlanta, Georgia, United States",
+        "Atlanta, Goergia": "Atlanta, Georgia",
+        "Atlanta, Goergia, United States": "Atlanta, Georgia, United States",
+        "Bakerfield, California": "Bakersfield, California",
+        "Bakerfield, California, United States": "Bakersfield, California, United States",
+        "Bavaria": "Bayern, Germany",
+        "Bogata, Texas": "Bogota, Texas",
+        "Bogata, Texas, United States": "Bogota, Texas, United States",
+        "Bogata": "Bogota",
+        "Boiling Afb, Washington, Dc": "Bolling AFB, Washington DC, United States",
+        "Boling Afb, Dc": "Boling AFB, Washington DC, United States",
+        "Bolling Afb, Washington, Dc": "Bolling AFB, Washington DC, United States",
+        "Bonaire Dc": "Bonaire, Washington DC, United States",
+        "Bonaire, D.C.": "Bonaire, Washington DC, United States",
+        "Bonaire, District of Columbia, United States": "Bonaire, Washington DC, United States",
+        "Bonaire": "Bonaire, United States",
+        "Bosnia": "Bosnia & Herzegovina",
+        "Bosnia And Herzegovina": "Bosnia & Herzegovina",
+        "Bosnia, Herzegovina": "Bosnia & Herzegovina",
+        "Bosnia/Herzegovina": "Bosnia & Herzegovina",
+        "Boyton Beach, Florida": "Boynton Beach, Florida",
+        "Boyton Beach, Florida, United States": "Boynton Beach, Florida, United States",
+        "Boyton Beach": "Boynton Beach",
+        "Bridgewater, New Jersey Usa": "Bridgewater, New Jersey, United States",
+        "British Columbia Canada": "British Columbia, Canada",
+        "Brookville, Florida": "Brooksville, Florida",
+        "Brookville, Florida, United States": "Brooksville, Florida, United States",
+        "Brookville": "Brooksville",
+        "Brunswick, Ohio Usa": "Brunswick, Ohio, United States",
+        "Bullhead, Arizona": "Bullhead City, Arizona",
+        "Bullhead, Arizona, United States": "Bullhead City, Arizona, United States",
+        "Bullhead": "Bullhead City",
+        "Cassel Berry, Florida": "Casselberry, Florida",
+        "Cassel Berry, Florida, United States": "Casselberry, Florida, United States",
+        "Cassel Berry": "Casselberry",
+        "Chandler, Arizona Usa": "Chandler, Arizona, United States",
+        "Christiansted": "Christiansted, U.S. Virgin Islands",
+        "Columbia, Missippi": "Columbia, Mississippi",
+        "Columbia, Missippi, United States": "Columbia, Mississippi, United States",
+        "Missippi": "Mississippi",
+        "Columbus Ga, Georgia, United States": "Columbus, Georgia, United States",
+        "Columbus Ga,Gaunited States": "Columbus, Georgia, United States",
+        "Copper Canyon, Texas Usa": "Copper Canyon, Texas, United States",
+        "Costa Rico": "Costa Rica",
+        "Cuban": "Cuba",
+        "Culvercity, California": "Culver City, California",
+        "Culvercity, California, United States": "Culver City, California, United States",
+        "Culvercity": "Culver City",
+        "Curaco": "Curaçao",
+        "Francia": "France",
+        "Debray": "Debary",
+        "Daytona Beach, Florida Usa": "Daytona Beach, Florida, United States",
+        "Daytona, Florida": "Daytona Beach, Florida",
+        "Daytona, Florida, United States": "Daytona Beach, Florida, United States",
+        "Daytona": "Daytona Beach",
+        "Debray, Florida": "Debary, Florida",
+        "Debray, Florida, United States": "Debary, Florida, United States",
+        "Denver Colorado": "Denver, Colorado, United States",
+        "Detroit Mi, Michigan, United States": "Detroit, Michigan, United States",
+        "Detroit Mi, Mi": "Detroit, Michigan, United States",
+        "District Of Tawan": "Taiwan",
+        "Douglassville, Georgia": "Douglasville, Georgia",
+        "Douglassville, Georgia, United States": "Douglasville, Georgia, United States",
+        "Douglassville": "Douglasville",
+        "Dubai": "Dubai, United Arab Emirates",
+        "Edmonds, Oklahoma": "Edmond, Oklahoma",
+        "Edmonds, Oklahoma, United States": "Edmond, Oklahoma, United States",
+        "Edmonds": "Edmond",
+        "Faroe Island": "Faroe Islands",
+        "Fort Lauderdale": "Fort Lauderdale, Florida, United States",
+        "Francia": "France",
+        "Ft Lauderdale, Florida, United States": "Fort Lauderdale, Florida, United States",
+        "Ft Lauderdale, Fl": "Fort Lauderdale, FL",
+        "Ft. Worth, Texas, United States": "Fort Worth, Texas, United States",
+        "Ft. Worth, Tx": "Fort Worth, TX",
+        "Ft.": "Fort",
+        # Add more city spelling corrections as needed
     }
     if location_str in special_cases:
         location_str = special_cases[location_str]
+
+    # Additional city spelling corrections for common patterns
+    city_spelling_fixes = {
+        # Common misspellings
+        "Bccanada": "BC, Canada",
+        "Minesota": "Minnesota",
+        "Virgina": "Virginia",
+        "Antioc": "Antioch",
+        "Antiochh": "Antioch",
+        "Altapena": "Alta Pena",
+        "Altamont": "Altamonte",
+        "Altamontee": "Altamonte",
+        "Amesburg": "Amesbury",
+        "Bucarest": "Bucharest",
+        "Carlsdatt": "Carlstadt",
+        "Caraccas": "Caracas",
+        "Caracus": "Caracas",
+        "Capetown": "Cape Town",
+        "Ceder": "Cedar",
+        "Ellicot": "Ellicott",
+        "Ellicottt": "Ellicott",
+        "Eslovaquia": "Slovakia",
+        "Gerogia": "Georgia",
+        "Lynn Have": "Lynn Haven",
+        "Lynn Havenn": "Lynn Haven",
+        "Maimi": "Miami",
+        "Michigangan": "Michigan",
+        "Mision": "Mission",
+        "Missouli": "Missoula",
+        "Missouri Ciy": "Missouri City",
+        "Moldovia": "Moldova",
+        "Monks Corner": "Moncks Corner",
+        "Ranho": "Rancho",
+        "Rancho Murietta": "Rancho Murieta",
+        "Resida": "Reseda",
+        "Janiero": "Janeiro",
+        "Michi": "Michigan",
+        "Sal Lake": "Salt Lake",
+        "Lousiana": "Louisiana",
+        "Southhampton": "Southampton",
+        "Meza": "Mesa",
+        "Terra Haute": "Terre Haute",
+        "Walnut Crek": "Walnut Creek",
+        "Warick": "Warwick",
+        "Westlaco": "Weslaco",
+        "Winnepeg": "Winnipeg",
+        "Winston Salem": "Winston-Salem",
+        "Windsor Ontario": "Windsor, Ontario",
+        "Ontariocanada": "Ontario, Canada",
+        "Wyle": "Wylie",
+        "Yamika": "Yakima",
+        "Bakerfield": "Bakersfield",
+        "Costa Rico": "Costa Rica",
+        "Cuban": "Cuba",
+        "Curaco": "Curaçao",
+        "Faroe Island": "Faroe Islands",
+        # Add more common misspellings as needed
+    }
+    
+    # Apply city spelling fixes to the first part (city) of the location
+    parts = location_str.split(',')
+    if len(parts) > 0:
+        city_part = parts[0].strip()
+        for misspelling, correction in city_spelling_fixes.items():
+            if misspelling.lower() in city_part.lower():
+                # Replace the misspelling while preserving case
+                if misspelling.lower() in city_part.lower():
+                    # Find the actual case of the misspelling in the string
+                    pattern = re.compile(re.escape(misspelling), re.IGNORECASE)
+                    city_part = pattern.sub(correction, city_part)
+                    parts[0] = city_part
+                    location_str = ','.join(parts)
+                    break
 
     # Capitalization fix for city part
     def fix_city_capitalization(text):
@@ -140,7 +393,6 @@ def parse_location(location_str):
         parts = text.split(',')
         if len(parts) > 0:
             city_part = parts[0].strip()
-            import re
             word_parts = re.split(r'([\s\-\'])', city_part)
             fixed_parts = []
             for part in word_parts:
@@ -185,6 +437,30 @@ def parse_location(location_str):
     # Handle "City, Province Canada" pattern (e.g., "Cumberland, Bc Canada", "Guelph, Ontario Canada")
     location_str = re.sub(
         r'^([^,]+),\s*([A-Za-z\s]+)\s+canada$',
+        r'\1, \2, Canada',
+        location_str,
+        flags=re.IGNORECASE
+    )
+    
+    # Handle "City Bc, Canada" pattern (e.g., "Burnaby Bc, Canada" -> "Burnaby, BC, Canada")
+    location_str = re.sub(
+        r'^([^,]+)\s+Bc,\s*Canada$',
+        r'\1, BC, Canada',
+        location_str,
+        flags=re.IGNORECASE
+    )
+    
+    # Handle "City,Stateunited States" pattern (e.g., "Tacoma,Waunited States" -> "Tacoma, WA, United States")
+    location_str = re.sub(
+        r'^([^,]+),([A-Za-z]{2})united\s*states$',
+        r'\1, \2, United States',
+        location_str,
+        flags=re.IGNORECASE
+    )
+    
+    # Handle "City,Provincecanada" pattern (e.g., "Toronto,Ontariocanada" -> "Toronto, Ontario, Canada")
+    location_str = re.sub(
+        r'^([^,]+),([A-Za-z]+)canada$',
         r'\1, \2, Canada',
         location_str,
         flags=re.IGNORECASE
