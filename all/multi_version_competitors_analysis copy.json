@@ -1283,5 +1283,193 @@
         "Mike Balan"
       ]
     }
+  },
+  "Brian J. Taylor": {
+    "primary_name": "Brian J. Taylor",
+    "total_versions": 5,
+    "versions": {
+      "Alvin Taylor": {
+        "appearances": 9,
+        "years": [
+          2018,
+          2019,
+          2020
+        ],
+        "divisions_by_year": {
+          "2018": [
+            "mensphysique"
+          ],
+          "2019": [
+            "mensphysique"
+          ],
+          "2020": [
+            "mensphysique"
+          ]
+        },
+        "competitions": [
+          "City Limits Pro",
+          "Kentucky Pro",
+          "Mile High Pro",
+          "Pittsburgh Pro",
+          "Southeast Texas Pro",
+          "Tournament Of Champions",
+          "Wings Of Strength Chicago",
+          "Wings Of Strength Pbw Tampa Pro"
+        ],
+        "locations": [
+          "Columbus, Ohio, United States"
+        ],
+        "found_in_csv": true
+      },
+      "Brian J. Taylor": {
+        "appearances": 1,
+        "years": [
+          2022
+        ],
+        "divisions_by_year": {
+          "2022": [
+            "mensphysique"
+          ]
+        },
+        "competitions": [
+          "Battle Of Texas"
+        ],
+        "locations": [],
+        "found_in_csv": true
+      },
+      "Brian J. Taylor Ii": {
+        "appearances": 1,
+        "years": [
+          2019
+        ],
+        "divisions_by_year": {
+          "2019": [
+            "mensphysique"
+          ]
+        },
+        "competitions": [
+          "Sacramento Pro"
+        ],
+        "locations": [
+          "Haltom City, Texas, United States"
+        ],
+        "found_in_csv": true
+      },
+      "Brian Taylor": {
+        "appearances": 25,
+        "years": [
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2024
+        ],
+        "divisions_by_year": {
+          "2018": [
+            "mensphysique"
+          ],
+          "2019": [
+            "mensphysique"
+          ],
+          "2020": [
+            "mensphysique"
+          ],
+          "2021": [
+            "mensphysique"
+          ],
+          "2022": [
+            "mensphysique"
+          ],
+          "2024": [
+            "mensphysique"
+          ]
+        },
+        "competitions": [
+          "California Night Of Champions",
+          "Dc Pro",
+          "Europa Phoenix Pro",
+          "Florida Pro",
+          "Houston Tournament Of Champions",
+          "Mile High Pro",
+          "New York Pro",
+          "Northern California Pro",
+          "Optimum Classic",
+          "Republic Of Texas Pro",
+          "Sacramento Pro",
+          "San Antonio Classic",
+          "Southeast Texas Pro",
+          "Texas Pro",
+          "Tournament Of Champions",
+          "Wasatch Warrior Pro",
+          "Wings Of Strength Pbw Tampa Pro"
+        ],
+        "locations": [
+          "Crowley, Texas, United States",
+          "Haltom City, Texas, United States",
+          "Honolulu, Hawaii, United States"
+        ],
+        "found_in_csv": true
+      },
+      "Harlan Taylor Jr": {
+        "appearances": 6,
+        "years": [
+          2020,
+          2023,
+          2024
+        ],
+        "divisions_by_year": {
+          "2020": [
+            "mensphysique"
+          ],
+          "2023": [
+            "mensphysique"
+          ],
+          "2024": [
+            "mensphysique"
+          ]
+        },
+        "competitions": [
+          "Charlotte Cup Pro",
+          "Daytona Pro",
+          "Florida Pro",
+          "Wings Of Strength Chicago"
+        ],
+        "locations": [
+          "Evansville, Indiana, United States"
+        ],
+        "found_in_csv": true
+      }
+    },
+    "summary": {
+      "total_appearances": 42,
+      "years_range": "2018-2024",
+      "all_years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "all_divisions": [
+        "mensphysique"
+      ],
+      "all_locations": [
+        "Columbus, Ohio, United States",
+        "Crowley, Texas, United States",
+        "Evansville, Indiana, United States",
+        "Haltom City, Texas, United States",
+        "Honolulu, Hawaii, United States"
+      ],
+      "different_names": [
+        "Alvin Taylor",
+        "Brian J. Taylor",
+        "Brian J. Taylor Ii",
+        "Brian Taylor",
+        "Harlan Taylor Jr"
+      ]
+    }
   }
 }
