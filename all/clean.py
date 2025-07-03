@@ -15,33 +15,45 @@ cleaned_df = cleaned_df[cleaned_df['Competitor Name'] != '']
 cleaned_df = cleaned_df[cleaned_df['Competitor Name'] != ' ']
 
 
-# Fix incorrect date for Torunament Of Champions Pro
 mask = (cleaned_df['Competition'].str.contains('2011 IFBB SHERU CLASSIC ASIAN GRAND PRIX PRO', case=False, na=False)) & (cleaned_df['Date'].str.contains('September 25, 2011', case=False, na=False))
 cleaned_df.loc[mask, 'Division'] = 'male - bodybuilding'
 
-# Fix incorrect date for Torunament Of Champions Pro
 mask = (cleaned_df['Competition'].str.contains('2016 Arnold Classic Asia', case=False, na=False)) & (cleaned_df['Division'].str.contains("Men's Classic Physique - Open", case=False, na=False))
 cleaned_df.loc[mask, 'Division'] = 'male - bodybuilding'
 
-# Fix incorrect date for Torunament Of Champions Pro
 mask = (cleaned_df['Competition'].str.contains('18 IFBB Lenda Murray Pro', case=False, na=False)) & (cleaned_df['Division'].str.contains("Women's Physique", case=False, na=False))
 cleaned_df.loc[mask, 'Division'] = 'womens bodybuilding'
 
-# Fix incorrect date for Torunament Of Champions Pro
 mask = (cleaned_df['Competition'].str.contains('2012 IFBB Arnold Classic', case=False, na=False)) & (cleaned_df['Division'] == "Men's Bodybuilding") & (cleaned_df['Date'].str.contains("March 2, 2012", case=False, na=False))
 cleaned_df.loc[mask, 'Division'] = 'womens bodybuilding'
 
-# Fix incorrect date for Torunament Of Champions Pro
 mask = (cleaned_df['Competition'].str.contains('Sacramento Pro', case=False, na=False)) & (cleaned_df['Division'] == "Male") & (cleaned_df['Date'].str.contains("2010-01-01", case=False, na=False))
 cleaned_df.loc[mask, 'Division'] = '202'
 
-# Fix incorrect date for Torunament Of Champions Pro
 mask = (cleaned_df['Competition'].str.contains('Sacramento Pro', case=False, na=False)) & (cleaned_df['Division'] == "Male") & (cleaned_df['Date'].str.contains("2011-01-01", case=False, na=False))
 cleaned_df.loc[mask, 'Division'] = '212'
 
-# Fix incorrect date for Torunament Of Champions Pro
 mask = (cleaned_df['Competition'].str.contains('Puerto Rico Pro Championships', case=False, na=False)) & (cleaned_df['Division'] == "Male") & (cleaned_df['Date'].str.contains("2015-01-01", case=False, na=False))
 cleaned_df.loc[mask, 'Division'] = '212'
+
+mask = (cleaned_df['Competition'].str.contains('Arnold Classic', case=False, na=False)) & (cleaned_df['Division'] == "Male - Classic") & (cleaned_df['Date'].str.contains("2017-01-01", case=False, na=False))
+cleaned_df.loc[mask, 'Division'] = 'mens physique'
+
+mask = (cleaned_df['Competition'].str.contains('Arnold Classic', case=False, na=False)) & (cleaned_df['Division'] == "Male - Classic") & (cleaned_df['Date'].str.contains("2017-01-01", case=False, na=False))
+cleaned_df.loc[mask, 'Division'] = 'mens physique'
+
+mask = (cleaned_df['Competition'].str.contains('Bigman Weekend Pro', case=False, na=False)) & (cleaned_df['Division'] == "Male - LightWeight") & (cleaned_df['Date'].str.contains("2019-01-01", case=False, na=False))
+cleaned_df.loc[mask, 'Division'] = 'male - bodybuilding'
+
+mask = (cleaned_df['Competition'].str.contains('Arnold Classic South America', case=False, na=False)) & (cleaned_df['Division'] == "Male - Classic") & (cleaned_df['Date'].str.contains("2019-01-01", case=False, na=False))
+cleaned_df.loc[mask, 'Division'] = 'male - bodybuilding'
+
+mask = (cleaned_df['Competition'].str.contains('Desert Muscle Classic', case=False, na=False)) & (cleaned_df['Division'] == "Female") & (cleaned_df['Date'].str.contains("2012-01-01", case=False, na=False))
+cleaned_df.loc[mask, 'Division'] = 'female - physique'
+
+mask = (cleaned_df['Competition'].str.contains('Korean Grand Prix', case=False, na=False)) & (cleaned_df['Division'] == "Male") & (cleaned_df['Date'].str.contains("2016-01-01", case=False, na=False))
+cleaned_df.loc[mask, 'Division'] = '212'
+
 
 # Fix incorrect date for Torunament Of Champions Pro
 mask = (cleaned_df['Competition'].str.contains('2020 Olympia', case=False, na=False)) & (cleaned_df['Competitor Name'].str.contains("Irene Anderson", case=False, na=False))

@@ -754,5 +754,534 @@
         "Michael Johnson"
       ]
     }
+  },
+  "Tracy Waller": {
+    "primary_name": "Tracy Waller",
+    "total_versions": 5,
+    "versions": {
+      "Taye Weller": {
+        "appearances": 1,
+        "years": [
+          2014
+        ],
+        "divisions_by_year": {
+          "2014": [
+            "womensphysique"
+          ]
+        },
+        "competitions": [
+          "Greater Gulf Pro"
+        ],
+        "locations": [
+          "Loganville, Georgia, United States"
+        ],
+        "found_in_csv": true
+      },
+      "Tracy Hess": {
+        "appearances": 28,
+        "years": [
+          2014,
+          2015,
+          2016,
+          2017
+        ],
+        "divisions_by_year": {
+          "2014": [
+            "womensphysique"
+          ],
+          "2015": [
+            "womensphysique"
+          ],
+          "2016": [
+            "womensphysique"
+          ],
+          "2017": [
+            "womensphysique"
+          ]
+        },
+        "competitions": [
+          "Arnold Classic",
+          "Atlantic City Pro",
+          "Mile High Pro",
+          "New York Pro",
+          "Wings Of Strength Chicago",
+          "Wings Of Strength Pbw Tampa Pro"
+        ],
+        "locations": [
+          "Southampton, Pennsylvania, United States",
+          "United States"
+        ],
+        "found_in_csv": true
+      },
+      "Tracy Mason": {
+        "appearances": 10,
+        "years": [
+          2010,
+          2013,
+          2014,
+          2015
+        ],
+        "divisions_by_year": {
+          "2010": [
+            "womensbb"
+          ],
+          "2013": [
+            "womensphysique"
+          ],
+          "2014": [
+            "womensphysique"
+          ],
+          "2015": [
+            "womensphysique"
+          ]
+        },
+        "competitions": [
+          "Texas Pro",
+          "Wings Of Strength Chicago",
+          "Wings Of Strength Pbw Tampa Pro"
+        ],
+        "locations": [
+          "Marquette, Michigan, United States",
+          "United States"
+        ],
+        "found_in_csv": true
+      },
+      "Tracy Waller": {
+        "appearances": 1,
+        "years": [
+          2014
+        ],
+        "divisions_by_year": {
+          "2014": [
+            "womensphysique"
+          ]
+        },
+        "competitions": [
+          "Europa Phoenix Pro"
+        ],
+        "locations": [
+          "Loganville, Georgia, United States"
+        ],
+        "found_in_csv": true
+      },
+      "Tracy Weller": {
+        "appearances": 35,
+        "years": [
+          2014,
+          2015,
+          2016,
+          2020
+        ],
+        "divisions_by_year": {
+          "2014": [
+            "womensphysique"
+          ],
+          "2015": [
+            "womensphysique"
+          ],
+          "2016": [
+            "womensphysique"
+          ],
+          "2020": [
+            "figure",
+            "womensphysique"
+          ]
+        },
+        "competitions": [
+          "Arnold Classic",
+          "Atlantic Usa Pro",
+          "Europa Phoenix Pro",
+          "Ferrigno Legacy Pro",
+          "Greater Gulf Pro",
+          "Lenda Murray Savannah Pro",
+          "New York Pro",
+          "Orlando Show Of Champions",
+          "Puerto Rico Pro",
+          "St. Louis Pro",
+          "Toronto Pro Supershow",
+          "Wings Of Strength Arizona Pro",
+          "Wings Of Strength Chicago",
+          "Wings Of Strength Pbw Tampa Pro"
+        ],
+        "locations": [
+          "Loganville, Georgia, United States",
+          "United States"
+        ],
+        "found_in_csv": true
+      }
+    },
+    "summary": {
+      "total_appearances": 75,
+      "years_range": "2010-2020",
+      "all_years": [
+        2010,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2020
+      ],
+      "all_divisions": [
+        "figure",
+        "womensbb",
+        "womensphysique"
+      ],
+      "all_locations": [
+        "Loganville, Georgia, United States",
+        "Marquette, Michigan, United States",
+        "Southampton, Pennsylvania, United States",
+        "United States"
+      ],
+      "different_names": [
+        "Taye Weller",
+        "Tracy Hess",
+        "Tracy Mason",
+        "Tracy Waller",
+        "Tracy Weller"
+      ]
+    }
+  },
+  "Jasmine Williams": {
+    "primary_name": "Jasmine Williams",
+    "total_versions": 3,
+    "versions": {
+      "Jasmine Williams": {
+        "appearances": 50,
+        "years": [
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "divisions_by_year": {
+          "2016": [
+            "bikini"
+          ],
+          "2017": [
+            "bikini"
+          ],
+          "2018": [
+            "bikini"
+          ],
+          "2019": [
+            "bikini"
+          ],
+          "2020": [
+            "bikini"
+          ],
+          "2021": [
+            "bikini"
+          ],
+          "2022": [
+            "bikini"
+          ],
+          "2023": [
+            "bikini"
+          ],
+          "2024": [
+            "bikini"
+          ]
+        },
+        "competitions": [
+          "Battle In The Desert",
+          "Charlotte Cup Pro",
+          "Coastal Usa Pro",
+          "Ferrigno Legacy Pro",
+          "Golden State Pro",
+          "Iron Games Pro",
+          "Italy Koloseum Pro",
+          "Legions Sports Fest",
+          "Mexico Grand Battle Pro",
+          "Miami Muscle Beach",
+          "Minneapolis Pro",
+          "Musclecontest Brazil 2",
+          "New York Pro",
+          "Northern California Pro",
+          "Olympia",
+          "Omaha Pro",
+          "Pacific Usa Pro",
+          "Patriots Challenge",
+          "Powerhouse Classic",
+          "Republic Of Texas Pro",
+          "Sacramento Pro",
+          "San Antonio Classic",
+          "Sasquatch Pro",
+          "Tahoe Pro",
+          "Toronto Pro Supershow",
+          "Vancouver Pro",
+          "Wings Of Strength Arizona Pro",
+          "Wings Of Strength Pbw Tampa Pro",
+          "World Klash Pro"
+        ],
+        "locations": [
+          "Cathedral City, California, United States",
+          "Charlotte, North Carolina, United States",
+          "Palm Desert, California, United States",
+          "United States"
+        ],
+        "found_in_csv": true
+      },
+      "Morgan Lindsey": {
+        "appearances": 8,
+        "years": [
+          2019,
+          2024
+        ],
+        "divisions_by_year": {
+          "2019": [
+            "bikini"
+          ],
+          "2024": [
+            "bikini"
+          ]
+        },
+        "competitions": [
+          "Golden State Pro",
+          "Orlando Show Of Champions",
+          "Portland Classic",
+          "Sacramento Pro",
+          "Wings Of Strength Arizona Pro"
+        ],
+        "locations": [
+          "Palm Harbor, Florida, United States",
+          "Tampa, Florida, United States"
+        ],
+        "found_in_csv": true
+      },
+      "Morgan Williams": {
+        "appearances": 11,
+        "years": [
+          2018,
+          2019,
+          2024
+        ],
+        "divisions_by_year": {
+          "2018": [
+            "bikini"
+          ],
+          "2019": [
+            "bikini"
+          ],
+          "2024": [
+            "bikini"
+          ]
+        },
+        "competitions": [
+          "Miami Muscle Beach",
+          "Omaha Pro",
+          "Orlando Show Of Champions",
+          "San Antonio Pro",
+          "Tampa Hurricane Pro",
+          "Wings Of Strength Pbw Tampa Pro",
+          "World Klash Pro"
+        ],
+        "locations": [
+          "Palm Harbor, Florida, United States"
+        ],
+        "found_in_csv": true
+      }
+    },
+    "summary": {
+      "total_appearances": 69,
+      "years_range": "2016-2024",
+      "all_years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "all_divisions": [
+        "bikini"
+      ],
+      "all_locations": [
+        "Cathedral City, California, United States",
+        "Charlotte, North Carolina, United States",
+        "Palm Desert, California, United States",
+        "Palm Harbor, Florida, United States",
+        "Tampa, Florida, United States",
+        "United States"
+      ],
+      "different_names": [
+        "Jasmine Williams",
+        "Morgan Lindsey",
+        "Morgan Williams"
+      ]
+    }
+  },
+  "Michael Anderson": {
+    "primary_name": "Michael Anderson",
+    "total_versions": 3,
+    "versions": {
+      "Michael Anderson": {
+        "appearances": 47,
+        "years": [
+          2012,
+          2013,
+          2014,
+          2015,
+          2018,
+          2019,
+          2020,
+          2021,
+          2023
+        ],
+        "divisions_by_year": {
+          "2012": [
+            "mensphysique"
+          ],
+          "2013": [
+            "mensphysique"
+          ],
+          "2014": [
+            "mensphysique"
+          ],
+          "2015": [
+            "mensphysique"
+          ],
+          "2018": [
+            "mensphysique"
+          ],
+          "2019": [
+            "mensphysique"
+          ],
+          "2020": [
+            "mensphysique"
+          ],
+          "2021": [
+            "mensphysique"
+          ],
+          "2023": [
+            "mensphysique"
+          ]
+        },
+        "competitions": [
+          "Arnold Classic",
+          "Dayana Cadeau Pro",
+          "Europa Super Show",
+          "Fort Lauderdale Pro",
+          "Grand Prix Pro",
+          "Houston Pro",
+          "Kentucky Pro",
+          "Los Angeles Grand Prix",
+          "Mile High Pro",
+          "Olympia",
+          "Orlando Show Of Champions",
+          "Pittsburgh Pro",
+          "Powerhouse Classic",
+          "Puerto Rico Pro",
+          "Valenti Gold Cup Pro",
+          "Wings Of Strength Chicago",
+          "Wings Of Strength Pbw Tampa Pro"
+        ],
+        "locations": [
+          "Cleveland, Ohio, United States",
+          "United States"
+        ],
+        "found_in_csv": true
+      },
+      "Michael Balan": {
+        "appearances": 3,
+        "years": [
+          2015
+        ],
+        "divisions_by_year": {
+          "2015": [
+            "mensphysique"
+          ]
+        },
+        "competitions": [
+          "New York Pro",
+          "Olympia",
+          "Pittsburgh Pro"
+        ],
+        "locations": [
+          "Meriden, Connecticut, United States",
+          "United States"
+        ],
+        "found_in_csv": true
+      },
+      "Mike Balan": {
+        "appearances": 18,
+        "years": [
+          2014,
+          2015,
+          2016,
+          2017
+        ],
+        "divisions_by_year": {
+          "2014": [
+            "mensphysique"
+          ],
+          "2015": [
+            "mensphysique"
+          ],
+          "2016": [
+            "mensphysique"
+          ],
+          "2017": [
+            "mensphysique"
+          ]
+        },
+        "competitions": [
+          "Atlantic City Pro",
+          "Europa Super Show",
+          "New York Pro",
+          "Olympia",
+          "Pittsburgh Pro",
+          "Prestige Crystal Cup",
+          "Puerto Rico Pro",
+          "Wings Of Strength Chicago",
+          "Wings Of Strength Pbw Tampa Pro"
+        ],
+        "locations": [
+          "Meriden, Connecticut, United States",
+          "Swansea, Massachusetts, United States",
+          "United States"
+        ],
+        "found_in_csv": true
+      }
+    },
+    "summary": {
+      "total_appearances": 68,
+      "years_range": "2012-2023",
+      "all_years": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2023
+      ],
+      "all_divisions": [
+        "mensphysique"
+      ],
+      "all_locations": [
+        "Cleveland, Ohio, United States",
+        "Meriden, Connecticut, United States",
+        "Swansea, Massachusetts, United States",
+        "United States"
+      ],
+      "different_names": [
+        "Michael Anderson",
+        "Michael Balan",
+        "Mike Balan"
+      ]
+    }
   }
 }
