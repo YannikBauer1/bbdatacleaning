@@ -1,0 +1,758 @@
+{
+  "Jennifer Palazzo": {
+    "primary_name": "Jennifer Palazzo",
+    "total_versions": 6,
+    "versions": {
+      "Jennifer Brown": {
+        "appearances": 46,
+        "years": [
+          2013,
+          2014,
+          2015
+        ],
+        "divisions_by_year": {
+          "2013": [
+            "figure"
+          ],
+          "2014": [
+            "figure"
+          ],
+          "2015": [
+            "figure"
+          ]
+        },
+        "competitions": [
+          "Europa Phoenix Pro",
+          "Felicia Romero Pro",
+          "Governors Cup",
+          "Houston Pro",
+          "Kentucky Pro",
+          "Olympia",
+          "Pittsburgh Pro",
+          "Puerto Rico Pro",
+          "Toronto Pro Supershow",
+          "Valenti Gold Cup Pro",
+          "Vancouver Pro",
+          "Wings Of Strength Pbw Tampa Pro"
+        ],
+        "found_in_csv": true
+      },
+      "Jennifer Freeman": {
+        "appearances": 32,
+        "years": [
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2023,
+          2024
+        ],
+        "divisions_by_year": {
+          "2015": [
+            "figure"
+          ],
+          "2016": [
+            "figure"
+          ],
+          "2017": [
+            "figure"
+          ],
+          "2018": [
+            "figure"
+          ],
+          "2019": [
+            "figure"
+          ],
+          "2023": [
+            "figure"
+          ],
+          "2024": [
+            "figure"
+          ]
+        },
+        "competitions": [
+          "Lenda Murray Atlanta Pro",
+          "Los Angeles Pro",
+          "Orlando Show Of Champions",
+          "Pittsburgh Pro",
+          "St. Louis Pro",
+          "Tampa Hurricane Pro",
+          "Toronto Pro Supershow",
+          "Wings Of Strength Chicago",
+          "Wings Of Strength Pbw Tampa Pro"
+        ],
+        "found_in_csv": true
+      },
+      "Jennifer Hampton": {
+        "appearances": 4,
+        "years": [
+          2023,
+          2024
+        ],
+        "divisions_by_year": {
+          "2023": [
+            "figure"
+          ],
+          "2024": [
+            "figure"
+          ]
+        },
+        "competitions": [
+          "Tampa Hurricane Pro",
+          "Texas State Pro"
+        ],
+        "found_in_csv": true
+      },
+      "Jennifer Johnson": {
+        "appearances": 18,
+        "years": [
+          2022,
+          2023,
+          2024
+        ],
+        "divisions_by_year": {
+          "2022": [
+            "figure"
+          ],
+          "2023": [
+            "figure"
+          ],
+          "2024": [
+            "figure"
+          ]
+        },
+        "competitions": [
+          "Charlotte Cup Pro",
+          "Legions Sports Fest",
+          "Lenda Murray Atlanta Pro",
+          "Optimum Classic",
+          "Sasquatch Pro",
+          "Toronto Pro Supershow",
+          "Tri City Classic",
+          "Tupelo Pro",
+          "Wings Of Strength Arizona Pro",
+          "Wings Of Strength Pbw Tampa Pro"
+        ],
+        "found_in_csv": true
+      },
+      "Jennifer Palazzo": {
+        "appearances": 34,
+        "years": [
+          2015,
+          2016,
+          2018
+        ],
+        "divisions_by_year": {
+          "2015": [
+            "figure",
+            "womensphysique"
+          ],
+          "2016": [
+            "figure",
+            "womensphysique"
+          ],
+          "2018": [
+            "figure",
+            "womensbb",
+            "womensphysique"
+          ]
+        },
+        "competitions": [
+          "Arnold Classic",
+          "Atlantic Usa Pro",
+          "Champions Of Power And Grace",
+          "Europa Super Show",
+          "Karina Nascimento Pro",
+          "Kentucky Pro",
+          "Los Angeles Pro",
+          "New York Pro",
+          "Omaha Pro",
+          "Orlando Show Of Champions",
+          "Wings Of Strength Chicago",
+          "Wings Of Strength Pbw Tampa Pro"
+        ],
+        "found_in_csv": true
+      },
+      "Jennifer Taylor": {
+        "appearances": 76,
+        "years": [
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2023
+        ],
+        "divisions_by_year": {
+          "2013": [
+            "figure"
+          ],
+          "2014": [
+            "figure"
+          ],
+          "2015": [
+            "figure"
+          ],
+          "2016": [
+            "figure"
+          ],
+          "2017": [
+            "womensphysique"
+          ],
+          "2018": [
+            "womensphysique"
+          ],
+          "2019": [
+            "womensphysique"
+          ],
+          "2020": [
+            "womensphysique"
+          ],
+          "2023": [
+            "womensphysique"
+          ]
+        },
+        "competitions": [
+          "Arnold Classic",
+          "Dexter Jackson Pro",
+          "Europa Phoenix Pro",
+          "Europa Super Show",
+          "Los Angeles Pro",
+          "Olympia",
+          "Pittsburgh Pro",
+          "San Antonio Pro",
+          "Tampa Hurricane Pro",
+          "Texas Pro",
+          "Tournament Of Champions",
+          "Valenti Gold Cup Pro",
+          "Wings Of Strength Arizona Pro",
+          "Wings Of Strength Chicago",
+          "Wings Of Strength Pbw Tampa Pro"
+        ],
+        "found_in_csv": true
+      }
+    },
+    "summary": {
+      "total_appearances": 210,
+      "years_range": "2013-2024",
+      "all_years": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2022,
+        2023,
+        2024
+      ],
+      "all_divisions": [
+        "figure",
+        "womensbb",
+        "womensphysique"
+      ],
+      "different_names": [
+        "Jennifer Brown",
+        "Jennifer Freeman",
+        "Jennifer Hampton",
+        "Jennifer Johnson",
+        "Jennifer Palazzo",
+        "Jennifer Taylor"
+      ]
+    }
+  },
+  "Michael Augustino": {
+    "primary_name": "Michael Augustino",
+    "total_versions": 3,
+    "versions": {
+      "Michael Augustino": {
+        "appearances": 9,
+        "years": [
+          2021,
+          2023,
+          2024
+        ],
+        "divisions_by_year": {
+          "2021": [
+            "mensphysique"
+          ],
+          "2023": [
+            "mensphysique"
+          ],
+          "2024": [
+            "mensphysique"
+          ]
+        },
+        "competitions": [
+          "Body Be 1 Classic",
+          "Charlotte Cup Pro",
+          "Daytona Pro",
+          "Dc Pro",
+          "Tri City Classic"
+        ],
+        "found_in_csv": true
+      },
+      "Michael Ferguson": {
+        "appearances": 85,
+        "years": [
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "divisions_by_year": {
+          "2012": [
+            "mensphysique"
+          ],
+          "2013": [
+            "mensphysique"
+          ],
+          "2014": [
+            "mensphysique"
+          ],
+          "2015": [
+            "mensphysique"
+          ],
+          "2016": [
+            "mensphysique"
+          ],
+          "2017": [
+            "classic",
+            "mensphysique"
+          ],
+          "2018": [
+            "mensphysique"
+          ],
+          "2019": [
+            "mensphysique"
+          ],
+          "2020": [
+            "mensphysique"
+          ],
+          "2021": [
+            "mensphysique"
+          ],
+          "2022": [
+            "mensphysique"
+          ],
+          "2023": [
+            "mensphysique"
+          ],
+          "2024": [
+            "mensphysique"
+          ]
+        },
+        "competitions": [
+          "Arnold Classic",
+          "Charlotte Cup Pro",
+          "City Limits Pro",
+          "Dayana Cadeau Pro",
+          "Daytona Pro",
+          "Dexter Jackson Pro",
+          "Eastern Seaboard Pro",
+          "Europa Phoenix Pro",
+          "Europa Super Show",
+          "Fort Lauderdale Pro",
+          "Greater Gulf Pro",
+          "Houston Pro",
+          "Kentucky Pro",
+          "Legions Sports Fest",
+          "Lenda Murray Atlanta Pro",
+          "Lenda Murray Norfolk Pro",
+          "Memphis Pro",
+          "Mile High Pro",
+          "Milwaukee Pro",
+          "Moscow Showdown Pro",
+          "New York Pro",
+          "Olympia",
+          "Optimum Classic",
+          "Orlando Show Of Champions",
+          "Pittsburgh Pro",
+          "Powerhouse Classic",
+          "Sacramento Pro",
+          "San Antonio Pro",
+          "San Jose Pro",
+          "St. Louis Pro",
+          "Tampa Hurricane Pro",
+          "Texas Pro",
+          "Toronto Pro Supershow",
+          "Wings Of Strength Chicago",
+          "Wings Of Strength Pbw Tampa Pro"
+        ],
+        "found_in_csv": true
+      },
+      "Michael Olivera": {
+        "appearances": 4,
+        "years": [
+          2022,
+          2024
+        ],
+        "divisions_by_year": {
+          "2022": [
+            "mensphysique"
+          ],
+          "2024": [
+            "mensphysique"
+          ]
+        },
+        "competitions": [
+          "San Antonio Pro",
+          "Wasatch Warrior Pro"
+        ],
+        "found_in_csv": true
+      }
+    },
+    "summary": {
+      "total_appearances": 98,
+      "years_range": "2012-2024",
+      "all_years": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "all_divisions": [
+        "classic",
+        "mensphysique"
+      ],
+      "different_names": [
+        "Michael Augustino",
+        "Michael Ferguson",
+        "Michael Olivera"
+      ]
+    }
+  },
+  "Michael Jesse Johnson": {
+    "primary_name": "Michael Jesse Johnson",
+    "total_versions": 9,
+    "versions": {
+      "Andre Johnson": {
+        "appearances": 12,
+        "years": [
+          2015,
+          2016,
+          2018
+        ],
+        "divisions_by_year": {
+          "2015": [
+            "mensphysique"
+          ],
+          "2016": [
+            "classic",
+            "mensphysique"
+          ],
+          "2018": [
+            "classic"
+          ]
+        },
+        "competitions": [
+          "Arnold Classic",
+          "Eastern Seaboard Pro",
+          "Los Angeles Grand Prix",
+          "Pittsburgh Pro",
+          "Wings Of Strength Chicago",
+          "Wings Of Strength Pbw Tampa Pro"
+        ],
+        "found_in_csv": true
+      },
+      "Michael Barnt": {
+        "appearances": 15,
+        "years": [
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017
+        ],
+        "divisions_by_year": {
+          "2012": [
+            "mensphysique"
+          ],
+          "2013": [
+            "mensphysique"
+          ],
+          "2014": [
+            "mensphysique"
+          ],
+          "2015": [
+            "mensphysique"
+          ],
+          "2016": [
+            "mensphysique"
+          ],
+          "2017": [
+            "mensphysique"
+          ]
+        },
+        "competitions": [
+          "Dayana Cadeau Pro",
+          "Ferrigno Legacy Pro",
+          "Grand Prix Pro",
+          "Houston Pro",
+          "Los Angeles Grand Prix",
+          "Sacramento Pro",
+          "San Jose Pro",
+          "Wings Of Strength Pbw Tampa Pro"
+        ],
+        "found_in_csv": true
+      },
+      "Michael Bevins": {
+        "appearances": 36,
+        "years": [
+          2013,
+          2014,
+          2015,
+          2016,
+          2018,
+          2019
+        ],
+        "divisions_by_year": {
+          "2013": [
+            "mensphysique"
+          ],
+          "2014": [
+            "mensphysique"
+          ],
+          "2015": [
+            "mensphysique"
+          ],
+          "2016": [
+            "mensphysique"
+          ],
+          "2018": [
+            "mensphysique"
+          ],
+          "2019": [
+            "mensphysique"
+          ]
+        },
+        "competitions": [
+          "Arnold Classic",
+          "City Limits Pro",
+          "Coastal Usa Pro",
+          "Dallas Pro",
+          "Eastern Seaboard Pro",
+          "Felicia Romero Pro",
+          "Grand Prix Pro",
+          "Kentucky Pro",
+          "Los Angeles Grand Prix",
+          "Mile High Pro",
+          "Olympia",
+          "Omaha Pro",
+          "Orlando Show Of Champions",
+          "Prestige Crystal Cup",
+          "Puerto Rico Pro",
+          "Sacramento Pro",
+          "Salt Lake City Pro",
+          "Wings Of Strength Chicago",
+          "Wings Of Strength Pbw Tampa Pro"
+        ],
+        "found_in_csv": true
+      },
+      "Michael Dougherty": {
+        "appearances": 11,
+        "years": [
+          2014,
+          2015,
+          2016,
+          2017,
+          2021
+        ],
+        "divisions_by_year": {
+          "2014": [
+            "mensphysique"
+          ],
+          "2015": [
+            "mensphysique"
+          ],
+          "2016": [
+            "mensphysique"
+          ],
+          "2017": [
+            "mensphysique"
+          ],
+          "2021": [
+            "mensphysique"
+          ]
+        },
+        "competitions": [
+          "Arnold Classic",
+          "Charlotte Cup Pro",
+          "Coastal Usa Pro",
+          "Dc Pro",
+          "Lenda Murray Norfolk Pro",
+          "Pittsburgh Pro",
+          "Sacramento Pro"
+        ],
+        "found_in_csv": true
+      },
+      "Michael Feeks": {
+        "appearances": 7,
+        "years": [
+          2014,
+          2015
+        ],
+        "divisions_by_year": {
+          "2014": [
+            "mensphysique"
+          ],
+          "2015": [
+            "mensphysique"
+          ]
+        },
+        "competitions": [
+          "Dayana Cadeau Pro",
+          "Fort Lauderdale Pro",
+          "New York Pro",
+          "Puerto Rico Pro"
+        ],
+        "found_in_csv": true
+      },
+      "Michael Hughes-Lewis": {
+        "appearances": 3,
+        "years": [
+          2015
+        ],
+        "divisions_by_year": {
+          "2015": [
+            "mensphysique"
+          ]
+        },
+        "competitions": [
+          "New York Pro",
+          "Pittsburgh Pro"
+        ],
+        "found_in_csv": true
+      },
+      "Michael Jesse Johnson": {
+        "appearances": 1,
+        "years": [
+          2015
+        ],
+        "divisions_by_year": {
+          "2015": [
+            "mensphysique"
+          ]
+        },
+        "competitions": [
+          "Coastal Usa Pro"
+        ],
+        "found_in_csv": true
+      },
+      "Michael John Johnson": {
+        "appearances": 1,
+        "years": [
+          2015
+        ],
+        "divisions_by_year": {
+          "2015": [
+            "mensphysique"
+          ]
+        },
+        "competitions": [
+          "Wings Of Strength Pbw Tampa Pro"
+        ],
+        "found_in_csv": true
+      },
+      "Michael Johnson": {
+        "appearances": 9,
+        "years": [
+          2014,
+          2015,
+          2016,
+          2018,
+          2019,
+          2022
+        ],
+        "divisions_by_year": {
+          "2014": [
+            "mensphysique"
+          ],
+          "2015": [
+            "mensphysique"
+          ],
+          "2016": [
+            "mensphysique"
+          ],
+          "2018": [
+            "mensphysique"
+          ],
+          "2019": [
+            "212"
+          ],
+          "2022": [
+            "classic"
+          ]
+        },
+        "competitions": [
+          "Arnold Classic",
+          "Coastal Usa Pro",
+          "Eastern Seaboard Pro",
+          "Mr. Big Evolution Pro",
+          "New York Pro",
+          "Toronto Pro Supershow",
+          "Warrior Classic Pro",
+          "Wings Of Strength Pbw Tampa Pro"
+        ],
+        "found_in_csv": true
+      }
+    },
+    "summary": {
+      "total_appearances": 95,
+      "years_range": "2012-2022",
+      "all_years": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2021,
+        2022
+      ],
+      "all_divisions": [
+        "212",
+        "classic",
+        "mensphysique"
+      ],
+      "different_names": [
+        "Andre Johnson",
+        "Michael Barnt",
+        "Michael Bevins",
+        "Michael Dougherty",
+        "Michael Feeks",
+        "Michael Hughes-Lewis",
+        "Michael Jesse Johnson",
+        "Michael John Johnson",
+        "Michael Johnson"
+      ]
+    }
+  }
+}

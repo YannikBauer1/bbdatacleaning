@@ -14,6 +14,68 @@ cleaned_df = cleaned_df[~cleaned_df['Competitor Name'].isna()]
 cleaned_df = cleaned_df[cleaned_df['Competitor Name'] != '']
 cleaned_df = cleaned_df[cleaned_df['Competitor Name'] != ' ']
 
+
+# Fix incorrect date for Torunament Of Champions Pro
+mask = (cleaned_df['Competition'].str.contains('2011 IFBB SHERU CLASSIC ASIAN GRAND PRIX PRO', case=False, na=False)) & (cleaned_df['Date'].str.contains('September 25, 2011', case=False, na=False))
+cleaned_df.loc[mask, 'Division'] = 'male - bodybuilding'
+
+# Fix incorrect date for Torunament Of Champions Pro
+mask = (cleaned_df['Competition'].str.contains('2016 Arnold Classic Asia', case=False, na=False)) & (cleaned_df['Division'].str.contains("Men's Classic Physique - Open", case=False, na=False))
+cleaned_df.loc[mask, 'Division'] = 'male - bodybuilding'
+
+# Fix incorrect date for Torunament Of Champions Pro
+mask = (cleaned_df['Competition'].str.contains('18 IFBB Lenda Murray Pro', case=False, na=False)) & (cleaned_df['Division'].str.contains("Women's Physique", case=False, na=False))
+cleaned_df.loc[mask, 'Division'] = 'womens bodybuilding'
+
+# Fix incorrect date for Torunament Of Champions Pro
+mask = (cleaned_df['Competition'].str.contains('2012 IFBB Arnold Classic', case=False, na=False)) & (cleaned_df['Division'] == "Men's Bodybuilding") & (cleaned_df['Date'].str.contains("March 2, 2012", case=False, na=False))
+cleaned_df.loc[mask, 'Division'] = 'womens bodybuilding'
+
+# Fix incorrect date for Torunament Of Champions Pro
+mask = (cleaned_df['Competition'].str.contains('Sacramento Pro', case=False, na=False)) & (cleaned_df['Division'] == "Male") & (cleaned_df['Date'].str.contains("2010-01-01", case=False, na=False))
+cleaned_df.loc[mask, 'Division'] = '202'
+
+# Fix incorrect date for Torunament Of Champions Pro
+mask = (cleaned_df['Competition'].str.contains('Sacramento Pro', case=False, na=False)) & (cleaned_df['Division'] == "Male") & (cleaned_df['Date'].str.contains("2011-01-01", case=False, na=False))
+cleaned_df.loc[mask, 'Division'] = '212'
+
+# Fix incorrect date for Torunament Of Champions Pro
+mask = (cleaned_df['Competition'].str.contains('Puerto Rico Pro Championships', case=False, na=False)) & (cleaned_df['Division'] == "Male") & (cleaned_df['Date'].str.contains("2015-01-01", case=False, na=False))
+cleaned_df.loc[mask, 'Division'] = '212'
+
+# Fix incorrect date for Torunament Of Champions Pro
+mask = (cleaned_df['Competition'].str.contains('2020 Olympia', case=False, na=False)) & (cleaned_df['Competitor Name'].str.contains("Irene Anderson", case=False, na=False))
+cleaned_df.loc[mask, 'Division'] = 'womens bodybuilding'
+mask = (cleaned_df['Competition'].str.contains('2020 Olympia', case=False, na=False)) & (cleaned_df['Competitor Name'].str.contains("MayLa Ash", case=False, na=False))
+cleaned_df.loc[mask, 'Division'] = 'womens bodybuilding'
+mask = (cleaned_df['Competition'].str.contains('2020 Olympia', case=False, na=False)) & (cleaned_df['Competitor Name'].str.contains("Reshanna Boswell", case=False, na=False))
+cleaned_df.loc[mask, 'Division'] = 'womens bodybuilding'
+mask = (cleaned_df['Competition'].str.contains('2020 Olympia', case=False, na=False)) & (cleaned_df['Competitor Name'].str.contains("Kim Buck", case=False, na=False))
+cleaned_df.loc[mask, 'Division'] = 'womens bodybuilding'
+mask = (cleaned_df['Competition'].str.contains('2020 Olympia', case=False, na=False)) & (cleaned_df['Competitor Name'].str.contains("Nicki Chartrand", case=False, na=False))
+cleaned_df.loc[mask, 'Division'] = 'womens bodybuilding'
+mask = (cleaned_df['Competition'].str.contains('2020 Olympia', case=False, na=False)) & (cleaned_df['Competitor Name'].str.contains("Asha Hadley", case=False, na=False))
+cleaned_df.loc[mask, 'Division'] = 'womens bodybuilding'
+mask = (cleaned_df['Competition'].str.contains('2020 Olympia', case=False, na=False)) & (cleaned_df['Competitor Name'].str.contains("Theresa Ivancik", case=False, na=False))
+cleaned_df.loc[mask, 'Division'] = 'womens bodybuilding'
+mask = (cleaned_df['Competition'].str.contains('2020 Olympia', case=False, na=False)) & (cleaned_df['Competitor Name'].str.contains("Monique Jones", case=False, na=False))
+cleaned_df.loc[mask, 'Division'] = 'womens bodybuilding'
+mask = (cleaned_df['Competition'].str.contains('2020 Olympia', case=False, na=False)) & (cleaned_df['Competitor Name'].str.contains("Janeen Lankowski", case=False, na=False))
+cleaned_df.loc[mask, 'Division'] = 'womens bodybuilding'
+mask = (cleaned_df['Competition'].str.contains('2020 Olympia', case=False, na=False)) & (cleaned_df['Competitor Name'].str.contains("Margie Martin", case=False, na=False))
+cleaned_df.loc[mask, 'Division'] = 'womens bodybuilding'
+mask = (cleaned_df['Competition'].str.contains('2020 Olympia', case=False, na=False)) & (cleaned_df['Competitor Name'].str.contains("LaDawn McDay", case=False, na=False))
+cleaned_df.loc[mask, 'Division'] = 'womens bodybuilding'
+mask = (cleaned_df['Competition'].str.contains('2020 Olympia', case=False, na=False)) & (cleaned_df['Competitor Name'].str.contains("Yaxeni Oriquen", case=False, na=False))
+cleaned_df.loc[mask, 'Division'] = 'womens bodybuilding'
+mask = (cleaned_df['Competition'].str.contains('2020 Olympia', case=False, na=False)) & (cleaned_df['Competitor Name'].str.contains("Andrea Shaw", case=False, na=False))
+cleaned_df.loc[mask, 'Division'] = 'womens bodybuilding'
+mask = (cleaned_df['Competition'].str.contains('2020 Olympia', case=False, na=False)) & (cleaned_df['Competitor Name'].str.contains("Helle Trevino", case=False, na=False))
+cleaned_df.loc[mask, 'Division'] = 'womens bodybuilding'
+mask = (cleaned_df['Competition'].str.contains('2020 Olympia', case=False, na=False)) & (cleaned_df['Competitor Name'].str.contains("Margita Zamolova", case=False, na=False))
+cleaned_df.loc[mask, 'Division'] = 'womens bodybuilding'
+
+
 # Remove prefixes like the year, IFBB, IFBB Pro, IFBB PRO LEAGUE, and also leading "-"
 cleaned_df['Competition'] = cleaned_df['Competition'].str.replace(
     r'^(?:\d{4}\s*|-+\s*|IFBB PRO LEAGUE\s*|IFBB PRO\s*|IFBB\s*)+', '', 
@@ -38,6 +100,8 @@ cleaned_df.loc[mask, 'Date'] = 'July 1, 2016'
 # Fix incorrect date for Torunament Of Champions Pro
 mask = (cleaned_df['Competition'].str.contains('Torunament Of Champions Pro', case=False, na=False)) & (cleaned_df['Date'].str.contains('September 25, 2019', case=False, na=False))
 cleaned_df.loc[mask, 'Date'] = 'September 25, 2021'
+
+
 
 
 def parse_date_range(date_str):
@@ -845,7 +909,26 @@ def parse_location(location_str):
 
     if len(parts) == 2:
         first, second = parts
-        # City, State or City, Country or State, Country
+        # Special case: "New York, United States" should be treated as city, not state
+        if first.lower() == 'new york' and normalize_country(second) == 'United States':
+            return {'city': 'New York', 'state': None, 'country': 'United States'}
+        # Check if first part is a state/province (when there are only two parts)
+        if first.upper() in us_states and normalize_country(second) == 'United States':
+            return {'city': None, 'state': normalize_state(first), 'country': 'United States'}
+        if first.lower() in us_states_lower and normalize_country(second) == 'United States':
+            return {'city': None, 'state': normalize_state(first), 'country': 'United States'}
+        if first.upper() in ca_provinces and normalize_country(second) == 'Canada':
+            return {'city': None, 'state': normalize_state(first), 'country': 'Canada'}
+        if first.lower() in ca_provinces_lower and normalize_country(second) == 'Canada':
+            return {'city': None, 'state': normalize_state(first), 'country': 'Canada'}
+        # Check if first part is a full state name (case insensitive)
+        for abbr, full_name in us_states.items():
+            if first.lower() == full_name.lower() and normalize_country(second) == 'United States':
+                return {'city': None, 'state': full_name, 'country': 'United States'}
+        for abbr, full_name in ca_provinces.items():
+            if first.lower() == full_name.lower() and normalize_country(second) == 'Canada':
+                return {'city': None, 'state': full_name, 'country': 'Canada'}
+        # City, State or City, Country (only if first part is not a state)
         if second.upper() in us_states:
             return {'city': fix_city_capitalization(first).title(), 'state': normalize_state(second), 'country': 'United States'}
         if second.lower() in us_states_lower:
@@ -854,12 +937,7 @@ def parse_location(location_str):
             return {'city': fix_city_capitalization(first).title(), 'state': normalize_state(second), 'country': 'Canada'}
         if second.lower() in ca_provinces_lower:
             return {'city': fix_city_capitalization(first).title(), 'state': normalize_state(second), 'country': 'Canada'}
-        # State, Country
-        if first.upper() in us_states and normalize_country(second) == 'United States':
-            return {'city': None, 'state': normalize_state(first), 'country': 'United States'}
-        if first.upper() in ca_provinces and normalize_country(second) == 'Canada':
-            return {'city': None, 'state': normalize_state(first), 'country': 'Canada'}
-        # City, Country
+        # City, Country (fallback)
         return {'city': fix_city_capitalization(first).title(), 'state': None, 'country': normalize_country(second)}
 
     if len(parts) == 1:
@@ -1447,7 +1525,7 @@ cleaned_df['Competitor Country'] = parsed2.apply(lambda x: x['country'])
 cleaned_df = cleaned_df.sort_values(by=['Start Date', 'Competition'])
 
 # new column order: Competition,Location,Date,Competitor Name,Country,Judging,Finals,Round 2,Round 3,Routine,Total,Place,Competition Type
-cleaned_df = cleaned_df[['Start Date', 'End Date', 'Competition', 'Location City', 'Location State', 'Location Country', 'Competitor Name', 'Competitor City', 'Competitor State', 'Competitor Country', 'Judging 1', 'Judging 2', 'Judging 3', 'Judging 4', 'Routine', 'Total', 'Place', 'Division', 'Division Subtype', 'Division Level', 'Source', 'Location', 'Country']]
+cleaned_df = cleaned_df[['Start Date', 'End Date', 'Competition', 'Location City', 'Location State', 'Location Country', 'Competitor Name', 'Competitor City', 'Competitor State', 'Competitor Country', 'Judging 1', 'Judging 2', 'Judging 3', 'Judging 4', 'Routine', 'Total', 'Place', 'Division', 'Division Subtype', 'Division Level', 'Source']]
 
 # Save the cleaned DataFrame to a new CSV file
 cleaned_df.to_csv('data/all/all_clean.csv', index=False)

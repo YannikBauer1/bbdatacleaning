@@ -1395,6 +1395,228 @@ def merge_from_file():
         import traceback
         traceback.print_exc()
 
+def analyze_multi_version_competitors():
+    """
+    Analyze competitor names that have multiple versions in their arrays.
+    For each competitor with multiple versions, provide detailed information about each version:
+    - Number of appearances
+    - Divisions by year
+    - Competition names
+    
+    Creates a JSON file with this detailed analysis.
+    
+    Returns:
+        str: Path to the created JSON file, or None if error
+    """
+    competitor_names_path = "keys/competitor_names.json"
+    csv_path = "data/all/all_clean.csv"
+    output_path = "all/multi_version_competitors_analysis.json"
+    
+    if not os.path.exists(competitor_names_path):
+        print(f"Competitor names file not found at: {competitor_names_path}")
+        return None
+    
+    if not os.path.exists(csv_path):
+        print(f"CSV file not found at: {csv_path}")
+        return None
+    
+    try:
+        # Load competitor names
+        print("Loading competitor names...")
+        with open(competitor_names_path, 'r', encoding='utf-8') as f:
+            competitor_names = json.load(f)
+        
+        # Load CSV data
+        print("Loading CSV data...")
+        df = pd.read_csv(csv_path, low_memory=False)
+        
+        print(f"Loaded {len(competitor_names)} competitor entries")
+        print(f"Loaded {len(df)} CSV rows")
+        
+        # Find competitors with multiple versions
+        multi_version_competitors = {}
+        
+        for primary_name, versions in competitor_names.items():
+            if len(versions) > 1:
+                multi_version_competitors[primary_name] = versions
+        
+        print(f"Found {len(multi_version_competitors)} competitors with multiple versions")
+        
+        if not multi_version_competitors:
+            print("No competitors with multiple versions found.")
+            return None
+        
+        # Analyze each multi-version competitor
+        analysis_results = {}
+        
+        for primary_name, versions in multi_version_competitors.items():
+            print(f"Analyzing: {primary_name} ({len(versions)} versions)")
+            
+            competitor_analysis = {
+                'primary_name': primary_name,
+                'total_versions': len(versions),
+                'versions': {}
+            }
+            
+            # Analyze each version
+            for version in versions:
+                # Get all rows for this version
+                version_rows = df[df['Competitor Name'] == version]
+                
+                if version_rows.empty:
+                    # Version not found in CSV
+                    competitor_analysis['versions'][version] = {
+                        'appearances': 0,
+                        'years': [],
+                        'divisions_by_year': {},
+                        'competitions': [],
+                        'found_in_csv': False
+                    }
+                    continue
+                
+                # Get years and divisions by year
+                years = []
+                divisions_by_year = {}
+                competitions = set()
+                locations = set()
+                
+                for _, row in version_rows.iterrows():
+                    # Extract year from Start Date
+                    if pd.notna(row.get('Start Date')) and str(row['Start Date']).strip():
+                        try:
+                            date_str = str(row['Start Date']).strip()
+                            year = None
+                            
+                            if '/' in date_str:
+                                parts = date_str.split('/')
+                                for part in parts:
+                                    if len(part) == 4 and part.isdigit():
+                                        year = int(part)
+                                        break
+                            elif '-' in date_str:
+                                parts = date_str.split('-')
+                                if len(parts) >= 1 and parts[0].isdigit() and len(parts[0]) == 4:
+                                    year = int(parts[0])
+                            
+                            if year:
+                                years.append(year)
+                                if year not in divisions_by_year:
+                                    divisions_by_year[year] = set()
+                                
+                                # Add division if available
+                                if pd.notna(row.get('Division')) and str(row['Division']).strip():
+                                    divisions_by_year[year].add(str(row['Division']).strip())
+                        except:
+                            pass
+                    
+                    # Add competition if available
+                    if pd.notna(row.get('Competition')) and str(row['Competition']).strip():
+                        competitions.add(str(row['Competition']).strip())
+                    
+                    # Add location combination if available
+                    location_parts = []
+                    if pd.notna(row.get('Competitor City')) and str(row['Competitor City']).strip():
+                        location_parts.append(str(row['Competitor City']).strip())
+                    if pd.notna(row.get('Competitor State')) and str(row['Competitor State']).strip():
+                        location_parts.append(str(row['Competitor State']).strip())
+                    if pd.notna(row.get('Competitor Country')) and str(row['Competitor Country']).strip():
+                        location_parts.append(str(row['Competitor Country']).strip())
+                    
+                    if location_parts:
+                        locations.add(', '.join(location_parts))
+                
+                # Convert sets to sorted lists for JSON serialization
+                years = sorted(list(set(years)))
+                divisions_by_year = {year: sorted(list(divisions)) for year, divisions in divisions_by_year.items()}
+                competitions = sorted(list(competitions))
+                locations = sorted(list(locations))
+                
+                competitor_analysis['versions'][version] = {
+                    'appearances': len(version_rows),
+                    'years': years,
+                    'divisions_by_year': divisions_by_year,
+                    'competitions': competitions,
+                    'locations': locations,
+                    'found_in_csv': True
+                }
+            
+            # Add summary statistics
+            total_appearances = sum(v['appearances'] for v in competitor_analysis['versions'].values())
+            all_years = set()
+            all_divisions = set()
+            all_locations = set()
+            
+            for version_info in competitor_analysis['versions'].values():
+                all_years.update(version_info['years'])
+                all_locations.update(version_info['locations'])
+                for divisions in version_info['divisions_by_year'].values():
+                    all_divisions.update(divisions)
+            
+            competitor_analysis['summary'] = {
+                'total_appearances': total_appearances,
+                'years_range': f"{min(all_years)}-{max(all_years)}" if all_years else None,
+                'all_years': sorted(list(all_years)),
+                'all_divisions': sorted(list(all_divisions)),
+                'all_locations': sorted(list(all_locations)),
+                'different_names': versions
+            }
+            
+            analysis_results[primary_name] = competitor_analysis
+        
+        # Sort by total appearances (descending)
+        sorted_analysis = dict(sorted(
+            analysis_results.items(), 
+            key=lambda x: x[1]['summary']['total_appearances'], 
+            reverse=True
+        ))
+        
+        # Write to JSON file
+        print(f"Writing analysis to {output_path}...")
+        with open(output_path, 'w', encoding='utf-8') as f:
+            json.dump(sorted_analysis, f, indent=2, ensure_ascii=False)
+        
+        print(f"✅ Successfully created analysis file: {output_path}")
+        print(f"Analyzed {len(sorted_analysis)} competitors with multiple versions")
+        
+        # Show some statistics
+        total_versions = sum(len(comp['versions']) for comp in sorted_analysis.values())
+        total_appearances = sum(comp['summary']['total_appearances'] for comp in sorted_analysis.values())
+        
+        print(f"\nStatistics:")
+        print(f"  Total versions across all competitors: {total_versions}")
+        print(f"  Total appearances across all versions: {total_appearances}")
+        
+        # Show top 5 competitors by appearances
+        print(f"\nTop 5 competitors by total appearances:")
+        for i, (name, analysis) in enumerate(list(sorted_analysis.items())[:5]):
+            print(f"{i+1}. {name}")
+            print(f"   Different names: {analysis['summary']['different_names']}")
+            print(f"   Total appearances: {analysis['summary']['total_appearances']}")
+            print(f"   Years: {analysis['summary']['years_range']}")
+            print(f"   All divisions: {analysis['summary']['all_divisions']}")
+            print(f"   All locations: {analysis['summary']['all_locations']}")
+            print()
+        
+        # Show some examples of version details
+        print(f"Example version details for '{list(sorted_analysis.keys())[0]}':")
+        first_competitor = list(sorted_analysis.values())[0]
+        for version_name, version_info in first_competitor['versions'].items():
+            print(f"  Version: {version_name}")
+            print(f"    Appearances: {version_info['appearances']}")
+            print(f"    Years: {version_info['years']}")
+            print(f"    Divisions by year: {version_info['divisions_by_year']}")
+            print(f"    Competitions: {version_info['competitions'][:3]}{'...' if len(version_info['competitions']) > 3 else ''}")
+            print(f"    Locations: {version_info['locations']}")
+            print()
+        
+        return output_path
+        
+    except Exception as e:
+        print(f"Error analyzing multi-version competitors: {e}")
+        import traceback
+        traceback.print_exc()
+        return None
+
 if __name__ == "__main__":
     # Search for empty divisions
     #print("Searching for rows with empty division column...")
@@ -1420,8 +1642,8 @@ if __name__ == "__main__":
     #find_round_2_3_entries()
     
     # Get unique locations and countries
-    print("Extracting unique locations and countries...")
-    get_unique_locations_countries()
+    #print("Extracting unique locations and countries...")
+    #get_unique_locations_countries()
 
     # Get unique competitor names (detailed version)
     #print("Extracting unique competitor names with details...")
@@ -1438,5 +1660,9 @@ if __name__ == "__main__":
     # Find and merge similar names
     #print("Finding and merging similar names")
     #find_similar_names_to_file()
+    
+    # Analyze multi-version competitors
+    print("Analyzing multi-version competitors")
+    analyze_multi_version_competitors()
     
     pass  # Add this to fix the indentation error
