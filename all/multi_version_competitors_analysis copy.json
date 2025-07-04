@@ -2866,5 +2866,448 @@
         "Krisna Dim"
       ]
     }
+  },
+  "Chad R. Mccrary": {
+    "primary_name": "Chad R. Mccrary",
+    "total_versions": 2,
+    "versions": {
+      "Chad Mccrary": {
+        "appearances": 10,
+        "years": [
+          2021,
+          2022,
+          2023
+        ],
+        "divisions_by_year": {
+          "2021": [
+            "wheelchair"
+          ],
+          "2022": [
+            "wheelchair"
+          ],
+          "2023": [
+            "mensbb"
+          ]
+        },
+        "competitions": [
+          "Arnold Classic",
+          "Dallas Pro",
+          "Europa Super Show",
+          "Olympia"
+        ],
+        "locations": [
+          "United States"
+        ],
+        "found_in_csv": true
+      },
+      "Chad R. Mccrary": {
+        "appearances": 1,
+        "years": [
+          2022
+        ],
+        "divisions_by_year": {
+          "2022": [
+            "wheelchair"
+          ]
+        },
+        "competitions": [
+          "Dallas Pro"
+        ],
+        "locations": [
+          "New Boston, Texas, United States"
+        ],
+        "found_in_csv": true
+      }
+    },
+    "summary": {
+      "total_appearances": 11,
+      "years_range": "2021-2023",
+      "all_years": [
+        2021,
+        2022,
+        2023
+      ],
+      "all_divisions": [
+        "mensbb",
+        "wheelchair"
+      ],
+      "all_locations": [
+        "New Boston, Texas, United States",
+        "United States"
+      ],
+      "different_names": [
+        "Chad Mccrary",
+        "Chad R. Mccrary"
+      ]
+    }
+  },
+  "Eric Alstrup": {
+    "primary_name": "Eric Alstrup",
+    "total_versions": 2,
+    "versions": {
+      "Eric Alstrup": {
+        "appearances": 6,
+        "years": [
+          1999,
+          2019
+        ],
+        "divisions_by_year": {
+          "1999": [
+            "mensbb"
+          ],
+          "2019": [
+            "classic"
+          ]
+        },
+        "competitions": [
+          "Atlantic Coast Pro",
+          "New York Pro",
+          "Omaha Pro",
+          "Toronto Pro Supershow",
+          "Wings Of Strength Chicago"
+        ],
+        "locations": [],
+        "found_in_csv": true
+      },
+      "Erik Alstrup": {
+        "appearances": 5,
+        "years": [
+          2019,
+          2021
+        ],
+        "divisions_by_year": {
+          "2019": [
+            "classic"
+          ],
+          "2021": [
+            "classic"
+          ]
+        },
+        "competitions": [
+          "New York Pro",
+          "Omaha Pro",
+          "Toronto Pro Supershow",
+          "Wings Of Strength Chicago"
+        ],
+        "locations": [],
+        "found_in_csv": true
+      }
+    },
+    "summary": {
+      "total_appearances": 11,
+      "years_range": "1999-2021",
+      "all_years": [
+        1999,
+        2019,
+        2021
+      ],
+      "all_divisions": [
+        "classic",
+        "mensbb"
+      ],
+      "all_locations": [],
+      "different_names": [
+        "Eric Alstrup",
+        "Erik Alstrup"
+      ]
+    }
+  },
+  "William Amorim De Aguiar": {
+    "primary_name": "William Amorim De Aguiar",
+    "total_versions": 5,
+    "versions": {
+      "William Amorim De Aguiar": {
+        "appearances": 2,
+        "years": [
+          2023
+        ],
+        "divisions_by_year": {
+          "2023": [
+            "classic"
+          ]
+        },
+        "competitions": [
+          "Musclecontest Recife"
+        ],
+        "locations": [
+          "Brazil"
+        ],
+        "found_in_csv": true
+      },
+      "William Aguiar Amorim": {
+        "appearances": 1,
+        "years": [
+          2024
+        ],
+        "divisions_by_year": {
+          "2024": [
+            "mensphysique"
+          ]
+        },
+        "competitions": [
+          "Musclecontest Fortaleza"
+        ],
+        "locations": [
+          "Brazil"
+        ],
+        "found_in_csv": true
+      },
+      "William Amorim Deaguiar": {
+        "appearances": 1,
+        "years": [
+          2022
+        ],
+        "divisions_by_year": {
+          "2022": [
+            "mensphysique"
+          ]
+        },
+        "competitions": [
+          "Musclecontest Brazil"
+        ],
+        "locations": [],
+        "found_in_csv": true
+      },
+      "William Amorim": {
+        "appearances": 6,
+        "years": [
+          2020,
+          2021,
+          2024
+        ],
+        "divisions_by_year": {
+          "2020": [
+            "mensphysique"
+          ],
+          "2021": [
+            "mensphysique"
+          ],
+          "2024": [
+            "mensphysique"
+          ]
+        },
+        "competitions": [
+          "Musclecontest Brazil",
+          "Musclecontest Fitpira",
+          "Ronnie Coleman Sur Pro Cup"
+        ],
+        "locations": [
+          "Brazil"
+        ],
+        "found_in_csv": true
+      },
+      "Willian Amorim De Aguiar": {
+        "appearances": 1,
+        "years": [
+          2021
+        ],
+        "divisions_by_year": {
+          "2021": [
+            "mensphysique"
+          ]
+        },
+        "competitions": [
+          "Musclecontest Nacional"
+        ],
+        "locations": [
+          "Brazil"
+        ],
+        "found_in_csv": true
+      }
+    },
+    "summary": {
+      "total_appearances": 11,
+      "years_range": "2020-2024",
+      "all_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "all_divisions": [
+        "classic",
+        "mensphysique"
+      ],
+      "all_locations": [
+        "Brazil"
+      ],
+      "different_names": [
+        "William Amorim De Aguiar",
+        "William Aguiar Amorim",
+        "William Amorim Deaguiar",
+        "William Amorim",
+        "Willian Amorim De Aguiar"
+      ]
+    }
+  },
+  "Abraham Sanchez": {
+    "primary_name": "Abraham Sanchez",
+    "total_versions": 2,
+    "versions": {
+      "Abraham Sanchez": {
+        "appearances": 6,
+        "years": [
+          2022,
+          2023,
+          2024
+        ],
+        "divisions_by_year": {
+          "2022": [
+            "wheelchair"
+          ],
+          "2023": [
+            "mensphysique"
+          ],
+          "2024": [
+            "mensphysique"
+          ]
+        },
+        "competitions": [
+          "Dallas Pro",
+          "Mile High Pro",
+          "Olympia",
+          "Tampa Hurricane Pro"
+        ],
+        "locations": [
+          "Mesquite, Texas, United States",
+          "Tampa, Florida, United States",
+          "United States"
+        ],
+        "found_in_csv": true
+      },
+      "Abrahan Sanchez": {
+        "appearances": 2,
+        "years": [
+          2023,
+          2024
+        ],
+        "divisions_by_year": {
+          "2023": [
+            "mensphysique"
+          ],
+          "2024": [
+            "mensphysique"
+          ]
+        },
+        "competitions": [
+          "Mile High Pro",
+          "Tampa Hurricane Pro"
+        ],
+        "locations": [],
+        "found_in_csv": true
+      }
+    },
+    "summary": {
+      "total_appearances": 8,
+      "years_range": "2022-2024",
+      "all_years": [
+        2022,
+        2023,
+        2024
+      ],
+      "all_divisions": [
+        "mensphysique",
+        "wheelchair"
+      ],
+      "all_locations": [
+        "Mesquite, Texas, United States",
+        "Tampa, Florida, United States",
+        "United States"
+      ],
+      "different_names": [
+        "Abraham Sanchez",
+        "Abrahan Sanchez"
+      ]
+    }
+  },
+  "Edgar Valencia": {
+    "primary_name": "Edgar Valencia",
+    "total_versions": 3,
+    "versions": {
+      "Edgar Daniel Valencia Palafox": {
+        "appearances": 2,
+        "years": [
+          2023
+        ],
+        "divisions_by_year": {
+          "2023": [
+            "classic",
+            "mensphysique"
+          ]
+        },
+        "competitions": [
+          "Black Swan Breon Ansley Mexico Grand Battle Pro",
+          "Mexico Grand Battle Pro"
+        ],
+        "locations": [
+          "Mexico"
+        ],
+        "found_in_csv": true
+      },
+      "Edgar Palafox": {
+        "appearances": 2,
+        "years": [
+          2022,
+          2023
+        ],
+        "divisions_by_year": {
+          "2022": [
+            "mensphysique"
+          ],
+          "2023": [
+            "classic"
+          ]
+        },
+        "competitions": [
+          "Black Swan Breon Ansley Mexico Grand Battle Pro",
+          "Mexico Grand Battle Pro"
+        ],
+        "locations": [],
+        "found_in_csv": true
+      },
+      "Edgar Valencia": {
+        "appearances": 4,
+        "years": [
+          2024
+        ],
+        "divisions_by_year": {
+          "2024": [
+            "classic",
+            "mensbb"
+          ]
+        },
+        "competitions": [
+          "Bigman Weekend Pro",
+          "Spanish Grand Prix Pro"
+        ],
+        "locations": [
+          "Mexico"
+        ],
+        "found_in_csv": true
+      }
+    },
+    "summary": {
+      "total_appearances": 8,
+      "years_range": "2022-2024",
+      "all_years": [
+        2022,
+        2023,
+        2024
+      ],
+      "all_divisions": [
+        "classic",
+        "mensbb",
+        "mensphysique"
+      ],
+      "all_locations": [
+        "Mexico"
+      ],
+      "different_names": [
+        "Edgar Daniel Valencia Palafox",
+        "Edgar Palafox",
+        "Edgar Valencia"
+      ]
+    }
   }
 }
