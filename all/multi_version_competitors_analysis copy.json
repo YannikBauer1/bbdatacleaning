@@ -1471,5 +1471,1165 @@
         "Harlan Taylor Jr"
       ]
     }
+  },
+  "Jennifer Gutierrez": {
+    "primary_name": "Jennifer Gutierrez",
+    "total_versions": 3,
+    "versions": {
+      "Jennifer Faccinto": {
+        "appearances": 13,
+        "years": [
+          2019,
+          2020,
+          2021,
+          2022
+        ],
+        "divisions_by_year": {
+          "2019": [
+            "womensphysique"
+          ],
+          "2020": [
+            "womensphysique"
+          ],
+          "2021": [
+            "womensphysique"
+          ],
+          "2022": [
+            "womensphysique"
+          ]
+        },
+        "competitions": [
+          "Prestige Crystal Cup",
+          "St. Louis Pro",
+          "Wings Of Strength Chicago",
+          "Wings Of Strength Pbw Tampa Pro"
+        ],
+        "locations": [
+          "Cookeville, Tennessee, United States"
+        ],
+        "found_in_csv": true
+      },
+      "Jennifer Grealish": {
+        "appearances": 22,
+        "years": [
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2023
+        ],
+        "divisions_by_year": {
+          "2016": [
+            "womensphysique"
+          ],
+          "2017": [
+            "womensphysique"
+          ],
+          "2018": [
+            "womensphysique"
+          ],
+          "2019": [
+            "womensphysique"
+          ],
+          "2020": [
+            "womensphysique"
+          ],
+          "2023": [
+            "womensphysique"
+          ]
+        },
+        "competitions": [
+          "Europa Phoenix Pro",
+          "Ferrigno Legacy Pro",
+          "New York Pro",
+          "Wings Of Strength Arizona Pro",
+          "Wings Of Strength Chicago",
+          "Wings Of Strength Romania Muscle Fest"
+        ],
+        "locations": [
+          "Southampton, New York, United States",
+          "United States"
+        ],
+        "found_in_csv": true
+      },
+      "Jennifer Gutierrez": {
+        "appearances": 5,
+        "years": [
+          2016
+        ],
+        "divisions_by_year": {
+          "2016": [
+            "womensphysique"
+          ]
+        },
+        "competitions": [
+          "Europa Phoenix Pro",
+          "Ferrigno Legacy Pro"
+        ],
+        "locations": [
+          "Oxnard, California, United States"
+        ],
+        "found_in_csv": true
+      }
+    },
+    "summary": {
+      "total_appearances": 40,
+      "years_range": "2016-2023",
+      "all_years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "all_divisions": [
+        "womensphysique"
+      ],
+      "all_locations": [
+        "Cookeville, Tennessee, United States",
+        "Oxnard, California, United States",
+        "Southampton, New York, United States",
+        "United States"
+      ],
+      "different_names": [
+        "Jennifer Faccinto",
+        "Jennifer Grealish",
+        "Jennifer Gutierrez"
+      ]
+    }
+  },
+  "Julia V. Waring": {
+    "primary_name": "Julia V. Waring",
+    "total_versions": 3,
+    "versions": {
+      "Julia Champlin": {
+        "appearances": 4,
+        "years": [
+          2021,
+          2022
+        ],
+        "divisions_by_year": {
+          "2021": [
+            "figure"
+          ],
+          "2022": [
+            "figure"
+          ]
+        },
+        "competitions": [
+          "Olympia",
+          "Orlando Show Of Champions",
+          "Wings Of Strength Chicago"
+        ],
+        "locations": [
+          "United States"
+        ],
+        "found_in_csv": true
+      },
+      "Julia V. Waring": {
+        "appearances": 3,
+        "years": [
+          2020,
+          2022
+        ],
+        "divisions_by_year": {
+          "2020": [
+            "figure"
+          ],
+          "2022": [
+            "figure"
+          ]
+        },
+        "competitions": [
+          "Olympia",
+          "Wings Of Strength Arizona Pro"
+        ],
+        "locations": [
+          "United States",
+          "Upper Marlboro, Maryland, United States"
+        ],
+        "found_in_csv": true
+      },
+      "Julia Waring": {
+        "appearances": 33,
+        "years": [
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2024
+        ],
+        "divisions_by_year": {
+          "2018": [
+            "figure"
+          ],
+          "2019": [
+            "figure"
+          ],
+          "2020": [
+            "figure"
+          ],
+          "2021": [
+            "figure"
+          ],
+          "2022": [
+            "figure"
+          ],
+          "2024": [
+            "figure"
+          ]
+        },
+        "competitions": [
+          "Arnold Classic",
+          "Charlotte Cup Pro",
+          "Legions Sports Fest",
+          "Lenda Murray Norfolk Pro",
+          "Olympia",
+          "Pittsburgh Pro",
+          "Texas State Pro",
+          "Tupelo Pro",
+          "Vancouver Pro",
+          "Wings Of Strength Arizona Pro",
+          "Wings Of Strength Chicago",
+          "Wings Of Strength Pbw Tampa Pro"
+        ],
+        "locations": [
+          "Fort Meade, Maryland, United States",
+          "Louisville, Kentucky, United States",
+          "Sterling, Virginia, United States",
+          "United States",
+          "Upper Marlboro, Maryland, United States"
+        ],
+        "found_in_csv": true
+      }
+    },
+    "summary": {
+      "total_appearances": 40,
+      "years_range": "2018-2024",
+      "all_years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2024
+      ],
+      "all_divisions": [
+        "figure"
+      ],
+      "all_locations": [
+        "Fort Meade, Maryland, United States",
+        "Louisville, Kentucky, United States",
+        "Sterling, Virginia, United States",
+        "United States",
+        "Upper Marlboro, Maryland, United States"
+      ],
+      "different_names": [
+        "Julia Champlin",
+        "Julia V. Waring",
+        "Julia Waring"
+      ]
+    }
+  },
+  "Carlos Rodriguez (3)": {
+    "primary_name": "Carlos Rodriguez (3)",
+    "total_versions": 2,
+    "versions": {
+      "Carlos Rodriguez": {
+        "appearances": 38,
+        "years": [
+          1963,
+          1964,
+          1973,
+          1975,
+          1976,
+          1978,
+          1979,
+          1980,
+          1981,
+          1982,
+          2019,
+          2020,
+          2021,
+          2022
+        ],
+        "divisions_by_year": {
+          "1963": [
+            "mensbb"
+          ],
+          "1964": [
+            "mensbb"
+          ],
+          "1973": [
+            "mensbb"
+          ],
+          "1975": [
+            "mensbb"
+          ],
+          "1976": [
+            "mensbb"
+          ],
+          "1978": [
+            "mensbb"
+          ],
+          "1979": [
+            "mensbb"
+          ],
+          "1980": [
+            "mensbb"
+          ],
+          "1981": [
+            "mensbb"
+          ],
+          "1982": [
+            "mensbb"
+          ],
+          "2019": [
+            "212",
+            "classic",
+            "mensbb"
+          ],
+          "2020": [
+            "classic"
+          ],
+          "2021": [
+            "212"
+          ],
+          "2022": [
+            "212",
+            "mensbb"
+          ]
+        },
+        "competitions": [
+          "Canada Diamond Pro Cup",
+          "Canada Pro Cup",
+          "Grand Prix Belgium",
+          "Grand Prix California",
+          "Grand Prix Miami",
+          "Grand Prix New England",
+          "Grand Prix Vancouver",
+          "Grand Prix Wales",
+          "Legions Sports Fest",
+          "Mr America",
+          "Mr East Coast",
+          "Mr International",
+          "Mr New Jersey",
+          "Mr Northeastern States",
+          "Mr Usa",
+          "New York Pro",
+          "Night Of Champions",
+          "Olympia",
+          "Puerto Rico Pro",
+          "Tampa Hurricane Pro",
+          "Texas Pro",
+          "Universe Pro",
+          "Usa Vs The World",
+          "Usa World Qualifier",
+          "Wings Of Strength Pbw Tampa Pro",
+          "World Pro Championships"
+        ],
+        "locations": [
+          "Mexico"
+        ],
+        "found_in_csv": true
+      },
+      "Carlos Rodriguez (3)": {
+        "appearances": 1,
+        "years": [
+          2019
+        ],
+        "divisions_by_year": {
+          "2019": [
+            "classic"
+          ]
+        },
+        "competitions": [
+          "Puerto Rico Pro"
+        ],
+        "locations": [],
+        "found_in_csv": true
+      }
+    },
+    "summary": {
+      "total_appearances": 39,
+      "years_range": "1963-2022",
+      "all_years": [
+        1963,
+        1964,
+        1973,
+        1975,
+        1976,
+        1978,
+        1979,
+        1980,
+        1981,
+        1982,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "all_divisions": [
+        "212",
+        "classic",
+        "mensbb"
+      ],
+      "all_locations": [
+        "Mexico"
+      ],
+      "different_names": [
+        "Carlos Rodriguez",
+        "Carlos Rodriguez (3)"
+      ]
+    }
+  },
+  "Ladera Davies": {
+    "primary_name": "Ladera Davies",
+    "total_versions": 2,
+    "versions": {
+      "Ladera Davies": {
+        "appearances": 1,
+        "years": [
+          2012
+        ],
+        "divisions_by_year": {
+          "2012": [
+            "womensphysique"
+          ]
+        },
+        "competitions": [
+          "Toronto Pro Supershow"
+        ],
+        "locations": [],
+        "found_in_csv": true
+      },
+      "Laura Davies": {
+        "appearances": 38,
+        "years": [
+          1982,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016
+        ],
+        "divisions_by_year": {
+          "1982": [
+            "womensbb"
+          ],
+          "2012": [
+            "womensphysique"
+          ],
+          "2013": [
+            "womensbb",
+            "womensphysique"
+          ],
+          "2014": [
+            "figure"
+          ],
+          "2015": [
+            "figure",
+            "womensphysique"
+          ],
+          "2016": [
+            "womensphysique"
+          ]
+        },
+        "competitions": [
+          "New York Pro",
+          "Olympia",
+          "Titans Grand Prix",
+          "Toronto Pro Supershow",
+          "Vancouver Pro",
+          "Wings Of Strength Chicago",
+          "Wings Of Strength Pbw Tampa Pro"
+        ],
+        "locations": [
+          "Hamilton, Ontario, Canada",
+          "Ontario, Canada"
+        ],
+        "found_in_csv": true
+      }
+    },
+    "summary": {
+      "total_appearances": 39,
+      "years_range": "1982-2016",
+      "all_years": [
+        1982,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016
+      ],
+      "all_divisions": [
+        "figure",
+        "womensbb",
+        "womensphysique"
+      ],
+      "all_locations": [
+        "Hamilton, Ontario, Canada",
+        "Ontario, Canada"
+      ],
+      "different_names": [
+        "Ladera Davies",
+        "Laura Davies"
+      ]
+    }
+  },
+  "Tim Martin (1)": {
+    "primary_name": "Tim Martin (1)",
+    "total_versions": 8,
+    "versions": {
+      "T A Martin": {
+        "appearances": 1,
+        "years": [
+          2017
+        ],
+        "divisions_by_year": {
+          "2017": [
+            "classic"
+          ]
+        },
+        "competitions": [
+          "Musclecontest Fitworld Pro"
+        ],
+        "locations": [],
+        "found_in_csv": true
+      },
+      "T. A. Martin": {
+        "appearances": 2,
+        "years": [
+          2016
+        ],
+        "divisions_by_year": {
+          "2016": [
+            "mensphysique"
+          ]
+        },
+        "competitions": [
+          "California Night Of Champions",
+          "Puerto Rico Pro"
+        ],
+        "locations": [
+          "Murrieta, California, United States"
+        ],
+        "found_in_csv": true
+      },
+      "T.A. Martin": {
+        "appearances": 21,
+        "years": [
+          2014,
+          2015,
+          2016,
+          2017
+        ],
+        "divisions_by_year": {
+          "2014": [
+            "mensphysique"
+          ],
+          "2015": [
+            "classic",
+            "mensphysique"
+          ],
+          "2016": [
+            "classic",
+            "mensphysique"
+          ],
+          "2017": [
+            "classic"
+          ]
+        },
+        "competitions": [
+          "Arnold Classic",
+          "Atlantis Pro",
+          "Ferrigno Legacy Pro",
+          "Los Angeles Grand Prix",
+          "Musclecontest Fitworld Pro",
+          "Puerto Rico Pro",
+          "Sacramento Pro",
+          "Southwest Muscle Classic Pro",
+          "Titans Grand Prix",
+          "Tournament Of Champions",
+          "Western Cup Pro"
+        ],
+        "locations": [
+          "Murrieta, California, United States",
+          "Temecula, California, United States",
+          "United States"
+        ],
+        "found_in_csv": true
+      },
+      "Tim Martin": {
+        "appearances": 2,
+        "years": [
+          2009,
+          2010
+        ],
+        "divisions_by_year": {
+          "2009": [
+            "202"
+          ],
+          "2010": [
+            "202"
+          ]
+        },
+        "competitions": [
+          "Atlantic City Pro",
+          "Europa Battle Of Champions"
+        ],
+        "locations": [
+          "United States"
+        ],
+        "found_in_csv": true
+      },
+      "Tim Martin (1)": {
+        "appearances": 4,
+        "years": [
+          2009,
+          2010,
+          2016
+        ],
+        "divisions_by_year": {
+          "2009": [
+            "202"
+          ],
+          "2010": [
+            "202"
+          ],
+          "2016": [
+            "212",
+            "classic"
+          ]
+        },
+        "competitions": [
+          "Atlantic City Pro",
+          "Europa Battle Of Champions",
+          "Europa Phoenix Pro",
+          "Ferrigno Legacy Pro"
+        ],
+        "locations": [],
+        "found_in_csv": true
+      },
+      "Timothy Martin": {
+        "appearances": 2,
+        "years": [
+          2016
+        ],
+        "divisions_by_year": {
+          "2016": [
+            "212",
+            "classic"
+          ]
+        },
+        "competitions": [
+          "Europa Phoenix Pro",
+          "Precision Fit Pro"
+        ],
+        "locations": [],
+        "found_in_csv": true
+      },
+      "Tone' Martin": {
+        "appearances": 1,
+        "years": [
+          2016
+        ],
+        "divisions_by_year": {
+          "2016": [
+            "mensphysique"
+          ]
+        },
+        "competitions": [
+          "Arnold Classic"
+        ],
+        "locations": [
+          "United States"
+        ],
+        "found_in_csv": true
+      },
+      "Toneâ€™ Martin": {
+        "appearances": 1,
+        "years": [
+          2016
+        ],
+        "divisions_by_year": {
+          "2016": [
+            "mensphysique"
+          ]
+        },
+        "competitions": [
+          "Arnold Classic"
+        ],
+        "locations": [],
+        "found_in_csv": true
+      }
+    },
+    "summary": {
+      "total_appearances": 34,
+      "years_range": "2009-2017",
+      "all_years": [
+        2009,
+        2010,
+        2014,
+        2015,
+        2016,
+        2017
+      ],
+      "all_divisions": [
+        "202",
+        "212",
+        "classic",
+        "mensphysique"
+      ],
+      "all_locations": [
+        "Murrieta, California, United States",
+        "Temecula, California, United States",
+        "United States"
+      ],
+      "different_names": [
+        "T A Martin",
+        "T. A. Martin",
+        "T.A. Martin",
+        "Tim Martin",
+        "Tim Martin (1)",
+        "Timothy Martin",
+        "Tone' Martin",
+        "Toneâ€™ Martin"
+      ]
+    }
+  },
+  "Ferrer Ferrer": {
+    "primary_name": "Ferrer Ferrer",
+    "total_versions": 2,
+    "versions": {
+      "Ferrer Ferrer": {
+        "appearances": 1,
+        "years": [
+          2017
+        ],
+        "divisions_by_year": {
+          "2017": [
+            "classic"
+          ]
+        },
+        "competitions": [
+          "Musclecontest Fitworld Pro"
+        ],
+        "locations": [],
+        "found_in_csv": true
+      },
+      "Roger Ferrer": {
+        "appearances": 30,
+        "years": [
+          2010,
+          2012,
+          2016,
+          2017,
+          2018
+        ],
+        "divisions_by_year": {
+          "2010": [
+            "202"
+          ],
+          "2012": [
+            "212"
+          ],
+          "2016": [
+            "classic",
+            "mensphysique"
+          ],
+          "2017": [
+            "classic"
+          ],
+          "2018": [
+            "classic"
+          ]
+        },
+        "competitions": [
+          "Baltimore Pro",
+          "Europa Super Show",
+          "Florida Victory Pro",
+          "Karina Nascimento Pro",
+          "Mel Chancey Pro",
+          "Muscle Heat Pro",
+          "Musclecontest Fitworld Pro",
+          "Olympia",
+          "Pittsburgh Pro",
+          "Port Charlotte Florida Pro",
+          "Sacramento Pro",
+          "San Antonio Pro",
+          "Tampa Hurricane Pro",
+          "Toronto Pro Supershow"
+        ],
+        "locations": [
+          "Aventura, Florida, United States",
+          "United States"
+        ],
+        "found_in_csv": true
+      }
+    },
+    "summary": {
+      "total_appearances": 31,
+      "years_range": "2010-2018",
+      "all_years": [
+        2010,
+        2012,
+        2016,
+        2017,
+        2018
+      ],
+      "all_divisions": [
+        "202",
+        "212",
+        "classic",
+        "mensphysique"
+      ],
+      "all_locations": [
+        "Aventura, Florida, United States",
+        "United States"
+      ],
+      "different_names": [
+        "Ferrer Ferrer",
+        "Roger Ferrer"
+      ]
+    }
+  },
+  "Sergio Oliva Jr.": {
+    "primary_name": "Sergio Oliva Jr.",
+    "total_versions": 4,
+    "versions": {
+      "Jr Sergio Oliva": {
+        "appearances": 3,
+        "years": [
+          2017,
+          2018,
+          2021
+        ],
+        "divisions_by_year": {
+          "2017": [
+            "mensbb"
+          ],
+          "2018": [
+            "mensbb"
+          ],
+          "2021": [
+            "mensbb"
+          ]
+        },
+        "competitions": [
+          "Arnold Classic",
+          "New York Pro",
+          "Olympia"
+        ],
+        "locations": [
+          "Los Angeles, California, United States",
+          "United States"
+        ],
+        "found_in_csv": true
+      },
+      "Sergio Oliva": {
+        "appearances": 17,
+        "years": [
+          1966,
+          1967,
+          1968,
+          1969,
+          1970,
+          1972,
+          1973,
+          1984,
+          1985,
+          2017,
+          2018,
+          2020,
+          2021
+        ],
+        "divisions_by_year": {
+          "1966": [
+            "mensbb"
+          ],
+          "1967": [
+            "mensbb"
+          ],
+          "1968": [
+            "mensbb"
+          ],
+          "1969": [
+            "mensbb"
+          ],
+          "1970": [
+            "mensbb"
+          ],
+          "1972": [
+            "mensbb"
+          ],
+          "1973": [
+            "mensbb"
+          ],
+          "1984": [
+            "mensbb"
+          ],
+          "1985": [
+            "mensbb"
+          ],
+          "2017": [
+            "mensbb"
+          ],
+          "2018": [
+            "mensbb"
+          ],
+          "2020": [
+            "mensbb"
+          ],
+          "2021": [
+            "mensbb"
+          ]
+        },
+        "competitions": [
+          "Arnold Classic",
+          "Mr International",
+          "Mr World",
+          "New York Pro",
+          "Olympia",
+          "Universe",
+          "Wings Of Strength Chicago",
+          "Wings Of Strength Pbw Tampa Pro"
+        ],
+        "locations": [
+          "United States"
+        ],
+        "found_in_csv": true
+      },
+      "Sergio Oliva Jr": {
+        "appearances": 6,
+        "years": [
+          2017,
+          2018,
+          2020
+        ],
+        "divisions_by_year": {
+          "2017": [
+            "mensbb"
+          ],
+          "2018": [
+            "mensbb"
+          ],
+          "2020": [
+            "mensbb"
+          ]
+        },
+        "competitions": [
+          "Arnold Classic",
+          "New York Pro",
+          "Olympia",
+          "Wings Of Strength Chicago",
+          "Wings Of Strength Pbw Tampa Pro"
+        ],
+        "locations": [
+          "San Diego, California, United States"
+        ],
+        "found_in_csv": true
+      },
+      "Sergio Oliva Jr.": {
+        "appearances": 4,
+        "years": [
+          2018,
+          2021,
+          2023
+        ],
+        "divisions_by_year": {
+          "2018": [
+            "mensbb"
+          ],
+          "2021": [
+            "mensbb"
+          ],
+          "2023": [
+            "mensbb"
+          ]
+        },
+        "competitions": [
+          "California Pro",
+          "Legions Sports Fest",
+          "Wings Of Strength Pbw Tampa Pro"
+        ],
+        "locations": [
+          "Chicago, Illinois, United States",
+          "San Diego, California, United States"
+        ],
+        "found_in_csv": true
+      }
+    },
+    "summary": {
+      "total_appearances": 30,
+      "years_range": "1966-2023",
+      "all_years": [
+        1966,
+        1967,
+        1968,
+        1969,
+        1970,
+        1972,
+        1973,
+        1984,
+        1985,
+        2017,
+        2018,
+        2020,
+        2021,
+        2023
+      ],
+      "all_divisions": [
+        "mensbb"
+      ],
+      "all_locations": [
+        "Chicago, Illinois, United States",
+        "Los Angeles, California, United States",
+        "San Diego, California, United States",
+        "United States"
+      ],
+      "different_names": [
+        "Jr Sergio Oliva",
+        "Sergio Oliva",
+        "Sergio Oliva Jr",
+        "Sergio Oliva Jr."
+      ]
+    }
+  },
+  "Gochez Manuel Gochez": {
+    "primary_name": "Gochez Manuel Gochez",
+    "total_versions": 4,
+    "versions": {
+      "Gochez Manuel Gochez": {
+        "appearances": 1,
+        "years": [
+          2024
+        ],
+        "divisions_by_year": {
+          "2024": [
+            "mensphysique"
+          ]
+        },
+        "competitions": [
+          "Atlantic Coast Pro"
+        ],
+        "locations": [
+          "Colombia"
+        ],
+        "found_in_csv": true
+      },
+      "Juan Gochez": {
+        "appearances": 1,
+        "years": [
+          2024
+        ],
+        "divisions_by_year": {
+          "2024": [
+            "mensphysique"
+          ]
+        },
+        "competitions": [
+          "Spanish Grand Prix Pro"
+        ],
+        "locations": [
+          "Colombia"
+        ],
+        "found_in_csv": true
+      },
+      "Juan Gomez": {
+        "appearances": 10,
+        "years": [
+          2022,
+          2024
+        ],
+        "divisions_by_year": {
+          "2022": [
+            "mensphysique"
+          ],
+          "2024": [
+            "classic",
+            "mensphysique"
+          ]
+        },
+        "competitions": [
+          "Colombia Pro",
+          "Italy Flex Weekend Pro",
+          "Los Angeles Grand Prix",
+          "Musclecontest Fitworld Pro",
+          "Pharlabs Sur Pro Cup",
+          "Pittsburgh Pro",
+          "Spanish Grand Prix Pro",
+          "Wings Of Strength Pbw Tampa Pro"
+        ],
+        "locations": [
+          "Colombia"
+        ],
+        "found_in_csv": true
+      },
+      "Juan Manuel Gochez": {
+        "appearances": 14,
+        "years": [
+          2022,
+          2023,
+          2024
+        ],
+        "divisions_by_year": {
+          "2022": [
+            "mensphysique"
+          ],
+          "2023": [
+            "mensphysique"
+          ],
+          "2024": [
+            "mensphysique"
+          ]
+        },
+        "competitions": [
+          "Atlantic Coast Pro",
+          "Body Be 1 Classic",
+          "Colombia Pro",
+          "Daytona Pro",
+          "Dc Pro",
+          "Italy Flex Weekend Pro",
+          "Mexico Grand Battle Pro",
+          "Miami Muscle Beach",
+          "New York Pro",
+          "Pharlabs Sur Pro Cup"
+        ],
+        "locations": [
+          "Colombia",
+          "Orlando, Florida, United States"
+        ],
+        "found_in_csv": true
+      }
+    },
+    "summary": {
+      "total_appearances": 26,
+      "years_range": "2022-2024",
+      "all_years": [
+        2022,
+        2023,
+        2024
+      ],
+      "all_divisions": [
+        "classic",
+        "mensphysique"
+      ],
+      "all_locations": [
+        "Colombia",
+        "Orlando, Florida, United States"
+      ],
+      "different_names": [
+        "Gochez Manuel Gochez",
+        "Juan Gochez",
+        "Juan Gomez",
+        "Juan Manuel Gochez"
+      ]
+    }
   }
 }

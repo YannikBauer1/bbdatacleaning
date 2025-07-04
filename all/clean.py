@@ -75,6 +75,9 @@ cleaned_df.loc[mask, 'Competitor Name'] = 'Kenneth Jones'
 mask = (cleaned_df['Division'].str.contains("Men's Classic Physique - Open", case=False, na=False)) & (cleaned_df['Date'] == "2024-04-20")
 cleaned_df.loc[mask, 'Division'] = 'bikini'
 
+mask = (cleaned_df['Division'].str.contains("MEN'S BODYBUILDING - open", case=False, na=False)) & (cleaned_df['Date'] == "June 10, 2023") & (cleaned_df['Competition'].str.contains('IFBB Dc PRO', case=False, na=False))
+cleaned_df.loc[mask, 'Division'] = 'mens physique'
+
 
 # Fix incorrect date for Torunament Of Champions Pro
 mask = (cleaned_df['Competition'].str.contains('2020 Olympia', case=False, na=False)) & (cleaned_df['Competitor Name'].str.contains("Irene Anderson", case=False, na=False))
