@@ -2631,5 +2631,240 @@
         "Juan Manuel Gochez"
       ]
     }
+  },
+  "Daniel Smith (3)": {
+    "primary_name": "Daniel Smith (3)",
+    "total_versions": 3,
+    "versions": {
+      "Dan Smith": {
+        "appearances": 20,
+        "years": [
+          1988,
+          1989,
+          1990,
+          1991,
+          1992,
+          1993,
+          1995,
+          1997,
+          2014
+        ],
+        "divisions_by_year": {
+          "1988": [
+            "mensbb"
+          ],
+          "1989": [
+            "mensbb"
+          ],
+          "1990": [
+            "mensbb"
+          ],
+          "1991": [
+            "mensbb"
+          ],
+          "1992": [
+            "mensbb"
+          ],
+          "1993": [
+            "mensbb"
+          ],
+          "1995": [
+            "mensbb"
+          ],
+          "1997": [
+            "mensbb"
+          ],
+          "2014": [
+            "wheelchair"
+          ]
+        },
+        "competitions": [
+          "Arnold Classic",
+          "Canada Pro Cup",
+          "Grand Prix Melbourne",
+          "Iron Man Pro",
+          "Musclefest Grand Prix",
+          "Niagara Falls Pro",
+          "Night Of Champions",
+          "Pittsburgh Pro",
+          "San Jose Pro",
+          "Uk Bodypower Pro",
+          "Wings Of Strength Chicago",
+          "World Pro Championships"
+        ],
+        "locations": [
+          "United Kingdom"
+        ],
+        "found_in_csv": true
+      },
+      "Daniel Smith (3)": {
+        "appearances": 2,
+        "years": [
+          2011,
+          2014
+        ],
+        "divisions_by_year": {
+          "2011": [
+            "wheelchair"
+          ],
+          "2014": [
+            "wheelchair"
+          ]
+        },
+        "competitions": [
+          "Houston Pro",
+          "Uk Bodypower Pro"
+        ],
+        "locations": [],
+        "found_in_csv": true
+      },
+      "Daniel Smith": {
+        "appearances": 1,
+        "years": [
+          2011
+        ],
+        "divisions_by_year": {
+          "2011": [
+            "wheelchair"
+          ]
+        },
+        "competitions": [
+          "Wheelchair Championships"
+        ],
+        "locations": [
+          "United Kingdom"
+        ],
+        "found_in_csv": true
+      }
+    },
+    "summary": {
+      "total_appearances": 23,
+      "years_range": "1988-2014",
+      "all_years": [
+        1988,
+        1989,
+        1990,
+        1991,
+        1992,
+        1993,
+        1995,
+        1997,
+        2011,
+        2014
+      ],
+      "all_divisions": [
+        "mensbb",
+        "wheelchair"
+      ],
+      "all_locations": [
+        "United Kingdom"
+      ],
+      "different_names": [
+        "Dan Smith",
+        "Daniel Smith (3)",
+        "Daniel Smith"
+      ]
+    }
+  },
+  "Krisna Dim": {
+    "primary_name": "Krisna Dim",
+    "total_versions": 2,
+    "versions": {
+      "Kris Dim": {
+        "appearances": 4,
+        "years": [
+          2009,
+          2019
+        ],
+        "divisions_by_year": {
+          "2009": [
+            "202",
+            "mensbb"
+          ],
+          "2019": [
+            "wheelchair"
+          ]
+        },
+        "competitions": [
+          "Arnold Classic",
+          "Olympia",
+          "Sacramento Pro"
+        ],
+        "locations": [
+          "United States"
+        ],
+        "found_in_csv": true
+      },
+      "Krisna Dim": {
+        "appearances": 17,
+        "years": [
+          2004,
+          2005,
+          2006,
+          2007,
+          2009,
+          2019
+        ],
+        "divisions_by_year": {
+          "2004": [
+            "mensbb"
+          ],
+          "2005": [
+            "mensbb"
+          ],
+          "2006": [
+            "mensbb"
+          ],
+          "2007": [
+            "mensbb"
+          ],
+          "2009": [
+            "202",
+            "mensbb"
+          ],
+          "2019": [
+            "wheelchair"
+          ]
+        },
+        "competitions": [
+          "Arnold Classic",
+          "Australia Grand Prix",
+          "Europa Super Show",
+          "Grand Prix England",
+          "Grand Prix Holland",
+          "Grand Prix Russia",
+          "Iron Man Pro",
+          "Olympia",
+          "Sacramento Pro",
+          "San Francisco Pro"
+        ],
+        "locations": [],
+        "found_in_csv": true
+      }
+    },
+    "summary": {
+      "total_appearances": 21,
+      "years_range": "2004-2019",
+      "all_years": [
+        2004,
+        2005,
+        2006,
+        2007,
+        2009,
+        2019
+      ],
+      "all_divisions": [
+        "202",
+        "mensbb",
+        "wheelchair"
+      ],
+      "all_locations": [
+        "United States"
+      ],
+      "different_names": [
+        "Kris Dim",
+        "Krisna Dim"
+      ]
+    }
   }
 }
