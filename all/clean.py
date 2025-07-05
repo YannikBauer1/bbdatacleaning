@@ -72,11 +72,71 @@ cleaned_df.loc[mask, 'Division'] = '202'
 mask = (cleaned_df['Competition'].str.contains('2015 IFBB EUROPA DALLAS PRO', case=False, na=False)) & (cleaned_df['Competitor Name'] == "Ken Jones")
 cleaned_df.loc[mask, 'Competitor Name'] = 'Kenneth Jones'
 
+mask = (cleaned_df['Division'].str.contains("wheelchair", case=False, na=False)) & (cleaned_df['Competitor Name'] == "Abraham Sanchez")
+cleaned_df.loc[mask, 'Competitor Name'] = 'Abraham Sanchez (2)'
+
+mask = (cleaned_df['Division'].str.contains("wheelchair", case=False, na=False)) & (cleaned_df['Competitor Name'] == "Dan Smith")
+cleaned_df.loc[mask, 'Competitor Name'] = 'Daniel Smith'
+
+mask = (cleaned_df['Competitor Name'] == "Laura Davies") & (cleaned_df['Date'].str.contains("1982-01-01", case=False, na=False))
+cleaned_df.loc[mask, 'Competitor Name'] = 'Laura Davies (2)'
+
 mask = (cleaned_df['Division'].str.contains("Men's Classic Physique - Open", case=False, na=False)) & (cleaned_df['Date'] == "2024-04-20")
 cleaned_df.loc[mask, 'Division'] = 'bikini'
 
 mask = (cleaned_df['Division'].str.contains("MEN'S BODYBUILDING - open", case=False, na=False)) & (cleaned_df['Date'] == "June 10, 2023") & (cleaned_df['Competition'].str.contains('IFBB Dc PRO', case=False, na=False))
 cleaned_df.loc[mask, 'Division'] = 'mens physique'
+
+mask = (cleaned_df['Competition'].str.contains('2024-tampa-pro', case=False, na=False)) & (cleaned_df['Competitor Name'] == "Blanca Sikes") & (cleaned_df['Date'] == "2024-08-01")
+cleaned_df.loc[mask, 'Division'] = 'figure'
+
+mask = (cleaned_df['Competition'].str.contains('2024-tampa-pro', case=False, na=False)) & (cleaned_df['Competitor Name'] == "Akire Torres") & (cleaned_df['Date'] == "2024-08-01")
+cleaned_df.loc[mask, 'Division'] = 'figure'
+
+mask = (cleaned_df['Competition'].str.contains('2024-tampa-pro', case=False, na=False)) & (cleaned_df['Competitor Name'] == "Aksana Yuklmo") & (cleaned_df['Date'] == "2024-08-01")
+cleaned_df.loc[mask, 'Division'] = 'figure'
+
+mask = (cleaned_df['Competition'].str.contains('2024-tampa-pro', case=False, na=False)) & (cleaned_df['Competitor Name'] == "Caroline Zawadzki") & (cleaned_df['Date'] == "2024-08-01")
+cleaned_df.loc[mask, 'Division'] = 'figure'
+
+mask = (cleaned_df['Competition'].str.contains('IFBB Dallas PRO', case=False, na=False)) & (cleaned_df['Date'] == "June 17, 2023") & (cleaned_df['Division'] == "MEN'S BODYBUILDING - open")
+cleaned_df.loc[mask, 'Division'] = 'male - wheelchair'
+
+mask = (cleaned_df['Competition'].str.contains('2024-dubai-pro', case=False, na=False)) & (cleaned_df['Competitor Name'] == "Matthias Roth") & (cleaned_df['Date'] == "2024-07-28")
+cleaned_df.loc[mask, 'Division'] = 'mens physique'
+mask = (cleaned_df['Competition'].str.contains('2024-dubai-pro', case=False, na=False)) & (cleaned_df['Competitor Name'] == "Serpescu Sebastian") & (cleaned_df['Date'] == "2024-07-28")
+cleaned_df.loc[mask, 'Division'] = 'mens physique'
+mask = (cleaned_df['Competition'].str.contains('2024-dubai-pro', case=False, na=False)) & (cleaned_df['Competitor Name'] == "Serge Victor") & (cleaned_df['Date'] == "2024-07-28")
+cleaned_df.loc[mask, 'Division'] = 'mens physique'
+mask = (cleaned_df['Competition'].str.contains('2024-dubai-pro', case=False, na=False)) & (cleaned_df['Competitor Name'] == "Lovish Wahl") & (cleaned_df['Date'] == "2024-07-28")
+cleaned_df.loc[mask, 'Division'] = 'mens physique'
+mask = (cleaned_df['Competition'].str.contains('2024-dubai-pro', case=False, na=False)) & (cleaned_df['Competitor Name'] == "Daniel Oti") & (cleaned_df['Date'] == "2024-07-28")
+cleaned_df.loc[mask, 'Division'] = 'mens physique'
+mask = (cleaned_df['Competition'].str.contains('2024-dubai-pro', case=False, na=False)) & (cleaned_df['Competitor Name'] == "Ahmed Mandy") & (cleaned_df['Date'] == "2024-07-28")
+cleaned_df.loc[mask, 'Division'] = 'mens physique'
+mask = (cleaned_df['Competition'].str.contains('2024-dubai-pro', case=False, na=False)) & (cleaned_df['Competitor Name'] == "Gijo John") & (cleaned_df['Date'] == "2024-07-28")
+cleaned_df.loc[mask, 'Division'] = 'mens physique'
+mask = (cleaned_df['Competition'].str.contains('2024-dubai-pro', case=False, na=False)) & (cleaned_df['Competitor Name'] == "Miroslav Juricek") & (cleaned_df['Date'] == "2024-07-28")
+cleaned_df.loc[mask, 'Division'] = 'mens physique'
+mask = (cleaned_df['Competition'].str.contains('2024-dubai-pro', case=False, na=False)) & (cleaned_df['Competitor Name'] == "Tamer Laoucheira") & (cleaned_df['Date'] == "2024-07-28")
+cleaned_df.loc[mask, 'Division'] = 'mens physique'
+mask = (cleaned_df['Competition'].str.contains('2024-dubai-pro', case=False, na=False)) & (cleaned_df['Competitor Name'] == "Louis Lee") & (cleaned_df['Date'] == "2024-07-28")
+cleaned_df.loc[mask, 'Division'] = 'mens physique'
+mask = (cleaned_df['Competition'].str.contains('2024-dubai-pro', case=False, na=False)) & (cleaned_df['Competitor Name'] == "St. Michael Moodie") & (cleaned_df['Date'] == "2024-07-28")
+cleaned_df.loc[mask, 'Division'] = 'mens physique'
+mask = (cleaned_df['Competition'].str.contains('2024-dubai-pro', case=False, na=False)) & (cleaned_df['Competitor Name'] == "Ayob Omar") & (cleaned_df['Date'] == "2024-07-28")
+cleaned_df.loc[mask, 'Division'] = 'mens physique'
+mask = (cleaned_df['Competition'].str.contains('2024-dubai-pro', case=False, na=False)) & (cleaned_df['Competitor Name'] == "Maxime Parisi") & (cleaned_df['Date'] == "2024-07-28")
+cleaned_df.loc[mask, 'Division'] = 'mens physique'
+mask = (cleaned_df['Competition'].str.contains('2024-dubai-pro', case=False, na=False)) & (cleaned_df['Competitor Name'] == "Rahul Paswan") & (cleaned_df['Date'] == "2024-07-28")
+cleaned_df.loc[mask, 'Division'] = 'mens physique'
+mask = (cleaned_df['Competition'].str.contains('2024-dubai-pro', case=False, na=False)) & (cleaned_df['Competitor Name'] == "Abi Pietersz") & (cleaned_df['Date'] == "2024-07-28")
+cleaned_df.loc[mask, 'Division'] = 'mens physique'
+mask = (cleaned_df['Competition'].str.contains('2024-dubai-pro', case=False, na=False)) & (cleaned_df['Competitor Name'] == "Sidy Pouye") & (cleaned_df['Date'] == "2024-07-28")
+cleaned_df.loc[mask, 'Division'] = 'mens physique'
+mask = (cleaned_df['Competition'].str.contains('2024-dubai-pro', case=False, na=False)) & (cleaned_df['Competitor Name'] == "Yaser Rezaei") & (cleaned_df['Date'] == "2024-07-28")
+cleaned_df.loc[mask, 'Division'] = 'mens physique'
+
 
 
 # Fix incorrect date for Torunament Of Champions Pro
@@ -1351,6 +1411,13 @@ cleaned_df.loc[mask_after_simple, 'Division'] = '212'
 # Fix incorrect division "Olympia"
 mask_after_simple = (cleaned_df['Division'] == 'olympia')
 cleaned_df.loc[mask_after_simple, 'Division'] = 'fitness'
+
+mask_after_simple = (cleaned_df['Competitor Name'] == 'Carlos Rodriguez') & (pd.to_datetime(cleaned_df['Start Date'], errors='coerce') >= pd.to_datetime('September 1, 2018'))
+cleaned_df.loc[mask_after_simple, 'Competitor Name'] = 'Carlos Rodriguez (3)'
+
+mask_after_simple = (cleaned_df['Competitor Name'] == 'Sergio Oliva') & (pd.to_datetime(cleaned_df['Start Date'], errors='coerce') >= pd.to_datetime('September 1, 2015'))
+cleaned_df.loc[mask_after_simple, 'Competitor Name'] = 'Jr Sergio Oliva'
+
 
 
 
