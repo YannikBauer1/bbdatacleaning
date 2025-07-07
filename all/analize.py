@@ -2122,7 +2122,7 @@ def are_similar_patterns(name1, name2):
     if norm1 == norm2:
         return True, "exact_match"
     
-    # Check for reversed names
+    # Check for reversed names (e.g., "John Smith" vs "Smith John")
     words1 = norm1.split()
     words2 = norm2.split()
     
@@ -2130,26 +2130,6 @@ def are_similar_patterns(name1, name2):
         # Check if names are reversed
         if words1 == words2[::-1]:
             return True, "reversed_names"
-        
-        # Check if one is a subset of the other (missing middle name, etc.)
-        if set(words1).issubset(set(words2)) or set(words2).issubset(set(words1)):
-            return True, "subset_names"
-    
-    # Check letter pattern similarity
-    pattern1 = get_letter_pattern(name1)
-    pattern2 = get_letter_pattern(name2)
-    
-    if pattern1 == pattern2:
-        return True, "same_letters"
-    
-    # Check for high letter overlap
-    if len(pattern1) > 0 and len(pattern2) > 0:
-        common_letters = set(pattern1).intersection(set(pattern2))
-        total_letters = set(pattern1).union(set(pattern2))
-        overlap_ratio = len(common_letters) / len(total_letters)
-        
-        if overlap_ratio >= 0.8:  # 80% letter overlap
-            return True, f"high_overlap_{overlap_ratio:.2f}"
     
     # Check for space variations (e.g., "JohnSmith" vs "John Smith")
     no_space1 = norm1.replace(' ', '')
@@ -2158,7 +2138,45 @@ def are_similar_patterns(name1, name2):
     if no_space1 == no_space2:
         return True, "space_variation"
     
-    # Check for common name variations
+    # Check for hyphen variations (e.g., "John-Smith" vs "John Smith")
+    no_hyphen1 = norm1.replace('-', ' ')
+    no_hyphen2 = norm2.replace('-', ' ')
+    
+    if no_hyphen1 == no_hyphen2:
+        return True, "hyphen_variation"
+    
+    # Check for exact anagrams (same letters, same frequency)
+    def get_letter_count(name):
+        """Get letter frequency count."""
+        letter_count = {}
+        for char in name.lower():
+            if char.isalpha():
+                letter_count[char] = letter_count.get(char, 0) + 1
+        return letter_count
+    
+    letter_count1 = get_letter_count(norm1)
+    letter_count2 = get_letter_count(norm2)
+    
+    if letter_count1 == letter_count2:
+        return True, "exact_anagram"
+    
+    # Check for subset names (one name is contained within the other)
+    # Only if they share the same letters in the same order
+    if len(words1) >= 2 and len(words2) >= 2:
+        # Check if one name is a subset of the other (missing middle name, etc.)
+        if set(words1).issubset(set(words2)) or set(words2).issubset(set(words1)):
+            # Additional check: the remaining words should be similar
+            if len(words1) == 1 or len(words2) == 1:
+                return True, "subset_names"
+            elif len(words1) == 2 and len(words2) == 3:
+                # Check if it's just a middle name difference
+                if words1[0] == words2[0] and words1[-1] == words2[-1]:
+                    return True, "middle_name_difference"
+            elif len(words2) == 2 and len(words1) == 3:
+                if words2[0] == words1[0] and words2[-1] == words1[-1]:
+                    return True, "middle_name_difference"
+    
+    # Check for common name variations (Jr/Sr, III/3, etc.)
     variations = [
         ("jr", "junior"),
         ("sr", "senior"),
@@ -2171,7 +2189,7 @@ def are_similar_patterns(name1, name2):
     
     for var1, var2 in variations:
         if var1 in norm1 and var2 in norm2:
-            # Check if the rest is similar
+            # Check if the rest is exactly the same
             rest1 = norm1.replace(var1, '').strip()
             rest2 = norm2.replace(var2, '').strip()
             if rest1 == rest2:
@@ -2306,10 +2324,20 @@ def find_similar_letter_patterns():
         
         print(f"Found {len(similar_groups)} groups with similar letter patterns")
         
+        # Create the output structure: key = primary_name, value = array of all similar names
+        output_dict = {}
+        
+        for group in similar_groups:
+            primary_name = group['primary_name']
+            all_subnames = group['all_subnames']
+            
+            # Use the primary name as the key and all subnames as the value
+            output_dict[primary_name] = all_subnames
+        
         # Write to JSON file
         print(f"Writing results to {output_path}...")
         with open(output_path, 'w', encoding='utf-8') as f:
-            json.dump(similar_groups, f, indent=2, ensure_ascii=False)
+            json.dump(output_dict, f, indent=2, ensure_ascii=False)
         
         print(f"✅ Successfully created file: {output_path}")
         
@@ -2321,14 +2349,14 @@ def find_similar_letter_patterns():
         print(f"  Total groups found: {len(similar_groups)}")
         print(f"  Total names in groups: {total_names_in_groups}")
         print(f"  Total subnames in groups: {total_subnames_in_groups}")
+        print(f"  Output JSON keys: {len(output_dict)}")
         
         # Show top 10 groups
         print(f"\nTop 10 groups with most names:")
         for i, group in enumerate(similar_groups[:10]):
-            print(f"{i+1}. {group['names']}")
-            print(f"   Similarity types: {group['similarity_types']}")
+            print(f"{i+1}. Primary: '{group['primary_name']}'")
             print(f"   All subnames: {group['all_subnames']}")
-            print(f"   Letter patterns: {group['letter_patterns']}")
+            print(f"   Similarity types: {group['similarity_types']}")
             print()
         
         # Show examples by similarity type
@@ -2360,16 +2388,18 @@ def test_letter_pattern_functions():
     test_cases = [
         ("John Smith", "Smith John", "Reversed names"),
         ("John Smith", "JohnSmith", "No space vs space"),
-        ("John A. Smith", "John Smith", "Middle initial"),
-        ("John Smith Jr", "John Smith Junior", "Jr vs Junior"),
-        ("John Smith III", "John Smith 3", "III vs 3"),
         ("John-Smith", "John Smith", "Hyphen vs space"),
         ("John Smith", "john smith", "Case difference"),
-        ("John Smith", "John A. Smith", "Missing middle name"),
-        ("John Smith", "Johnny Smith", "Similar names"),
-        ("John Smith", "Jane Smith", "Different names (should not match)"),
-        ("Carlos Majid Rabiel", "Carlos Rabiei", "Complex case"),
-        ("Vojtech Koritensky", "Vojtěch Koritenský", "Accent variations"),
+        ("John Smith", "John A. Smith", "Middle name difference"),
+        ("John Smith Jr", "John Smith Junior", "Jr vs Junior"),
+        ("John Smith III", "John Smith 3", "III vs 3"),
+        ("John Smith", "Jane Smith", "Different names (should NOT match)"),
+        ("John Smith", "Johnny Smith", "Similar names (should NOT match)"),
+        ("Carlos Majid Rabiel", "Carlos Rabiei", "Complex case (should NOT match)"),
+        ("Vojtech Koritensky", "Vojtěch Koritenský", "Accent variations (should NOT match)"),
+        ("Silent", "Listen", "Exact anagram"),
+        ("Dormitory", "Dirty Room", "Exact anagram"),
+        ("A Gentleman", "Elegant Man", "Exact anagram"),
     ]
     
     for name1, name2, description in test_cases:
@@ -2423,17 +2453,189 @@ def test_letter_pattern_functions():
     is_similar, similarity_type = are_similar_patterns("Carlos Rabiei", "Carlos Majid Rabiel")
     print(f"'Carlos Rabiei' vs 'Carlos Majid Rabiel': {is_similar} ({similarity_type})")
 
+def test_letter_pattern_output_format():
+    """
+    Test function to demonstrate the new JSON output format.
+    """
+    print("Testing Letter Pattern Output Format")
+    print("=" * 50)
+    
+    # Sample similar groups (what the function would find)
+    sample_groups = [
+        {
+            'names': ['John Smith', 'Smith John'],
+            'all_subnames': ['John Smith', 'Johnny Smith', 'J. Smith', 'Smith John'],
+            'primary_name': 'John Smith',
+            'similarity_types': ['reversed_names']
+        },
+        {
+            'names': ['Carlos Majid Rabiel', 'Carlos Rabiei'],
+            'all_subnames': ['Carlos Majid Rabiel', 'Carlos Rabiei', 'Carlos Rabiel', 'Carlos Majid Rabiei'],
+            'primary_name': 'Carlos Majid Rabiel',
+            'similarity_types': ['subset_names']
+        }
+    ]
+    
+    # Create the output structure: key = primary_name, value = array of all similar names
+    output_dict = {}
+    
+    for group in sample_groups:
+        primary_name = group['primary_name']
+        all_subnames = group['all_subnames']
+        
+        # Use the primary name as the key and all subnames as the value
+        output_dict[primary_name] = all_subnames
+    
+    print("Sample output JSON structure:")
+    print(json.dumps(output_dict, indent=2, ensure_ascii=False))
+    
+    print(f"\nOutput format explanation:")
+    print(f"- Keys: Primary names (the main name for each group)")
+    print(f"- Values: Arrays containing ALL similar names found (including subnames)")
+    print(f"- Total keys: {len(output_dict)}")
+    
+    for key, value in output_dict.items():
+        print(f"  '{key}': {len(value)} names - {value}")
+
+def analyze_competitor_names_file():
+    """
+    Analyze the competitor_names.json file to show statistics and check for duplicates.
+    """
+    competitor_names_path = "keys/competitor_names.json"
+    
+    if not os.path.exists(competitor_names_path):
+        print(f"Competitor names file not found at: {competitor_names_path}")
+        return None
+    
+    try:
+        # Load competitor names
+        print("Loading competitor names...")
+        with open(competitor_names_path, 'r', encoding='utf-8') as f:
+            competitor_names = json.load(f)
+        
+        print(f"✅ Successfully loaded competitor names file")
+        
+        # Basic statistics
+        total_keys = len(competitor_names)
+        print(f"\n📊 Basic Statistics:")
+        print(f"  Total keys: {total_keys}")
+        
+        # Count names in arrays
+        all_names = []
+        total_names_in_arrays = 0
+        key_name_counts = []
+        
+        for key, names_array in competitor_names.items():
+            total_names_in_arrays += len(names_array)
+            all_names.extend(names_array)
+            key_name_counts.append((key, len(names_array)))
+        
+        print(f"  Total names in all arrays: {total_names_in_arrays}")
+        print(f"  Average names per key: {total_names_in_arrays / total_keys:.2f}")
+        
+        # Show distribution of array sizes
+        print(f"\n📈 Array Size Distribution:")
+        size_counts = {}
+        for _, count in key_name_counts:
+            size_counts[count] = size_counts.get(count, 0) + 1
+        
+        for size in sorted(size_counts.keys()):
+            count = size_counts[size]
+            percentage = (count / total_keys) * 100
+            print(f"  {size} name(s): {count} keys ({percentage:.1f}%)")
+        
+        # Show keys with most names
+        print(f"\n🏆 Top 10 Keys with Most Names:")
+        sorted_by_count = sorted(key_name_counts, key=lambda x: x[1], reverse=True)
+        for i, (key, count) in enumerate(sorted_by_count[:10]):
+            print(f"  {i+1}. '{key}': {count} names")
+        
+        # Check for duplicate names across all arrays
+        print(f"\n🔍 Checking for Duplicate Names...")
+        
+        # Count occurrences of each name
+        name_counts = {}
+        for name in all_names:
+            name_counts[name] = name_counts.get(name, 0) + 1
+        
+        # Find duplicates
+        duplicates = {name: count for name, count in name_counts.items() if count > 1}
+        
+        if duplicates:
+            print(f"  Found {len(duplicates)} duplicate names:")
+            print(f"  Total duplicate occurrences: {sum(duplicates.values())}")
+            
+            # Show top duplicates
+            sorted_duplicates = sorted(duplicates.items(), key=lambda x: x[1], reverse=True)
+            print(f"\n  Top 10 Most Duplicated Names:")
+            for i, (name, count) in enumerate(sorted_duplicates[:10]):
+                print(f"    {i+1}. '{name}': appears {count} times")
+            
+            # Find which keys contain each duplicate
+            print(f"\n  Detailed Duplicate Analysis:")
+            for name, count in sorted_duplicates[:5]:  # Show first 5 duplicates
+                print(f"\n    '{name}' (appears {count} times) found in:")
+                for key, names_array in competitor_names.items():
+                    if name in names_array:
+                        print(f"      - '{key}'")
+        else:
+            print(f"  ✅ No duplicate names found!")
+        
+        # Show some examples of names that appear in multiple keys
+        if duplicates:
+            print(f"\n📋 Examples of Names in Multiple Keys:")
+            for name, count in sorted_duplicates[:3]:
+                print(f"\n  '{name}' appears in {count} different keys:")
+                for key, names_array in competitor_names.items():
+                    if name in names_array:
+                        print(f"    - '{key}': {names_array}")
+        
+        # Summary
+        print(f"\n📋 Summary:")
+        print(f"  Total unique names across all arrays: {len(set(all_names))}")
+        print(f"  Total name occurrences (including duplicates): {len(all_names)}")
+        if duplicates:
+            print(f"  Duplicate names found: {len(duplicates)}")
+            print(f"  Duplicate occurrences: {sum(duplicates.values()) - len(duplicates)}")
+        else:
+            print(f"  ✅ No duplicates found - all names are unique!")
+        
+        return {
+            'total_keys': total_keys,
+            'total_names': total_names_in_arrays,
+            'unique_names': len(set(all_names)),
+            'duplicates': len(duplicates) if duplicates else 0,
+            'duplicate_occurrences': sum(duplicates.values()) - len(duplicates) if duplicates else 0
+        }
+        
+    except Exception as e:
+        print(f"Error analyzing competitor names file: {e}")
+        import traceback
+        traceback.print_exc()
+        return None
+
 if __name__ == "__main__":
-    # Test the letter pattern functions
-    test_letter_pattern_functions()
+    # Analyze competitor names file
+    print("Analyzing competitor names file...")
+    analyze_competitor_names_file()
     
     print("\n" + "="*80)
+    
+    # Test the letter pattern output format
+    #test_letter_pattern_output_format()
+    
+    #print("\n" + "="*80)
+    
+    # Test the letter pattern functions
+    #test_letter_pattern_functions()
+    
+    #print("\n" + "="*80)
     
     # Find similar letter patterns
-    print("Finding similar letter patterns...")
-    find_similar_letter_patterns()
+    #print("Finding similar letter patterns...")
+    #find_similar_letter_patterns()
     
-    print("\n" + "="*80)
+    #print("\n" + "="*80)
     
     # Test the merge function with subname primary
     #test_merge_with_subname_primary()
