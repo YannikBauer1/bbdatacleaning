@@ -1470,24 +1470,50 @@ def merge_from_file():
                 # Merge all names into the primary name
                 print("Merging names...")
                 
+                # Find the actual key that contains the primary_name (if primary_name is only a subname)
+                actual_primary_key = None
+                for key_name, subnames in competitor_names.items():
+                    if primary_name in subnames:
+                        actual_primary_key = key_name
+                        break
+                
+                # If primary_name is not found as a key, use it as the key
+                if actual_primary_key is None:
+                    actual_primary_key = primary_name
+                
                 # Get the arrays for all names
                 all_arrays = []
+                keys_to_remove = set()
+                
                 for name in names:
-                    all_arrays.extend(competitor_names[name])
+                    # Find which key contains this name
+                    found_key = None
+                    for key_name, subnames in competitor_names.items():
+                        if name in subnames:
+                            found_key = key_name
+                            break
+                    
+                    if found_key:
+                        # Add all subnames from this key
+                        all_arrays.extend(competitor_names[found_key])
+                        keys_to_remove.add(found_key)
+                    else:
+                        # If name is not found as a subname, add it as a single item
+                        all_arrays.append(name)
                 
                 # Merge all arrays and remove duplicates
                 merged_array = list(set(all_arrays))
                 merged_array.sort()
                 
-                # Update the dictionary
-                competitor_names[primary_name] = merged_array
+                # Update the dictionary using the actual primary key
+                competitor_names[actual_primary_key] = merged_array
                 
-                # Remove all other names from the dictionary
-                for name in names:
-                    if name != primary_name:
-                        del competitor_names[name]
+                # Remove all other keys from the dictionary
+                for key_to_remove in keys_to_remove:
+                    if key_to_remove != actual_primary_key:
+                        del competitor_names[key_to_remove]
                 
-                print(f"✅ Merged {len(names)} names into '{primary_name}'")
+                print(f"✅ Merged {len(names)} names into '{actual_primary_key}'")
                 merged_count += 1
                 
                 # Remove this group from the file (it's been merged)
@@ -1897,7 +1923,523 @@ def test_enhanced_similarity():
         else:
             print("❌ Would NOT be grouped together")
 
+def test_merge_with_subname_primary():
+    """
+    Test function to demonstrate how the merge function handles cases where primary_name is only a subname.
+    """
+    print("Testing Merge with Subname Primary")
+    print("=" * 50)
+    
+    # Create test data using actual names from the user's data
+    test_competitor_names = {
+        "Vlasta Gruberova": ["Vlasta Gruberova"],
+        "Vojtech Koritenskya": ["Vojtech Koritensky", "Vojtech Koritenskya", "Vojtěch Koritenský"]
+    }
+    
+    # Create test group - simulate a case where "Vojtěch Koritenský" is the primary_name
+    # but it's only a subname in the "Vojtech Koritenskya" key
+    test_group = {
+        "names": ["Vlasta Gruberova", "Vojtěch Koritenský"],
+        "primary_name": "Vojtěch Koritenský",  # This is only a subname!
+        "average_similarity": 0.85,
+        "info": {
+            "Vlasta Gruberova": {"appearances": 5, "years": [2010, 2011], "divisions": ["Women's Physique"]},
+            "Vojtěch Koritenský": {"appearances": 12, "years": [2011, 2012], "divisions": ["Men's Bodybuilding"]}
+        }
+    }
+    
+    print("Before merging:")
+    for key, values in test_competitor_names.items():
+        print(f"  '{key}': {values}")
+    
+    # Simulate the merge logic
+    names = test_group['names']
+    primary_name = test_group['primary_name']
+    
+    # Find the actual key that contains the primary_name
+    actual_primary_key = None
+    for key_name, subnames in test_competitor_names.items():
+        if primary_name in subnames:
+            actual_primary_key = key_name
+            break
+    
+    if actual_primary_key is None:
+        actual_primary_key = primary_name
+    
+    print(f"\nPrimary name from group: '{primary_name}'")
+    print(f"Actual key found: '{actual_primary_key}'")
+    
+    # Get the arrays for all names - this is the key fix!
+    # We need to find which keys contain each name in the group
+    all_arrays = []
+    keys_to_remove = set()
+    
+    for name in names:
+        # Find which key contains this name
+        found_key = None
+        for key_name, subnames in test_competitor_names.items():
+            if name in subnames:
+                found_key = key_name
+                break
+        
+        if found_key:
+            # Add all subnames from this key
+            all_arrays.extend(test_competitor_names[found_key])
+            keys_to_remove.add(found_key)
+        else:
+            # If name is not found as a subname, add it as a single item
+            all_arrays.append(name)
+    
+    # Merge all arrays and remove duplicates
+    merged_array = list(set(all_arrays))
+    merged_array.sort()
+    
+    # Update the dictionary using the actual primary key
+    test_competitor_names[actual_primary_key] = merged_array
+    
+    # Remove all other keys from the dictionary
+    for key_to_remove in keys_to_remove:
+        if key_to_remove != actual_primary_key:
+            del test_competitor_names[key_to_remove]
+    
+    print(f"\nAfter merging:")
+    for key, values in test_competitor_names.items():
+        print(f"  '{key}': {values}")
+    
+    print(f"\n✅ Successfully merged into '{actual_primary_key}'")
+    print(f"✅ All subnames combined: {merged_array}")
+    
+    # Test the reverse case - what if "Vlasta Gruberova" was the primary_name?
+    print(f"\n" + "="*50)
+    print("Testing reverse case - 'Vlasta Gruberova' as primary_name")
+    
+    # Reset test data
+    test_competitor_names = {
+        "Vlasta Gruberova": ["Vlasta Gruberova"],
+        "Vojtech Koritenskya": ["Vojtech Koritensky", "Vojtech Koritenskya", "Vojtěch Koritenský"]
+    }
+    
+    test_group_reverse = {
+        "names": ["Vlasta Gruberova", "Vojtěch Koritenský"],
+        "primary_name": "Vlasta Gruberova",  # This IS a key
+        "average_similarity": 0.85,
+        "info": {
+            "Vlasta Gruberova": {"appearances": 5, "years": [2010, 2011], "divisions": ["Women's Physique"]},
+            "Vojtěch Koritenský": {"appearances": 12, "years": [2011, 2012], "divisions": ["Men's Bodybuilding"]}
+        }
+    }
+    
+    print("Before merging:")
+    for key, values in test_competitor_names.items():
+        print(f"  '{key}': {values}")
+    
+    # Simulate the merge logic
+    names = test_group_reverse['names']
+    primary_name = test_group_reverse['primary_name']
+    
+    # Find the actual key that contains the primary_name
+    actual_primary_key = None
+    for key_name, subnames in test_competitor_names.items():
+        if primary_name in subnames:
+            actual_primary_key = key_name
+            break
+    
+    if actual_primary_key is None:
+        actual_primary_key = primary_name
+    
+    print(f"\nPrimary name from group: '{primary_name}'")
+    print(f"Actual key found: '{actual_primary_key}'")
+    
+    # Get the arrays for all names - this is the key fix!
+    # We need to find which keys contain each name in the group
+    all_arrays = []
+    keys_to_remove = set()
+    
+    for name in names:
+        # Find which key contains this name
+        found_key = None
+        for key_name, subnames in test_competitor_names.items():
+            if name in subnames:
+                found_key = key_name
+                break
+        
+        if found_key:
+            # Add all subnames from this key
+            all_arrays.extend(test_competitor_names[found_key])
+            keys_to_remove.add(found_key)
+        else:
+            # If name is not found as a subname, add it as a single item
+            all_arrays.append(name)
+    
+    # Merge all arrays and remove duplicates
+    merged_array = list(set(all_arrays))
+    merged_array.sort()
+    
+    # Update the dictionary using the actual primary key
+    test_competitor_names[actual_primary_key] = merged_array
+    
+    # Remove all other keys from the dictionary
+    for key_to_remove in keys_to_remove:
+        if key_to_remove != actual_primary_key:
+            del test_competitor_names[key_to_remove]
+    
+    print(f"\nAfter merging:")
+    for key, values in test_competitor_names.items():
+        print(f"  '{key}': {values}")
+    
+    print(f"\n✅ Successfully merged into '{actual_primary_key}'")
+    print(f"✅ All subnames combined: {merged_array}")
+
+def normalize_for_pattern(name):
+    """Normalize name for letter pattern comparison."""
+    if not name:
+        return ""
+    
+    # Convert to lowercase and remove extra spaces
+    normalized = ' '.join(name.lower().split())
+    
+    # Remove common punctuation
+    normalized = normalized.replace('.', '').replace(',', '').replace('-', ' ').replace("'", '')
+    
+    # Remove extra spaces again
+    normalized = ' '.join(normalized.split())
+    
+    return normalized
+
+def get_letter_pattern(name):
+    """Get sorted letter pattern from name."""
+    normalized = normalize_for_pattern(name)
+    # Remove spaces and sort letters
+    letters = ''.join(c for c in normalized if c.isalpha())
+    return ''.join(sorted(letters))
+
+def are_similar_patterns(name1, name2):
+    """Check if two names have similar letter patterns."""
+    norm1 = normalize_for_pattern(name1)
+    norm2 = normalize_for_pattern(name2)
+    
+    # If exactly the same after normalization
+    if norm1 == norm2:
+        return True, "exact_match"
+    
+    # Check for reversed names
+    words1 = norm1.split()
+    words2 = norm2.split()
+    
+    if len(words1) >= 2 and len(words2) >= 2:
+        # Check if names are reversed
+        if words1 == words2[::-1]:
+            return True, "reversed_names"
+        
+        # Check if one is a subset of the other (missing middle name, etc.)
+        if set(words1).issubset(set(words2)) or set(words2).issubset(set(words1)):
+            return True, "subset_names"
+    
+    # Check letter pattern similarity
+    pattern1 = get_letter_pattern(name1)
+    pattern2 = get_letter_pattern(name2)
+    
+    if pattern1 == pattern2:
+        return True, "same_letters"
+    
+    # Check for high letter overlap
+    if len(pattern1) > 0 and len(pattern2) > 0:
+        common_letters = set(pattern1).intersection(set(pattern2))
+        total_letters = set(pattern1).union(set(pattern2))
+        overlap_ratio = len(common_letters) / len(total_letters)
+        
+        if overlap_ratio >= 0.8:  # 80% letter overlap
+            return True, f"high_overlap_{overlap_ratio:.2f}"
+    
+    # Check for space variations (e.g., "JohnSmith" vs "John Smith")
+    no_space1 = norm1.replace(' ', '')
+    no_space2 = norm2.replace(' ', '')
+    
+    if no_space1 == no_space2:
+        return True, "space_variation"
+    
+    # Check for common name variations
+    variations = [
+        ("jr", "junior"),
+        ("sr", "senior"),
+        ("iii", "3"),
+        ("ii", "2"),
+        ("iv", "4"),
+        ("jr.", "junior"),
+        ("sr.", "senior"),
+    ]
+    
+    for var1, var2 in variations:
+        if var1 in norm1 and var2 in norm2:
+            # Check if the rest is similar
+            rest1 = norm1.replace(var1, '').strip()
+            rest2 = norm2.replace(var2, '').strip()
+            if rest1 == rest2:
+                return True, "name_variation"
+        elif var2 in norm1 and var1 in norm2:
+            rest1 = norm1.replace(var2, '').strip()
+            rest2 = norm2.replace(var1, '').strip()
+            if rest1 == rest2:
+                return True, "name_variation"
+    
+    return False, None
+
+def find_similar_letter_patterns():
+    """
+    Find competitor names with similar letter patterns, handling cases like:
+    - Reversed first/last names (e.g., "John Smith" vs "Smith John")
+    - Added/removed spaces (e.g., "JohnSmith" vs "John Smith")
+    - Case variations
+    - Common name variations
+    
+    Creates a JSON file with groups of similar letter patterns.
+    
+    Returns:
+        str: Path to the created JSON file, or None if error
+    """
+    competitor_names_path = "keys/competitor_names.json"
+    output_path = "all/similar_letter_patterns.json"
+    
+    if not os.path.exists(competitor_names_path):
+        print(f"Competitor names file not found at: {competitor_names_path}")
+        return None
+    
+    try:
+        # Load competitor names
+        print("Loading competitor names...")
+        with open(competitor_names_path, 'r', encoding='utf-8') as f:
+            competitor_names = json.load(f)
+        
+        print(f"Loaded {len(competitor_names)} competitor entries")
+        
+        # Find similar patterns
+        print("Finding similar letter patterns...")
+        similar_groups = []
+        processed_names = set()
+        
+        all_names = list(competitor_names.keys())
+        
+        for i, name1 in enumerate(all_names):
+            if i % 100 == 0:
+                print(f"Processing name {i+1}/{len(all_names)}")
+            
+            if name1 in processed_names:
+                continue
+            
+            # Find all names similar to name1 (including subnames from other keys)
+            similar_to_name1 = [name1]
+            similarity_types = []
+            
+            # Compare with other keys
+            for j, name2 in enumerate(all_names[i+1:], i+1):
+                if name2 in processed_names:
+                    continue
+                
+                # Compare key names
+                is_similar, similarity_type = are_similar_patterns(name1, name2)
+                if is_similar:
+                    similar_to_name1.append(name2)
+                    similarity_types.append(similarity_type)
+                
+                # Compare name1 with subnames from name2's array
+                for subname2 in competitor_names[name2]:
+                    if subname2 != name2:  # Don't compare with the key itself (already done above)
+                        is_similar, similarity_type = are_similar_patterns(name1, subname2)
+                        if is_similar:
+                            similar_to_name1.append(name2)
+                            similarity_types.append(similarity_type)
+                            break  # Found a match, no need to check other subnames from this key
+            
+            # Compare subnames from name1's array with other keys
+            for subname1 in competitor_names[name1]:
+                if subname1 != name1:  # Don't compare with the key itself (already done above)
+                    for j, name2 in enumerate(all_names[i+1:], i+1):
+                        if name2 in processed_names:
+                            continue
+                        
+                        # Compare subname1 with key name2
+                        is_similar, similarity_type = are_similar_patterns(subname1, name2)
+                        if is_similar:
+                            similar_to_name1.append(name2)
+                            similarity_types.append(similarity_type)
+                            break  # Found a match, no need to check other keys
+                        
+                        # Compare subname1 with subnames from name2's array
+                        for subname2 in competitor_names[name2]:
+                            if subname2 != name2:  # Don't compare with the key itself
+                                is_similar, similarity_type = are_similar_patterns(subname1, subname2)
+                                if is_similar:
+                                    similar_to_name1.append(name2)
+                                    similarity_types.append(similarity_type)
+                                    break  # Found a match, no need to check other subnames from this key
+                        else:
+                            continue  # No match found in this key's subnames, continue to next key
+                        break  # Match found, break out of key loop
+            
+            # If we found similar names, create a group
+            if len(similar_to_name1) > 1:
+                # Get all subnames for each name in the group
+                all_subnames = []
+                for name in similar_to_name1:
+                    all_subnames.extend(competitor_names[name])
+                
+                # Remove duplicates and sort
+                all_subnames = sorted(list(set(all_subnames)))
+                
+                # Create group info
+                group_info = {
+                    'names': similar_to_name1,
+                    'all_subnames': all_subnames,
+                    'primary_name': max(similar_to_name1, key=lambda x: len(competitor_names[x])),
+                    'similarity_types': similarity_types,
+                    'letter_patterns': [get_letter_pattern(name) for name in similar_to_name1],
+                    'normalized_names': [normalize_for_pattern(name) for name in similar_to_name1]
+                }
+                
+                similar_groups.append(group_info)
+                
+                # Mark all names as processed
+                processed_names.update(similar_to_name1)
+        
+        # Sort by number of names in group (descending)
+        similar_groups.sort(key=lambda x: len(x['names']), reverse=True)
+        
+        print(f"Found {len(similar_groups)} groups with similar letter patterns")
+        
+        # Write to JSON file
+        print(f"Writing results to {output_path}...")
+        with open(output_path, 'w', encoding='utf-8') as f:
+            json.dump(similar_groups, f, indent=2, ensure_ascii=False)
+        
+        print(f"✅ Successfully created file: {output_path}")
+        
+        # Show some statistics
+        total_names_in_groups = sum(len(group['names']) for group in similar_groups)
+        total_subnames_in_groups = sum(len(group['all_subnames']) for group in similar_groups)
+        
+        print(f"\nStatistics:")
+        print(f"  Total groups found: {len(similar_groups)}")
+        print(f"  Total names in groups: {total_names_in_groups}")
+        print(f"  Total subnames in groups: {total_subnames_in_groups}")
+        
+        # Show top 10 groups
+        print(f"\nTop 10 groups with most names:")
+        for i, group in enumerate(similar_groups[:10]):
+            print(f"{i+1}. {group['names']}")
+            print(f"   Similarity types: {group['similarity_types']}")
+            print(f"   All subnames: {group['all_subnames']}")
+            print(f"   Letter patterns: {group['letter_patterns']}")
+            print()
+        
+        # Show examples by similarity type
+        similarity_type_counts = {}
+        for group in similar_groups:
+            for sim_type in group['similarity_types']:
+                similarity_type_counts[sim_type] = similarity_type_counts.get(sim_type, 0) + 1
+        
+        print(f"Similarity types found:")
+        for sim_type, count in sorted(similarity_type_counts.items()):
+            print(f"  {sim_type}: {count} groups")
+        
+        return output_path
+        
+    except Exception as e:
+        print(f"Error finding similar letter patterns: {e}")
+        import traceback
+        traceback.print_exc()
+        return None
+
+def test_letter_pattern_functions():
+    """
+    Test function to demonstrate the letter pattern matching functions.
+    """
+    print("Testing Letter Pattern Functions")
+    print("=" * 50)
+    
+    # Test cases
+    test_cases = [
+        ("John Smith", "Smith John", "Reversed names"),
+        ("John Smith", "JohnSmith", "No space vs space"),
+        ("John A. Smith", "John Smith", "Middle initial"),
+        ("John Smith Jr", "John Smith Junior", "Jr vs Junior"),
+        ("John Smith III", "John Smith 3", "III vs 3"),
+        ("John-Smith", "John Smith", "Hyphen vs space"),
+        ("John Smith", "john smith", "Case difference"),
+        ("John Smith", "John A. Smith", "Missing middle name"),
+        ("John Smith", "Johnny Smith", "Similar names"),
+        ("John Smith", "Jane Smith", "Different names (should not match)"),
+        ("Carlos Majid Rabiel", "Carlos Rabiei", "Complex case"),
+        ("Vojtech Koritensky", "Vojtěch Koritenský", "Accent variations"),
+    ]
+    
+    for name1, name2, description in test_cases:
+        print(f"\nTest: {description}")
+        print(f"Names: '{name1}' vs '{name2}'")
+        
+        is_similar, similarity_type = are_similar_patterns(name1, name2)
+        
+        print(f"Similar: {is_similar}")
+        if is_similar:
+            print(f"Type: {similarity_type}")
+        
+        # Show normalized versions
+        norm1 = normalize_for_pattern(name1)
+        norm2 = normalize_for_pattern(name2)
+        print(f"Normalized: '{norm1}' vs '{norm2}'")
+        
+        # Show letter patterns
+        pattern1 = get_letter_pattern(name1)
+        pattern2 = get_letter_pattern(name2)
+        print(f"Letter patterns: '{pattern1}' vs '{pattern2}'")
+    
+    # Test with sample competitor data to show subname comparison
+    print(f"\n" + "="*50)
+    print("Testing with sample competitor data (subname comparisons)")
+    
+    sample_competitors = {
+        "John Smith": ["John Smith", "Johnny Smith", "J. Smith"],
+        "Smith John": ["Smith John", "John Smith"],
+        "Jane Doe": ["Jane Doe", "J. Doe"],
+        "Carlos Majid Rabiel": ["Carlos Majid Rabiel", "Carlos Rabiei", "Carlos Rabiel"]
+    }
+    
+    # Test key vs key
+    print(f"\nKey vs Key comparison:")
+    is_similar, similarity_type = are_similar_patterns("John Smith", "Smith John")
+    print(f"'John Smith' vs 'Smith John': {is_similar} ({similarity_type})")
+    
+    # Test key vs subname from different key
+    print(f"\nKey vs Subname comparison:")
+    is_similar, similarity_type = are_similar_patterns("John Smith", "Johnny Smith")
+    print(f"'John Smith' vs 'Johnny Smith': {is_similar} ({similarity_type})")
+    
+    # Test subname vs subname from different keys
+    print(f"\nSubname vs Subname comparison:")
+    is_similar, similarity_type = are_similar_patterns("Johnny Smith", "Carlos Rabiei")
+    print(f"'Johnny Smith' vs 'Carlos Rabiei': {is_similar} ({similarity_type})")
+    
+    # Test subname vs key
+    print(f"\nSubname vs Key comparison:")
+    is_similar, similarity_type = are_similar_patterns("Carlos Rabiei", "Carlos Majid Rabiel")
+    print(f"'Carlos Rabiei' vs 'Carlos Majid Rabiel': {is_similar} ({similarity_type})")
+
 if __name__ == "__main__":
+    # Test the letter pattern functions
+    test_letter_pattern_functions()
+    
+    print("\n" + "="*80)
+    
+    # Find similar letter patterns
+    print("Finding similar letter patterns...")
+    find_similar_letter_patterns()
+    
+    print("\n" + "="*80)
+    
+    # Test the merge function with subname primary
+    #test_merge_with_subname_primary()
+    
+    #print("\n" + "="*80)
+    
     # Test the enhanced similarity algorithm
     #test_enhanced_similarity()
     
@@ -1943,8 +2485,12 @@ if __name__ == "__main__":
     #analyze_and_merge_competitor_names()
 
     # Find and merge similar names
-    print("Finding and merging similar names")
-    find_similar_names_to_file()
+    #print("Finding and merging similar names")
+    #find_similar_names_to_file()
+    
+    # Interactive merging of similar names
+    #print("Starting interactive merging process...")
+    #merge_from_file()
     
     # Analyze multi-version competitors
     #print("Analyzing multi-version competitors")
