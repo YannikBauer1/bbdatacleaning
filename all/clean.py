@@ -360,6 +360,8 @@ def parse_location(location_str):
         "Maitland, Florida Usa": "Maitland, Florida, United States",
         "Bucarest, Romania": "Bucharest, Romania",
         "Meza, Arizonaunited States": "Mesa, Arizona, United States",
+        "Atlanta, Georgiaunited States": "Atlanta, Georgia, United States",
+        "Atlanta,Georgiaunited States": "Atlanta, Georgia, United States",
         "Terra Haute, Indiana": "Terre Haute, Indiana",
         "Terra Haute, Indiana, United States": "Terre Haute, Indiana, United States",
         "Tacoma,Waunited States": "Tacoma, WA, United States",
