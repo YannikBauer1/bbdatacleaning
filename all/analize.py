@@ -943,6 +943,9 @@ def find_similar_names_to_file():
         for group in similar_groups:
             processed_names.update(group['names'])
         
+        # Keep track of displayed similarities to avoid showing duplicates
+        displayed_similarities = set()
+        
         print(f"Already processed {len(processed_names)} names in existing groups")
         
         # Find similar name groups
@@ -961,32 +964,123 @@ def find_similar_names_to_file():
                         json.dump(similar_groups, f, indent=2, ensure_ascii=False)
                     print(f"✅ Saved {len(similar_groups)} groups to {output_path}")
             
-            # Skip if already processed in this session
-            if name1 in processed_names:
-                continue
-            
-            # Find all names similar to name1
+            # Find all names similar to name1 (including subnames)
             similar_to_name1 = [name1]
             
             for j, name2 in enumerate(all_names[i+1:], i+1):
-                # Skip if already processed in this session
-                if name2 in processed_names:
-                    continue
+                # Check similarity between key names
+                key_similarity = calculate_name_similarity(name1, name2, all_competitor_info.get(name1), all_competitor_info.get(name2))
                 
-                similarity = calculate_name_similarity(name1, name2)
+                # Check similarity between subnames
+                subname_similarities = []
+                for subname1 in competitor_names[name1]:
+                    for subname2 in competitor_names[name2]:
+                        if subname1 != subname2:  # Don't compare same name
+                            subname_sim = calculate_name_similarity(subname1, subname2, all_competitor_info.get(name1), all_competitor_info.get(name2))
+                            subname_similarities.append(subname_sim)
+                
+                # Get the highest similarity (either key similarity or best subname similarity)
+                max_similarity = max([key_similarity] + subname_similarities) if subname_similarities else key_similarity
                 
                 # Only consider pairs with high similarity
-                if similarity >= 0.7:
+                if max_similarity >= 0.7:
                     similar_to_name1.append(name2)
-                    print(f"Found similar: {name1} <-> {name2} (similarity: {similarity:.2f})")
+                    
+                    # Create a unique key for this similarity pair
+                    similarity_key = tuple(sorted([name1, name2]))
+                    
+                    # Only show if this similarity hasn't been displayed yet
+                    if similarity_key not in displayed_similarities:
+                        displayed_similarities.add(similarity_key)
+                        
+                        # Show enhanced similarity details if available
+                        info1 = all_competitor_info.get(name1)
+                        info2 = all_competitor_info.get(name2)
+                        
+                        # Find which names were most similar
+                        if subname_similarities and max(subname_similarities) > key_similarity:
+                            # Find the subnames that had the highest similarity
+                            max_subname_sim = max(subname_similarities)
+                            similar_subnames = []
+                            for subname1 in competitor_names[name1]:
+                                for subname2 in competitor_names[name2]:
+                                    if subname1 != subname2:
+                                        subname_sim = calculate_name_similarity(subname1, subname2, info1, info2)
+                                        if subname_sim == max_subname_sim:
+                                            similar_subnames.append((subname1, subname2, subname_sim))
+                            
+                            print(f"Found similar via subnames: {name1} <-> {name2} (similarity: {max_similarity:.2f})")
+                            print(f"  Key similarity: {key_similarity:.2f}")
+                            print(f"  Best subname match: '{similar_subnames[0][0]}' <-> '{similar_subnames[0][1]}' (similarity: {similar_subnames[0][2]:.2f})")
+                            
+                            # Show all names from both arrays
+                            print(f"  All names in '{name1}': {competitor_names[name1]}")
+                            print(f"  All names in '{name2}': {competitor_names[name2]}")
+                        else:
+                            print(f"Found similar via keys: {name1} <-> {name2} (similarity: {max_similarity:.2f})")
+                            print(f"  All names in '{name1}': {competitor_names[name1]}")
+                            print(f"  All names in '{name2}': {competitor_names[name2]}")
+                        
+                        if info1 and info2:
+                            years1 = set(info1.get('years', []))
+                            years2 = set(info2.get('years', []))
+                            divisions1 = set(info1.get('divisions', []))
+                            divisions2 = set(info2.get('divisions', []))
+                            locations1 = set(info1.get('locations', []))
+                            locations2 = set(info2.get('locations', []))
+                            
+                            # Calculate expanded year ranges with ±2 tolerance
+                            expanded_years1 = set()
+                            for year in years1:
+                                expanded_years1.update(range(year - 2, year + 3))
+                            
+                            expanded_years2 = set()
+                            for year in years2:
+                                expanded_years2.update(range(year - 2, year + 3))
+                            
+                            overlap_years = expanded_years1.intersection(expanded_years2)
+                            exact_matches = len(years1.intersection(years2))
+                            division_overlap = len(divisions1.intersection(divisions2)) if divisions1 and divisions2 else 0
+                            location_overlap = len(locations1.intersection(locations2)) if locations1 and locations2 else 0
+                            
+                            print(f"  Combined years for '{name1}': {sorted(years1)}")
+                            print(f"  Combined years for '{name2}': {sorted(years2)}")
+                            print(f"  Combined divisions for '{name1}': {sorted(divisions1)}")
+                            print(f"  Combined divisions for '{name2}': {sorted(divisions2)}")
+                            print(f"  Combined locations for '{name1}': {sorted(locations1)[:3]}{'...' if len(locations1) > 3 else ''}")
+                            print(f"  Combined locations for '{name2}': {sorted(locations2)[:3]}{'...' if len(locations2) > 3 else ''}")
+                            
+                            if years1 and years2:
+                                print(f"  Original years: {sorted(years1)} vs {sorted(years2)}")
+                                print(f"  Expanded ranges: {sorted(expanded_years1)[:5]}{'...' if len(expanded_years1) > 5 else ''} vs {sorted(expanded_years2)[:5]}{'...' if len(expanded_years2) > 5 else ''}")
+                                print(f"  Year overlap: {len(overlap_years)} years in expanded range")
+                                if exact_matches > 0:
+                                    print(f"  Exact year matches: {exact_matches} years")
+                            if division_overlap > 0:
+                                print(f"  Division overlap: {division_overlap} divisions ({sorted(divisions1.intersection(divisions2))})")
+                            if location_overlap > 0:
+                                print(f"  Location overlap: {location_overlap} locations ({sorted(locations1.intersection(locations2))})")
             
             # If we found similar names, create a group
             if len(similar_to_name1) > 1:
                 # Calculate average similarity for the group
                 similarities = []
                 for name2 in similar_to_name1[1:]:  # Skip the first name (name1)
-                    sim = calculate_name_similarity(name1, name2)
-                    similarities.append(sim)
+                    # Check similarity between key names
+                    key_sim = calculate_name_similarity(name1, name2, all_competitor_info.get(name1), all_competitor_info.get(name2))
+                    
+                    # Check similarity between subnames
+                    subname_similarities = []
+                    for subname1 in competitor_names[name1]:
+                        for subname2 in competitor_names[name2]:
+                            if subname1 != subname2:  # Don't compare same name
+                                subname_sim = calculate_name_similarity(subname1, subname2, all_competitor_info.get(name1), all_competitor_info.get(name2))
+                                subname_similarities.append(subname_sim)
+                    
+                    # Get the highest similarity (either key similarity or best subname similarity)
+                    max_sim = max([key_sim] + subname_similarities) if subname_similarities else key_sim
+                    similarities.append(max_sim)
+                
                 avg_similarity = sum(similarities) / len(similarities) if similarities else 0
                 
                 # Create group info
@@ -1000,9 +1094,6 @@ def find_similar_names_to_file():
                 similar_groups.append(group_info)
                 total_found += 1
                 new_groups_found += 1
-                
-                # Mark all names in this group as processed
-                processed_names.update(similar_to_name1)
                 
                 print(f"Created new group: {similar_to_name1} (avg similarity: {avg_similarity:.2f})")
         
@@ -1096,9 +1187,10 @@ def normalize_name_for_comparison(name):
     
     return normalized
 
-def calculate_name_similarity(name1, name2):
+def calculate_name_similarity(name1, name2, info1=None, info2=None):
     """
     Calculate similarity between two names, handling various name variations.
+    Now includes division and year overlap for more accurate matching.
     Returns a score between 0 and 1.
     """
     if not name1 or not name2:
@@ -1117,30 +1209,75 @@ def calculate_name_similarity(name1, name2):
     
     # If one name is completely contained in the other (missing middle name)
     if words1.issubset(words2) or words2.issubset(words1):
-        return 0.9
-    
-    # Calculate sequence similarity
-    sequence_similarity = SequenceMatcher(None, norm1, norm2).ratio()
-    
-    # Calculate word overlap
-    common_words = words1.intersection(words2)
-    total_words = words1.union(words2)
-    
-    if total_words:
-        word_overlap = len(common_words) / len(total_words)
+        base_similarity = 0.9
     else:
-        word_overlap = 0
+        # Calculate sequence similarity
+        sequence_similarity = SequenceMatcher(None, norm1, norm2).ratio()
+        
+        # Calculate word overlap
+        common_words = words1.intersection(words2)
+        total_words = words1.union(words2)
+        
+        if total_words:
+            word_overlap = len(common_words) / len(total_words)
+        else:
+            word_overlap = 0
+        
+        # Combine scores (give more weight to word overlap for names)
+        base_similarity = (sequence_similarity * 0.4) + (word_overlap * 0.6)
+        
+        # Boost score if they share common words
+        if len(common_words) >= 2:
+            base_similarity += 0.1
+        elif len(common_words) >= 1:
+            base_similarity += 0.05
     
-    # Combine scores (give more weight to word overlap for names)
-    combined_score = (sequence_similarity * 0.4) + (word_overlap * 0.6)
+    # If we have additional info, enhance the similarity score
+    if info1 and info2:
+        # Calculate year overlap with ±2 year tolerance
+        years1 = set(info1.get('years', []))
+        years2 = set(info2.get('years', []))
+        
+        if years1 and years2:
+            # Create expanded year ranges with ±2 year tolerance
+            expanded_years1 = set()
+            for year in years1:
+                expanded_years1.update(range(year - 2, year + 3))
+            
+            expanded_years2 = set()
+            for year in years2:
+                expanded_years2.update(range(year - 2, year + 3))
+            
+            # Calculate overlap between expanded ranges
+            overlap_years = expanded_years1.intersection(expanded_years2)
+            
+            # Calculate overlap ratio based on original year sets
+            year_overlap = len(overlap_years) / max(len(expanded_years1), len(expanded_years2), 1)
+            
+            # Additional bonus for exact year matches
+            exact_matches = len(years1.intersection(years2))
+            if exact_matches > 0:
+                year_overlap += 0.1  # Bonus for exact year matches
+        else:
+            year_overlap = 0.0
+        
+        # Calculate division overlap
+        divisions1 = set(info1.get('divisions', []))
+        divisions2 = set(info2.get('divisions', []))
+        
+        if divisions1 and divisions2:
+            division_overlap = len(divisions1.intersection(divisions2)) / max(len(divisions1), len(divisions2), 1)
+        else:
+            division_overlap = 0.0
+        
+        # Enhanced similarity calculation with additional factors
+        # Weight: 70% name similarity, 20% year overlap, 10% division overlap
+        enhanced_similarity = (base_similarity * 0.7) + (year_overlap * 0.2) + (division_overlap * 0.1)
+        
+        return min(enhanced_similarity, 1.0)
     
-    # Boost score if they share common words
-    if len(common_words) >= 2:
-        combined_score += 0.1
-    elif len(common_words) >= 1:
-        combined_score += 0.05
-    
-    return min(combined_score, 1.0)
+    # If no additional info available, return base similarity
+    return min(base_similarity, 1.0)
 
 def get_competitor_info(df, competitor_name):
     """
@@ -1617,7 +1754,155 @@ def analyze_multi_version_competitors():
         traceback.print_exc()
         return None
 
+def test_enhanced_similarity():
+    """
+    Test function to demonstrate the enhanced similarity algorithm.
+    """
+    print("Testing Enhanced Similarity Algorithm with ±2 Year Tolerance and Subname Comparison")
+    print("=" * 70)
+    
+    # Test cases with different scenarios
+    test_cases = [
+        {
+            'name1': 'John Smith',
+            'name2': 'John A. Smith',
+            'subnames1': ['John Smith'],
+            'subnames2': ['John A. Smith'],
+            'info1': {'years': [2010, 2011, 2012], 'divisions': ['Men\'s Bodybuilding']},
+            'info2': {'years': [2010, 2011, 2012], 'divisions': ['Men\'s Bodybuilding']},
+            'description': 'Same person, exact year matches'
+        },
+        {
+            'name1': 'John Smith',
+            'name2': 'John A. Smith',
+            'subnames1': ['John Smith'],
+            'subnames2': ['John A. Smith'],
+            'info1': {'years': [2010, 2011], 'divisions': ['Men\'s Bodybuilding']},
+            'info2': {'years': [2012, 2013], 'divisions': ['Men\'s Bodybuilding']},
+            'description': 'Same person, years 2 apart (should overlap with ±2 tolerance)'
+        },
+        {
+            'name1': 'John Smith',
+            'name2': 'John A. Smith',
+            'subnames1': ['John Smith'],
+            'subnames2': ['John A. Smith'],
+            'info1': {'years': [2010, 2011], 'divisions': ['Men\'s Bodybuilding']},
+            'info2': {'years': [2014, 2015], 'divisions': ['Men\'s Bodybuilding']},
+            'description': 'Same person, years 4 apart (no overlap even with ±2 tolerance)'
+        },
+        {
+            'name1': 'John Smith',
+            'name2': 'John A. Smith',
+            'subnames1': ['John Smith'],
+            'subnames2': ['John A. Smith'],
+            'info1': {'years': [2010, 2011], 'divisions': ['Men\'s Bodybuilding']},
+            'info2': {'years': [2010, 2011], 'divisions': ['Women\'s Physique']},
+            'description': 'Same person, same years, different divisions'
+        },
+        {
+            'name1': 'John Smith',
+            'name2': 'Jane Smith',
+            'subnames1': ['John Smith'],
+            'subnames2': ['Jane Smith'],
+            'info1': {'years': [2010, 2011], 'divisions': ['Men\'s Bodybuilding']},
+            'info2': {'years': [2010, 2011], 'divisions': ['Men\'s Bodybuilding']},
+            'description': 'Different people, similar names, same years and divisions'
+        },
+        {
+            'name1': 'John Smith',
+            'name2': 'J. Smith',
+            'subnames1': ['John Smith', 'Johnny Smith'],
+            'subnames2': ['J. Smith', 'James Smith'],
+            'info1': {'years': [2010, 2011], 'divisions': ['Men\'s Bodybuilding']},
+            'info2': {'years': [2010, 2011], 'divisions': ['Men\'s Bodybuilding']},
+            'description': 'Same person, different key names, similar subnames'
+        },
+        {
+            'name1': 'John Smith',
+            'name2': 'Johnny Smith',
+            'subnames1': ['John Smith'],
+            'subnames2': ['Johnny Smith'],
+            'info1': {'years': [2010, 2011], 'divisions': ['Men\'s Bodybuilding']},
+            'info2': {'years': [2010, 2011], 'divisions': ['Men\'s Bodybuilding']},
+            'description': 'Same person, different variations (would be found in multiple checks)'
+        },
+        {
+            'name1': 'Carlos Majid Rabiel',
+            'name2': 'Carlos Rabiei',
+            'subnames1': ['Carlos Majid Rabiel', 'Carlos Rabiei', 'Carlos Rabiel', 'Carlos Majid Rabiei'],
+            'subnames2': ['Carlos Rabiei'],
+            'info1': {'years': [2010, 2011, 2012], 'divisions': ['Men\'s Bodybuilding'], 'locations': ['California, USA', 'Texas, USA']},
+            'info2': {'years': [2011, 2012], 'divisions': ['Men\'s Bodybuilding'], 'locations': ['California, USA']},
+            'description': 'Complex case with multiple subnames and combined information'
+        }
+    ]
+    
+    for i, test_case in enumerate(test_cases, 1):
+        print(f"\nTest {i}: {test_case['description']}")
+        print(f"Names: '{test_case['name1']}' vs '{test_case['name2']}'")
+        print(f"Subnames: {test_case['subnames1']} vs {test_case['subnames2']}")
+        
+        # Calculate similarity with and without additional info
+        basic_similarity = calculate_name_similarity(test_case['name1'], test_case['name2'])
+        enhanced_similarity = calculate_name_similarity(
+            test_case['name1'], test_case['name2'], 
+            test_case['info1'], test_case['info2']
+        )
+        
+        # Calculate subname similarities
+        subname_similarities = []
+        for subname1 in test_case['subnames1']:
+            for subname2 in test_case['subnames2']:
+                if subname1 != subname2:
+                    subname_sim = calculate_name_similarity(subname1, subname2, test_case['info1'], test_case['info2'])
+                    subname_similarities.append(subname_sim)
+        
+        max_subname_similarity = max(subname_similarities) if subname_similarities else 0
+        max_overall_similarity = max(enhanced_similarity, max_subname_similarity)
+        
+        print(f"Basic similarity (key names only): {basic_similarity:.3f}")
+        print(f"Enhanced similarity (key names with years/divisions): {enhanced_similarity:.3f}")
+        print(f"Best subname similarity: {max_subname_similarity:.3f}")
+        print(f"Overall max similarity: {max_overall_similarity:.3f}")
+        print(f"Improvement: {max_overall_similarity - basic_similarity:+.3f}")
+        
+        # Show overlap details with expanded ranges
+        years1 = set(test_case['info1']['years'])
+        years2 = set(test_case['info2']['years'])
+        divisions1 = set(test_case['info1']['divisions'])
+        divisions2 = set(test_case['info2']['divisions'])
+        
+        # Calculate expanded ranges
+        expanded_years1 = set()
+        for year in years1:
+            expanded_years1.update(range(year - 2, year + 3))
+        
+        expanded_years2 = set()
+        for year in years2:
+            expanded_years2.update(range(year - 2, year + 3))
+        
+        overlap_years = expanded_years1.intersection(expanded_years2)
+        exact_matches = len(years1.intersection(years2))
+        division_overlap = len(divisions1.intersection(divisions2))
+        
+        print(f"Original years: {sorted(years1)} vs {sorted(years2)}")
+        print(f"Expanded ranges: {sorted(expanded_years1)[:8]}{'...' if len(expanded_years1) > 8 else ''} vs {sorted(expanded_years2)[:8]}{'...' if len(expanded_years2) > 8 else ''}")
+        print(f"Year overlap: {len(overlap_years)} years in expanded range")
+        if exact_matches > 0:
+            print(f"Exact year matches: {exact_matches} years")
+        print(f"Division overlap: {division_overlap}/{max(len(divisions1), len(divisions2))} divisions")
+        
+        if max_overall_similarity >= 0.7:
+            print("✅ Would be grouped together")
+        else:
+            print("❌ Would NOT be grouped together")
+
 if __name__ == "__main__":
+    # Test the enhanced similarity algorithm
+    #test_enhanced_similarity()
+    
+    #print("\n" + "="*80)
+    
     # Search for empty divisions
     #print("Searching for rows with empty division column...")
     #find_empty_divisions()
@@ -1658,11 +1943,11 @@ if __name__ == "__main__":
     #analyze_and_merge_competitor_names()
 
     # Find and merge similar names
-    #print("Finding and merging similar names")
-    #find_similar_names_to_file()
+    print("Finding and merging similar names")
+    find_similar_names_to_file()
     
     # Analyze multi-version competitors
-    print("Analyzing multi-version competitors")
-    analyze_multi_version_competitors()
+    #print("Analyzing multi-version competitors")
+    #analyze_multi_version_competitors()
     
     pass  # Add this to fix the indentation error
