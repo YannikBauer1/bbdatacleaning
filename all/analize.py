@@ -2614,12 +2614,87 @@ def analyze_competitor_names_file():
         traceback.print_exc()
         return None
 
+def find_specific_competitor_names(target_names):
+    """
+    Find all rows where the competitor names match the specified target names.
+    
+    Args:
+        target_names (list): List of competitor names to search for
+    
+    Returns:
+        None: Prints results to console
+    """
+    csv_path = "data/all/all_clean.csv"
+    
+    if not os.path.exists(csv_path):
+        print(f"CSV file not found at: {csv_path}")
+        return
+    
+    try:
+        # Read the CSV file
+        df = pd.read_csv(csv_path, low_memory=False)
+        
+        # Search for rows with the specified competitor names
+        matching_rows = df[df['Competitor Name'].isin(target_names)]
+        
+        if matching_rows.empty:
+            print(f"No rows found with competitor names: {target_names}")
+            return
+        
+        print(f"Found {len(matching_rows)} rows with competitor names: {target_names}")
+        print("=" * 80)
+        
+        # Display all rows
+        for idx, row in matching_rows.iterrows():
+            print(f"Row {idx + 1}:")
+            for column in df.columns:
+                value = row[column]
+                if pd.notna(value):  # Only print non-null values
+                    print(f"  {column}: {value}")
+            print("-" * 40)
+        
+        # Show summary statistics
+        print("\nSummary by competitor name:")
+        for name in target_names:
+            name_rows = matching_rows[matching_rows['Competitor Name'] == name]
+            if not name_rows.empty:
+                print(f"\n'{name}': {len(name_rows)} rows")
+                print(f"  Competitions: {name_rows['Competition'].unique()}")
+                print(f"  Divisions: {name_rows['Division'].unique()}")
+                
+                # Show date information
+                if 'Start Date' in name_rows.columns:
+                    print(f"  Start Dates: {name_rows['Start Date'].unique()}")
+                if 'End Date' in name_rows.columns:
+                    print(f"  End Dates: {name_rows['End Date'].unique()}")
+                if 'Year' in name_rows.columns:
+                    print(f"  Years: {name_rows['Year'].unique()}")
+                
+                print(f"  Places: {name_rows['Place'].unique()}")
+        
+        # Show summary table
+        print("\nSummary table:")
+        summary_columns = ['Competitor Name', 'Competition', 'Division', 'Place', 'Start Date', 'End Date', 'Year']
+        available_columns = [col for col in summary_columns if col in df.columns]
+        print(matching_rows[available_columns].to_string(index=False))
+        
+    except Exception as e:
+        print(f"Error reading CSV file: {e}")
+        import traceback
+        traceback.print_exc()
+
 if __name__ == "__main__":
+    # Find specific competitor names
+    #print("Searching for specific competitor names...")
+    #find_specific_competitor_names(["14", "16"])
+    
+    #print("\n" + "="*80)
+    
     # Analyze competitor names file
     print("Analyzing competitor names file...")
     analyze_competitor_names_file()
     
-    print("\n" + "="*80)
+    #print("\n" + "="*80)
     
     # Test the letter pattern output format
     #test_letter_pattern_output_format()

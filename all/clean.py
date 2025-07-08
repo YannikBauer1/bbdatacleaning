@@ -171,6 +171,9 @@ cleaned_df.loc[mask, 'Division'] = 'womens bodybuilding'
 mask = (cleaned_df['Competition'].str.contains('2020 Olympia', case=False, na=False)) & (cleaned_df['Competitor Name'].str.contains("Margita Zamolova", case=False, na=False))
 cleaned_df.loc[mask, 'Division'] = 'womens bodybuilding'
 
+# remove rows where competitior name is 14 or 16
+cleaned_df = cleaned_df[~cleaned_df['Competitor Name'].str.contains('14|16', case=False, na=False)]
+
 
 # Remove prefixes like the year, IFBB, IFBB Pro, IFBB PRO LEAGUE, and also leading "-"
 cleaned_df['Competition'] = cleaned_df['Competition'].str.replace(
@@ -1507,6 +1510,91 @@ def apply_division_mapping(cleaned_df):
 
 # Apply the division mapping function
 cleaned_df = apply_division_mapping(cleaned_df)
+
+def apply_competitor_mapping(cleaned_df):
+    """
+    Apply competitor name mapping from JSON file and return the cleaned DataFrame.
+    """
+    # Load competitor names mapping from JSON
+    with open('keys/competitor_names.json', 'r', encoding='utf-8') as f:
+        competitor_mapping = json.load(f)
+
+    def create_competitor_lookup(mapping_dict):
+        """
+        Create a flat lookup dictionary for faster competitor name mapping.
+        """
+        lookup = {}
+        for standard_name, variations in mapping_dict.items():
+            if isinstance(variations, list):
+                for variation in variations:
+                    lookup[variation.lower()] = standard_name
+        return lookup
+
+    # Create lookup dictionary for faster mapping
+    competitor_lookup = create_competitor_lookup(competitor_mapping)
+
+    def find_competitor_mapping(competitor_name, lookup_dict):
+        """
+        Fast lookup for competitor name mapping using pre-built dictionary.
+        """
+        if pd.isna(competitor_name) or competitor_name == '':
+            return competitor_name
+        return lookup_dict.get(competitor_name.lower(), competitor_name)
+
+    # Apply the competitor name mapping
+    original_competitors = cleaned_df['Competitor Name'].copy()
+    cleaned_df['Competitor Name'] = cleaned_df['Competitor Name'].apply(
+        lambda x: find_competitor_mapping(x, competitor_lookup)
+    )
+
+    # Count how many competitors were mapped
+    mapped_count = 0
+    unmapped_competitors = []
+    
+    for orig, mapped in zip(original_competitors, cleaned_df['Competitor Name']):
+        if pd.notna(orig) and orig != '' and orig.lower() != mapped.lower():
+            mapped_count += 1
+        elif pd.notna(orig) and orig != '' and orig.lower() not in competitor_lookup:
+            unmapped_competitors.append(orig)
+    
+    # Remove duplicates and sort alphabetically
+    unmapped_competitors = sorted(list(set(unmapped_competitors)))
+    
+    # Save unmapped competitors to JSON file
+    with open('all/unmapped_competitors.json', 'w', encoding='utf-8') as f:
+        json.dump(unmapped_competitors, f, ensure_ascii=False, indent=2)
+    
+    print(f"Competitor name mapping: {mapped_count} competitors were standardized")
+    print(f"Unmapped competitors saved to: all/unmapped_competitors.json")
+
+    # Show some examples of mappings
+    if mapped_count > 0:
+        mapping_examples = pd.DataFrame({
+            'Original': original_competitors,
+            'Standardized': cleaned_df['Competitor Name']
+        })
+        mapping_examples = mapping_examples[
+            (mapping_examples['Original'] != mapping_examples['Standardized']) & 
+            (mapping_examples['Original'].notna()) & 
+            (mapping_examples['Original'] != '')
+        ].drop_duplicates().head(15)
+        
+        print("\nExamples of competitor name mappings:")
+        for _, row in mapping_examples.iterrows():
+            print(f"  '{row['Original']}' -> '{row['Standardized']}'")
+        
+        # Show unique competitors that were mapped
+        unique_mappings = mapping_examples.drop_duplicates(subset=['Original', 'Standardized'])
+        print(f"\nUnique competitor name mappings: {len(unique_mappings)}")
+        if len(unique_mappings) > 0:
+            print("First 10 unique mappings:")
+            for _, row in unique_mappings.head(10).iterrows():
+                print(f"  '{row['Original']}' -> '{row['Standardized']}'")
+    
+    return cleaned_df
+
+# Apply the competitor mapping function
+cleaned_df = apply_competitor_mapping(cleaned_df)
 
 # Create Division Subtype column
 def extract_division_subtype(division_name):
