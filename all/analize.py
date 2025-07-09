@@ -6,6 +6,7 @@ from collections import defaultdict
 import sys
 import tty
 import termios  # For Unix-like systems
+from datetime import datetime
 
 def load_existing_divisions():
     """
@@ -2683,7 +2684,711 @@ def find_specific_competitor_names(target_names):
         import traceback
         traceback.print_exc()
 
+def analyze_competition_names_file_duplicates():
+    """
+    Analyze the competition_names.json file to check for duplicates in keys and values.
+    """
+    competition_names_path = "keys/competition_names.json"
+    
+    if not os.path.exists(competition_names_path):
+        print(f"Competition names file not found at: {competition_names_path}")
+        return None
+    
+    try:
+        # Load competition names
+        print("Loading competition names...")
+        with open(competition_names_path, 'r', encoding='utf-8') as f:
+            competition_names = json.load(f)
+        
+        print(f"✅ Successfully loaded competition names file")
+        
+        # Collect all keys and values from the nested structure
+        all_keys = []
+        all_values = []
+        key_paths = []  # Store the full path to each key for reporting
+        
+        def traverse_structure(data, current_path=""):
+            """Recursively traverse the nested structure to collect keys and values."""
+            if isinstance(data, dict):
+                for key, value in data.items():
+                    new_path = f"{current_path}.{key}" if current_path else key
+                    if isinstance(value, list):
+                        # This is a competition key with an array of competition names
+                        all_keys.append(key)
+                        key_paths.append(new_path)
+                        all_values.extend(value)
+                    else:
+                        # This is a nested object, continue traversing
+                        traverse_structure(value, new_path)
+        
+        traverse_structure(competition_names)
+        
+        # Basic statistics
+        total_keys = len(all_keys)
+        total_values = len(all_values)
+        unique_values = len(set(all_values))
+        
+        print(f"\n📊 Basic Statistics:")
+        print(f"  Total competition keys: {total_keys}")
+        print(f"  Total competition names in all arrays: {total_values}")
+        print(f"  Unique competition names: {unique_values}")
+        print(f"  Average competition names per key: {total_values / total_keys:.2f}")
+        
+        # Check for duplicate keys
+        print(f"\n🔍 Checking for Duplicate Keys...")
+        key_counts = {}
+        for key in all_keys:
+            key_counts[key] = key_counts.get(key, 0) + 1
+        
+        duplicate_keys = {key: count for key, count in key_counts.items() if count > 1}
+        
+        if duplicate_keys:
+            print(f"  Found {len(duplicate_keys)} duplicate keys:")
+            print(f"  Total duplicate key occurrences: {sum(duplicate_keys.values())}")
+            
+            # Show duplicate keys with their paths
+            print(f"\n  Duplicate Keys and Their Locations:")
+            for key, count in sorted(duplicate_keys.items()):
+                print(f"\n    '{key}' (appears {count} times) found at:")
+                for i, path in enumerate(key_paths):
+                    if path.split('.')[-1] == key:  # Get the last part of the path
+                        print(f"      {i+1}. {path}")
+        else:
+            print(f"  ✅ No duplicate keys found!")
+        
+        # Check for duplicate values
+        print(f"\n🔍 Checking for Duplicate Competition Names...")
+        value_counts = {}
+        for value in all_values:
+            value_counts[value] = value_counts.get(value, 0) + 1
+        
+        duplicate_values = {value: count for value, count in value_counts.items() if count > 1}
+        
+        if duplicate_values:
+            print(f"  Found {len(duplicate_values)} duplicate competition names:")
+            print(f"  Total duplicate occurrences: {sum(duplicate_values.values())}")
+            
+            # Show top duplicates
+            sorted_duplicates = sorted(duplicate_values.items(), key=lambda x: x[1], reverse=True)
+            print(f"\n  Top 10 Most Duplicated Competition Names:")
+            for i, (name, count) in enumerate(sorted_duplicates[:10]):
+                print(f"    {i+1}. '{name}': appears {count} times")
+            
+            # Find which keys contain each duplicate
+            print(f"\n  Detailed Duplicate Analysis:")
+            for name, count in sorted_duplicates[:5]:  # Show first 5 duplicates
+                print(f"\n    '{name}' (appears {count} times) found in:")
+                for key_path in key_paths:
+                    # Get the actual data at this path
+                    path_parts = key_path.split('.')
+                    current_data = competition_names
+                    for part in path_parts:
+                        if part in current_data:
+                            current_data = current_data[part]
+                        else:
+                            break
+                    else:
+                        # We found the path, check if it contains the duplicate name
+                        if isinstance(current_data, list) and name in current_data:
+                            print(f"      - {key_path}")
+        
+        else:
+            print(f"  ✅ No duplicate competition names found!")
+        
+        # Show some examples of competition names that appear in multiple keys
+        if duplicate_values:
+            print(f"\n📋 Examples of Competition Names in Multiple Keys:")
+            for name, count in sorted_duplicates[:3]:
+                print(f"\n  '{name}' appears in {count} different keys:")
+                for key_path in key_paths:
+                    # Get the actual data at this path
+                    path_parts = key_path.split('.')
+                    current_data = competition_names
+                    for part in path_parts:
+                        if part in current_data:
+                            current_data = current_data[part]
+                        else:
+                            break
+                    else:
+                        # We found the path, check if it contains the duplicate name
+                        if isinstance(current_data, list) and name in current_data:
+                            print(f"    - {key_path}: {current_data}")
+        
+        # Show distribution of array sizes
+        print(f"\n📈 Array Size Distribution:")
+        size_counts = {}
+        for key_path in key_paths:
+            # Get the actual data at this path
+            path_parts = key_path.split('.')
+            current_data = competition_names
+            for part in path_parts:
+                if part in current_data:
+                    current_data = current_data[part]
+                else:
+                    break
+            else:
+                if isinstance(current_data, list):
+                    size = len(current_data)
+                    size_counts[size] = size_counts.get(size, 0) + 1
+        
+        for size in sorted(size_counts.keys()):
+            count = size_counts[size]
+            percentage = (count / total_keys) * 100
+            print(f"  {size} competition name(s): {count} keys ({percentage:.1f}%)")
+        
+        # Show keys with most competition names
+        print(f"\n🏆 Top 10 Keys with Most Competition Names:")
+        key_size_pairs = []
+        for key_path in key_paths:
+            # Get the actual data at this path
+            path_parts = key_path.split('.')
+            current_data = competition_names
+            for part in path_parts:
+                if part in current_data:
+                    current_data = current_data[part]
+                else:
+                    break
+            else:
+                if isinstance(current_data, list):
+                    key_size_pairs.append((key_path, len(current_data)))
+        
+        sorted_by_size = sorted(key_size_pairs, key=lambda x: x[1], reverse=True)
+        for i, (key_path, size) in enumerate(sorted_by_size[:10]):
+            print(f"  {i+1}. '{key_path}': {size} competition names")
+        
+        # Summary
+        print(f"\n📋 Summary:")
+        print(f"  Total unique competition names across all arrays: {unique_values}")
+        print(f"  Total competition name occurrences (including duplicates): {total_values}")
+        if duplicate_keys:
+            print(f"  Duplicate keys found: {len(duplicate_keys)}")
+            print(f"  Duplicate key occurrences: {sum(duplicate_keys.values()) - len(duplicate_keys)}")
+        else:
+            print(f"  ✅ No duplicate keys found - all keys are unique!")
+        
+        if duplicate_values:
+            print(f"  Duplicate competition names found: {len(duplicate_values)}")
+            print(f"  Duplicate competition name occurrences: {sum(duplicate_values.values()) - len(duplicate_values)}")
+        else:
+            print(f"  ✅ No duplicate competition names found - all names are unique!")
+        
+        return {
+            'total_keys': total_keys,
+            'total_values': total_values,
+            'unique_values': unique_values,
+            'duplicate_keys': len(duplicate_keys) if duplicate_keys else 0,
+            'duplicate_key_occurrences': sum(duplicate_keys.values()) - len(duplicate_keys) if duplicate_keys else 0,
+            'duplicate_values': len(duplicate_values) if duplicate_values else 0,
+            'duplicate_value_occurrences': sum(duplicate_values.values()) - len(duplicate_values) if duplicate_values else 0
+        }
+        
+    except Exception as e:
+        print(f"Error analyzing competition names file: {e}")
+        import traceback
+        traceback.print_exc()
+        return None
+
+def find_missing_rows_in_copy():
+    """
+    Find rows that exist in data/all/all_clean.csv but not in all_clean copy.csv
+    using the combination of Start Date and Competitor Name as the key.
+    
+    Returns:
+        None: Prints results to console
+    """
+    original_csv_path = "data/all/all_clean.csv"
+    copy_csv_path = "data/all/all_clean_copy.csv"
+    
+    if not os.path.exists(original_csv_path):
+        print(f"Original CSV file not found at: {original_csv_path}")
+        return
+    
+    if not os.path.exists(copy_csv_path):
+        print(f"Copy CSV file not found at: {copy_csv_path}")
+        return
+    
+    try:
+        # Read both CSV files
+        print("Reading original CSV file...")
+        df_original = pd.read_csv(original_csv_path, low_memory=False)
+        
+        print("Reading copy CSV file...")
+        df_copy = pd.read_csv(copy_csv_path, low_memory=False)
+        
+        print(f"Original CSV: {len(df_original)} rows")
+        print(f"Copy CSV: {len(df_copy)} rows")
+        
+        # Check if required columns exist
+        required_columns = ['Start Date', 'Competitor Name']
+        for col in required_columns:
+            if col not in df_original.columns:
+                print(f"Error: Column '{col}' not found in original CSV")
+                return
+            if col not in df_copy.columns:
+                print(f"Error: Column '{col}' not found in copy CSV")
+                return
+        
+        # Create keys for both dataframes
+        print("Creating keys for comparison...")
+        
+        def create_key(row):
+            """Create a key from Start Date and Competitor Name."""
+            start_date = str(row['Start Date']).strip() if pd.notna(row['Start Date']) else ''
+            competitor_name = str(row['Competitor Name']).strip() if pd.notna(row['Competitor Name']) else ''
+            return f"{start_date}|{competitor_name}"
+        
+        # Create keys for original dataframe
+        df_original['key'] = df_original.apply(create_key, axis=1)
+        original_keys = set(df_original['key'].dropna())
+        
+        # Create keys for copy dataframe
+        df_copy['key'] = df_copy.apply(create_key, axis=1)
+        copy_keys = set(df_copy['key'].dropna())
+        
+        print(f"Original CSV unique keys: {len(original_keys)}")
+        print(f"Copy CSV unique keys: {len(copy_keys)}")
+        
+        # Find keys that are in original but not in copy
+        missing_keys = original_keys - copy_keys
+        
+        print(f"Keys in original but not in copy: {len(missing_keys)}")
+        
+        if not missing_keys:
+            print("✅ All rows from the original CSV are present in the copy CSV!")
+            return
+        
+        # Find rows in original that have missing keys
+        missing_rows = df_original[df_original['key'].isin(missing_keys)]
+        
+        print(f"\nFound {len(missing_rows)} rows that are in the original but not in the copy:")
+        print("=" * 80)
+        
+        # Display missing rows
+        for idx, row in missing_rows.iterrows():
+            print(f"Row {idx + 1}:")
+            print(f"  Key: {row['key']}")
+            print(f"  Start Date: {row['Start Date']}")
+            print(f"  Competitor Name: {row['Competitor Name']}")
+            
+            # Show other important columns
+            important_columns = ['Competition', 'Division', 'Place', 'Year', 'Source']
+            for col in important_columns:
+                if col in df_original.columns and pd.notna(row[col]):
+                    print(f"  {col}: {row[col]}")
+            
+            print("-" * 40)
+        
+        # Show summary statistics
+        print(f"\n📊 Summary of Missing Rows:")
+        
+        # Count by competition
+        if 'Competition' in missing_rows.columns:
+            competition_counts = missing_rows['Competition'].value_counts()
+            print(f"\nMissing rows by Competition (top 10):")
+            for competition, count in competition_counts.head(10).items():
+                print(f"  {competition}: {count} rows")
+        
+        # Count by division
+        if 'Division' in missing_rows.columns:
+            division_counts = missing_rows['Division'].value_counts()
+            print(f"\nMissing rows by Division (top 10):")
+            for division, count in division_counts.head(10).items():
+                print(f"  {division}: {count} rows")
+        
+        # Count by year (extracted from Start Date)
+        print(f"\nMissing rows by Year:")
+        year_counts = {}
+        for _, row in missing_rows.iterrows():
+            if pd.notna(row['Start Date']) and str(row['Start Date']).strip():
+                try:
+                    date_str = str(row['Start Date']).strip()
+                    year = None
+                    
+                    if '/' in date_str:
+                        parts = date_str.split('/')
+                        for part in parts:
+                            if len(part) == 4 and part.isdigit():
+                                year = part
+                                break
+                    elif '-' in date_str:
+                        parts = date_str.split('-')
+                        if len(parts) >= 1 and parts[0].isdigit() and len(parts[0]) == 4:
+                            year = parts[0]
+                    
+                    if year:
+                        year_counts[year] = year_counts.get(year, 0) + 1
+                except:
+                    pass
+        
+        for year in sorted(year_counts.keys()):
+            print(f"  {year}: {year_counts[year]} rows")
+        
+        # Count by source
+        if 'Source' in missing_rows.columns:
+            source_counts = missing_rows['Source'].value_counts()
+            print(f"\nMissing rows by Source:")
+            for source, count in source_counts.items():
+                print(f"  {source}: {count} rows")
+        
+        # Show some examples of keys that exist in copy but not in original (for verification)
+        extra_keys = copy_keys - original_keys
+        if extra_keys:
+            print(f"\n📋 Note: {len(extra_keys)} keys exist in copy but not in original")
+            print("This might indicate additional rows in the copy file.")
+        
+        # Save missing rows to a new CSV file for further analysis
+        output_path = "all/missing_rows.csv"
+        missing_rows.to_csv(output_path, index=False)
+        print(f"\n💾 Missing rows saved to: {output_path}")
+        
+        # Show summary table
+        print(f"\n📋 Summary Table of Missing Rows:")
+        summary_columns = ['Start Date', 'Competitor Name', 'Competition', 'Division', 'Place', 'Year', 'Source']
+        available_columns = [col for col in summary_columns if col in missing_rows.columns]
+        print(missing_rows[available_columns].to_string(index=False))
+        
+    except Exception as e:
+        print(f"Error comparing CSV files: {e}")
+        import traceback
+        traceback.print_exc()
+
+def find_multiple_events_per_year():
+    """
+    Find competitions that appear multiple times within the same year with different dates.
+    Excludes same-day events and those with small date differences of ±5 days.
+    
+    This function analyzes the competition data to identify:
+    - Competitions that occur multiple times in the same year
+    - Different dates for the same competition (excluding ±5 day differences)
+    - Events from different sources (2024, scorecards, npcnews, musclememory)
+    
+    Returns:
+        None: Prints results to console and saves to JSON file
+    """
+    csv_path = "data/all/all_clean.csv"
+    output_path = "all/multiple_events_per_year.json"
+    
+    if not os.path.exists(csv_path):
+        print(f"CSV file not found at: {csv_path}")
+        return
+    
+    try:
+        # Read the CSV file
+        print("Reading CSV file...")
+        df = pd.read_csv(csv_path, low_memory=False)
+        
+        print(f"Loaded {len(df)} rows")
+        
+        # Check if required columns exist
+        required_columns = ['Competition', 'Start Date', 'End Date', 'Source']
+        missing_columns = [col for col in required_columns if col not in df.columns]
+        if missing_columns:
+            print(f"Error: Missing required columns: {missing_columns}")
+            return
+        
+        # Function to extract year from date string
+        def extract_year(date_str):
+            """Extract year from date string, handling various formats."""
+            if pd.isna(date_str) or str(date_str).strip() == '':
+                return None
+            
+            try:
+                date_str = str(date_str).strip()
+                
+                # Handle different date formats
+                if '/' in date_str:
+                    parts = date_str.split('/')
+                    for part in parts:
+                        if len(part) == 4 and part.isdigit():
+                            return int(part)
+                elif '-' in date_str:
+                    parts = date_str.split('-')
+                    if len(parts) >= 1 and parts[0].isdigit() and len(parts[0]) == 4:
+                        return int(parts[0])
+                
+                # Try parsing as datetime
+                from datetime import datetime
+                for fmt in ['%Y-%m-%d', '%m/%d/%Y', '%Y/%m/%d', '%d/%m/%Y']:
+                    try:
+                        dt = datetime.strptime(date_str, fmt)
+                        return dt.year
+                    except ValueError:
+                        continue
+                
+                return None
+            except:
+                return None
+        
+        # Function to parse date string to datetime
+        def parse_date(date_str):
+            """Parse date string to datetime object."""
+            if pd.isna(date_str) or str(date_str).strip() == '':
+                return None
+            
+            try:
+                date_str = str(date_str).strip()
+                from datetime import datetime
+                
+                # Try different date formats
+                for fmt in ['%Y-%m-%d', '%m/%d/%Y', '%Y/%m/%d', '%d/%m/%Y']:
+                    try:
+                        return datetime.strptime(date_str, fmt)
+                    except ValueError:
+                        continue
+                
+                return None
+            except:
+                return None
+        
+        # Function to check if two date ranges overlap significantly
+        def dates_overlap_significantly(start1, end1, start2, end2, source1, source2, tolerance_days=5):
+            """
+            Check if two date ranges overlap significantly (within tolerance).
+            
+            Args:
+                start1, end1: First date range
+                start2, end2: Second date range
+                source1, source2: Sources for the two events
+                tolerance_days: Number of days tolerance for considering dates "the same"
+            
+            Returns:
+                bool: True if dates overlap significantly
+            """
+            if not all([start1, end1, start2, end2]):
+                return False
+            
+            # Use larger tolerance for npcnews vs scorecards/musclememory
+            if (source1 == 'npcnews' and source2 in ['scorecards', 'musclememory']) or \
+               (source2 == 'npcnews' and source1 in ['scorecards', 'musclememory']):
+                tolerance_days = 10
+            
+            # Calculate the difference between the start dates
+            start_diff = abs((start1 - start2).days)
+            
+            # Calculate the difference between the end dates
+            end_diff = abs((end1 - end2).days)
+            
+            # If both start and end dates are within tolerance, consider them the same event
+            return start_diff <= tolerance_days and end_diff <= tolerance_days
+        
+        # Add year column
+        print("Extracting years from dates...")
+        df['Year'] = df['Start Date'].apply(extract_year)
+        
+        # Parse dates for comparison
+        print("Parsing dates for comparison...")
+        df['Start_Date_Parsed'] = df['Start Date'].apply(parse_date)
+        df['End_Date_Parsed'] = df['End Date'].apply(parse_date)
+        
+        # Remove rows without valid years
+        df_with_years = df[df['Year'].notna()].copy()
+        print(f"Rows with valid years: {len(df_with_years)}")
+        
+        # Group by competition and year
+        print("Analyzing competitions by year...")
+        competition_year_groups = {}
+        
+        for _, row in df_with_years.iterrows():
+            competition = str(row['Competition']).strip()
+            year = row['Year']
+            source = str(row['Source']).strip()
+            start_date = row['Start_Date_Parsed']
+            end_date = row['End_Date_Parsed']
+            
+            key = (competition, year)
+            
+            if key not in competition_year_groups:
+                competition_year_groups[key] = []
+            
+            competition_year_groups[key].append({
+                'source': source,
+                'start_date': start_date,
+                'end_date': end_date,
+                'start_date_str': row['Start Date'],
+                'end_date_str': row['End Date'],
+                'row_data': row.to_dict()
+            })
+        
+        # Find competitions with multiple events in the same year
+        multiple_events = {}
+        
+        for (competition, year), events in competition_year_groups.items():
+            if len(events) > 1:
+                # Sort events by start date
+                events.sort(key=lambda x: x['start_date'] if x['start_date'] else datetime.min)
+                
+                # Group events that are the same (within tolerance)
+                event_groups = []
+                processed_events = set()
+                
+                for i, event1 in enumerate(events):
+                    if i in processed_events:
+                        continue
+                    
+                    current_group = [event1]
+                    processed_events.add(i)
+                    
+                    for j, event2 in enumerate(events[i+1:], i+1):
+                        if j in processed_events:
+                            continue
+                        
+                        # Check if these events are the same (within tolerance)
+                        if dates_overlap_significantly(
+                            event1['start_date'], event1['end_date'],
+                            event2['start_date'], event2['end_date'],
+                            event1['source'], event2['source']
+                        ):
+                            current_group.append(event2)
+                            processed_events.add(j)
+                    
+                    event_groups.append(current_group)
+                
+                # Only include if there are multiple different event groups
+                if len(event_groups) > 1:
+                    multiple_events[(competition, year)] = {
+                        'competition': competition,
+                        'year': year,
+                        'total_events': len(events),
+                        'different_event_groups': len(event_groups),
+                        'event_groups': event_groups,
+                        'sources': list(set(event['source'] for event in events))
+                    }
+        
+        print(f"Found {len(multiple_events)} competitions with multiple events in the same year")
+        
+        if not multiple_events:
+            print("✅ No competitions found with multiple events in the same year!")
+            return
+        
+        # Sort by year, then by competition name
+        sorted_multiple_events = dict(sorted(
+            multiple_events.items(),
+            key=lambda x: (x[1]['year'], x[1]['competition'])
+        ))
+        
+        # Display all results
+        for (competition, year), data in sorted_multiple_events.items():
+            print(f"\n{'='*80}")
+            print(f"Competition: {competition}")
+            print(f"Year: {year}")
+            print(f"Sources: {', '.join(data['sources'])}")
+            
+            for i, group in enumerate(data['event_groups'], 1):
+                print(f"\n  Event Group {i}:")
+                
+                # Get unique dates and their sources for this group
+                date_sources = {}
+                for event in group:
+                    if event['start_date_str']:
+                        date = event['start_date_str']
+                        source = event['source']
+                        if date not in date_sources:
+                            date_sources[date] = set()
+                        date_sources[date].add(source)
+                
+                # Sort dates and display with sources
+                sorted_dates = sorted(date_sources.keys())
+                for date in sorted_dates:
+                    sources = sorted(date_sources[date])
+                    print(f"    {date} (sources: {', '.join(sources)})")
+        
+        # Create summary statistics
+        # Count by year
+        year_counts = {}
+        for (_, year), data in sorted_multiple_events.items():
+            year_counts[year] = year_counts.get(year, 0) + 1
+        
+        summary_stats = {
+            'total_competitions': len(sorted_multiple_events),
+            'by_year': year_counts,
+            'by_source': {},
+            'competitions': {}
+        }
+        
+        # Count by source
+        all_sources = set()
+        for data in sorted_multiple_events.values():
+            all_sources.update(data['sources'])
+        
+        for source in sorted(all_sources):
+            count = sum(1 for data in sorted_multiple_events.values() if source in data['sources'])
+            summary_stats['by_source'][source] = count
+        
+        # Add competition details
+        for (competition, year), data in sorted_multiple_events.items():
+            summary_stats['competitions'][f"{competition}_{year}"] = {
+                'competition': competition,
+                'year': year,
+                'total_events': data['total_events'],
+                'different_event_groups': data['different_event_groups'],
+                'sources': data['sources'],
+                'event_groups': [
+                    {
+                        'group_size': len(group),
+                        'dates': [
+                            {
+                                'source': event['source'],
+                                'start_date': event['start_date_str'],
+                                'end_date': event['end_date_str']
+                            }
+                            for event in group
+                        ]
+                    }
+                    for group in data['event_groups']
+                ]
+            }
+        
+        # Save results to JSON file
+        print(f"\n💾 Saving results to {output_path}...")
+        with open(output_path, 'w', encoding='utf-8') as f:
+            json.dump(summary_stats, f, indent=2, ensure_ascii=False)
+        
+        print(f"✅ Results saved to: {output_path}")
+        
+
+        
+        # Show statistics about date differences
+        print(f"\n📊 Date Difference Analysis:")
+        all_date_differences = []
+        
+        for (competition, year), data in sorted_multiple_events.items():
+            for i, group1 in enumerate(data['event_groups']):
+                for j, group2 in enumerate(data['event_groups'][i+1:], i+1):
+                    # Compare dates between different groups
+                    for event1 in group1:
+                        for event2 in group2:
+                            if event1['start_date'] and event2['start_date']:
+                                diff = abs((event1['start_date'] - event2['start_date']).days)
+                                all_date_differences.append(diff)
+        
+        if all_date_differences:
+            all_date_differences.sort()
+            print(f"  Minimum date difference: {min(all_date_differences)} days")
+            print(f"  Maximum date difference: {max(all_date_differences)} days")
+            print(f"  Average date difference: {sum(all_date_differences) / len(all_date_differences):.1f} days")
+            print(f"  Median date difference: {all_date_differences[len(all_date_differences)//2]} days")
+        
+        return summary_stats
+        
+    except Exception as e:
+        print(f"Error analyzing multiple events per year: {e}")
+        import traceback
+        traceback.print_exc()
+        return None
+
 if __name__ == "__main__":
+    # Find multiple events per year
+    print("Finding multiple events per year...")
+    find_multiple_events_per_year()
+    
+    #print("\n" + "="*80)
+    
+    # Find missing rows in copy
+    #print("Finding rows that are in original CSV but not in copy CSV...")
+    #find_missing_rows_in_copy()
+    
+    #print("\n" + "="*80)
+    
     # Find specific competitor names
     #print("Searching for specific competitor names...")
     #find_specific_competitor_names(["14", "16"])
@@ -2691,8 +3396,14 @@ if __name__ == "__main__":
     #print("\n" + "="*80)
     
     # Analyze competitor names file
-    print("Analyzing competitor names file...")
-    analyze_competitor_names_file()
+    #print("Analyzing competitor names file...")
+    #analyze_competitor_names_file()
+    
+    #print("\n" + "="*80)
+    
+    # Analyze competition names file for duplicates
+    #print("Analyzing competition names file for duplicates...")
+    #analyze_competition_names_file_duplicates()
     
     #print("\n" + "="*80)
     
@@ -2772,5 +3483,9 @@ if __name__ == "__main__":
     # Analyze multi-version competitors
     #print("Analyzing multi-version competitors")
     #analyze_multi_version_competitors()
+    
+    # Find multiple events per year
+    #print("Finding multiple events per year...")
+    #find_multiple_events_per_year()
     
     pass  # Add this to fix the indentation error

@@ -340,6 +340,252 @@ def preview_name_cleaning():
     
     print(f"... and {len(competitor_data) - 20} more entries would be processed")
 
+def clean_competitor_name_keys():
+    """
+    Cleans the keys in competitor_names.json by:
+    - Converting to lowercase
+    - Replacing whitespace with underscores
+    - Removing . , ( ) ' ` characters
+    - Replacing hyphens with underscores
+    - Removing multiple consecutive underscores
+    
+    Only affects the keys, not the values in the arrays.
+    """
+    
+    # Path to the competitor names file
+    file_path = os.path.join('keys', 'competitor_names.json')
+    
+    # Read the current JSON file
+    with open(file_path, 'r', encoding='utf-8') as f:
+        competitor_data = json.load(f)
+    
+    # Create new dictionary with cleaned keys
+    cleaned_data = {}
+    changes_made = 0
+    
+    for current_key, name_array in competitor_data.items():
+        # Clean the key according to specifications
+        cleaned_key = clean_competitor_key(current_key)
+        
+        # If the cleaned key is different from the current key, note the change
+        if cleaned_key != current_key:
+            changes_made += 1
+            print(f"Cleaning key: '{current_key}' -> '{cleaned_key}'")
+        
+        # Use the cleaned key but keep original names in array
+        cleaned_data[cleaned_key] = name_array
+    
+    # Write the cleaned data back to the file
+    with open(file_path, 'w', encoding='utf-8') as f:
+        json.dump(cleaned_data, f, indent=2, ensure_ascii=False)
+    
+    print(f"\nProcess completed! {changes_made} keys were cleaned.")
+    print(f"Total entries: {len(cleaned_data)}")
+    
+    return cleaned_data
+
+def clean_competitor_key(key):
+    """
+    Cleans a single competitor key according to the specified rules:
+    - Convert to lowercase
+    - Replace whitespace with underscores
+    - Remove . , ( ) ' ` characters
+    - Replace hyphens with underscores
+    - Remove multiple consecutive underscores
+    """
+    # Convert to lowercase
+    cleaned = key.lower()
+    
+    # Replace hyphens with underscores
+    cleaned = cleaned.replace('-', '_')
+    
+    # Replace whitespace with underscores
+    cleaned = re.sub(r'\s+', '_', cleaned)
+    
+    # Remove specific punctuation characters: . , ( ) ' `
+    cleaned = re.sub(r'[.,()\'`]', '', cleaned)
+    
+    # Remove any multiple consecutive underscores
+    cleaned = re.sub(r'_+', '_', cleaned)
+    
+    # Remove leading/trailing underscores
+    cleaned = cleaned.strip('_')
+    
+    return cleaned
+
+def preview_competitor_key_cleaning():
+    """
+    Preview what the competitor key cleaning would look like without actually updating the file.
+    """
+    
+    file_path = os.path.join('keys', 'competitor_names.json')
+    
+    with open(file_path, 'r', encoding='utf-8') as f:
+        competitor_data = json.load(f)
+    
+    print("Preview of competitor key cleaning:")
+    print("-" * 80)
+    
+    changes = []
+    
+    for current_key, name_array in competitor_data.items():
+        cleaned_key = clean_competitor_key(current_key)
+        
+        if cleaned_key != current_key:
+            changes.append({
+                'old_key': current_key,
+                'new_key': cleaned_key,
+                'names': name_array[:3]  # Show first 3 names
+            })
+    
+    # Show first 20 changes
+    for i, change in enumerate(changes[:20]):
+        print(f"{i+1}. '{change['old_key']}' -> '{change['new_key']}'")
+        print(f"   Names: {change['names']}")
+        print()
+    
+    if len(changes) > 20:
+        print(f"... and {len(changes) - 20} more changes")
+    
+    print(f"Total keys that would be changed: {len(changes)}")
+    
+    return changes
+
+def clean_competition_name_keys():
+    """
+    Cleans the keys in competition_names.json by:
+    - Converting to lowercase
+    - Replacing whitespace with underscores
+    - Removing . , ( ) ' ` characters
+    - Replacing hyphens with underscores
+    - Removing multiple consecutive underscores
+    
+    Only affects the keys, not the values in the arrays.
+    """
+    
+    # Path to the competition names file
+    file_path = os.path.join('keys', 'competition_names.json')
+    
+    # Read the current JSON file
+    with open(file_path, 'r', encoding='utf-8') as f:
+        competition_data = json.load(f)
+    
+    # Create new dictionary with cleaned keys
+    cleaned_data = {}
+    changes_made = [0]  # Use a list to allow modification in nested function
+    
+    def clean_nested_keys(data):
+        """Recursively clean keys in nested dictionaries"""
+        if isinstance(data, dict):
+            cleaned_dict = {}
+            for key, value in data.items():
+                # Clean the key
+                cleaned_key = clean_competition_key(key)
+                
+                # If the cleaned key is different from the current key, note the change
+                if cleaned_key != key:
+                    changes_made[0] += 1
+                    print(f"Cleaning key: '{key}' -> '{cleaned_key}'")
+                
+                # Recursively clean nested dictionaries
+                if isinstance(value, dict):
+                    cleaned_dict[cleaned_key] = clean_nested_keys(value)
+                else:
+                    cleaned_dict[cleaned_key] = value
+            return cleaned_dict
+        else:
+            return data
+    
+    # Clean all keys recursively
+    cleaned_data = clean_nested_keys(competition_data)
+    
+    # Write the cleaned data back to the file
+    with open(file_path, 'w', encoding='utf-8') as f:
+        json.dump(cleaned_data, f, indent=2, ensure_ascii=False)
+    
+    print(f"\nProcess completed! {changes_made[0]} keys were cleaned.")
+    print(f"Total entries processed.")
+    
+    return cleaned_data
+
+def clean_competition_key(key):
+    """
+    Cleans a single competition key according to the specified rules:
+    - Convert to lowercase
+    - Replace whitespace with underscores
+    - Remove . , ( ) ' ` characters
+    - Replace hyphens with underscores
+    - Remove multiple consecutive underscores
+    """
+    # Convert to lowercase
+    cleaned = key.lower()
+    
+    # Replace hyphens with underscores
+    cleaned = cleaned.replace('-', '_')
+    
+    # Replace whitespace with underscores
+    cleaned = re.sub(r'\s+', '_', cleaned)
+    
+    # Remove specific punctuation characters: . , ( ) ' `
+    cleaned = re.sub(r'[.,()\'`]', '', cleaned)
+    
+    # Remove any multiple consecutive underscores
+    cleaned = re.sub(r'_+', '_', cleaned)
+    
+    # Remove leading/trailing underscores
+    cleaned = cleaned.strip('_')
+    
+    return cleaned
+
+def preview_competition_key_cleaning():
+    """
+    Preview what the competition key cleaning would look like without actually updating the file.
+    """
+    
+    file_path = os.path.join('keys', 'competition_names.json')
+    
+    with open(file_path, 'r', encoding='utf-8') as f:
+        competition_data = json.load(f)
+    
+    print("Preview of competition key cleaning:")
+    print("-" * 80)
+    
+    changes = []
+    
+    def preview_nested_keys(data, path=""):
+        """Recursively preview key changes in nested dictionaries"""
+        if isinstance(data, dict):
+            for key, value in data.items():
+                cleaned_key = clean_competition_key(key)
+                current_path = f"{path}.{key}" if path else key
+                
+                if cleaned_key != key:
+                    changes.append({
+                        'path': current_path,
+                        'old_key': key,
+                        'new_key': cleaned_key
+                    })
+                
+                # Recursively check nested dictionaries
+                if isinstance(value, dict):
+                    preview_nested_keys(value, current_path)
+    
+    # Preview all key changes
+    preview_nested_keys(competition_data)
+    
+    # Show first 20 changes
+    for i, change in enumerate(changes[:20]):
+        print(f"{i+1}. '{change['old_key']}' -> '{change['new_key']}'")
+        print(f"   Path: {change['path']}")
+        print()
+    
+    if len(changes) > 20:
+        print(f"... and {len(changes) - 20} more changes")
+    
+    print(f"Total keys that would be changed: {len(changes)}")
+    
+    return changes
+
 if __name__ == "__main__":
     print("Previewing changes...")
     # Uncomment the line below to preview changes first
@@ -354,6 +600,12 @@ if __name__ == "__main__":
     # Uncomment the line below to preview multiple underscore cleaning first
     # preview_multiple_underscore_cleaning()
     
+    # Uncomment the line below to preview competitor key cleaning first
+    # preview_competitor_key_cleaning()
+    
+    # Uncomment the line below to preview competition key cleaning first
+    # preview_competition_key_cleaning()
+    
     # Run the actual update
     # update_competitor_names_with_longest()
     
@@ -364,4 +616,10 @@ if __name__ == "__main__":
     #replace_hyphens_with_underscores()
     
     # Run multiple underscore cleaning
-    clean_multiple_underscores()
+    # clean_multiple_underscores()
+    
+    # Run competitor key cleaning (new function)
+    # clean_competitor_name_keys()
+    
+    # Run competition key cleaning (new function)
+    clean_competition_name_keys()

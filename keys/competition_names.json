@@ -1,262 +1,262 @@
 {
-  "United States":{
-    "Rest":{
-      "Ace Of Stage Pro": [
+  "united_states": {
+    "rest": {
+      "ace_of_stage_pro": [
         "Ace Of Stage Pro"
       ],
-      "Arctic Pro": [
+      "arctic_pro": [
         "Arctic Pro"
       ],
-      "Arkansas Pro": [
+      "arkansas_pro": [
         "Arkansas Pro",
         "Arkansas Pro Bikini"
       ],
-      "Atlantic City Pro": [
+      "atlantic_city_pro": [
         "Atlantic City Pro",
         "Atlantic City Pro/Am",
         "Europa Atlantic City Pro"
       ],
-      "Baltimore Pro": [
+      "baltimore_pro": [
         "Baltimore Pro",
         "Baltimore Classic",
         "Baltimore Grand Prix"
       ],
-      "Battle At The Falls": [
+      "battle_at_the_falls_pro": [
         "Battle At The Falls",
         "Battle At The Falls Pro"
       ],
-      "Battle Of The Bay": [
+      "battle_of_the_bay_pro": [
         "Battle Of The Bay",
         "Battle Of The Bay Pro"
       ],
-      "Body Be 1 Classic": [
+      "body_be_1_classic": [
         "Body Be 1 Classic",
         "Body Be 1 Classic Pro",
         "Body Be 1 Pro"
       ],
-      "Boston Pro": [
+      "boston_pro": [
         "Boston Pro"
       ],
-      "Carolina Excalibur Pro": [
+      "carolina_excalibur_pro": [
         "Carolina Excalibur Pro"
       ],
-      "Charlotte Cup Pro": [
+      "charlotte_cup_pro": [
         "Charlotte Cup Pro",
         "Charlotte Pro",
         "Europa Charlotte"
       ],
-      "Midwest Pro": [
+      "midwest_pro": [
         "Central Usa Pro",
         "Liquid Sun Rayz Pro"
       ],
-      "City Limits Pro": [
+      "city_limits_pro": [
         "City Limits Pro"
       ],
-      "Clash Of The Titanz": [
+      "clash_of_the_titans": [
         "Clash Of The Titanz",
         "Clash At The Titanz Pro Am",
         "Clash Of The Titans Pro Am",
         "Clash Of The Titanz Pro",
         "Clash Of The Titanz Pro Am"
       ],
-      "Colorado Pro Championships": [
+      "colorado_pro_championships": [
         "Colorado Pro Championships"
       ],
-      "Dc Pro": [
+      "dc_pro": [
         "Dc Pro"
       ],
-      "Detroit Pro": [
+      "detroit_pro": [
         "Detroit Pro"
       ],
-      "Dexter Jackson Pro": [
+      "dexter_jackson_pro": [
         "Dexter Jackson Pro",
         "Dexter Jackson Memphis Classic"
       ],
-      "Emerald Cup": [
+      "emerald_cup": [
         "Emerald Cup",
         "Emerald Cup Pro",
         "Emerald Pro"
       ],
-      "Europa Battle Of Champions": [
+      "europa_battle_of_champions": [
         "Europa Battle Of Champions",
         "Battle Of Champions"
       ],
-      "Grand Prix Denver": [
+      "grand_prix_denver": [
         "Grand Prix Denver"
       ],
-      "Grand Prix Louisiana": [
+      "grand_prix_louisiana": [
         "Grand Prix Louisiana"
       ],
-      "Grand Prix Massachusets": [
+      "grand_prix_massachusets": [
         "Grand Prix Massachusets"
       ],
-      "Grand Prix New England": [
+      "grand_prix_new_england": [
         "Grand Prix New England"
       ],
-      "Grand Prix Pennsylvania": [
+      "grand_prix_pennsylvania": [
         "Grand Prix Pennsylvania"
       ],
-      "Grand Prix Portland": [
+      "grand_prix_portland": [
         "Grand Prix Portland"
       ],
-      "Grand Prix Us Pro": [
+      "grand_prix_us_pro": [
         "Grand Prix Us Pro"
       ],
-      "Grand Prix Washington": [
+      "grand_prix_washington": [
         "Grand Prix Washington"
       ],
-      "Hawaii Pro": [
+      "hawaii_pro": [
         "Hawaii Pro"
       ],
-      "Indy Pro": [
+      "indy_pro": [
         "Indy Pro",
         "Indy Pro Supershow"
       ],
-      "Iowa Pro": [
+      "iowa_pro": [
         "Iowa Pro",
         "Davenport Pro",
         "Hydrolyze Ultra Pro"
       ],
-      "John Simmons Detroit": [
+      "john_simmons_detroit_pro": [
         "John Simmons Detroit",
         "John Simmons Detroit Pro",
         "Detroit Pro Championships"
       ],
-      "Kansas City Pro": [
+      "kansas_city_pro": [
         "Kansas City Pro",
         "Kc Pro"
       ],
-      "Karina Nascimento Pro": [
+      "karina_nascimento_pro": [
         "Karina Nascimento Pro"
       ],
-      "Kentucky Pro": [
+      "kentucky_muscle": [
         "Kentucky Pro",
         "Kentucky Muscle Pro",
         "Kentucky Pro Muscle"
       ],
-      "Legions Sports Fest": [
+      "legions_sports_fest": [
         "Legions Sports Fest",
         "Legions Sports Fest Pro",
         "Reno Legion Pro",
         "Legion Pro",
         "Legion Sports Fest Pro"
       ],
-      "Lenda Murray Norfolk Pro": [
+      "lenda_murray_norfolk_pro": [
         "Lenda Murray Norfolk Pro",
         "Lenda Murray Pro",
         "18 Ifbb Lenda Murray Pro"
       ],
-      "Memphis Pro": [
+      "memphis_pro": [
         "Memphis Pro"
       ],
-      "Mid Usa Pro": [
+      "mid_usa_pro": [
         "Mid Usa Pro",
         "Midusa Pro"
       ],
-      "Mile High Pro": [
+      "mile_high_pro": [
         "Mile High Pro",
         "Mile High"
       ],
-      "Milwaukee Pro": [
+      "milwaukee_pro": [
         "Milwaukee Pro"
       ],
-      "Minneapolis Pro": [
+      "minneapolis_pro": [
         "Minneapolis Pro"
       ],
-      "Mr America": [
+      "mr_america": [
         "Mr America"
       ],
-      "Mr Atlantic Coast": [
+      "mr_atlantic_coast": [
         "Mr Atlantic Coast"
       ],
-      "Mr East Coast": [
+      "mr_east_coast": [
         "Mr East Coast"
       ],
-      "Mr East Coast Pro": [
+      "mr_east_coast_pro": [
         "Mr East Coast Pro"
       ],
-      "East Coast Pro": [
+      "east_coast_pro": [
         "East Coast Pro"
       ],
-      "Mr Eastern America": [
+      "mr_eastern_america": [
         "Mr Eastern America"
       ],
-      "Mr Eastern North America": [
+      "mr_eastern_north_america": [
         "Mr Eastern North America"
       ],
-      "Mr Eastern Usa": [
+      "mr_eastern_usa": [
         "Mr Eastern Usa"
       ],
-      "Mr International": [
+      "mr_international": [
         "Mr International"
       ],
-      "Mr New Jersey": [
+      "mr_new_jersey": [
         "Mr New Jersey"
       ],
-      "Mr New York City": [
+      "mr_new_york_city": [
         "Mr New York City",
         "Mr New York State"
       ],
-      "Mr Northeastern States": [
+      "mr_northeastern_states": [
         "Mr Northeastern States"
       ],
-      "Mr Usa": [
+      "mr_usa": [
         "Mr Usa"
       ],
-      "Mr Western America": [
+      "mr_western_america": [
         "Mr Western America"
       ],
-      "Mr World": [
+      "mr_world": [
         "Mr World"
       ],
-      "Ms Eastern America": [
+      "ms_eastern_america": [
         "Ms Eastern America"
       ],
-      "Ms Eastern Usa": [
+      "ms_eastern_usa": [
         "Ms Eastern Usa"
       ],
-      "Muscle Heat Pro": [
+      "muscle_heat_pro": [
         "Muscle Heat Pro",
         "Complete Nutrition Muscle Heat",
         "North Carolina Muscle Heat Pro"
       ],
-      "Muscle Mayhem Kansas Pro": [
+      "muscle_mayhem_kansas_pro": [
         "Muscle Mayhem Kansas Pro",
         "Muscle Mayhem Pro",
         "Muscle Mayhem"
       ],
-      "Nashville Fit Show": [
+      "nashville_fit_show": [
         "Nashville Fit Show",
         "Nashville Fit Show Pro",
         "Nashville Fitshow"
       ],
-      "Nashville Night Of Champions": [
+      "nashville_night_of_champions": [
         "Nashville Night Of Champions",
         "Nashville Night Of Champions Pro",
         "Nashville Night Of Champions Pro ",
         "Chattanooga Night Of Champions",
         "Chattanooga Night Of Champions Pro"
       ],
-      "Nebraska Pro": [
+      "nebraska_pro": [
         "Nebraska Pro"
       ],
-      "Night Of Champions": [
+      "night_of_champions": [
         "Night Of Champions"
       ],
-      "North American Pro": [
+      "north_american_pro": [
         "North American Pro"
       ],
-      "Omaha Pro": [
+      "omaha_pro": [
         "Omaha Pro",
         "Omaha Pro Figure"
       ],
-      "Optimum Classic": [
+      "optimum_classic": [
         "Optimum Classic",
         "Optimum Classic Pro",
         "Optimum Pro",
         "Optimun Classic Pro"
       ],
-      "Pittsburgh Pro": [
+      "pittsburgh_pro": [
         "Pittsburgh Pro",
         "Pittsburgh",
         "Pittsburgh Pro Figure",
@@ -264,81 +264,81 @@
         "Pittsburgh Pro Figure Bikini Championships",
         "Pittsburgh Power & Fitness Festival"
       ],
-      "Portland Classic": [
+      "portland_classic": [
         "Portland Classic"
       ],
-      "Powerhouse Classic": [
+      "powerhouse_classic": [
         "Powerhouse Classic",
         "Powerhouse Classic Pro",
         "Powerhouse Pro",
         "Powerhouse Pro (Detroit)"
       ],
-      "Sacramento Pro": [
+      "sacramento_pro": [
         "Sacramento Pro",
         "Sacramento",
         "Sacramento Women'S Pro"
       ],
-      "Sasquatch Pro": [
+      "sasquatch_pro": [
         "Sasquatch Pro",
         "Sasquatch Pro Am"
       ],
-      "Shawn Ray Hawaiian Classic Pro": [
+      "shawn_ray_hawaiian_classic": [
         "Shawn Ray Hawaiian Classic Pro",
         "Shawn Ray Hawaiian",
         "Shawn Ray Hawaiin Classic Pro",
         "Shawn Rays Hawaiian Classic Pro Am",
         "Shawn Ray'S Hawaiian Classic Pro/Am"
       ],
-      "South Carolina Grand Prix Pro": [
+      "south_carolina_grand_prix": [
         "South Carolina Grand Prix Pro",
         "South Carolina Pro",
         "South Carolina Grand Prix"
       ],
-      "Southern Muscle Showdown": [
+      "southern_muscle_showdown": [
         "Southern Muscle Showdown",
         "Southern Muscle Showdown Pro"
       ],
-      "St. Louis Pro": [
+      "st_louis_pro": [
         "St. Louis Pro",
         "St Louis Pro"
       ],
-      "St. Louis Pro Bikini": [
+      "st_louis_bikini_pro": [
         "St. Louis Pro Bikini",
         "St Louis Bikini Pro",
         "St Louis Pro Bikini"
       ],
-      "Tanji Johnson Classic": [
+      "tanji_johnson_classic": [
         "Tanji Johnson Classic",
         "Tanji Johnson Classic Pro",
         "Tanji Johnson Pro"
       ],
-      "Tri City Classic": [
+      "tri_city_classic": [
         "Tri City Classic",
         "Tricity Classic Pro",
         "Tricity Pro",
         "Tri-City Classic Pro"
       ],
-      "Tupelo Pro": [
+      "tupelo_pro": [
         "Tupelo Pro",
         "Tupelo Pro Championships",
         "Tupelo Masters Pro"
       ],
-      "Universe": [
+      "universe": [
         "Universe"
       ],
-      "Universe Pro": [
+      "universe_pro": [
         "Universe Pro"
       ],
-      "Upper Midwest Pro": [
+      "upper_midwest_pro": [
         "Upper Midwest Pro"
       ],
-      "Usa Vs The World": [
+      "usa_vs_the_world": [
         "Usa Vs The World"
       ],
-      "Usa World Qualifier": [
+      "usa_world_qualifier": [
         "Usa World Qualifier"
       ],
-      "Wings Of Strength Chicago": [
+      "chicago_pro": [
         "Wings Of Strength Chicago",
         "Wings Of Strength Chicago Pro",
         "Wings Of Strength",
@@ -349,174 +349,176 @@
         "Chicago Pro Championships",
         "Wings Of Strength Chicago Proam Extravaganza"
       ],
-      "World Classic Pro": [
+      "world_classic_pro": [
         "World Classic Pro",
         "World Classic Pro Bikini",
         "World Classic Men'S Physique Pro",
         "World Classic Bikini Pro"
       ],
-      "World Grand Prix": [
+      "world_grand_prix": [
         "World Grand Prix"
       ],
-      "World Klash Pro": [
+      "world_klash_pro": [
         "World Klash Pro",
         "World Klash Championships",
-        "World Klash",
+        "World Klash"
+      ],
+      "world_klash_wellness_pro": [
         "World Klash Wellness Pro"
       ],
-      "World Pro Championships": [
+      "world_pro_championships": [
         "World Pro Championships"
       ],
-      "World Championships": [
+      "world_championships": [
         "World Championships"
       ],
-      "Warrior Classic Pro": [
+      "warrior_classic_pro": [
         "Warrior Classic Pro"
       ],
-      "Mel Chancey Pro": [
+      "mel_chancey_pro": [
         "Mel Chancey Pro",
         "Mel Chancey Port Charlotte Classic"
       ],
-      "Palmetto Classic Pro": [
+      "palmetto_classic_pro": [
         "Palmetto Classic Pro"
       ],
-      "Lenda Murray Savannah Pro": [
+      "lenda_murray_savannah_pro": [
         "Lenda Murray Savannah Pro",
         "Savannah Pro"
       ],
-      "South Beach Pro Invitational": [
+      "south_beach_pro_invitational": [
         "South Beach Pro Invitational"
       ],
-      "Western Hemisphere": [
+      "western_hemisphere": [
         "Western Hemisphere"
       ],
-      "Best In The World": [
+      "best_in_the_world": [
         "Best In The World"
       ],
-      "Champions Classic Pro": [
+      "champions_classic_pro": [
         "Champions Classic Pro"
       ],
-      "Champions Of Power And Grace": [
+      "champions_of_power_and_grace": [
         "Champions Of Power And Grace"
       ],
-      "Grand Prix World Cup": [
+      "grand_prix_world_cup": [
         "Grand Prix World Cup"
       ],
-      "Keystone Pro Classic": [
+      "keystone_pro_classic": [
         "Keystone Pro Classic"
       ],
-      "Maximum Pro Invitational": [
+      "maximum_pro_invitational": [
         "Maximum Pro Invitational"
       ],
-      "Motor City Pro": [
+      "motor_city_pro": [
         "Motor City Pro"
       ],
-      "Musclefest Grand Prix": [
+      "musclefest_grand_prix": [
         "Musclefest Grand Prix"
       ],
-      "Professional World Cup": [
+      "professional_world_cup": [
         "Professional World Cup"
       ],
-      "Santa Susanna Pro": [
+      "santa_susanna_pro": [
         "Santa Susanna Pro"
       ],
-      "Show Of Strength Pro Championship": [
+      "show_of_strength_pro_championship": [
         "Show Of Strength Pro Championship",
         "Show Of Strength Pro Championships"
       ]
     },
-    "Texas":{
-      "Adela Garcia Classic": [
+    "texas": {
+      "adela_garcia_classic": [
         "Adela Garcia Classic Pro",
         "Adela Garcia Pro",
         "Adela Garcia Pro Am"
       ],
-      "Dallas Pro": [
+      "dallas_pro": [
         "Dallas Pro",
         "Dallas",
         "Dallas Pro Wheelchair Pro"
       ],
-      "Europa Super Show": [
+      "europa_dallas_pro": [
         "Europa Super Show",
         "Europa Supershow",
         "Europa Supershow Pro",
         "Europa Dallas",
         "Europa Dallas Pro"
       ],
-      "Houston Pro": [
+      "houston_pro": [
         "Houston Pro",
         "Houston Pro Championships"
       ],
-      "Houston Tournament Of Champions": [
+      "houston_tournament_of_champions": [
         "Houston Tournament Of Champions",
         "Houston Tournament Of Champions Pro"
       ],
-      "Phil Heath Classic Pro": [
+      "phil_heath_classic": [
         "Phil Heath Classic Pro",
         "Phil Heath Classic"
       ],
-      "Rgv Classic Pro": [
+      "rgv_classic": [
         "Rgv Classic Pro",
         "Rgv Pro",
         "Rgv Classic"
       ],
-      "San Antonio Classic": [
+      "san_antonio_classic": [
         "San Antonio Classic",
         "San Antonio Bikini Pro",
         "San Antonio Pro 2"
       ],
-      "San Antonio Pro": [
+      "san_antonio_pro": [
         "San Antonio Pro",
         "Wings Of Strength Ifbb Pro League Yamamoto Nutrition San Antonio Pro"
       ],
-      "Texas Pro": [
+      "texas_pro": [
         "Texas Pro",
         "Texas Pro Championships",
         "Wings Of Strength Texas Pro",
         "Wings Of Strength Pro"
       ],
-      "Texas Shredderbuilt Pro": [
+      "texas_shredderbuilt_pro": [
         "Texas Shredderbuilt Pro"
       ],
-      "Texas State Pro": [
+      "texas_state_pro": [
         "Texas State Pro",
         "Texas State Pro/Am",
         "Texas State Pro/Am Pro"
       ],
-      "Southeast Texas Pro": [
+      "southeast_texas_pro": [
         "Southeast Texas Pro"
       ],
-      "Republic Of Texas Pro": [
+      "republic_of_texas_pro": [
         "Republic Of Texas Pro"
       ],
-      "Heart Of Texas Pro": [
+      "heart_of_texas_pro": [
         "Heart Of Texas Pro",
         "Heart Of Texas"
       ],
-      "Battle Of Texas": [
+      "battle_of_texas": [
         "Battle Of Texas",
         "Battle Of Texas Pro"
       ],
-      "Wheelchair Championships": [
+      "wheelchair_championships": [
         "Wheelchair Championships",
         "Wheelchair"
       ]
     },
-    "Atlanta":{
-      "Atlanta All States Pro": [
+    "atlanta": {
+      "atlanta_all_states_pro": [
         "Atlanta All States Pro"
       ],
-      "Atlantic Usa Pro": [
+      "atlantic_usa_pro": [
         "Atlantic Usa Pro",
         "Atlantic Usa Pro Championships"
       ],
-      "Coastal Usa Pro": [
+      "coastal_usa_pro": [
         "Coastal Usa Pro"
       ],
-      "Eastern Seaboard Pro": [
+      "eastern_seaboard_pro": [
         "Eastern Seaboard Pro"
       ],
-      "Lenda Murray Atlanta Pro": [
+      "atlanta_pro": [
         "Lenda Murray Atlanta Pro",
         "Lenda Murray Atlanta Pro Supershow",
         "Atlanta Pro",
@@ -524,98 +526,98 @@
         "Lenda Murray Atl Pro Supershow"
       ]
     },
-    "Florida": {
-      "Atlantic Coast Pro": [
+    "florida": {
+      "atlantic_coast_pro": [
         "Atlantic Coast Pro"
       ],
-      "Battle Of The Bodies": [
+      "battle_of_the_bodies": [
         "Battle Of The Bodies",
         "Janet Layugs Battle Of The Bodies",
         "Janet Layugs Battle Of The Bodies Pro",
         "Janet Layug'S Battle Of The Bodies"
       ],
-      "Battle On The Beach Pro": [
+      "battle_on_the_beach_pro": [
         "Battle On The Beach Pro",
         "Battle At The Beach Pro",
         "Battle At The Beach Pro Bikini",
         "Battle On The Beach"
       ],
-      "Dayana Cadeau Pro": [
+      "dayana_cadeau_pro": [
         "Dayana Cadeau Pro",
         "Dayana Cadeau Classic"
       ],
-      "Daytona Pro": [
+      "daytona_pro": [
         "Daytona Pro",
         "Daytona Pro Am Championships",
         "Daytona Pro/Am Championships"
       ],
-      "Florida Pro": [
+      "florida_pro": [
         "Florida Pro"
       ],
-      "Florida Pro Invitational": [
+      "florida_pro_invitational": [
         "Florida Pro Invitational"
       ],
-      "Florida Pro Xtreme Challenge": [
+      "florida_pro_xtreme_challenge": [
         "Florida Pro Xtreme Challenge"
       ],
-      "Port Charlotte Florida Pro": [
+      "port_charlotte_florida_pro": [
         "Port Charlotte Florida Pro"
       ],
-      "Florida Pro World": [
+      "florida_pro_world": [
         "Florida Pro World"
       ],
-      "South Florida Pro": [
+      "south_florida_pro": [
         "South Florida Pro"
       ],
-      "Florida Grand Prix": [
+      "florida_grand_prix": [
         "Florida Grand Prix",
         "Florida Grand Prix Pro",
         "Florida Grand Prix Masters Pro"
       ],
-      "Florida Victory Pro": [
+      "florida_victory_pro": [
         "Florida Victory Pro"
       ],
-      "Fort Lauderdale Pro": [
+      "fort_lauderdale_pro": [
         "Fort Lauderdale Pro",
         "Fort Lauderdale Cup Pro",
         "Fort Lauderdale Cup"
       ],
-      "Jacksonville Pro": [
+      "jacksonville_pro": [
         "Jacksonville Pro"
       ],
-      "Klash Series All South Pro": [
+      "klash_series_all_south_pro": [
         "Klash Series All South Pro",
         "Klash Series All South Championships",
         "All South Pro Championships"
       ],
-      "Klash Series Championships": [
+      "klash_series_championships": [
         "Klash Series Championships",
         "Klash Series Championships Pro",
         "Klash Series Pro"
       ],
-      "Klash Series Grl Pwr Pro": [
+      "klash_series_grl_pwr_pro": [
         "Klash Series Grl Pwr Pro",
         "Klash Series Grl Pwr Championships",
         "Grl Pwr Pro"
       ],
-      "Klash Series Southern Usa Pro": [
+      "klash_series_southern_usa_pro": [
         "Klash Series Southern Usa Pro",
         "Klash Series Southern Usa Championships Pro"
       ],
-      "Miami Muscle Beach": [
+      "miami_muscle_beach_pro": [
         "Miami Muscle Beach",
         "Miami Muscle Beach Pro"
       ],
-      "Miami Pro": [
+      "miami_pro": [
         "Miami Pro"
       ],
-      "Grand Prix Miami": [
+      "grand_prix_miami": [
         "Grand Prix Miami"
       ],
-      "Naples Pro": [
+      "naples_pro": [
         "Naples Pro"
       ],
-      "Orlando Show Of Champions": [
+      "orlando_show_of_champions": [
         "Orlando Show Of Champions",
         "Europa Show Of Champions",
         "Europa Show Of Champions Pro",
@@ -625,25 +627,25 @@
         "Orlando Pro Am Championships",
         "Orlando Pro"
       ],
-      "Palm Beach Pro": [
+      "palm_beach_pro": [
         "Palm Beach Pro"
       ],
-      "Prestige Crystal Cup": [
+      "prestige_crystal_cup": [
         "Prestige Crystal Cup",
         "Prestige Crystal Cup Pro"
       ],
-      "St Pete Pro": [
+      "st_pete_pro": [
         "St Pete Pro",
         "St. Pete Pro"
       ],
-      "Tampa Hurricane Pro": [
+      "tampa_hurricane_pro": [
         "Tampa Hurricane Pro",
         "Hurricane Pro",
         "Wos Hot Spot Tanning Hurricane Pro",
         "Wos Hot Spot Tanning Hurricane",
         "Hot Spot Tanning Hurricane Pro"
       ],
-      "Wings Of Strength Pbw Tampa Pro": [
+      "tampa_pro": [
         "Wings Of Strength Pbw Tampa Pro",
         "Wings Of Strength Pbw Tampa",
         "Wos 2018 Ifbb Muscle Vodka Tampa Pro",
@@ -660,57 +662,57 @@
         "Bodybuilding Weekly",
         "Bodybuilding Weekly Championships"
       ],
-      "Valenti Gold Cup Pro": [
+      "valenti_gold_cup": [
         "Valenti Gold Cup Pro",
         "Valenti Gold Cup"
       ],
-      "Precision Fit Pro": [
+      "precision_fit_pro": [
         "Precision Fit Pro"
       ]
     },
-    "Nevada": {
-      "Atlantis Pro": [
+    "nevada": {
+      "atlantis_pro": [
         "Atlantis Pro"
       ],
-      "Battle In The Desert": [
+      "battle_in_the_desert": [
         "Battle In The Desert",
         "Battle In The Desert Pro",
         "Las Vegas Battle In The Desert Pro"
       ],
-      "Steve Karr Las Vegas Classic": [
+      "steve_karr_las_vegas_classic": [
         "Steve Karr Las Vegas Classic",
         "Steve Karr Las Vegas Classic Pro",
         "Steve Karr  Las Vegas Classic"
       ],
-      "Grand Prix Las Vegas": [
+      "grand_prix_las_vegas": [
         "Grand Prix Las Vegas"
       ],
-      "Legends Classic Pro": [
+      "legends_classic_pro": [
         "Legends Classic Pro",
         "Legends Classic",
         "Legends Pro",
         "Musclecontest International"
       ],
-      "Nevada State Pro": [
+      "nevada_state_pro": [
         "Nevada State Pro"
       ],
-      "Patriots Challenge": [
+      "patriots_challenge": [
         "Patriots Challenge",
         "Patriots Challenge Pro",
         "Patriots Pro"
       ],
-      "Sampson Showdown Pro": [
+      "sampson_showdown_pro": [
         "Sampson Showdown Pro"
       ],
-      "Sin City Showdown": [
+      "sin_city_showdown": [
         "Sin City Showdown",
         "Sin City Pro",
         "Sin City Showdown Pro"
       ],
-      "Southwest Muscle Classic Pro": [
+      "southwest_muscle_classic": [
         "Southwest Muscle Classic Pro"
       ],
-      "Tahoe Pro": [
+      "tahoe_pro": [
         "Tahoe Pro",
         "Tahoe",
         "Tahoe Show",
@@ -718,34 +720,34 @@
         "Tahoe Pro Show"
       ]
     },
-    "Oklahoma":{
-      "Battle Of The Bodies Pro Oklahoma": [
+    "oklahoma": {
+      "oklahoma_battle_of_the_bodies_pro": [
         "Battle Of The Bodies Pro"
       ],
-      "Oklahoma Pro": [
+      "oklahoma_pro": [
         "Oklahoma Pro"
       ],
-      "Oklahoma Showdown Of Champions Pro": [
+      "oklahoma_showdown_of_champions": [
         "Oklahoma Showdown Of Champions Pro"
       ],
-      "Oklahoma Grand Prix Pro": [
+      "oklahoma_grand_prix": [
         "Oklahoma Grand Prix Pro"
       ]
     },
-    "California":{
-      "Border States Classic": [
+    "california": {
+      "border_states_classic": [
         "Border States Classic Pro",
         "Border States Pro",
         "Border States",
         "Border States Xlv Pro",
         "Border States Bikini"
       ],
-      "California Night Of Champions": [
+      "california_night_of_champions": [
         "California Night Of Champions",
         "California Night Of Champions Pro",
         "Jon Lindsay'S California Night Of Champions"
       ],
-      "California Pro": [
+      "california_pro": [
         "California Pro",
         "California State Pro",
         "California State Championships",
@@ -753,19 +755,19 @@
         "California State Pro Figure",
         "California Pro Figure"
       ],
-      "Ferrigno Legacy Pro": [
+      "ferrigno_legacy_pro": [
         "Ferrigno Legacy Pro"
       ],
-      "Flex Pro (Santa Monica)": [
+      "flex_pro_santa_monica": [
         "Flex Pro (Santa Monica)"
       ],
-      "Golden State Pro": [
+      "golden_state_pro": [
         "Golden State Pro",
         "Golden State Pro Championships",
         "Golden State Championships",
         "Golden State Grand Prix"
       ],
-      "Governors Cup": [
+      "governors_cup": [
         "Governors Cup",
         "Governors Cup Pro",
         "Governor'S Cup Pro",
@@ -774,14 +776,14 @@
         "Fbb Governor'S Cup Pro",
         "Gov Cup"
       ],
-      "Grand Prix California": [
+      "grand_prix_california": [
         "Grand Prix California"
       ],
-      "Grand Prix Pro": [
+      "grand_prix_pro": [
         "Grand Prix Pro",
         "Grand Prix Pro Championships"
       ],
-      "Iron Games Pro": [
+      "iron_games_pro": [
         "Iron Games Pro",
         "Iron Games Championships Pro",
         "Iron Games Pro Bikini Championships",
@@ -789,11 +791,11 @@
         "Iron Games",
         "Iron Games Championships"
       ],
-      "Iron Man Pro": [
+      "iron_man_pro": [
         "Iron Man Pro",
         "Ironman Pro Invitational"
       ],
-      "Los Angeles Grand Prix": [
+      "los_angeles_grand_prix": [
         "Los Angeles Grand Prix",
         "Pro Grand Prix (Los Angeles)",
         "Gran Prix Los Angeles",
@@ -801,36 +803,36 @@
         "Los Angeles Grand Prix Pro",
         "Grand Prix"
       ],
-      "Los Angeles Pro": [
+      "los_angeles_pro": [
         "Los Angeles Pro",
         "Los Angeles Pro Championships",
         "Los Angeles Grand Prix Pro Bikini",
         "Los Angeles Championships"
       ],
-      "Mr California": [
+      "mr_california": [
         "Mr California"
       ],
-      "Musclecontest Fitworld Pro": [
+      "musclecontest_fitworld_pro": [
         "Musclecontest Fitworld Pro",
         "Fitworld Pro",
         "Fit World Pro"
       ],
-      "Musclecontest Pro": [
+      "musclecontest_pro": [
         "Musclecontest Pro",
         "Muscle Contest Pro",
         "Musclecontest Pro Bikini"
       ],
-      "Northern California Pro": [
+      "northern_california_pro": [
         "Northern California Pro"
       ],
-      "Orange County Pro": [
+      "orange_county_pro": [
         "Orange County Pro",
         "Orange County Muscle Classic Pro",
         "Orange County Muscle",
         "Orange County Muscle Classic",
         "Orange County Muscle Pro"
       ],
-      "Pacific Usa Pro": [
+      "pacific_usa_pro": [
         "Pacific Usa Pro",
         "Pacific Usa Xxv Pro",
         "Pacific Usa Xxviii Pro",
@@ -838,78 +840,78 @@
         "Pacific Usa Pro Bikini",
         "Pacific Usa Xxxi Pro"
       ],
-      "San Diego Championships": [
+      "san_diego_spartan_x_pro": [
         "San Diego Championships",
         "San Diego Pro",
         "San Diego Spartan X Pro",
         "Spartan",
         "Spartan X Pro"
       ],
-      "San Diego Ultimate Warriors Pro": [
+      "san_diego_ultimate_warriors_pro": [
         "San Diego Ultimate Warriors Pro",
         "Ultimate Warriors Pro"
       ],
-      "San Francisco Pro": [
+      "san_francisco_pro": [
         "San Francisco Pro",
         "San Francisco Championships"
       ],
-      "San Jose Pro": [
+      "san_jose_pro": [
         "San Jose Pro Invitational",
         "San Jose Pro",
         "San Jose Championships"
       ],
-      "Southern California Pro": [
+      "southern_california_pro": [
         "Southern California Pro",
         "Southern California Championships",
         "Southern California Pro Bikini"
       ],
-      "Santa Cruz Pro Championships": [
+      "santa_cruz_pro_championships": [
         "Santa Cruz Pro Championships"
       ],
-      "Titans Grand Prix": [
+      "titans_grand_prix": [
         "Titans Grand Prix",
         "Titan'S Grand Prix",
         "Titans Grand Prix Pro",
         "Jon Lindsay'S Titans Grand Prix",
         "Jon Lindsay'S Titans Grand Prix Pro"
       ],
-      "Tournament Of Champions": [
+      "tournament_of_champions": [
         "Tournament Of Champions",
         "Tournament Of Champions Pro",
         "Torunament Of Champions Pro",
         "Musclecontest Tournament Of Champions"
       ],
-      "Western Cup Pro": [
+      "western_cup_pro": [
         "Western Cup Pro"
       ],
-      "Zhanna Rotar Pro": [
+      "zhanna_rotar_pro": [
         "Zhanna Rotar Pro",
         "Zhanna Rotar Classic Pro"
       ],
-      "Southwest Pro Cup": [
+      "southwest_usa_pro_cup": [
         "Southwest Pro Cup",
         "Southwest Usa Pro Cup"
       ]
     },
-    "Arizona":{
-      "Dennis James Classic Pro": [
+    "arizona": {
+      "dennis_james_classic_arizona": [
         "Dennis James Classic Pro",
         "Dennis James Pro",
         "Dennis James Classic"
       ],
-      "Desert Muscle Classic": [
+      "desert_muscle_classic": [
         "Desert Muscle Classic"
       ],
-      "Felicia Romero Pro": [
+      "felicia_romero_pro": [
         "Felicia Romero Pro",
         "Felicia Romera Pro",
         "Felicia Romero Classic"
       ],
-      "Triple O Dynasty": [
+      "triple_o_dynasty": [
         "Triple O Dynasty",
         "Triple O Dynasty Pro"
       ],
-      "Wings Of Strength Arizona Pro": [
+      "arizona_pro": [
         "Wings Of Strength Arizona Pro",
         "Wos Arizona Pro",
         "Rising Phoenix Arizona Pro",
@@ -922,237 +924,236 @@
         "Rising Phoenix Pro",
         "Rising Phoenix"
       ],
-      "Europa Phoenix Pro": [
+      "europa_phoenix_pro": [
         "Europa Phoenix Pro",
         "Europa Phoenix",
         "Phoenix Pro"
       ]
     },
-    "New Orleans":{
-      "Greater Gulf Pro": [
+    "new_orleans": {
+      "greater_gulf_pro": [
         "Greater Gulf Pro",
         "Greater Gulf States",
         "Greater Gulf States Pro"
       ]
     },
-    "New York":{
-      "New York Pro": [
+    "new_york": {
+      "new_york_pro": [
         "New York Pro",
         "New York Pro Championships"
       ],
-      "New York Pro Fitness": [
+      "new_york_pro_fitness": [
         "New York Pro Fitness"
       ],
-      "Jan Tana Pro Classic": [
+      "jan_tana_pro_classic": [
         "Jan Tana Pro Classic"
       ]
     },
-    "Utah":{
-      "Salt Lake City Pro": [
+    "utah": {
+      "salt_lake_city_pro": [
         "Salt Lake City Pro",
         "Salt City Showdown"
       ],
-      "Wasatch Warrior Pro": [
+      "wasatch_warrior_pro": [
         "Wasatch Warrior Pro",
         "Wasatch Warrior",
         "Wasatch Warrior Pro Figure"
       ],
-      "Utah Cup Pro": [
+      "utah_cup_pro": [
         "Utah Cup Pro"
       ]
     }
   },
-  "Asia":{
-    "South Korea":{
-      "Agp Korea Pro Show": [
+  "asia": {
+    "south_korea": {
+      "agp_korea_pro_show": [
         "Agp Korea Pro Show"
       ],
-      "Agp Bikini Pro": [
+      "agp_bikini_pro": [
         "Agp Bikini Pro",
         "Korea Agp Pro",
         "Asia Grand Prix Bikini Pro"
       ],
-      "Agp South Korea Pro":[
+      "agp_south_korea_pro": [
         "Agp South Korea Pro"
       ],
-      "Agp Classic Physique Pro": [
+      "agp_classic_physique_pro": [
         "Agp Classic Physique Pro",
         "Agp South Korea Classic Physique Pro",
         "Korea Agp Pro 2",
         "Asia Grand Prix Classic Physique Pro"
       ],
-      "Agp Pro All Stars": [
+      "agp_pro_all_stars": [
         "Agp Pro All Stars",
         "Agp Pro Show"
       ],
-      "Agp South Korea Mens Physique Pro": [
+      "agp_mens_physique_pro": [
         "Agp South Korea Mens Physique Pro",
         "Korea Mens Physique Pro",
         "Agp Pro",
         "Korea Agp Pro 3"
       ],
-      "Alex Classic": [
+      "alex_classic": [
         "Alex Classic"
       ],
-      "Asia Grand Prix": [
+      "asia_grand_prix": [
         "Asia Grand Prix",
         "Asia Grand Prix Pro",
         "Asian Grand Prix Pro",
         "Asia Grand Prix Mens Physique Pro"
       ],
-      "Kim Junho Classic": [
+      "kim_junho_classic": [
         "Kim Junho Classic",
         "Kim Junho Classic Pro",
         "Kim Junho Korea Pro"
       ],
-      "Korea Figure Pro": [
+      "korea_figure_pro": [
         "Korea Figure Pro"
       ],
-      "Korea Grand Prix": [
+      "korea_grand_prix": [
         "Korean Grand Prix",
         "Korean Classic Pro",
         "Korea Pro",
         "Korea Grand Prix",
         "Korea Classic Pro"
       ],
-      "Monsterzym Pro": [
+      "monsterzym_pro": [
         "Monsterzym Pro",
-        "World Of Monsterzym Pro",
         "World Of Monsterzym Open Pro",
         "World Of Monsterzym 8 Korea Pro",
         "World Of Monsterzym Pro 2",
         "World Of Monsterzym Korea Pro"
       ],
-      "World Of Monsterzym Pro": [
+      "world_of_monsterzym_pro": [
         "World Of Monsterzym Pro",
         "World Of Monsterzm Pro"
       ],
-      "South Korea Pro": [
+      "south_korea_pro": [
         "South Korea Pro"
       ]
     },
-    "China":{
-      "China Dms Pro Changsha": [
+    "china": {
+      "china_dms_pro_changsha": [
         "China Dms Pro Changsha",
         "Dragon Physique China Dms Pro 2"
       ],
-      "China Dms Pro Ningjin": [
+      "china_dms_pro_ningjin": [
         "China Dms Pro Ningjin",
         "Dragon Physique China Dms Pro"
       ],
-      "China Dms Pro Tianjin": [
+      "china_dms_pro_tianjin": [
         "China Dms Pro Tianjin",
         "Drogran Physique China Dms Pro"
       ],
-      "China Pro": [
+      "china_pro": [
         "China Pro",
         "China Dms Pro",
         "Fessional League China Dms Pro Shanghai"
       ],
-      "Dragon Physique Dms Pro": [
+      "dragon_physique_dms_pro": [
         "Dragon Physique Dms Pro",
         "Drogan Physique Dms Pro"
       ],
-      "Huanji China Pro": [
+      "huanji_china_pro": [
         "Huanji China Pro"
       ],
-      "Huanji China Pro 2": [
+      "huanji_china_pro_2": [
         "Huanji China Pro 2"
       ],
-      "Global Classic Hong Kong Pro Show": [
+      "hong_kong_pro_show": [
         "Global Classic Hong Kong Pro Show",
         "Hong Kong Sar Pro",
         "Hong Kong Pro"
       ],
-      "Goldentimes Ifbb Asian Pro": [
+      "goldentimes_ifbb_asian_pro": [
         "Goldentimes Ifbb Asian Pro"
       ],
-      "Jicheng Classic Sanya Pro": [
+      "jicheng_classic_sanya_pro": [
         "Jicheng Classic Sanya Pro"
       ]
     },
-    "Rest":{
-      "Dubai Pro": [
+    "rest": {
+      "dubai_pro": [
         "Dubai Pro",
         "Dubai Open"
       ],
-      "Eurasia Championships": [
+      "eurasia_championships": [
         "Eurasia Championships"
       ],
-      "Iraq Pro": [
+      "iraq_pro": [
         "Iraq Pro"
       ],
-      "Invictus Kazakhstan Pro": [
+      "invictus_kazakhstan_pro": [
         "Invictus Kazakhstan Pro",
         "Invictus Kazakhstan",
         "Invictus Pro"
       ],
-      "Kuwait Pro Championships": [
+      "kuwait_pro_championships": [
         "Kuwait Pro Championships"
       ],
-      "Musclecontest Philippines": [
+      "musclecontest_philippines": [
         "Musclecontest Philippines",
         "Musclecontest Philippines Pro"
       ],
-      "Musclecontest Vietnam": [
+      "musclecontest_vietnam": [
         "Musclecontest Vietnam",
         "Musclecontest Vietnam Pro"
       ],
-      "Shawn Rhoden Classic Philippines": [
+      "shawn_rhoden_classic_philippines": [
         "Shawn Rhoden Classic Philippines",
         "Shawn Rhoden Classic Philippines Pro"
       ],
-      "Thailand Pro": [
+      "thailand_pro": [
         "Thailand Pro"
       ],
-      "Orchid Pro": [
+      "orchid_pro": [
         "Orchid Pro"
       ]
     },
-    "Russia":{
-      "Grand Prix Russia": [
+    "russia": {
+      "grand_prix_russia": [
         "Grand Prix Russia",
         "Fitness House Ifbb Pro"
       ],
-      "Moscow Showdown Pro": [
+      "moscow_showdown_pro": [
         "Moscow Showdown Pro",
         "Moscow Pro",
         "Moscow Showdown Pro Am",
         "Russia Pro",
         "Moscow Pro/Am Showdown"
       ],
-      "Neva Pro": [
+      "neva_pro": [
         "Neva Pro"
       ]
     },
-    "Japan":{
-      "Japan Pro": [
+    "japan": {
+      "japan_pro": [
         "Japan Pro"
       ],
-      "Musclecontest Japan Pro": [
+      "musclecontest_japan": [
         "Musclecontest Japan Pro"
       ],
-      "Mr Japan": [
+      "mr_japan": [
         "Mr Japan"
       ],
-      "Tokyo Pro": [
+      "tokyo_pro": [
         "Tokyo Pro",
         "Tokyo Pro Supershow",
         "Tokyo Supershow Pro"
       ]
     },
-    "India":{
-      "Sheru Classic Asian Grand Prix": [
+    "india": {
+      "sheru_classic_asian_grand_prix": [
         "Sheru Classic Asian Grand Prix",
         "Sheru Classic Asian Grand Prix Pro",
         "Sheru Classic India"
       ],
-      "Sheru Classic India": [
+      "sheru_classic_india": [
         "Sheru Classic India Pro",
         "Sheru Classic Bharat Pro",
         "Sheru Classic Bharat Pro Show"
       ],
-      "Sheru Classic Mumbai Pro": [
+      "sheru_classic_mumbai_pro": [
         "Sheru Classic Mumbai Pro",
         "Sheru Classic Mumbai Pro Show",
         "Sheru Classic Pro Show Mumbai Pro",
@@ -1163,48 +1164,48 @@
         "Sheru Asian Classic Pro"
       ]
     },
-    "Taiwan":{
-      "Taiwan Kaohsiung Pro": [
+    "taiwan": {
+      "taiwan_kaohsiung_pro": [
         "Taiwan Kaohsiung Pro",
         "Tw Pro 2",
         "District Of Fengshan Kaohsiung Pro",
         "Taiwan Pro Show"
       ],
-      "Taiwan Pro": [
+      "taiwan_pro": [
         "Taiwan Pro",
         "Tw Pro",
         "Taiwan Pro 2",
         "Taiwan Pro Finale"
       ],
-      "Taiwan Pro Bikini": [
+      "taiwan_bikini_pro": [
         "Taiwan Pro Bikini"
       ]
     }
   },
-  "Europe":{
-    "Rest":{
-      "Austrian Oak Pro": [
+  "europe": {
+    "rest": {
+      "austrian_oak_pro": [
         "Austrian Oak Pro"
       ],
-      "Alina Popa Classic": [
+      "alina_popa_classic": [
         "Alina Popa Classic",
         "Alina Popa Classic Pro"
       ],
-      "Balkan Grand Prix Pro": [
+      "balkan_grand_prix_pro": [
         "Balkan Grand Prix Pro"
       ],
-      "Czechia Pro": [
+      "czechia_pro": [
         "Czechia Pro"
       ],
-      "Euro Muscle Show": [
+      "euro_muscle_show": [
         "Euro Muscle Show",
         "Euro Muscle Show Pro",
         "Euro Muscle Pro Show"
       ],
-      "European Cup": [
+      "european_cup": [
         "European Cup"
       ],
-      "Evls Prague Pro": [
+      "evls_prague_pro": [
         "Evls Prague Pro",
         "Evl'S Prague Pro",
         "Evl’S Prague Pro",
@@ -1212,158 +1213,158 @@
         "Prague Pro Championships",
         "Evl Prague Pro"
       ],
-      "Expo Sport Izmir Turkey Pro": [
+      "expo_sport_izmir_turkey_pro": [
         "Expo Sport Izmir Turkey Pro"
       ],
-      "Finland Pro": [
+      "finland_pro": [
         "Finland Pro"
       ],
-      "Grand Prix Austria": [
+      "grand_prix_austria": [
         "Grand Prix Austria"
       ],
-      "Grand Prix Belgium": [
+      "grand_prix_belgium": [
         "Grand Prix Belgium"
       ],
-      "Grand Prix Czech Republic": [
+      "grand_prix_czech_republic": [
         "Grand Prix Czech Republic"
       ],
-      "Grand Prix Denmark": [
+      "grand_prix_denmark": [
         "Grand Prix Denmark"
       ],
-      "Grand Prix Finland": [
+      "grand_prix_finland": [
         "Grand Prix Finland"
       ],
-      "Grand Prix Greece": [
+      "grand_prix_greece": [
         "Grand Prix Greece"
       ],
-      "Grand Prix Holland": [
+      "grand_prix_holland": [
         "Grand Prix Holland"
       ],
-      "Grand Prix Prague": [
+      "grand_prix_prague": [
         "Grand Prix Prague"
       ],
-      "Grand Prix Slovakia": [
+      "grand_prix_slovakia": [
         "Grand Prix Slovakia"
       ],
-      "Grand Prix Sweden": [
+      "grand_prix_sweden": [
         "Grand Prix Sweden"
       ],
-      "Grand Prix Switzerland": [
+      "grand_prix_switzerland": [
         "Grand Prix Switzerland"
       ],
-      "Grand Prix Ukraine": [
+      "grand_prix_ukraine": [
         "Grand Prix Ukraine"
       ],
-      "Grand Prix Wales": [
+      "grand_prix_wales": [
         "Grand Prix Wales"
       ],
-      "International Denmark": [
+      "international_denmark": [
         "International Denmark"
       ],
-      "Iron Rebel Showdown Pro": [
+      "iron_rebel_showdown_pro": [
         "Iron Rebel Showdown Pro"
       ],
-      "Lewis Classic Pro": [
+      "lewis_classic_pro": [
         "Lewis Classic Pro",
         "Flex Lewis Classic"
       ],
-      "Mozolani Pro": [
+      "mozolani_pro": [
         "Mozolani Pro"
       ],
-      "Mr Belgium": [
+      "mr_belgium": [
         "Mr Belgium"
       ],
-      "Mr Europe": [
+      "mr_europe": [
         "Mr Europe"
       ],
-      "Mr Scandinavia": [
+      "mr_scandinavia": [
         "Mr Scandinavia"
       ],
-      "Mr. Big Evolution Pro": [
+      "mr_big_evolution_pro": [
         "Mr. Big Evolution Pro",
         "Leauge Mr. Big Evolution Pro",
         "Portugal Pro",
         "Mr Big Evolution Pro",
         "Mr Big Evolution Portugal Pro"
       ],
-      "Musclecontest Austria": [
+      "musclecontest_austria": [
         "Musclecontest Austria",
         "Musclecontest Austria Pro"
       ],
-      "Musclecontest Ireland Pro": [
+      "musclecontest_ireland": [
         "Musclecontest Ireland Pro",
         "Ireland Pro",
         "Musclecontest Bullman Pro"
       ],
-      "Nordic Pro": [
+      "nordic_pro": [
         "Nordic Pro",
         "Nordic Pro (Finland)"
       ],
-      "Ostrava Pro": [
+      "ostrava_pro": [
         "Ostrava Pro"
       ],
-      "Stockholm Pro": [
+      "stockholm_pro": [
         "Stockholm Pro"
       ]
     },
-    "United Kingdom":{
-      "1 Bro Pro": [
+    "united_kingdom": {
+      "1_bro_pro": [
         "1 Bro Pro",
         "1 Bro Pro Show"
       ],
-      "1 Bro Bikini Pro": [
+      "1_bro_bikini_pro": [
         "1 Bro Bikini Pro Show"
       ],
-      "British Championships": [
+      "british_championships": [
         "British Championships Pro"
       ],
-      "British Grand Prix": [
+      "british_grand_prix": [
         "British Grand Prix",
         "British Grand Prix Pro"
       ],
-      "Grand Prix England": [
+      "grand_prix_england": [
         "Grand Prix England"
       ],
-      "Sheru Classic Uk Pro": [
+      "sheru_classic_uk_pro": [
         "Sheru Classic Uk Pro",
         "Uk Tru Athlete Isff Pro"
       ],
-      "Uk Bodypower Pro": [
+      "uk_bodypower_pro": [
         "Uk Bodypower Pro",
         "Body Power Pro",
         "Bodypower Pro"
       ]
     },
-    "Germany":{
-      "Dennis James Classic Germany": [
+    "germany": {
+      "dennis_james_classic_germany": [
         "Dennis James Classic Germany",
         "Dennis James Germany Pro"
       ],
-      "Fibo Power Pro": [
+      "fibo_power_pro": [
         "Fibo Power Pro",
         "Fibo Power Germany",
         "Fibo Germany",
         "Fibo Championships"
       ],
-      "German Classic Pro": [
+      "german_classic_pro": [
         "German Classic Pro",
         "German Classic Pro Show"
       ],
-      "Grand Prix Germany": [
+      "grand_prix_germany": [
         "Grand Prix Germany"
       ],
-      "Grand Prix Germany (2)": [
+      "grand_prix_germany_2": [
         "Grand Prix Germany (2)"
       ]
     },
-    "Spain":{
-      "Spain Empro Classic": [
+    "spain": {
+      "spain_empro_classic": [
         "Empro Pro Show",
         "Empro Pro",
         "Spain Empro Classic",
         "Empro Classic"
       ],
-      "Bigman Weekend Pro": [
+      "bigman_weekend_spain_pro": [
         "Bigman Weekend Pro",
         "Bigman Weekend",
         "Big Man Weekend Benidorm Pro",
@@ -1372,17 +1373,17 @@
         "Bigman Spain Pro",
         "Spain Pro"
       ],
-      "Etelon Spain Pro": [
+      "etelon_spain_pro": [
         "Etelon Spain Pro"
       ],
-      "Spanish Grand Prix Pro": [
+      "spanish_grand_prix_pro": [
         "Spanish Grand Prix Pro"
       ],
-      "Grand Prix Spain": [
+      "grand_prix_spain": [
         "Grand Prix Spain",
         "Grand Prix Spain (2)"
       ],
-      "Europa Pro": [
+      "europa_pro": [
         "Europa Pro",
         "European Pro",
         "Europa Pro Championships",
@@ -1391,47 +1392,47 @@
         "Mr. Europe Grand Prix",
         "Mr Europe Pro"
       ],
-      "Iogenix Pro": [
+      "iogenix_pro": [
         "Iogenix Pro"
       ],
-      "Nutriyummy Pro Cup": [
+      "nutriyummy_pro_cup": [
         "Nutriyummy Pro Cup"
       ],
-      "Spain California Supplements Pro": [
+      "spain_california_supplements_pro": [
         "Spain California Supplements Pro",
         "California Supplements Pro",
         "California Supplement Spain Pro"
       ],
-      "Veronica Gallego Classic": [
+      "veronica_gallego_classic": [
         "Veronica Gallego Classic",
         "Veronica Gallego Pro",
         "Veronica Gallego"
       ]
     },
-    "France":{
-      "Grand Prix France": [
+    "france": {
+      "grand_prix_france": [
         "Grand Prix France"
       ],
-      "Grand Prix France (2)": [
+      "grand_prix_france_2": [
         "Grand Prix France (2)"
       ],
-      "Sheru Classic France Pro": [
+      "sheru_classic_france_pro": [
         "Sheru Classic France Pro"
       ],
-      "Tsunami Nutrition Showdown": [
+      "tsunami_nutrition_showdown": [
         "Tsunami Nutrition Showdown",
         "Tsunami Nutrition Cup",
         "Tsunami Cup Pro",
         "Tsunami Nutrition Showdown Pro",
         "Tsunami Nutrition Showdown France Pro"
       ],
-      "Yamamoto France": [
+      "yamamoto_france": [
         "Yamamoto France",
         "Yamamoto France Pro"
       ]
     },
-    "Hungary":{
-      "Fitparade Ifbb Pro Grand Prix Hungary": [
+    "hungary": {
+      "hungary_fitparade_pr": [
         "Fitparade Ifbb Pro Grand Prix Hungary",
         "Fitparade Classic International Open Championship",
         "Fashion Street Fitparade Pro",
@@ -1439,100 +1440,100 @@
         "Fitparade Pro",
         "Hungary Pro"
       ],
-      "Grand Prix Hungary": [
+      "grand_prix_hungary": [
         "Grand Prix Hungary"
       ],
-      "Hungarian Pro Invitational": [
+      "hungarian_pro_invitational": [
         "Hungarian Pro Invitational"
       ],
-      "Hungary Kokeny Pro": [
+      "hungary_kokeny_pro": [
         "Hungary Kokeny Pro",
         "Kokeny Classic Hungary Pro"
       ],
-      "Tropicarium Budapest Pro": [
+      "tropicarium_budapest_pro": [
         "Tropicarium Budapest Pro"
       ]
     },
-    "Italy":{
-      "Italy Flex Weekend Pro": [
+    "italy": {
+      "italy_flex_weekend": [
         "Italy Flex Weekend Pro",
         "Flex Pro",
         "Flex Weekend Italy Pro"
       ],
-      "Italy Koloseum Pro": [
+      "italy_koloseum_pro": [
         "Italy Koloseum Pro",
         "Koloseum Pro",
         "Italian Olympus Pro",
         "Koloseum Italy Pro"
       ],
-      "Grand Prix Italy": [
+      "grand_prix_italy": [
         "Grand Prix Italy"
       ],
-      "Promuscle Italy Pro": [
+      "promuscle_italy_pro": [
         "Promuscle Italy Pro",
         "Muscle Pro"
       ],
-      "Galaxy Pro": [
+      "galaxy_pro": [
         "Galaxy Pro"
       ],
-      "San Marino Pro": [
+      "san_marino_pro": [
         "San Marino Pro"
       ],
-      "Kai Greene Classic": [
+      "kai_greene_classic": [
         "Kai Greene Classic",
         "Kai Greene Classic Pro"
       ],
-      "Sheru Classic Italian Pro": [
+      "sheru_classic_italian_pro": [
         "Sheru Classic Italian Pro"
       ],
-      "Yamamoto Cup Pro": [
+      "yamamoto_cup_italy": [
         "Yamamoto Cup Pro"
       ]
     },
-    "Poland":{
-      "Levrone Classic": [
+    "poland": {
+      "levrone_classic": [
         "Levrone Classic",
         "Levrone Classic Poland"
       ],
-      "Poland Everest Muscle Show Pro": [
+      "poland_everest_muscle_show": [
         "Poland Everest Muscle Show Pro"
       ],
-      "Poland Pro": [
+      "poland_pro": [
         "Poland Pro"
       ],
-      "Poland Supershow Pro": [
+      "poland_supershow_pro": [
         "Poland Supershow Pro"
       ],
-      "Battle Of Champions Pro": [
+      "battle_of_champions_pro": [
         "Battle Of Champions Pro"
       ],
-      "Everest Muscle Games": [
+      "everest_muscle_games": [
         "Everest Muscle Games"
       ],
-      "Everest Muscle Classic": [
+      "everest_muscle_classic": [
         "Everest Muscle Classic"
       ],
-      "Everest Muscle Stars Poland Pro": [
+      "everest_muscle_stars_poland": [
         "Everest Muscle Stars Poland Pro"
       ],
-      "Everest Muscle Games Poland Pro": [
+      "everest_muscle_games_poland": [
         "Everest Muscle Games Poland Pro"
       ],
-      "Everest Muscle Fest Poland Pro": [
+      "everest_muscle_fest_poland": [
         "Everest Muscle Fest Poland Pro",
         "Everest Muscle Fest"
       ],
-      "Warsaw Pro": [
+      "warsaw_pro": [
         "Warsaw Pro",
         "Fitness Authority Pro"
       ]
     },
-    "Romania":{
-      "Romanian Pro Grand Prix": [
+    "romania": {
+      "grand_prix_romania": [
         "Romanian Pro Grand Prix",
         "Grand Prix Romania"
       ],
-      "Wings Of Strength Romania Muscle Fest": [
+      "romania_muscle_fest_pro": [
         "Wings Of Strength Romania Muscle Fest",
         "Wings Of Strength Romania Muscle Fest Pro",
         "Wings Of Strength Romania Musclefest Pro",
@@ -1546,156 +1547,156 @@
       ]
     }
   },
-  "South America":{
-    "Argentina":{
-      "Argentina Sur Cup Pro": [
+  "south_america": {
+    "argentina": {
+      "argentina_sur_cup_pro": [
         "Argentina Sur Cup Pro",
         "Argentina Sur Pro Cup",
         "Argentina Pro",
         "Sur Pro Cup Argentina"
       ],
-      "Sur Pro Cup": [
+      "sur_pro_cup": [
         "Sur Pro Cup"
       ]
     },
-    "Colombia":{
-      "Battle Of Bogota Pro": [
+    "colombia": {
+      "battle_of_bogota_pro": [
         "Battle Of Bogota Pro",
         "Pharlabs Battle Of Bogota Pro"
       ],
-      "Colombia Pro": [
+      "colombia_pro": [
         "Colombia Pro",
         "Colombia Pro Am",
         "Gomeisa Ultimate Battle Colombia Pro"
       ],
-      "Pharlabs Sur Pro Cup": [
+      "pharlabs_sur_pro_cup": [
         "Pharlabs Sur Pro Cup",
         "Pharlabs Sur Pro Cup Pro",
         "Sur Cup Pro"
-      ],  
-      "Sheru Classic Latin America Colombia Pro": [
+      ],
+      "sheru_classic_colombia_pro": [
         "Sheru Classic Latin America Colombia Pro"
       ]
     },
-    "Brasil":{
-      "Luciano Cruz Juiz De Fora Pro": [
+    "brasil": {
+      "musclecontest_luciano_cruz_juiz_de_fora": [
         "Luciano Cruz Juiz De Fora Pro",
         "Musclecontest Luciano Cruz Juiz De Fora Pro"
       ],
-      "Musclecontest Belo Horizonte": [
+      "musclecontest_belo_horizonte": [
         "Musclecontest Belo Horizonte"
       ],
-      "Musclecontest Brazil": [
+      "musclecontest_brazil": [
         "Musclecontest Brazil",
         "Muscle Contest Brazil Pro",
         "Musclecontest Brazil Pro"
       ],
-      "Musclecontest Brasilia Pro": [
+      "musclecontest_brasilia_pro": [
         "Musclecontest Brasilia Pro"
       ],
-      "Musclecontest Brazil 2": [
+      "musclecontest_brazil_2": [
         "Musclecontest Brazil 2",
         "Mci Brazil Pro"
       ],
-      "Musclecontest Campinas Pro": [
+      "musclecontest_campinas": [
         "Musclecontest Campinas Pro",
         "Campinas Pro"
       ],
-      "Musclecontest Excalibur": [
+      "musclecontest_excalibur": [
         "Musclecontest Excalibur"
       ],
-      "Musclecontest Fitpira": [
+      "musclecontest_fitpira": [
         "Musclecontest Fitpira",
         "Musclecontest Fit Pira",
         "Musclecontest Fitpira Pro"
       ],
-      "Musclecontest Fortaleza": [
+      "musclecontest_fortaleza": [
         "Musclecontest Fortaleza",
         "Musclecontest Experience Pro"
       ],
-      "Musclecontest Goiania": [
+      "musclecontest_goiania": [
         "Musclecontest Goiania",
         "Musclecontest Goiania Pro",
         "Musclecontest Goiânia"
       ],
-      "Musclecontest Muscleworld Pro": [
+      "musclecontest_muscleworld": [
         "Musclecontest Muscleworld Pro"
       ],
-      "Musclecontest Nacional": [
+      "musclecontest_nacional": [
         "Musclecontest Nacional",
         "Musclecontest Nacional Pro"
       ],
-      "Musclecontest Nordeste Pro": [
+      "musclecontest_nordeste": [
         "Musclecontest Nordeste Pro"
       ],
-      "Musclecontest Recife": [
+      "musclecontest_recife": [
         "Musclecontest Recife",
         "Musclecontest Recife Pro"
       ],
-      "Musclecontest Rio": [
+      "musclecontest_rio": [
         "Musclecontest Rio",
         "Musclecontest Rio De Janeiro",
         "Musclecontest Rio Pro"
       ],
-      "Musclecontest Sao Paulo Pro": [
+      "musclecontest_sao_paulo": [
         "Musclecontest Sao Paulo Pro"
       ],
-      "Musclecontest Ironberg Abc Pro": [
+      "musclecontest_ironberg_abc": [
         "Musclecontest Ironberg Abc Pro"
       ],
-      "Musclecontest Ultimate Pro": [
+      "musclecontest_ultimate": [
         "Musclecontest Ultimate Pro"
       ],
-      "Musclecontest Mercosul Pro": [
+      "musclecontest_mercosul": [
         "Musclecontest Mercosul Pro"
       ]
     },
-    "Rest":{
-      "Ronnie Coleman Sur Pro Cup": [
+    "rest": {
+      "ronnie_coleman_sur_pro_cup": [
         "Ronnie Coleman Sur Pro Cup"
       ],
-      "Sur Cup Chile Pro": [
+      "sur_cup_chile_pro": [
         "Sur Cup Chile Pro"
       ]
     }
   },
-  "Africa":{
-    "Rest":{
-      "African Pro": [
+  "africa": {
+    "rest": {
+      "african_pro": [
         "African Pro"
       ],
-      "Marrakesh Pro": [
+      "marrakesh_pro": [
         "Marrakesh Pro"
       ],
-      "Ko Squad Pro": [
+      "ko_squad_pro": [
         "Ko Squad Pro"
       ]
     }
   },
-  "Big Names": {
-    "Arnolds":{
-      "Arnold Classic": [
+  "big_names": {
+    "arnolds": {
+      "arnold_classic": [
         "Arnold Classic",
         "Arnold Classic Pro",
         "Arnold Sports Festival",
         "Ms International",
         "Arnold Classic Wheelchair Pro"
       ],
-      "Arnold Classic Asia": [
+      "arnold_classic_asia": [
         "Arnold Classic Asia"
       ],
-      "Arnold Classic Australia": [
+      "arnold_classic_australia": [
         "Arnold Classic Australia"
       ],
-      "Arnold Classic Europe": [
+      "arnold_classic_europe": [
         "Arnold Classic Europe",
         "Arnold Classic Europe Pro",
         "Arnold Europe"
       ],
-      "Arnold Classic South Africa": [
+      "arnold_classic_south_africa": [
         "Arnold Classic South Africa"
       ],
-      "Arnold Classic South America": [
+      "arnold_classic_south_america": [
         "Arnold Classic South America",
         "Arnold Classic South American",
         "Arnold Classic Brasil",
@@ -1705,27 +1706,27 @@
         "Arnold South America",
         "Arnold Sports Festival South America"
       ],
-      "Arnold Classic UK": [
+      "arnold_classic_uk": [
         "Arnold Classic Uk",
         "Fessional League Arnold Classic Uk Pro",
         "Arnold Classic United Kingdom"
       ]
     },
-    "Olympia":{
-      "Olympia": [
+    "olympia": {
+      "olympia": [
         "Olympia",
         "Mr Olympia",
         "C Olympia",
         "Joe Weiders Olympia Fitness Performance Weekend"
       ],
-      "Olympia Europe": [
+      "olympia_europe": [
         "Olympia Europe"
       ]
     }
   },
-  "Oceania":{
-    "Australia":{
-      "Australia Grand Prix": [
+  "oceania": {
+    "australia": {
+      "australia_pro": [
         "Australia Grand Prix",
         "Australia Pro Grand Prix",
         "Australia Pro Grand Prix Ix",
@@ -1735,12 +1736,12 @@
         "Australian Pro Grand Prix",
         "Grand Prix Australia"
       ],
-      "Grand Prix Melbourne": [
+      "grand_prix_melbourne": [
         "Grand Prix Melbourne"
       ]
     },
-    "Rest":{
-      "New Zealand": [
+    "rest": {
+      "new_zealand_pro": [
         "New Zealand",
         "New Zealand Elite Pro",
         "New Zealand Pro",
@@ -1748,47 +1749,47 @@
       ]
     }
   },
-  "North America":{
-    "Canada":{
-      "Canada Pro Cup": [
+  "north_america": {
+    "canada": {
+      "canada_pro_cup": [
         "Canada Pro Cup"
       ],
-      "Canada Diamond Pro Cup": [
+      "canada_diamond_pro_cup": [
         "Canada Diamond Pro Cup"
       ],
-      "Canada's Most Perfect Physique": [
+      "canada_most_perfect_physique": [
         "Canada'S Most Perfect Physique"
       ],
-      "Grand Prix Montreal": [
+      "grand_prix_montreal": [
         "Grand Prix Montreal"
       ],
-      "Grand Prix Vancouver": [
+      "grand_prix_vancouver": [
         "Grand Prix Vancouver"
       ],
-      "Montreal Pro Championships": [
+      "montreal_pro_championships": [
         "Montreal Pro Championships"
       ],
-      "Mr Canada": [
+      "mr_canada": [
         "Mr Canada"
       ],
-      "Niagara Falls Pro": [
+      "niagara_falls_pro": [
         "Niagara Falls Pro",
         "Niagara Falls Pro Invitational"
       ],
-      "Toronto Pro Supershow": [
+      "toronto_supershow": [
         "Toronto Pro Supershow",
         "Toronto Pro",
         "Toronto Supershow"
       ],
-      "Van City Showdown": [
+      "van_city_showdown": [
         "Van City Showdown",
         "Van City Pro"
       ],
-      "Vancouver Island Showdown": [
+      "vancouver_island_showdown": [
         "Vancouver Island Showdown",
         "Vancouver Island Showdown Pro"
       ],
-      "Vancouver Pro": [
+      "vancouver_pro": [
         "Vancouver Pro",
         "Vancouver Pro Championships",
         "Vancouver Ifbb Pro Show",
@@ -1796,37 +1797,37 @@
         "Van Pro/Am"
       ]
     },
-    "Mexico":{
-      "Fitmuscle Pro": [
+    "mexico": {
+      "fitmuscle_pro": [
         "Fitmuscle Pro"
       ],
-      "Mexico Grand Battle Pro": [
+      "mexico_grand_battle_pro": [
         "Mexico Grand Battle Pro",
         "Pharlabs Mexico Grand Battle Pro Am",
         "Mexico Grand Battle Pro/Am"
       ],
-      "Pharlabs Mexico Pro/Am": [
+      "pharlabs_mexico_pro/am": [
         "Pharlabs Mexico Pro/Am"
       ],
-      "Mexico Supershow Pro": [
+      "mexico_supershow_pro": [
         "Mexico Supershow Pro"
       ],
-      "Black Swan Breon Ansley Mexico Grand Battle Pro": [
+      "breon_ansley_mexico_grand_battle_pro": [
         "Black Swan Breon Ansley Mexico Grand Battle Pro",
         "Breon Ansley Mexico Grand Battle Pro"
       ],
-      "Mr & Ms Lions Classic Grand Battle Pro": [
+      "mr_&_ms_lions_classic_grand_battle_pro": [
         "Mr & Ms Lions Classic Grand Battle Pro",
         "Mr Ms Lions Classic Mexico Pro",
         "Mexico Pro"
       ],
-      "Monterrey Pro": [
+      "monterrey_pro": [
         "Monterrey Pro"
       ],
-      "Tijuana Pro": [
+      "tijuana_pro": [
         "Tijuana Pro"
       ],
-      "Xtreme Bodybuilding": [
+      "xtreme_bodybuilding": [
         "Xtreme Bodybuilding",
         "Xtreme Bodybuilding Fitness Pro",
         "Xtreme Fitness And Bodybuilding Pro",
@@ -1834,23 +1835,23 @@
         "Mexico Classic Physique Pro",
         "Xtreme Bodybuilding Mexico Pro"
       ],
-      "Puerto Vallarta Pro": [
+      "puerto_vallarta_pro": [
         "Puerto Vallarta Pro"
       ]
     }
   },
-  "Central America":{
-    "Rest":{
-      "Caribbean Grand Prix Bermuda Pro": [
+  "central_america": {
+    "rest": {
+      "caribbean_grand_prix_bermuda_pro": [
         "Caribbean Grand Prix Bermuda Pro"
       ],
-      "Dominican Republic Pro": [
+      "dominican_republic_pro": [
         "Dominican Republic Pro"
       ],
-      "Fiji Pro": [
+      "fiji_pro": [
         "Fiji Pro"
       ],
-      "Puerto Rico Pro": [
+      "puerto_rico_pro": [
         "Puerto Rico Pro",
         "Puerto Rico Pro Championships",
         "Wos & Fit Body Fusion Yamamoto Nutrition Puerto Rico Pro"

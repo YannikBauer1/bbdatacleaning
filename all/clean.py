@@ -137,6 +137,18 @@ cleaned_df.loc[mask, 'Division'] = 'mens physique'
 mask = (cleaned_df['Competition'].str.contains('2024-dubai-pro', case=False, na=False)) & (cleaned_df['Competitor Name'] == "Yaser Rezaei") & (cleaned_df['Date'] == "2024-07-28")
 cleaned_df.loc[mask, 'Division'] = 'mens physique'
 
+mask = (cleaned_df['Competition'].str.contains('Atlantic City Pro', case=False, na=False)) & (cleaned_df['Date'] == "September 23, 2008")
+cleaned_df.loc[mask, 'Date'] = 'September 13, 2008'
+mask = (cleaned_df['Competition'].str.contains('New York Pro', case=False, na=False)) & (cleaned_df['Date'] == "September 6, 2008")
+cleaned_df.loc[mask, 'Date'] = 'May 10, 2008'
+mask = (cleaned_df['Competition'].str.contains('2011 IFBB New York Pro', case=False, na=False)) & (cleaned_df['Date'] == "March 28, 2011")
+cleaned_df.loc[mask, 'Date'] = 'May 28, 2011'
+mask = (cleaned_df['Competition'].str.contains('2014 IFBB TORONTO PRO SUPERSHOW', case=False, na=False)) & (cleaned_df['Date'] == "June 7, 2013")
+cleaned_df.loc[mask, 'Date'] = 'June 6, 2015'
+mask = (cleaned_df['Competition'].str.contains('2023 IFBB PRO LEAGUE WORLD KLASH', case=False, na=False)) & (cleaned_df['Date'] == "October 28, 2023")
+cleaned_df.loc[mask, 'Competition'] = 'IFBB World Klash Wellness PRO'
+mask = (cleaned_df['Competition'].str.contains('2017 Toronto Pro', case=False, na=False)) & (cleaned_df['Date'] == "March 4, 2017")
+cleaned_df.loc[mask, 'Date'] = 'May 28, 2017'
 
 
 # Fix incorrect date for Torunament Of Champions Pro
@@ -1299,8 +1311,8 @@ def apply_competition_mapping(cleaned_df):
     with open('all/filtered_out_competitions.json', 'w', encoding='utf-8') as f:
         json.dump(filtered_out_competitions, f, ensure_ascii=False, indent=2)
     
-    # Keep only rows where the competition name was found in the mapping (even if it maps to itself)
-    cleaned_df = cleaned_df[cleaned_df['Competition'].apply(lambda x: x.lower() in competition_lookup)]
+    # Keep only rows where the original competition name was found in the mapping
+    cleaned_df = cleaned_df[original_competitions.apply(lambda x: x.lower() in competition_lookup)]
     print(f"Filtered out {original_count - len(cleaned_df)} competitions that don't have mappings in competition_names.json")
     print(f"Kept {len(cleaned_df)} competitions with valid mappings")
     print(f"Filtered out competitions saved to: all/filtered_out_competitions.json")
@@ -1315,7 +1327,12 @@ def apply_competition_mapping(cleaned_df):
             'Original': original_competitions,
             'Standardized': cleaned_df['Competition']
         })
-        mapping_examples = mapping_examples[mapping_examples['Original'] != mapping_examples['Standardized']].drop_duplicates().head(15)
+        mapping_examples = mapping_examples[
+            (mapping_examples['Original'] != mapping_examples['Standardized']) & 
+            (mapping_examples['Original'].notna()) & 
+            (mapping_examples['Original'] != '')
+        ].drop_duplicates().head(15)
+        
         print("\nExamples of competition name mappings:")
         for _, row in mapping_examples.iterrows():
             print(f"  '{row['Original']}' -> '{row['Standardized']}'")

@@ -1,0 +1,5653 @@
+{
+  "total_competitions": 6,
+  "by_year": {
+    "2015": 1,
+    "2016": 2,
+    "2017": 1,
+    "2022": 1,
+    "2023": 1
+  },
+  "by_source": {
+    "musclememory": 4,
+    "npcnews": 6,
+    "scorecards": 6
+  },
+  "competitions": {
+    "ferrigno_legacy_pro_2015": {
+      "competition": "ferrigno_legacy_pro",
+      "year": 2015,
+      "total_events": 121,
+      "different_event_groups": 2,
+      "sources": [
+        "scorecards",
+        "npcnews",
+        "musclememory"
+      ],
+      "event_groups": [
+        {
+          "group_size": 49,
+          "dates": [
+            {
+              "source": "scorecards",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2015-10-29",
+              "end_date": "2015-10-29"
+            }
+          ]
+        },
+        {
+          "group_size": 72,
+          "dates": [
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2015-11-20",
+              "end_date": "2015-11-20"
+            }
+          ]
+        }
+      ]
+    },
+    "olympia_2016": {
+      "competition": "olympia",
+      "year": 2016,
+      "total_events": 563,
+      "different_event_groups": 2,
+      "sources": [
+        "scorecards",
+        "npcnews",
+        "musclememory"
+      ],
+      "event_groups": [
+        {
+          "group_size": 352,
+          "dates": [
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-16",
+              "end_date": "2016-09-16"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-09-17",
+              "end_date": "2016-09-17"
+            }
+          ]
+        },
+        {
+          "group_size": 211,
+          "dates": [
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-12-28",
+              "end_date": "2016-12-28"
+            }
+          ]
+        }
+      ]
+    },
+    "orlando_show_of_champions_2016": {
+      "competition": "orlando_show_of_champions",
+      "year": 2016,
+      "total_events": 155,
+      "different_event_groups": 2,
+      "sources": [
+        "scorecards",
+        "npcnews",
+        "musclememory"
+      ],
+      "event_groups": [
+        {
+          "group_size": 85,
+          "dates": [
+            {
+              "source": "npcnews",
+              "start_date": "2016-03-11",
+              "end_date": "2016-03-11"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-03-11",
+              "end_date": "2016-03-11"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-03-11",
+              "end_date": "2016-03-11"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-03-11",
+              "end_date": "2016-03-11"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-03-11",
+              "end_date": "2016-03-11"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-03-11",
+              "end_date": "2016-03-11"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-03-11",
+              "end_date": "2016-03-11"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-03-11",
+              "end_date": "2016-03-11"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-03-11",
+              "end_date": "2016-03-11"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-03-11",
+              "end_date": "2016-03-11"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-03-11",
+              "end_date": "2016-03-11"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-03-11",
+              "end_date": "2016-03-11"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-03-11",
+              "end_date": "2016-03-11"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-03-11",
+              "end_date": "2016-03-11"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-03-11",
+              "end_date": "2016-03-11"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-03-11",
+              "end_date": "2016-03-11"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-03-11",
+              "end_date": "2016-03-11"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-03-11",
+              "end_date": "2016-03-11"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2016-03-12",
+              "end_date": "2016-03-12"
+            }
+          ]
+        },
+        {
+          "group_size": 70,
+          "dates": [
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2016-04-28",
+              "end_date": "2016-04-28"
+            }
+          ]
+        }
+      ]
+    },
+    "orlando_show_of_champions_2017": {
+      "competition": "orlando_show_of_champions",
+      "year": 2017,
+      "total_events": 163,
+      "different_event_groups": 2,
+      "sources": [
+        "scorecards",
+        "npcnews",
+        "musclememory"
+      ],
+      "event_groups": [
+        {
+          "group_size": 18,
+          "dates": [
+            {
+              "source": "npcnews",
+              "start_date": "2017-03-10",
+              "end_date": "2017-03-10"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-03-10",
+              "end_date": "2017-03-10"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-03-10",
+              "end_date": "2017-03-10"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-03-10",
+              "end_date": "2017-03-10"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-03-10",
+              "end_date": "2017-03-10"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-03-10",
+              "end_date": "2017-03-10"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-03-10",
+              "end_date": "2017-03-10"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-03-10",
+              "end_date": "2017-03-10"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-03-10",
+              "end_date": "2017-03-10"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-03-10",
+              "end_date": "2017-03-10"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-03-10",
+              "end_date": "2017-03-10"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-03-10",
+              "end_date": "2017-03-10"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-03-10",
+              "end_date": "2017-03-10"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-03-10",
+              "end_date": "2017-03-10"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-03-10",
+              "end_date": "2017-03-10"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-03-10",
+              "end_date": "2017-03-10"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-03-10",
+              "end_date": "2017-03-10"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-03-10",
+              "end_date": "2017-03-10"
+            }
+          ]
+        },
+        {
+          "group_size": 145,
+          "dates": [
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2017-05-20",
+              "end_date": "2017-05-20"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            },
+            {
+              "source": "musclememory",
+              "start_date": "2017-05-21",
+              "end_date": "2017-05-21"
+            }
+          ]
+        }
+      ]
+    },
+    "hungary_fitparade_pr_2022": {
+      "competition": "hungary_fitparade_pr",
+      "year": 2022,
+      "total_events": 72,
+      "different_event_groups": 2,
+      "sources": [
+        "scorecards",
+        "npcnews"
+      ],
+      "event_groups": [
+        {
+          "group_size": 23,
+          "dates": [
+            {
+              "source": "scorecards",
+              "start_date": "2022-10-14",
+              "end_date": "2022-10-15"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2022-10-14",
+              "end_date": "2022-10-15"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2022-10-14",
+              "end_date": "2022-10-15"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2022-10-14",
+              "end_date": "2022-10-15"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2022-10-14",
+              "end_date": "2022-10-15"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2022-10-14",
+              "end_date": "2022-10-15"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2022-10-14",
+              "end_date": "2022-10-15"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2022-10-14",
+              "end_date": "2022-10-15"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2022-10-14",
+              "end_date": "2022-10-15"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2022-10-14",
+              "end_date": "2022-10-15"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2022-10-14",
+              "end_date": "2022-10-15"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2022-10-14",
+              "end_date": "2022-10-15"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2022-10-14",
+              "end_date": "2022-10-15"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2022-10-14",
+              "end_date": "2022-10-15"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2022-10-14",
+              "end_date": "2022-10-15"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2022-10-14",
+              "end_date": "2022-10-15"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2022-10-14",
+              "end_date": "2022-10-15"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2022-10-14",
+              "end_date": "2022-10-15"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2022-10-14",
+              "end_date": "2022-10-15"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2022-10-14",
+              "end_date": "2022-10-15"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2022-10-14",
+              "end_date": "2022-10-15"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2022-10-14",
+              "end_date": "2022-10-15"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2022-10-14",
+              "end_date": "2022-10-15"
+            }
+          ]
+        },
+        {
+          "group_size": 49,
+          "dates": [
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2022-10-31",
+              "end_date": "2022-10-31"
+            }
+          ]
+        }
+      ]
+    },
+    "sin_city_showdown_2023": {
+      "competition": "sin_city_showdown",
+      "year": 2023,
+      "total_events": 26,
+      "different_event_groups": 2,
+      "sources": [
+        "scorecards",
+        "npcnews"
+      ],
+      "event_groups": [
+        {
+          "group_size": 13,
+          "dates": [
+            {
+              "source": "scorecards",
+              "start_date": "2023-06-26",
+              "end_date": "2023-06-26"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2023-06-26",
+              "end_date": "2023-06-26"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2023-06-26",
+              "end_date": "2023-06-26"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2023-06-26",
+              "end_date": "2023-06-26"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2023-06-26",
+              "end_date": "2023-06-26"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2023-06-26",
+              "end_date": "2023-06-26"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2023-06-26",
+              "end_date": "2023-06-26"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2023-06-26",
+              "end_date": "2023-06-26"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2023-06-26",
+              "end_date": "2023-06-26"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2023-06-26",
+              "end_date": "2023-06-26"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2023-06-26",
+              "end_date": "2023-06-26"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2023-06-26",
+              "end_date": "2023-06-26"
+            },
+            {
+              "source": "scorecards",
+              "start_date": "2023-06-26",
+              "end_date": "2023-06-26"
+            }
+          ]
+        },
+        {
+          "group_size": 13,
+          "dates": [
+            {
+              "source": "npcnews",
+              "start_date": "2023-08-26",
+              "end_date": "2023-08-26"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2023-08-26",
+              "end_date": "2023-08-26"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2023-08-26",
+              "end_date": "2023-08-26"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2023-08-26",
+              "end_date": "2023-08-26"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2023-08-26",
+              "end_date": "2023-08-26"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2023-08-26",
+              "end_date": "2023-08-26"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2023-08-26",
+              "end_date": "2023-08-26"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2023-08-26",
+              "end_date": "2023-08-26"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2023-08-26",
+              "end_date": "2023-08-26"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2023-08-26",
+              "end_date": "2023-08-26"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2023-08-26",
+              "end_date": "2023-08-26"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2023-08-26",
+              "end_date": "2023-08-26"
+            },
+            {
+              "source": "npcnews",
+              "start_date": "2023-08-26",
+              "end_date": "2023-08-26"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
