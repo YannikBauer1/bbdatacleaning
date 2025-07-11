@@ -1,0 +1,2770 @@
+Loading results.csv...
+Total rows: 64447
+Columns: ['year', 'competition_name_key', 'athlete_name_key', 'Judging 1', 'Judging 2', 'Judging 3', 'Judging 4', 'Routine', 'Total', 'Place', 'Division', 'Division Subtype', 'Division Level', 'Source']
+Loading existing conflicts to exclude...
+Loaded 205 existing conflicts to exclude
+Exclude keys: 205
+Example exclude keys:
+  1. 2019_california_night_of_champions_mensphysique_open_10
+  2. 2015_atlantic_city_pro_womensphysique_open_14
+  3. 2012_kentucky_muscle_figure_open_6
+  4. 2017_st_louis_pro_figure_open_10
+  5. 2013_toronto_supershow_bikini_open_4
+  6. 2024_taiwan_pro_mensphysique_open_14
+  7. 2024_st_pete_pro_mensphysique_open_15
+  8. 2016_st_louis_pro_figure_open_8
+  9. 2018_toronto_supershow_wheelchair_open_2
+  10. 2019_tampa_hurricane_pro_bikini_open_14
+✓ 2008_atlantic_city_pro_mensbb_open_8 is in exclude set
+✓ 2008_atlantic_city_pro_mensbb_open_9 is in exclude set
+
+DEBUG: Checking data for problematic conflicts...
+Found 0 rows for problematic conflicts
+
+Checking for duplicates...
+
+Found 261 NEW groups with duplicate athletes (excluding known conflicts):
+Skipped 0 known conflicts
+================================================================================
+
+1. Group: 2007_kentucky_muscle_figure_open_11
+   Athletes: ['elaine_goodlad', 'april_fortier']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - elaine_goodlad (Place: 11, Year: 2007, Competition: kentucky_muscle, Source: scorecards)
+     - april_fortier (Place: 11, Year: 2007, Competition: kentucky_muscle, Source: musclememory)
+
+2. Group: 2008_atlantic_city_pro_mensbb_open_8
+   Athletes: ['craig_richardson', 'hidetada_yamagisha']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - craig_richardson (Place: 8, Year: 2008, Competition: atlantic_city_pro, Source: scorecards)
+     - hidetada_yamagisha (Place: 8, Year: 2008, Competition: atlantic_city_pro, Source: musclememory)
+
+3. Group: 2008_atlantic_city_pro_mensbb_open_9
+   Athletes: ['hidetada_yamagisha', 'craig_richardson']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - hidetada_yamagisha (Place: 9, Year: 2008, Competition: atlantic_city_pro, Source: scorecards)
+     - craig_richardson (Place: 9, Year: 2008, Competition: atlantic_city_pro, Source: musclememory)
+
+4. Group: 2008_iron_man_pro_mensbb_open_0
+   Athletes: ['jimmy_canyon', 'ken_jones', 'rusty_jeffers', 'neset_icli', 'deshaun_grimez_de_garcia', 'omar_deckard', 'rodney_davis', 'troy_brown', 'paul_baker', 'vincent_liu', 'sergei_ogorodnikov', 'gian_enrico_pica', 'dragan_paunovic', 'mehmet_yildirim', 'nathaniel_wonsley', 'armin_scholz']
+   Sources: ['scorecards', 'musclememory']
+   Count: 16 different athletes across 2 sources
+   Rows:
+     - jimmy_canyon (Place: 0, Year: 2008, Competition: iron_man_pro, Source: scorecards)
+     - ken_jones (Place: 0, Year: 2008, Competition: iron_man_pro, Source: musclememory)
+     - rusty_jeffers (Place: 0, Year: 2008, Competition: iron_man_pro, Source: musclememory)
+     - neset_icli (Place: 0, Year: 2008, Competition: iron_man_pro, Source: musclememory)
+     - deshaun_grimez_de_garcia (Place: 0, Year: 2008, Competition: iron_man_pro, Source: musclememory)
+     - omar_deckard (Place: 0, Year: 2008, Competition: iron_man_pro, Source: musclememory)
+     - rodney_davis (Place: 0, Year: 2008, Competition: iron_man_pro, Source: musclememory)
+     - troy_brown (Place: 0, Year: 2008, Competition: iron_man_pro, Source: musclememory)
+     - paul_baker (Place: 0, Year: 2008, Competition: iron_man_pro, Source: musclememory)
+     - vincent_liu (Place: 0, Year: 2008, Competition: iron_man_pro, Source: musclememory)
+     - sergei_ogorodnikov (Place: 0, Year: 2008, Competition: iron_man_pro, Source: musclememory)
+     - gian_enrico_pica (Place: 0, Year: 2008, Competition: iron_man_pro, Source: musclememory)
+     - dragan_paunovic (Place: 0, Year: 2008, Competition: iron_man_pro, Source: musclememory)
+     - mehmet_yildirim (Place: 0, Year: 2008, Competition: iron_man_pro, Source: musclememory)
+     - nathaniel_wonsley (Place: 0, Year: 2008, Competition: iron_man_pro, Source: musclememory)
+     - armin_scholz (Place: 0, Year: 2008, Competition: iron_man_pro, Source: musclememory)
+
+5. Group: 2008_pittsburgh_pro_figure_open_0
+   Athletes: ['donna_louise_jones', 'briana_tindall', 'tammy_strome', 'laura_sitter']
+   Sources: ['scorecards', 'musclememory']
+   Count: 4 different athletes across 2 sources
+   Rows:
+     - donna_louise_jones (Place: 0, Year: 2008, Competition: pittsburgh_pro, Source: scorecards)
+     - briana_tindall (Place: 0, Year: 2008, Competition: pittsburgh_pro, Source: scorecards)
+     - tammy_strome (Place: 0, Year: 2008, Competition: pittsburgh_pro, Source: musclememory)
+     - laura_sitter (Place: 0, Year: 2008, Competition: pittsburgh_pro, Source: musclememory)
+
+6. Group: 2008_sacramento_pro_figure_open_0
+   Athletes: ['patricia_mello', 'lynn_widdowson', 'maria_rojas', 'tanya_merryman', 'carol_e_king', 'celeste_gonzalez_leandro', 'maickie_emborg_silberg', 'nadya_castellas', 'aida_aragon']
+   Sources: ['scorecards', 'musclememory']
+   Count: 9 different athletes across 2 sources
+   Rows:
+     - patricia_mello (Place: 0, Year: 2008, Competition: sacramento_pro, Source: scorecards)
+     - lynn_widdowson (Place: 0, Year: 2008, Competition: sacramento_pro, Source: musclememory)
+     - maria_rojas (Place: 0, Year: 2008, Competition: sacramento_pro, Source: musclememory)
+     - tanya_merryman (Place: 0, Year: 2008, Competition: sacramento_pro, Source: musclememory)
+     - carol_e_king (Place: 0, Year: 2008, Competition: sacramento_pro, Source: musclememory)
+     - celeste_gonzalez_leandro (Place: 0, Year: 2008, Competition: sacramento_pro, Source: musclememory)
+     - maickie_emborg_silberg (Place: 0, Year: 2008, Competition: sacramento_pro, Source: musclememory)
+     - nadya_castellas (Place: 0, Year: 2008, Competition: sacramento_pro, Source: musclememory)
+     - aida_aragon (Place: 0, Year: 2008, Competition: sacramento_pro, Source: musclememory)
+
+7. Group: 2009_atlantic_city_pro_figure_open_10
+   Athletes: ['jennifer_dejoya', 'rosalind_vanterpool']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - jennifer_dejoya (Place: 10, Year: 2009, Competition: atlantic_city_pro, Source: scorecards)
+     - rosalind_vanterpool (Place: 10, Year: 2009, Competition: atlantic_city_pro, Source: musclememory)
+
+8. Group: 2009_atlantic_city_pro_figure_open_11
+   Athletes: ['candice_john', 'petra_mertl']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - candice_john (Place: 11, Year: 2009, Competition: atlantic_city_pro, Source: scorecards)
+     - petra_mertl (Place: 11, Year: 2009, Competition: atlantic_city_pro, Source: musclememory)
+
+9. Group: 2009_atlantic_city_pro_figure_open_12
+   Athletes: ['marcy_porter', 'nicole_pitcher_scott']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - marcy_porter (Place: 12, Year: 2009, Competition: atlantic_city_pro, Source: scorecards)
+     - nicole_pitcher_scott (Place: 12, Year: 2009, Competition: atlantic_city_pro, Source: musclememory)
+
+10. Group: 2009_atlantic_city_pro_figure_open_13
+   Athletes: ['ines_jimenez', 'candice_john']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - ines_jimenez (Place: 13, Year: 2009, Competition: atlantic_city_pro, Source: scorecards)
+     - candice_john (Place: 13, Year: 2009, Competition: atlantic_city_pro, Source: musclememory)
+
+11. Group: 2009_atlantic_city_pro_figure_open_14
+   Athletes: ['jessica_clay', 'ines_jimenez']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - jessica_clay (Place: 14, Year: 2009, Competition: atlantic_city_pro, Source: scorecards)
+     - ines_jimenez (Place: 14, Year: 2009, Competition: atlantic_city_pro, Source: musclememory)
+
+12. Group: 2009_atlantic_city_pro_figure_open_15
+   Athletes: ['maggie_blanchard', 'marcy_porter']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - maggie_blanchard (Place: 15, Year: 2009, Competition: atlantic_city_pro, Source: scorecards)
+     - marcy_porter (Place: 15, Year: 2009, Competition: atlantic_city_pro, Source: musclememory)
+
+13. Group: 2009_atlantic_city_pro_figure_open_8
+   Athletes: ['petra_mertl', 'michelle_mayberry']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - petra_mertl (Place: 8, Year: 2009, Competition: atlantic_city_pro, Source: scorecards)
+     - michelle_mayberry (Place: 8, Year: 2009, Competition: atlantic_city_pro, Source: musclememory)
+
+14. Group: 2009_atlantic_city_pro_figure_open_9
+   Athletes: ['rosalind_vanterpool', 'jennifer_dejoya']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - rosalind_vanterpool (Place: 9, Year: 2009, Competition: atlantic_city_pro, Source: scorecards)
+     - jennifer_dejoya (Place: 9, Year: 2009, Competition: atlantic_city_pro, Source: musclememory)
+
+15. Group: 2009_atlantic_city_pro_mensbb_open_10
+   Athletes: ['daniele_seccarecci', 'marcos_chacon_mcweeney']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - daniele_seccarecci (Place: 10, Year: 2009, Competition: atlantic_city_pro, Source: scorecards)
+     - marcos_chacon_mcweeney (Place: 10, Year: 2009, Competition: atlantic_city_pro, Source: musclememory)
+
+16. Group: 2009_atlantic_city_pro_mensbb_open_11
+   Athletes: ['marcos_chacon_mcweeney', 'daniele_seccarecci']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - marcos_chacon_mcweeney (Place: 11, Year: 2009, Competition: atlantic_city_pro, Source: scorecards)
+     - daniele_seccarecci (Place: 11, Year: 2009, Competition: atlantic_city_pro, Source: musclememory)
+
+17. Group: 2009_atlantic_city_pro_mensbb_open_12
+   Athletes: ['frederic_sauvage', 'emmanouil_karamanlakis']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - frederic_sauvage (Place: 12, Year: 2009, Competition: atlantic_city_pro, Source: scorecards)
+     - emmanouil_karamanlakis (Place: 12, Year: 2009, Competition: atlantic_city_pro, Source: musclememory)
+
+18. Group: 2009_atlantic_city_pro_mensbb_open_13
+   Athletes: ['marc_lavoie', 'frederic_sauvage']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - marc_lavoie (Place: 13, Year: 2009, Competition: atlantic_city_pro, Source: scorecards)
+     - frederic_sauvage (Place: 13, Year: 2009, Competition: atlantic_city_pro, Source: musclememory)
+
+19. Group: 2009_atlantic_city_pro_mensbb_open_14
+   Athletes: ['emmanouil_karamanlakis', 'marc_lavoie']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - emmanouil_karamanlakis (Place: 14, Year: 2009, Competition: atlantic_city_pro, Source: scorecards)
+     - marc_lavoie (Place: 14, Year: 2009, Competition: atlantic_city_pro, Source: musclememory)
+
+20. Group: 2009_atlantic_city_pro_mensbb_open_7
+   Athletes: ['khalid_almohsinawi', 'craig_richardson']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - khalid_almohsinawi (Place: 7, Year: 2009, Competition: atlantic_city_pro, Source: scorecards)
+     - craig_richardson (Place: 7, Year: 2009, Competition: atlantic_city_pro, Source: musclememory)
+
+21. Group: 2009_atlantic_city_pro_mensbb_open_8
+   Athletes: ['craig_richardson', 'khalid_almohsinawi']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - craig_richardson (Place: 8, Year: 2009, Competition: atlantic_city_pro, Source: scorecards)
+     - khalid_almohsinawi (Place: 8, Year: 2009, Competition: atlantic_city_pro, Source: musclememory)
+
+22. Group: 2009_jacksonville_pro_202_212_202_9
+   Athletes: ['patrick_richardson', 'jocelyn_jean']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - patrick_richardson (Place: 9, Year: 2009, Competition: jacksonville_pro, Source: scorecards)
+     - jocelyn_jean (Place: 9, Year: 2009, Competition: jacksonville_pro, Source: musclememory)
+
+23. Group: 2009_jacksonville_pro_figure_open_15
+   Athletes: ['karen_mullarkey_barringer', 'alana_hernandez']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - karen_mullarkey_barringer (Place: 15, Year: 2009, Competition: jacksonville_pro, Source: scorecards)
+     - alana_hernandez (Place: 15, Year: 2009, Competition: jacksonville_pro, Source: musclememory)
+
+24. Group: 2009_jacksonville_pro_figure_open_8
+   Athletes: ['marcy_porter', 'm_tivsay_briceno_dushane']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - marcy_porter (Place: 8, Year: 2009, Competition: jacksonville_pro, Source: scorecards)
+     - m_tivsay_briceno_dushane (Place: 8, Year: 2009, Competition: jacksonville_pro, Source: musclememory)
+
+25. Group: 2009_jacksonville_pro_figure_open_9
+   Athletes: ['m_tivsay_briceno_dushane', 'marcy_porter']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - m_tivsay_briceno_dushane (Place: 9, Year: 2009, Competition: jacksonville_pro, Source: scorecards)
+     - marcy_porter (Place: 9, Year: 2009, Competition: jacksonville_pro, Source: musclememory)
+
+26. Group: 2009_new_york_pro_womensbb_open_6
+   Athletes: ['jeannie_paparone', 'tazzie_colombâ']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - jeannie_paparone (Place: 6, Year: 2009, Competition: new_york_pro, Source: scorecards)
+     - tazzie_colombâ (Place: 6, Year: 2009, Competition: new_york_pro, Source: musclememory)
+
+27. Group: 2009_new_york_pro_womensbb_open_7
+   Athletes: ['tazzie_colombâ', 'jeannie_paparone']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - tazzie_colombâ (Place: 7, Year: 2009, Competition: new_york_pro, Source: scorecards)
+     - jeannie_paparone (Place: 7, Year: 2009, Competition: new_york_pro, Source: musclememory)
+
+28. Group: 2009_sacramento_pro_mensbb_open_0
+   Athletes: ['jorge_barrios_sanchez', 'heinz_senior', 'jo_jo_nitforo', 'aiman_faour', 'rob_churchill', 'eric_castagnet', 'serdar_aktolga']
+   Sources: ['scorecards', 'musclememory']
+   Count: 7 different athletes across 2 sources
+   Rows:
+     - jorge_barrios_sanchez (Place: 0, Year: 2009, Competition: sacramento_pro, Source: scorecards)
+     - heinz_senior (Place: 0, Year: 2009, Competition: sacramento_pro, Source: musclememory)
+     - jo_jo_nitforo (Place: 0, Year: 2009, Competition: sacramento_pro, Source: musclememory)
+     - aiman_faour (Place: 0, Year: 2009, Competition: sacramento_pro, Source: musclememory)
+     - rob_churchill (Place: 0, Year: 2009, Competition: sacramento_pro, Source: musclememory)
+     - eric_castagnet (Place: 0, Year: 2009, Competition: sacramento_pro, Source: musclememory)
+     - serdar_aktolga (Place: 0, Year: 2009, Competition: sacramento_pro, Source: musclememory)
+
+29. Group: 2010_europa_phoenix_pro_figure_open_10
+   Athletes: ['sabrina_taylor_gilson', 'taylor_waldrop']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - sabrina_taylor_gilson (Place: 10, Year: 2010, Competition: europa_phoenix_pro, Source: scorecards)
+     - taylor_waldrop (Place: 10, Year: 2010, Competition: europa_phoenix_pro, Source: musclememory)
+
+30. Group: 2010_europa_phoenix_pro_figure_open_11
+   Athletes: ['taylor_waldrop', 'sabrina_taylor_gilson']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - taylor_waldrop (Place: 11, Year: 2010, Competition: europa_phoenix_pro, Source: scorecards)
+     - sabrina_taylor_gilson (Place: 11, Year: 2010, Competition: europa_phoenix_pro, Source: musclememory)
+
+31. Group: 2010_new_york_pro_womensbb_open_5
+   Athletes: ['dayana_cadeau', 'rahel_michele_ruch']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - dayana_cadeau (Place: 5, Year: 2010, Competition: new_york_pro, Source: scorecards)
+     - rahel_michele_ruch (Place: 5, Year: 2010, Competition: new_york_pro, Source: musclememory)
+
+32. Group: 2010_new_york_pro_womensbb_open_6
+   Athletes: ['rahel_michele_ruch', 'dayana_cadeau']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - rahel_michele_ruch (Place: 6, Year: 2010, Competition: new_york_pro, Source: scorecards)
+     - dayana_cadeau (Place: 6, Year: 2010, Competition: new_york_pro, Source: musclememory)
+
+33. Group: 2011_europa_phoenix_pro_mensbb_open_0
+   Athletes: ['mohammad_ali_bannout', 'gian_enrico_pica', 'rod_ketchens', 'erwin_marquez', 'bola_ojex', 'benjamin_parra_munoz', 'grant_andre_pieterse']
+   Sources: ['scorecards', 'musclememory']
+   Count: 7 different athletes across 2 sources
+   Rows:
+     - mohammad_ali_bannout (Place: 0, Year: 2011, Competition: europa_phoenix_pro, Source: scorecards)
+     - gian_enrico_pica (Place: 0, Year: 2011, Competition: europa_phoenix_pro, Source: scorecards)
+     - rod_ketchens (Place: 0, Year: 2011, Competition: europa_phoenix_pro, Source: musclememory)
+     - erwin_marquez (Place: 0, Year: 2011, Competition: europa_phoenix_pro, Source: musclememory)
+     - bola_ojex (Place: 0, Year: 2011, Competition: europa_phoenix_pro, Source: musclememory)
+     - benjamin_parra_munoz (Place: 0, Year: 2011, Competition: europa_phoenix_pro, Source: musclememory)
+     - grant_andre_pieterse (Place: 0, Year: 2011, Competition: europa_phoenix_pro, Source: musclememory)
+
+34. Group: 2011_europa_phoenix_pro_mensbb_open_8
+   Athletes: ['michael_liberatore', 'abbas_khatami']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - michael_liberatore (Place: 8, Year: 2011, Competition: europa_phoenix_pro, Source: scorecards)
+     - abbas_khatami (Place: 8, Year: 2011, Competition: europa_phoenix_pro, Source: musclememory)
+
+35. Group: 2012_arnold_classic_bikini_open_16
+   Athletes: ['jessica_jessie', 'abigail_burrows']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - jessica_jessie (Place: 16, Year: 2012, Competition: arnold_classic, Source: scorecards)
+     - abigail_burrows (Place: 16, Year: 2012, Competition: arnold_classic, Source: npcnews)
+
+36. Group: 2012_europa_dallas_pro_mensbb_open_0
+   Athletes: ['troy_alves', 'adolthus_cherry', 'alexandre_nathan', 'zaher_moukahal', 'cesar_mendible_baptista', 'constantinos_demetrious', 'rodney_davis', 'sean_allan', 'augustus_carter']
+   Sources: ['scorecards', 'musclememory']
+   Count: 9 different athletes across 2 sources
+   Rows:
+     - troy_alves (Place: 0, Year: 2012, Competition: europa_dallas_pro, Source: scorecards)
+     - adolthus_cherry (Place: 0, Year: 2012, Competition: europa_dallas_pro, Source: scorecards)
+     - alexandre_nathan (Place: 0, Year: 2012, Competition: europa_dallas_pro, Source: scorecards)
+     - zaher_moukahal (Place: 0, Year: 2012, Competition: europa_dallas_pro, Source: musclememory)
+     - cesar_mendible_baptista (Place: 0, Year: 2012, Competition: europa_dallas_pro, Source: musclememory)
+     - constantinos_demetrious (Place: 0, Year: 2012, Competition: europa_dallas_pro, Source: musclememory)
+     - rodney_davis (Place: 0, Year: 2012, Competition: europa_dallas_pro, Source: musclememory)
+     - sean_allan (Place: 0, Year: 2012, Competition: europa_dallas_pro, Source: musclememory)
+     - augustus_carter (Place: 0, Year: 2012, Competition: europa_dallas_pro, Source: musclememory)
+
+37. Group: 2012_houston_pro_figure_open_0
+   Athletes: ['tamee_marie', 'clarissa_franschesca_castaneda', 'debbie_fowler', 'anissa_payne', 'esmeralda_saxenian']
+   Sources: ['scorecards', 'musclememory']
+   Count: 5 different athletes across 2 sources
+   Rows:
+     - tamee_marie (Place: 0, Year: 2012, Competition: houston_pro, Source: scorecards)
+     - clarissa_franschesca_castaneda (Place: 0, Year: 2012, Competition: houston_pro, Source: musclememory)
+     - debbie_fowler (Place: 0, Year: 2012, Competition: houston_pro, Source: musclememory)
+     - anissa_payne (Place: 0, Year: 2012, Competition: houston_pro, Source: musclememory)
+     - esmeralda_saxenian (Place: 0, Year: 2012, Competition: houston_pro, Source: musclememory)
+
+38. Group: 2012_kentucky_muscle_figure_open_1
+   Athletes: ['ann_titone', 'dana_ambrose']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - ann_titone (Place: 1, Year: 2012, Competition: kentucky_muscle, Source: scorecards)
+     - dana_ambrose (Place: 1, Year: 2012, Competition: kentucky_muscle, Source: musclememory)
+
+39. Group: 2012_kentucky_muscle_figure_open_10
+   Athletes: ['monica_labriola', 'tara_hollingsworth']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - monica_labriola (Place: 10, Year: 2012, Competition: kentucky_muscle, Source: scorecards)
+     - tara_hollingsworth (Place: 10, Year: 2012, Competition: kentucky_muscle, Source: musclememory)
+
+40. Group: 2012_kentucky_muscle_figure_open_11
+   Athletes: ['m_tivsay_briceno_dushane', 'monica_labriola']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - m_tivsay_briceno_dushane (Place: 11, Year: 2012, Competition: kentucky_muscle, Source: scorecards)
+     - monica_labriola (Place: 11, Year: 2012, Competition: kentucky_muscle, Source: musclememory)
+
+41. Group: 2012_kentucky_muscle_figure_open_12
+   Athletes: ['tara_hollingsworth', 'simone_mack']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - tara_hollingsworth (Place: 12, Year: 2012, Competition: kentucky_muscle, Source: scorecards)
+     - simone_mack (Place: 12, Year: 2012, Competition: kentucky_muscle, Source: musclememory)
+
+42. Group: 2012_kentucky_muscle_figure_open_14
+   Athletes: ['elisha_archibald', 'tiffany_procopio']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - elisha_archibald (Place: 14, Year: 2012, Competition: kentucky_muscle, Source: scorecards)
+     - tiffany_procopio (Place: 14, Year: 2012, Competition: kentucky_muscle, Source: musclememory)
+
+43. Group: 2012_kentucky_muscle_figure_open_15
+   Athletes: ['daphne_bascom', 'bernita_stuckey']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - daphne_bascom (Place: 15, Year: 2012, Competition: kentucky_muscle, Source: scorecards)
+     - bernita_stuckey (Place: 15, Year: 2012, Competition: kentucky_muscle, Source: musclememory)
+
+44. Group: 2012_kentucky_muscle_figure_open_16
+   Athletes: ['simone_mack', 'paula_frega', 'ann_titone']
+   Sources: ['scorecards', 'musclememory']
+   Count: 3 different athletes across 2 sources
+   Rows:
+     - simone_mack (Place: 16, Year: 2012, Competition: kentucky_muscle, Source: scorecards)
+     - paula_frega (Place: 16, Year: 2012, Competition: kentucky_muscle, Source: scorecards)
+     - ann_titone (Place: 16, Year: 2012, Competition: kentucky_muscle, Source: musclememory)
+
+45. Group: 2012_kentucky_muscle_figure_open_2
+   Athletes: ['dana_ambrose', 'elisha_archibald']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - dana_ambrose (Place: 2, Year: 2012, Competition: kentucky_muscle, Source: scorecards)
+     - elisha_archibald (Place: 2, Year: 2012, Competition: kentucky_muscle, Source: musclememory)
+
+46. Group: 2012_kentucky_muscle_figure_open_3
+   Athletes: ['bernita_stuckey', 'daphne_bascom']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - bernita_stuckey (Place: 3, Year: 2012, Competition: kentucky_muscle, Source: scorecards)
+     - daphne_bascom (Place: 3, Year: 2012, Competition: kentucky_muscle, Source: musclememory)
+
+47. Group: 2012_kentucky_muscle_figure_open_4
+   Athletes: ['vicki_counts', 'm_tivsay_briceno_dushane']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - vicki_counts (Place: 4, Year: 2012, Competition: kentucky_muscle, Source: scorecards)
+     - m_tivsay_briceno_dushane (Place: 4, Year: 2012, Competition: kentucky_muscle, Source: musclememory)
+
+48. Group: 2012_kentucky_muscle_figure_open_5
+   Athletes: ['alicia_renee_harris', 'vicki_counts']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - alicia_renee_harris (Place: 5, Year: 2012, Competition: kentucky_muscle, Source: scorecards)
+     - vicki_counts (Place: 5, Year: 2012, Competition: kentucky_muscle, Source: musclememory)
+
+49. Group: 2012_kentucky_muscle_figure_open_6
+   Athletes: ['rosalind_vanterpool', 'krista_dunn']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - rosalind_vanterpool (Place: 6, Year: 2012, Competition: kentucky_muscle, Source: scorecards)
+     - krista_dunn (Place: 6, Year: 2012, Competition: kentucky_muscle, Source: musclememory)
+
+50. Group: 2012_kentucky_muscle_figure_open_7
+   Athletes: ['krista_dunn', 'paula_frega']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - krista_dunn (Place: 7, Year: 2012, Competition: kentucky_muscle, Source: scorecards)
+     - paula_frega (Place: 7, Year: 2012, Competition: kentucky_muscle, Source: musclememory)
+
+51. Group: 2012_kentucky_muscle_figure_open_8
+   Athletes: ['jessie_hilgenberg', 'alicia_renee_harris']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - jessie_hilgenberg (Place: 8, Year: 2012, Competition: kentucky_muscle, Source: scorecards)
+     - alicia_renee_harris (Place: 8, Year: 2012, Competition: kentucky_muscle, Source: musclememory)
+
+52. Group: 2012_kentucky_muscle_figure_open_9
+   Athletes: ['tiffany_procopio', 'jessie_hilgenberg']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - tiffany_procopio (Place: 9, Year: 2012, Competition: kentucky_muscle, Source: scorecards)
+     - jessie_hilgenberg (Place: 9, Year: 2012, Competition: kentucky_muscle, Source: musclememory)
+
+53. Group: 2012_new_york_pro_figure_open_16
+   Athletes: ['elizabeth_maurice', 'ryan_hays_althoff', 'yolanda_esteso_sauri', 'thea_erichsen', 'ginette_delhaes', 'leah_berti', 'patrice_vignola', 'laura_tolonen', 'marcy_porter', 'eleni_plakitsi', 'angelica_nebbia', 'katherynne_ramirez', 'melanie_becker_de_palma', 'tiffany_archer']
+   Sources: ['scorecards', 'npcnews']
+   Count: 14 different athletes across 2 sources
+   Rows:
+     - elizabeth_maurice (Place: 16, Year: 2012, Competition: new_york_pro, Source: scorecards)
+     - ryan_hays_althoff (Place: 16, Year: 2012, Competition: new_york_pro, Source: scorecards)
+     - yolanda_esteso_sauri (Place: 16, Year: 2012, Competition: new_york_pro, Source: scorecards)
+     - thea_erichsen (Place: 16, Year: 2012, Competition: new_york_pro, Source: scorecards)
+     - ginette_delhaes (Place: 16, Year: 2012, Competition: new_york_pro, Source: scorecards)
+     - leah_berti (Place: 16, Year: 2012, Competition: new_york_pro, Source: scorecards)
+     - patrice_vignola (Place: 16, Year: 2012, Competition: new_york_pro, Source: scorecards)
+     - laura_tolonen (Place: 16, Year: 2012, Competition: new_york_pro, Source: scorecards)
+     - marcy_porter (Place: 16, Year: 2012, Competition: new_york_pro, Source: scorecards)
+     - eleni_plakitsi (Place: 16, Year: 2012, Competition: new_york_pro, Source: scorecards)
+     - angelica_nebbia (Place: 16, Year: 2012, Competition: new_york_pro, Source: scorecards)
+     - katherynne_ramirez (Place: 16, Year: 2012, Competition: new_york_pro, Source: scorecards)
+     - melanie_becker_de_palma (Place: 16, Year: 2012, Competition: new_york_pro, Source: npcnews)
+     - tiffany_archer (Place: 16, Year: 2012, Competition: new_york_pro, Source: npcnews)
+
+54. Group: 2012_olympia_mensbb_open_16
+   Athletes: ['bill_wilmore', 'michalis_kefalianos', 'fred_smalls_ii', 'baitollah_abbaspour']
+   Sources: ['scorecards', 'npcnews']
+   Count: 4 different athletes across 2 sources
+   Rows:
+     - bill_wilmore (Place: 16, Year: 2012, Competition: olympia, Source: scorecards)
+     - michalis_kefalianos (Place: 16, Year: 2012, Competition: olympia, Source: npcnews)
+     - fred_smalls_ii (Place: 16, Year: 2012, Competition: olympia, Source: npcnews)
+     - baitollah_abbaspour (Place: 16, Year: 2012, Competition: olympia, Source: npcnews)
+
+55. Group: 2012_omaha_pro_figure_open_6
+   Athletes: ['eleni_plakitsi', 'jessica_farrelly']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - eleni_plakitsi (Place: 6, Year: 2012, Competition: omaha_pro, Source: scorecards)
+     - jessica_farrelly (Place: 6, Year: 2012, Competition: omaha_pro, Source: musclememory)
+
+56. Group: 2012_omaha_pro_figure_open_7
+   Athletes: ['jessica_farrelly', 'eleni_plakitsi']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - jessica_farrelly (Place: 7, Year: 2012, Competition: omaha_pro, Source: scorecards)
+     - eleni_plakitsi (Place: 7, Year: 2012, Competition: omaha_pro, Source: musclememory)
+
+57. Group: 2012_tampa_pro_mensbb_open_10
+   Athletes: ['alexandre_nathan', 'keith_williams']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - alexandre_nathan (Place: 10, Year: 2012, Competition: tampa_pro, Source: scorecards)
+     - keith_williams (Place: 10, Year: 2012, Competition: tampa_pro, Source: npcnews)
+
+58. Group: 2012_tampa_pro_mensbb_open_4
+   Athletes: ['keith_williams', 'roelly_egberton_winklaar']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - keith_williams (Place: 4, Year: 2012, Competition: tampa_pro, Source: scorecards)
+     - roelly_egberton_winklaar (Place: 4, Year: 2012, Competition: tampa_pro, Source: npcnews)
+
+59. Group: 2013_california_pro_figure_open_0
+   Athletes: ['clarissa_franschesca_castaneda', 'leah_berti', 'dawn_fernandez', 'maria_jose_garcia_sanchez', 'rose_hendricks', 'monica_labriola', 'michelle_mayberry', 'queren_cabrero_pacheco', 'tiffany_radzwill', 'laurie_schnelle', 'tamara_sedlack', 'jill_st_laurent', 'bojana_vasilijevic', 'julia_aragon']
+   Sources: ['scorecards', 'musclememory']
+   Count: 14 different athletes across 2 sources
+   Rows:
+     - clarissa_franschesca_castaneda (Place: 0, Year: 2013, Competition: california_pro, Source: scorecards)
+     - leah_berti (Place: 0, Year: 2013, Competition: california_pro, Source: musclememory)
+     - dawn_fernandez (Place: 0, Year: 2013, Competition: california_pro, Source: musclememory)
+     - maria_jose_garcia_sanchez (Place: 0, Year: 2013, Competition: california_pro, Source: musclememory)
+     - rose_hendricks (Place: 0, Year: 2013, Competition: california_pro, Source: musclememory)
+     - monica_labriola (Place: 0, Year: 2013, Competition: california_pro, Source: musclememory)
+     - michelle_mayberry (Place: 0, Year: 2013, Competition: california_pro, Source: musclememory)
+     - queren_cabrero_pacheco (Place: 0, Year: 2013, Competition: california_pro, Source: musclememory)
+     - tiffany_radzwill (Place: 0, Year: 2013, Competition: california_pro, Source: musclememory)
+     - laurie_schnelle (Place: 0, Year: 2013, Competition: california_pro, Source: musclememory)
+     - tamara_sedlack (Place: 0, Year: 2013, Competition: california_pro, Source: musclememory)
+     - jill_st_laurent (Place: 0, Year: 2013, Competition: california_pro, Source: musclememory)
+     - bojana_vasilijevic (Place: 0, Year: 2013, Competition: california_pro, Source: musclememory)
+     - julia_aragon (Place: 0, Year: 2013, Competition: california_pro, Source: musclememory)
+
+60. Group: 2013_europa_dallas_pro_mensbb_open_0
+   Athletes: ['luke_timms', 'lee_apperson', 'rod_ketchens']
+   Sources: ['scorecards', 'musclememory']
+   Count: 3 different athletes across 2 sources
+   Rows:
+     - luke_timms (Place: 0, Year: 2013, Competition: europa_dallas_pro, Source: scorecards)
+     - lee_apperson (Place: 0, Year: 2013, Competition: europa_dallas_pro, Source: musclememory)
+     - rod_ketchens (Place: 0, Year: 2013, Competition: europa_dallas_pro, Source: musclememory)
+
+61. Group: 2013_europa_dallas_pro_womensphysique_open_0
+   Athletes: ['marina_lopez', 'cinzia_massaro_clapp', 'jessica_gaines', 'karen_gatto', 'nekole_hamrick', 'marnie_holley', 'cea_anna_kerr', 'zoa_linsey', 'jayla_mcdermott', 'sheena_ohlig', 'myriam_bustamante', 'antonia_perdikakas', 'ida_sefland', 'michelle_trapp', 'lindy_waid', 'stephanie_willes', 'mikaila_soto']
+   Sources: ['scorecards', 'musclememory']
+   Count: 17 different athletes across 2 sources
+   Rows:
+     - marina_lopez (Place: 0, Year: 2013, Competition: europa_dallas_pro, Source: scorecards)
+     - cinzia_massaro_clapp (Place: 0, Year: 2013, Competition: europa_dallas_pro, Source: musclememory)
+     - jessica_gaines (Place: 0, Year: 2013, Competition: europa_dallas_pro, Source: musclememory)
+     - karen_gatto (Place: 0, Year: 2013, Competition: europa_dallas_pro, Source: musclememory)
+     - nekole_hamrick (Place: 0, Year: 2013, Competition: europa_dallas_pro, Source: musclememory)
+     - marnie_holley (Place: 0, Year: 2013, Competition: europa_dallas_pro, Source: musclememory)
+     - cea_anna_kerr (Place: 0, Year: 2013, Competition: europa_dallas_pro, Source: musclememory)
+     - zoa_linsey (Place: 0, Year: 2013, Competition: europa_dallas_pro, Source: musclememory)
+     - jayla_mcdermott (Place: 0, Year: 2013, Competition: europa_dallas_pro, Source: musclememory)
+     - sheena_ohlig (Place: 0, Year: 2013, Competition: europa_dallas_pro, Source: musclememory)
+     - myriam_bustamante (Place: 0, Year: 2013, Competition: europa_dallas_pro, Source: musclememory)
+     - antonia_perdikakas (Place: 0, Year: 2013, Competition: europa_dallas_pro, Source: musclememory)
+     - ida_sefland (Place: 0, Year: 2013, Competition: europa_dallas_pro, Source: musclememory)
+     - michelle_trapp (Place: 0, Year: 2013, Competition: europa_dallas_pro, Source: musclememory)
+     - lindy_waid (Place: 0, Year: 2013, Competition: europa_dallas_pro, Source: musclememory)
+     - stephanie_willes (Place: 0, Year: 2013, Competition: europa_dallas_pro, Source: musclememory)
+     - mikaila_soto (Place: 0, Year: 2013, Competition: europa_dallas_pro, Source: musclememory)
+
+62. Group: 2013_fort_lauderdale_pro_bikini_open_16
+   Athletes: ['jennifer_dawn', 'satrice_rigsby', 'michon_leddy', 'bernadette_marassa']
+   Sources: ['scorecards', 'npcnews']
+   Count: 4 different athletes across 2 sources
+   Rows:
+     - jennifer_dawn (Place: 16, Year: 2013, Competition: fort_lauderdale_pro, Source: scorecards)
+     - satrice_rigsby (Place: 16, Year: 2013, Competition: fort_lauderdale_pro, Source: scorecards)
+     - michon_leddy (Place: 16, Year: 2013, Competition: fort_lauderdale_pro, Source: scorecards)
+     - bernadette_marassa (Place: 16, Year: 2013, Competition: fort_lauderdale_pro, Source: npcnews)
+
+63. Group: 2013_houston_pro_figure_open_4
+   Athletes: ['dana_ambrose', 'rebecca_schubeck', 'heidi_sorsa']
+   Sources: ['scorecards', 'musclememory']
+   Count: 3 different athletes across 2 sources
+   Rows:
+     - dana_ambrose (Place: 4, Year: 2013, Competition: houston_pro, Source: scorecards)
+     - rebecca_schubeck (Place: 4, Year: 2013, Competition: houston_pro, Source: musclememory)
+     - heidi_sorsa (Place: 4, Year: 2013, Competition: houston_pro, Source: musclememory)
+
+64. Group: 2013_iowa_pro_bikini_open_10
+   Athletes: ['simone_sinclaire', 'sara_sinclair']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - simone_sinclaire (Place: 10, Year: 2013, Competition: iowa_pro, Source: scorecards)
+     - sara_sinclair (Place: 10, Year: 2013, Competition: iowa_pro, Source: npcnews)
+
+65. Group: 2013_new_york_pro_figure_open_4
+   Athletes: ['rebecca_vera', 'amy_puglisse']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - rebecca_vera (Place: 4, Year: 2013, Competition: new_york_pro, Source: scorecards)
+     - amy_puglisse (Place: 4, Year: 2013, Competition: new_york_pro, Source: musclememory)
+
+66. Group: 2013_new_york_pro_mensbb_open_14
+   Athletes: ['alfonso_valencia_del_rio', 'antoine_vaillant']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - alfonso_valencia_del_rio (Place: 14, Year: 2013, Competition: new_york_pro, Source: scorecards)
+     - antoine_vaillant (Place: 14, Year: 2013, Competition: new_york_pro, Source: npcnews)
+
+67. Group: 2013_new_york_pro_mensbb_open_15
+   Athletes: ['antoine_vaillant', 'zaher_moukahal', 'michael_johnson', 'jeff_beckham', 'dalibor_hajek', 'dainlius_brazinskas']
+   Sources: ['scorecards', 'npcnews']
+   Count: 6 different athletes across 2 sources
+   Rows:
+     - antoine_vaillant (Place: 15, Year: 2013, Competition: new_york_pro, Source: scorecards)
+     - zaher_moukahal (Place: 15, Year: 2013, Competition: new_york_pro, Source: npcnews)
+     - michael_johnson (Place: 15, Year: 2013, Competition: new_york_pro, Source: npcnews)
+     - jeff_beckham (Place: 15, Year: 2013, Competition: new_york_pro, Source: npcnews)
+     - dalibor_hajek (Place: 15, Year: 2013, Competition: new_york_pro, Source: npcnews)
+     - dainlius_brazinskas (Place: 15, Year: 2013, Competition: new_york_pro, Source: npcnews)
+
+68. Group: 2013_olympia_womensphysique_open_6
+   Athletes: ['jillian_reville', 'mindi_obrien']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - jillian_reville (Place: 6, Year: 2013, Competition: olympia, Source: scorecards)
+     - mindi_obrien (Place: 6, Year: 2013, Competition: olympia, Source: npcnews)
+
+69. Group: 2013_olympia_womensphysique_open_9
+   Athletes: ['tamee_marie', 'venus_nguyen']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - tamee_marie (Place: 9, Year: 2013, Competition: olympia, Source: scorecards)
+     - venus_nguyen (Place: 9, Year: 2013, Competition: olympia, Source: npcnews)
+
+70. Group: 2013_sheru_classic_mumbai_pro_202_212_212_2
+   Athletes: ['aukel_amber', 'ahmad_ahamad']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - aukel_amber (Place: 2, Year: 2013, Competition: sheru_classic_mumbai_pro, Source: scorecards)
+     - ahmad_ahamad (Place: 2, Year: 2013, Competition: sheru_classic_mumbai_pro, Source: musclememory)
+
+71. Group: 2013_st_louis_bikini_pro_bikini_open_16
+   Athletes: ['katherine_williams', 'jennifer_dawn', 'maria_chase', 'ashley_wade', 'aly_veneno', 'rachelle_deluca', 'anna_starodubtseva', 'cecile_palacios', 'kristal_martin', 'michon_leddy', 'michelle_johnson', 'sandi_forsythe', 'jennifer_elliott', 'rachelle_dejean']
+   Sources: ['scorecards', 'npcnews']
+   Count: 14 different athletes across 2 sources
+   Rows:
+     - katherine_williams (Place: 16, Year: 2013, Competition: st_louis_bikini_pro, Source: scorecards)
+     - jennifer_dawn (Place: 16, Year: 2013, Competition: st_louis_bikini_pro, Source: scorecards)
+     - maria_chase (Place: 16, Year: 2013, Competition: st_louis_bikini_pro, Source: scorecards)
+     - ashley_wade (Place: 16, Year: 2013, Competition: st_louis_bikini_pro, Source: scorecards)
+     - aly_veneno (Place: 16, Year: 2013, Competition: st_louis_bikini_pro, Source: scorecards)
+     - rachelle_deluca (Place: 16, Year: 2013, Competition: st_louis_bikini_pro, Source: scorecards)
+     - anna_starodubtseva (Place: 16, Year: 2013, Competition: st_louis_bikini_pro, Source: scorecards)
+     - cecile_palacios (Place: 16, Year: 2013, Competition: st_louis_bikini_pro, Source: scorecards)
+     - kristal_martin (Place: 16, Year: 2013, Competition: st_louis_bikini_pro, Source: scorecards)
+     - michon_leddy (Place: 16, Year: 2013, Competition: st_louis_bikini_pro, Source: scorecards)
+     - michelle_johnson (Place: 16, Year: 2013, Competition: st_louis_bikini_pro, Source: scorecards)
+     - sandi_forsythe (Place: 16, Year: 2013, Competition: st_louis_bikini_pro, Source: scorecards)
+     - jennifer_elliott (Place: 16, Year: 2013, Competition: st_louis_bikini_pro, Source: scorecards)
+     - rachelle_dejean (Place: 16, Year: 2013, Competition: st_louis_bikini_pro, Source: npcnews)
+
+72. Group: 2013_tampa_pro_figure_open_0
+   Athletes: ['miriam_gerard', 'jennifer_brown', 'dawn_hinz_pugh', 'belinda_ann_hope', 'candice_john', 'tatiana_koshman', 'eleni_kritikopoulou', 'brenda_laurer', 'ashley_simone_maybin', 'melanie_petteee', 'tamara_ribeiro_bailey', 'cinderella_richardson', 'dani_ronquilio', 'bernita_stuckey', 'teela_thompson', 'chaya_boone', 'ryan_behr', 'holly_beck']
+   Sources: ['scorecards', 'musclememory']
+   Count: 18 different athletes across 2 sources
+   Rows:
+     - miriam_gerard (Place: 0, Year: 2013, Competition: tampa_pro, Source: scorecards)
+     - jennifer_brown (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - dawn_hinz_pugh (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - belinda_ann_hope (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - candice_john (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - tatiana_koshman (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - eleni_kritikopoulou (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - brenda_laurer (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - ashley_simone_maybin (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - melanie_petteee (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - tamara_ribeiro_bailey (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - cinderella_richardson (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - dani_ronquilio (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - bernita_stuckey (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - teela_thompson (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - chaya_boone (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - ryan_behr (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - holly_beck (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+
+73. Group: 2013_tampa_pro_mensbb_open_0
+   Athletes: ['baitollah_abbaspour', 'santana_anderson', 'jeff_beckham', 'tomas_bures_tomáš_bureš', 'steven_burke', 'joe_derousie', 'lloyd_dollar', 'timothy_gaillard', 'james_hampton', 'emro_karadjulovic', 'alexandre_nathan', 'peter_porczi', 'jonathan_rowe', 'christopher_saccardo', 'mario_van_steenberghe', 'maor_zaradez']
+   Sources: ['scorecards', 'musclememory']
+   Count: 16 different athletes across 2 sources
+   Rows:
+     - baitollah_abbaspour (Place: 0, Year: 2013, Competition: tampa_pro, Source: scorecards)
+     - santana_anderson (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - jeff_beckham (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - tomas_bures_tomáš_bureš (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - steven_burke (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - joe_derousie (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - lloyd_dollar (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - timothy_gaillard (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - james_hampton (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - emro_karadjulovic (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - alexandre_nathan (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - peter_porczi (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - jonathan_rowe (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - christopher_saccardo (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - mario_van_steenberghe (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - maor_zaradez (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+
+74. Group: 2013_tampa_pro_womensbb_open_0
+   Athletes: ['janeen_lankowski', 'natalia_batova', 'juanita_blaino', 'angela_debatin', 'beverly_di_renzo', 'agatha_dulson', 'roxanne_edwards', 'pamela_franklin', 'miriam_gerard', 'aurellia_grozajova', 'terri_harrisâ', 'mary_ellen_jerumbo', 'maryse_descamps_manios', 'geraldine_morgan', 'sharon_mould', 'beth_wachter']
+   Sources: ['scorecards', 'musclememory']
+   Count: 16 different athletes across 2 sources
+   Rows:
+     - janeen_lankowski (Place: 0, Year: 2013, Competition: tampa_pro, Source: scorecards)
+     - natalia_batova (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - juanita_blaino (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - angela_debatin (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - beverly_di_renzo (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - agatha_dulson (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - roxanne_edwards (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - pamela_franklin (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - miriam_gerard (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - aurellia_grozajova (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - terri_harrisâ (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - mary_ellen_jerumbo (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - maryse_descamps_manios (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - geraldine_morgan (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - sharon_mould (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+     - beth_wachter (Place: 0, Year: 2013, Competition: tampa_pro, Source: musclememory)
+
+75. Group: 2013_tampa_pro_womensbb_open_16
+   Athletes: ['geraldine_morgan', 'roxanne_edwards', 'pamela_franklin', 'aurellia_grozajova', 'terri_harrisâ', 'mary_ellen_jerumbo', 'maryse_descamps_manios', 'sharon_mould', 'beth_wachter', 'natalia_batova', 'juanita_blaino', 'agatha_dulson', 'beverly_di_renzo', 'angela_debatin', 'miriam_gerard']
+   Sources: ['scorecards', 'npcnews']
+   Count: 15 different athletes across 2 sources
+   Rows:
+     - geraldine_morgan (Place: 16, Year: 2013, Competition: tampa_pro, Source: scorecards)
+     - roxanne_edwards (Place: 16, Year: 2013, Competition: tampa_pro, Source: scorecards)
+     - pamela_franklin (Place: 16, Year: 2013, Competition: tampa_pro, Source: scorecards)
+     - aurellia_grozajova (Place: 16, Year: 2013, Competition: tampa_pro, Source: scorecards)
+     - terri_harrisâ (Place: 16, Year: 2013, Competition: tampa_pro, Source: scorecards)
+     - mary_ellen_jerumbo (Place: 16, Year: 2013, Competition: tampa_pro, Source: scorecards)
+     - maryse_descamps_manios (Place: 16, Year: 2013, Competition: tampa_pro, Source: scorecards)
+     - sharon_mould (Place: 16, Year: 2013, Competition: tampa_pro, Source: scorecards)
+     - beth_wachter (Place: 16, Year: 2013, Competition: tampa_pro, Source: scorecards)
+     - natalia_batova (Place: 16, Year: 2013, Competition: tampa_pro, Source: scorecards)
+     - juanita_blaino (Place: 16, Year: 2013, Competition: tampa_pro, Source: scorecards)
+     - agatha_dulson (Place: 16, Year: 2013, Competition: tampa_pro, Source: scorecards)
+     - beverly_di_renzo (Place: 16, Year: 2013, Competition: tampa_pro, Source: scorecards)
+     - angela_debatin (Place: 16, Year: 2013, Competition: tampa_pro, Source: scorecards)
+     - miriam_gerard (Place: 16, Year: 2013, Competition: tampa_pro, Source: npcnews)
+
+76. Group: 2013_toronto_supershow_bikini_open_4
+   Athletes: ['nathalie_mur', 'jessica_renee_fletcher']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - nathalie_mur (Place: 4, Year: 2013, Competition: toronto_supershow, Source: scorecards)
+     - jessica_renee_fletcher (Place: 4, Year: 2013, Competition: toronto_supershow, Source: npcnews)
+
+77. Group: 2013_toronto_supershow_womensphysique_open_14
+   Athletes: ['michelle_krack', 'debbie_barrable_leung']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - michelle_krack (Place: 14, Year: 2013, Competition: toronto_supershow, Source: scorecards)
+     - debbie_barrable_leung (Place: 14, Year: 2013, Competition: toronto_supershow, Source: npcnews)
+
+78. Group: 2013_toronto_supershow_womensphysique_open_16
+   Athletes: ['tammy_patnode', 'janessa_roy']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - tammy_patnode (Place: 16, Year: 2013, Competition: toronto_supershow, Source: scorecards)
+     - janessa_roy (Place: 16, Year: 2013, Competition: toronto_supershow, Source: npcnews)
+
+79. Group: 2014_emerald_cup_figure_open_2
+   Athletes: ['julie_mayer_hyman', 'rosalyn_dudding']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - julie_mayer_hyman (Place: 2, Year: 2014, Competition: emerald_cup, Source: scorecards)
+     - rosalyn_dudding (Place: 2, Year: 2014, Competition: emerald_cup, Source: musclememory)
+
+80. Group: 2014_europa_phoenix_pro_figure_open_16
+   Athletes: ['agnese_russon', 'beckie_boddie']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - agnese_russon (Place: 16, Year: 2014, Competition: europa_phoenix_pro, Source: scorecards)
+     - beckie_boddie (Place: 16, Year: 2014, Competition: europa_phoenix_pro, Source: npcnews)
+
+81. Group: 2014_moscow_showdown_pro_bikini_open_2
+   Athletes: ['ashley_kaitwasser', 'anna_starodubtseva']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - ashley_kaitwasser (Place: 2, Year: 2014, Competition: moscow_showdown_pro, Source: scorecards)
+     - anna_starodubtseva (Place: 2, Year: 2014, Competition: moscow_showdown_pro, Source: npcnews)
+
+82. Group: 2014_olympia_figure_open_16
+   Athletes: ['natalia_revajova_lenartova', 'karina_grau_servin', 'shasha_brown', 'zsuzsanna_toldi', 'krista_dunn']
+   Sources: ['scorecards', 'npcnews']
+   Count: 5 different athletes across 2 sources
+   Rows:
+     - natalia_revajova_lenartova (Place: 16, Year: 2014, Competition: olympia, Source: scorecards)
+     - karina_grau_servin (Place: 16, Year: 2014, Competition: olympia, Source: scorecards)
+     - shasha_brown (Place: 16, Year: 2014, Competition: olympia, Source: scorecards)
+     - zsuzsanna_toldi (Place: 16, Year: 2014, Competition: olympia, Source: scorecards)
+     - krista_dunn (Place: 16, Year: 2014, Competition: olympia, Source: npcnews)
+
+83. Group: 2014_orlando_show_of_champions_mensphysique_open_12
+   Athletes: ['william_sullivan', 'toney_torres']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - william_sullivan (Place: 12, Year: 2014, Competition: orlando_show_of_champions, Source: scorecards)
+     - toney_torres (Place: 12, Year: 2014, Competition: orlando_show_of_champions, Source: npcnews)
+
+84. Group: 2014_orlando_show_of_champions_mensphysique_open_16
+   Athletes: ['victor_ricardo_delgado_ruiz', 'victor_james_clark', 'joe_cantu', 'justin_busiere', 'anthony_brigman', 'duane_brickhouse', 'josh_bowmar', 'john_arterberry', 'anton_antipov', 'murat_demir', 'jermaine_ward', 'david_velazquez', 'toney_torres', 'ken_settapani', 'douglas_peaney', 'geobanny_paula', 'aaron_oconnell', 'capriese_murray', 'burton_hughes', 'jim_holcomb', 'jr_sheridan_hause', 'william_sullivan']
+   Sources: ['scorecards', 'npcnews']
+   Count: 22 different athletes across 2 sources
+   Rows:
+     - victor_ricardo_delgado_ruiz (Place: 16, Year: 2014, Competition: orlando_show_of_champions, Source: scorecards)
+     - victor_james_clark (Place: 16, Year: 2014, Competition: orlando_show_of_champions, Source: scorecards)
+     - joe_cantu (Place: 16, Year: 2014, Competition: orlando_show_of_champions, Source: scorecards)
+     - justin_busiere (Place: 16, Year: 2014, Competition: orlando_show_of_champions, Source: scorecards)
+     - anthony_brigman (Place: 16, Year: 2014, Competition: orlando_show_of_champions, Source: scorecards)
+     - duane_brickhouse (Place: 16, Year: 2014, Competition: orlando_show_of_champions, Source: scorecards)
+     - josh_bowmar (Place: 16, Year: 2014, Competition: orlando_show_of_champions, Source: scorecards)
+     - john_arterberry (Place: 16, Year: 2014, Competition: orlando_show_of_champions, Source: scorecards)
+     - anton_antipov (Place: 16, Year: 2014, Competition: orlando_show_of_champions, Source: scorecards)
+     - murat_demir (Place: 16, Year: 2014, Competition: orlando_show_of_champions, Source: scorecards)
+     - jermaine_ward (Place: 16, Year: 2014, Competition: orlando_show_of_champions, Source: scorecards)
+     - david_velazquez (Place: 16, Year: 2014, Competition: orlando_show_of_champions, Source: scorecards)
+     - toney_torres (Place: 16, Year: 2014, Competition: orlando_show_of_champions, Source: scorecards)
+     - ken_settapani (Place: 16, Year: 2014, Competition: orlando_show_of_champions, Source: scorecards)
+     - douglas_peaney (Place: 16, Year: 2014, Competition: orlando_show_of_champions, Source: scorecards)
+     - geobanny_paula (Place: 16, Year: 2014, Competition: orlando_show_of_champions, Source: scorecards)
+     - aaron_oconnell (Place: 16, Year: 2014, Competition: orlando_show_of_champions, Source: scorecards)
+     - capriese_murray (Place: 16, Year: 2014, Competition: orlando_show_of_champions, Source: scorecards)
+     - burton_hughes (Place: 16, Year: 2014, Competition: orlando_show_of_champions, Source: scorecards)
+     - jim_holcomb (Place: 16, Year: 2014, Competition: orlando_show_of_champions, Source: scorecards)
+     - jr_sheridan_hause (Place: 16, Year: 2014, Competition: orlando_show_of_champions, Source: scorecards)
+     - william_sullivan (Place: 16, Year: 2014, Competition: orlando_show_of_champions, Source: npcnews)
+
+85. Group: 2014_tampa_pro_womensphysique_open_13
+   Athletes: ['rosella_joseph', 'cahdrea_judd_adams']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - rosella_joseph (Place: 13, Year: 2014, Competition: tampa_pro, Source: scorecards)
+     - cahdrea_judd_adams (Place: 13, Year: 2014, Competition: tampa_pro, Source: npcnews)
+
+86. Group: 2014_tampa_pro_womensphysique_open_16
+   Athletes: ['lenore_kaiser_gregson', 'ladawn_mcday', 'sandra_lombardo', 'jill_marie_livoti', 'carrie_lawyer', 'anne_marrie_kam', 'leah_johnson', 'tracy_hess', 'lisa_grasso', 'karen_gatto', 'cassandra_floyd', 'dre’_dillard', 'kendal_dolen', 'ava_cowan', 'jeannea_burritt', 'melissa_tucker', 'olivia_terry', 'tonya_shull', 'dona_oliviera', 'vicki_nixon', 'rose_brunner', 'rosella_joseph']
+   Sources: ['scorecards', 'npcnews']
+   Count: 22 different athletes across 2 sources
+   Rows:
+     - lenore_kaiser_gregson (Place: 16, Year: 2014, Competition: tampa_pro, Source: scorecards)
+     - ladawn_mcday (Place: 16, Year: 2014, Competition: tampa_pro, Source: scorecards)
+     - sandra_lombardo (Place: 16, Year: 2014, Competition: tampa_pro, Source: scorecards)
+     - jill_marie_livoti (Place: 16, Year: 2014, Competition: tampa_pro, Source: scorecards)
+     - carrie_lawyer (Place: 16, Year: 2014, Competition: tampa_pro, Source: scorecards)
+     - anne_marrie_kam (Place: 16, Year: 2014, Competition: tampa_pro, Source: scorecards)
+     - leah_johnson (Place: 16, Year: 2014, Competition: tampa_pro, Source: scorecards)
+     - tracy_hess (Place: 16, Year: 2014, Competition: tampa_pro, Source: scorecards)
+     - lisa_grasso (Place: 16, Year: 2014, Competition: tampa_pro, Source: scorecards)
+     - karen_gatto (Place: 16, Year: 2014, Competition: tampa_pro, Source: scorecards)
+     - cassandra_floyd (Place: 16, Year: 2014, Competition: tampa_pro, Source: scorecards)
+     - dre’_dillard (Place: 16, Year: 2014, Competition: tampa_pro, Source: scorecards)
+     - kendal_dolen (Place: 16, Year: 2014, Competition: tampa_pro, Source: scorecards)
+     - ava_cowan (Place: 16, Year: 2014, Competition: tampa_pro, Source: scorecards)
+     - jeannea_burritt (Place: 16, Year: 2014, Competition: tampa_pro, Source: scorecards)
+     - melissa_tucker (Place: 16, Year: 2014, Competition: tampa_pro, Source: scorecards)
+     - olivia_terry (Place: 16, Year: 2014, Competition: tampa_pro, Source: scorecards)
+     - tonya_shull (Place: 16, Year: 2014, Competition: tampa_pro, Source: scorecards)
+     - dona_oliviera (Place: 16, Year: 2014, Competition: tampa_pro, Source: scorecards)
+     - vicki_nixon (Place: 16, Year: 2014, Competition: tampa_pro, Source: scorecards)
+     - rose_brunner (Place: 16, Year: 2014, Competition: tampa_pro, Source: scorecards)
+     - rosella_joseph (Place: 16, Year: 2014, Competition: tampa_pro, Source: npcnews)
+
+87. Group: 2014_tampa_pro_womensphysique_open_9
+   Athletes: ['cahdrea_judd_adams', 'tracy_hess']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - cahdrea_judd_adams (Place: 9, Year: 2014, Competition: tampa_pro, Source: scorecards)
+     - tracy_hess (Place: 9, Year: 2014, Competition: tampa_pro, Source: npcnews)
+
+88. Group: 2014_titans_grand_prix_womensphysique_open_3
+   Athletes: ['desunka_dawson', 'leonie_rose']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - desunka_dawson (Place: 3, Year: 2014, Competition: titans_grand_prix, Source: scorecards)
+     - leonie_rose (Place: 3, Year: 2014, Competition: titans_grand_prix, Source: npcnews)
+
+89. Group: 2015_atlantic_city_pro_womensphysique_open_14
+   Athletes: ['marthe_sundby', 'dany_garcia']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - marthe_sundby (Place: 14, Year: 2015, Competition: atlantic_city_pro, Source: scorecards)
+     - dany_garcia (Place: 14, Year: 2015, Competition: atlantic_city_pro, Source: musclememory)
+
+90. Group: 2015_europa_dallas_pro_figure_open_14
+   Athletes: ['tamen_stuve', 'andrea_cantone']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - tamen_stuve (Place: 14, Year: 2015, Competition: europa_dallas_pro, Source: scorecards)
+     - andrea_cantone (Place: 14, Year: 2015, Competition: europa_dallas_pro, Source: musclememory)
+
+91. Group: 2015_ferrigno_legacy_pro_mensbb_open_4
+   Athletes: ['luis_manuel_lomeli_alonso', 'michael_ely']
+   Sources: ['npcnews', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - luis_manuel_lomeli_alonso (Place: 4, Year: 2015, Competition: ferrigno_legacy_pro, Source: npcnews)
+     - michael_ely (Place: 4, Year: 2015, Competition: ferrigno_legacy_pro, Source: musclememory)
+
+92. Group: 2015_ferrigno_legacy_pro_mensbb_open_5
+   Athletes: ['branden_ray', 'oleg_emelianov']
+   Sources: ['npcnews', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - branden_ray (Place: 5, Year: 2015, Competition: ferrigno_legacy_pro, Source: npcnews)
+     - oleg_emelianov (Place: 5, Year: 2015, Competition: ferrigno_legacy_pro, Source: musclememory)
+
+93. Group: 2015_mile_high_pro_mensphysique_open_2
+   Athletes: ['alexandre_carneiro', 'jacob_campus']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - alexandre_carneiro (Place: 2, Year: 2015, Competition: mile_high_pro, Source: scorecards)
+     - jacob_campus (Place: 2, Year: 2015, Competition: mile_high_pro, Source: npcnews)
+
+94. Group: 2015_mile_high_pro_mensphysique_open_3
+   Athletes: ['jacob_campus', 'alexandre_carneiro']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - jacob_campus (Place: 3, Year: 2015, Competition: mile_high_pro, Source: scorecards)
+     - alexandre_carneiro (Place: 3, Year: 2015, Competition: mile_high_pro, Source: npcnews)
+
+95. Group: 2015_new_york_pro_figure_open_0
+   Athletes: ['beckie_boddie', 'sarah_fechter', 'ester_gozhansky', 'sophie_hoang_lagace', 'marlissa_jordan', 'olga_karavayeva', 'katie_luna', 'monique_norval', 'rinnah_schmidt', 'diana_schnaidt', 'rebecca_schubeck', 'linda_stephens', 'susetty_tabaesh', 'katerina_tarbox', 'yolanda_tillman', 'jennifer_everson', 'amber_crowder', 'andrea_calhoun', 'marie_ong_allegro']
+   Sources: ['scorecards', 'musclememory']
+   Count: 19 different athletes across 2 sources
+   Rows:
+     - beckie_boddie (Place: 0, Year: 2015, Competition: new_york_pro, Source: scorecards)
+     - sarah_fechter (Place: 0, Year: 2015, Competition: new_york_pro, Source: musclememory)
+     - ester_gozhansky (Place: 0, Year: 2015, Competition: new_york_pro, Source: musclememory)
+     - sophie_hoang_lagace (Place: 0, Year: 2015, Competition: new_york_pro, Source: musclememory)
+     - marlissa_jordan (Place: 0, Year: 2015, Competition: new_york_pro, Source: musclememory)
+     - olga_karavayeva (Place: 0, Year: 2015, Competition: new_york_pro, Source: musclememory)
+     - katie_luna (Place: 0, Year: 2015, Competition: new_york_pro, Source: musclememory)
+     - monique_norval (Place: 0, Year: 2015, Competition: new_york_pro, Source: musclememory)
+     - rinnah_schmidt (Place: 0, Year: 2015, Competition: new_york_pro, Source: musclememory)
+     - diana_schnaidt (Place: 0, Year: 2015, Competition: new_york_pro, Source: musclememory)
+     - rebecca_schubeck (Place: 0, Year: 2015, Competition: new_york_pro, Source: musclememory)
+     - linda_stephens (Place: 0, Year: 2015, Competition: new_york_pro, Source: musclememory)
+     - susetty_tabaesh (Place: 0, Year: 2015, Competition: new_york_pro, Source: musclememory)
+     - katerina_tarbox (Place: 0, Year: 2015, Competition: new_york_pro, Source: musclememory)
+     - yolanda_tillman (Place: 0, Year: 2015, Competition: new_york_pro, Source: musclememory)
+     - jennifer_everson (Place: 0, Year: 2015, Competition: new_york_pro, Source: musclememory)
+     - amber_crowder (Place: 0, Year: 2015, Competition: new_york_pro, Source: musclememory)
+     - andrea_calhoun (Place: 0, Year: 2015, Competition: new_york_pro, Source: musclememory)
+     - marie_ong_allegro (Place: 0, Year: 2015, Competition: new_york_pro, Source: musclememory)
+
+96. Group: 2015_new_york_pro_womensphysique_open_0
+   Athletes: ['dolly_lazarre', 'nadia_meyer', 'geraldine_morgan', 'miava_nelson', 'jennifer_palazzo', 'katie_sauter', 'patricia_watson', 'donna_mcginn', 'jehina_malik', 'cahdrea_judd_adams', 'orlandina_balan', 'olga_beliakova', 'ladera_davies', 'cassandra_floyd', 'nathalie_foreau', 'jody_garland', 'katerina_kryptova']
+   Sources: ['scorecards', 'musclememory']
+   Count: 17 different athletes across 2 sources
+   Rows:
+     - dolly_lazarre (Place: 0, Year: 2015, Competition: new_york_pro, Source: scorecards)
+     - nadia_meyer (Place: 0, Year: 2015, Competition: new_york_pro, Source: musclememory)
+     - geraldine_morgan (Place: 0, Year: 2015, Competition: new_york_pro, Source: musclememory)
+     - miava_nelson (Place: 0, Year: 2015, Competition: new_york_pro, Source: musclememory)
+     - jennifer_palazzo (Place: 0, Year: 2015, Competition: new_york_pro, Source: musclememory)
+     - katie_sauter (Place: 0, Year: 2015, Competition: new_york_pro, Source: musclememory)
+     - patricia_watson (Place: 0, Year: 2015, Competition: new_york_pro, Source: musclememory)
+     - donna_mcginn (Place: 0, Year: 2015, Competition: new_york_pro, Source: musclememory)
+     - jehina_malik (Place: 0, Year: 2015, Competition: new_york_pro, Source: musclememory)
+     - cahdrea_judd_adams (Place: 0, Year: 2015, Competition: new_york_pro, Source: musclememory)
+     - orlandina_balan (Place: 0, Year: 2015, Competition: new_york_pro, Source: musclememory)
+     - olga_beliakova (Place: 0, Year: 2015, Competition: new_york_pro, Source: musclememory)
+     - ladera_davies (Place: 0, Year: 2015, Competition: new_york_pro, Source: musclememory)
+     - cassandra_floyd (Place: 0, Year: 2015, Competition: new_york_pro, Source: musclememory)
+     - nathalie_foreau (Place: 0, Year: 2015, Competition: new_york_pro, Source: musclememory)
+     - jody_garland (Place: 0, Year: 2015, Competition: new_york_pro, Source: musclememory)
+     - katerina_kryptova (Place: 0, Year: 2015, Competition: new_york_pro, Source: musclememory)
+
+97. Group: 2015_northern_california_pro_bikini_open_17
+   Athletes: ['anne_marie_caravalho', 'christina_flavin_williams', 'shannon_atkinson', 'harriet_davis', 'chassidy_smothers', 'sheena_jayne_anderton', 'lori_lynn_micheff', 'joni_lynn_ortiz', 'emma_fernandez']
+   Sources: ['scorecards', 'npcnews']
+   Count: 9 different athletes across 2 sources
+   Rows:
+     - anne_marie_caravalho (Place: 17, Year: 2015, Competition: northern_california_pro, Source: scorecards)
+     - christina_flavin_williams (Place: 17, Year: 2015, Competition: northern_california_pro, Source: scorecards)
+     - shannon_atkinson (Place: 17, Year: 2015, Competition: northern_california_pro, Source: scorecards)
+     - harriet_davis (Place: 17, Year: 2015, Competition: northern_california_pro, Source: scorecards)
+     - chassidy_smothers (Place: 17, Year: 2015, Competition: northern_california_pro, Source: scorecards)
+     - sheena_jayne_anderton (Place: 17, Year: 2015, Competition: northern_california_pro, Source: scorecards)
+     - lori_lynn_micheff (Place: 17, Year: 2015, Competition: northern_california_pro, Source: scorecards)
+     - joni_lynn_ortiz (Place: 17, Year: 2015, Competition: northern_california_pro, Source: scorecards)
+     - emma_fernandez (Place: 17, Year: 2015, Competition: northern_california_pro, Source: npcnews)
+
+98. Group: 2015_olympia_mensphysique_open_15
+   Athletes: ['michael_ferguson', 'jr_earnest_flowers']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - michael_ferguson (Place: 15, Year: 2015, Competition: olympia, Source: scorecards)
+     - jr_earnest_flowers (Place: 15, Year: 2015, Competition: olympia, Source: npcnews)
+
+99. Group: 2015_pittsburgh_pro_figure_open_5
+   Athletes: ['julie_mayer_hyman', 'suni_sweeney']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - julie_mayer_hyman (Place: 5, Year: 2015, Competition: pittsburgh_pro, Source: scorecards)
+     - suni_sweeney (Place: 5, Year: 2015, Competition: pittsburgh_pro, Source: musclememory)
+
+100. Group: 2015_tampa_pro_womensphysique_open_16
+   Athletes: ['alisa_lamay', 'janeen_lankowski', 'alicia_alfaro_mesa', 'jillian_reville', 'tracy_waller', 'alisa_horrigan', 'robin_connell', 'kendal_dolen', 'asha_hadley', 'paula_frega', 'cassandra_floyd', 'jennifer_hernandez']
+   Sources: ['scorecards', 'npcnews']
+   Count: 12 different athletes across 2 sources
+   Rows:
+     - alisa_lamay (Place: 16, Year: 2015, Competition: tampa_pro, Source: scorecards)
+     - janeen_lankowski (Place: 16, Year: 2015, Competition: tampa_pro, Source: scorecards)
+     - alicia_alfaro_mesa (Place: 16, Year: 2015, Competition: tampa_pro, Source: scorecards)
+     - jillian_reville (Place: 16, Year: 2015, Competition: tampa_pro, Source: scorecards)
+     - tracy_waller (Place: 16, Year: 2015, Competition: tampa_pro, Source: scorecards)
+     - alisa_horrigan (Place: 16, Year: 2015, Competition: tampa_pro, Source: scorecards)
+     - robin_connell (Place: 16, Year: 2015, Competition: tampa_pro, Source: scorecards)
+     - kendal_dolen (Place: 16, Year: 2015, Competition: tampa_pro, Source: scorecards)
+     - asha_hadley (Place: 16, Year: 2015, Competition: tampa_pro, Source: scorecards)
+     - paula_frega (Place: 16, Year: 2015, Competition: tampa_pro, Source: scorecards)
+     - cassandra_floyd (Place: 16, Year: 2015, Competition: tampa_pro, Source: scorecards)
+     - jennifer_hernandez (Place: 16, Year: 2015, Competition: tampa_pro, Source: npcnews)
+
+101. Group: 2015_texas_pro_figure_open_0
+   Athletes: ['viviana_aurora_baca_servin', 'federica_ghezzi', 'selena_pons', 'tara_ramos', 'denise_rose', 'rebecca_schubeck', 'nicole_sturtze', 'marisela_chela_garcia', 'angela_doucette', 'kendra_beasley', 'yolanda_anthony', 'maria_carlone_rennicker']
+   Sources: ['scorecards', 'musclememory']
+   Count: 12 different athletes across 2 sources
+   Rows:
+     - viviana_aurora_baca_servin (Place: 0, Year: 2015, Competition: texas_pro, Source: scorecards)
+     - federica_ghezzi (Place: 0, Year: 2015, Competition: texas_pro, Source: musclememory)
+     - selena_pons (Place: 0, Year: 2015, Competition: texas_pro, Source: musclememory)
+     - tara_ramos (Place: 0, Year: 2015, Competition: texas_pro, Source: musclememory)
+     - denise_rose (Place: 0, Year: 2015, Competition: texas_pro, Source: musclememory)
+     - rebecca_schubeck (Place: 0, Year: 2015, Competition: texas_pro, Source: musclememory)
+     - nicole_sturtze (Place: 0, Year: 2015, Competition: texas_pro, Source: musclememory)
+     - marisela_chela_garcia (Place: 0, Year: 2015, Competition: texas_pro, Source: musclememory)
+     - angela_doucette (Place: 0, Year: 2015, Competition: texas_pro, Source: musclememory)
+     - kendra_beasley (Place: 0, Year: 2015, Competition: texas_pro, Source: musclememory)
+     - yolanda_anthony (Place: 0, Year: 2015, Competition: texas_pro, Source: musclememory)
+     - maria_carlone_rennicker (Place: 0, Year: 2015, Competition: texas_pro, Source: musclememory)
+
+102. Group: 2015_texas_pro_womensphysique_open_0
+   Athletes: ['star_blaylock', 'desunka_dawson', 'kendal_dolen', 'kristina_dybdahl_farnsworth', 'lenore_kaiser_gregson', 'kari_hartmann', 'cathy_jackson', 'leah_johnson', 'tracy_mason', 'amber_mcelreath', 'akane_nigro_ismeal', 'claire_rohrbacker_oconnell', 'tye_pierpoint', 'lisa_marie_sanders', 'stacy_simons_mcdowell', 'trish_swander', 'yasha']
+   Sources: ['scorecards', 'musclememory']
+   Count: 17 different athletes across 2 sources
+   Rows:
+     - star_blaylock (Place: 0, Year: 2015, Competition: texas_pro, Source: scorecards)
+     - desunka_dawson (Place: 0, Year: 2015, Competition: texas_pro, Source: scorecards)
+     - kendal_dolen (Place: 0, Year: 2015, Competition: texas_pro, Source: musclememory)
+     - kristina_dybdahl_farnsworth (Place: 0, Year: 2015, Competition: texas_pro, Source: musclememory)
+     - lenore_kaiser_gregson (Place: 0, Year: 2015, Competition: texas_pro, Source: musclememory)
+     - kari_hartmann (Place: 0, Year: 2015, Competition: texas_pro, Source: musclememory)
+     - cathy_jackson (Place: 0, Year: 2015, Competition: texas_pro, Source: musclememory)
+     - leah_johnson (Place: 0, Year: 2015, Competition: texas_pro, Source: musclememory)
+     - tracy_mason (Place: 0, Year: 2015, Competition: texas_pro, Source: musclememory)
+     - amber_mcelreath (Place: 0, Year: 2015, Competition: texas_pro, Source: musclememory)
+     - akane_nigro_ismeal (Place: 0, Year: 2015, Competition: texas_pro, Source: musclememory)
+     - claire_rohrbacker_oconnell (Place: 0, Year: 2015, Competition: texas_pro, Source: musclememory)
+     - tye_pierpoint (Place: 0, Year: 2015, Competition: texas_pro, Source: musclememory)
+     - lisa_marie_sanders (Place: 0, Year: 2015, Competition: texas_pro, Source: musclememory)
+     - stacy_simons_mcdowell (Place: 0, Year: 2015, Competition: texas_pro, Source: musclememory)
+     - trish_swander (Place: 0, Year: 2015, Competition: texas_pro, Source: musclememory)
+     - yasha (Place: 0, Year: 2015, Competition: texas_pro, Source: musclememory)
+
+103. Group: 2015_vancouver_pro_figure_open_1
+   Athletes: ['candice_john', 'shelly_paton']
+   Sources: ['npcnews', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - candice_john (Place: 1, Year: 2015, Competition: vancouver_pro, Source: npcnews)
+     - shelly_paton (Place: 1, Year: 2015, Competition: vancouver_pro, Source: musclememory)
+
+104. Group: 2016_california_pro_mensbb_open_12
+   Athletes: ['pablo_ayala_zayas', 'bola_ojex']
+   Sources: ['npcnews', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - pablo_ayala_zayas (Place: 12, Year: 2016, Competition: california_pro, Source: npcnews)
+     - bola_ojex (Place: 12, Year: 2016, Competition: california_pro, Source: musclememory)
+
+105. Group: 2016_chicago_pro_womensphysique_open_0
+   Athletes: ['jessica_bowman', 'ladera_davies', 'andrea_lenihan', 'alicia_spearman']
+   Sources: ['scorecards', 'musclememory']
+   Count: 4 different athletes across 2 sources
+   Rows:
+     - jessica_bowman (Place: 0, Year: 2016, Competition: chicago_pro, Source: scorecards)
+     - ladera_davies (Place: 0, Year: 2016, Competition: chicago_pro, Source: musclememory)
+     - andrea_lenihan (Place: 0, Year: 2016, Competition: chicago_pro, Source: musclememory)
+     - alicia_spearman (Place: 0, Year: 2016, Competition: chicago_pro, Source: musclememory)
+
+106. Group: 2016_chicago_pro_womensphysique_open_1
+   Athletes: ['jamie_nicole_pinder', 'kasia_topor']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - jamie_nicole_pinder (Place: 1, Year: 2016, Competition: chicago_pro, Source: scorecards)
+     - kasia_topor (Place: 1, Year: 2016, Competition: chicago_pro, Source: musclememory)
+
+107. Group: 2016_europa_dallas_pro_mensphysique_open_8
+   Athletes: ['uchenna_nwosu', 'matthew_mugford']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - uchenna_nwosu (Place: 8, Year: 2016, Competition: europa_dallas_pro, Source: scorecards)
+     - matthew_mugford (Place: 8, Year: 2016, Competition: europa_dallas_pro, Source: npcnews)
+
+108. Group: 2016_greater_gulf_pro_bikini_open_14
+   Athletes: ['ruth_jean_mohammed', 'marites_miller']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - ruth_jean_mohammed (Place: 14, Year: 2016, Competition: greater_gulf_pro, Source: scorecards)
+     - marites_miller (Place: 14, Year: 2016, Competition: greater_gulf_pro, Source: npcnews)
+
+109. Group: 2016_kentucky_muscle_figure_open_10
+   Athletes: ['katharine_lane', 'jodie_bell']
+   Sources: ['npcnews', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - katharine_lane (Place: 10, Year: 2016, Competition: kentucky_muscle, Source: npcnews)
+     - jodie_bell (Place: 10, Year: 2016, Competition: kentucky_muscle, Source: musclememory)
+
+110. Group: 2016_lenda_murray_norfolk_pro_womensbb_open_1
+   Athletes: ['yaxeni_orioquen_garcia', 'lora_ottenrad']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - yaxeni_orioquen_garcia (Place: 1, Year: 2016, Competition: lenda_murray_norfolk_pro, Source: scorecards)
+     - lora_ottenrad (Place: 1, Year: 2016, Competition: lenda_murray_norfolk_pro, Source: musclememory)
+
+111. Group: 2016_los_angeles_grand_prix_mensphysique_open_1
+   Athletes: ['xavisius_gayden', 'jeremy_potvin']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - xavisius_gayden (Place: 1, Year: 2016, Competition: los_angeles_grand_prix, Source: scorecards)
+     - jeremy_potvin (Place: 1, Year: 2016, Competition: los_angeles_grand_prix, Source: npcnews)
+
+112. Group: 2016_los_angeles_grand_prix_mensphysique_open_10
+   Athletes: ['miguel_mendoza', 'david_thorpe']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - miguel_mendoza (Place: 10, Year: 2016, Competition: los_angeles_grand_prix, Source: scorecards)
+     - david_thorpe (Place: 10, Year: 2016, Competition: los_angeles_grand_prix, Source: npcnews)
+
+113. Group: 2016_los_angeles_grand_prix_mensphysique_open_11
+   Athletes: ['chris_kakouras', 'armando_arellano']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - chris_kakouras (Place: 11, Year: 2016, Competition: los_angeles_grand_prix, Source: scorecards)
+     - armando_arellano (Place: 11, Year: 2016, Competition: los_angeles_grand_prix, Source: npcnews)
+
+114. Group: 2016_los_angeles_grand_prix_mensphysique_open_12
+   Athletes: ['david_james_maxie', 'mohamed_boqamber']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - david_james_maxie (Place: 12, Year: 2016, Competition: los_angeles_grand_prix, Source: scorecards)
+     - mohamed_boqamber (Place: 12, Year: 2016, Competition: los_angeles_grand_prix, Source: npcnews)
+
+115. Group: 2016_los_angeles_grand_prix_mensphysique_open_13
+   Athletes: ['rickey_l_moten_jr', 'jeffrey_vialu']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - rickey_l_moten_jr (Place: 13, Year: 2016, Competition: los_angeles_grand_prix, Source: scorecards)
+     - jeffrey_vialu (Place: 13, Year: 2016, Competition: los_angeles_grand_prix, Source: npcnews)
+
+116. Group: 2016_los_angeles_grand_prix_mensphysique_open_14
+   Athletes: ['erik_drendel', 'tony_lynch']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - erik_drendel (Place: 14, Year: 2016, Competition: los_angeles_grand_prix, Source: scorecards)
+     - tony_lynch (Place: 14, Year: 2016, Competition: los_angeles_grand_prix, Source: npcnews)
+
+117. Group: 2016_los_angeles_grand_prix_mensphysique_open_15
+   Athletes: ['deontae_higdon', 'clint_van_dyke']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - deontae_higdon (Place: 15, Year: 2016, Competition: los_angeles_grand_prix, Source: scorecards)
+     - clint_van_dyke (Place: 15, Year: 2016, Competition: los_angeles_grand_prix, Source: npcnews)
+
+118. Group: 2016_los_angeles_grand_prix_mensphysique_open_16
+   Athletes: ['juan_farro_barros', 'allan_basto', 'douglas_evans', 'tarron_hill', 'shahram_nikbakhtbidgoli', 'david_odom', 'tonnell_rodriguez', 'robert_shaw', 'dylan_white', 'alexander_woodson', 'adon_marcus']
+   Sources: ['scorecards', 'npcnews']
+   Count: 11 different athletes across 2 sources
+   Rows:
+     - juan_farro_barros (Place: 16, Year: 2016, Competition: los_angeles_grand_prix, Source: scorecards)
+     - allan_basto (Place: 16, Year: 2016, Competition: los_angeles_grand_prix, Source: scorecards)
+     - douglas_evans (Place: 16, Year: 2016, Competition: los_angeles_grand_prix, Source: scorecards)
+     - tarron_hill (Place: 16, Year: 2016, Competition: los_angeles_grand_prix, Source: scorecards)
+     - shahram_nikbakhtbidgoli (Place: 16, Year: 2016, Competition: los_angeles_grand_prix, Source: scorecards)
+     - david_odom (Place: 16, Year: 2016, Competition: los_angeles_grand_prix, Source: scorecards)
+     - tonnell_rodriguez (Place: 16, Year: 2016, Competition: los_angeles_grand_prix, Source: scorecards)
+     - robert_shaw (Place: 16, Year: 2016, Competition: los_angeles_grand_prix, Source: scorecards)
+     - dylan_white (Place: 16, Year: 2016, Competition: los_angeles_grand_prix, Source: scorecards)
+     - alexander_woodson (Place: 16, Year: 2016, Competition: los_angeles_grand_prix, Source: scorecards)
+     - adon_marcus (Place: 16, Year: 2016, Competition: los_angeles_grand_prix, Source: npcnews)
+
+119. Group: 2016_los_angeles_grand_prix_mensphysique_open_2
+   Athletes: ['long_wu', 'tristan_murray']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - long_wu (Place: 2, Year: 2016, Competition: los_angeles_grand_prix, Source: scorecards)
+     - tristan_murray (Place: 2, Year: 2016, Competition: los_angeles_grand_prix, Source: npcnews)
+
+120. Group: 2016_los_angeles_grand_prix_mensphysique_open_3
+   Athletes: ['arya_saffaie', 'jeremy_coleman']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - arya_saffaie (Place: 3, Year: 2016, Competition: los_angeles_grand_prix, Source: scorecards)
+     - jeremy_coleman (Place: 3, Year: 2016, Competition: los_angeles_grand_prix, Source: npcnews)
+
+121. Group: 2016_los_angeles_grand_prix_mensphysique_open_4
+   Athletes: ['tristan_murray', 'arya_saffaie']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - tristan_murray (Place: 4, Year: 2016, Competition: los_angeles_grand_prix, Source: scorecards)
+     - arya_saffaie (Place: 4, Year: 2016, Competition: los_angeles_grand_prix, Source: npcnews)
+
+122. Group: 2016_los_angeles_grand_prix_mensphysique_open_5
+   Athletes: ['jerdani_kraja', 'andre_smith']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - jerdani_kraja (Place: 5, Year: 2016, Competition: los_angeles_grand_prix, Source: scorecards)
+     - andre_smith (Place: 5, Year: 2016, Competition: los_angeles_grand_prix, Source: npcnews)
+
+123. Group: 2016_los_angeles_grand_prix_mensphysique_open_6
+   Athletes: ['jeremy_coleman', 'tony_duong']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - jeremy_coleman (Place: 6, Year: 2016, Competition: los_angeles_grand_prix, Source: scorecards)
+     - tony_duong (Place: 6, Year: 2016, Competition: los_angeles_grand_prix, Source: npcnews)
+
+124. Group: 2016_los_angeles_grand_prix_mensphysique_open_7
+   Athletes: ['brad_albertson', 'brett_kahn']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - brad_albertson (Place: 7, Year: 2016, Competition: los_angeles_grand_prix, Source: scorecards)
+     - brett_kahn (Place: 7, Year: 2016, Competition: los_angeles_grand_prix, Source: npcnews)
+
+125. Group: 2016_los_angeles_grand_prix_mensphysique_open_8
+   Athletes: ['mohammad_bugambar', 'tonnell_rodriguez']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - mohammad_bugambar (Place: 8, Year: 2016, Competition: los_angeles_grand_prix, Source: scorecards)
+     - tonnell_rodriguez (Place: 8, Year: 2016, Competition: los_angeles_grand_prix, Source: npcnews)
+
+126. Group: 2016_los_angeles_grand_prix_mensphysique_open_9
+   Athletes: ['mike_stripling', 'tim_martin']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - mike_stripling (Place: 9, Year: 2016, Competition: los_angeles_grand_prix, Source: scorecards)
+     - tim_martin (Place: 9, Year: 2016, Competition: los_angeles_grand_prix, Source: npcnews)
+
+127. Group: 2016_new_york_pro_figure_open_16
+   Athletes: ['erin_riley', 'satrice_rigsby', 'marie_ong_allegro', 'heather_nappi', 'felecia_murray', 'susana_alegre', 'norvis_arias', 'ellen_elizabeth_berg', 'beckie_boddie', 'rachelle_carter', 'maggie_corso', 'stephanie_hammermeister', 'joanna_holden', 'elena_kirschchina', 'bryana_turner', 'christi_shaw', 'kayla_rossi', 'linda_nelson', 'linda_stephens']
+   Sources: ['scorecards', 'npcnews']
+   Count: 19 different athletes across 2 sources
+   Rows:
+     - erin_riley (Place: 16, Year: 2016, Competition: new_york_pro, Source: scorecards)
+     - satrice_rigsby (Place: 16, Year: 2016, Competition: new_york_pro, Source: scorecards)
+     - marie_ong_allegro (Place: 16, Year: 2016, Competition: new_york_pro, Source: scorecards)
+     - heather_nappi (Place: 16, Year: 2016, Competition: new_york_pro, Source: scorecards)
+     - felecia_murray (Place: 16, Year: 2016, Competition: new_york_pro, Source: scorecards)
+     - susana_alegre (Place: 16, Year: 2016, Competition: new_york_pro, Source: scorecards)
+     - norvis_arias (Place: 16, Year: 2016, Competition: new_york_pro, Source: scorecards)
+     - ellen_elizabeth_berg (Place: 16, Year: 2016, Competition: new_york_pro, Source: scorecards)
+     - beckie_boddie (Place: 16, Year: 2016, Competition: new_york_pro, Source: scorecards)
+     - rachelle_carter (Place: 16, Year: 2016, Competition: new_york_pro, Source: scorecards)
+     - maggie_corso (Place: 16, Year: 2016, Competition: new_york_pro, Source: scorecards)
+     - stephanie_hammermeister (Place: 16, Year: 2016, Competition: new_york_pro, Source: scorecards)
+     - joanna_holden (Place: 16, Year: 2016, Competition: new_york_pro, Source: scorecards)
+     - elena_kirschchina (Place: 16, Year: 2016, Competition: new_york_pro, Source: scorecards)
+     - bryana_turner (Place: 16, Year: 2016, Competition: new_york_pro, Source: npcnews)
+     - christi_shaw (Place: 16, Year: 2016, Competition: new_york_pro, Source: npcnews)
+     - kayla_rossi (Place: 16, Year: 2016, Competition: new_york_pro, Source: npcnews)
+     - linda_nelson (Place: 16, Year: 2016, Competition: new_york_pro, Source: npcnews)
+     - linda_stephens (Place: 16, Year: 2016, Competition: new_york_pro, Source: npcnews)
+
+128. Group: 2016_new_york_pro_womensphysique_open_5
+   Athletes: ['jennifer_hernandez', 'antonia_perdikakas']
+   Sources: ['npcnews', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - jennifer_hernandez (Place: 5, Year: 2016, Competition: new_york_pro, Source: npcnews)
+     - antonia_perdikakas (Place: 5, Year: 2016, Competition: new_york_pro, Source: musclememory)
+
+129. Group: 2016_san_antonio_pro_figure_open_15
+   Athletes: ['dawn_hinz_pugh', 'natalie_rochner']
+   Sources: ['npcnews', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - dawn_hinz_pugh (Place: 15, Year: 2016, Competition: san_antonio_pro, Source: npcnews)
+     - natalie_rochner (Place: 15, Year: 2016, Competition: san_antonio_pro, Source: musclememory)
+
+130. Group: 2016_st_louis_pro_figure_open_1
+   Athletes: ['ivana_ivusic', 'candice_lewis_carter']
+   Sources: ['npcnews', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - ivana_ivusic (Place: 1, Year: 2016, Competition: st_louis_pro, Source: npcnews)
+     - candice_lewis_carter (Place: 1, Year: 2016, Competition: st_louis_pro, Source: musclememory)
+
+131. Group: 2016_st_louis_pro_figure_open_2
+   Athletes: ['sharmane_williams', 'allison_frahn']
+   Sources: ['npcnews', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - sharmane_williams (Place: 2, Year: 2016, Competition: st_louis_pro, Source: npcnews)
+     - allison_frahn (Place: 2, Year: 2016, Competition: st_louis_pro, Source: musclememory)
+
+132. Group: 2016_st_louis_pro_figure_open_4
+   Athletes: ['sarah_sweeney', 'angie_lemay']
+   Sources: ['npcnews', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - sarah_sweeney (Place: 4, Year: 2016, Competition: st_louis_pro, Source: npcnews)
+     - angie_lemay (Place: 4, Year: 2016, Competition: st_louis_pro, Source: musclememory)
+
+133. Group: 2016_st_louis_pro_figure_open_5
+   Athletes: ['idalia_molina', 'danielle_kiffer']
+   Sources: ['npcnews', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - idalia_molina (Place: 5, Year: 2016, Competition: st_louis_pro, Source: npcnews)
+     - danielle_kiffer (Place: 5, Year: 2016, Competition: st_louis_pro, Source: musclememory)
+
+134. Group: 2016_st_louis_pro_figure_open_6
+   Athletes: ['vanessa_jacobs', 'amber_peguero']
+   Sources: ['npcnews', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - vanessa_jacobs (Place: 6, Year: 2016, Competition: st_louis_pro, Source: npcnews)
+     - amber_peguero (Place: 6, Year: 2016, Competition: st_louis_pro, Source: musclememory)
+
+135. Group: 2016_st_louis_pro_figure_open_7
+   Athletes: ['dawn_reichley', 'brittany_campbell']
+   Sources: ['npcnews', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - dawn_reichley (Place: 7, Year: 2016, Competition: st_louis_pro, Source: npcnews)
+     - brittany_campbell (Place: 7, Year: 2016, Competition: st_louis_pro, Source: musclememory)
+
+136. Group: 2016_st_louis_pro_figure_open_8
+   Athletes: ['jessica_ann_vetter', 'cynthia_aguirre']
+   Sources: ['npcnews', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - jessica_ann_vetter (Place: 8, Year: 2016, Competition: st_louis_pro, Source: npcnews)
+     - cynthia_aguirre (Place: 8, Year: 2016, Competition: st_louis_pro, Source: musclememory)
+
+137. Group: 2016_st_louis_pro_figure_open_9
+   Athletes: ['helen_turley', 'marisela_chela_garcia']
+   Sources: ['npcnews', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - helen_turley (Place: 9, Year: 2016, Competition: st_louis_pro, Source: npcnews)
+     - marisela_chela_garcia (Place: 9, Year: 2016, Competition: st_louis_pro, Source: musclememory)
+
+138. Group: 2016_toronto_supershow_202_212_212_15
+   Athletes: ['benjamin_parra_munoz', 'santana_anderson']
+   Sources: ['npcnews', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - benjamin_parra_munoz (Place: 15, Year: 2016, Competition: toronto_supershow, Source: npcnews)
+     - santana_anderson (Place: 15, Year: 2016, Competition: toronto_supershow, Source: musclememory)
+
+139. Group: 2017_arnold_classic_womensphysique_open_4
+   Athletes: ['brooke_jean_walker', 'lenore_kaiser_gregson']
+   Sources: ['npcnews', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - brooke_jean_walker (Place: 4, Year: 2017, Competition: arnold_classic, Source: npcnews)
+     - lenore_kaiser_gregson (Place: 4, Year: 2017, Competition: arnold_classic, Source: musclememory)
+
+140. Group: 2017_california_pro_mensbb_open_13
+   Athletes: ['lionel_brown', 'charles_griffen']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - lionel_brown (Place: 13, Year: 2017, Competition: california_pro, Source: scorecards)
+     - charles_griffen (Place: 13, Year: 2017, Competition: california_pro, Source: musclememory)
+
+141. Group: 2017_evls_prague_pro_mensbb_open_2
+   Athletes: ['william_kwaku_bonac', 'sergei_zebald']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - william_kwaku_bonac (Place: 2, Year: 2017, Competition: evls_prague_pro, Source: scorecards)
+     - sergei_zebald (Place: 2, Year: 2017, Competition: evls_prague_pro, Source: musclememory)
+
+142. Group: 2017_golden_state_pro_mensphysique_open_16
+   Athletes: ['larry_crawford', 'sean_daniel', 'javier_de_jesus', 'erik_drendel', 'rasheed_english', 'jamal_everette', 'brent_guillory', 'mario_ienni', 'carlos_lueck', 'allan_basto', 'tony_lynch', 'adam_bankston', 'jorge_l_sanchez', 'david_sessler', 'gary_torres', 'brett_vickers', 'thomas_riley']
+   Sources: ['scorecards', 'npcnews']
+   Count: 17 different athletes across 2 sources
+   Rows:
+     - larry_crawford (Place: 16, Year: 2017, Competition: golden_state_pro, Source: scorecards)
+     - sean_daniel (Place: 16, Year: 2017, Competition: golden_state_pro, Source: scorecards)
+     - javier_de_jesus (Place: 16, Year: 2017, Competition: golden_state_pro, Source: scorecards)
+     - erik_drendel (Place: 16, Year: 2017, Competition: golden_state_pro, Source: scorecards)
+     - rasheed_english (Place: 16, Year: 2017, Competition: golden_state_pro, Source: scorecards)
+     - jamal_everette (Place: 16, Year: 2017, Competition: golden_state_pro, Source: scorecards)
+     - brent_guillory (Place: 16, Year: 2017, Competition: golden_state_pro, Source: scorecards)
+     - mario_ienni (Place: 16, Year: 2017, Competition: golden_state_pro, Source: scorecards)
+     - carlos_lueck (Place: 16, Year: 2017, Competition: golden_state_pro, Source: scorecards)
+     - allan_basto (Place: 16, Year: 2017, Competition: golden_state_pro, Source: scorecards)
+     - tony_lynch (Place: 16, Year: 2017, Competition: golden_state_pro, Source: scorecards)
+     - adam_bankston (Place: 16, Year: 2017, Competition: golden_state_pro, Source: scorecards)
+     - jorge_l_sanchez (Place: 16, Year: 2017, Competition: golden_state_pro, Source: scorecards)
+     - david_sessler (Place: 16, Year: 2017, Competition: golden_state_pro, Source: scorecards)
+     - gary_torres (Place: 16, Year: 2017, Competition: golden_state_pro, Source: scorecards)
+     - brett_vickers (Place: 16, Year: 2017, Competition: golden_state_pro, Source: scorecards)
+     - thomas_riley (Place: 16, Year: 2017, Competition: golden_state_pro, Source: npcnews)
+
+143. Group: 2017_greater_gulf_pro_figure_open_0
+   Athletes: ['kacey_stefan', 'kim_clark', 'kelly_dominick', 'kimmy_hiles', 'lisa_lopez', 'stephanie_trevino']
+   Sources: ['scorecards', 'musclememory']
+   Count: 6 different athletes across 2 sources
+   Rows:
+     - kacey_stefan (Place: 0, Year: 2017, Competition: greater_gulf_pro, Source: scorecards)
+     - kim_clark (Place: 0, Year: 2017, Competition: greater_gulf_pro, Source: musclememory)
+     - kelly_dominick (Place: 0, Year: 2017, Competition: greater_gulf_pro, Source: musclememory)
+     - kimmy_hiles (Place: 0, Year: 2017, Competition: greater_gulf_pro, Source: musclememory)
+     - lisa_lopez (Place: 0, Year: 2017, Competition: greater_gulf_pro, Source: musclememory)
+     - stephanie_trevino (Place: 0, Year: 2017, Competition: greater_gulf_pro, Source: musclememory)
+
+144. Group: 2017_new_york_pro_mensphysique_open_16
+   Athletes: ['charles_tschupp', 'troy_williams', 'larry_angelo_zimmerman', 'maxime_parisi', 'german_david_pacheco', 'shawn_labega', 'timothy_henley', 'scott_dennis', 'ron_dacosta', 'miguel_mendoza', 'michael_d_mperey', 'ismael_martinez_dominguez', 'jeremy_jones', 'marcelino_bradford', 'maurice_arthur', 'ephfram_mike_lawhorne', 'clifford_lewis', 'brenden_floyd', 'brendon_osbourne']
+   Sources: ['scorecards', 'npcnews']
+   Count: 19 different athletes across 2 sources
+   Rows:
+     - charles_tschupp (Place: 16, Year: 2017, Competition: new_york_pro, Source: scorecards)
+     - troy_williams (Place: 16, Year: 2017, Competition: new_york_pro, Source: scorecards)
+     - larry_angelo_zimmerman (Place: 16, Year: 2017, Competition: new_york_pro, Source: scorecards)
+     - maxime_parisi (Place: 16, Year: 2017, Competition: new_york_pro, Source: scorecards)
+     - german_david_pacheco (Place: 16, Year: 2017, Competition: new_york_pro, Source: scorecards)
+     - shawn_labega (Place: 16, Year: 2017, Competition: new_york_pro, Source: npcnews)
+     - timothy_henley (Place: 16, Year: 2017, Competition: new_york_pro, Source: npcnews)
+     - scott_dennis (Place: 16, Year: 2017, Competition: new_york_pro, Source: npcnews)
+     - ron_dacosta (Place: 16, Year: 2017, Competition: new_york_pro, Source: npcnews)
+     - miguel_mendoza (Place: 16, Year: 2017, Competition: new_york_pro, Source: npcnews)
+     - michael_d_mperey (Place: 16, Year: 2017, Competition: new_york_pro, Source: npcnews)
+     - ismael_martinez_dominguez (Place: 16, Year: 2017, Competition: new_york_pro, Source: npcnews)
+     - jeremy_jones (Place: 16, Year: 2017, Competition: new_york_pro, Source: npcnews)
+     - marcelino_bradford (Place: 16, Year: 2017, Competition: new_york_pro, Source: npcnews)
+     - maurice_arthur (Place: 16, Year: 2017, Competition: new_york_pro, Source: npcnews)
+     - ephfram_mike_lawhorne (Place: 16, Year: 2017, Competition: new_york_pro, Source: npcnews)
+     - clifford_lewis (Place: 16, Year: 2017, Competition: new_york_pro, Source: npcnews)
+     - brenden_floyd (Place: 16, Year: 2017, Competition: new_york_pro, Source: npcnews)
+     - brendon_osbourne (Place: 16, Year: 2017, Competition: new_york_pro, Source: npcnews)
+
+145. Group: 2017_northern_california_pro_bikini_open_17
+   Athletes: ['heidi_allen_patterson', 'katherine_rosales_alcantara', 'stella_roberts', 'christina_sanchez', 'mylien_nguyen', 'barbara_ludwig', 'charina_baker', 'emma_fernandez', 'christina_flavin_williams', 'allison_carter', 'amy_updike', 'cindy_villalobos', 'deborah_wright', 'jessica_wilson']
+   Sources: ['scorecards', 'npcnews']
+   Count: 14 different athletes across 2 sources
+   Rows:
+     - heidi_allen_patterson (Place: 17, Year: 2017, Competition: northern_california_pro, Source: scorecards)
+     - katherine_rosales_alcantara (Place: 17, Year: 2017, Competition: northern_california_pro, Source: scorecards)
+     - stella_roberts (Place: 17, Year: 2017, Competition: northern_california_pro, Source: scorecards)
+     - christina_sanchez (Place: 17, Year: 2017, Competition: northern_california_pro, Source: scorecards)
+     - mylien_nguyen (Place: 17, Year: 2017, Competition: northern_california_pro, Source: scorecards)
+     - barbara_ludwig (Place: 17, Year: 2017, Competition: northern_california_pro, Source: scorecards)
+     - charina_baker (Place: 17, Year: 2017, Competition: northern_california_pro, Source: scorecards)
+     - emma_fernandez (Place: 17, Year: 2017, Competition: northern_california_pro, Source: scorecards)
+     - christina_flavin_williams (Place: 17, Year: 2017, Competition: northern_california_pro, Source: scorecards)
+     - allison_carter (Place: 17, Year: 2017, Competition: northern_california_pro, Source: scorecards)
+     - amy_updike (Place: 17, Year: 2017, Competition: northern_california_pro, Source: npcnews)
+     - cindy_villalobos (Place: 17, Year: 2017, Competition: northern_california_pro, Source: npcnews)
+     - deborah_wright (Place: 17, Year: 2017, Competition: northern_california_pro, Source: npcnews)
+     - jessica_wilson (Place: 17, Year: 2017, Competition: northern_california_pro, Source: npcnews)
+
+146. Group: 2017_st_louis_pro_figure_open_10
+   Athletes: ['vera_mallett', 'clarissa_sanchez']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - vera_mallett (Place: 10, Year: 2017, Competition: st_louis_pro, Source: scorecards)
+     - clarissa_sanchez (Place: 10, Year: 2017, Competition: st_louis_pro, Source: musclememory)
+
+147. Group: 2017_tampa_pro_mensbb_open_0
+   Athletes: ['sean_harris', 'dainlius_brazinskas', 'zdenek_voprada']
+   Sources: ['scorecards', 'musclememory']
+   Count: 3 different athletes across 2 sources
+   Rows:
+     - sean_harris (Place: 0, Year: 2017, Competition: tampa_pro, Source: scorecards)
+     - dainlius_brazinskas (Place: 0, Year: 2017, Competition: tampa_pro, Source: musclememory)
+     - zdenek_voprada (Place: 0, Year: 2017, Competition: tampa_pro, Source: musclememory)
+
+148. Group: 2018_battle_in_the_desert_bikini_open_2
+   Athletes: ['ashley_kaitwasser', 'francesca_lauren']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - ashley_kaitwasser (Place: 2, Year: 2018, Competition: battle_in_the_desert, Source: scorecards)
+     - francesca_lauren (Place: 2, Year: 2018, Competition: battle_in_the_desert, Source: npcnews)
+
+149. Group: 2018_indy_pro_202_212_212_7
+   Athletes: ['thomas_anderson', 'ben_barkes']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - thomas_anderson (Place: 7, Year: 2018, Competition: indy_pro, Source: scorecards)
+     - ben_barkes (Place: 7, Year: 2018, Competition: indy_pro, Source: npcnews)
+
+150. Group: 2018_mile_high_pro_bikini_open_16
+   Athletes: ['gigi_amurao', 'joann_norward', 'tamika_irvin_robinson']
+   Sources: ['scorecards', 'npcnews']
+   Count: 3 different athletes across 2 sources
+   Rows:
+     - gigi_amurao (Place: 16, Year: 2018, Competition: mile_high_pro, Source: scorecards)
+     - joann_norward (Place: 16, Year: 2018, Competition: mile_high_pro, Source: scorecards)
+     - tamika_irvin_robinson (Place: 16, Year: 2018, Competition: mile_high_pro, Source: npcnews)
+
+151. Group: 2018_olympia_bikini_open_16
+   Athletes: ['jennifer_caban', 'natoshia_coleman', 'darah_diaz', 'monica_ellis', 'tawna_eubanks', 'elia_fernandez', 'kim_gutierrez', 'kerryne_henich', 'ashely_jenelle', 'breema_martinez', 'sherry_espera', 'stacy_mccloud_green', 'cristobalina_pajaras_torres', 'katya_nosova', 'mariella_pellegrino', 'diana_salamon', 'elizabeth_yisrael', 'ha_yeun_kim']
+   Sources: ['scorecards', 'npcnews']
+   Count: 18 different athletes across 2 sources
+   Rows:
+     - jennifer_caban (Place: 16, Year: 2018, Competition: olympia, Source: scorecards)
+     - natoshia_coleman (Place: 16, Year: 2018, Competition: olympia, Source: scorecards)
+     - darah_diaz (Place: 16, Year: 2018, Competition: olympia, Source: scorecards)
+     - monica_ellis (Place: 16, Year: 2018, Competition: olympia, Source: scorecards)
+     - tawna_eubanks (Place: 16, Year: 2018, Competition: olympia, Source: scorecards)
+     - elia_fernandez (Place: 16, Year: 2018, Competition: olympia, Source: scorecards)
+     - kim_gutierrez (Place: 16, Year: 2018, Competition: olympia, Source: scorecards)
+     - kerryne_henich (Place: 16, Year: 2018, Competition: olympia, Source: scorecards)
+     - ashely_jenelle (Place: 16, Year: 2018, Competition: olympia, Source: scorecards)
+     - breema_martinez (Place: 16, Year: 2018, Competition: olympia, Source: scorecards)
+     - sherry_espera (Place: 16, Year: 2018, Competition: olympia, Source: scorecards)
+     - stacy_mccloud_green (Place: 16, Year: 2018, Competition: olympia, Source: scorecards)
+     - cristobalina_pajaras_torres (Place: 16, Year: 2018, Competition: olympia, Source: scorecards)
+     - katya_nosova (Place: 16, Year: 2018, Competition: olympia, Source: scorecards)
+     - mariella_pellegrino (Place: 16, Year: 2018, Competition: olympia, Source: scorecards)
+     - diana_salamon (Place: 16, Year: 2018, Competition: olympia, Source: scorecards)
+     - elizabeth_yisrael (Place: 16, Year: 2018, Competition: olympia, Source: scorecards)
+     - ha_yeun_kim (Place: 16, Year: 2018, Competition: olympia, Source: npcnews)
+
+152. Group: 2018_olympia_classic_open_16
+   Athletes: ['omar_bautista', 'khaled_chikhaoui', 'petar_duper', 'darnell_ferguson', 'aaron_futel', 'mehdi_larijani', 'panexce_pierre', 'ali_shams_ghamar', 'mateo_vaihu', 'divine_wilson', 'wesley_vissers']
+   Sources: ['scorecards', 'npcnews']
+   Count: 11 different athletes across 2 sources
+   Rows:
+     - omar_bautista (Place: 16, Year: 2018, Competition: olympia, Source: scorecards)
+     - khaled_chikhaoui (Place: 16, Year: 2018, Competition: olympia, Source: scorecards)
+     - petar_duper (Place: 16, Year: 2018, Competition: olympia, Source: scorecards)
+     - darnell_ferguson (Place: 16, Year: 2018, Competition: olympia, Source: scorecards)
+     - aaron_futel (Place: 16, Year: 2018, Competition: olympia, Source: scorecards)
+     - mehdi_larijani (Place: 16, Year: 2018, Competition: olympia, Source: scorecards)
+     - panexce_pierre (Place: 16, Year: 2018, Competition: olympia, Source: scorecards)
+     - ali_shams_ghamar (Place: 16, Year: 2018, Competition: olympia, Source: scorecards)
+     - mateo_vaihu (Place: 16, Year: 2018, Competition: olympia, Source: scorecards)
+     - divine_wilson (Place: 16, Year: 2018, Competition: olympia, Source: scorecards)
+     - wesley_vissers (Place: 16, Year: 2018, Competition: olympia, Source: npcnews)
+
+153. Group: 2018_tampa_pro_figure_open_16
+   Athletes: ['shâ€™nere_mattise_deas', 'latoyia_farley', 'corina_goncalves', 'amanda_houston', 'donya_jackson', 'tiffany_laumeyer', 'yumi_lima', 'susie_lin', 'viviana_lo_monaco', 'georgina_lona', 'brittany_miller', 'claudia_olvera', 'jennifer_palazzo', 'christine_pereira', 'natasha_corbett', 'carmen_lacugna_abreu', 'whitney_armstrong', 'viviana_aurora_baca_servin', 'selena_pons', 'elise_prucha', 'debar_rosado_bohac', 'danielle_rose', 'agnese_russon', 'kendyl_searwright', 'cynthia_sharp', 'rosian_warrington', 'maggie_watson', 'thais_cabricres_werner', 'kasie_whitaker', 'loren_wilkins', 'inna_wyatt', 'keena_yancey', 'nancy_zimmerman', 'amber_eutsey', 'stephanie_trevino', 'koko_korang']
+   Sources: ['scorecards', 'npcnews']
+   Count: 36 different athletes across 2 sources
+   Rows:
+     - shâ€™nere_mattise_deas (Place: 16, Year: 2018, Competition: tampa_pro, Source: scorecards)
+     - latoyia_farley (Place: 16, Year: 2018, Competition: tampa_pro, Source: scorecards)
+     - corina_goncalves (Place: 16, Year: 2018, Competition: tampa_pro, Source: scorecards)
+     - amanda_houston (Place: 16, Year: 2018, Competition: tampa_pro, Source: scorecards)
+     - donya_jackson (Place: 16, Year: 2018, Competition: tampa_pro, Source: scorecards)
+     - tiffany_laumeyer (Place: 16, Year: 2018, Competition: tampa_pro, Source: scorecards)
+     - yumi_lima (Place: 16, Year: 2018, Competition: tampa_pro, Source: scorecards)
+     - susie_lin (Place: 16, Year: 2018, Competition: tampa_pro, Source: scorecards)
+     - viviana_lo_monaco (Place: 16, Year: 2018, Competition: tampa_pro, Source: scorecards)
+     - georgina_lona (Place: 16, Year: 2018, Competition: tampa_pro, Source: scorecards)
+     - brittany_miller (Place: 16, Year: 2018, Competition: tampa_pro, Source: scorecards)
+     - claudia_olvera (Place: 16, Year: 2018, Competition: tampa_pro, Source: scorecards)
+     - jennifer_palazzo (Place: 16, Year: 2018, Competition: tampa_pro, Source: scorecards)
+     - christine_pereira (Place: 16, Year: 2018, Competition: tampa_pro, Source: scorecards)
+     - natasha_corbett (Place: 16, Year: 2018, Competition: tampa_pro, Source: scorecards)
+     - carmen_lacugna_abreu (Place: 16, Year: 2018, Competition: tampa_pro, Source: scorecards)
+     - whitney_armstrong (Place: 16, Year: 2018, Competition: tampa_pro, Source: scorecards)
+     - viviana_aurora_baca_servin (Place: 16, Year: 2018, Competition: tampa_pro, Source: scorecards)
+     - selena_pons (Place: 16, Year: 2018, Competition: tampa_pro, Source: scorecards)
+     - elise_prucha (Place: 16, Year: 2018, Competition: tampa_pro, Source: scorecards)
+     - debar_rosado_bohac (Place: 16, Year: 2018, Competition: tampa_pro, Source: scorecards)
+     - danielle_rose (Place: 16, Year: 2018, Competition: tampa_pro, Source: scorecards)
+     - agnese_russon (Place: 16, Year: 2018, Competition: tampa_pro, Source: scorecards)
+     - kendyl_searwright (Place: 16, Year: 2018, Competition: tampa_pro, Source: scorecards)
+     - cynthia_sharp (Place: 16, Year: 2018, Competition: tampa_pro, Source: scorecards)
+     - rosian_warrington (Place: 16, Year: 2018, Competition: tampa_pro, Source: scorecards)
+     - maggie_watson (Place: 16, Year: 2018, Competition: tampa_pro, Source: scorecards)
+     - thais_cabricres_werner (Place: 16, Year: 2018, Competition: tampa_pro, Source: scorecards)
+     - kasie_whitaker (Place: 16, Year: 2018, Competition: tampa_pro, Source: scorecards)
+     - loren_wilkins (Place: 16, Year: 2018, Competition: tampa_pro, Source: scorecards)
+     - inna_wyatt (Place: 16, Year: 2018, Competition: tampa_pro, Source: scorecards)
+     - keena_yancey (Place: 16, Year: 2018, Competition: tampa_pro, Source: scorecards)
+     - nancy_zimmerman (Place: 16, Year: 2018, Competition: tampa_pro, Source: scorecards)
+     - amber_eutsey (Place: 16, Year: 2018, Competition: tampa_pro, Source: scorecards)
+     - stephanie_trevino (Place: 16, Year: 2018, Competition: tampa_pro, Source: scorecards)
+     - koko_korang (Place: 16, Year: 2018, Competition: tampa_pro, Source: npcnews)
+
+154. Group: 2018_toronto_supershow_classic_open_1
+   Athletes: ['terrance_ruffin', 'khaled_chikhaoui']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - terrance_ruffin (Place: 1, Year: 2018, Competition: toronto_supershow, Source: scorecards)
+     - khaled_chikhaoui (Place: 1, Year: 2018, Competition: toronto_supershow, Source: npcnews)
+
+155. Group: 2018_toronto_supershow_classic_open_10
+   Athletes: ['rafael_diaz_arachiga', 'joey_flores']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - rafael_diaz_arachiga (Place: 10, Year: 2018, Competition: toronto_supershow, Source: scorecards)
+     - joey_flores (Place: 10, Year: 2018, Competition: toronto_supershow, Source: npcnews)
+
+156. Group: 2018_toronto_supershow_classic_open_11
+   Athletes: ['javier_martinez', 'eric_ndjomo_ngassa']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - javier_martinez (Place: 11, Year: 2018, Competition: toronto_supershow, Source: scorecards)
+     - eric_ndjomo_ngassa (Place: 11, Year: 2018, Competition: toronto_supershow, Source: npcnews)
+
+157. Group: 2018_toronto_supershow_classic_open_12
+   Athletes: ['matt_pattison', 'terrance_ruffin']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - matt_pattison (Place: 12, Year: 2018, Competition: toronto_supershow, Source: scorecards)
+     - terrance_ruffin (Place: 12, Year: 2018, Competition: toronto_supershow, Source: npcnews)
+
+158. Group: 2018_toronto_supershow_classic_open_13
+   Athletes: ['rodrigo_coelho', 'rafael_diaz_arachiga']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - rodrigo_coelho (Place: 13, Year: 2018, Competition: toronto_supershow, Source: scorecards)
+     - rafael_diaz_arachiga (Place: 13, Year: 2018, Competition: toronto_supershow, Source: npcnews)
+
+159. Group: 2018_toronto_supershow_classic_open_2
+   Athletes: ['khaled_chikhaoui', 'rodrigo_coelho']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - khaled_chikhaoui (Place: 2, Year: 2018, Competition: toronto_supershow, Source: scorecards)
+     - rodrigo_coelho (Place: 2, Year: 2018, Competition: toronto_supershow, Source: npcnews)
+
+160. Group: 2018_toronto_supershow_classic_open_3
+   Athletes: ['aaron_futel', 'antwane_hamlett']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - aaron_futel (Place: 3, Year: 2018, Competition: toronto_supershow, Source: scorecards)
+     - antwane_hamlett (Place: 3, Year: 2018, Competition: toronto_supershow, Source: npcnews)
+
+161. Group: 2018_toronto_supershow_classic_open_4
+   Athletes: ['antwane_hamlett', 'shane_makan']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - antwane_hamlett (Place: 4, Year: 2018, Competition: toronto_supershow, Source: scorecards)
+     - shane_makan (Place: 4, Year: 2018, Competition: toronto_supershow, Source: npcnews)
+
+162. Group: 2018_toronto_supershow_classic_open_5
+   Athletes: ['shane_makan', 'javier_martinez']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - shane_makan (Place: 5, Year: 2018, Competition: toronto_supershow, Source: scorecards)
+     - javier_martinez (Place: 5, Year: 2018, Competition: toronto_supershow, Source: npcnews)
+
+163. Group: 2018_toronto_supershow_classic_open_7
+   Athletes: ['joey_flores', 'aaron_futel']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - joey_flores (Place: 7, Year: 2018, Competition: toronto_supershow, Source: scorecards)
+     - aaron_futel (Place: 7, Year: 2018, Competition: toronto_supershow, Source: npcnews)
+
+164. Group: 2018_toronto_supershow_classic_open_8
+   Athletes: ['eric_ndjomo_ngassa', 'matt_pattison']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - eric_ndjomo_ngassa (Place: 8, Year: 2018, Competition: toronto_supershow, Source: scorecards)
+     - matt_pattison (Place: 8, Year: 2018, Competition: toronto_supershow, Source: npcnews)
+
+165. Group: 2018_toronto_supershow_wheelchair_open_2
+   Athletes: ['daniel_minster', 'steven_lister']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - daniel_minster (Place: 2, Year: 2018, Competition: toronto_supershow, Source: scorecards)
+     - steven_lister (Place: 2, Year: 2018, Competition: toronto_supershow, Source: npcnews)
+
+166. Group: 2018_toronto_supershow_wheelchair_open_3
+   Athletes: ['steven_lister', 'daniel_minster']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - steven_lister (Place: 3, Year: 2018, Competition: toronto_supershow, Source: scorecards)
+     - daniel_minster (Place: 3, Year: 2018, Competition: toronto_supershow, Source: npcnews)
+
+167. Group: 2019_california_night_of_champions_mensphysique_open_10
+   Athletes: ['jack_alvarez', 'aundre_benson']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - jack_alvarez (Place: 10, Year: 2019, Competition: california_night_of_champions, Source: scorecards)
+     - aundre_benson (Place: 10, Year: 2019, Competition: california_night_of_champions, Source: npcnews)
+
+168. Group: 2019_california_night_of_champions_mensphysique_open_11
+   Athletes: ['brandon_robichaux', 'jack_alvarez']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - brandon_robichaux (Place: 11, Year: 2019, Competition: california_night_of_champions, Source: scorecards)
+     - jack_alvarez (Place: 11, Year: 2019, Competition: california_night_of_champions, Source: npcnews)
+
+169. Group: 2019_california_night_of_champions_mensphysique_open_13
+   Athletes: ['aundre_benson', 'brandon_robichaux']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - aundre_benson (Place: 13, Year: 2019, Competition: california_night_of_champions, Source: scorecards)
+     - brandon_robichaux (Place: 13, Year: 2019, Competition: california_night_of_champions, Source: npcnews)
+
+170. Group: 2019_romania_muscle_fest_pro_figure_open_14
+   Athletes: ['claire_aves', 'rahel_cucchia']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - claire_aves (Place: 14, Year: 2019, Competition: romania_muscle_fest_pro, Source: scorecards)
+     - rahel_cucchia (Place: 14, Year: 2019, Competition: romania_muscle_fest_pro, Source: npcnews)
+
+171. Group: 2019_sacramento_pro_bikini_open_13
+   Athletes: ['amanda_larsson', 'bruna_montenegro']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - amanda_larsson (Place: 13, Year: 2019, Competition: sacramento_pro, Source: scorecards)
+     - bruna_montenegro (Place: 13, Year: 2019, Competition: sacramento_pro, Source: npcnews)
+
+172. Group: 2019_san_marino_pro_classic_open_12
+   Athletes: ['mikhail_timoshin', 'klaus_drescher']
+   Sources: ['scorecards', 'musclememory']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - mikhail_timoshin (Place: 12, Year: 2019, Competition: san_marino_pro, Source: scorecards)
+     - klaus_drescher (Place: 12, Year: 2019, Competition: san_marino_pro, Source: musclememory)
+
+173. Group: 2019_san_marino_pro_classic_open_13
+   Athletes: ['esequiel_conceicao', 'klaus_drescher', 'jorge_machado']
+   Sources: ['scorecards', 'npcnews', 'musclememory']
+   Count: 3 different athletes across 3 sources
+   Rows:
+     - esequiel_conceicao (Place: 13, Year: 2019, Competition: san_marino_pro, Source: scorecards)
+     - klaus_drescher (Place: 13, Year: 2019, Competition: san_marino_pro, Source: npcnews)
+     - jorge_machado (Place: 13, Year: 2019, Competition: san_marino_pro, Source: musclememory)
+
+174. Group: 2019_san_marino_pro_classic_open_14
+   Athletes: ['gokhan_eskin', 'jorge_machado', 'keyvan_rezapour']
+   Sources: ['scorecards', 'npcnews', 'musclememory']
+   Count: 3 different athletes across 3 sources
+   Rows:
+     - gokhan_eskin (Place: 14, Year: 2019, Competition: san_marino_pro, Source: scorecards)
+     - jorge_machado (Place: 14, Year: 2019, Competition: san_marino_pro, Source: npcnews)
+     - keyvan_rezapour (Place: 14, Year: 2019, Competition: san_marino_pro, Source: musclememory)
+
+175. Group: 2019_san_marino_pro_classic_open_15
+   Athletes: ['julien_quaglierini', 'keyvan_rezapour']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - julien_quaglierini (Place: 15, Year: 2019, Competition: san_marino_pro, Source: scorecards)
+     - keyvan_rezapour (Place: 15, Year: 2019, Competition: san_marino_pro, Source: npcnews)
+
+176. Group: 2019_san_marino_pro_classic_open_2
+   Athletes: ['milad_sadeghi', 'mikhail_timoshin']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - milad_sadeghi (Place: 2, Year: 2019, Competition: san_marino_pro, Source: scorecards)
+     - mikhail_timoshin (Place: 2, Year: 2019, Competition: san_marino_pro, Source: npcnews)
+
+177. Group: 2019_san_marino_pro_classic_open_3
+   Athletes: ['jorge_arturo_herrera_machado', 'eduardo_dejacv_oliveira']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - jorge_arturo_herrera_machado (Place: 3, Year: 2019, Competition: san_marino_pro, Source: scorecards)
+     - eduardo_dejacv_oliveira (Place: 3, Year: 2019, Competition: san_marino_pro, Source: npcnews)
+
+178. Group: 2019_san_marino_pro_classic_open_5
+   Athletes: ['roberto_martinez_pizana', 'julien_quaglierini']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - roberto_martinez_pizana (Place: 5, Year: 2019, Competition: san_marino_pro, Source: scorecards)
+     - julien_quaglierini (Place: 5, Year: 2019, Competition: san_marino_pro, Source: npcnews)
+
+179. Group: 2019_san_marino_pro_classic_open_6
+   Athletes: ['eduardo_dejacv_oliveira', 'roberto_martinez_pizana']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - eduardo_dejacv_oliveira (Place: 6, Year: 2019, Competition: san_marino_pro, Source: scorecards)
+     - roberto_martinez_pizana (Place: 6, Year: 2019, Competition: san_marino_pro, Source: npcnews)
+
+180. Group: 2019_san_marino_pro_classic_open_7
+   Athletes: ['klaus_drescher', 'gokhan_eskin']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - klaus_drescher (Place: 7, Year: 2019, Competition: san_marino_pro, Source: scorecards)
+     - gokhan_eskin (Place: 7, Year: 2019, Competition: san_marino_pro, Source: npcnews)
+
+181. Group: 2019_san_marino_pro_classic_open_8
+   Athletes: ['keyvan_rezapour', 'milad_sadeghi']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - keyvan_rezapour (Place: 8, Year: 2019, Competition: san_marino_pro, Source: scorecards)
+     - milad_sadeghi (Place: 8, Year: 2019, Competition: san_marino_pro, Source: npcnews)
+
+182. Group: 2019_tampa_hurricane_pro_bikini_open_14
+   Athletes: ['eng_suan_tan_jarriel', 'maria_luisa_heeg']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - eng_suan_tan_jarriel (Place: 14, Year: 2019, Competition: tampa_hurricane_pro, Source: scorecards)
+     - maria_luisa_heeg (Place: 14, Year: 2019, Competition: tampa_hurricane_pro, Source: npcnews)
+
+183. Group: 2019_tampa_hurricane_pro_bikini_open_6
+   Athletes: ['marissa_bell', 'amanda_cording']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - marissa_bell (Place: 6, Year: 2019, Competition: tampa_hurricane_pro, Source: scorecards)
+     - amanda_cording (Place: 6, Year: 2019, Competition: tampa_hurricane_pro, Source: npcnews)
+
+184. Group: 2019_tampa_pro_mensbb_open_16
+   Athletes: ['jameill_hamilton', 'alexandre_nathan', 'steven_reese', 'carolos_rodriguez', 'ambrose_middleton']
+   Sources: ['scorecards', 'npcnews']
+   Count: 5 different athletes across 2 sources
+   Rows:
+     - jameill_hamilton (Place: 16, Year: 2019, Competition: tampa_pro, Source: scorecards)
+     - alexandre_nathan (Place: 16, Year: 2019, Competition: tampa_pro, Source: scorecards)
+     - steven_reese (Place: 16, Year: 2019, Competition: tampa_pro, Source: scorecards)
+     - carolos_rodriguez (Place: 16, Year: 2019, Competition: tampa_pro, Source: scorecards)
+     - ambrose_middleton (Place: 16, Year: 2019, Competition: tampa_pro, Source: npcnews)
+
+185. Group: 2019_tampa_pro_womensphysique_open_16
+   Athletes: ['danielle_lazaro', 'kasia_topor', 'indrell_thomasâ_â', 'mariola_sabanovic_suarez', 'stephanie_simmons', 'dana_shemesh', 'bianca_scott', 'christine_porter', 'felecia_murray', 'tannaz_malekzadeh', 'rachel_aronson', 'ashley_bader', 'orlandina_balan', 'cassandra_floyd', 'lenka_ferencukova', 'farrah_faulkner', 'jennifer_faccinto', 'luciana_esquilin', 'roxanne_edwards', 'angela_debatin', 'lynn_caron', 'nadia_capostosto', 'elizabeth_bradshaw', 'tina_black', 'jonquil_s_baugh', 'cara_baruth', 'renee_barnhill', 'isabelle_jackson']
+   Sources: ['scorecards', 'npcnews']
+   Count: 28 different athletes across 2 sources
+   Rows:
+     - danielle_lazaro (Place: 16, Year: 2019, Competition: tampa_pro, Source: scorecards)
+     - kasia_topor (Place: 16, Year: 2019, Competition: tampa_pro, Source: scorecards)
+     - indrell_thomasâ_â (Place: 16, Year: 2019, Competition: tampa_pro, Source: scorecards)
+     - mariola_sabanovic_suarez (Place: 16, Year: 2019, Competition: tampa_pro, Source: scorecards)
+     - stephanie_simmons (Place: 16, Year: 2019, Competition: tampa_pro, Source: scorecards)
+     - dana_shemesh (Place: 16, Year: 2019, Competition: tampa_pro, Source: scorecards)
+     - bianca_scott (Place: 16, Year: 2019, Competition: tampa_pro, Source: scorecards)
+     - christine_porter (Place: 16, Year: 2019, Competition: tampa_pro, Source: scorecards)
+     - felecia_murray (Place: 16, Year: 2019, Competition: tampa_pro, Source: scorecards)
+     - tannaz_malekzadeh (Place: 16, Year: 2019, Competition: tampa_pro, Source: scorecards)
+     - rachel_aronson (Place: 16, Year: 2019, Competition: tampa_pro, Source: scorecards)
+     - ashley_bader (Place: 16, Year: 2019, Competition: tampa_pro, Source: scorecards)
+     - orlandina_balan (Place: 16, Year: 2019, Competition: tampa_pro, Source: scorecards)
+     - cassandra_floyd (Place: 16, Year: 2019, Competition: tampa_pro, Source: scorecards)
+     - lenka_ferencukova (Place: 16, Year: 2019, Competition: tampa_pro, Source: scorecards)
+     - farrah_faulkner (Place: 16, Year: 2019, Competition: tampa_pro, Source: scorecards)
+     - jennifer_faccinto (Place: 16, Year: 2019, Competition: tampa_pro, Source: scorecards)
+     - luciana_esquilin (Place: 16, Year: 2019, Competition: tampa_pro, Source: scorecards)
+     - roxanne_edwards (Place: 16, Year: 2019, Competition: tampa_pro, Source: scorecards)
+     - angela_debatin (Place: 16, Year: 2019, Competition: tampa_pro, Source: scorecards)
+     - lynn_caron (Place: 16, Year: 2019, Competition: tampa_pro, Source: scorecards)
+     - nadia_capostosto (Place: 16, Year: 2019, Competition: tampa_pro, Source: scorecards)
+     - elizabeth_bradshaw (Place: 16, Year: 2019, Competition: tampa_pro, Source: scorecards)
+     - tina_black (Place: 16, Year: 2019, Competition: tampa_pro, Source: scorecards)
+     - jonquil_s_baugh (Place: 16, Year: 2019, Competition: tampa_pro, Source: scorecards)
+     - cara_baruth (Place: 16, Year: 2019, Competition: tampa_pro, Source: scorecards)
+     - renee_barnhill (Place: 16, Year: 2019, Competition: tampa_pro, Source: scorecards)
+     - isabelle_jackson (Place: 16, Year: 2019, Competition: tampa_pro, Source: npcnews)
+
+186. Group: 2020_arnold_classic_mensbb_open_13
+   Athletes: ['johnnie_o_jackson', 'patrick_moore']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - johnnie_o_jackson (Place: 13, Year: 2020, Competition: arnold_classic, Source: scorecards)
+     - patrick_moore (Place: 13, Year: 2020, Competition: arnold_classic, Source: npcnews)
+
+187. Group: 2020_arnold_classic_womensphysique_open_10
+   Athletes: ['laura_richards_shnider', 'valentina_mishina']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - laura_richards_shnider (Place: 10, Year: 2020, Competition: arnold_classic, Source: scorecards)
+     - valentina_mishina (Place: 10, Year: 2020, Competition: arnold_classic, Source: npcnews)
+
+188. Group: 2020_chicago_pro_mensphysique_open_16
+   Athletes: ['jamal_everette', 'napoleon_amos', 'drew_cullen', 'travis_cleveland', 'tony_claiborne', 'reynel_chavez_pulido', 'rodney_bond', 'aaron_aramini', 'michael_ferguson', 'reuben_glass', 'myron_griffin', 'jordon_hull', 'marvin_jimerson', 'chris_kakouras', 'zach_lape', 'burak_king', 'jonathan_jimenez', 'anthony_gilkes', 'kai_spencer', 'micah_a_thomas_jr', 'mike_williams', 'mitchell_spadafore', 'serge_victor', 'steven_rogers', 'thomas_riley', 'william_wade', 'franky_yan', 'alvin_taylor_ii', 'ayinde_avery', 'basil_williams', 'de_wayne_roberts', 'derrick_stevenson', 'harlan_taylor_jr']
+   Sources: ['scorecards', 'npcnews']
+   Count: 33 different athletes across 2 sources
+   Rows:
+     - jamal_everette (Place: 16, Year: 2020, Competition: chicago_pro, Source: scorecards)
+     - napoleon_amos (Place: 16, Year: 2020, Competition: chicago_pro, Source: scorecards)
+     - drew_cullen (Place: 16, Year: 2020, Competition: chicago_pro, Source: scorecards)
+     - travis_cleveland (Place: 16, Year: 2020, Competition: chicago_pro, Source: scorecards)
+     - tony_claiborne (Place: 16, Year: 2020, Competition: chicago_pro, Source: scorecards)
+     - reynel_chavez_pulido (Place: 16, Year: 2020, Competition: chicago_pro, Source: scorecards)
+     - rodney_bond (Place: 16, Year: 2020, Competition: chicago_pro, Source: scorecards)
+     - aaron_aramini (Place: 16, Year: 2020, Competition: chicago_pro, Source: scorecards)
+     - michael_ferguson (Place: 16, Year: 2020, Competition: chicago_pro, Source: scorecards)
+     - reuben_glass (Place: 16, Year: 2020, Competition: chicago_pro, Source: scorecards)
+     - myron_griffin (Place: 16, Year: 2020, Competition: chicago_pro, Source: scorecards)
+     - jordon_hull (Place: 16, Year: 2020, Competition: chicago_pro, Source: scorecards)
+     - marvin_jimerson (Place: 16, Year: 2020, Competition: chicago_pro, Source: scorecards)
+     - chris_kakouras (Place: 16, Year: 2020, Competition: chicago_pro, Source: scorecards)
+     - zach_lape (Place: 16, Year: 2020, Competition: chicago_pro, Source: scorecards)
+     - burak_king (Place: 16, Year: 2020, Competition: chicago_pro, Source: scorecards)
+     - jonathan_jimenez (Place: 16, Year: 2020, Competition: chicago_pro, Source: scorecards)
+     - anthony_gilkes (Place: 16, Year: 2020, Competition: chicago_pro, Source: scorecards)
+     - kai_spencer (Place: 16, Year: 2020, Competition: chicago_pro, Source: npcnews)
+     - micah_a_thomas_jr (Place: 16, Year: 2020, Competition: chicago_pro, Source: npcnews)
+     - mike_williams (Place: 16, Year: 2020, Competition: chicago_pro, Source: npcnews)
+     - mitchell_spadafore (Place: 16, Year: 2020, Competition: chicago_pro, Source: npcnews)
+     - serge_victor (Place: 16, Year: 2020, Competition: chicago_pro, Source: npcnews)
+     - steven_rogers (Place: 16, Year: 2020, Competition: chicago_pro, Source: npcnews)
+     - thomas_riley (Place: 16, Year: 2020, Competition: chicago_pro, Source: npcnews)
+     - william_wade (Place: 16, Year: 2020, Competition: chicago_pro, Source: npcnews)
+     - franky_yan (Place: 16, Year: 2020, Competition: chicago_pro, Source: npcnews)
+     - alvin_taylor_ii (Place: 16, Year: 2020, Competition: chicago_pro, Source: npcnews)
+     - ayinde_avery (Place: 16, Year: 2020, Competition: chicago_pro, Source: npcnews)
+     - basil_williams (Place: 16, Year: 2020, Competition: chicago_pro, Source: npcnews)
+     - de_wayne_roberts (Place: 16, Year: 2020, Competition: chicago_pro, Source: npcnews)
+     - derrick_stevenson (Place: 16, Year: 2020, Competition: chicago_pro, Source: npcnews)
+     - harlan_taylor_jr (Place: 16, Year: 2020, Competition: chicago_pro, Source: npcnews)
+
+189. Group: 2020_tampa_pro_bikini_open_16
+   Athletes: ['lesya_lambert', 'miriam_jenkins', 'brittany_hamilton', 'christine_ford', 'paula_eline', 'nina_di_tommaso', 'lusana_diaz', 'erin_dennis', 'kristin_crutcher', 'denetra_blackshear', 'vania_auguste', 'aria_adamy', 'nora_mirocha', 'wendy_massey', 'rachel_oberst', 'samantha_mushalansky', 'stephanie_sequeira', 'vita_shtevnin', 'karen_small', 'angela_ruscilli_kegler', 'eng_suan_tan_jarriel', 'gina_sardina', 'jasmine_williams', 'jennifer_st_peter']
+   Sources: ['scorecards', 'npcnews']
+   Count: 24 different athletes across 2 sources
+   Rows:
+     - lesya_lambert (Place: 16, Year: 2020, Competition: tampa_pro, Source: scorecards)
+     - miriam_jenkins (Place: 16, Year: 2020, Competition: tampa_pro, Source: scorecards)
+     - brittany_hamilton (Place: 16, Year: 2020, Competition: tampa_pro, Source: scorecards)
+     - christine_ford (Place: 16, Year: 2020, Competition: tampa_pro, Source: scorecards)
+     - paula_eline (Place: 16, Year: 2020, Competition: tampa_pro, Source: scorecards)
+     - nina_di_tommaso (Place: 16, Year: 2020, Competition: tampa_pro, Source: scorecards)
+     - lusana_diaz (Place: 16, Year: 2020, Competition: tampa_pro, Source: scorecards)
+     - erin_dennis (Place: 16, Year: 2020, Competition: tampa_pro, Source: scorecards)
+     - kristin_crutcher (Place: 16, Year: 2020, Competition: tampa_pro, Source: scorecards)
+     - denetra_blackshear (Place: 16, Year: 2020, Competition: tampa_pro, Source: scorecards)
+     - vania_auguste (Place: 16, Year: 2020, Competition: tampa_pro, Source: scorecards)
+     - aria_adamy (Place: 16, Year: 2020, Competition: tampa_pro, Source: scorecards)
+     - nora_mirocha (Place: 16, Year: 2020, Competition: tampa_pro, Source: scorecards)
+     - wendy_massey (Place: 16, Year: 2020, Competition: tampa_pro, Source: scorecards)
+     - rachel_oberst (Place: 16, Year: 2020, Competition: tampa_pro, Source: npcnews)
+     - samantha_mushalansky (Place: 16, Year: 2020, Competition: tampa_pro, Source: npcnews)
+     - stephanie_sequeira (Place: 16, Year: 2020, Competition: tampa_pro, Source: npcnews)
+     - vita_shtevnin (Place: 16, Year: 2020, Competition: tampa_pro, Source: npcnews)
+     - karen_small (Place: 16, Year: 2020, Competition: tampa_pro, Source: npcnews)
+     - angela_ruscilli_kegler (Place: 16, Year: 2020, Competition: tampa_pro, Source: npcnews)
+     - eng_suan_tan_jarriel (Place: 16, Year: 2020, Competition: tampa_pro, Source: npcnews)
+     - gina_sardina (Place: 16, Year: 2020, Competition: tampa_pro, Source: npcnews)
+     - jasmine_williams (Place: 16, Year: 2020, Competition: tampa_pro, Source: npcnews)
+     - jennifer_st_peter (Place: 16, Year: 2020, Competition: tampa_pro, Source: npcnews)
+
+190. Group: 2020_tampa_pro_mensphysique_open_16
+   Athletes: ['justin_woodward', 'andrew_israel_woodard', 'serge_victor', 'jeffrey_velazquez', 'michael_tello', 'brian_j_taylor_ii', 'alvin_taylor_ii', 'remon_smith', 'kevin_reeder', 'leo_mackesy', 'tony_lynch', 'alex_hessam', 'sr_andrew_jenkins', 'brett_mario_jackson_jr', 'byron_archie', 'daavon_grayson', 'douglas_laforge', 'emanual_c_hunter', 'ephfram_mike_lawhorne', 'frank_griffin', 'michael_bell', 'oshayne_lindo', 'toby_gordin', 'wayne_bullock', 'zach_lape']
+   Sources: ['scorecards', 'npcnews']
+   Count: 25 different athletes across 2 sources
+   Rows:
+     - justin_woodward (Place: 16, Year: 2020, Competition: tampa_pro, Source: scorecards)
+     - andrew_israel_woodard (Place: 16, Year: 2020, Competition: tampa_pro, Source: scorecards)
+     - serge_victor (Place: 16, Year: 2020, Competition: tampa_pro, Source: scorecards)
+     - jeffrey_velazquez (Place: 16, Year: 2020, Competition: tampa_pro, Source: scorecards)
+     - michael_tello (Place: 16, Year: 2020, Competition: tampa_pro, Source: scorecards)
+     - brian_j_taylor_ii (Place: 16, Year: 2020, Competition: tampa_pro, Source: scorecards)
+     - alvin_taylor_ii (Place: 16, Year: 2020, Competition: tampa_pro, Source: scorecards)
+     - remon_smith (Place: 16, Year: 2020, Competition: tampa_pro, Source: scorecards)
+     - kevin_reeder (Place: 16, Year: 2020, Competition: tampa_pro, Source: scorecards)
+     - leo_mackesy (Place: 16, Year: 2020, Competition: tampa_pro, Source: scorecards)
+     - tony_lynch (Place: 16, Year: 2020, Competition: tampa_pro, Source: scorecards)
+     - alex_hessam (Place: 16, Year: 2020, Competition: tampa_pro, Source: npcnews)
+     - sr_andrew_jenkins (Place: 16, Year: 2020, Competition: tampa_pro, Source: npcnews)
+     - brett_mario_jackson_jr (Place: 16, Year: 2020, Competition: tampa_pro, Source: npcnews)
+     - byron_archie (Place: 16, Year: 2020, Competition: tampa_pro, Source: npcnews)
+     - daavon_grayson (Place: 16, Year: 2020, Competition: tampa_pro, Source: npcnews)
+     - douglas_laforge (Place: 16, Year: 2020, Competition: tampa_pro, Source: npcnews)
+     - emanual_c_hunter (Place: 16, Year: 2020, Competition: tampa_pro, Source: npcnews)
+     - ephfram_mike_lawhorne (Place: 16, Year: 2020, Competition: tampa_pro, Source: npcnews)
+     - frank_griffin (Place: 16, Year: 2020, Competition: tampa_pro, Source: npcnews)
+     - michael_bell (Place: 16, Year: 2020, Competition: tampa_pro, Source: npcnews)
+     - oshayne_lindo (Place: 16, Year: 2020, Competition: tampa_pro, Source: npcnews)
+     - toby_gordin (Place: 16, Year: 2020, Competition: tampa_pro, Source: npcnews)
+     - wayne_bullock (Place: 16, Year: 2020, Competition: tampa_pro, Source: npcnews)
+     - zach_lape (Place: 16, Year: 2020, Competition: tampa_pro, Source: npcnews)
+
+191. Group: 2021_arnold_classic_uk_classic_open_4
+   Athletes: ['jack_connor', 'vincent_craine']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - jack_connor (Place: 4, Year: 2021, Competition: arnold_classic_uk, Source: scorecards)
+     - vincent_craine (Place: 4, Year: 2021, Competition: arnold_classic_uk, Source: npcnews)
+
+192. Group: 2021_arnold_classic_uk_classic_open_5
+   Athletes: ['vincent_craine', 'jack_connor']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - vincent_craine (Place: 5, Year: 2021, Competition: arnold_classic_uk, Source: scorecards)
+     - jack_connor (Place: 5, Year: 2021, Competition: arnold_classic_uk, Source: npcnews)
+
+193. Group: 2021_chicago_pro_mensbb_open_15
+   Athletes: ['james_culberson', 'seth_shaw']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - james_culberson (Place: 15, Year: 2021, Competition: chicago_pro, Source: scorecards)
+     - seth_shaw (Place: 15, Year: 2021, Competition: chicago_pro, Source: npcnews)
+
+194. Group: 2021_chicago_pro_mensphysique_open_16
+   Athletes: ['joel_tinder_iv', 'noel_stanley', 'shawntellian_riley', 'ranzino_valentine', 'brett_mario_jackson_jr', 'leo_mackesy', 'drelyn_hunt', 'alexandru_diaconu', 'jeremy_desantis', 'christopher_brewer', 'mike_christian', 'antoine_weatherspoon']
+   Sources: ['scorecards', 'npcnews']
+   Count: 12 different athletes across 2 sources
+   Rows:
+     - joel_tinder_iv (Place: 16, Year: 2021, Competition: chicago_pro, Source: scorecards)
+     - noel_stanley (Place: 16, Year: 2021, Competition: chicago_pro, Source: scorecards)
+     - shawntellian_riley (Place: 16, Year: 2021, Competition: chicago_pro, Source: scorecards)
+     - ranzino_valentine (Place: 16, Year: 2021, Competition: chicago_pro, Source: scorecards)
+     - brett_mario_jackson_jr (Place: 16, Year: 2021, Competition: chicago_pro, Source: scorecards)
+     - leo_mackesy (Place: 16, Year: 2021, Competition: chicago_pro, Source: scorecards)
+     - drelyn_hunt (Place: 16, Year: 2021, Competition: chicago_pro, Source: scorecards)
+     - alexandru_diaconu (Place: 16, Year: 2021, Competition: chicago_pro, Source: scorecards)
+     - jeremy_desantis (Place: 16, Year: 2021, Competition: chicago_pro, Source: scorecards)
+     - christopher_brewer (Place: 16, Year: 2021, Competition: chicago_pro, Source: scorecards)
+     - mike_christian (Place: 16, Year: 2021, Competition: chicago_pro, Source: scorecards)
+     - antoine_weatherspoon (Place: 16, Year: 2021, Competition: chicago_pro, Source: npcnews)
+
+195. Group: 2021_olympia_figure_open_12
+   Athletes: ['carly_sparling_horrell', 'sandra_grajales_romera']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - carly_sparling_horrell (Place: 12, Year: 2021, Competition: olympia, Source: scorecards)
+     - sandra_grajales_romera (Place: 12, Year: 2021, Competition: olympia, Source: npcnews)
+
+196. Group: 2022_dallas_pro_bikini_open_16
+   Athletes: ['christy_brown', 'vita_shtevnin', 'shawn_hektor_lewis', 'christina_heath', 'julia_wohlschlegel']
+   Sources: ['scorecards', 'npcnews']
+   Count: 5 different athletes across 2 sources
+   Rows:
+     - christy_brown (Place: 16, Year: 2022, Competition: dallas_pro, Source: scorecards)
+     - vita_shtevnin (Place: 16, Year: 2022, Competition: dallas_pro, Source: scorecards)
+     - shawn_hektor_lewis (Place: 16, Year: 2022, Competition: dallas_pro, Source: scorecards)
+     - christina_heath (Place: 16, Year: 2022, Competition: dallas_pro, Source: scorecards)
+     - julia_wohlschlegel (Place: 16, Year: 2022, Competition: dallas_pro, Source: npcnews)
+
+197. Group: 2022_new_york_pro_womensphysique_open_1
+   Athletes: ['donna_williams_salib', 'natalia_abraham_coelho']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - donna_williams_salib (Place: 1, Year: 2022, Competition: new_york_pro, Source: scorecards)
+     - natalia_abraham_coelho (Place: 1, Year: 2022, Competition: new_york_pro, Source: npcnews)
+
+198. Group: 2022_new_york_pro_womensphysique_open_2
+   Athletes: ['stephanie_flesher', 'ji_hye_lee']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - stephanie_flesher (Place: 2, Year: 2022, Competition: new_york_pro, Source: scorecards)
+     - ji_hye_lee (Place: 2, Year: 2022, Competition: new_york_pro, Source: npcnews)
+
+199. Group: 2022_new_york_pro_womensphysique_open_3
+   Athletes: ['michelle_jin', 'alex_hall']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - michelle_jin (Place: 3, Year: 2022, Competition: new_york_pro, Source: scorecards)
+     - alex_hall (Place: 3, Year: 2022, Competition: new_york_pro, Source: npcnews)
+
+200. Group: 2022_new_york_pro_womensphysique_open_4
+   Athletes: ['keisha_oliver', 'amanda_peles']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - keisha_oliver (Place: 4, Year: 2022, Competition: new_york_pro, Source: scorecards)
+     - amanda_peles (Place: 4, Year: 2022, Competition: new_york_pro, Source: npcnews)
+
+201. Group: 2022_new_york_pro_womensphysique_open_5
+   Athletes: ['saqweta_barrino', 'orlandina_balan']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - saqweta_barrino (Place: 5, Year: 2022, Competition: new_york_pro, Source: scorecards)
+     - orlandina_balan (Place: 5, Year: 2022, Competition: new_york_pro, Source: npcnews)
+
+202. Group: 2022_new_york_pro_womensphysique_open_6
+   Athletes: ['pauline_nelson', 'renee_reefschlaeger']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - pauline_nelson (Place: 6, Year: 2022, Competition: new_york_pro, Source: scorecards)
+     - renee_reefschlaeger (Place: 6, Year: 2022, Competition: new_york_pro, Source: npcnews)
+
+203. Group: 2022_new_york_pro_womensphysique_open_7
+   Athletes: ['wendy_sanchez', 'idaliz_alvarez']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - wendy_sanchez (Place: 7, Year: 2022, Competition: new_york_pro, Source: scorecards)
+     - idaliz_alvarez (Place: 7, Year: 2022, Competition: new_york_pro, Source: npcnews)
+
+204. Group: 2022_new_york_pro_womensphysique_open_8
+   Athletes: ['michelle_brent', 'kristyn_lia']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - michelle_brent (Place: 8, Year: 2022, Competition: new_york_pro, Source: scorecards)
+     - kristyn_lia (Place: 8, Year: 2022, Competition: new_york_pro, Source: npcnews)
+
+205. Group: 2022_olympia_womensphysique_open_6
+   Athletes: ['jaennie_feldman', 'sophia_leo']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - jaennie_feldman (Place: 6, Year: 2022, Competition: olympia, Source: scorecards)
+     - sophia_leo (Place: 6, Year: 2022, Competition: olympia, Source: npcnews)
+
+206. Group: 2023_arizona_pro_wellness_open_16
+   Athletes: ['kat_williams', 'briaunna_r_guthrie', 'celeste_morales', 'christine_ford', 'cearra_cho', 'kimberly_sayers', 'madison_luna', 'maria_borisch', 'marina_martins', 'natasha_peay', 'norma_esparza', 'tatum_schneidmilller', 'tracy_eden']
+   Sources: ['scorecards', 'npcnews']
+   Count: 13 different athletes across 2 sources
+   Rows:
+     - kat_williams (Place: 16, Year: 2023, Competition: arizona_pro, Source: scorecards)
+     - briaunna_r_guthrie (Place: 16, Year: 2023, Competition: arizona_pro, Source: npcnews)
+     - celeste_morales (Place: 16, Year: 2023, Competition: arizona_pro, Source: npcnews)
+     - christine_ford (Place: 16, Year: 2023, Competition: arizona_pro, Source: npcnews)
+     - cearra_cho (Place: 16, Year: 2023, Competition: arizona_pro, Source: npcnews)
+     - kimberly_sayers (Place: 16, Year: 2023, Competition: arizona_pro, Source: npcnews)
+     - madison_luna (Place: 16, Year: 2023, Competition: arizona_pro, Source: npcnews)
+     - maria_borisch (Place: 16, Year: 2023, Competition: arizona_pro, Source: npcnews)
+     - marina_martins (Place: 16, Year: 2023, Competition: arizona_pro, Source: npcnews)
+     - natasha_peay (Place: 16, Year: 2023, Competition: arizona_pro, Source: npcnews)
+     - norma_esparza (Place: 16, Year: 2023, Competition: arizona_pro, Source: npcnews)
+     - tatum_schneidmilller (Place: 16, Year: 2023, Competition: arizona_pro, Source: npcnews)
+     - tracy_eden (Place: 16, Year: 2023, Competition: arizona_pro, Source: npcnews)
+
+207. Group: 2023_daytona_pro_mensphysique_open_16
+   Athletes: ['leon_k_smith', 'robert_clark', 'everett_davis', 'reuben_joseph', 'mark_a_lancaster', 'benedikt_lukas', 'don_mccall', 'michael_d_mperey', 'geobanny_paula', 'dennis_singh', 'briger_alberto_cabezas_renteria', 'favian_villalobos', 'harlan_taylor_jr', 'jimmie_stewart', 'serge_victor', 'byron_archie']
+   Sources: ['scorecards', 'npcnews']
+   Count: 16 different athletes across 2 sources
+   Rows:
+     - leon_k_smith (Place: 16, Year: 2023, Competition: daytona_pro, Source: scorecards)
+     - robert_clark (Place: 16, Year: 2023, Competition: daytona_pro, Source: scorecards)
+     - everett_davis (Place: 16, Year: 2023, Competition: daytona_pro, Source: scorecards)
+     - reuben_joseph (Place: 16, Year: 2023, Competition: daytona_pro, Source: scorecards)
+     - mark_a_lancaster (Place: 16, Year: 2023, Competition: daytona_pro, Source: scorecards)
+     - benedikt_lukas (Place: 16, Year: 2023, Competition: daytona_pro, Source: scorecards)
+     - don_mccall (Place: 16, Year: 2023, Competition: daytona_pro, Source: scorecards)
+     - michael_d_mperey (Place: 16, Year: 2023, Competition: daytona_pro, Source: scorecards)
+     - geobanny_paula (Place: 16, Year: 2023, Competition: daytona_pro, Source: scorecards)
+     - dennis_singh (Place: 16, Year: 2023, Competition: daytona_pro, Source: scorecards)
+     - briger_alberto_cabezas_renteria (Place: 16, Year: 2023, Competition: daytona_pro, Source: npcnews)
+     - favian_villalobos (Place: 16, Year: 2023, Competition: daytona_pro, Source: npcnews)
+     - harlan_taylor_jr (Place: 16, Year: 2023, Competition: daytona_pro, Source: npcnews)
+     - jimmie_stewart (Place: 16, Year: 2023, Competition: daytona_pro, Source: npcnews)
+     - serge_victor (Place: 16, Year: 2023, Competition: daytona_pro, Source: npcnews)
+     - byron_archie (Place: 16, Year: 2023, Competition: daytona_pro, Source: npcnews)
+
+208. Group: 2023_japan_pro_mensbb_open_10
+   Athletes: ['sungeun_jeon', 'chengrui_zhang']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - sungeun_jeon (Place: 10, Year: 2023, Competition: japan_pro, Source: scorecards)
+     - chengrui_zhang (Place: 10, Year: 2023, Competition: japan_pro, Source: npcnews)
+
+209. Group: 2023_japan_pro_mensbb_open_11
+   Athletes: ['derrick_olara', 'sungeun_jeon']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - derrick_olara (Place: 11, Year: 2023, Competition: japan_pro, Source: scorecards)
+     - sungeun_jeon (Place: 11, Year: 2023, Competition: japan_pro, Source: npcnews)
+
+210. Group: 2023_japan_pro_mensbb_open_12
+   Athletes: ['kai_tian', 'derrick_olara']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - kai_tian (Place: 12, Year: 2023, Competition: japan_pro, Source: scorecards)
+     - derrick_olara (Place: 12, Year: 2023, Competition: japan_pro, Source: npcnews)
+
+211. Group: 2023_japan_pro_mensbb_open_13
+   Athletes: ['seungmin_kim', 'kai_tian']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - seungmin_kim (Place: 13, Year: 2023, Competition: japan_pro, Source: scorecards)
+     - kai_tian (Place: 13, Year: 2023, Competition: japan_pro, Source: npcnews)
+
+212. Group: 2023_japan_pro_mensbb_open_14
+   Athletes: ['joji_sekine', 'seungmin_kim']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - joji_sekine (Place: 14, Year: 2023, Competition: japan_pro, Source: scorecards)
+     - seungmin_kim (Place: 14, Year: 2023, Competition: japan_pro, Source: npcnews)
+
+213. Group: 2023_japan_pro_mensbb_open_15
+   Athletes: ['jung_soon_park', 'joji_sekine']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - jung_soon_park (Place: 15, Year: 2023, Competition: japan_pro, Source: scorecards)
+     - joji_sekine (Place: 15, Year: 2023, Competition: japan_pro, Source: npcnews)
+
+214. Group: 2023_japan_pro_mensbb_open_6
+   Athletes: ['errol_moore', 'park_soo_hyun']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - errol_moore (Place: 6, Year: 2023, Competition: japan_pro, Source: scorecards)
+     - park_soo_hyun (Place: 6, Year: 2023, Competition: japan_pro, Source: npcnews)
+
+215. Group: 2023_japan_pro_mensbb_open_7
+   Athletes: ['dawei_zhou', 'errol_moore']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - dawei_zhou (Place: 7, Year: 2023, Competition: japan_pro, Source: scorecards)
+     - errol_moore (Place: 7, Year: 2023, Competition: japan_pro, Source: npcnews)
+
+216. Group: 2023_japan_pro_mensbb_open_8
+   Athletes: ['pavel_beran', 'dawei_zhou']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - pavel_beran (Place: 8, Year: 2023, Competition: japan_pro, Source: scorecards)
+     - dawei_zhou (Place: 8, Year: 2023, Competition: japan_pro, Source: npcnews)
+
+217. Group: 2023_japan_pro_mensbb_open_9
+   Athletes: ['chengrui_zhang', 'pavel_beran']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - chengrui_zhang (Place: 9, Year: 2023, Competition: japan_pro, Source: scorecards)
+     - pavel_beran (Place: 9, Year: 2023, Competition: japan_pro, Source: npcnews)
+
+218. Group: 2023_legions_sports_fest_womensphysique_open_7
+   Athletes: ['laura_richards_shnider', 'laura_pyszora']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - laura_richards_shnider (Place: 7, Year: 2023, Competition: legions_sports_fest, Source: scorecards)
+     - laura_pyszora (Place: 7, Year: 2023, Competition: legions_sports_fest, Source: npcnews)
+
+219. Group: 2023_musclecontest_goiania_mensphysique_open_3
+   Athletes: ['lucas_viudes_santos', 'fabio_campos_campos']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - lucas_viudes_santos (Place: 3, Year: 2023, Competition: musclecontest_goiania, Source: scorecards)
+     - fabio_campos_campos (Place: 3, Year: 2023, Competition: musclecontest_goiania, Source: npcnews)
+
+220. Group: 2023_pharlabs_sur_pro_cup_bikini_open_11
+   Athletes: ['tamara_henkels', 'daniella_portillo']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - tamara_henkels (Place: 11, Year: 2023, Competition: pharlabs_sur_pro_cup, Source: scorecards)
+     - daniella_portillo (Place: 11, Year: 2023, Competition: pharlabs_sur_pro_cup, Source: npcnews)
+
+221. Group: 2023_pharlabs_sur_pro_cup_bikini_open_12
+   Athletes: ['luciana_gabriela_corzo_didak', 'tamara_henkels']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - luciana_gabriela_corzo_didak (Place: 12, Year: 2023, Competition: pharlabs_sur_pro_cup, Source: scorecards)
+     - tamara_henkels (Place: 12, Year: 2023, Competition: pharlabs_sur_pro_cup, Source: npcnews)
+
+222. Group: 2023_pharlabs_sur_pro_cup_bikini_open_13
+   Athletes: ['stella_roberts', 'luciana_gabriela_corzo_didak']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - stella_roberts (Place: 13, Year: 2023, Competition: pharlabs_sur_pro_cup, Source: scorecards)
+     - luciana_gabriela_corzo_didak (Place: 13, Year: 2023, Competition: pharlabs_sur_pro_cup, Source: npcnews)
+
+223. Group: 2023_sheru_classic_mumbai_pro_bikini_open_2
+   Athletes: ['navreet_josan', 'opekinova_ekaterina']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - navreet_josan (Place: 2, Year: 2023, Competition: sheru_classic_mumbai_pro, Source: scorecards)
+     - opekinova_ekaterina (Place: 2, Year: 2023, Competition: sheru_classic_mumbai_pro, Source: npcnews)
+
+224. Group: 2023_sheru_classic_mumbai_pro_bikini_open_4
+   Athletes: ['oleksandra_khovchey', 'rutuja_hegshetye']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - oleksandra_khovchey (Place: 4, Year: 2023, Competition: sheru_classic_mumbai_pro, Source: scorecards)
+     - rutuja_hegshetye (Place: 4, Year: 2023, Competition: sheru_classic_mumbai_pro, Source: npcnews)
+
+225. Group: 2023_tokyo_pro_bikini_open_1
+   Athletes: ['bola_seo', 'yurika_shigemoto']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - bola_seo (Place: 1, Year: 2023, Competition: tokyo_pro, Source: scorecards)
+     - yurika_shigemoto (Place: 1, Year: 2023, Competition: tokyo_pro, Source: npcnews)
+
+226. Group: 2023_tokyo_pro_bikini_open_11
+   Athletes: ['jiaqi_wei', 'josephine_yeong']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - jiaqi_wei (Place: 11, Year: 2023, Competition: tokyo_pro, Source: scorecards)
+     - josephine_yeong (Place: 11, Year: 2023, Competition: tokyo_pro, Source: npcnews)
+
+227. Group: 2023_tokyo_pro_bikini_open_8
+   Athletes: ['yurika_shigemoto', 'kana_suzuki']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - yurika_shigemoto (Place: 8, Year: 2023, Competition: tokyo_pro, Source: scorecards)
+     - kana_suzuki (Place: 8, Year: 2023, Competition: tokyo_pro, Source: npcnews)
+
+228. Group: 2023_tokyo_pro_bikini_open_9
+   Athletes: ['kana_suzuki', 'jiaqi_wei']
+   Sources: ['scorecards', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - kana_suzuki (Place: 9, Year: 2023, Competition: tokyo_pro, Source: scorecards)
+     - jiaqi_wei (Place: 9, Year: 2023, Competition: tokyo_pro, Source: npcnews)
+
+229. Group: 2024_adela_garcia_classic_fitness_open_6
+   Athletes: ['Savanannah Byczek', 'savahannah_byczeck']
+   Sources: ['2024', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - Savanannah Byczek (Place: 6, Year: 2024, Competition: adela_garcia_classic, Source: 2024)
+     - savahannah_byczeck (Place: 6, Year: 2024, Competition: adela_garcia_classic, Source: npcnews)
+
+230. Group: 2024_atlantic_coast_pro_figure_open_4
+   Athletes: ['ksenia_ino', 'aksana_nikolaievna_yukhno']
+   Sources: ['2024', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - ksenia_ino (Place: 4, Year: 2024, Competition: atlantic_coast_pro, Source: 2024)
+     - aksana_nikolaievna_yukhno (Place: 4, Year: 2024, Competition: atlantic_coast_pro, Source: npcnews)
+
+231. Group: 2024_chicago_pro_figure_open_1
+   Athletes: ['elizabeth_nieder', 'cherish_richardson']
+   Sources: ['2024', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - elizabeth_nieder (Place: 1, Year: 2024, Competition: chicago_pro, Source: 2024)
+     - cherish_richardson (Place: 1, Year: 2024, Competition: chicago_pro, Source: npcnews)
+
+232. Group: 2024_europa_pro_mensbb_open_13
+   Athletes: ['mariusz_tomczuk', 'dawid_balcerzak']
+   Sources: ['2024', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - mariusz_tomczuk (Place: 13, Year: 2024, Competition: europa_pro, Source: 2024)
+     - dawid_balcerzak (Place: 13, Year: 2024, Competition: europa_pro, Source: npcnews)
+
+233. Group: 2024_europa_pro_mensbb_open_14
+   Athletes: ['dawid_balcerzak', 'mariusz_tomczuk']
+   Sources: ['2024', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - dawid_balcerzak (Place: 14, Year: 2024, Competition: europa_pro, Source: 2024)
+     - mariusz_tomczuk (Place: 14, Year: 2024, Competition: europa_pro, Source: npcnews)
+
+234. Group: 2024_huanji_china_pro_2_202_212_212_6
+   Athletes: ['weiyang_ding', 'dorj_gansakh']
+   Sources: ['2024', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - weiyang_ding (Place: 6, Year: 2024, Competition: huanji_china_pro_2, Source: 2024)
+     - dorj_gansakh (Place: 6, Year: 2024, Competition: huanji_china_pro_2, Source: npcnews)
+
+235. Group: 2024_huanji_china_pro_bikini_open_14
+   Athletes: ['christina_yue', 'kristina_chekmeneva']
+   Sources: ['2024', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - christina_yue (Place: 14, Year: 2024, Competition: huanji_china_pro, Source: 2024)
+     - kristina_chekmeneva (Place: 14, Year: 2024, Competition: huanji_china_pro, Source: npcnews)
+
+236. Group: 2024_huanji_china_pro_bikini_open_15
+   Athletes: ['kristina_chekmeneva', 'christina_yue']
+   Sources: ['2024', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - kristina_chekmeneva (Place: 15, Year: 2024, Competition: huanji_china_pro, Source: 2024)
+     - christina_yue (Place: 15, Year: 2024, Competition: huanji_china_pro, Source: npcnews)
+
+237. Group: 2024_japan_pro_mensphysique_open_3
+   Athletes: ['gymray_yu', 'chin_jui_yiu']
+   Sources: ['2024', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - gymray_yu (Place: 3, Year: 2024, Competition: japan_pro, Source: 2024)
+     - chin_jui_yiu (Place: 3, Year: 2024, Competition: japan_pro, Source: npcnews)
+
+238. Group: 2024_mr_big_evolution_pro_womensphysique_open_15
+   Athletes: ['bian_ruiying', 'olivia_bian']
+   Sources: ['2024', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - bian_ruiying (Place: 15, Year: 2024, Competition: mr_big_evolution_pro, Source: 2024)
+     - olivia_bian (Place: 15, Year: 2024, Competition: mr_big_evolution_pro, Source: npcnews)
+
+239. Group: 2024_republic_of_texas_pro_bikini_open_16
+   Athletes: ['rosada_plummer', 'aspen_ranz']
+   Sources: ['2024', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - rosada_plummer (Place: 16, Year: 2024, Competition: republic_of_texas_pro, Source: 2024)
+     - aspen_ranz (Place: 16, Year: 2024, Competition: republic_of_texas_pro, Source: npcnews)
+
+240. Group: 2024_san_antonio_pro_bikini_open_15
+   Athletes: ['cindy_van_empel_popowich', 'cinthia_beltran']
+   Sources: ['2024', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - cindy_van_empel_popowich (Place: 15, Year: 2024, Competition: san_antonio_pro, Source: 2024)
+     - cinthia_beltran (Place: 15, Year: 2024, Competition: san_antonio_pro, Source: npcnews)
+
+241. Group: 2024_san_antonio_pro_bikini_open_16
+   Athletes: ['stacy_deville', 'cristina_meza', 'amanda_rivas', 'monica_rubio', 'cinthia_beltran', 'louisa_burke', 'kaylie_fountain', 'brenda_garay_alexander', 'czarina_gisela_gastelum_valenzuela', 'haley_johnson', 'paola_leon', 'samantha_mcnamara', 'rosario_orihuela_hammadi', 'julie_marcela_moreno_reyna', 'carmen_ruiz_alonso', 'bianca_van_wyk', 'denise_wedderburn', 'cindy_van_empel_popowich']
+   Sources: ['2024', 'npcnews']
+   Count: 18 different athletes across 2 sources
+   Rows:
+     - stacy_deville (Place: 16, Year: 2024, Competition: san_antonio_pro, Source: 2024)
+     - cristina_meza (Place: 16, Year: 2024, Competition: san_antonio_pro, Source: 2024)
+     - amanda_rivas (Place: 16, Year: 2024, Competition: san_antonio_pro, Source: 2024)
+     - monica_rubio (Place: 16, Year: 2024, Competition: san_antonio_pro, Source: 2024)
+     - cinthia_beltran (Place: 16, Year: 2024, Competition: san_antonio_pro, Source: 2024)
+     - louisa_burke (Place: 16, Year: 2024, Competition: san_antonio_pro, Source: 2024)
+     - kaylie_fountain (Place: 16, Year: 2024, Competition: san_antonio_pro, Source: 2024)
+     - brenda_garay_alexander (Place: 16, Year: 2024, Competition: san_antonio_pro, Source: 2024)
+     - czarina_gisela_gastelum_valenzuela (Place: 16, Year: 2024, Competition: san_antonio_pro, Source: 2024)
+     - haley_johnson (Place: 16, Year: 2024, Competition: san_antonio_pro, Source: 2024)
+     - paola_leon (Place: 16, Year: 2024, Competition: san_antonio_pro, Source: 2024)
+     - samantha_mcnamara (Place: 16, Year: 2024, Competition: san_antonio_pro, Source: 2024)
+     - rosario_orihuela_hammadi (Place: 16, Year: 2024, Competition: san_antonio_pro, Source: 2024)
+     - julie_marcela_moreno_reyna (Place: 16, Year: 2024, Competition: san_antonio_pro, Source: 2024)
+     - carmen_ruiz_alonso (Place: 16, Year: 2024, Competition: san_antonio_pro, Source: 2024)
+     - bianca_van_wyk (Place: 16, Year: 2024, Competition: san_antonio_pro, Source: 2024)
+     - denise_wedderburn (Place: 16, Year: 2024, Competition: san_antonio_pro, Source: 2024)
+     - cindy_van_empel_popowich (Place: 16, Year: 2024, Competition: san_antonio_pro, Source: npcnews)
+
+242. Group: 2024_spain_empro_classic_mensphysique_open_12
+   Athletes: ['mattia_ballarini', 'enrique_gutierrez_caro']
+   Sources: ['2024', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - mattia_ballarini (Place: 12, Year: 2024, Competition: spain_empro_classic, Source: 2024)
+     - enrique_gutierrez_caro (Place: 12, Year: 2024, Competition: spain_empro_classic, Source: npcnews)
+
+243. Group: 2024_spain_empro_classic_mensphysique_open_16
+   Athletes: ['andrea_santoro', 'matthias_roth', 'tobey_rasheed', 'jaime_maso_lopez', 'ruben_marques', 'rui_liu', 'badmos_lawal', 'dan_ibrahim', 'enrique_gutierrez_caro', 'ali_el_khtabi', 'happy_edodo_oiguieva', 'mauro_azzolina', 'mikael_lega', 'saud_al_khamees', 'mohammad_al_hababi', 'mattia_ballarini']
+   Sources: ['2024', 'npcnews']
+   Count: 16 different athletes across 2 sources
+   Rows:
+     - andrea_santoro (Place: 16, Year: 2024, Competition: spain_empro_classic, Source: 2024)
+     - matthias_roth (Place: 16, Year: 2024, Competition: spain_empro_classic, Source: 2024)
+     - tobey_rasheed (Place: 16, Year: 2024, Competition: spain_empro_classic, Source: 2024)
+     - jaime_maso_lopez (Place: 16, Year: 2024, Competition: spain_empro_classic, Source: 2024)
+     - ruben_marques (Place: 16, Year: 2024, Competition: spain_empro_classic, Source: 2024)
+     - rui_liu (Place: 16, Year: 2024, Competition: spain_empro_classic, Source: 2024)
+     - badmos_lawal (Place: 16, Year: 2024, Competition: spain_empro_classic, Source: 2024)
+     - dan_ibrahim (Place: 16, Year: 2024, Competition: spain_empro_classic, Source: 2024)
+     - enrique_gutierrez_caro (Place: 16, Year: 2024, Competition: spain_empro_classic, Source: 2024)
+     - ali_el_khtabi (Place: 16, Year: 2024, Competition: spain_empro_classic, Source: 2024)
+     - happy_edodo_oiguieva (Place: 16, Year: 2024, Competition: spain_empro_classic, Source: 2024)
+     - mauro_azzolina (Place: 16, Year: 2024, Competition: spain_empro_classic, Source: 2024)
+     - mikael_lega (Place: 16, Year: 2024, Competition: spain_empro_classic, Source: 2024)
+     - saud_al_khamees (Place: 16, Year: 2024, Competition: spain_empro_classic, Source: 2024)
+     - mohammad_al_hababi (Place: 16, Year: 2024, Competition: spain_empro_classic, Source: 2024)
+     - mattia_ballarini (Place: 16, Year: 2024, Competition: spain_empro_classic, Source: npcnews)
+
+244. Group: 2024_st_pete_pro_mensphysique_open_10
+   Athletes: ['franky_yan', 'dustin_nahale']
+   Sources: ['2024', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - franky_yan (Place: 10, Year: 2024, Competition: st_pete_pro, Source: 2024)
+     - dustin_nahale (Place: 10, Year: 2024, Competition: st_pete_pro, Source: npcnews)
+
+245. Group: 2024_st_pete_pro_mensphysique_open_11
+   Athletes: ['tray_jackson', 'franky_yan']
+   Sources: ['2024', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - tray_jackson (Place: 11, Year: 2024, Competition: st_pete_pro, Source: 2024)
+     - franky_yan (Place: 11, Year: 2024, Competition: st_pete_pro, Source: npcnews)
+
+246. Group: 2024_st_pete_pro_mensphysique_open_12
+   Athletes: ['youcef_anava_djoudi', 'tray_jackson']
+   Sources: ['2024', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - youcef_anava_djoudi (Place: 12, Year: 2024, Competition: st_pete_pro, Source: 2024)
+     - tray_jackson (Place: 12, Year: 2024, Competition: st_pete_pro, Source: npcnews)
+
+247. Group: 2024_st_pete_pro_mensphysique_open_13
+   Athletes: ['peter_burnettâ', 'youcef_anava_djoudi']
+   Sources: ['2024', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - peter_burnettâ (Place: 13, Year: 2024, Competition: st_pete_pro, Source: 2024)
+     - youcef_anava_djoudi (Place: 13, Year: 2024, Competition: st_pete_pro, Source: npcnews)
+
+248. Group: 2024_st_pete_pro_mensphysique_open_14
+   Athletes: ['kevin_johnson', 'peter_burnettâ']
+   Sources: ['2024', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - kevin_johnson (Place: 14, Year: 2024, Competition: st_pete_pro, Source: 2024)
+     - peter_burnettâ (Place: 14, Year: 2024, Competition: st_pete_pro, Source: npcnews)
+
+249. Group: 2024_st_pete_pro_mensphysique_open_15
+   Athletes: ['clement_marcelin', 'rodney_bond', 'kevin_johnson']
+   Sources: ['2024', 'npcnews']
+   Count: 3 different athletes across 2 sources
+   Rows:
+     - clement_marcelin (Place: 15, Year: 2024, Competition: st_pete_pro, Source: 2024)
+     - rodney_bond (Place: 15, Year: 2024, Competition: st_pete_pro, Source: 2024)
+     - kevin_johnson (Place: 15, Year: 2024, Competition: st_pete_pro, Source: npcnews)
+
+250. Group: 2024_st_pete_pro_mensphysique_open_16
+   Athletes: ['brad_estadt', 'kevin_reeder', 'dennis_kloster', 'hosea_murphy', 'cordeus_anderson', 'sheldon_martin', 'misel_lozanic', 'louis_e_lee', 'jarrett_jenkins', 'jeph_gabriel', 'dennis_dogbatse', 'alcides_vera_iii', 'taylor_wilson', 'rodney_bond', 'clement_marcelin']
+   Sources: ['2024', 'npcnews']
+   Count: 15 different athletes across 2 sources
+   Rows:
+     - brad_estadt (Place: 16, Year: 2024, Competition: st_pete_pro, Source: 2024)
+     - kevin_reeder (Place: 16, Year: 2024, Competition: st_pete_pro, Source: 2024)
+     - dennis_kloster (Place: 16, Year: 2024, Competition: st_pete_pro, Source: 2024)
+     - hosea_murphy (Place: 16, Year: 2024, Competition: st_pete_pro, Source: 2024)
+     - cordeus_anderson (Place: 16, Year: 2024, Competition: st_pete_pro, Source: 2024)
+     - sheldon_martin (Place: 16, Year: 2024, Competition: st_pete_pro, Source: 2024)
+     - misel_lozanic (Place: 16, Year: 2024, Competition: st_pete_pro, Source: 2024)
+     - louis_e_lee (Place: 16, Year: 2024, Competition: st_pete_pro, Source: 2024)
+     - jarrett_jenkins (Place: 16, Year: 2024, Competition: st_pete_pro, Source: 2024)
+     - jeph_gabriel (Place: 16, Year: 2024, Competition: st_pete_pro, Source: 2024)
+     - dennis_dogbatse (Place: 16, Year: 2024, Competition: st_pete_pro, Source: 2024)
+     - alcides_vera_iii (Place: 16, Year: 2024, Competition: st_pete_pro, Source: 2024)
+     - taylor_wilson (Place: 16, Year: 2024, Competition: st_pete_pro, Source: 2024)
+     - rodney_bond (Place: 16, Year: 2024, Competition: st_pete_pro, Source: npcnews)
+     - clement_marcelin (Place: 16, Year: 2024, Competition: st_pete_pro, Source: npcnews)
+
+251. Group: 2024_st_pete_pro_mensphysique_open_8
+   Athletes: ['winston_sullivan', 'alvaro_pena']
+   Sources: ['2024', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - winston_sullivan (Place: 8, Year: 2024, Competition: st_pete_pro, Source: 2024)
+     - alvaro_pena (Place: 8, Year: 2024, Competition: st_pete_pro, Source: npcnews)
+
+252. Group: 2024_st_pete_pro_mensphysique_open_9
+   Athletes: ['dustin_nahale', 'winston_sullivan']
+   Sources: ['2024', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - dustin_nahale (Place: 9, Year: 2024, Competition: st_pete_pro, Source: 2024)
+     - winston_sullivan (Place: 9, Year: 2024, Competition: st_pete_pro, Source: npcnews)
+
+253. Group: 2024_taiwan_kaohsiung_pro_classic_open_4
+   Athletes: ['suki_wang', 'yinghong_zhang', 'weijie_huang']
+   Sources: ['2024', 'npcnews']
+   Count: 3 different athletes across 2 sources
+   Rows:
+     - suki_wang (Place: 4, Year: 2024, Competition: taiwan_kaohsiung_pro, Source: 2024)
+     - yinghong_zhang (Place: 4, Year: 2024, Competition: taiwan_kaohsiung_pro, Source: 2024)
+     - weijie_huang (Place: 4, Year: 2024, Competition: taiwan_kaohsiung_pro, Source: npcnews)
+
+254. Group: 2024_taiwan_kaohsiung_pro_classic_open_6
+   Athletes: ['weijie_huang', 'yinghong_zhang']
+   Sources: ['2024', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - weijie_huang (Place: 6, Year: 2024, Competition: taiwan_kaohsiung_pro, Source: 2024)
+     - yinghong_zhang (Place: 6, Year: 2024, Competition: taiwan_kaohsiung_pro, Source: npcnews)
+
+255. Group: 2024_taiwan_pro_mensphysique_open_14
+   Athletes: ['steven_liu', 'chung_jen_liu']
+   Sources: ['2024', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - steven_liu (Place: 14, Year: 2024, Competition: taiwan_pro, Source: 2024)
+     - chung_jen_liu (Place: 14, Year: 2024, Competition: taiwan_pro, Source: npcnews)
+
+256. Group: 2024_taiwan_pro_mensphysique_open_4
+   Athletes: ['gymray_yu', 'chin_jui_yiu']
+   Sources: ['2024', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - gymray_yu (Place: 4, Year: 2024, Competition: taiwan_pro, Source: 2024)
+     - chin_jui_yiu (Place: 4, Year: 2024, Competition: taiwan_pro, Source: npcnews)
+
+257. Group: 2024_tampa_hurricane_pro_figure_open_9
+   Athletes: ['beni_blaze', 'behnaz_nasrollahi_azar']
+   Sources: ['2024', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - beni_blaze (Place: 9, Year: 2024, Competition: tampa_hurricane_pro, Source: 2024)
+     - behnaz_nasrollahi_azar (Place: 9, Year: 2024, Competition: tampa_hurricane_pro, Source: npcnews)
+
+258. Group: 2024_tampa_pro_classic_open_16
+   Athletes: ['jason_theobald', 'colin_brannagan', 'victor_manuel_compan_ruiz', 'tim_tevin', 'david_kampfe_jr', 'nick_koeu', 'jonathan_lofthouse', 'sergio_urey', 'montrey_walter', 'jim_holcomb', 'elvernie_mcghee', 'bryan_adams', 'jr_theodore_atkins', 'marvin_baborn', 'angel_bajaira', 'jesse_norris', 'bo_otobo', 'chico_babon']
+   Sources: ['2024', 'npcnews']
+   Count: 18 different athletes across 2 sources
+   Rows:
+     - jason_theobald (Place: 16, Year: 2024, Competition: tampa_pro, Source: 2024)
+     - colin_brannagan (Place: 16, Year: 2024, Competition: tampa_pro, Source: 2024)
+     - victor_manuel_compan_ruiz (Place: 16, Year: 2024, Competition: tampa_pro, Source: 2024)
+     - tim_tevin (Place: 16, Year: 2024, Competition: tampa_pro, Source: 2024)
+     - david_kampfe_jr (Place: 16, Year: 2024, Competition: tampa_pro, Source: 2024)
+     - nick_koeu (Place: 16, Year: 2024, Competition: tampa_pro, Source: 2024)
+     - jonathan_lofthouse (Place: 16, Year: 2024, Competition: tampa_pro, Source: 2024)
+     - sergio_urey (Place: 16, Year: 2024, Competition: tampa_pro, Source: 2024)
+     - montrey_walter (Place: 16, Year: 2024, Competition: tampa_pro, Source: 2024)
+     - jim_holcomb (Place: 16, Year: 2024, Competition: tampa_pro, Source: 2024)
+     - elvernie_mcghee (Place: 16, Year: 2024, Competition: tampa_pro, Source: 2024)
+     - bryan_adams (Place: 16, Year: 2024, Competition: tampa_pro, Source: 2024)
+     - jr_theodore_atkins (Place: 16, Year: 2024, Competition: tampa_pro, Source: 2024)
+     - marvin_baborn (Place: 16, Year: 2024, Competition: tampa_pro, Source: 2024)
+     - angel_bajaira (Place: 16, Year: 2024, Competition: tampa_pro, Source: 2024)
+     - jesse_norris (Place: 16, Year: 2024, Competition: tampa_pro, Source: 2024)
+     - bo_otobo (Place: 16, Year: 2024, Competition: tampa_pro, Source: 2024)
+     - chico_babon (Place: 16, Year: 2024, Competition: tampa_pro, Source: npcnews)
+
+259. Group: 2024_tampa_pro_figure_open_16
+   Athletes: ['christina_patrick', 'lauren_roussel', 'angelikka_chapman', 'karine_hajjar', 'kelsey_newby', 'amber_peguero', 'tamika_irvin_robinson', 'michelle_mahn', 'melissa_h_hardesty', 'blanca_sikes', 'akire_torres', 'aksana_yuklmo', 'constance_jones', 'andi_lampart', 'aksana_nikolaievna_yukhno', 'blanca_siles']
+   Sources: ['2024', 'npcnews']
+   Count: 16 different athletes across 2 sources
+   Rows:
+     - christina_patrick (Place: 16, Year: 2024, Competition: tampa_pro, Source: 2024)
+     - lauren_roussel (Place: 16, Year: 2024, Competition: tampa_pro, Source: 2024)
+     - angelikka_chapman (Place: 16, Year: 2024, Competition: tampa_pro, Source: 2024)
+     - karine_hajjar (Place: 16, Year: 2024, Competition: tampa_pro, Source: 2024)
+     - kelsey_newby (Place: 16, Year: 2024, Competition: tampa_pro, Source: 2024)
+     - amber_peguero (Place: 16, Year: 2024, Competition: tampa_pro, Source: 2024)
+     - tamika_irvin_robinson (Place: 16, Year: 2024, Competition: tampa_pro, Source: 2024)
+     - michelle_mahn (Place: 16, Year: 2024, Competition: tampa_pro, Source: 2024)
+     - melissa_h_hardesty (Place: 16, Year: 2024, Competition: tampa_pro, Source: 2024)
+     - blanca_sikes (Place: 16, Year: 2024, Competition: tampa_pro, Source: 2024)
+     - akire_torres (Place: 16, Year: 2024, Competition: tampa_pro, Source: 2024)
+     - aksana_yuklmo (Place: 16, Year: 2024, Competition: tampa_pro, Source: 2024)
+     - constance_jones (Place: 16, Year: 2024, Competition: tampa_pro, Source: 2024)
+     - andi_lampart (Place: 16, Year: 2024, Competition: tampa_pro, Source: 2024)
+     - aksana_nikolaievna_yukhno (Place: 16, Year: 2024, Competition: tampa_pro, Source: npcnews)
+     - blanca_siles (Place: 16, Year: 2024, Competition: tampa_pro, Source: npcnews)
+
+260. Group: 2024_tampa_pro_mensphysique_open_11
+   Athletes: ['tyler_catapano', 'cordell_waddey']
+   Sources: ['2024', 'npcnews']
+   Count: 2 different athletes across 2 sources
+   Rows:
+     - tyler_catapano (Place: 11, Year: 2024, Competition: tampa_pro, Source: 2024)
+     - cordell_waddey (Place: 11, Year: 2024, Competition: tampa_pro, Source: npcnews)
+
+261. Group: 2024_world_classic_pro_bikini_open_16
+   Athletes: ['charlie_ipock', 'julieta_silva', 'camryn_creager', 'wissam_ghafour', 'ashley_quick', 'casey_hill', 'daniela_burrola_reyes', 'hope_andrews', 'stacy_correa']
+   Sources: ['2024', 'npcnews']
+   Count: 9 different athletes across 2 sources
+   Rows:
+     - charlie_ipock (Place: 16, Year: 2024, Competition: world_classic_pro, Source: 2024)
+     - julieta_silva (Place: 16, Year: 2024, Competition: world_classic_pro, Source: 2024)
+     - camryn_creager (Place: 16, Year: 2024, Competition: world_classic_pro, Source: 2024)
+     - wissam_ghafour (Place: 16, Year: 2024, Competition: world_classic_pro, Source: 2024)
+     - ashley_quick (Place: 16, Year: 2024, Competition: world_classic_pro, Source: 2024)
+     - casey_hill (Place: 16, Year: 2024, Competition: world_classic_pro, Source: 2024)
+     - daniela_burrola_reyes (Place: 16, Year: 2024, Competition: world_classic_pro, Source: 2024)
+     - hope_andrews (Place: 16, Year: 2024, Competition: world_classic_pro, Source: 2024)
+     - stacy_correa (Place: 16, Year: 2024, Competition: world_classic_pro, Source: npcnews)
+
+================================================================================
+SUMMARY:
+Total NEW groups with duplicates: 261
+Total rows involved in NEW duplicates: 1165
+Percentage of total data: 1.81%
+Excluded 205 known conflicts from analysis
+Actually skipped 0 conflicts during processing
+
+JSON output written to cross_source_conflicts_new.json
+Total NEW conflicts written: 261

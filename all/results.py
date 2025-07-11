@@ -29,6 +29,16 @@ def get_source_priority(source):
     }
     return source_priorities.get(source.lower(), 999)  # Default low priority for unknown sources
 
+def get_place_dedup_priority(source):
+    """Return priority number for place deduplication (lower number = higher priority)"""
+    place_priorities = {
+        'npcnews': 1,
+        '2024': 2,
+        'scorecards': 3,
+        'musclememory': 4
+    }
+    return place_priorities.get(source.lower(), 999)  # Default low priority for unknown sources
+
 def main():
     print("Reading data files...")
     
@@ -74,6 +84,9 @@ def main():
     # Add source priority for deduplication
     all_clean_df['source_priority'] = all_clean_df['Source'].apply(get_source_priority)
     
+    # Add place deduplication priority
+    all_clean_df['place_dedup_priority'] = all_clean_df['Source'].apply(get_place_dedup_priority)
+    
     # Select and rename columns
     print("Selecting and ordering columns...")
     results_df = all_clean_df[[
@@ -91,26 +104,56 @@ def main():
         'Division Subtype',
         'Division Level',
         'Source',
-        'source_priority'
+        'source_priority',
+        'place_dedup_priority'
     ]].copy()
     
     # Remove rows with missing year
     results_df = results_df.dropna(subset=['year'])
     print(f"After removing rows with missing year: {len(results_df)} rows")
     
+    # Fix rows with place 0 by setting them to the last place of that division in that competition
+    print("Fixing rows with place 0...")
+    
+    # First, ensure Place column is numeric
+    results_df['Place'] = pd.to_numeric(results_df['Place'], errors='coerce').fillna(0)
+    
+    # First, sort by year, competition, division, and place to ensure proper ordering
+    results_df = results_df.sort_values(['year', 'competition_name_key', 'Division', 'Division Subtype', 'Place'])
+    
+    # Group by year, competition, division, and division subtype to find the last place for each group
+    def fix_zero_places(group):
+        # Find the maximum place in this group (excluding 0)
+        max_place = group[group['Place'] > 0]['Place'].max()
+        if pd.notna(max_place):
+            # Set all places that are 0 to the max place (tied for last place)
+            group.loc[group['Place'] == 0, 'Place'] = max_place
+        else:
+            # If all places are 0, assign sequential places starting from 1
+            zero_count = (group['Place'] == 0).sum()
+            if zero_count > 0:
+                group.loc[group['Place'] == 0, 'Place'] = range(1, zero_count + 1)
+        return group
+    
+    # Apply the fix to each group - include Division Subtype in grouping
+    results_df = results_df.groupby(['year', 'competition_name_key', 'Division', 'Division Subtype']).apply(fix_zero_places).reset_index(drop=True)
+    
+    print(f"Fixed {len(results_df[results_df['Place'] == 0])} rows with place 0")
+    
     # Handle duplicates based on source priority
     print("Handling duplicates based on source priority...")
     
-    # Define the columns to check for duplicates
+    # Define the columns to check for duplicates (INCLUDING Place so we only deduplicate same athlete in same place)
     duplicate_columns = [
         'year', 'competition_name_key', 'athlete_name_key', 
-        'Place', 'Division', 'Division Subtype'
+        'Division', 'Division Subtype', 'Place'
     ]
     
     # Sort by source priority (ascending) so higher priority sources come first
     results_df = results_df.sort_values('source_priority')
     
     # Remove duplicates keeping the first occurrence (highest priority source)
+    # This will only remove duplicates when the same athlete appears in the same place from different sources
     results_df = results_df.drop_duplicates(
         subset=duplicate_columns, 
         keep='first'
@@ -118,12 +161,88 @@ def main():
     
     print(f"After removing duplicates: {len(results_df)} rows")
     
-    # Remove the source_priority column as it was only used for deduplication
-    results_df = results_df.drop('source_priority', axis=1)
+    # Store the deduplicated data for later comparison
+    deduplicated_df = results_df.copy()
     
-    # Sort by year, competition name, division, and place
-    print("Sorting by year, competition name, division, and place...")
-    results_df = results_df.sort_values(['year', 'competition_name_key', 'Division', 'Place'])
+    # SECOND DEDUPLICATION: Check for duplicate places within each competition/year/division group
+    print("Checking for duplicate places within competition/year/division groups...")
+    
+    # Work with the dataframe that results from Step 1 (deduplicated_df)
+    # Add place deduplication priority to the deduplicated dataframe
+    deduplicated_df['place_dedup_priority'] = deduplicated_df['Source'].apply(get_place_dedup_priority)
+    
+    # Sort by place deduplication priority (ascending) so higher priority sources come first
+    deduplicated_df = deduplicated_df.sort_values('place_dedup_priority')
+    
+    # Group by year, competition, division, division subtype, and place
+    def remove_duplicate_places(group):
+        if len(group) == 1:
+            return group
+        
+        # Check if all sources are the same
+        unique_sources = group['Source'].nunique()
+        if unique_sources == 1:
+            # All sources are the same, keep all rows
+            return group
+        else:
+            # Different sources, keep only the first (highest priority)
+            return group.head(1)
+    
+    # Apply the place deduplication to each group
+    place_deduplicated_df = deduplicated_df.groupby(['year', 'competition_name_key', 'Division', 'Division Subtype', 'Place']).apply(remove_duplicate_places).reset_index(drop=True)
+    
+    # Handle athlete place conflicts between sources
+    # This happens when the same athlete appears in different places in different sources
+    # For example, ashley_kaitwasser is 1st in npcnews but 2nd in scorecards
+    # print("Handling athlete place conflicts between sources...")
+    
+    # For each competition/year/division group, determine the best source to use
+    # def get_best_source_for_competition(group):
+    #     if len(group) == 0:
+    #         return group
+        
+    #     # Find the highest priority source that has data for this competition
+    #     available_sources = group['Source'].unique()
+    #     source_priorities = {}
+        
+    #     for source in available_sources:
+    #         source_priority = group[group['Source'] == source]['place_dedup_priority'].iloc[0]
+    #         source_priorities[source] = source_priority
+        
+    #     # Get the source with the highest priority (lowest number)
+    #     best_source = min(source_priorities, key=source_priorities.get)
+        
+    #     # Get all athletes from the best source for this competition
+    #     best_source_data = original_df[
+    #         (original_df['year'] == group['year'].iloc[0]) &
+    #         (original_df['competition_name_key'] == group['competition_name_key'].iloc[0]) &
+    #         (original_df['Division'] == group['Division'].iloc[0]) &
+    #         (original_df['Division Subtype'] == group['Division Subtype'].iloc[0]) &
+    #         (original_df['Source'] == best_source)
+    #     ]
+        
+    #     return best_source_data
+    
+    # Apply the source selection to each competition/year/division group
+    # final_results_df = place_deduplicated_df.groupby(['year', 'competition_name_key', 'Division', 'Division Subtype']).apply(get_best_source_for_competition).reset_index(drop=True)
+    
+    # print(f"After resolving athlete place conflicts: {len(final_results_df)} rows")
+    
+    # Use the final results as the output
+    # results_df = final_results_df.copy()
+    
+    # Use the place deduplicated data as the final result
+    print("Using place deduplicated results as final output...")
+    results_df = place_deduplicated_df.copy()
+    
+    print(f"After combining results: {len(results_df)} rows")
+    
+    # Remove the priority columns as they were only used for deduplication
+    results_df = results_df.drop(['source_priority', 'place_dedup_priority'], axis=1)
+    
+    # Sort by year, competition name, division, division subtype, and place
+    print("Sorting by year, competition name, division, division subtype, and place...")
+    results_df = results_df.sort_values(['year', 'competition_name_key', 'Division', 'Division Subtype', 'Place'])
     
     # Convert numeric columns to integers
     print("Converting numeric columns to integers...")

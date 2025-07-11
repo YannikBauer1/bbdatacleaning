@@ -1,0 +1,736 @@
+[
+  {
+    "year": "2008",
+    "competition_name_key": "jacksonville_pro_figure_open",
+    "place": "18",
+    "scorecards": [
+      "tessa_wood_thomas",
+      "irina_veselova",
+      "stephanie_togrul_tulin",
+      "laura_sitter",
+      "larissa_reis",
+      "petra_mertl",
+      "patricia_mello",
+      "sherma_dillard_del_tergo",
+      "becky_clawson",
+      "thais_cabricres_werner",
+      "susanne_niederhauser"
+    ],
+    "musclememory": [
+      "amy_stephens"
+    ]
+  },
+  {
+    "year": "2008",
+    "competition_name_key": "tampa_pro_mensbb_open",
+    "place": "16",
+    "scorecards": [
+      "gian_enrico_pica",
+      "jerry_nicholls",
+      "steve_namat",
+      "eugene_mishin",
+      "elbert_daron_lytle",
+      "jeff_box_long",
+      "ken_jones",
+      "richard_tricky_jackson",
+      "carlos_majid_rabiel",
+      "james_hampton",
+      "raul_carrasco_jimenez",
+      "omar_borrelli",
+      "lyndon_belgrave",
+      "marcus_becht",
+      "pablo_arevalo",
+      "jorge_jose_alves",
+      "clarence_de_vis",
+      "clifton_torres",
+      "nathaniel_wonsley"
+    ],
+    "musclememory": [
+      "mehmet_yildirim",
+      "bola_ojex",
+      "peter_elvis_brown",
+      "fedel_clark",
+      "guy_mark_ducasse",
+      "anthony_finocchiaro",
+      "vincent_liu",
+      "roland_huff"
+    ]
+  },
+  {
+    "year": "2009",
+    "competition_name_key": "atlantic_city_pro_202_212_202",
+    "place": "16",
+    "scorecards": [
+      "alain_desinaruis",
+      "mauricio_solis_torres",
+      "javier_martinez",
+      "james_hampton",
+      "andy_dinetta",
+      "derik_farnsworth"
+    ],
+    "musclememory": [
+      "anthony_finocchiaro"
+    ]
+  },
+  {
+    "year": "2009",
+    "competition_name_key": "atlantic_city_pro_womensbb_open",
+    "place": "16",
+    "scorecards": [
+      "elizabeth_meza_gomez",
+      "mary_ellen_jerumbo",
+      "aurellia_grozajova",
+      "maria_del_carmen_gomez_segura",
+      "cassandra_floyd",
+      "rita_rae"
+    ],
+    "musclememory": [
+      "jamie_lynn_troxel"
+    ]
+  },
+  {
+    "year": "2009",
+    "competition_name_key": "new_york_pro_mensbb_open",
+    "place": "17",
+    "scorecards": [
+      "denis_sergovksiy",
+      "jari_mentula",
+      "aiman_faour"
+    ],
+    "musclememory": [
+      "vincent_liu",
+      "daniele_seccarecci"
+    ]
+  },
+  {
+    "year": "2011",
+    "competition_name_key": "new_york_pro_mensbb_open",
+    "place": "16",
+    "scorecards": [
+      "yan_salaks",
+      "jr_milton_holloway"
+    ],
+    "musclememory": [
+      "pavol_jablonicky",
+      "ben_white"
+    ]
+  },
+  {
+    "year": "2012",
+    "competition_name_key": "new_york_pro_figure_open",
+    "place": "16",
+    "scorecards": [
+      "elizabeth_maurice",
+      "ryan_hays_althoff",
+      "yolanda_esteso_sauri",
+      "thea_erichsen",
+      "ginette_delhaes",
+      "leah_berti",
+      "patrice_vignola",
+      "laura_tolonen",
+      "katherynne_ramirez",
+      "marcy_porter",
+      "eleni_plakitsi",
+      "angelica_nebbia"
+    ],
+    "npcnews": [
+      "tiffany_archer",
+      "melanie_becker_de_palma"
+    ]
+  },
+  {
+    "year": "2013",
+    "competition_name_key": "st_louis_bikini_pro_bikini_open",
+    "place": "16",
+    "scorecards": [
+      "jennifer_dawn",
+      "maria_chase",
+      "kristal_martin",
+      "cecile_palacios",
+      "sandi_forsythe",
+      "michon_leddy",
+      "michelle_johnson",
+      "katherine_williams",
+      "rachelle_deluca",
+      "jennifer_elliott",
+      "anna_starodubtseva",
+      "aly_veneno",
+      "ashley_wade"
+    ],
+    "npcnews": [
+      "rachelle_dejean"
+    ]
+  },
+  {
+    "year": "2013",
+    "competition_name_key": "tampa_pro_mensbb_open",
+    "place": "16",
+    "scorecards": [
+      "baitollah_abbaspour",
+      "emro_karadjulovic",
+      "alexandre_nathan",
+      "peter_porczi",
+      "jonathan_rowe",
+      "steven_burke",
+      "joe_derousie",
+      "lloyd_dollar",
+      "timothy_gaillard",
+      "james_hampton",
+      "tomas_bures_tom\u00e1\u0161_bure\u0161",
+      "jeff_beckham",
+      "santana_anderson",
+      "maor_zaradez",
+      "christopher_saccardo"
+    ],
+    "musclememory": [
+      "mario_van_steenberghe"
+    ]
+  },
+  {
+    "year": "2013",
+    "competition_name_key": "tampa_pro_womensbb_open",
+    "place": "16",
+    "scorecards": [
+      "sharon_mould",
+      "beth_wachter",
+      "natalia_batova",
+      "juanita_blaino",
+      "angela_debatin",
+      "beverly_di_renzo",
+      "agatha_dulson",
+      "roxanne_edwards",
+      "geraldine_morgan",
+      "maryse_descamps_manios",
+      "terri_harris\u00e2",
+      "aurellia_grozajova",
+      "pamela_franklin",
+      "mary_ellen_jerumbo",
+      "janeen_lankowski"
+    ],
+    "npcnews": [
+      "miriam_gerard"
+    ]
+  },
+  {
+    "year": "2016",
+    "competition_name_key": "greater_gulf_pro_bikini_open",
+    "place": "16",
+    "scorecards": [
+      "vicki_counts",
+      "nicole_coleman",
+      "heidi_carlsen",
+      "jazzmen_canales"
+    ],
+    "npcnews": [
+      "shinda_obey"
+    ]
+  },
+  {
+    "year": "2016",
+    "competition_name_key": "los_angeles_grand_prix_mensphysique_open",
+    "place": "16",
+    "scorecards": [
+      "juan_farro_barros",
+      "alexander_woodson",
+      "dylan_white",
+      "robert_shaw",
+      "tonnell_rodriguez",
+      "david_odom",
+      "shahram_nikbakhtbidgoli",
+      "tarron_hill",
+      "douglas_evans",
+      "allan_basto"
+    ],
+    "npcnews": [
+      "adon_marcus"
+    ]
+  },
+  {
+    "year": "2016",
+    "competition_name_key": "new_york_pro_figure_open",
+    "place": "16",
+    "scorecards": [
+      "erin_riley",
+      "satrice_rigsby",
+      "marie_ong_allegro",
+      "heather_nappi",
+      "felecia_murray",
+      "elena_kirschchina",
+      "joanna_holden",
+      "stephanie_hammermeister",
+      "maggie_corso",
+      "rachelle_carter",
+      "beckie_boddie",
+      "ellen_elizabeth_berg",
+      "norvis_arias",
+      "susana_alegre"
+    ],
+    "npcnews": [
+      "bryana_turner",
+      "christi_shaw",
+      "kayla_rossi",
+      "linda_nelson",
+      "linda_stephens"
+    ]
+  },
+  {
+    "year": "2016",
+    "competition_name_key": "olympia_womensphysique_open",
+    "place": "16",
+    "scorecards": [
+      "jessica_gaines",
+      "anna_luise_freitas",
+      "antoinette_downie",
+      "vicki_diaz",
+      "erica_blockman",
+      "rachel_baker",
+      "michaela_aycock",
+      "jacklyn_sutton_abrams",
+      "rosella_joseph",
+      "cahdrea_judd_adams",
+      "branka_njegovec",
+      "stacey_norris",
+      "jennifer_robinson",
+      "erika_reed",
+      "mellissa_pearo"
+    ],
+    "musclememory": [
+      "erika_kikuchi"
+    ]
+  },
+  {
+    "year": "2016",
+    "competition_name_key": "tampa_pro_figure_open",
+    "place": "16",
+    "npcnews": [
+      "cheryl_davis",
+      "christpher_stacy",
+      "codi_jaeger",
+      "laura_donegan",
+      "rosimar_lopes_dasilva",
+      "selena_pons",
+      "sharmane_williams",
+      "tamara_ribeiro_bailey",
+      "vanessa_jacobs",
+      "m_tivsay_briceno_dushane"
+    ],
+    "musclememory": [
+      "stacy_kinnard"
+    ]
+  },
+  {
+    "year": "2017",
+    "competition_name_key": "new_york_pro_202_212_212",
+    "place": "16",
+    "npcnews": [
+      "vincent_que",
+      "quincy_winklaar",
+      "mike_debenham",
+      "bela_kokeny",
+      "jose_paul_sanchez_reyes",
+      "janos_kubik",
+      "gary_wright",
+      "david_robinson",
+      "antonio_jose_morales_vidal",
+      "jason_joseph"
+    ],
+    "musclememory": [
+      "pedro_barron_cuyas"
+    ]
+  },
+  {
+    "year": "2017",
+    "competition_name_key": "new_york_pro_mensphysique_open",
+    "place": "16",
+    "scorecards": [
+      "larry_angelo_zimmerman",
+      "troy_williams",
+      "charles_tschupp",
+      "maxime_parisi",
+      "german_david_pacheco"
+    ],
+    "npcnews": [
+      "maurice_arthur",
+      "marcelino_bradford",
+      "jeremy_jones",
+      "ismael_martinez_dominguez",
+      "ephfram_mike_lawhorne",
+      "clifford_lewis",
+      "brendon_osbourne",
+      "brenden_floyd",
+      "michael_d_mperey",
+      "timothy_henley",
+      "shawn_labega",
+      "scott_dennis",
+      "ron_dacosta",
+      "miguel_mendoza"
+    ]
+  },
+  {
+    "year": "2017",
+    "competition_name_key": "northern_california_pro_bikini_open",
+    "place": "17",
+    "scorecards": [
+      "christina_sanchez",
+      "stella_roberts",
+      "katherine_rosales_alcantara",
+      "heidi_allen_patterson",
+      "mylien_nguyen",
+      "barbara_ludwig",
+      "christina_flavin_williams",
+      "emma_fernandez",
+      "allison_carter",
+      "charina_baker"
+    ],
+    "npcnews": [
+      "amy_updike",
+      "cindy_villalobos",
+      "jessica_wilson",
+      "deborah_wright"
+    ]
+  },
+  {
+    "year": "2017",
+    "competition_name_key": "olympia_mensbb_open",
+    "place": "16",
+    "scorecards": [
+      "michael_lockett"
+    ],
+    "musclememory": [
+      "victor_martinez",
+      "jeff_beckham"
+    ]
+  },
+  {
+    "year": "2018",
+    "competition_name_key": "olympia_bikini_open",
+    "place": "16",
+    "scorecards": [
+      "stacy_mccloud_green",
+      "breema_martinez",
+      "ashely_jenelle",
+      "kerryne_henich",
+      "kim_gutierrez",
+      "elia_fernandez",
+      "tawna_eubanks",
+      "sherry_espera",
+      "monica_ellis",
+      "darah_diaz",
+      "natoshia_coleman",
+      "jennifer_caban",
+      "katya_nosova",
+      "cristobalina_pajaras_torres",
+      "mariella_pellegrino",
+      "diana_salamon",
+      "elizabeth_yisrael"
+    ],
+    "npcnews": [
+      "ha_yeun_kim"
+    ]
+  },
+  {
+    "year": "2018",
+    "competition_name_key": "st_louis_pro_figure_open",
+    "place": "15",
+    "npcnews": [
+      "shasha_brown"
+    ],
+    "musclememory": [
+      "idalia_molina",
+      "angie_lemay",
+      "alana_hernandez",
+      "avis_evans",
+      "claudia_olvera",
+      "sara_chio",
+      "yolanda_anthony",
+      "linda_potter",
+      "ashley_wiens",
+      "toni_wheeler",
+      "nikolina_simpson",
+      "shellie_schoenberg"
+    ]
+  },
+  {
+    "year": "2019",
+    "competition_name_key": "battle_of_texas_bikini_open",
+    "place": "16",
+    "scorecards": [
+      "meri_abbado",
+      "prerana_anchan",
+      "vicki_counts",
+      "kaylie_fountain",
+      "ashley_humiston",
+      "angela_ruscilli_kegler",
+      "sarah_lacy",
+      "clare_morrow",
+      "ashley_morton",
+      "diana_nguyen",
+      "sabrina_nicole"
+    ],
+    "npcnews": [
+      "karelin_marte_garcia"
+    ]
+  },
+  {
+    "year": "2019",
+    "competition_name_key": "battle_of_texas_classic_open",
+    "place": "16",
+    "scorecards": [
+      "eric_brown_jr",
+      "ross_caesar",
+      "chaz_coleman",
+      "richard_daniels",
+      "charles_williams",
+      "deron_trotter",
+      "michael_spencer",
+      "bikramjit_singh",
+      "lamar_shaw",
+      "derek_duszynski",
+      "timothy_garrett",
+      "dion_harris",
+      "fritz_loeschel",
+      "adon_marcus",
+      "jason_martinez",
+      "matthew_nelms",
+      "bola_ojex",
+      "panexce_pierre",
+      "david_robinson",
+      "danny_rossner",
+      "dustin_sensat",
+      "aaron_shaw"
+    ],
+    "npcnews": [
+      "chase_bergner",
+      "oliver_adzievski"
+    ]
+  },
+  {
+    "year": "2019",
+    "competition_name_key": "san_marino_pro_classic_open",
+    "place": "14",
+    "scorecards": [
+      "gokhan_eskin"
+    ],
+    "npcnews": [
+      "jorge_machado"
+    ]
+  },
+  {
+    "year": "2020",
+    "competition_name_key": "chicago_pro_mensphysique_open",
+    "place": "16",
+    "scorecards": [
+      "napoleon_amos",
+      "aaron_aramini",
+      "rodney_bond",
+      "reynel_chavez_pulido",
+      "tony_claiborne",
+      "travis_cleveland",
+      "drew_cullen",
+      "jamal_everette",
+      "michael_ferguson",
+      "anthony_gilkes",
+      "reuben_glass",
+      "myron_griffin",
+      "jordon_hull",
+      "marvin_jimerson",
+      "jonathan_jimenez",
+      "chris_kakouras",
+      "burak_king",
+      "zach_lape"
+    ],
+    "npcnews": [
+      "alvin_taylor_ii",
+      "ayinde_avery",
+      "basil_williams",
+      "de_wayne_roberts",
+      "derrick_stevenson",
+      "franky_yan",
+      "harlan_taylor_jr",
+      "william_wade",
+      "kai_spencer",
+      "micah_a_thomas_jr",
+      "mike_williams",
+      "mitchell_spadafore",
+      "serge_victor",
+      "steven_rogers",
+      "thomas_riley"
+    ]
+  },
+  {
+    "year": "2020",
+    "competition_name_key": "tampa_pro_bikini_open",
+    "place": "16",
+    "scorecards": [
+      "aria_adamy",
+      "vania_auguste",
+      "denetra_blackshear",
+      "kristin_crutcher",
+      "erin_dennis",
+      "lusana_diaz",
+      "nina_di_tommaso",
+      "paula_eline",
+      "christine_ford",
+      "brittany_hamilton",
+      "miriam_jenkins",
+      "lesya_lambert",
+      "wendy_massey",
+      "nora_mirocha"
+    ],
+    "npcnews": [
+      "angela_ruscilli_kegler",
+      "eng_suan_tan_jarriel",
+      "gina_sardina",
+      "jasmine_williams",
+      "jennifer_st_peter",
+      "karen_small",
+      "rachel_oberst",
+      "samantha_mushalansky",
+      "stephanie_sequeira",
+      "vita_shtevnin"
+    ]
+  },
+  {
+    "year": "2020",
+    "competition_name_key": "tampa_pro_mensphysique_open",
+    "place": "16",
+    "scorecards": [
+      "tony_lynch",
+      "leo_mackesy",
+      "kevin_reeder",
+      "remon_smith",
+      "alvin_taylor_ii",
+      "brian_j_taylor_ii",
+      "michael_tello",
+      "jeffrey_velazquez",
+      "serge_victor",
+      "andrew_israel_woodard",
+      "justin_woodward"
+    ],
+    "npcnews": [
+      "byron_archie",
+      "daavon_grayson",
+      "douglas_laforge",
+      "emanual_c_hunter",
+      "ephfram_mike_lawhorne",
+      "frank_griffin",
+      "michael_bell",
+      "oshayne_lindo",
+      "toby_gordin",
+      "wayne_bullock",
+      "zach_lape",
+      "brett_mario_jackson_jr",
+      "sr_andrew_jenkins",
+      "alex_hessam"
+    ]
+  },
+  {
+    "year": "2022",
+    "competition_name_key": "dallas_pro_bikini_open",
+    "place": "16",
+    "scorecards": [
+      "christy_brown",
+      "christina_heath",
+      "shawn_hektor_lewis",
+      "vita_shtevnin"
+    ],
+    "npcnews": [
+      "julia_wohlschlegel"
+    ]
+  },
+  {
+    "year": "2023",
+    "competition_name_key": "arizona_pro_wellness_open",
+    "place": "16",
+    "scorecards": [
+      "kat_williams"
+    ],
+    "npcnews": [
+      "marina_martins",
+      "maria_borisch",
+      "madison_luna",
+      "natasha_peay",
+      "tracy_eden",
+      "tatum_schneidmilller",
+      "norma_esparza",
+      "kimberly_sayers",
+      "cearra_cho",
+      "briaunna_r_guthrie",
+      "christine_ford",
+      "celeste_morales"
+    ]
+  },
+  {
+    "year": "2023",
+    "competition_name_key": "daytona_pro_mensphysique_open",
+    "place": "16",
+    "scorecards": [
+      "leon_k_smith",
+      "dennis_singh",
+      "geobanny_paula",
+      "michael_d_mperey",
+      "don_mccall",
+      "benedikt_lukas",
+      "mark_a_lancaster",
+      "reuben_joseph",
+      "everett_davis",
+      "robert_clark"
+    ],
+    "npcnews": [
+      "favian_villalobos",
+      "harlan_taylor_jr",
+      "jimmie_stewart",
+      "serge_victor"
+    ]
+  },
+  {
+    "year": "2024",
+    "competition_name_key": "tampa_pro_classic_open",
+    "place": "16",
+    "2024": [
+      "jesse_norris",
+      "angel_bajaira",
+      "marvin_baborn",
+      "jr_theodore_atkins",
+      "bryan_adams",
+      "elvernie_mcghee",
+      "jim_holcomb",
+      "montrey_walter",
+      "sergio_urey",
+      "jonathan_lofthouse",
+      "nick_koeu",
+      "david_kampfe_jr",
+      "bo_otobo",
+      "victor_manuel_compan_ruiz",
+      "colin_brannagan",
+      "jason_theobald",
+      "tim_tevin",
+      "brad_helm",
+      "farzad_ghotbi",
+      "vince_gentile",
+      "dion_merrill",
+      "stephen_thames"
+    ],
+    "npcnews": [
+      "chico_babon"
+    ]
+  },
+  {
+    "year": "2024",
+    "competition_name_key": "world_classic_pro_bikini_open",
+    "place": "16",
+    "2024": [
+      "daniela_burrola_reyes",
+      "hope_andrews",
+      "wissam_ghafour",
+      "ashley_quick",
+      "casey_hill",
+      "camryn_creager",
+      "charlie_ipock",
+      "julieta_silva"
+    ],
+    "npcnews": [
+      "stacy_correa"
+    ]
+  }
+]
