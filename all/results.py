@@ -268,6 +268,34 @@ def main():
           (results_df['athlete_name_key'] == 'angel_manuel_rangel_vargas') & 
           (results_df['Place'] == 6))
     ]
+    # 2011,toronto_supershow,ann_pratt,0,0,0,0,0,0,17,figure,open,pro,musclememory
+    results_df = results_df[
+        ~((results_df['year'] == 2011) & 
+          (results_df['competition_name_key'] == 'toronto_supershow') & 
+          (results_df['athlete_name_key'] == 'ann_pratt') & 
+          (results_df['Place'] == 17))
+    ]
+    # 2012,arnold_classic,abigail_burrows,0,0,0,0,0,0,16,bikini,open,pro,npcnews
+    results_df = results_df[
+        ~((results_df['year'] == 2012) & 
+          (results_df['competition_name_key'] == 'arnold_classic') & 
+          (results_df['athlete_name_key'] == 'abigail_burrows') & 
+          (results_df['Place'] == 16))
+    ]
+    # 2013,fort_lauderdale_pro,bernadette_marassa,24,0,0,0,0,24,5,bikini,open,pro,scorecards
+    results_df = results_df[
+        ~((results_df['year'] == 2013) & 
+          (results_df['competition_name_key'] == 'fort_lauderdale_pro') & 
+          (results_df['athlete_name_key'] == 'bernadette_marassa') & 
+          (results_df['Place'] == 5))
+    ]
+    # 2013,houston_pro,cynthia_benoit,20,0,0,0,0,20,4,bikini,open,pro,scorecards
+    results_df = results_df[
+        ~((results_df['year'] == 2013) & 
+          (results_df['competition_name_key'] == 'houston_pro') & 
+          (results_df['athlete_name_key'] == 'cynthia_benoit') & 
+          (results_df['Place'] == 4))
+    ]
 
 
     
