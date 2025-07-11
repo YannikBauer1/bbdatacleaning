@@ -136,15 +136,22 @@ def find_same_place_not_last():
                 # Get all entries for this place
                 place_entries = group[group['Place'] == place]
                 
+                # Extract only athlete_name_key and source from entries
+                simplified_entries = []
+                for _, row in place_entries.iterrows():
+                    simplified_entries.append({
+                        'athlete_name_key': str(row['athlete_name_key']),
+                        'source': str(row['Source'])
+                    })
+                
                 same_place_entries.append({
                     'year': int(year),
                     'competition': str(competition),
                     'division': str(division),
                     'subtype': str(subtype),
                     'place': int(place),
-                    'count': int(count),
                     'max_place': int(max_place),
-                    'entries': convert_numpy_types(place_entries.to_dict('records'))
+                    'entries': simplified_entries
                 })
     
     # Write results to JSON file

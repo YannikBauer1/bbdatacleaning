@@ -239,6 +239,37 @@ def main():
     
     # Remove the priority columns as they were only used for deduplication
     results_df = results_df.drop(['source_priority', 'place_dedup_priority'], axis=1)
+
+    # Remove row with 2010,europa_dallas_pro,julia_ann_kulla,0,0,0,0,0,0,10,figure,open,pro,musclememory
+    results_df = results_df[
+        ~((results_df['year'] == 2010) & 
+          (results_df['competition_name_key'] == 'europa_dallas_pro') & 
+          (results_df['athlete_name_key'] == 'julia_ann_kulla') & 
+          (results_df['Place'] == 10))
+    ]
+    # 2010,europa_phoenix_pro,antoinette_tonie_thompson,0,0,0,0,0,0,7,womensbb,open,pro,musclememory
+    results_df = results_df[
+        ~((results_df['year'] == 2010) & 
+          (results_df['competition_name_key'] == 'europa_phoenix_pro') & 
+          (results_df['athlete_name_key'] == 'antoinette_tonie_thompson') & 
+          (results_df['Place'] == 7))
+    ]
+    # 2010,jacksonville_pro,joanne_murphy,0,0,0,0,0,0,17,figure,open,pro,musclememory
+    results_df = results_df[
+        ~((results_df['year'] == 2010) & 
+          (results_df['competition_name_key'] == 'jacksonville_pro') & 
+          (results_df['athlete_name_key'] == 'joanne_murphy') & 
+          (results_df['Place'] == 17))
+    ]
+    # 2011,jacksonville_pro,angel_manuel_rangel_vargas,0,0,0,0,0,0,6,202_212,202,pro,musclememory
+    results_df = results_df[
+        ~((results_df['year'] == 2011) & 
+          (results_df['competition_name_key'] == 'jacksonville_pro') & 
+          (results_df['athlete_name_key'] == 'angel_manuel_rangel_vargas') & 
+          (results_df['Place'] == 6))
+    ]
+
+
     
     # Sort by year, competition name, division, division subtype, and place
     print("Sorting by year, competition name, division, division subtype, and place...")

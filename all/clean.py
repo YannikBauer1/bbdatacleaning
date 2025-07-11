@@ -151,6 +151,20 @@ mask = (cleaned_df['Competition'].str.contains('2017 Toronto Pro', case=False, n
 cleaned_df.loc[mask, 'Date'] = 'May 28, 2017'
 
 
+mask = (cleaned_df['Competition'].str.contains('Sacramento Pro', case=False, na=False)) & (cleaned_df['Date'] == "November 3, 2007") & (cleaned_df['Competitor Name'] == "Flake, Michelle") & (cleaned_df['Place'] == 2)
+cleaned_df.loc[mask, 'Place'] = 1
+mask = (cleaned_df['Competition'].str.contains('2010 Europa Battle of Champions', case=False, na=False)) & (cleaned_df['Date'] == "July 25, 2010") & (cleaned_df['Competitor Name'] == "Brezovac, Brigita") & (cleaned_df['Place'] == 3)
+cleaned_df.loc[mask, 'Place'] = 1
+mask = (cleaned_df['Competition'].str.contains('2011 IFBB Arnold Classic', case=False, na=False)) & (cleaned_df['Date'] == "March 4, 2011") & (cleaned_df['Competitor Name'] == "Yaxeni Oriquen Garcia") & (cleaned_df['Place'] == 1)
+cleaned_df.loc[mask, 'Place'] = 2
+mask = (cleaned_df['Competition'].str.contains('2011 IFBB NEW YORK PRO', case=False, na=False)) & (cleaned_df['Date'] == "May 28, 2011") & (cleaned_df['Competitor Name'].str.contains('Lewis, James', case=False, na=False)) & (cleaned_df['Place'] == 1)
+cleaned_df.loc[mask, 'Place'] = 2
+mask = (cleaned_df['Competition'].str.contains('2011 IFBB NEW YORK PRO', case=False, na=False)) & (cleaned_df['Date'] == "May 28, 2011") & (cleaned_df['Competitor Name'].str.contains('Jones, Ken', case=False, na=False)) & (cleaned_df['Place'] == 13)
+cleaned_df.loc[mask, 'Place'] = 14
+
+
+
+
 # Fix incorrect date for Torunament Of Champions Pro
 mask = (cleaned_df['Competition'].str.contains('2020 Olympia', case=False, na=False)) & (cleaned_df['Competitor Name'].str.contains("Irene Anderson", case=False, na=False))
 cleaned_df.loc[mask, 'Division'] = 'womens bodybuilding'
