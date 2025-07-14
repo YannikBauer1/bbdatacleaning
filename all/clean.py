@@ -102,6 +102,80 @@ cleaned_df.loc[mask, 'Division'] = 'figure'
 mask = (cleaned_df['Competition'].str.contains('IFBB Dallas PRO', case=False, na=False)) & (cleaned_df['Date'] == "June 17, 2023") & (cleaned_df['Division'] == "MEN'S BODYBUILDING - open")
 cleaned_df.loc[mask, 'Division'] = 'male - wheelchair'
 
+mask = (
+    (cleaned_df['Competition'].str.contains('2015 IFBB Wings of Strength Chicago', case=False, na=False)) &
+    (cleaned_df['Date'] == "July 4, 2015") &
+    (cleaned_df['Competitor Name'].str.contains('Linda Andrew', case=False, na=False)) &
+    (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 1.0)
+)
+cleaned_df.loc[mask, 'Division'] = 'figure - masters'
+
+mask = (
+    (cleaned_df['Competition'].str.contains('2015 IFBB Wings of Strength Chicago', case=False, na=False)) &
+    (cleaned_df['Date'] == "July 4, 2015") &
+    (cleaned_df['Competitor Name'].str.contains('Agnes Russo', case=False, na=False)) &
+    (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 2.0)
+)
+cleaned_df.loc[mask, 'Division'] = 'figure - masters'
+
+mask = (
+    (cleaned_df['Competition'].str.contains('2015 IFBB Wings of Strength Chicago', case=False, na=False)) &
+    (cleaned_df['Date'] == "July 4, 2015") &
+    (cleaned_df['Competitor Name'].str.contains('Kim Clark', case=False, na=False)) &
+    (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 3.0)
+)
+cleaned_df.loc[mask, 'Division'] = 'figure - masters'
+
+mask = (
+    (cleaned_df['Competition'].str.contains('2015 IFBB Wings of Strength Chicago', case=False, na=False)) &
+    (cleaned_df['Date'] == "July 4, 2015") &
+    (cleaned_df['Competitor Name'].str.contains('Dawn Reichley', case=False, na=False)) &
+    (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 4.0)
+)
+cleaned_df.loc[mask, 'Division'] = 'figure - masters'
+
+mask = (
+    (cleaned_df['Competition'].str.contains('2015 IFBB Wings of Strength Chicago', case=False, na=False)) &
+    (cleaned_df['Date'] == "July 4, 2015") &
+    (cleaned_df['Competitor Name'].str.contains('Vanessa Jacobs', case=False, na=False)) &
+    (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 5.0)
+)
+cleaned_df.loc[mask, 'Division'] = 'figure - masters'
+
+mask = (
+    (cleaned_df['Competition'].str.contains('2015 IFBB Wings of Strength Chicago', case=False, na=False)) &
+    (cleaned_df['Date'] == "July 4, 2015") &
+    (cleaned_df['Competitor Name'].str.contains('Melanise Pettee', case=False, na=False)) &
+    (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 6.0)
+)
+cleaned_df.loc[mask, 'Division'] = 'figure - masters'
+
+mask = (
+    (cleaned_df['Competition'].str.contains('2015 IFBB Wings of Strength Chicago', case=False, na=False)) &
+    (cleaned_df['Date'] == "July 4, 2015") &
+    (cleaned_df['Competitor Name'].str.contains('Jennifer Freeman', case=False, na=False)) &
+    (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 7.0)
+)
+cleaned_df.loc[mask, 'Division'] = 'figure - masters'
+
+mask = (
+    (cleaned_df['Competition'].str.contains('2015 IFBB Wings of Strength Chicago', case=False, na=False)) &
+    (cleaned_df['Date'] == "July 4, 2015") &
+    (cleaned_df['Competitor Name'].str.contains('Rachel Payne', case=False, na=False)) &
+    (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 8.0)
+)
+cleaned_df.loc[mask, 'Division'] = 'figure - masters'
+
+mask = (
+    (cleaned_df['Competition'].str.contains('2015 IFBB Wings of Strength Chicago', case=False, na=False)) &
+    (cleaned_df['Date'] == "July 4, 2015") &
+    (cleaned_df['Competitor Name'].str.contains('Maria Carlone', case=False, na=False)) &
+    (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 9.0)
+)
+cleaned_df.loc[mask, 'Division'] = 'figure - masters'
+
+
+
 mask = (cleaned_df['Competition'].str.contains('2024-dubai-pro', case=False, na=False)) & (cleaned_df['Competitor Name'] == "Matthias Roth") & (cleaned_df['Date'] == "2024-07-28")
 cleaned_df.loc[mask, 'Division'] = 'mens physique'
 mask = (cleaned_df['Competition'].str.contains('2024-dubai-pro', case=False, na=False)) & (cleaned_df['Competitor Name'] == "Serpescu Sebastian") & (cleaned_df['Date'] == "2024-07-28")
@@ -151,42 +225,131 @@ mask = (cleaned_df['Competition'].str.contains('2017 Toronto Pro', case=False, n
 cleaned_df.loc[mask, 'Date'] = 'May 28, 2017'
 
 
-mask = (cleaned_df['Competition'].str.contains('Sacramento Pro', case=False, na=False)) & (cleaned_df['Date'] == "November 3, 2007") & (cleaned_df['Competitor Name'] == "Flake, Michelle") & (cleaned_df['Place'] == 2)
+mask = (cleaned_df['Competition'].str.contains('Sacramento Pro', case=False, na=False)) & (cleaned_df['Date'] == "November 3, 2007") & (cleaned_df['Competitor Name'] == "Flake, Michelle") & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 2.0)
 cleaned_df.loc[mask, 'Place'] = 1
-mask = (cleaned_df['Competition'].str.contains('2010 Europa Battle of Champions', case=False, na=False)) & (cleaned_df['Date'] == "July 25, 2010") & (cleaned_df['Competitor Name'] == "Brezovac, Brigita") & (cleaned_df['Place'] == 3)
+mask = (cleaned_df['Competition'].str.contains('2010 Europa Battle of Champions', case=False, na=False)) & (cleaned_df['Date'] == "July 25, 2010") & (cleaned_df['Competitor Name'] == "Brezovac, Brigita") & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 3.0)
 cleaned_df.loc[mask, 'Place'] = 1
-mask = (cleaned_df['Competition'].str.contains('2011 IFBB Arnold Classic', case=False, na=False)) & (cleaned_df['Date'] == "March 4, 2011") & (cleaned_df['Competitor Name'] == "Yaxeni Oriquen Garcia") & (cleaned_df['Place'] == 1)
+mask = (cleaned_df['Competition'].str.contains('2011 IFBB Arnold Classic', case=False, na=False)) & (cleaned_df['Date'] == "March 4, 2011") & (cleaned_df['Competitor Name'] == "Yaxeni Oriquen Garcia") & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 1.0)
 cleaned_df.loc[mask, 'Place'] = 2
-mask = (cleaned_df['Competition'].str.contains('2011 IFBB NEW YORK PRO', case=False, na=False)) & (cleaned_df['Date'] == "May 28, 2011") & (cleaned_df['Competitor Name'].str.contains('Lewis, James', case=False, na=False)) & (cleaned_df['Place'] == 1)
+mask = (cleaned_df['Competition'].str.contains('2011 IFBB NEW YORK PRO', case=False, na=False)) & (cleaned_df['Date'] == "May 28, 2011") & (cleaned_df['Competitor Name'].str.contains('Lewis, James', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 1.0)
 cleaned_df.loc[mask, 'Place'] = 2
-mask = (cleaned_df['Competition'].str.contains('2011 IFBB NEW YORK PRO', case=False, na=False)) & (cleaned_df['Date'] == "May 28, 2011") & (cleaned_df['Competitor Name'].str.contains('Jones, Ken', case=False, na=False)) & (cleaned_df['Place'] == 13)
+mask = (cleaned_df['Competition'].str.contains('2011 IFBB NEW YORK PRO', case=False, na=False)) & (cleaned_df['Date'] == "May 28, 2011") & (cleaned_df['Competitor Name'].str.contains('Jones, Ken', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 13.0)
 cleaned_df.loc[mask, 'Place'] = 14
-mask = (cleaned_df['Competition'].str.contains('2011 IFBB PRO BODYBUILDING WEEKLY', case=False, na=False)) & (cleaned_df['Date'] == "June 25, 2011") & (cleaned_df['Competitor Name'].str.contains('Rowe, Jonathan', case=False, na=False)) & (cleaned_df['Place'] == 15)
+mask = (cleaned_df['Competition'].str.contains('2011 IFBB PRO BODYBUILDING WEEKLY', case=False, na=False)) & (cleaned_df['Date'] == "June 25, 2011") & (cleaned_df['Competitor Name'].str.contains('Rowe, Jonathan', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 15.0)
 cleaned_df.loc[mask, 'Place'] = 16
-mask = (cleaned_df['Competition'].str.contains('2011 IFBB TOURNAMENT OF CHAMPIONS PRO', case=False, na=False)) & (cleaned_df['Date'] == "September 10, 2011") & (cleaned_df['Competitor Name'].str.contains('Erichsen, Thea', case=False, na=False)) & (cleaned_df['Place'] == 10)
+mask = (cleaned_df['Competition'].str.contains('2011 IFBB TOURNAMENT OF CHAMPIONS PRO', case=False, na=False)) & (cleaned_df['Date'] == "September 10, 2011") & (cleaned_df['Competitor Name'].str.contains('Erichsen, Thea', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 10.0)
 cleaned_df.loc[mask, 'Place'] = 12
-mask = (cleaned_df['Competition'].str.contains('2012 IFBB WINGS OF STRENGTH', case=False, na=False)) & (cleaned_df['Date'] == "July 6, 2012") & (cleaned_df['Competitor Name'].str.contains('Helle Nielsen', case=False, na=False)) & (cleaned_df['Place'] == 1)
+mask = (cleaned_df['Competition'].str.contains('2012 IFBB WINGS OF STRENGTH', case=False, na=False)) & (cleaned_df['Date'] == "July 6, 2012") & (cleaned_df['Competitor Name'].str.contains('Helle Nielsen', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 1.0)
 cleaned_df.loc[mask, 'Place'] = 2
-mask = (cleaned_df['Competition'].str.contains('2012 IFBB WINGS OF STRENGTH', case=False, na=False)) & (cleaned_df['Date'] == "July 6, 2012") & (cleaned_df['Competitor Name'].str.contains('Carri Baldwin', case=False, na=False)) & (cleaned_df['Place'] == 12)
+mask = (cleaned_df['Competition'].str.contains('2012 IFBB WINGS OF STRENGTH', case=False, na=False)) & (cleaned_df['Date'] == "July 6, 2012") & (cleaned_df['Competitor Name'].str.contains('Carri Baldwin', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 12.0)
 cleaned_df.loc[mask, 'Place'] = 13
-mask = (cleaned_df['Competition'].str.contains('2012 IFBB Pro Bodybuilding Weekly', case=False, na=False)) & (cleaned_df['Date'] == "August 11,") & (cleaned_df['Competitor Name'].str.contains('Janeen Lankowski', case=False, na=False)) & (cleaned_df['Place'] == 5)
+mask = (cleaned_df['Competition'].str.contains('2012 IFBB Pro Bodybuilding Weekly', case=False, na=False)) & (cleaned_df['Date'] == "August 11,") & (cleaned_df['Competitor Name'].str.contains('Janeen Lankowski', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 5.0)
 cleaned_df.loc[mask, 'Place'] = 3
-mask = (cleaned_df['Competition'].str.contains('2013 IFBB Houston Pro', case=False, na=False)) & (cleaned_df['Date'] == "October 12, 2013") & (cleaned_df['Competitor Name'].str.contains('Tamara Ribeiro-Bailey', case=False, na=False)) & (cleaned_df['Place'] == 12)
+mask = (cleaned_df['Competition'].str.contains('2013 IFBB Houston Pro', case=False, na=False)) & (cleaned_df['Date'] == "October 12, 2013") & (cleaned_df['Competitor Name'].str.contains('Tamara Ribeiro-Bailey', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 12.0)
 cleaned_df.loc[mask, 'Place'] = 13
-mask = (cleaned_df['Competition'].str.contains('2013 IFBB Kentucky Pro Muscle', case=False, na=False)) & (cleaned_df['Date'] == "November 9, 2013") & (cleaned_df['Competitor Name'].str.contains('Michael Ferguson', case=False, na=False)) & (cleaned_df['Place'] == 10)
+mask = (cleaned_df['Competition'].str.contains('2013 IFBB Kentucky Pro Muscle', case=False, na=False)) & (cleaned_df['Date'] == "November 9, 2013") & (cleaned_df['Competitor Name'].str.contains('Michael Ferguson', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 10.0)
 cleaned_df.loc[mask, 'Place'] = 15
-mask = (cleaned_df['Competition'].str.contains('2013 IFBB PBW Tampa Pro', case=False, na=False)) & (cleaned_df['Date'] == "August 10, 2013") & (cleaned_df['Competitor Name'].str.contains('Lionel Beyeke', case=False, na=False)) & (cleaned_df['Place'] == 3)
+mask = (cleaned_df['Competition'].str.contains('2013 IFBB PBW Tampa Pro', case=False, na=False)) & (cleaned_df['Date'] == "August 10, 2013") & (cleaned_df['Competitor Name'].str.contains('Lionel Beyeke', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 3.0)
 cleaned_df.loc[mask, 'Place'] = 5
-mask = (cleaned_df['Competition'].str.contains('2014 IFBB Emerald Cup Pro', case=False, na=False)) & (cleaned_df['Date'] == "April 26, 2014") & (cleaned_df['Competitor Name'].str.contains('Sasha Brown', case=False, na=False)) & (cleaned_df['Place'] == 3)
+mask = (cleaned_df['Competition'].str.contains('2014 IFBB Emerald Cup Pro', case=False, na=False)) & (cleaned_df['Date'] == "April 26, 2014") & (cleaned_df['Competitor Name'].str.contains('Sasha Brown', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 3.0)
 cleaned_df.loc[mask, 'Place'] = 4
-mask = (cleaned_df['Competition'].str.contains('2014 IFBB Europa Phoenix Pro', case=False, na=False)) & (cleaned_df['Date'] == "October 26, 2014") & (cleaned_df['Competitor Name'].str.contains('Amber Crowder', case=False, na=False)) & (cleaned_df['Place'] == 15)
+mask = (cleaned_df['Competition'].str.contains('2014 IFBB Europa Phoenix Pro', case=False, na=False)) & (cleaned_df['Date'] == "October 26, 2014") & (cleaned_df['Competitor Name'].str.contains('Amber Crowder', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 15.0)
 cleaned_df.loc[mask, 'Place'] = 13
-mask = (cleaned_df['Competition'].str.contains('2014 IFBB FERRIGNO LEGACY PRO', case=False, na=False)) & (cleaned_df['Date'] == "November 29, 2014") & (cleaned_df['Competitor Name'].str.contains('Constantinos Demetriou', case=False, na=False)) & (cleaned_df['Place'] == 6)
+mask = (cleaned_df['Competition'].str.contains('2014 IFBB FERRIGNO LEGACY PRO', case=False, na=False)) & (cleaned_df['Date'] == "November 29, 2014") & (cleaned_df['Competitor Name'].str.contains('Constantinos Demetriou', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 6.0)
 cleaned_df.loc[mask, 'Place'] = 7
-mask = (cleaned_df['Competition'].str.contains('2014 IFBB FORT LAUDERDALE PRO', case=False, na=False)) & (cleaned_df['Date'] == "October 18, 2014") & (cleaned_df['Competitor Name'].str.contains('Chris Griffin', case=False, na=False)) & (cleaned_df['Place'] == 13)
+mask = (cleaned_df['Competition'].str.contains('2014 IFBB FORT LAUDERDALE PRO', case=False, na=False)) & (cleaned_df['Date'] == "October 18, 2014") & (cleaned_df['Competitor Name'].str.contains('Chris Griffin', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 13.0)
 cleaned_df.loc[mask, 'Place'] = 12
-mask = (cleaned_df['Competition'].str.contains('2014 IFBB Iowa Pro', case=False, na=False)) & (cleaned_df['Date'] == "November 8, 2014") & (cleaned_df['Competitor Name'].str.contains('Breena Martinez', case=False, na=False)) & (cleaned_df['Place'] == 5)
+mask = (cleaned_df['Competition'].str.contains('2014 IFBB Iowa Pro', case=False, na=False)) & (cleaned_df['Date'] == "November 8, 2014") & (cleaned_df['Competitor Name'].str.contains('Breena Martinez', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 5.0)
 cleaned_df.loc[mask, 'Place'] = 4
+mask = (cleaned_df['Competition'].str.contains('2014 IFBB Russia Pro', case=False, na=False)) & (cleaned_df['Date'] == "November 29, 2014") & (cleaned_df['Competitor Name'].str.contains('Anna Starodubtseva', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 3.0)
+cleaned_df.loc[mask, 'Place'] = 2
+mask = (cleaned_df['Competition'].str.contains('2014 IFBB Nordic Pro', case=False, na=False)) & (cleaned_df['Date'] == "October 11, 2014") & (cleaned_df['Competitor Name'].str.contains('Dainius Barzinskas', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 16.0)
+cleaned_df.loc[mask, 'Place'] = 17
+mask = (cleaned_df['Competition'].str.contains('2014 Olympia', case=False, na=False)) & (cleaned_df['Date'] == "September 20, 2014") & (cleaned_df['Competitor Name'].str.contains('Krista Dunn', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 14.0)
+cleaned_df.loc[mask, 'Place'] = 16
+mask = (cleaned_df['Competition'].str.contains('2016 IFBB SOUTH CAROLINA GRAND PRIX PRO', case=False, na=False)) & (cleaned_df['Date'] == "June 25, 2016") & (cleaned_df['Competitor Name'].str.contains('Dianet Pareda', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 16.0)
+cleaned_df.loc[mask, 'Place'] = 17
+mask = (cleaned_df['Competition'].str.contains('2017 IFBB MILE HIGH PRO', case=False, na=False)) & (cleaned_df['Date'] == "June 3, 2017") & (cleaned_df['Competitor Name'].str.contains('Tracy Hess', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 8.0)
+cleaned_df.loc[mask, 'Place'] = 9
+mask = (cleaned_df['Competition'].str.contains('18 IFBB Lenda Murray Pro', case=False, na=False)) & (cleaned_df['Date'] == "July 14, 2018") & (cleaned_df['Competitor Name'].str.contains('Amy Hauck', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 12.0)
+cleaned_df.loc[mask, 'Place'] = 13
+mask = (cleaned_df['Competition'].str.contains('2018 IFBB MILE HIGH PRO', case=False, na=False)) & (cleaned_df['Date'] == "June 2, 2018") & (cleaned_df['Competitor Name'].str.contains('Tamika Irvin-Robinson', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 10.0)
+cleaned_df.loc[mask, 'Place'] = 16
+mask = (cleaned_df['Competition'].str.contains('2018 Olympia', case=False, na=False)) & (cleaned_df['Date'] == "September 15, 2018") & (cleaned_df['Competitor Name'].str.contains('Ashley Kaltwasser', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 6.0)
+cleaned_df.loc[mask, 'Place'] = 5
+mask = (cleaned_df['Competition'].str.contains('WOS 2018 IFBB Muscle Vodka Tampa Pro', case=False, na=False)) & (cleaned_df['Date'] == "August 4, 2018") & (cleaned_df['Competitor Name'].str.contains('Koko Korang', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 15.0)
+cleaned_df.loc[mask, 'Place'] = 16
+mask = (cleaned_df['Competition'].str.contains('2018 IFBB VANCOUVER PRO', case=False, na=False)) & (cleaned_df['Date'] == "July 8, 2018") & (cleaned_df['Competitor Name'].str.contains('Lenka Ferencukova', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 8.0)
+cleaned_df.loc[mask, 'Place'] = 9
+mask = (cleaned_df['Competition'].str.contains('2019 IFBB BATTLE OF TEXAS PRO', case=False, na=False)) & (cleaned_df['Date'] == "December 14, 2019") & (cleaned_df['Competitor Name'].str.contains('Jason Brown', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 6.0)
+cleaned_df.loc[mask, 'Place'] = 7
+mask = (cleaned_df['Competition'].str.contains('2019 IFBB ROMANIA MUSCLE FEST PRO', case=False, na=False)) & (cleaned_df['Date'] == "November 3, 2019") & (cleaned_df['Competitor Name'].str.contains('Tomas Tabaciar', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 4.0)
+cleaned_df.loc[mask, 'Place'] = 3
+mask = (cleaned_df['Competition'].str.contains('2019 IFBB WOS YAMAMOTO NUTRITION CUP TAMPA PRO', case=False, na=False)) & (cleaned_df['Date'] == "August 3, 2019") & (cleaned_df['Competitor Name'].str.contains('Ambrose Middleton', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 14.0)
+cleaned_df.loc[mask, 'Place'] = 16
+mask = (cleaned_df['Competition'].str.contains('2019 IFBB WOS YAMAMOTO NUTRITION CUP TAMPA PRO', case=False, na=False)) & (cleaned_df['Date'] == "August 3, 2019") & (cleaned_df['Competitor Name'].str.contains('Geraldine Morgan', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 6.0)
+cleaned_df.loc[mask, 'Place'] = 12
+mask = (cleaned_df['Competition'].str.contains('2019 IFBB WOS YAMAMOTO NUTRITION CUP TAMPA PRO', case=False, na=False)) & (cleaned_df['Date'] == "August 3, 2019") & (cleaned_df['Competitor Name'].str.contains('Isabelle Jackson', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 15.0)
+cleaned_df.loc[mask, 'Place'] = 16
+mask = (cleaned_df['Competition'].str.contains('2020 IFBB PRO LEAGUE CHICAGO PRO', case=False, na=False)) & (cleaned_df['Date'] == "October 16-17, 2020") & (cleaned_df['Competitor Name'].str.contains('Angela Rayburn', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 4.0)
+cleaned_df.loc[mask, 'Place'] = 3
+mask = (cleaned_df['Competition'].str.contains('2020 IFBB PRO LEAGUE - EUROPEAN PRO', case=False, na=False)) & (cleaned_df['Date'] == "OCTOBER 9, 2020") & (cleaned_df['Competitor Name'].str.contains('BRITTANY CAMPBELL', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 34.0)
+cleaned_df.loc[mask, 'Place'] = 3
+mask = (cleaned_df['Competition'].str.contains('2020 WOS IFBB LEAGUE YAMAMOTO NUTRITION CUP TAMPA PRO', case=False, na=False)) & (cleaned_df['Date'] == "July 31-August 1, 2020") & (cleaned_df['Competitor Name'].str.contains('Ashlyn Brown', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 1.0)
+cleaned_df.loc[mask, 'Place'] = 3
+mask = (cleaned_df['Competition'].str.contains('2021 IFBB PRO LEAGUE - BIGMAN WEEKEND', case=False, na=False)) & (cleaned_df['Date'] == "28 November 2021") & (cleaned_df['Competitor Name'].str.contains('Ahmet Kocak', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 12.0)
+cleaned_df.loc[mask, 'Place'] = 11
+mask = (cleaned_df['Competition'].str.contains('2021 IFBB Pro League - European Pro', case=False, na=False)) & (cleaned_df['Date'] == "15 August 2021") & (cleaned_df['Competitor Name'].str.contains('Flora Conte', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 99.0)
+cleaned_df.loc[mask, 'Place'] = 16
+mask = (cleaned_df['Competition'].str.contains('2021 IFBB Pro League - European Pro', case=False, na=False)) & (cleaned_df['Date'] == "15 August 2021") & (cleaned_df['Competitor Name'].str.contains('Linet Kaburu', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 99.0)
+cleaned_df.loc[mask, 'Place'] = 16
+mask = (cleaned_df['Competition'].str.contains('2021 IFBB Pro League - European Pro', case=False, na=False)) & (cleaned_df['Date'] == "15 August 2021") & (cleaned_df['Competitor Name'].str.contains('Joanna Skowronska', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 99.0)
+cleaned_df.loc[mask, 'Place'] = 16
+mask = (cleaned_df['Competition'].str.contains('2021 IFBB Pro League - European Pro', case=False, na=False)) & (cleaned_df['Date'] == "15 August 2021") & (cleaned_df['Competitor Name'].str.contains('Marina Schermer', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 99.0)
+cleaned_df.loc[mask, 'Place'] = 16
+mask = (cleaned_df['Competition'].str.contains('2021 IFBB Pro League - European Pro', case=False, na=False)) & (cleaned_df['Date'] == "15 August 2021") & (cleaned_df['Competitor Name'].str.contains('Diana Andreevna Pavlova', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 99.0)
+cleaned_df.loc[mask, 'Place'] = 16
+mask = (cleaned_df['Competition'].str.contains('2021 IFBB Pro League - European Pro', case=False, na=False)) & (cleaned_df['Date'] == "15 August 2021") & (cleaned_df['Competitor Name'].str.contains('Shana Malcolm', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 99.0)
+cleaned_df.loc[mask, 'Place'] = 16
+mask = (cleaned_df['Competition'].str.contains('2021 IFBB Pro League - European Pro', case=False, na=False)) & (cleaned_df['Date'] == "15 August 2021") & (cleaned_df['Competitor Name'].str.contains('Marta Gorzynska', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 99.0)
+cleaned_df.loc[mask, 'Place'] = 16
+mask = (cleaned_df['Competition'].str.contains('2021 IFBB PRO LEAGUE MR. BIG EVOLUTION PRO', case=False, na=False)) & (cleaned_df['Date'] == "July 16-18, 2021") & (cleaned_df['Competitor Name'].str.contains('Youcef Djoudi', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 1.0)
+cleaned_df.loc[mask, 'Place'] = 2
+mask = (cleaned_df['Competition'].str.contains('IFBB Pittsburgh PRO', case=False, na=False)) & (cleaned_df['Date'] == "May 6, 2022") & (cleaned_df['Competitor Name'].str.contains('Rosada Plummer', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 166.0)
+cleaned_df.loc[mask, 'Place'] = 16
+mask = (cleaned_df['Competition'].str.contains('2023 IFBB PRO LEAGUE SHERU CLASSIC INDIA PRO', case=False, na=False)) & (cleaned_df['Date'] == "November 17-19, 2023") & (cleaned_df['Competitor Name'].str.contains('Rutuja Hegshetye', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 1.0)
+cleaned_df.loc[mask, 'Place'] = 4
+mask = (cleaned_df['Competition'].str.contains('2023 IFBB PRO LEAGUE TOKYO PRO', case=False, na=False)) & (cleaned_df['Date'] == "August 27, 2023") & (cleaned_df['Competitor Name'].str.contains('Josephine Yeong', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 4.0)
+cleaned_df.loc[mask, 'Place'] = 11
+mask = (cleaned_df['Competition'].str.contains('2024-lenda-murray-atlanta-pro-supershow', case=False, na=False)) & (cleaned_df['Date'] == "2024-07-12") & (cleaned_df['Competitor Name'].str.contains('Ashley Hampton', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 6.0)
+cleaned_df.loc[mask, 'Place'] = 2
+mask = (cleaned_df['Competition'].str.contains('2024-lenda-murray-atlanta-pro-supershow', case=False, na=False)) & (cleaned_df['Date'] == "2024-07-12") & (cleaned_df['Competitor Name'].str.contains('Romana Skotzen', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 6.0)
+cleaned_df.loc[mask, 'Place'] = 5
+mask = (cleaned_df['Competition'].str.contains('2024-chicago-pro', case=False, na=False)) & (cleaned_df['Date'] == "2024-07-18") & (cleaned_df['Competitor Name'].str.contains('Will Vaughn', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 13.0)
+cleaned_df.loc[mask, 'Place'] = 11
+mask = (cleaned_df['Competition'].str.contains('2024-phoenix-pro', case=False, na=False)) & (cleaned_df['Date'] == "2024-08-03") & (cleaned_df['Competitor Name'].str.contains('King Stevenson', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 11.0)
+cleaned_df.loc[mask, 'Place'] = 10
+mask = (cleaned_df['Competition'].str.contains('2024-patriots-challenge-pro', case=False, na=False)) & (cleaned_df['Date'] == "2024-07-20") & (cleaned_df['Competitor Name'].str.contains('Mandy Watanabe', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 14.0)
+cleaned_df.loc[mask, 'Place'] = 13
+mask = (cleaned_df['Competition'].str.contains('2024-tampa-pro', case=False, na=False)) & (cleaned_df['Date'] == "2024-08-01") & (cleaned_df['Competitor Name'].str.contains('Vladyslav Sukhoruchko', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 3.0)
+cleaned_df.loc[mask, 'Place'] = 4
+mask = (cleaned_df['Competition'].str.contains('2024-tupelo-pro', case=False, na=False)) & (cleaned_df['Date'] == "2024-08-16") & (cleaned_df['Competitor Name'].str.contains('Nikki Mcguire', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 155.0)
+cleaned_df.loc[mask, 'Place'] = 5
+mask = (cleaned_df['Competition'].str.contains('2024-xtreme-bodybuilding', case=False, na=False)) & (cleaned_df['Date'] == "2024-07-28") & (cleaned_df['Competitor Name'].str.contains('Krimo Ammari', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 9.0)
+cleaned_df.loc[mask, 'Place'] = 3
+mask = (cleaned_df['Competition'].str.contains('2015 IFBB WINGS OF STRENGTH CHICAGO', case=False, na=False)) & (cleaned_df['Date'] == "July 4, 2015") & (cleaned_df['Competitor Name'].str.contains('Irene Andersen', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 8.0)
+cleaned_df.loc[mask, 'Place'] = 7
+mask = (cleaned_df['Competition'].str.contains('2015 IFBB EUROPA DALLAS PRO', case=False, na=False)) & (cleaned_df['Date'] == "June 20, 2015") & (cleaned_df['Competitor Name'].str.contains('Sami Al Haddad', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 4.0)
+cleaned_df.loc[mask, 'Place'] = 2
+mask = (cleaned_df['Competition'].str.contains('2015 IFBB Irongames Pro', case=False, na=False)) & (cleaned_df['Date'] == "November 14, 2015") & (cleaned_df['Competitor Name'].str.contains('Marissa Rivero', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 5.0)
+cleaned_df.loc[mask, 'Place'] = 6
+mask = (cleaned_df['Competition'].str.contains('2015 IFBB Northern California Pro', case=False, na=False)) & (cleaned_df['Date'] == "May 30, 2015") & (cleaned_df['Competitor Name'].str.contains('Emma Fernandez', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 16.0)
+cleaned_df.loc[mask, 'Place'] = 17
+mask = (cleaned_df['Competition'].str.contains('2015 IFBB Pittsburgh Pro', case=False, na=False)) & (cleaned_df['Date'] == "May 2, 2015") & (cleaned_df['Competitor Name'].str.contains('Michelle Ackerman', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 8.0)
+cleaned_df.loc[mask, 'Place'] = 18
+
+
+
 
 
 

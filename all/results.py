@@ -296,6 +296,128 @@ def main():
           (results_df['athlete_name_key'] == 'cynthia_benoit') & 
           (results_df['Place'] == 4))
     ]
+    # 2014,iron_games_pro,kirsten_moffett,0,0,0,0,0,0,13,bikini,open,pro,npcnews
+    results_df = results_df[
+        ~((results_df['year'] == 2014) & 
+          (results_df['competition_name_key'] == 'iron_games_pro') & 
+          (results_df['athlete_name_key'] == 'kirsten_moffett') & 
+          (results_df['Place'] == 13))
+    ]
+    # 2016,toronto_supershow,tamara_quershi,0,0,0,0,0,0,4,womensphysique,open,pro,musclememory
+    results_df = results_df[
+        ~((results_df['year'] == 2016) & 
+          (results_df['competition_name_key'] == 'toronto_supershow') & 
+          (results_df['athlete_name_key'] == 'tamara_quershi') & 
+          (results_df['Place'] == 4))
+    ]
+    # 2017,california_pro,bola_ojex,0,0,0,0,0,0,17,mensbb,open,pro,musclememory
+    results_df = results_df[
+        ~((results_df['year'] == 2017) & 
+          (results_df['competition_name_key'] == 'california_pro') & 
+          (results_df['athlete_name_key'] == 'bola_ojex') & 
+          (results_df['Place'] == 17))
+    ]
+    # 2017,california_pro,omar_deckard,0,0,0,0,0,0,18,mensbb,open,pro,musclememory
+    results_df = results_df[
+        ~((results_df['year'] == 2017) & 
+          (results_df['competition_name_key'] == 'california_pro') & 
+          (results_df['athlete_name_key'] == 'omar_deckard') & 
+          (results_df['Place'] == 18))
+    ]
+    # 2017,california_pro,big_will_harris,0,0,0,0,0,0,18,mensbb,open,pro,musclememory
+    results_df = results_df[
+        ~((results_df['year'] == 2017) & 
+          (results_df['competition_name_key'] == 'california_pro') & 
+          (results_df['athlete_name_key'] == 'big_will_harris') & 
+          (results_df['Place'] == 18))
+    ]
+    # 2017,california_pro,john_meadows,0,0,0,0,0,0,18,mensbb,open,pro,musclememory
+    results_df = results_df[
+        ~((results_df['year'] == 2017) & 
+          (results_df['competition_name_key'] == 'california_pro') & 
+          (results_df['athlete_name_key'] == 'john_meadows') & 
+          (results_df['Place'] == 18))
+    ]
+    # 2017,california_pro,jose_paul_sanchez_reyes,0,0,0,0,0,0,18,mensbb,open,pro,musclememory
+    results_df = results_df[
+        ~((results_df['year'] == 2017) & 
+          (results_df['competition_name_key'] == 'california_pro') & 
+          (results_df['athlete_name_key'] == 'jose_paul_sanchez_reyes') & 
+          (results_df['Place'] == 18))
+    ]
+    # 2017,california_pro,an_nguyen,0,0,0,0,0,0,18,mensbb,open,pro,musclememory
+    results_df = results_df[
+        ~((results_df['year'] == 2017) & 
+          (results_df['competition_name_key'] == 'california_pro') & 
+          (results_df['athlete_name_key'] == 'an_nguyen') & 
+          (results_df['Place'] == 18))
+    ]
+    # 2018,battle_in_the_desert,francesca_lauren,19,19,0,0,0,38,6,bikini,open,pro,scorecards
+    results_df = results_df[
+        ~((results_df['year'] == 2018) & 
+          (results_df['competition_name_key'] == 'battle_in_the_desert') & 
+          (results_df['athlete_name_key'] == 'francesca_lauren') & 
+          (results_df['Place'] == 6))
+    ]
+    # 2018,indy_pro,ben_barkes,0,0,0,0,0,0,13,202_212,212,pro,musclememory
+    results_df = results_df[
+        ~((results_df['year'] == 2018) & 
+          (results_df['competition_name_key'] == 'indy_pro') & 
+          (results_df['athlete_name_key'] == 'ben_barkes') & 
+          (results_df['Place'] == 13))
+    ]
+    # 2018,indy_pro,ben_barkes,41,0,0,0,0,0,15,202_212,212,pro,scorecards
+    results_df = results_df[
+        ~((results_df['year'] == 2018) & 
+          (results_df['competition_name_key'] == 'indy_pro') & 
+          (results_df['athlete_name_key'] == 'ben_barkes') & 
+          (results_df['Place'] == 15))
+    ]
+    # 2018,indy_pro,walter_martin,35,0,0,0,0,0,15,202_212,212,pro,scorecards
+    results_df = results_df[
+        ~((results_df['year'] == 2018) & 
+          (results_df['competition_name_key'] == 'indy_pro') & 
+          (results_df['athlete_name_key'] == 'walter_martin') & 
+          (results_df['Place'] == 15))
+    ]
+    # 2018,indy_pro,darron_glenn,37,0,0,0,0,0,15,202_212,212,pro,scorecards
+    results_df = results_df[
+        ~((results_df['year'] == 2018) & 
+          (results_df['competition_name_key'] == 'indy_pro') & 
+          (results_df['athlete_name_key'] == 'darron_glenn') & 
+          (results_df['Place'] == 15))
+    ]
+    # 2018,olympia,wesley_vissers,0,0,0,0,0,0,16,classic,open,pro,npcnews
+    results_df = results_df[
+        ~((results_df['year'] == 2018) & 
+          (results_df['competition_name_key'] == 'olympia') & 
+          (results_df['athlete_name_key'] == 'wesley_vissers') & 
+          (results_df['Place'] == 16))
+    ]
+    # 2018,tampa_pro,maude_exantus,0,0,0,0,0,0,5,figure,open,pro,npcnews
+    results_df = results_df[
+        ~((results_df['year'] == 2018) & 
+          (results_df['competition_name_key'] == 'tampa_pro') & 
+          (results_df['athlete_name_key'] == 'maude_exantus') & 
+          (results_df['Place'] == 5))
+    ]
+    # 2019,romania_muscle_fest_pro,ivonne_ponce,0,0,0,0,0,0,18,figure,open,pro,npcnews
+    results_df = results_df[
+        ~((results_df['year'] == 2019) & 
+          (results_df['competition_name_key'] == 'romania_muscle_fest_pro') & 
+          (results_df['athlete_name_key'] == 'ivonne_ponce') & 
+          (results_df['Place'] == 18))
+    ]
+    # 2015,europa_phoenix_pro,hugo_alejandro_ortiz,0,0,0,0,0,0,12,202_212,212,pro,musclememory
+    results_df = results_df[
+        ~((results_df['year'] == 2015) & 
+          (results_df['competition_name_key'] == 'europa_phoenix_pro') & 
+          (results_df['athlete_name_key'] == 'hugo_alejandro_ortiz') & 
+          (results_df['Place'] == 12))
+    ]
+
+
+    
 
 
     
