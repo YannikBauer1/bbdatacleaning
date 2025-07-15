@@ -1,0 +1,48 @@
+{
+  "summary": {
+    "total_rows": 60395,
+    "total_cells": 422765,
+    "total_missing": 0,
+    "overall_completeness": 100.0
+  },
+  "column_analysis": {
+    "year": {
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "total_rows": 60395
+    },
+    "competition_name_key": {
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "total_rows": 60395
+    },
+    "athlete_name_key": {
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "total_rows": 60395
+    },
+    "Place": {
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "total_rows": 60395
+    },
+    "Division": {
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "total_rows": 60395
+    },
+    "Division Subtype": {
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "total_rows": 60395
+    },
+    "Division Level": {
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "total_rows": 60395
+    }
+  },
+  "missing_counts_distribution": {
+    "0": 60395
+  }
+}

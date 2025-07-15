@@ -369,9 +369,6 @@
       "world_pro_championships": [
         "World Pro Championships"
       ],
-      "world_championships": [
-        "World Championships"
-      ],
       "warrior_classic_pro": [
         "Warrior Classic Pro"
       ],
@@ -447,7 +444,9 @@
       ],
       "houston_pro": [
         "Houston Pro",
-        "Houston Pro Championships"
+        "Houston Pro Championships",
+        "Wheelchair Championships",
+        "Wheelchair"
       ],
       "houston_tournament_of_champions": [
         "Houston Tournament Of Champions",
@@ -498,10 +497,6 @@
       "battle_of_texas": [
         "Battle Of Texas",
         "Battle Of Texas Pro"
-      ],
-      "wheelchair_championships": [
-        "Wheelchair Championships",
-        "Wheelchair"
       ]
     },
     "atlanta": {
@@ -609,7 +604,8 @@
         "Miami Muscle Beach Pro"
       ],
       "miami_pro": [
-        "Miami Pro"
+        "Miami Pro",
+        "World Championships"
       ],
       "grand_prix_miami": [
         "Grand Prix Miami"
@@ -625,7 +621,8 @@
         "Europa Orlando Pro",
         "Europa Orlando",
         "Orlando Pro Am Championships",
-        "Orlando Pro"
+        "Orlando Pro",
+        "European Pro"
       ],
       "palm_beach_pro": [
         "Palm Beach Pro"
@@ -779,10 +776,6 @@
       "grand_prix_california": [
         "Grand Prix California"
       ],
-      "grand_prix_pro": [
-        "Grand Prix Pro",
-        "Grand Prix Pro Championships"
-      ],
       "iron_games_pro": [
         "Iron Games Pro",
         "Iron Games Championships Pro",
@@ -801,7 +794,9 @@
         "Gran Prix Los Angeles",
         "Jon Lindsay'S La Grand Prix Pro",
         "Los Angeles Grand Prix Pro",
-        "Grand Prix"
+        "Grand Prix",
+        "Grand Prix Pro",
+        "Grand Prix Pro Championships"
       ],
       "los_angeles_pro": [
         "Los Angeles Pro",
@@ -1385,9 +1380,8 @@
       "grand_prix_spain_2": [
         "Grand Prix Spain (2)"
       ],
-      "europa_pro": [
+      "europe_pro": [
         "Europa Pro",
-        "European Pro",
         "Europa Pro Championships",
         "Men'S Europe Pro Show",
         "Mr. Europe Pro",

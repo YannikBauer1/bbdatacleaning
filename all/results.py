@@ -724,16 +724,6 @@ def main():
           (results_df['Place'] == 12))
     ]
 
-
-
-
-
-
-
-    
-
-
-    
     # Sort by year, competition name, division, division subtype, and place
     print("Sorting by year, competition name, division, division subtype, and place...")
     results_df = results_df.sort_values(['year', 'competition_name_key', 'Division', 'Division Subtype', 'Place'])
@@ -744,13 +734,15 @@ def main():
     
     for col in numeric_columns:
         if col in results_df.columns:
-            # Fill NaN values with 0 for integer conversion
-            results_df[col] = results_df[col].fillna(0)
-            # Convert to integer, handling any remaining non-numeric values
-            try:
+            if col == 'year':
+                # For year, we can fill NaN with 0 since it's required
                 results_df[col] = pd.to_numeric(results_df[col], errors='coerce').fillna(0).astype(int)
-            except:
-                print(f"Warning: Could not convert column {col} to integers")
+            else:
+                # For judging columns, preserve null values but convert floats to integers
+                results_df[col] = pd.to_numeric(results_df[col], errors='coerce').astype('Int64')
+            print(f"Converted {col} column to integers (preserving nulls)")
+        else:
+            print(f"Column {col} not found in DataFrame")
     
     print("Numeric conversion completed")
     
