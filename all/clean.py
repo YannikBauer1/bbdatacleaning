@@ -347,14 +347,100 @@ mask = (cleaned_df['Competition'].str.contains('2015 IFBB Northern California Pr
 cleaned_df.loc[mask, 'Place'] = 17
 mask = (cleaned_df['Competition'].str.contains('2015 IFBB Pittsburgh Pro', case=False, na=False)) & (cleaned_df['Date'] == "May 2, 2015") & (cleaned_df['Competitor Name'].str.contains('Michelle Ackerman', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 8.0)
 cleaned_df.loc[mask, 'Place'] = 18
+mask = (cleaned_df['Competition'].str.contains('2008 Arnold Classic', case=False, na=False)) & (cleaned_df['Date'] == "February 29, 2008") & (cleaned_df['Competitor Name'].str.contains('Bernadette GALVAN', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 16.0)
+cleaned_df.loc[mask, 'Place'] = 15
+mask = (cleaned_df['Competition'].str.contains('2012 IFBB PRO BODYBUILDING WEEKLY', case=False, na=False)) & (cleaned_df['Date'] == "August 11, 2012") & (cleaned_df['Competitor Name'].str.contains('Roelly Egberton Winklaar', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 16.0)
+cleaned_df.loc[mask, 'Place'] = 4
+mask = (cleaned_df['Competition'].str.contains('2012 IFBB PRO BODYBUILDING WEEKLY', case=False, na=False)) & (cleaned_df['Date'] == "August 11, 2012") & (cleaned_df['Competitor Name'].str.contains('Manuel Lomeli', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 16.0)
+cleaned_df.loc[mask, 'Place'] = 15
+mask = (cleaned_df['Competition'].str.contains('2012 IFBB PRO BODYBUILDING WEEKLY', case=False, na=False)) & (cleaned_df['Date'] == "August 11, 2012") & (cleaned_df['Competitor Name'].str.contains('Janeen Lankowski', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 5.0)
+cleaned_df.loc[mask, 'Place'] = 3
+mask = (cleaned_df['Competition'].str.contains('2014 IFBB Russia Pro', case=False, na=False)) & (cleaned_df['Date'] == "November 29, 2014") & (cleaned_df['Competitor Name'].str.contains('Ashley Kaltwasser', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 2.0)
+cleaned_df.loc[mask, 'Place'] = 1
+mask = (cleaned_df['Competition'].str.contains('2014 IFBB TORONTO PRO SUPERSHOW', case=False, na=False)) & (cleaned_df['Date'] == "June 7, 2013") & (cleaned_df['Competitor Name'].str.contains('Delfo Cerame, Jr.', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 8.0)
+cleaned_df.loc[mask, 'Place'] = 6
+mask = (cleaned_df['Competition'].str.contains('2019 IFBB SAN MARINO PRO', case=False, na=False)) & (cleaned_df['Date'] == "December 14-15, 2019") & (cleaned_df['Competitor Name'].str.contains('Mikhail Timoshin', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 12.0)
+cleaned_df.loc[mask, 'Place'] = 2
+mask = (cleaned_df['Competition'].str.contains('2019 IFBB WOS HOT SPOT TANNING HURRICANE PRO', case=False, na=False)) & (cleaned_df['Date'] == "September 21-22, 2019") & (cleaned_df['Competitor Name'].str.contains('Amanda Cording', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 16.0)
+cleaned_df.loc[mask, 'Place'] = 6
+mask = (cleaned_df['Competition'].str.contains('2021 FIT BODY FUSION IFBB PRO LEAGUE WOS CHICAGO PRO', case=False, na=False)) & (cleaned_df['Date'] == "July 23-24, 2021") & (cleaned_df['Competitor Name'].str.contains('Antoine Weatherspoon', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 21.0)
+cleaned_df.loc[mask, 'Place'] = 16
+mask = (cleaned_df['Competition'].str.contains('2022 Olympia', case=False, na=False)) & (cleaned_df['Date'] == "December 16, 2022") & (cleaned_df['Competitor Name'].str.contains('Sophie Leo', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 16.0)
+cleaned_df.loc[mask, 'Place'] = 6
+mask = (cleaned_df['Competition'].str.contains('2023 IFBB PRO LEAGUE SHERU CLASSIC INDIA PRO', case=False, na=False)) & (cleaned_df['Date'] == "November 17-19, 2023") & (cleaned_df['Competitor Name'].str.contains('Opekinova Ekaterina', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 12.0)
+cleaned_df.loc[mask, 'Place'] = 2
+mask = (cleaned_df['Competition'].str.contains('2012 IFBB PRO BODYBUILDING WEEKLY', case=False, na=False)) & (cleaned_df['Date'] == "August 11, 2012") & (cleaned_df['Competitor Name'].str.contains('Keith Williams', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 4.0)
+cleaned_df.loc[mask, 'Place'] = 10
+mask = (cleaned_df['Competition'].str.contains('2014 IFBB TORONTO PRO SUPERSHOW', case=False, na=False)) & (cleaned_df['Date'] == "June 7, 2013") & (cleaned_df['Competitor Name'].str.contains('Delfo Cerame, Jr.', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 8.0)
+cleaned_df.loc[mask, 'Place'] = 6
+mask = (cleaned_df['Competition'].str.contains('2012 IFBB PRO BODYBUILDING WEEKLY', case=False, na=False)) & (cleaned_df['Date'] == "August 11, 2012") & (cleaned_df['Competitor Name'].str.contains('Alexandre Nataf', case=False, na=False)) & (pd.to_numeric(cleaned_df['Place'], errors='coerce') == 10.0)
+cleaned_df.loc[mask, 'Place'] = 12
 
 
-
-
-
-
-
-
+mask = (cleaned_df['Competition'].str.contains('2009 Europa Show of Champions Orlando', case=False, na=False)) & (cleaned_df['Date'] == "April 18, 2009") & (cleaned_df['Competitor Name'].str.contains('Bautista, Francisco', case=False, na=False)) & (cleaned_df['Place'].isna())
+cleaned_df.loc[mask, 'Place'] = 6
+mask = (cleaned_df['Competition'].str.contains('2009 Europa Show of Champions Orlando', case=False, na=False)) & (cleaned_df['Date'] == "April 18, 2009") & (cleaned_df['Competitor Name'].str.contains('Farah, George', case=False, na=False)) & (cleaned_df['Place'].isna())
+cleaned_df.loc[mask, 'Place'] = 7
+mask = (cleaned_df['Competition'].str.contains('2009 Europa Show of Champions Orlando', case=False, na=False)) & (cleaned_df['Date'] == "April 18, 2009") & (cleaned_df['Competitor Name'].str.contains('Haman, Andy', case=False, na=False)) & (cleaned_df['Place'].isna())
+cleaned_df.loc[mask, 'Place'] = 13
+mask = (cleaned_df['Competition'].str.contains('2009 Europa Show of Champions Orlando', case=False, na=False)) & (cleaned_df['Date'] == "April 18, 2009") & (cleaned_df['Competitor Name'].str.contains('Seccarecci, Daniele', case=False, na=False)) & (cleaned_df['Place'].isna())
+cleaned_df.loc[mask, 'Place'] = 10
+mask = (cleaned_df['Competition'].str.contains('2009 Europa Show of Champions Orlando', case=False, na=False)) & (cleaned_df['Date'] == "April 18, 2009") & (cleaned_df['Competitor Name'].str.contains('Rowe, Jonathan', case=False, na=False)) & (cleaned_df['Place'].isna())
+cleaned_df.loc[mask, 'Place'] = 8
+mask = (cleaned_df['Competition'].str.contains('2009 Europa Show of Champions Orlando', case=False, na=False)) & (cleaned_df['Date'] == "April 18, 2009") & (cleaned_df['Competitor Name'].str.contains('Filho, Miguel', case=False, na=False)) & (cleaned_df['Place'].isna())
+cleaned_df.loc[mask, 'Place'] = 9
+mask = (cleaned_df['Competition'].str.contains('2009 Europa Show of Champions Orlando', case=False, na=False)) & (cleaned_df['Date'] == "April 18, 2009") & (cleaned_df['Competitor Name'].str.contains('Oscar, Dexter', case=False, na=False)) & (cleaned_df['Place'].isna())
+cleaned_df.loc[mask, 'Place'] = 14
+mask = (cleaned_df['Competition'].str.contains('2009 Europa Show of Champions Orlando', case=False, na=False)) & (cleaned_df['Date'] == "April 18, 2009") & (cleaned_df['Competitor Name'].str.contains('Long, Don', case=False, na=False)) & (cleaned_df['Place'].isna())
+cleaned_df.loc[mask, 'Place'] = 11
+mask = (cleaned_df['Competition'].str.contains('2009 Europa Show of Champions Orlando', case=False, na=False)) & (cleaned_df['Date'] == "April 18, 2009") & (cleaned_df['Competitor Name'].str.contains('Deckard, Omar', case=False, na=False)) & (cleaned_df['Place'].isna())
+cleaned_df.loc[mask, 'Place'] = 12
+mask = (cleaned_df['Competition'].str.contains('IFBB PHOENIX PRO', case=False, na=False)) & (cleaned_df['Date'] == "February 20, 2010") & (cleaned_df['Competitor Name'].str.contains('Reynoso, Jose Javier', case=False, na=False)) & (cleaned_df['Place'].isna())
+cleaned_df.loc[mask, 'Place'] = 6
+mask = (cleaned_df['Competition'].str.contains('IFBB PHOENIX PRO', case=False, na=False)) & (cleaned_df['Date'] == "February 20, 2010") & (cleaned_df['Competitor Name'].str.contains('Nelson, Colette', case=False, na=False)) & (cleaned_df['Place'].isna())
+cleaned_df.loc[mask, 'Place'] = 6
+mask = (cleaned_df['Competition'].str.contains('IFBB PHOENIX PRO', case=False, na=False)) & (cleaned_df['Date'] == "February 20, 2010") & (cleaned_df['Competitor Name'].str.contains('Moher, Gayle', case=False, na=False)) & (cleaned_df['Place'].isna())
+cleaned_df.loc[mask, 'Place'] = 9
+mask = (cleaned_df['Competition'].str.contains('IFBB PHOENIX PRO', case=False, na=False)) & (cleaned_df['Date'] == "February 20, 2010") & (cleaned_df['Competitor Name'].str.contains('Pervis, Akila', case=False, na=False)) & (cleaned_df['Place'].isna())
+cleaned_df.loc[mask, 'Place'] = 10
+mask = (cleaned_df['Competition'].str.contains('IFBB PHOENIX PRO', case=False, na=False)) & (cleaned_df['Date'] == "February 20, 2010") & (cleaned_df['Competitor Name'].str.contains('Bustamante, Myriam', case=False, na=False)) & (cleaned_df['Place'].isna())
+cleaned_df.loc[mask, 'Place'] = 11
+mask = (cleaned_df['Competition'].str.contains('2013 IFBB Chicago Wings of Strength Pro', case=False, na=False)) & (cleaned_df['Date'] == "July 6, 2013") & (cleaned_df['Competitor Name'].str.contains('Shelby Starnes', case=False, na=False)) & (cleaned_df['Place'].isna())
+cleaned_df.loc[mask, 'Place'] = 10
+mask = (cleaned_df['Competition'].str.contains('2013 IFBB Chicago Wings of Strength Pro', case=False, na=False)) & (cleaned_df['Date'] == "July 6, 2013") & (cleaned_df['Competitor Name'].str.contains('Luis Santiago', case=False, na=False)) & (cleaned_df['Place'].isna())
+cleaned_df.loc[mask, 'Place'] = 11
+mask = (cleaned_df['Competition'].str.contains('2013 IFBB Chicago Wings of Strength Pro', case=False, na=False)) & (cleaned_df['Date'] == "July 6, 2013") & (cleaned_df['Competitor Name'].str.contains('James Darling', case=False, na=False)) & (cleaned_df['Place'].isna())
+cleaned_df.loc[mask, 'Place'] = 12
+mask = (cleaned_df['Competition'].str.contains('2013 IFBB Chicago Wings of Strength Pro', case=False, na=False)) & (cleaned_df['Date'] == "July 6, 2013") & (cleaned_df['Competitor Name'].str.contains('Chris Darby', case=False, na=False)) & (cleaned_df['Place'].isna())
+cleaned_df.loc[mask, 'Place'] = 13
+mask = (cleaned_df['Competition'].str.contains('2013 IFBB Chicago Wings of Strength Pro', case=False, na=False)) & (cleaned_df['Date'] == "July 6, 2013") & (cleaned_df['Competitor Name'].str.contains('Rod Ketchens', case=False, na=False)) & (cleaned_df['Place'].isna())
+cleaned_df.loc[mask, 'Place'] = 14
+mask = (cleaned_df['Competition'].str.contains('2013 IFBB Chicago Wings of Strength', case=False, na=False)) & (cleaned_df['Date'] == "July 6, 2013") & (cleaned_df['Competitor Name'].str.contains('An Nguyen', case=False, na=False)) & (cleaned_df['Place'].isna())
+cleaned_df.loc[mask, 'Place'] = 16
+mask = (cleaned_df['Competition'].str.contains('2013 IFBB Chicago Wings of Strength', case=False, na=False)) & (cleaned_df['Date'] == "July 6, 2013") & (cleaned_df['Competitor Name'].str.contains('Jojo Ntiforo', case=False, na=False)) & (cleaned_df['Place'].isna())
+cleaned_df.loc[mask, 'Place'] = 15
+mask = (cleaned_df['Competition'].str.contains('2013 IFBB Chicago Wings of Strength', case=False, na=False)) & (cleaned_df['Date'] == "July 6, 2013") & (cleaned_df['Competitor Name'].str.contains('Michael Liberatore', case=False, na=False)) & (cleaned_df['Place'].isna())
+cleaned_df.loc[mask, 'Place'] = 14
+mask = (cleaned_df['Competition'].str.contains('2013 IFBB Chicago Wings of Strength', case=False, na=False)) & (cleaned_df['Date'] == "July 6, 2013") & (cleaned_df['Competitor Name'].str.contains('Kenneth Jackson', case=False, na=False)) & (cleaned_df['Place'].isna())
+cleaned_df.loc[mask, 'Place'] = 13
+mask = (cleaned_df['Competition'].str.contains('2013 IFBB Chicago Wings of Strength', case=False, na=False)) & (cleaned_df['Date'] == "July 6, 2013") & (cleaned_df['Competitor Name'].str.contains('Jonathan Rowe', case=False, na=False)) & (cleaned_df['Place'].isna())
+cleaned_df.loc[mask, 'Place'] = 12
+mask = (cleaned_df['Competition'].str.contains('2013 IFBB Chicago Wings of Strength', case=False, na=False)) & (cleaned_df['Date'] == "July 6, 2013") & (cleaned_df['Competitor Name'].str.contains('Craig Richardson', case=False, na=False)) & (cleaned_df['Place'].isna())
+cleaned_df.loc[mask, 'Place'] = 11
+mask = (cleaned_df['Competition'].str.contains('2013 IFBB Chicago Wings of Strength', case=False, na=False)) & (cleaned_df['Date'] == "July 6, 2013") & (cleaned_df['Competitor Name'].str.contains('Emery Miller', case=False, na=False)) & (cleaned_df['Place'].isna())
+cleaned_df.loc[mask, 'Place'] = 11
+mask = (cleaned_df['Competition'].str.contains('2013 IFBB Chicago Wings of Strength', case=False, na=False)) & (cleaned_df['Date'] == "July 6, 2013") & (cleaned_df['Competitor Name'].str.contains('Beth Wachter', case=False, na=False)) & (cleaned_df['Place'].isna())
+cleaned_df.loc[mask, 'Place'] = 12
+mask = (cleaned_df['Competition'].str.contains('2013 IFBB Chicago Wings of Strength', case=False, na=False)) & (cleaned_df['Date'] == "July 6, 2013") & (cleaned_df['Competitor Name'].str.contains('Aurelia Grozajova', case=False, na=False)) & (cleaned_df['Place'].isna())
+cleaned_df.loc[mask, 'Place'] = 14
+mask = (cleaned_df['Competition'].str.contains('2019 IFBB Japan Pro', case=False, na=False)) & (cleaned_df['Date'] == "November 17, 2019") & (cleaned_df['Competitor Name'].str.contains('Yunlong Fan', case=False, na=False)) & (cleaned_df['Place'].isna())
+cleaned_df.loc[mask, 'Place'] = 16
+mask = (cleaned_df['Competition'].str.contains('2019 IFBB Japan Pro', case=False, na=False)) & (cleaned_df['Date'] == "November 17, 2019") & (cleaned_df['Competitor Name'].str.contains('Yat Ki Tam', case=False, na=False)) & (cleaned_df['Place'].isna())
+cleaned_df.loc[mask, 'Place'] = 16
+mask = (cleaned_df['Competition'].str.contains('2019 IFBB Japan Pro', case=False, na=False)) & (cleaned_df['Date'] == "November 17, 2019") & (cleaned_df['Competitor Name'].str.contains('Song Zhenhua', case=False, na=False)) & (cleaned_df['Place'].isna())
+cleaned_df.loc[mask, 'Place'] = 16
+mask = (cleaned_df['Competition'].str.contains('2019 IFBB Japan Pro', case=False, na=False)) & (cleaned_df['Date'] == "November 17, 2019") & (cleaned_df['Competitor Name'].str.contains('Jung Soo Park', case=False, na=False)) & (cleaned_df['Place'].isna())
+cleaned_df.loc[mask, 'Place'] = 16
 
 
 # Fix incorrect date for Torunament Of Champions Pro

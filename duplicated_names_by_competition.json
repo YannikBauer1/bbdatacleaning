@@ -1,0 +1,26 @@
+[
+  {
+    "year": 2015,
+    "competition": "toronto_supershow",
+    "division": "wheelchair",
+    "subtype": "open",
+    "duplicated_athletes": [
+      {
+        "athlete_name": "jr_adelfo_cerame",
+        "count": 2,
+        "entries": [
+          {
+            "place": 6,
+            "source": "npcnews",
+            "athlete_name_key": "jr_adelfo_cerame"
+          },
+          {
+            "place": 8,
+            "source": "scorecards",
+            "athlete_name_key": "jr_adelfo_cerame"
+          }
+        ]
+      }
+    ]
+  }
+]

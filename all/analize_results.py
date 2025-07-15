@@ -25,7 +25,7 @@ def check_duplicate_athletes():
     but different athlete names AND different sources (cross-source conflicts).
     Excludes conflicts that are already known in cross_source_conflicts_remain.json
     """
-    df = pd.read_csv('../data/all/results.csv')
+    df = pd.read_csv('data/all/results.csv')
     
     # Load existing conflicts to exclude them
     try:
@@ -119,7 +119,7 @@ def find_same_place_not_last():
     Find entries that have the same place for each competition in each year and division,
     but is not the last place of that division.
     """
-    df = pd.read_csv('../data/all/results.csv')
+    df = pd.read_csv('data/all/results.csv')
     
     # Group by year, competition, division, and subdivision
     same_place_entries = []
@@ -163,6 +163,82 @@ def find_same_place_not_last():
     
     return same_place_entries
 
+def find_duplicated_names_in_competitions():
+    """
+    Find and print duplicated athlete names for each competition in each year in each division/subdivision.
+    This helps identify cases where the same athlete appears multiple times in the same competition.
+    """
+    df = pd.read_csv('data/all/results.csv')
+    
+    # Group by year, competition, division, and subdivision
+    duplicated_names = []
+    
+    for (year, competition, division, subtype), group in df.groupby(['year', 'competition_name_key', 'Division', 'Division Subtype']):
+        # Count occurrences of each athlete name
+        athlete_counts = group['athlete_name_key'].value_counts()
+        
+        # Find athletes that appear more than once
+        duplicated_athletes = athlete_counts[athlete_counts > 1]
+        
+        if len(duplicated_athletes) > 0:
+            competition_data = {
+                'year': int(year),
+                'competition': str(competition),
+                'division': str(division),
+                'subtype': str(subtype),
+                'duplicated_athletes': []
+            }
+            
+            for athlete_name, count in duplicated_athletes.items():
+                # Get all entries for this athlete in this competition
+                athlete_entries = group[group['athlete_name_key'] == athlete_name]
+                
+                entries_details = []
+                for _, row in athlete_entries.iterrows():
+                    entries_details.append({
+                        'place': int(row['Place']),
+                        'source': str(row['Source']),
+                        'athlete_name_key': str(row['athlete_name_key'])
+                    })
+                
+                competition_data['duplicated_athletes'].append({
+                    'athlete_name': str(athlete_name),
+                    'count': int(count),
+                    'entries': entries_details
+                })
+            
+            duplicated_names.append(competition_data)
+    
+    # Print results in a readable format
+    print(f"\n=== DUPLICATED ATHLETE NAMES BY COMPETITION ===\n")
+    
+    for comp in duplicated_names:
+        print(f"Year: {comp['year']}")
+        print(f"Competition: {comp['competition']}")
+        print(f"Division: {comp['division']}")
+        print(f"Subtype: {comp['subtype']}")
+        print(f"Duplicated athletes: {len(comp['duplicated_athletes'])}")
+        print("-" * 50)
+        
+        for athlete in comp['duplicated_athletes']:
+            print(f"  Athlete: {athlete['athlete_name']} (appears {athlete['count']} times)")
+            for entry in athlete['entries']:
+                print(f"    - Place: {entry['place']}, Source: {entry['source']}")
+            print()
+        
+        print("=" * 80)
+        print()
+    
+    # Write detailed results to JSON file
+    with open('duplicated_names_by_competition.json', 'w') as f:
+        json.dump(duplicated_names, f, indent=2, default=convert_numpy_types)
+    
+    print(f"Found {len(duplicated_names)} competitions with duplicated athlete names")
+    print("Detailed results written to duplicated_names_by_competition.json")
+    
+    return duplicated_names
+
 if __name__ == "__main__":
     check_duplicate_athletes()
-    find_same_place_not_last()
+    #find_same_place_not_last()
+    find_duplicated_names_in_competitions()
