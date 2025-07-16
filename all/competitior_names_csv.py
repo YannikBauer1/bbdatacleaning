@@ -2,14 +2,15 @@ import json
 import pandas as pd
 import csv
 from collections import defaultdict
+from datetime import datetime
 
 def load_competitor_names():
     """Load the competitor names from JSON file"""
     # Try different possible paths
     possible_paths = [
-        '../keys/competitor_names.json',  # From all/ directory
-        'keys/competitor_names.json',     # From root directory
-        'all/keys/competitor_names.json'  # Alternative path
+        '../keys/athletes.json',  # From all/ directory
+        'keys/athletes.json',     # From root directory
+        'all/keys/athletes.json'  # Alternative path
     ]
     
     for path in possible_paths:
@@ -38,6 +39,23 @@ def load_all_clean_data():
     
     raise FileNotFoundError("Could not find all_clean.csv in any expected location")
 
+def load_results_data():
+    """Load the results.csv data to determine athlete divisions and activity"""
+    # Try different possible paths
+    possible_paths = [
+        '../data/clean/results.csv',  # From all/ directory
+        'data/clean/results.csv',     # From root directory
+        'all/data/clean/results.csv'  # Alternative path
+    ]
+    
+    for path in possible_paths:
+        try:
+            return pd.read_csv(path)
+        except FileNotFoundError:
+            continue
+    
+    raise FileNotFoundError("Could not find results.csv in any expected location")
+
 def get_shortest_and_longest_names(names_array):
     """Get the shortest and longest names from an array of names"""
     if not names_array:
@@ -46,6 +64,102 @@ def get_shortest_and_longest_names(names_array):
     # Sort by length to get shortest and longest
     sorted_names = sorted(names_array, key=len)
     return sorted_names[0], sorted_names[-1]
+
+def determine_athlete_sex_and_activity(athlete_key, athlete_info, name_short):
+    """Determine sex and activity status for an athlete"""
+    athlete_data = athlete_info[athlete_key]
+    
+    # Define male divisions
+    male_divisions = {'mensbb', '202_212', 'mensphysique', 'classic', 'wheelchair'}
+    
+    # Determine sex based on divisions
+    athlete_divisions = athlete_data['divisions']
+    if any(div in male_divisions for div in athlete_divisions):
+        sex = 'Male'
+    elif any(div.startswith('women') or div in ['figure', 'fitness', 'wellness', 'bikini'] for div in athlete_divisions):
+        sex = 'Female'
+    else:
+        # If we can't determine from divisions, try to infer from name
+        sex = infer_sex_from_name(name_short)
+    
+    # Determine if active (competed in last 2 years)
+    current_year = datetime.now().year
+    latest_year = athlete_data['latest_year']
+    active = (current_year - latest_year) <= 2
+    
+    return sex, active
+
+def infer_sex_from_name(name):
+    """Infer sex from name using various heuristics"""
+    name_lower = name.lower()
+    
+    # Common female name endings
+    female_endings = ['a', 'ia', 'ina', 'ella', 'elle', 'ette', 'ine', 'yn', 'lyn', 'leen', 'lene']
+    # Common male name endings  
+    male_endings = ['o', 'er', 'or', 'an', 'en', 'in', 'on', 'un', 'us', 'is', 'es']
+    
+    # Check for common female name endings
+    for ending in female_endings:
+        if name_lower.endswith(ending):
+            return 'Female'
+    
+    # Check for common male name endings
+    for ending in male_endings:
+        if name_lower.endswith(ending):
+            return 'Male'
+    
+    # Check for specific common names
+    female_names = {
+        'agatha', 'allison', 'ashley', 'ashleigh', 'ashlee', 'ashlie', 'ashli', 'ashley', 'ashleigh',
+        'brittany', 'brittney', 'britney', 'britni', 'britny', 'britni', 'britny', 'britney',
+        'crystal', 'krystal', 'cristal', 'kristal', 'cristel', 'kristel',
+        'danielle', 'daniel', 'dani', 'danni', 'danny', 'daniela', 'daniella',
+        'elizabeth', 'liz', 'lizzy', 'beth', 'betty', 'lizbeth', 'lizzie',
+        'jennifer', 'jen', 'jenny', 'jenni', 'jenna', 'jenn', 'jennie',
+        'jessica', 'jess', 'jessi', 'jessie', 'jessy', 'jessika', 'jessika',
+        'katherine', 'kathryn', 'kathy', 'kate', 'katie', 'katy', 'katey', 'katee',
+        'michelle', 'michel', 'mich', 'michy', 'michie', 'michy', 'michie',
+        'nicole', 'nikki', 'niki', 'nic', 'nicki', 'nickie', 'nickie',
+        'rachel', 'rachael', 'rachelle', 'rach', 'rachel', 'rachael',
+        'sarah', 'sara', 'sarah', 'sara', 'sarah', 'sara', 'sarah',
+        'stephanie', 'steph', 'stephie', 'stephy', 'steph', 'stephie',
+        'tiffany', 'tiff', 'tiffy', 'tiffani', 'tiffanie', 'tiffani',
+        'victoria', 'vicky', 'vicki', 'victoria', 'vicky', 'vicki'
+    }
+    
+    male_names = {
+        'aaron', 'adam', 'adrian', 'alex', 'alexander', 'andrew', 'andy', 'anthony', 'tony',
+        'brian', 'bryan', 'brandon', 'brendan', 'brendon', 'branden', 'brandan',
+        'chris', 'christopher', 'christian', 'christopher', 'christian',
+        'daniel', 'dan', 'danny', 'daniel', 'dan', 'danny', 'daniel',
+        'david', 'dave', 'davey', 'david', 'dave', 'davey', 'david',
+        'eric', 'erik', 'erick', 'eric', 'erik', 'erick', 'eric',
+        'james', 'jim', 'jimmy', 'james', 'jim', 'jimmy', 'james',
+        'jason', 'jase', 'jason', 'jase', 'jason', 'jase', 'jason',
+        'john', 'jon', 'jonny', 'johnny', 'john', 'jon', 'jonny',
+        'joshua', 'josh', 'joshua', 'josh', 'joshua', 'josh', 'joshua',
+        'justin', 'justin', 'justin', 'justin', 'justin', 'justin',
+        'kevin', 'kev', 'kevin', 'kev', 'kevin', 'kev', 'kevin',
+        'michael', 'mike', 'mikey', 'michael', 'mike', 'mikey', 'michael',
+        'nicholas', 'nick', 'nicki', 'nickie', 'nicholas', 'nick', 'nicki',
+        'robert', 'rob', 'bob', 'bobby', 'robert', 'rob', 'bob',
+        'ryan', 'ryan', 'ryan', 'ryan', 'ryan', 'ryan', 'ryan',
+        'steven', 'steve', 'stevie', 'steven', 'steve', 'stevie', 'steven',
+        'thomas', 'tom', 'tommy', 'thomas', 'tom', 'tommy', 'thomas',
+        'william', 'will', 'bill', 'billy', 'william', 'will', 'bill'
+    }
+    
+    # Check for exact name matches
+    if name_lower in female_names:
+        return 'Female'
+    if name_lower in male_names:
+        return 'Male'
+    
+    # If still unknown, use the original heuristic as fallback
+    if name_lower.endswith('a') and not name_lower.endswith('ia'):
+        return 'Female'
+    else:
+        return 'Male'  # Default assumption
 
 def consolidate_locations(locations):
     """Consolidate location objects, keeping only the most complete ones and removing duplicates"""
@@ -185,6 +299,24 @@ def create_competitor_csv():
     # Load data
     competitor_names = load_competitor_names()
     all_clean_df = load_all_clean_data()
+    results_df = load_results_data()
+    
+    # Create a mapping of athlete to their divisions and latest competition year
+    athlete_info = {}
+    
+    for _, row in results_df.iterrows():
+        athlete_key = row['athlete_name_key']
+        division = row['Division']
+        year = row['year']
+        
+        if athlete_key not in athlete_info:
+            athlete_info[athlete_key] = {
+                'divisions': set(),
+                'latest_year': year
+            }
+        
+        athlete_info[athlete_key]['divisions'].add(division)
+        athlete_info[athlete_key]['latest_year'] = max(athlete_info[athlete_key]['latest_year'], year)
     
     # Create a mapping of competitor names to their location data
     competitor_locations = defaultdict(list)
@@ -230,8 +362,15 @@ def create_competitor_csv():
     csv_data = []
     
     for name_key, names_array in competitor_names.items():
+        # Only include athletes who have competition records
+        if name_key not in athlete_info:
+            continue
+            
         # Get shortest and longest names
         name_short, name_long = get_shortest_and_longest_names(names_array)
+        
+        # Determine sex and activity
+        sex, active = determine_athlete_sex_and_activity(name_key, athlete_info, name_short)
         
         # Get location data for this competitor
         locations = []
@@ -258,30 +397,32 @@ def create_competitor_csv():
             'name_short': name_short,
             'name_long': name_long,
             'nickname': '',  # Empty as requested
-            'location': location_json
+            'location': location_json,
+            'sex': sex,
+            'active': active
         })
     
     # Write to CSV
     # Try to determine the correct output path
     try:
         # Test if we can write to the relative path from all/ directory
-        test_path = '../data/all/competitor_names_processed.csv'
+        test_path = '../data/clean/athletes.csv'
         with open(test_path, 'w') as f:
             pass
         output_file = test_path
     except:
         try:
             # Test if we can write to the path from root directory
-            test_path = 'data/all/competitor_names_processed.csv'
+            test_path = 'data/clean/athletes.csv'
             with open(test_path, 'w') as f:
                 pass
             output_file = test_path
         except:
             # Fallback to current directory
-            output_file = 'competitor_names_processed.csv'
+            output_file = 'athletes.csv'
     
     with open(output_file, 'w', newline='', encoding='utf-8') as csvfile:
-        fieldnames = ['name_key', 'name_short', 'name_long', 'nickname', 'location']
+        fieldnames = ['name_key', 'name_short', 'name_long', 'nickname', 'location', 'sex', 'active']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         
         writer.writeheader()
@@ -290,6 +431,20 @@ def create_competitor_csv():
     
     print(f"CSV file created: {output_file}")
     print(f"Total competitors processed: {len(csv_data)}")
+    
+    # Print some statistics
+    sex_counts = {}
+    active_count = 0
+    for row in csv_data:
+        sex_counts[row['sex']] = sex_counts.get(row['sex'], 0) + 1
+        if row['active']:
+            active_count += 1
+    
+    print(f"\nSex distribution:")
+    for sex, count in sex_counts.items():
+        print(f"  {sex}: {count}")
+    
+    print(f"\nActive athletes (competed in last 2 years): {active_count}")
 
 if __name__ == "__main__":
     create_competitor_csv()
