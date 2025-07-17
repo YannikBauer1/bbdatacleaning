@@ -3,6 +3,7 @@ import { uploadNewAthletesOnly, uploadAthletesFromCSV } from './upload_athletes.
 import { uploadNewCompetitionsOnly, uploadCompetitionsFromCSV } from './upload_competitions.js';
 import { uploadNewEventsOnly, uploadEventsFromCSV } from './upload_events.js';
 import { uploadNewResultsOnly, uploadResultsFromCSV } from './upload_results.js';
+import { uploadNewSchedule2025Only, uploadSchedule2025FromCSV } from './upload_schedule2025.js';
 import { fileURLToPath } from 'node:url';
 
 // Function to get all athletes and log them
@@ -117,10 +118,34 @@ export async function uploadAllResultsFromCSV() {
   }
 }
 
+// Function to upload schedule2025 from CSV (new functionality)
+export async function uploadSchedule2025FromCSVFile() {
+  try {
+    console.log('Uploading schedule2025 from CSV...');
+    const result = await uploadNewSchedule2025Only();
+    return result;
+  } catch (error) {
+    console.error('Error uploading schedule2025 from CSV:', error);
+    throw error;
+  }
+}
+
+// Function to upload all schedule2025 from CSV (including duplicates)
+export async function uploadAllSchedule2025FromCSV() {
+  try {
+    console.log('Uploading all schedule2025 from CSV...');
+    const result = await uploadSchedule2025FromCSV();
+    return result;
+  } catch (error) {
+    console.error('Error uploading all schedule2025 from CSV:', error);
+    throw error;
+  }
+}
+
 // Example usage
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const args = process.argv.slice(2);
-  const mode = args[0] || 'fetch'; // 'fetch', 'upload', 'upload-all', 'competitions', 'competitions-all', 'events', 'events-all', 'results', 'results-all'
+  const mode = args[0] || 'fetch'; // 'fetch', 'upload', 'upload-all', 'competitions', 'competitions-all', 'events', 'events-all', 'results', 'results-all', 'schedule2025', 'schedule2025-all'
   
   switch (mode) {
     case 'upload':
@@ -162,6 +187,16 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
       uploadAllResultsFromCSV()
         .then(() => console.log('All results CSV upload completed successfully'))
         .catch(error => console.error('All results CSV upload failed:', error));
+      break;
+    case 'schedule2025':
+      uploadSchedule2025FromCSVFile()
+        .then(() => console.log('Schedule2025 CSV upload completed successfully'))
+        .catch(error => console.error('Schedule2025 CSV upload failed:', error));
+      break;
+    case 'schedule2025-all':
+      uploadAllSchedule2025FromCSV()
+        .then(() => console.log('All schedule2025 CSV upload completed successfully'))
+        .catch(error => console.error('All schedule2025 CSV upload failed:', error));
       break;
     default:
       uploadAthletes()
