@@ -5,6 +5,8 @@ import { uploadNewEventsOnly, uploadEventsFromCSV } from './upload_events.js';
 import { uploadNewResultsOnly, uploadResultsFromCSV } from './upload_results.js';
 import { uploadNewSchedule2025Only, uploadSchedule2025FromCSV } from './upload_schedule2025.js';
 import { updateEventDatesFromCSV } from './update_event_dates.js';
+import { checkEventDivisions, check2025EventDivisions } from './check_event_divisions.js';
+import { createMissingDivisions } from './create_missing_divisions.js';
 import { fileURLToPath } from 'node:url';
 
 // Function to get all athletes and log them
@@ -146,7 +148,7 @@ export async function uploadAllSchedule2025FromCSV() {
 // Example usage
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const args = process.argv.slice(2);
-  const mode = args[0] || 'fetch'; // 'fetch', 'upload', 'upload-all', 'competitions', 'competitions-all', 'events', 'events-all', 'results', 'results-all', 'schedule2025', 'schedule2025-all', 'update-event-dates'
+  const mode = args[0] || 'fetch'; // 'fetch', 'upload', 'upload-all', 'competitions', 'competitions-all', 'events', 'events-all', 'results', 'results-all', 'schedule2025', 'schedule2025-all', 'update-event-dates', 'check-divisions', 'check-divisions-2025', 'create-missing-divisions'
   
   switch (mode) {
     case 'upload':
@@ -203,6 +205,21 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
       updateEventDatesFromCSV()
         .then(() => console.log('Event dates update completed successfully'))
         .catch(error => console.error('Event dates update failed:', error));
+      break;
+    case 'check-divisions':
+      checkEventDivisions()
+        .then(() => console.log('Event divisions check completed successfully'))
+        .catch(error => console.error('Event divisions check failed:', error));
+      break;
+    case 'check-divisions-2025':
+      check2025EventDivisions()
+        .then(() => console.log('2025 event divisions check completed successfully'))
+        .catch(error => console.error('2025 event divisions check failed:', error));
+      break;
+    case 'create-missing-divisions':
+      createMissingDivisions()
+        .then(() => console.log('Missing divisions creation completed successfully'))
+        .catch(error => console.error('Missing divisions creation failed:', error));
       break;
     default:
       uploadAthletes()
