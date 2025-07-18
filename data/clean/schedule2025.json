@@ -1,0 +1,933 @@
+{
+  "musclecontest_japan": {
+    "start_date": "2025-02-22",
+    "end_date": "2025-02-22",
+    "year": "2025",
+    "name": "Musclecontest Japan Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-musclecontest-japan/"
+  },
+  "arnold_classic": {
+    "start_date": "2025-02-27",
+    "end_date": "2025-03-02",
+    "year": "2025",
+    "name": "Arnold Classic",
+    "url": "https://www.ifbbpro.com/competition/2025-arnold-classic/"
+  },
+  "san_diego_spartan_x_pro": {
+    "start_date": "2025-03-08",
+    "end_date": "2025-03-08",
+    "year": "2025",
+    "name": "San Diego Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-san-diego-championships/"
+  },
+  "musclecontest_campinas": {
+    "start_date": "2025-03-15",
+    "end_date": "2025-03-15",
+    "year": "2025",
+    "name": "Musclecontest Campinas Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-musclecontest-campinas/"
+  },
+  "musclecontest_fitworld_pro": {
+    "start_date": "2025-03-22",
+    "end_date": "2025-03-22",
+    "year": "2025",
+    "name": "Fitworld Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-fitworld/"
+  },
+  "sampson_showdown_pro": {
+    "start_date": "2025-03-29",
+    "end_date": "2025-03-29",
+    "year": "2025",
+    "name": "Sampson Showdown Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-sampson-showdown/"
+  },
+  "detroit_pro": {
+    "start_date": "2025-03-29",
+    "end_date": "2025-03-29",
+    "year": "2025",
+    "name": "Detroit Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-detroit-pro-am/"
+  },
+  "china_pro": {
+    "start_date": "2025-03-30",
+    "end_date": "2025-03-30",
+    "year": "2025",
+    "name": "China Dms Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-dms-china-pro/"
+  },
+  "arnold_classic_south_america": {
+    "start_date": "2025-04-04",
+    "end_date": "2025-04-06",
+    "year": "2025",
+    "name": "Arnold Sports Festival South America",
+    "url": "https://www.ifbbpro.com/competition/2025-arnold-sports-festival-south-america/"
+  },
+  "utah_cup_pro": {
+    "start_date": "2025-04-05",
+    "end_date": "2025-04-05",
+    "year": "2025",
+    "name": "Utah Cup Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-utah-cup/"
+  },
+  "triple_o_dynasty": {
+    "start_date": "2025-04-05",
+    "end_date": "2025-04-05",
+    "year": "2025",
+    "name": "Triple O Dynasty Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-triple-o-dynasty/"
+  },
+  "tri_city_classic": {
+    "start_date": "2025-04-05",
+    "end_date": "2025-04-05",
+    "year": "2025",
+    "name": "Tri-City Classic Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-tri-city-classic-pro-am/"
+  },
+  "fibo_power_pro": {
+    "start_date": "2025-04-11",
+    "end_date": "2025-04-12",
+    "year": "2025",
+    "name": "Fibo Championships",
+    "url": "https://www.ifbbpro.com/competition/2025-fibo-pro-championships/"
+  },
+  "musclecontest_nordeste": {
+    "start_date": "2025-04-12",
+    "end_date": "2025-04-12",
+    "year": "2025",
+    "name": "Musclecontest Nordeste Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-musclecontest-nordeste/"
+  },
+  "charlotte_cup_pro": {
+    "start_date": "2025-04-12",
+    "end_date": "2025-04-12",
+    "year": "2025",
+    "name": "Charlotte Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-charlotte-pro/"
+  },
+  "oklahoma_battle_of_the_bodies_pro": {
+    "start_date": "2025-04-12",
+    "end_date": "2025-04-12",
+    "year": "2025",
+    "name": "Battle Of The Bodies Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-battle-of-the-bodies/"
+  },
+  "1_bro_bikini_pro": {
+    "start_date": "2025-04-19",
+    "end_date": "2025-04-19",
+    "year": "2025",
+    "name": "1 Bro Bikini Pro Show",
+    "url": "https://www.ifbbpro.com/competition/2025-1-bro-bikini-pro-show/"
+  },
+  "vancouver_island_showdown": {
+    "start_date": "2025-04-19",
+    "end_date": "2025-04-19",
+    "year": "2025",
+    "name": "Vancouver Island Showdown Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-vancouver-island-showdown-pro/"
+  },
+  "world_of_monsterzym_pro": {
+    "start_date": "2025-04-26",
+    "end_date": "2025-04-26",
+    "year": "2025",
+    "name": "World Of Monsterzm Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-world-of-monsterzym-korea-pro/"
+  },
+  "wasatch_warrior_pro": {
+    "start_date": "2025-04-26",
+    "end_date": "2025-04-26",
+    "year": "2025",
+    "name": "Wasatch Warrior Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-wasatch-warrior/"
+  },
+  "los_angeles_grand_prix": {
+    "start_date": "2025-04-26",
+    "end_date": "2025-04-26",
+    "year": "2025",
+    "name": "Los Angeles Grand Prix Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-los-angles-grand-prix/"
+  },
+  "klash_series_grl_pwr_pro": {
+    "start_date": "2025-04-26",
+    "end_date": "2025-04-26",
+    "year": "2025",
+    "name": "Grl Pwr Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-grl-pwr-championships/"
+  },
+  "spain_california_supplements_pro": {
+    "start_date": "2025-05-04",
+    "end_date": "2025-05-04",
+    "year": "2025",
+    "name": "California Supplement Spain Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-california-supplement-spain-pro/"
+  },
+  "hungary_kokeny_pro": {
+    "start_date": "2025-05-10",
+    "end_date": "2025-05-10",
+    "year": "2025",
+    "name": "Kokeny Classic Hungary Pro",
+    "url": "https://www.ifbbproleaguehungary.hu/"
+  },
+  "pittsburgh_pro": {
+    "start_date": "2025-05-10",
+    "end_date": "2025-05-11",
+    "year": "2025",
+    "name": "Pittsburgh Power & Fitness Festival",
+    "url": "https://www.ifbbpro.com/competition/2025-pittsburgh-power-fitness-festival/"
+  },
+  "new_york_pro": {
+    "start_date": "2025-05-17",
+    "end_date": "2025-05-17",
+    "year": "2025",
+    "name": "New York Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-new-york-pro/"
+  },
+  "musclecontest_ireland": {
+    "start_date": "2025-05-17",
+    "end_date": "2025-05-17",
+    "year": "2025",
+    "name": "Musclecontest Bullman Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-musclecontest-bullman-pro/"
+  },
+  "miami_pro": {
+    "start_date": "2025-05-24",
+    "end_date": "2025-05-24",
+    "year": "2025",
+    "name": "Miami Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-miami-pro/"
+  },
+  "california_pro": {
+    "start_date": "2025-05-24",
+    "end_date": "2025-05-24",
+    "year": "2025",
+    "name": "California State Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-california-state-championships/"
+  },
+  "optimum_classic": {
+    "start_date": "2025-05-24",
+    "end_date": "2025-05-24",
+    "year": "2025",
+    "name": "Optimum Classic Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-optimum-classic-championships/"
+  },
+  "agp_korea_pro_show": {
+    "start_date": "2025-05-25",
+    "end_date": "2025-05-25",
+    "year": "2025",
+    "name": "Agp Korea Pro Show",
+    "url": "https://www.ifbbpro.com/competition/2025-agp-pro-show/"
+  },
+  "everest_muscle_games_poland": {
+    "start_date": "2025-05-25",
+    "end_date": "2025-05-25",
+    "year": "2025",
+    "name": "Everest Muscle Games Poland Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-everest-muscle-games-poland-pro/"
+  },
+  "sheru_classic_india": {
+    "start_date": "2025-05-30",
+    "end_date": "2025-06-01",
+    "year": "2025",
+    "name": "Sheru Classic Bharat Pro Show",
+    "url": "https://www.ifbbpro.com/competition/2025-sheru-classic-bharat-pro-show/"
+  },
+  "legions_sports_fest": {
+    "start_date": "2025-05-31",
+    "end_date": "2025-05-31",
+    "year": "2025",
+    "name": "Legion Sports Fest Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-legion-sports-fest/"
+  },
+  "adela_garcia_classic": {
+    "start_date": "2025-06-07",
+    "end_date": "2025-06-07",
+    "year": "2025",
+    "name": "Adela Garcia Classic Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-adela-garcia-classic-pro-am/"
+  },
+  "thailand_pro": {
+    "start_date": "2025-06-07",
+    "end_date": "2025-06-07",
+    "year": "2025",
+    "name": "Thailand Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-thailand-pro/"
+  },
+  "mile_high_pro": {
+    "start_date": "2025-06-07",
+    "end_date": "2025-06-07",
+    "year": "2025",
+    "name": "Mile High Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-mile-high-pro/"
+  },
+  "dc_pro": {
+    "start_date": "2025-06-07",
+    "end_date": "2025-06-07",
+    "year": "2025",
+    "name": "Dc Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-dc-pro-am/"
+  },
+  "oklahoma_pro": {
+    "start_date": "2025-06-07",
+    "end_date": "2025-06-07",
+    "year": "2025",
+    "name": "Oklahoma Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-oklahoma-classic-pro-am/"
+  },
+  "toronto_supershow": {
+    "start_date": "2025-06-08",
+    "end_date": "2025-06-08",
+    "year": "2025",
+    "name": "Toronto Pro Supershow",
+    "url": "https://www.ifbbpro.com/competition/2025-toronto-pro-supershow/"
+  },
+  "nevada_state_pro": {
+    "start_date": "2025-06-14",
+    "end_date": "2025-06-14",
+    "year": "2025",
+    "name": "Nevada State Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-nevada-state-championships/"
+  },
+  "spain_empro_classic": {
+    "start_date": "2025-06-15",
+    "end_date": "2025-06-15",
+    "year": "2025",
+    "name": "Empro Classic",
+    "url": "https://www.ifbbpro.com/competition/2025-empro-classic/"
+  },
+  "dubai_pro": {
+    "start_date": "2025-06-20",
+    "end_date": "2025-06-22",
+    "year": "2025",
+    "name": "Dubai Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-dubai-pro/"
+  },
+  "world_classic_pro": {
+    "start_date": "2025-06-20",
+    "end_date": "2025-06-21",
+    "year": "2025",
+    "name": "World Classic Men'S Physique Pro, World Classic Bikini Pro",
+    "url": "https://www.ifbbpro.com/competition/20205-world-classic/"
+  },
+  "tanji_johnson_classic": {
+    "start_date": "2025-06-21",
+    "end_date": "2025-06-21",
+    "year": "2025",
+    "name": "Tanji Johnson Classic Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-tanji-johnson-classic/"
+  },
+  "body_be_1_classic": {
+    "start_date": "2025-06-21",
+    "end_date": "2025-06-21",
+    "year": "2025",
+    "name": "Body Be 1 Classic Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-body-be-1-classic-pro-am/"
+  },
+  "south_florida_pro": {
+    "start_date": "2025-06-21",
+    "end_date": "2025-06-21",
+    "year": "2025",
+    "name": "South Florida Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-south-florida-pro/"
+  },
+  "huanji_china_pro": {
+    "start_date": "2025-06-22",
+    "end_date": "2025-06-22",
+    "year": "2025",
+    "name": "Huanji China Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-huanji-china-pro-2/"
+  },
+  "indy_pro": {
+    "start_date": "2025-06-28",
+    "end_date": "2025-06-28",
+    "year": "2025",
+    "name": "Indy Pro Supershow",
+    "url": "https://www.ifbbpro.com/competition/2025-indy-supershow/"
+  },
+  "st_pete_pro": {
+    "start_date": "2025-06-28",
+    "end_date": "2025-06-28",
+    "year": "2025",
+    "name": "St. Pete Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-st-pete-pro/"
+  },
+  "italy_flex_weekend": {
+    "start_date": "2025-06-29",
+    "end_date": "2025-06-29",
+    "year": "2025",
+    "name": "Flex Weekend Italy Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-flex-weekend-italy-pro/"
+  },
+  "mr_big_evolution_pro": {
+    "start_date": "2025-07-06",
+    "end_date": "2025-07-06",
+    "year": "2025",
+    "name": "Mr Big Evolution Portugal Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-mr-big-evolution-portugal-pro/"
+  },
+  "euro_muscle_show": {
+    "start_date": "2025-07-12",
+    "end_date": "2025-07-13",
+    "year": "2025",
+    "name": "Euro Muscle Pro Show",
+    "url": "https://www.ifbbpro.com/competition/2025-euro-muscle-pro-show/"
+  },
+  "monsterzym_pro": {
+    "start_date": "2025-07-12",
+    "end_date": "2025-07-12",
+    "year": "2025",
+    "name": "World Of Monsterzym Korea Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-world-of-monsterzym-pro-212/"
+  },
+  "zhanna_rotar_pro": {
+    "start_date": "2025-07-12",
+    "end_date": "2025-07-12",
+    "year": "2025",
+    "name": "Zhanna Rotar Classic Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-zhanna-rotar-classic-pro/"
+  },
+  "republic_of_texas_pro": {
+    "start_date": "2025-07-12",
+    "end_date": "2025-07-12",
+    "year": "2025",
+    "name": "Republic Of Texas Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-republic-of-texas-pro/"
+  },
+  "colombia_pro": {
+    "start_date": "2025-07-17",
+    "end_date": "2025-07-20",
+    "year": "2025",
+    "name": "Gomeisa Ultimate Battle Colombia Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-gomeisa-ultimate-battle-pro-medellin-supershow/"
+  },
+  "taiwan_kaohsiung_pro": {
+    "start_date": "2025-07-18",
+    "end_date": "2025-07-20",
+    "year": "2025",
+    "name": "Taiwan Pro Show",
+    "url": "https://www.ifbbpro.com/competition/2025-taiwan-pro-show/"
+  },
+  "chicago_pro": {
+    "start_date": "2025-07-18",
+    "end_date": "2025-07-19",
+    "year": "2025",
+    "name": "Chicago Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-chicago-pro/"
+  },
+  "musclecontest_brazil": {
+    "start_date": "2025-07-18",
+    "end_date": "2025-07-20",
+    "year": "2025",
+    "name": "Musclecontest Brazil Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-musclecontest-brazil-pro/"
+  },
+  "los_angeles_pro": {
+    "start_date": "2025-07-19",
+    "end_date": "2025-07-19",
+    "year": "2025",
+    "name": "Los Angeles Pro Championships",
+    "url": "https://www.ifbbpro.com/competition/2025-los-angeles-pro-championships/"
+  },
+  "1_bro_pro": {
+    "start_date": "2025-07-19",
+    "end_date": "2025-07-19",
+    "year": "2025",
+    "name": "1 Bro Pro Show",
+    "url": "https://www.ifbbpro.com/competition/2025-1-bro-pro-show/"
+  },
+  "vancouver_pro": {
+    "start_date": "2025-07-27",
+    "end_date": "2025-07-27",
+    "year": "2025",
+    "name": "Van Pro/Am",
+    "url": "https://www.ifbbpro.com/competition/2025-van-pro-am/"
+  },
+  "xtreme_bodybuilding": {
+    "start_date": "2025-07-27",
+    "end_date": "2025-07-27",
+    "year": "2025",
+    "name": "Xtreme Bodybuilding Mexico Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-xtreme-bodybuilding-mexico-pro/"
+  },
+  "tampa_pro": {
+    "start_date": "2025-07-31",
+    "end_date": "2025-08-02",
+    "year": "2025",
+    "name": "Tampa Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-tampa-pro/"
+  },
+  "tupelo_pro": {
+    "start_date": "2025-08-08",
+    "end_date": "2025-08-09",
+    "year": "2025",
+    "name": "Tupelo Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-tupelo-pro/"
+  },
+  "texas_pro": {
+    "start_date": "2025-08-08",
+    "end_date": "2025-08-09",
+    "year": "2025",
+    "name": "Texas Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-texas-pro/"
+  },
+  "pacific_usa_pro": {
+    "start_date": "2025-08-09",
+    "end_date": "2025-08-09",
+    "year": "2025",
+    "name": "Pacific Usa Xxxi Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-pacific-usa-xxxi-pro/"
+  },
+  "tahoe_pro": {
+    "start_date": "2025-08-09",
+    "end_date": "2025-08-09",
+    "year": "2025",
+    "name": "Tahoe Pro Show",
+    "url": "https://www.ifbbpro.com/competition/2025-tahoe-show/"
+  },
+  "tokyo_pro": {
+    "start_date": "2025-08-11",
+    "end_date": "2025-08-11",
+    "year": "2025",
+    "name": "Tokyo Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-tokyo-pro-supershow/"
+  },
+  "atlanta_pro": {
+    "start_date": "2025-08-15",
+    "end_date": "2025-08-16",
+    "year": "2025",
+    "name": "Lenda Murray Atl Pro Supershow",
+    "url": "https://www.ifbbpro.com/competition/2025-lenda-murray-atl-pro-supershow/"
+  },
+  "mexico_grand_battle_pro": {
+    "start_date": "2025-08-16",
+    "end_date": "2025-08-17",
+    "year": "2025",
+    "name": "Mexico Grand Battle Pro/Am",
+    "url": "https://www.ifbbpro.com/competition/2025-mexico-grand-battle-pro-am/"
+  },
+  "musclecontest_fortaleza": {
+    "start_date": "2025-08-22",
+    "end_date": "2025-08-24",
+    "year": "2025",
+    "name": "Musclecontest Experience Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-musclecontest-experience-pro/"
+  },
+  "santa_cruz_pro_championships": {
+    "start_date": "2025-08-23",
+    "end_date": "2025-08-23",
+    "year": "2025",
+    "name": "Santa Cruz Pro Championships",
+    "url": "https://www.ifbbpro.com/competition/2025-santa-cruz-pro-championships/"
+  },
+  "etelon_spain_pro": {
+    "start_date": "2025-08-23",
+    "end_date": "2025-08-23",
+    "year": "2025",
+    "name": "Etelon Spain Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-etelon-spain-pro/"
+  },
+  "sin_city_showdown": {
+    "start_date": "2025-08-23",
+    "end_date": "2025-08-23",
+    "year": "2025",
+    "name": "Sin City Showdown Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-sin-city-showdown-pro/"
+  },
+  "austrian_oak_pro": {
+    "start_date": "2025-08-24",
+    "end_date": "2025-08-24",
+    "year": "2025",
+    "name": "Austrian Oak Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-austrian-oak-pro/"
+  },
+  "rgv_classic": {
+    "start_date": "2025-08-30",
+    "end_date": "2025-08-30",
+    "year": "2025",
+    "name": "Rgv Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-rgv-pro/"
+  },
+  "alina_popa_classic": {
+    "start_date": "2025-08-31",
+    "end_date": "2025-08-31",
+    "year": "2025",
+    "name": "Alina Popa Classic Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-alina-popa-classic-pro/"
+  },
+  "florida_pro": {
+    "start_date": "2025-09-05",
+    "end_date": "2025-09-06",
+    "year": "2025",
+    "name": "Florida Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-florida-pro/"
+  },
+  "promuscle_italy_pro": {
+    "start_date": "2025-09-07",
+    "end_date": "2025-09-07",
+    "year": "2025",
+    "name": "Promuscle Italy Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-promuscle-italy-pro/"
+  },
+  "hong_kong_pro_show": {
+    "start_date": "2025-09-07",
+    "end_date": "2025-09-07",
+    "year": "2025",
+    "name": "Hong Kong Pro",
+    "url": ""
+  },
+  "oklahoma_showdown_of_champions": {
+    "start_date": "2025-09-13",
+    "end_date": "2025-09-13",
+    "year": "2025",
+    "name": "Oklahoma Showdown Of Champions Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-oklahoma-showdown-of-champions-pro/"
+  },
+  "battle_of_the_bodies": {
+    "start_date": "2025-09-13",
+    "end_date": "2025-09-13",
+    "year": "2025",
+    "name": "Janet Layug'S Battle Of The Bodies",
+    "url": "https://www.ifbbpro.com/competition/2025-janet-layugs-battle-of-the-bodies-pro/"
+  },
+  "arizona_pro": {
+    "start_date": "2025-09-13",
+    "end_date": "2025-09-13",
+    "year": "2025",
+    "name": "Rising Phoenix",
+    "url": "https://www.ifbbpro.com/competition/2025-rising-phoenix/"
+  },
+  "europe_pro": {
+    "start_date": "2025-09-14",
+    "end_date": "2025-09-14",
+    "year": "2025",
+    "name": "Europa Pro Championships",
+    "url": "https://www.ifbbpro.com/competition/2025-europa-pro-championships/"
+  },
+  "argentina_sur_cup_pro": {
+    "start_date": "2025-09-14",
+    "end_date": "2025-09-14",
+    "year": "2025",
+    "name": "Argentina Pro, Sur Pro Cup Argentina",
+    "url": "https://www.ifbbpro.com/competition/2025-sur-pro-cup-argentina/"
+  },
+  "dominican_republic_pro": {
+    "start_date": "2025-09-19",
+    "end_date": "2025-09-21",
+    "year": "2025",
+    "name": "Dominican Republic Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-dominican-republic-pro/"
+  },
+  "san_antonio_pro": {
+    "start_date": "2025-09-20",
+    "end_date": "2025-09-20",
+    "year": "2025",
+    "name": "San Antonio Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-san-antonio-pro/"
+  },
+  "sasquatch_pro": {
+    "start_date": "2025-09-20",
+    "end_date": "2025-09-20",
+    "year": "2025",
+    "name": "Sasquatch Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-sasquatch-pro/"
+  },
+  "titans_grand_prix": {
+    "start_date": "2025-09-20",
+    "end_date": "2025-09-20",
+    "year": "2025",
+    "name": "Titans Grand Prix Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-titans-grand-prix-pro/"
+  },
+  "musclecontest_rio": {
+    "start_date": "2025-09-27",
+    "end_date": "2025-09-27",
+    "year": "2025",
+    "name": "Musclecontest Rio Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-musclecontest-rio-pro/"
+  },
+  "tournament_of_champions": {
+    "start_date": "2025-09-27",
+    "end_date": "2025-09-27",
+    "year": "2025",
+    "name": "Tournament Of Champions Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-tournament-of-champions-pro/"
+  },
+  "tsunami_nutrition_showdown": {
+    "start_date": "2025-09-27",
+    "end_date": "2025-09-27",
+    "year": "2025",
+    "name": "Tsunami Nutrition Showdown France Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-tsunami-nutrition-showdown-france-pro/"
+  },
+  "daytona_pro": {
+    "start_date": "2025-09-27",
+    "end_date": "2025-09-28",
+    "year": "2025",
+    "name": "Daytona Pro/Am Championships",
+    "url": "https://www.ifbbpro.com/competition/2025-daytona-pro-am-championships/"
+  },
+  "ace_of_stage_pro": {
+    "start_date": "2025-10-04",
+    "end_date": "2025-10-04",
+    "year": "2025",
+    "name": "Ace Of Stage Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-ace-of-stage-pro/"
+  },
+  "balkan_grand_prix_pro": {
+    "start_date": "2025-10-04",
+    "end_date": "2025-10-04",
+    "year": "2025",
+    "name": "Balkan Grand Prix Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-balkan-grand-prix-pro/"
+  },
+  "southern_muscle_showdown": {
+    "start_date": "2025-10-04",
+    "end_date": "2025-10-04",
+    "year": "2025",
+    "name": "Southern Muscle Showdown Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-southern-muscle-showdown-pro/"
+  },
+  "italy_koloseum_pro": {
+    "start_date": "2025-10-05",
+    "end_date": "2025-10-05",
+    "year": "2025",
+    "name": "Koloseum Italy Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-koloseum-italy-pro/"
+  },
+  "agp_pro_all_stars": {
+    "start_date": "2025-10-05",
+    "end_date": "2025-10-05",
+    "year": "2025",
+    "name": "Agp Pro Show",
+    "url": "https://www.ifbbpro.com/competition/2025-agp-pro-show-2/"
+  },
+  "olympia": {
+    "start_date": "2025-10-09",
+    "end_date": "2025-10-12",
+    "year": "2025",
+    "name": "Olympia",
+    "url": ""
+  },
+  "musclecontest_brazil_2": {
+    "start_date": "2025-10-17",
+    "end_date": "2025-10-19",
+    "year": "2025",
+    "name": "Mci Brazil Pro",
+    "url": ""
+  },
+  "tampa_hurricane_pro": {
+    "start_date": "2025-10-17",
+    "end_date": "2025-10-18",
+    "year": "2025",
+    "name": "Hurricane Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-hurricane-pro/"
+  },
+  "british_grand_prix": {
+    "start_date": "2025-10-18",
+    "end_date": "2025-10-18",
+    "year": "2025",
+    "name": "British Grand Prix Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-british-grand-prix-pro/"
+  },
+  "pharlabs_mexico_pro/am": {
+    "start_date": "2025-10-18",
+    "end_date": "2025-10-19",
+    "year": "2025",
+    "name": "Pharlabs Mexico Pro/Am",
+    "url": "https://www.ifbbpro.com/competition/2025-pharlabs-mexico-pro-am/"
+  },
+  "hungary_fitparade_pr": {
+    "start_date": "2025-10-19",
+    "end_date": "2025-10-19",
+    "year": "2025",
+    "name": "Fashion Street Fitparade Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-fashion-street-fitparade-hungary-pro/"
+  },
+  "moscow_showdown_pro": {
+    "start_date": "2025-10-25",
+    "end_date": "2025-10-25",
+    "year": "2025",
+    "name": "Moscow Pro/Am Showdown",
+    "url": "https://www.ifbbpro.com/competition/2025-moscow-pro-am-showdown/"
+  },
+  "border_states_classic": {
+    "start_date": "2025-10-25",
+    "end_date": "2025-10-25",
+    "year": "2025",
+    "name": "Border States Pro",
+    "url": ""
+  },
+  "musclecontest_philippines": {
+    "start_date": "2025-10-25",
+    "end_date": "2025-10-25",
+    "year": "2025",
+    "name": "Musclecontest Philippines Pro",
+    "url": ""
+  },
+  "evls_prague_pro": {
+    "start_date": "2025-10-26",
+    "end_date": "2025-10-26",
+    "year": "2025",
+    "name": "Evls Prague Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-evls-prague-pro/"
+  },
+  "invictus_kazakhstan_pro": {
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-01",
+    "year": "2025",
+    "name": "Invictus Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-invictus-pro/"
+  },
+  "klash_series_all_south_pro": {
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-01",
+    "year": "2025",
+    "name": "All South Pro Championships",
+    "url": "https://www.ifbbpro.com/competition/2025-all-south-pro-championships/"
+  },
+  "east_coast_pro": {
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-01",
+    "year": "2025",
+    "name": "East Coast Pro",
+    "url": ""
+  },
+  "everest_muscle_stars_poland": {
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-02",
+    "year": "2025",
+    "name": "Everest Muscle Stars Poland Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-everest-muscle-stars-poland-pro/"
+  },
+  "bigman_weekend_spain_pro": {
+    "start_date": "2025-11-01",
+    "end_date": "2025-11-01",
+    "year": "2025",
+    "name": "Spain Pro",
+    "url": ""
+  },
+  "new_zealand_pro": {
+    "start_date": "2025-11-02",
+    "end_date": "2025-11-02",
+    "year": "2025",
+    "name": "New Zealand Pro",
+    "url": ""
+  },
+  "iron_games_pro": {
+    "start_date": "2025-11-08",
+    "end_date": "2025-11-08",
+    "year": "2025",
+    "name": "Iron Games Pro",
+    "url": ""
+  },
+  "musclecontest_fitpira": {
+    "start_date": "2025-11-08",
+    "end_date": "2025-11-09",
+    "year": "2025",
+    "name": "Musclecontest Fitpira Pro",
+    "url": ""
+  },
+  "texas_state_pro": {
+    "start_date": "2025-11-08",
+    "end_date": "2025-11-08",
+    "year": "2025",
+    "name": "Texas State Pro",
+    "url": ""
+  },
+  "steve_karr_las_vegas_classic": {
+    "start_date": "2025-11-08",
+    "end_date": "2025-11-08",
+    "year": "2025",
+    "name": "Steve Karr  Las Vegas Classic",
+    "url": "https://www.ifbbpro.com/competition/2025-steve-karr-las-vegas-classic-bik/"
+  },
+  "romania_muscle_fest_pro": {
+    "start_date": "2025-11-08",
+    "end_date": "2025-11-09",
+    "year": "2025",
+    "name": "Romania Muscle Fest Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-romania-muscle-fest-pro-am/"
+  },
+  "nashville_night_of_champions": {
+    "start_date": "2025-11-08",
+    "end_date": "2025-11-08",
+    "year": "2025",
+    "name": "Chattanooga Night Of Champions Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-chattanooga-night-of-champions-pro/"
+  },
+  "shawn_ray_hawaiian_classic": {
+    "start_date": "2025-11-08",
+    "end_date": "2025-11-08",
+    "year": "2025",
+    "name": "Shawn Ray'S Hawaiian Classic Pro/Am",
+    "url": "https://www.ifbbpro.com/competition/2025-shawn-rays-hawaiian-classic-pro-am/"
+  },
+  "kansas_city_pro": {
+    "start_date": "2025-11-14",
+    "end_date": "2025-11-14",
+    "year": "2025",
+    "name": "Kc Pro",
+    "url": ""
+  },
+  "atlantic_coast_pro": {
+    "start_date": "2025-11-15",
+    "end_date": "2025-11-16",
+    "year": "2025",
+    "name": "Atlantic Coast Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-atlantic-coast-pro/"
+  },
+  "musclecontest_luciano_cruz_juiz_de_fora": {
+    "start_date": "2025-11-15",
+    "end_date": "2025-11-15",
+    "year": "2025",
+    "name": "Musclecontest Luciano Cruz Juiz De Fora Pro",
+    "url": ""
+  },
+  "spanish_grand_prix_pro": {
+    "start_date": "2025-11-23",
+    "end_date": "2025-11-23",
+    "year": "2025",
+    "name": "Spanish Grand Prix Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-spanish-grand-prix-pro/"
+  },
+  "japan_pro": {
+    "start_date": "2025-11-24",
+    "end_date": "2025-11-24",
+    "year": "2025",
+    "name": "Japan Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-japan-pro/"
+  },
+  "marrakesh_pro": {
+    "start_date": "2025-11-30",
+    "end_date": "2025-11-30",
+    "year": "2025",
+    "name": "Marrakesh Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-marrakesh-pro/"
+  },
+  "taiwan_pro": {
+    "start_date": "2025-12-05",
+    "end_date": "2025-12-07",
+    "year": "2025",
+    "name": "Taiwan Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-taiwan-pro/"
+  },
+  "battle_of_the_bay_pro": {
+    "start_date": "2025-12-06",
+    "end_date": "2025-12-06",
+    "year": "2025",
+    "name": "Battle Of The Bay Pro",
+    "url": "https://www.ifbbpro.com/competition/2025-battle-of-the-bay-pro/"
+  },
+  "sur_pro_cup": {
+    "start_date": "2025-12-13",
+    "end_date": "2025-12-13",
+    "year": "2025",
+    "name": "Sur Pro Cup",
+    "url": "https://www.ifbbpro.com/competition/2025-sur-pro-cup/"
+  },
+  "musclecontest_austria": {
+    "start_date": "2025-12-13",
+    "end_date": "2025-12-13",
+    "year": "2025",
+    "name": "Musclecontest Austria Pro",
+    "url": ""
+  }
+}
