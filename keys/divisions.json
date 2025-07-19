@@ -13,7 +13,8 @@
     "male",
     "pro men's bodybuilding",
     "men's bb",
-    "male - professional"
+    "male - professional",
+    "men's bodybuilding – open"
   ],
   "mensbb - heavyweight": [
     "male - tall",
@@ -39,7 +40,8 @@
     "mens 212",
     "men’s 212",
     "men’s 212 bodybuilding – open",
-    "pro men's 212"
+    "pro men's 212",
+    "men's 212 bodybuilding – open"
   ],
   "202_212 - 202": [
     "202",
@@ -58,7 +60,8 @@
     "men's classic physique",
     "men’s classic physique – open",
     "men's classic physique open",
-    "classic men's physique - open"
+    "classic men's physique - open",
+    "men's classic physique – open"
   ],
   "mensphysique - open": [
     "men's physique",
@@ -70,7 +73,8 @@
     "pro men's physique",
     "pro men’s physique",
     "mens physique",
-    "male - physique"
+    "male - physique",
+    "men's physique – open"
   ],
   "wheelchair - open": [
     "male - wheelchair",
@@ -80,7 +84,9 @@
     "men's wheelchair - open",
     "men’s wheelchair – open",
     "men's wheelchair bodybuilding",
-    "men's pro wheelchair"
+    "men's pro wheelchair",
+    "men's wheelchair – open",
+    "men's wheelchair bodybuilding – open"
   ],
   "womensbb - open": [
     "women's bodybuilding",
@@ -91,7 +97,8 @@
     "women’s bodybuilding",
     "women’s bodybuilding – open",
     "female - bodybuilding",
-    "female"
+    "female",
+    "women's bodybuilding – open"
   ],
   "womensbb - heavyweight": [
     "female - heavyweight"
@@ -111,7 +118,8 @@
     "women’s physique – open",
     "womens physique",
     "female - physique",
-    "2016 women’s physique physique olympia"
+    "2016 women’s physique physique olympia",
+    "women's physique – open"
   ],
   "figure - open": [
     "figure",
@@ -124,7 +132,8 @@
     "women's open figure",
     "women's pro figure",
     "women’s figure – open",
-    "women's figure open"
+    "women's figure open",
+    "women's figure – open"
   ],
   "fitness - open": [
     "fitness",
@@ -135,7 +144,8 @@
     "women's pro fitness",
     "women’s fitness – open",
     "womens fitness",
-    "pro fitness"
+    "pro fitness",
+    "women's fitness – open"
   ],
   "wellness - open": [
     "wellness",
@@ -145,7 +155,8 @@
     "women's wellness",
     "women's wellness - open",
     "womens wellness",
-    "women’s wellness – open"
+    "women’s wellness – open",
+    "women's wellness – open"
   ],
   "bikini - open": [
     "bikini",
@@ -158,6 +169,7 @@
     "womens bikini",
     "women’s bikini – open",
     "bikini ",
-    "bikini"
+    "bikini",
+    "women's bikini – open"
   ]
 }
