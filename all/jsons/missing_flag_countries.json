@@ -1,0 +1,20 @@
+{
+  "totalMissingFlags": 2,
+  "timestamp": "2025-07-29T13:23:42.878Z",
+  "countries": [
+    {
+      "country": "Africa",
+      "personIds": [
+        "06657f5b-27c4-46e6-887c-5990c7c25bd3"
+      ],
+      "count": 1
+    },
+    {
+      "country": "U.s. Virgin Islands",
+      "personIds": [
+        "e8420251-f320-44d3-9377-cafe4b4d632f"
+      ],
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,1101 @@
+{
+  "totalMissingImages": 301,
+  "timestamp": "2025-07-29T13:44:10.399Z",
+  "locationTypes": {
+    "city": 779,
+    "state": 0,
+    "country": 20,
+    "noLocation": 997
+  },
+  "locations": [
+    {
+      "locationName": "Culver City",
+      "locationType": "city",
+      "eventIds": [
+        "e6dcfa72-03b1-4c31-8472-dcb77cef59d0",
+        "9af75371-4eb0-45d8-94d4-57c7b99234e1",
+        "f848c32c-bbab-4d77-aedd-8677c3d46b73",
+        "3f628ced-d107-4c24-b687-57889fdeaa67",
+        "6c42ff59-7b72-4506-b1a6-892c8973f2bb",
+        "e4308c3c-af95-48d4-9508-4f9ac4ae177f",
+        "961355d2-1d96-4961-96b7-4f4d21737aa6",
+        "797ab201-a1fd-4314-ab51-67259bd3bf1e",
+        "8d3000a7-c12e-4740-8b3b-0dd565c77ca8",
+        "94d6ebcc-0d70-43ff-8a36-5fe472d1ba1c",
+        "bedc8a0b-54ad-49a9-a162-ea6a498f0bed",
+        "c408f7ec-0193-467d-9edc-e6f1c60cfae0",
+        "b055283c-a666-4886-92a9-bac71298fe21",
+        "06e98010-6eca-41fe-8ae5-ddf881778b11",
+        "8e8cf3e0-692a-4ae6-8def-3eae2ecaa176",
+        "5636bac0-9fcb-4d63-a6eb-48a3ce239512",
+        "b85d6b5d-fda2-4ac0-b93e-8f43da8a09b5",
+        "90bbf24d-2c26-4af9-ba58-ebf1e5718b5d",
+        "446967a9-2434-4e7a-9cfc-b5b46d0ab589",
+        "7e730354-5272-4536-a94a-f641502da9c5",
+        "caa58bc7-9843-493b-93ef-1c476cbe8574",
+        "2bccce47-618f-4a52-993a-f812c0acd2a0",
+        "83a5871e-3e3d-470d-aa63-6cae9729cfa9",
+        "8757697c-275f-47bd-ba9b-8144406b1173",
+        "e49454be-0e8a-432d-aa02-e7aa6a39daac",
+        "05640527-dc0d-4ac6-8f05-b04444135e73",
+        "f11d1817-51b4-4458-8b48-2ffd8efa6166",
+        "6b46e7da-eaf4-44db-a1a2-eb764ae3b792",
+        "d0205ddc-7e93-4668-a618-09ad3563d9b3",
+        "45ff5e66-6aac-46e6-a17e-b05d573a77a4",
+        "609f43af-7849-4d3e-90ca-d5e77868df40",
+        "2772f886-b113-48fb-b706-c4dda45511c3"
+      ],
+      "count": 32
+    },
+    {
+      "locationName": "Omaha",
+      "locationType": "city",
+      "eventIds": [
+        "0521da57-dbbd-46e8-a9e5-fa4afb7a9e8b",
+        "d4cc80a6-3134-49b0-b9ea-2a4e0c9123c0",
+        "b9290c8f-f783-43de-88e3-668f19c019ab",
+        "19350d5f-d302-41b4-9cb8-72ceecac4552",
+        "d2c9c631-661a-471e-b2e0-068b23048d23",
+        "ba49cc51-c495-4a05-92d5-faaa99a49fc8",
+        "2029979e-59d4-422e-b17a-2a7eb5e01929"
+      ],
+      "count": 7
+    },
+    {
+      "locationName": "Houston",
+      "locationType": "city",
+      "eventIds": [
+        "03f5911e-4ede-4913-abbe-5139546584f3",
+        "76b69d98-4d06-4bed-93a9-cd4051af7145",
+        "20baefc1-0887-481b-8d53-96b33538e509",
+        "0faebb38-5901-4fd5-a07d-fdc09835c1a5",
+        "99c0ab27-f053-443a-ae30-167dc961f390"
+      ],
+      "count": 5
+    },
+    {
+      "locationName": "Los Angeles",
+      "locationType": "city",
+      "eventIds": [
+        "a1a0fc09-4109-4311-9e2e-aadd5aef16f2",
+        "616c2f06-1a16-466b-ab4b-273b8da8bba2",
+        "9138b911-aeb0-4d1f-9b1f-4b9117875cb2",
+        "649c2428-9258-4d21-817f-789fb4b31086"
+      ],
+      "count": 4
+    },
+    {
+      "locationName": "Jacksonville",
+      "locationType": "city",
+      "eventIds": [
+        "e3bf131d-987d-48be-a7c8-b4a285e1aa4e",
+        "51d8077f-4990-4ce4-91ad-e025c3f99bae",
+        "2225fa23-8ac1-40ed-b171-9bc728e95d91",
+        "4288314b-eefd-4cbe-81bb-176ebd2c70bc"
+      ],
+      "count": 4
+    },
+    {
+      "locationName": "Sarasota",
+      "locationType": "city",
+      "eventIds": [
+        "c52c01b2-0cc8-4735-8999-c528aba136d1",
+        "3c2f06cd-6c13-486d-aae8-6b0906dab132",
+        "4d5a9c8c-e420-4426-970f-7173f8d6dd78",
+        "a1a4621f-a213-4f33-a86e-915a1e760146"
+      ],
+      "count": 4
+    },
+    {
+      "locationName": "San Marino",
+      "locationType": "city",
+      "eventIds": [
+        "fccce59a-6a7e-4d70-ba69-1eb5a5e85640",
+        "7d8fd153-0d5c-43fc-a7a9-0ed68e45b613",
+        "dc4f6691-93f9-416d-ac19-5ca511dc0371",
+        "b8bb4938-889f-4068-9070-55c5bbfa7c41"
+      ],
+      "count": 4
+    },
+    {
+      "locationName": "Vancouver",
+      "locationType": "city",
+      "eventIds": [
+        "75e51449-e022-4ebf-9c9e-02c7991a128f",
+        "a42a6f97-aa99-4796-baf9-8bd745315084",
+        "0d40e49c-baea-4d32-b39a-85a936ec8ac7",
+        "6c719e7a-c927-4086-ad67-dcb17f9001c1"
+      ],
+      "count": 4
+    },
+    {
+      "locationName": "Reno",
+      "locationType": "city",
+      "eventIds": [
+        "a3d928c4-9c31-411d-a855-24f2a8c863d6",
+        "03315ae1-bc6a-4720-a9a4-15c58d5d357f",
+        "c5591bb5-9845-499d-8d13-352b63772266",
+        "98aa01e0-fa67-4bbb-8171-e73c4fa60b67"
+      ],
+      "count": 4
+    },
+    {
+      "locationName": "Stateline",
+      "locationType": "city",
+      "eventIds": [
+        "13cd5c54-f61b-4ed6-8af6-38373a48bb3d",
+        "d7d2da39-3a20-49c3-ae3b-cfc29b053787",
+        "6eb539f3-995b-4617-902c-343d4815e507",
+        "1e00163c-faa9-4177-bbe3-c3605892920a"
+      ],
+      "count": 4
+    },
+    {
+      "locationName": "Atlantic City",
+      "locationType": "city",
+      "eventIds": [
+        "cd197f2f-31c5-482a-8d3a-b24fdbecf932",
+        "ee3b9a8e-bee6-4727-8b98-07db69857a00",
+        "4c883386-6d58-4642-908e-b5b7c2e3eb60"
+      ],
+      "count": 3
+    },
+    {
+      "locationName": "Hartford",
+      "locationType": "city",
+      "eventIds": [
+        "0080de7b-67f8-4ee4-8eaa-c1ecd5263d4e",
+        "bf40698d-1fff-4eaa-a0ec-15333c4e3ed7",
+        "3e47e3ef-9db5-4892-9348-736aec2b5275"
+      ],
+      "count": 3
+    },
+    {
+      "locationName": "Davenport",
+      "locationType": "city",
+      "eventIds": [
+        "dc0bbee6-0838-46c9-ac7a-85f475279909",
+        "dda8713c-efe9-4b3f-8b91-ff1e0a855a73",
+        "ef663869-bea0-4480-9cd1-be8d423d26f4"
+      ],
+      "count": 3
+    },
+    {
+      "locationName": "New Zealand",
+      "locationType": "country",
+      "eventIds": [
+        "0bfa6174-9894-448b-8f47-bc01402ac59e",
+        "ae115c07-77b5-400d-a641-bc30b84dc0c6",
+        "4c06d2c4-4d99-4feb-a104-ed925862d7ee"
+      ],
+      "count": 3
+    },
+    {
+      "locationName": "Lake Tahoe",
+      "locationType": "city",
+      "eventIds": [
+        "64102a20-6473-46ef-9ddf-0d1dc95495e7",
+        "0a6df502-014c-4bbf-bbc8-5f998f4d17ae",
+        "ca2cec06-996a-42c6-b534-33fdd7363ff7"
+      ],
+      "count": 3
+    },
+    {
+      "locationName": "San Jose",
+      "locationType": "city",
+      "eventIds": [
+        "09178a9d-0b2d-4d78-9ee3-8b003cbfdec2",
+        "f6557f56-4573-4e8f-a431-297a16b149f0",
+        "53b60819-bb61-49aa-8e59-c994425a4990"
+      ],
+      "count": 3
+    },
+    {
+      "locationName": "Miami Beach",
+      "locationType": "city",
+      "eventIds": [
+        "4274891b-e8ef-4e80-8a9b-3e659bba49de",
+        "dd6f73d2-7bdc-4376-bafb-ba4e75c45157",
+        "adc61566-fea8-402f-9cec-b0d1db7665c4"
+      ],
+      "count": 3
+    },
+    {
+      "locationName": "San Juan",
+      "locationType": "city",
+      "eventIds": [
+        "3b8393fc-dc0a-4fff-ac46-e95fa633bca7",
+        "d86cddfa-171e-42e7-9b11-5356adae15ca",
+        "9e1baf52-be08-42cb-935b-8201e3c9ac0d"
+      ],
+      "count": 3
+    },
+    {
+      "locationName": "Piracicaba",
+      "locationType": "city",
+      "eventIds": [
+        "38aa8f7c-c970-4a63-928a-7095c53cd5ca",
+        "3c154157-82fc-4e3a-a654-5b7b999df045",
+        "37efcbbe-aa7d-42ea-954d-a126dbc7bcd5"
+      ],
+      "count": 3
+    },
+    {
+      "locationName": "Dalton",
+      "locationType": "city",
+      "eventIds": [
+        "11753f0c-2108-4b07-80df-06c820b514a3",
+        "402adec0-4b56-4bb1-915b-93952dc15952",
+        "25d1fc74-98f9-4de1-aeeb-5c5752ca4d76"
+      ],
+      "count": 3
+    },
+    {
+      "locationName": "Tupelo",
+      "locationType": "city",
+      "eventIds": [
+        "1a661a66-3598-485a-a1e3-73e5c9348b8c",
+        "53ef81b8-51fa-452d-8101-58d469083c14",
+        "0f0fd114-dc11-47d8-b116-8faa7e9695ca"
+      ],
+      "count": 3
+    },
+    {
+      "locationName": "Essen",
+      "locationType": "city",
+      "eventIds": [
+        "a63d5e42-4516-4be6-beef-b03c78919e54",
+        "5743899a-c565-4097-8005-e55bc47a65e6"
+      ],
+      "count": 2
+    },
+    {
+      "locationName": "Greensboro",
+      "locationType": "city",
+      "eventIds": [
+        "54c1f186-3507-466d-8ebf-007dc77f9a8a",
+        "bcb4721b-d803-4184-9b3e-ff60df22e236"
+      ],
+      "count": 2
+    },
+    {
+      "locationName": "Manchester",
+      "locationType": "city",
+      "eventIds": [
+        "c48c88e3-3389-4cfb-be1f-ba7561c5c42d",
+        "d9464c5a-0ff0-46cf-8fee-fc2c70c14d03"
+      ],
+      "count": 2
+    },
+    {
+      "locationName": "Cologne",
+      "locationType": "city",
+      "eventIds": [
+        "0a85a79f-eac3-40c1-8d46-a4f261818324",
+        "cd4a9ff3-c563-4655-94de-6b993ce050b5"
+      ],
+      "count": 2
+    },
+    {
+      "locationName": "Coral Springs",
+      "locationType": "city",
+      "eventIds": [
+        "ea5a1f32-6f3e-4354-b5cd-88d13777283f",
+        "52cd51ca-16ba-4f62-84df-064947675e2c"
+      ],
+      "count": 2
+    },
+    {
+      "locationName": "Zilina",
+      "locationType": "city",
+      "eventIds": [
+        "c7c6b813-8a49-4c36-8652-331147cb51db",
+        "07747f74-0e6e-45fb-a467-63b61a9663de"
+      ],
+      "count": 2
+    },
+    {
+      "locationName": "Rancho Mirage",
+      "locationType": "city",
+      "eventIds": [
+        "3bdc575f-9082-4e31-88de-424b71a6a670",
+        "f9d00f45-d2c0-4f66-ba3a-0847ffdbb7e3"
+      ],
+      "count": 2
+    },
+    {
+      "locationName": "Norfolk",
+      "locationType": "city",
+      "eventIds": [
+        "343a687a-e1b2-4ea8-8c24-dfcc74b77b54",
+        "b510b87f-045c-4f7a-b8f1-dc50a8382ac4"
+      ],
+      "count": 2
+    },
+    {
+      "locationName": "Benidorm",
+      "locationType": "city",
+      "eventIds": [
+        "94797f72-5057-4828-8015-429505e29651",
+        "092dedb8-759a-449b-8286-508c66ec76d1"
+      ],
+      "count": 2
+    },
+    {
+      "locationName": "France",
+      "locationType": "country",
+      "eventIds": [
+        "501cef55-50b9-4e97-90e1-d151e500477d",
+        "3a520384-c74f-4a74-84f1-10759362a9c3"
+      ],
+      "count": 2
+    },
+    {
+      "locationName": "Goiânia",
+      "locationType": "city",
+      "eventIds": [
+        "a5be645a-1e3c-4e61-aba2-871582f36784",
+        "a74ae463-b99b-4696-9963-3b1c8f9e4bd4"
+      ],
+      "count": 2
+    },
+    {
+      "locationName": "Mcallen",
+      "locationType": "city",
+      "eventIds": [
+        "26e7ecd4-a1fa-4d22-ac78-c7a62ed4c501",
+        "ede71ecb-57ab-4c1b-ab12-5233cf3a3140"
+      ],
+      "count": 2
+    },
+    {
+      "locationName": "Union City",
+      "locationType": "city",
+      "eventIds": [
+        "275e512b-8ed9-45e5-85be-6f73e50d1f7e",
+        "c7d1506a-3a7f-4fde-9d21-045bb6394c36"
+      ],
+      "count": 2
+    },
+    {
+      "locationName": "Frisco",
+      "locationType": "city",
+      "eventIds": [
+        "69781c55-d220-4c3f-9646-99243b816287",
+        "a1d90df0-8708-41e8-bf12-1032d0b5eaa5"
+      ],
+      "count": 2
+    },
+    {
+      "locationName": "Carmel",
+      "locationType": "city",
+      "eventIds": [
+        "f01380dd-05db-4031-bf83-403638b97c6e",
+        "0f759419-774b-463f-8436-fd9e81fd27db"
+      ],
+      "count": 2
+    },
+    {
+      "locationName": "Gwangmyeong",
+      "locationType": "city",
+      "eventIds": [
+        "333ad067-8ec0-42fd-804d-65a75b717f01",
+        "d7973425-c817-4b53-97ab-a36e4ff4e2d4"
+      ],
+      "count": 2
+    },
+    {
+      "locationName": "Schwechat",
+      "locationType": "city",
+      "eventIds": [
+        "72489d6f-e601-4704-9a49-5042e0e3bc7a",
+        "964f5f27-602e-41b1-aa52-52d3aa1a9ead"
+      ],
+      "count": 2
+    },
+    {
+      "locationName": "Federal Way",
+      "locationType": "city",
+      "eventIds": [
+        "c87836af-c839-4eba-82ca-704ee1f5725b",
+        "d1bc0a2f-1721-4630-ad00-9527ceddb339"
+      ],
+      "count": 2
+    },
+    {
+      "locationName": "Tacoma",
+      "locationType": "city",
+      "eventIds": [
+        "713771d7-1718-42f1-a2b3-32125d044848",
+        "a81d6805-598e-4de9-b989-6e694ba66f05"
+      ],
+      "count": 2
+    },
+    {
+      "locationName": "San Marcos",
+      "locationType": "city",
+      "eventIds": [
+        "853c772c-548d-4681-b8e6-5e1276cec2b9",
+        "ee92293e-5764-4d0b-9960-2cf6a8d8c7f9"
+      ],
+      "count": 2
+    },
+    {
+      "locationName": "Bradford",
+      "locationType": "city",
+      "eventIds": [
+        "accfd255-5775-488d-90cb-324e57b78bec",
+        "c3cde734-e918-480c-9d89-c42a8bd70c81"
+      ],
+      "count": 2
+    },
+    {
+      "locationName": "Palm Beach",
+      "locationType": "city",
+      "eventIds": [
+        "6523f64c-a615-48f1-9566-70ceab1869b2"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Timisoara",
+      "locationType": "city",
+      "eventIds": [
+        "db4791e3-6089-4ced-a9e2-b81e9021d97a"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Madrid",
+      "locationType": "city",
+      "eventIds": [
+        "1f125366-2eb6-43cc-801d-d981f399de63"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Santa Monica",
+      "locationType": "city",
+      "eventIds": [
+        "a463438f-d75c-4be9-b710-82c53a37445e"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Council Bluffs",
+      "locationType": "city",
+      "eventIds": [
+        "a70b4f4f-10c7-4a15-b145-1be717ff67f2"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Torrance",
+      "locationType": "city",
+      "eventIds": [
+        "96293979-0e1d-4dfc-8961-13fe5b03904a"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Santa Susanna",
+      "locationType": "city",
+      "eventIds": [
+        "105e6bc4-9b01-4903-bb2b-c77f47ce5f11"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Pune",
+      "locationType": "city",
+      "eventIds": [
+        "2e128511-4fd4-4184-a9c6-f10194c12e38"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Bellevue",
+      "locationType": "city",
+      "eventIds": [
+        "a10ada87-6b58-450d-898d-c662ee6c2831"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Santa Barbara",
+      "locationType": "city",
+      "eventIds": [
+        "2027ae66-cd22-4662-b186-eb232d816528"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Zhengzhou",
+      "locationType": "city",
+      "eventIds": [
+        "065cd0aa-0d1f-4fc7-854a-3c361569ee64"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Bratislava",
+      "locationType": "city",
+      "eventIds": [
+        "ef4288d9-68c5-4ec3-9624-48a3b61cb19f"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Naples",
+      "locationType": "city",
+      "eventIds": [
+        "d30b8c0d-3d67-483d-b801-6865cb56912e"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Barcelona",
+      "locationType": "city",
+      "eventIds": [
+        "68a46225-2a8e-4511-9994-b14773b23c94"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Gdansk",
+      "locationType": "city",
+      "eventIds": [
+        "4c5f5dd6-7998-499d-a183-7752c30b6574"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Columbia",
+      "locationType": "city",
+      "eventIds": [
+        "c12e17e8-10a2-4a78-90ce-edbae4df4463"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Stockholm",
+      "locationType": "city",
+      "eventIds": [
+        "1585792e-a348-45bf-b4de-9ad514de5700"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Anchorage",
+      "locationType": "city",
+      "eventIds": [
+        "efd7c821-b2f0-48fa-8099-85c9b777c912"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Memphis",
+      "locationType": "city",
+      "eventIds": [
+        "bee86030-54a1-4ca2-9307-70b2166032dd"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "White Plains",
+      "locationType": "city",
+      "eventIds": [
+        "8473c387-9211-45fa-acc5-81ea692d9700"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Ostrava",
+      "locationType": "city",
+      "eventIds": [
+        "7495497f-b148-47c9-be05-f9983eba4fc1"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Nadi",
+      "locationType": "city",
+      "eventIds": [
+        "cd233cba-a6cb-4012-b4c3-96f7a85ca590"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Bari",
+      "locationType": "city",
+      "eventIds": [
+        "bb79db7b-f7d5-4c78-a99e-531799e66259"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Indianapolis",
+      "locationType": "city",
+      "eventIds": [
+        "e7a2f077-554f-4a38-84f9-9c586508e7bb"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Faroe Islandss",
+      "locationType": "country",
+      "eventIds": [
+        "02a50b8c-5a8a-420a-b1a4-afc2fd8e3ba9"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Campodarsego (Padova)",
+      "locationType": "city",
+      "eventIds": [
+        "641999dd-4f1a-4a4d-9a6a-fc67790c6d06"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Rimini",
+      "locationType": "city",
+      "eventIds": [
+        "be9f9df3-8cea-4edd-a30b-54afdf68abd0"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Sioux Falls",
+      "locationType": "city",
+      "eventIds": [
+        "bd883637-ed7d-4c3b-ad7d-efe977bfef3f"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Niagara Falls",
+      "locationType": "city",
+      "eventIds": [
+        "9feb20ee-ccb6-4e75-90fe-46e4f25ec6c1"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Padova",
+      "locationType": "city",
+      "eventIds": [
+        "ac8481fe-f900-4825-9fdd-b332d0966ed5"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Clearwater",
+      "locationType": "city",
+      "eventIds": [
+        "792b7d83-fd5c-4429-8915-ad0d82638efe"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Scottsdale",
+      "locationType": "city",
+      "eventIds": [
+        "fdd5c1e3-a1ee-49a5-bfe8-3d1825422243"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Cairo",
+      "locationType": "city",
+      "eventIds": [
+        "623582ce-3ac9-445b-9cfc-0f4e8c914e84"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Minneapolis",
+      "locationType": "city",
+      "eventIds": [
+        "c09c300d-695a-4659-841b-582921e7e49d"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Boston",
+      "locationType": "city",
+      "eventIds": [
+        "72d59a67-81d7-41e8-9b08-8144792dbf70"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Hamilton",
+      "locationType": "city",
+      "eventIds": [
+        "11d09d48-8118-4bff-b2b4-acdb82930e5b"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Marietta",
+      "locationType": "city",
+      "eventIds": [
+        "78166f41-33d6-4280-a10c-a33d29ca45f3"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Tampere",
+      "locationType": "city",
+      "eventIds": [
+        "4f4f61d1-9a81-486d-9b0c-035cb0780543"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Mexico",
+      "locationType": "country",
+      "eventIds": [
+        "5ac5bef6-9b2a-4b2c-af68-72d0092cce72"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Kazakhstan",
+      "locationType": "country",
+      "eventIds": [
+        "cb3ff492-49c3-4a62-984a-8b8d68781678"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Vitória",
+      "locationType": "city",
+      "eventIds": [
+        "c324f802-6fb9-46cf-b3ac-ced72da933f8"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Philippines",
+      "locationType": "country",
+      "eventIds": [
+        "261b568f-1048-4911-aa1e-4eb11fb2513b"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Vietnam",
+      "locationType": "country",
+      "eventIds": [
+        "2fb41a54-31ca-4b2f-93cd-87fe993ef86a"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "New Delhi",
+      "locationType": "city",
+      "eventIds": [
+        "44bee013-9e1e-4ca0-946b-2945f241d504"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Arlington",
+      "locationType": "city",
+      "eventIds": [
+        "b9ff7585-829a-41e0-8113-191ec5dfff60"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Burnaby",
+      "locationType": "city",
+      "eventIds": [
+        "f41a6f15-2919-4369-bff9-4dc772974e91"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Sopot",
+      "locationType": "city",
+      "eventIds": [
+        "a0c1a5b5-70dc-4090-98e3-8821df60feef"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Maidenhead",
+      "locationType": "city",
+      "eventIds": [
+        "8d308b92-79bd-4e00-8020-fee871bee094"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Bastrop",
+      "locationType": "city",
+      "eventIds": [
+        "4c064372-4edd-4ae7-ac0a-3691af7ef266"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Ningjin",
+      "locationType": "city",
+      "eventIds": [
+        "d7846589-4d74-4de4-8874-e55aaffea33b"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Alexandria",
+      "locationType": "city",
+      "eventIds": [
+        "8dc67e2e-e475-426e-b337-5b5689bee267"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Ixmir",
+      "locationType": "city",
+      "eventIds": [
+        "06f9b11d-3674-4c8d-bc2a-5eb6f08d748d"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "St. Leon-Rot",
+      "locationType": "city",
+      "eventIds": [
+        "f1e57177-21d9-4986-979f-903128b8334e"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "The Woodlands",
+      "locationType": "city",
+      "eventIds": [
+        "2fcbb53b-9795-4874-95cf-35f2479fd5ed"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Brasilia",
+      "locationType": "city",
+      "eventIds": [
+        "aeb43dd1-0cb1-4d7f-9384-f7f814ff8293"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Juiz De Fora",
+      "locationType": "city",
+      "eventIds": [
+        "74719fde-2d4c-48fc-a164-471b7a68b572"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Cuidad Del Este",
+      "locationType": "city",
+      "eventIds": [
+        "6a5b8f99-4b64-447c-a25e-1dd34ceb2f3c"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Abbotsford",
+      "locationType": "city",
+      "eventIds": [
+        "1f551307-09a9-4730-9953-e27f058160d5"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Dublin",
+      "locationType": "city",
+      "eventIds": [
+        "89c03464-ae39-42e3-8db9-b4aa43152186"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Torremolinos",
+      "locationType": "city",
+      "eventIds": [
+        "f7ecdaa0-0bb2-477e-94cb-d6040261df8d"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "St. Polten",
+      "locationType": "city",
+      "eventIds": [
+        "c0439cbe-eb6c-4c4a-ab86-90d9966a861f"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "McAllen",
+      "locationType": "city",
+      "eventIds": [
+        "b5e70c8e-3e83-4c83-b698-b0e3a8c2a9bb"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Manassas",
+      "locationType": "city",
+      "eventIds": [
+        "8a6ebdbf-aae9-4c44-9287-32fe0942a897"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Rosemont",
+      "locationType": "city",
+      "eventIds": [
+        "b88c2dcb-1410-4d18-ad8a-67b276703c2d"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Johannesburg",
+      "locationType": "city",
+      "eventIds": [
+        "b1890bb3-0e05-423f-ade1-0f3a18bf0e58"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Santo Domingo",
+      "locationType": "city",
+      "eventIds": [
+        "0d6347bf-6a4e-4480-a365-02baba1f9edd"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Sofia",
+      "locationType": "city",
+      "eventIds": [
+        "a8dbafaa-9bab-44b0-8b7a-046c911d84a0"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Wayne",
+      "locationType": "city",
+      "eventIds": [
+        "06c76be2-10ad-467c-ba96-7b29eeced452"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Cuidad de Mexico",
+      "locationType": "city",
+      "eventIds": [
+        "8bb697da-2429-4d5a-8897-332086938cd0"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Oklahoma City",
+      "locationType": "city",
+      "eventIds": [
+        "771bf93f-8762-46e1-8abc-463b7fb4820a"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Spain",
+      "locationType": "country",
+      "eventIds": [
+        "39a9e0c7-d117-492c-9413-564ad6c53c4d"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Palmerston",
+      "locationType": "city",
+      "eventIds": [
+        "f5f43af1-1ae0-4b4b-bcb3-a3febe14ff3b"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Taiwan",
+      "locationType": "country",
+      "eventIds": [
+        "4559d4d0-db0d-4de6-9941-9bda87906844"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Dearborn",
+      "locationType": "city",
+      "eventIds": [
+        "4ef1cc31-b483-4e78-969f-684734369a0e"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Holladay",
+      "locationType": "city",
+      "eventIds": [
+        "72f31b58-413d-41fb-8e30-37f74b1dbf5c"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Pittsburgh. PA",
+      "locationType": "country",
+      "eventIds": [
+        "e3f30241-1e60-4e18-a6d2-1d580904e6c6"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Richmond",
+      "locationType": "city",
+      "eventIds": [
+        "cd029f23-d9fe-4b6d-b89e-36a92a488703"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Offenbach",
+      "locationType": "city",
+      "eventIds": [
+        "450dfc6b-e400-4fb6-9759-c44230edff0e"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Marrakesh",
+      "locationType": "city",
+      "eventIds": [
+        "9bb1f1c1-3ad7-4c92-9907-0ed590653222"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Santa Cruz",
+      "locationType": "city",
+      "eventIds": [
+        "cf16fbf4-839a-4eac-8c6a-e6503abbfdfd"
+      ],
+      "count": 1
+    },
+    {
+      "locationName": "Lille",
+      "locationType": "city",
+      "eventIds": [
+        "943e2ee8-e887-487d-98ed-0c32f1ca5d65"
+      ],
+      "count": 1
+    }
+  ]
+}

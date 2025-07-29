@@ -1,0 +1,207 @@
+{
+  "totalCompleteFailures": 12,
+  "timestamp": "2025-07-29T14:38:45.430Z",
+  "events": [
+    {
+      "eventId": "0bfa6174-9894-448b-8f47-bc01402ac59e",
+      "fullLocation": {
+        "country": "New Zealand"
+      },
+      "checkedLevels": [
+        {
+          "name": "New Zealand",
+          "type": "country",
+          "hasImage": false
+        }
+      ]
+    },
+    {
+      "eventId": "7495497f-b148-47c9-be05-f9983eba4fc1",
+      "fullLocation": {
+        "city": "Ostrava",
+        "country": "Czech Republic"
+      },
+      "checkedLevels": [
+        {
+          "name": "Ostrava",
+          "type": "city",
+          "hasImage": false
+        },
+        {
+          "name": "Czech Republic",
+          "type": "country",
+          "hasImage": false
+        }
+      ]
+    },
+    {
+      "eventId": "cd233cba-a6cb-4012-b4c3-96f7a85ca590",
+      "fullLocation": {
+        "city": "Nadi",
+        "country": "Fiji"
+      },
+      "checkedLevels": [
+        {
+          "name": "Nadi",
+          "type": "city",
+          "hasImage": false
+        },
+        {
+          "name": "Fiji",
+          "type": "country",
+          "hasImage": false
+        }
+      ]
+    },
+    {
+      "eventId": "02a50b8c-5a8a-420a-b1a4-afc2fd8e3ba9",
+      "fullLocation": {
+        "country": "Faroe Islandss"
+      },
+      "checkedLevels": [
+        {
+          "name": "Faroe Islandss",
+          "type": "country",
+          "hasImage": false
+        }
+      ]
+    },
+    {
+      "eventId": "11d09d48-8118-4bff-b2b4-acdb82930e5b",
+      "fullLocation": {
+        "city": "Hamilton",
+        "country": "Bermuda"
+      },
+      "checkedLevels": [
+        {
+          "name": "Hamilton",
+          "type": "city",
+          "hasImage": false
+        },
+        {
+          "name": "Bermuda",
+          "type": "country",
+          "hasImage": false
+        }
+      ]
+    },
+    {
+      "eventId": "ae115c07-77b5-400d-a641-bc30b84dc0c6",
+      "fullLocation": {
+        "country": "New Zealand"
+      },
+      "checkedLevels": [
+        {
+          "name": "New Zealand",
+          "type": "country",
+          "hasImage": false
+        }
+      ]
+    },
+    {
+      "eventId": "4c06d2c4-4d99-4feb-a104-ed925862d7ee",
+      "fullLocation": {
+        "country": "New Zealand"
+      },
+      "checkedLevels": [
+        {
+          "name": "New Zealand",
+          "type": "country",
+          "hasImage": false
+        }
+      ]
+    },
+    {
+      "eventId": "1e00163c-faa9-4177-bbe3-c3605892920a",
+      "fullLocation": {
+        "city": "Stateline",
+        "state": "Nevada",
+        "country": ""
+      },
+      "checkedLevels": [
+        {
+          "name": "Stateline",
+          "type": "city",
+          "hasImage": false
+        },
+        {
+          "name": "Nevada",
+          "type": "state",
+          "hasImage": false
+        }
+      ]
+    },
+    {
+      "eventId": "0d6347bf-6a4e-4480-a365-02baba1f9edd",
+      "fullLocation": {
+        "city": "Santo Domingo",
+        "state": "",
+        "country": "Dominican Republic"
+      },
+      "checkedLevels": [
+        {
+          "name": "Santo Domingo",
+          "type": "city",
+          "hasImage": false
+        },
+        {
+          "name": "Dominican Republic",
+          "type": "country",
+          "hasImage": false
+        }
+      ]
+    },
+    {
+      "eventId": "f5f43af1-1ae0-4b4b-bcb3-a3febe14ff3b",
+      "fullLocation": {
+        "city": "Palmerston",
+        "country": "New Zealand"
+      },
+      "checkedLevels": [
+        {
+          "name": "Palmerston",
+          "type": "city",
+          "hasImage": false
+        },
+        {
+          "name": "New Zealand",
+          "type": "country",
+          "hasImage": false
+        }
+      ]
+    },
+    {
+      "eventId": "e3f30241-1e60-4e18-a6d2-1d580904e6c6",
+      "fullLocation": {
+        "country": "Pittsburgh. PA"
+      },
+      "checkedLevels": [
+        {
+          "name": "Pittsburgh. PA",
+          "type": "country",
+          "hasImage": false
+        }
+      ]
+    },
+    {
+      "eventId": "d1bc0a2f-1721-4630-ad00-9527ceddb339",
+      "fullLocation": {
+        "city": "Federal Way",
+        "state": "Washington",
+        "country": ""
+      },
+      "checkedLevels": [
+        {
+          "name": "Federal Way",
+          "type": "city",
+          "hasImage": false
+        },
+        {
+          "name": "Washington",
+          "type": "state",
+          "hasImage": false
+        }
+      ]
+    }
+  ]
+}
